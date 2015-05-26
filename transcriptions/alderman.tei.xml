@@ -1,77 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="file:/Users/cwulfman/Desktop/Beach%20cards/schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>Borrower Card: Pauline Alderman</title>
-      </titleStmt>
-      <publicationStmt>
-        <p>later</p>
-      </publicationStmt>
-      <sourceDesc>
-        <p>later</p>
-      </sourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div type="card">
-        <div type="recto">
-          
-          <head>
-            <date>1939</date>
-            <address>
-	      <persName>Alderman  Miss Pauline</persName>
-              <addrLine>21 rue Jacob VIe</addrLine>
-	    </address>
-          </head>
-          
-          
-          <ab>3m IV  B                           100
-          dep                           50</ab>
-          
-	  <ab>            
-            <date when-iso="1939-04-06">Apr 6</date>    <bibl><title>Poets Two Painters</title></bibl>       <date when-iso="1939-04-13">Apr 13</date>
-            <date when-iso="1939-04-13">13</date>       <bibl><title>Being Geniuses Together</title></bibl>  <date when-iso="1939-04-20">Apr 20</date>
-            <date when-iso="1939-04-20">20</date>       <bibl><title>Listen the Wind</title></bibl>          <date when-iso="1939-04-21">Apr 21</date>
-            <date when-iso="1939-04-21">21</date>       <bibl><title>Young Cosima</title></bibl>             <date when-iso="1939-04-24">Apr 24</date>
-            <date when-iso="1939-04-21">21</date>       <bibl><title>Monarchy 2v pd.</title></bibl>          <date when-iso="1939-04-28">Apr 28</date>
-            <date when-iso="1939-04-24">24</date>       <bibl><title>Aqua Eliters</title></bibl>             <date when-iso="1939-04-28">Apr 28</date>
-            <date when-iso="1939-05-00">May 11</date>   <bibl><title>Midas Touch</title></bibl>              <date when-iso="1939-05-25">May 25</date>
-            <date when-iso="1939-05-25">25</date>       <bibl><title>Death of a Heart</title></bibl>         <date when-iso="1939-06-01">June 1</date>
-            <date when-iso="1939-06-01">Jun 1</date>    <bibl><title>Impressions Monuments</title></bibl>    <date when-iso="1939-06-09">June 9</date>
-            <date when-iso="1939-06-21">21</date>       <bibl><title>Three Marriages</title></bibl>          <date when-iso="1939-06-21">Jun 21</date>
-            <date when-iso="1939-06-21">21</date>       <bibl><title>I think added in America</title></bibl> <date when-iso="1939-07-06">July 6</date>
-            <date when-iso="1939-06-06">6</date>        <bibl><title>Seasoned Timber</title></bibl> <note>[paid 12f]</note>  <date when-iso="1939-06-08">July 8</date>
-            <date when-iso="1939-07-08">July 8</date>   <bibl><title>Grapes of Wrath</title></bibl> <note>[paid 12f]</note>  <date when-iso="1939-07-22">July22</date>
-            
-	  </ab>        
-          <note> Renewed <date when-iso=">July 6</date> - to October 6th 1939  3m IV B         100</note>
-          
-          Jul22              Adventures of a Young Man          July27
-          
-          [p.c. Sylvia Closing July 27]
-          
-          27              Gracie Allen Murder Case           Sept10
-          Journalist's Wife                  Sept 10
-          Views + Reviews                    Sept 10
-          Phelps' Autobiography              Sept 10
-          
-          
-          Sept10          SB got books at 21 rue Jacob (Pension)
-          See letter from Miss Alderman
-          She has dep. 50f left
-          
-          
-          
-          
-          
-          
-          JM NOTE: VERSO BLANK -- ENDS ALDERMAN
-        </div>
-      </div>
-      
-    </body>
-  </text>
+<?xml-model href="../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#alde.pa">Pauline
+                        Alderman</persName></title>
+                <respStmt xml:id="cwulfman">
+                    <persName>Wulfman, Cliff</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Sylvia Beach Papers</title>
+            </seriesStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special
+                            Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="personography.xml">
+                    <xi:fallback>
+                        <listPerson>
+                            <person></person>
+                        </listPerson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/a/alderman/">
+        <surfaceGrp type="card">
+            <surface xml:id="s1" type="recto">
+                <graphic url="00000001.jp2"/>
+            </surface>
+            <surface xml:id="s2" type="verso">
+                <graphic url="00000001.jp2"/>
+            </surface>
+        </surfaceGrp>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1"/>
+                    <head>
+                        <date>1939</date>
+                        <address>
+                            <persName ref="#alde.pa">Alderman Miss Pauline</persName>
+                            <addrLine>21 rue Jacob VIe</addrLine>
+                        </address>
+                    </head>
+
+
+                    <ab>3m IV B 100<lb/>
+                        dep 50</ab>
+
+                    <table>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-04-06">Apr 6</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Poets Two
+                                Painters</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-04-13">Apr 13</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-04-13">13</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Being Geniuses Together</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-04-20">Apr 20</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-04-20">20</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Listen the Wind</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-04-21">Apr 21</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-04-21">21</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Young Cosima</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-04-24">Apr 24</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-04-21">21</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Monarchy 2v pd.</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-04-28">Apr 28</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-04-24">24</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Aqua Eliters</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-04-28">Apr 28</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-05-00">May 11</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Midas Touch</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-05-25">May 25</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-05-25">25</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Death of a Heart</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-06-01">June 1</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-06-01">Jun 1</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Impressions Monuments</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-06-09">June 9</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-06-21">21</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Three Marriages</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-06-21">Jun 21</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-06-21">21</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>I think added in America</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-07-06">July 6</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-06-06">6</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Seasoned Timber</title></bibl><note place="inline">paid <measure unit="francs">12f</measure></note></cell>
+                            <cell><date ana="#returned" when-iso="1939-06-08">July 8</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-07-08">July 8</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Grapes of Wrath</title></bibl><note place="inline">paid 12f</note></cell>
+                            <cell><date ana="#returned" when-iso="1939-07-22">July 22</date></cell>
+                        </row>
+                        <note>Renewed <date when-iso="1939-06">July 6</date> - to <date when-iso="1939-10-06">October 6th 1939</date>
+                            3m IV B 100</note>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-07-22">Jul 22</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Adventures of a Young Man</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-07-27">July 27</date></cell>
+                        </row>
+                        <note place="inline inline above">p.c. <persName>Sylvia</persName> Closing <date when-iso="1939-07-27">July 27</date></note>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-07-27">27</date></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Gracie Allen Murder Case</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-09-10">Sept 10</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-07-22"/></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Journalist's Wife</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-09-10">Sept 10</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-07-22"/></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Views + Reviews</title></bibl></cell>
+                            <cell><date ana="#returned" when-iso="1939-09-10">Sept 10</date></cell>
+                        </row>
+                        <row ana="#borrowingEvent">
+                            <cell><date ana="#checkedOut" when-iso="1939-07-22"/></cell>
+                            <cell><bibl ana="#borrowedItem"><title>Phelps' Autobiography</title></bibl></cell>
+                            <cell><date when-iso="1939-09-10">Sept 10</date></cell>
+                        </row>
+                    </table>
+
+
+                    <note>
+                        <date when-iso="1939-09-10">Sept 10</date>
+                        <persName ref="#beac.sy">SB</persName> got books at 21 rue Jacob<lb/> (Pension) See letter
+                        from <persName>Miss Alderman</persName><lb/> She has dep. 50f left</note>
+
+                </div>
+                <div type="verso">
+                    <pb facs="#s2"/>
+                    <!-- Verso blank -->
+                </div>
+            </div>
+        </body>
+        <back>
+            <interpGrp xml:id="borrowingEvent" type="borrowingEvent">
+                <desc>An event of borrowing a book</desc>
+                <interp xml:id="checkedOut">checkout date</interp>
+                <interp xml:id="returned">date returned</interp>
+                <interp xml:id="borrowedItem">item borrowed</interp>
+            </interpGrp>
+        </back>
+    </text>
 </TEI>
