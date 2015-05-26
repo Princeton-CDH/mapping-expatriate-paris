@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <respStmt xml:id="elspeth">
+                    <persName><Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-05-12">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	Some French accents not transcribed
+                		<*> = Cotswold?
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298//c/cazes/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+    
+    </facsimile>
+    <text>
+        <body>
+            <ab>
+                <pb facs="#s1" />
+            	1938		Cazes
+            				M. Edmond
+            				37 rue de Patay
+            				Orleans, Loinet
+            				1 vol 1 m		25 francs
+            					deposit 50 francs
+            	May 23		Dubliners					June 1
+            	June 1		Portrait of Artist as Y.M.	June 15
+            	June 1		(What To Read Fabian Bibliography) returned
+            				(to be kept as long as desired)
+            	June 15		Portrait of Artist as Y.M.	June 30
+            	subscription renewed 6 m 1 vol student 70
+            	Jan 25
+            	Oct 25		Fabian Essays				March 1st
+            	March 1		Political + <*> Hist. (Hayes) June 15
+            								Vol II
+            							ren Mar 22, ren Apr 18
+            							ren May 10
+            	
+            	
+            	<pb facs="#s2" />
+            	<!-- verso blank -->		
+            </ab>
+        </body>
+    </text>
+</TEI>
