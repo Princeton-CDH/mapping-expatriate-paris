@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<project basedir="." xmlns:xdb="http://exist-db.org/ant">
+  <description>MEP-data ant tasks</description>
+  
+  <property name="eXist_home" value="/opt/local/exist" />
+  
+  <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
+    <classpath>
+      <fileset dir="${eXist_home}/lib/core">
+	<include name="*.jar" />
+      </fileset>
+      <pathelement location="${eXist_home}/exist.jar" />
+      <pathelement location="${eXist_home}/exist-optional.jar" />
+    </classpath>
+  </typedef>
+  
+  
+  <property name="xmldb.host" value="localhost" />
+  <property name="xmldb.port" value="8080" />
+  <property name="xmldb.user" value="admin" />
+  <property name="xmldb.passwd" value="admin" />
+  <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
+  <property name="xmldb.approot" value="${xmldb.url}/mep-data" />
+
+  <property name="approot" value="/opt/local/mep-data" />
+  
+  <target name="load-conf" description="load the mep-data collection.xconf record">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.url}/system/config/db/mep-data"
+	       createcollection="true">
+      <fileset dir="${approot}/db">
+	<include name="collection.xconf" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-personography" description="load the personography fragment">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/transcriptions" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/transcriptions">
+	<include name="personography.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+  
+  <target name="load-transcriptions" description="load TEI transcriptions of cards">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/transcriptions" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/transcriptions">
+	<include name="**/*.tei.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-schemas" description="load schemas for mep-data">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/schemas" createcollection="true"
+	       createsubcollections="true">
+
+      <fileset dir="${approot}/schemas">
+	<include name="**/*.rnc" />
+      </fileset>
+    </xdb:store>
+  </target>
+</project>
+
