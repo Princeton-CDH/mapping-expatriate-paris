@@ -94,7 +94,7 @@
    <person xml:id="beac.sy">
       <idno type="viaf">35247539</idno>
 
-      <persName ref="http://viaf.org/viaf/35247539">
+      <persName>
          <surname>Beach</surname>
          <forename>Sylvia</forename>
       </persName>
@@ -572,7 +572,8 @@
    <person>
       <persName>
          <surname>Clark</surname>
-         <forename>Darcy</forename>
+         <forename>John</forename>
+         <nameLink>d'</nameLink><forename>Arcy</forename>
       </persName>
    </person>
 
@@ -640,7 +641,9 @@
 
    <person>
       <persName>
+         <nameLink>De</nameLink>
          <surname>Couet</surname>
+         <forename type="initial">B</forename>
       </persName>
    </person>
 
@@ -684,7 +687,7 @@
    <person>
       <persName>
          <surname>Culley</surname>
-         <forename>Erie</forename>
+         <forename>Eric</forename>
       </persName>
    </person>
 
@@ -787,7 +790,9 @@
    <person>
       <persName>
          <surname>Dennis</surname>
-         <forename>Mary Cable</forename>
+         <forename>Mary</forename>
+         <forename>Cable</forename>
+         <forename type="nick">Polly</forename>
       </persName>
    </person>
 
@@ -959,10 +964,29 @@
          <forename>Thomas</forename>
       </persName>
    </person>
+   
+   <person>
+      <persName>
+         <surname>Edwards</surname>
+         <forename>Pamela</forename>
+      </persName>
+      <residence>
+         <address>
+            <street>25 rue Vavin</street>
+         </address>
+      </residence>
+      <note resp="jk"><p>Different from Thomas Edwards, I think</p></note>
+   </person>
 
    <person>
       <persName>
          <surname>Eggiman</surname>
+      </persName>
+   </person>
+   
+   <person>
+      <persName>
+         <surname>Eisenberg</surname>
       </persName>
    </person>
 
@@ -1268,6 +1292,7 @@
    <person>
       <persName>
          <surname>Gibault</surname>
+         <forename type="initial">M</forename>
       </persName>
    </person>
 
@@ -1304,6 +1329,13 @@
       <persName>
          <surname>Gillet</surname>
          <forename>Louis</forename>
+      </persName>
+   </person>
+   
+   <person>
+      <persName>
+         <surname>Gillet</surname>
+         <forename>Robert</forename>
       </persName>
    </person>
 
@@ -1499,6 +1531,7 @@
    <person>
       <persName>
          <surname>Hobhouse</surname>
+         <forename type="initial">U</forename>
       </persName>
    </person>
 
@@ -1565,6 +1598,8 @@
    <person>
       <persName>
          <surname>Kalbfleisch</surname>
+         <forename type="initial">B</forename>
+         <forename type="initial">B</forename>
       </persName>
    </person>
 
@@ -1604,6 +1639,8 @@
    <person>
       <persName>
          <surname>Kittredge</surname>
+         <forename>Tracy</forename>
+         <forename type="initial">B</forename>
       </persName>
    </person>
 
@@ -2198,13 +2235,24 @@
       </persName>
    </person>
 
-   <person>
+   <person xml:id="mian.ar">
       <persName>
          <surname>Mian</surname>
          <forename>Aristide</forename>
       </persName>
    </person>
-
+   
+   
+   
+   <person xml:id="mian.ma">
+      <persName>
+         <surname>Mian</surname>
+         <forename>Mary</forename>
+      </persName>
+   </person>
+   
+   
+   
    <person>
       <persName>
          <surname>Michaelides</surname>
@@ -2290,6 +2338,10 @@
          <forename>John</forename>
       </persName>
    </person>
+   
+   <org>
+      <orgName>Nouvelle Revue Critique</orgName>
+   </org>
 
    <person>
       <persName>
@@ -2495,9 +2547,10 @@
    </person>
 
    <person>
+      <idno type="viaf">7487308</idno>
       <persName>
          <surname>Pierret</surname>
-         <forename>Jean</forename>
+         <forename>Jean-Marie</forename>
       </persName>
    </person>
 
@@ -2617,7 +2670,8 @@
    <person>
       <persName>
          <surname>Pringle</surname>
-         <forename>Lady</forename>
+         <roleName type="nobility">Lady</roleName>
+         <forename>Susan</forename>
       </persName>
    </person>
 
@@ -3131,6 +3185,7 @@
    <person>
       <persName>
          <surname>Schueller</surname>
+         <forename>Juanita</forename>
       </persName>
    </person>
 
@@ -3574,8 +3629,8 @@
 
    <person>
       <persName>
-         <surname>de Vogue</surname>
-         <roleName>Countess</roleName>
+         <nameLink>de</nameLink> <surname>Vogue</surname>
+         <roleName type="nobility">Countess</roleName>
       </persName>
    </person>
 
@@ -4045,5 +4100,10 @@
          <forename>Isabelle</forename>
       </persName>
    </person>
-
+   
+   <listRelation>
+      <relation name="spousal" mutual="#mian.ma #mian.ar"/>
+   </listRelation>
+   
 </listPerson>
+
