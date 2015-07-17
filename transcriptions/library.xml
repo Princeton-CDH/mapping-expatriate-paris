@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>Seed Library</title>
+      </titleStmt>
+      <publicationStmt>
+	<p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <xi:include href="personography.xml" xpointer="people" parse="xml">
+          <xi:fallback>
+            <listperson>
+              <head>People not available</head>
+              <person/>
+            </listperson>
+          </xi:fallback>
+        </xi:include>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+	<head>Books Acquired on <date>September 3, 1919</date></head>
+
+	<p><persName ref="#beac.sy">Sylvia Beach</persName> maintained
+	an inventory of books she acquired for Shakespeare and
+	Company.</p>
+
+	<listBibl>
+	  <head>Library Inventory, <date>1919</date></head>
+	  
+	  <bibl><title>Huckleberry Finn</title> <author>M. Twain</author></bibl>
+	  <bibl><title>Water Babies</title> <author>Charles Kingsley</author></bibl>
+	  <bibl><title>Cock Lane and Common Sense</title> <author>A. Lang</author></bibl>
+	  <bibl><title>Beautiful Birds</title> <author>E. Selous</author></bibl>
+	  <bibl><title>Call of the Wild</title> <author>J. London</author></bibl>
+	  <bibl><title>Autocrat of the Breakfast Table</title> <author>O.W. Holmes</author></bibl>
+	  <bibl><title>Plays: Pleasant and Unpleasant</title> <author>B. Shaw</author></bibl>
+	  <bibl><title>Political Economy of Art</title> <author>Ruskin</author></bibl>
+	  <bibl><title>Gentleman from Indiana</title> <author>Tarkington</author></bibl>
+	  <bibl><title>Waverley</title> <author>Scott</author></bibl>
+
+      </listBibl>
+      </div>
+    </body>
+  </text>
+</TEI>
