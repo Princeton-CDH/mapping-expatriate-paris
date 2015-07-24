@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <respStmt xml:id="elspeth">
+                    <persName><Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-07-24">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	Book return request card, with image of Shakespeare tearing hair out
+                    	For a "Victor Montrezza," but addressed to Allanah Harper (s2)
+                    s2: 
+                    	<*> text on side = "M coy"?
+                    	<*> text in red = "Incommence"?
+                    
+                   
+                   
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298//h/harper/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+            <ab>
+                <pb facs="#s1" />
+               	PLEASE RETURN:
+               	Jungle Bob
+               	borrowed by Victor Montrezza
+               	8 June 1933
+               	
+               	TO:
+               		SHAKESPEARE AND COMPANY
+               	12, RUE DE L'OD´EON - PARIS - VIe
+               	
+               	<pb facs="#s2" />
+               			CARTE POSTALE
+               	Mademoiselle Allanah Harper
+               	14 rue Cassini
+               		Paris
+               	
+               	<*> ou 14 Cassini
+               	
+               	<*>
+                
+            </ab>
+        </body>
+    </text>
+</TEI>
