@@ -9,6 +9,10 @@
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
+		<respStmt xml:id="cwulfman">
+		  <persName>Wulfman, Cliff</persName>
+		  <resp>encoder</resp>
+		</respStmt>
             </titleStmt>
             <publicationStmt>
                 <publisher>Princeton University</publisher>
@@ -25,28 +29,29 @@
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-07-24">
+            <change who="#elspeth" when="2015-07-24">
                 <ab>
                     Transcribed cards.
                     s1:
-                    	<*> Children of the Age = return month indecipherable, but probably Jan or Feb.
+                    	/*/ Children of the Age = return month indecipherable, but probably Jan or Feb.
                     s2:
-                    	<*> Feb 17 = crossed out, can't read
+                    	/*/ Feb 17 = crossed out, can't read
                     s3:
-                    	<*> Jun 11 = "Wondes Man"?
-                    	<*> Sept 20 = crossed out, can't read
-                    	<*> Sept 20 = no idea, crossed out
+                    	/*/ Jun 11 = "Wondes Man"?
+                    	/*/ Sept 20 = crossed out, can't read
+                    	/*/ Sept 20 = no idea, crossed out
                     s4:
-                    	<*> March 8 = "gennis"?
-                    	<*> June 24 = no idea, note before "BB"
-                    	<*> Aug 22 = no idea
+                    	/*/ March 8 = "gennis"?
+                    	/*/ June 24 = no idea, note before "BB"
+                    	/*/ Aug 22 = no idea
                     s5:
-                    	<*> Sept 25 = "AoW"?
-                    	<*> Oct 11 = "Seipper"?
-                   
-                    	
+                    	/*/ Sept 25 = "AoW"?
+                    	/*/ Oct 11 = "Seipper"?
                 </ab>
             </change>
+	    <change who="#cwulfman" when="2015-07-30">
+	      <p>Interpret return date of <bibl><title>Children of the Age</title></bibl> as April</p>
+	    </change>
         </revisionDesc>
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/h/hemingway/">
@@ -102,45 +107,130 @@
         <body>
             <ab>
                 <pb facs="#s1" />
-               	1925								subs to March 23-1926
-               				HEMINGWAY
-               						113 Rue N.D. des Champs
-               				19 rue Froidevaux	14e
-               			winter 1927
-               			Hotel Rosli				dopy of Farewell to Arms = $1.87
-               			Gstad
-               			M.O. 13
-               			Suisse
-               	
-               	Oct 8	Mammonart.						b b
-               	"	12	Sentimental Education			Oct. 27
-               	"	14	Sailing around the World		Oct. 22
-               	"	"	Sea and the Jungle.				"	"
-               	Oct 22	Lear of the Steppes				Oct 27.
-               			Sportsman's Sketches vol 2		Nov 16
-               	"	27	Torrents of Spring				Nov 16
-               	Nov 9	Bread of Deceit					Nov 24
-               	Nov 16	Travel Diary of a Philosopher 2 vols "	"
-               	"	23	Parody Outline of History		Dec 10
-               	Nov 24	More Tales of the Uneasy		Dec 1
-               	Nov 28	Terrible Hobby of Sir J. Londe	Dec. 1
-               	Dec 1	Charter House of Parma in 2 vols Dec 10
-               	"	10	Budden Brooks in 2 vols.		Jan 19
-               	"	"	Children of the Age				<*> 13
-               	"	"	House of Gentle Folks			Feb. 2
-               	"	"	Father and Children				Jan 19
-               	Jan 28	Canning Wonder D' Looks at Literature Feb. 2
-               		30	In our Time new copy	bought
-               			Bull fighting					Jan 30
-               	March 29 Best Short Stories 1935 Am		May 10
-               	April 13 Flurried years					Ap. 13
-               	"	11	Along the Road					Ap 24
-               	"	13	Strait is the fate				"	"
-               	"	17	Collected Poems. Sandburg.		"	"
-               	"	21	The Crime at Vanderlynden's		BB
-               	
+               	<date when="1925">1925</date>					<note>subs to March 23-1926</note>
+               	<persName>HEMINGWAY</persName>
+               	<address><addrLine><del rend="overstrike">113 Rue N.D. des Champs</del></addrLine></address>
+               	<address><addrLine><del rend="overstrike">19 rue Froidevaux</del> 14e</addrLine></address>
+               	<note><date>winter 1927</date>
+               	<address>
+		  <addrLine>Hotel Rosli<lb/>
+               	  Gstad<lb/>
+               	  M.O. 13<lb/>
+               	  Suisse</addrLine>
+		</address>
+		</note>
+		
+		<note>copy of <bibl>Farewell to Arms</bibl> = <measure type="currency" unit="dollar" quantity="1.87">$1.87</measure></note>
+
+               	<table>
+<row>
+<cell><date when-iso="1925-10-08">Oct 8</date></cell>
+<cell><bibl>Mammonart.</bibl></cell>
+<cell><date>b b</date></cell></row>
+<row>
+<cell><date when-iso="1925-10-12">&quot; 12</date></cell> 
+<cell><bibl><title>Sentimental Education</title></bibl></cell> 
+<cell><date when-iso="1925-10-27">Oct. 27</date></cell></row>
+<row>
+<cell><date when-iso="1925-10-14">&quot; 14</date></cell> 
+<cell><bibl><title>Sailing around the World</title></bibl></cell> 
+<cell><date when-iso="1925-10-22">Oct. 22</date></cell></row>
+<row>
+<cell><date when-iso="1925-10-14">&quot; &quot;</date></cell> 
+<cell><bibl><title>Sea and the Jungle.</title></bibl></cell> 
+<cell><date when-iso="1925-10-22">&quot; &quot;</date></cell></row>
+<row>
+<cell><date when-iso="1925-10-22">Oct 22</date></cell> 
+<cell><bibl><title>Lear of the Steppes</title></bibl></cell> 
+<cell><date when-iso="1925-10-27">Oct 27.</date></cell></row>
+<row>
+<cell><date when-iso="1925-10-22"></date></cell> 
+<cell><bibl><title>Sportsman's Sketches vol 2</title></bibl></cell> 
+<cell><date when-iso="1925-11-16">Nov 16</date></cell></row>
+<row>
+<cell><date when-iso="1925-10-27">&quot; 27</date></cell> 
+<cell><bibl><title>Torrents of Spring</title></bibl></cell> 
+<cell><date when-iso="1925-11-16">Nov 16</date></cell></row>
+<row>
+<cell><date when-iso="1925-11-09">Nov 9</date></cell> 
+<cell><bibl><title>Bread of Deceit</title></bibl></cell> 
+<cell><date when-iso="1925-11-24">Nov 24</date></cell></row>
+<row>
+<cell><date when-iso="1925-11-16">Nov 16</date></cell> 
+<cell><bibl><title>Travel Diary of a Philosopher 2 vols "</title></bibl></cell> 
+<cell><date when-iso="1925-11-24">&quot;</date></cell></row>
+<row>
+<cell><date when-iso="1925-11-23">&quot; 23</date></cell> 
+<cell><bibl><title>Parody Outline of History</title></bibl></cell> 
+<cell><date when-iso="1925-12-10">Dec 10</date></cell></row>
+<row>
+<cell><date when-iso="1925-11-24">Nov 24</date></cell> 
+<cell><bibl><title>More Tales of the Uneasy</title></bibl></cell> 
+<cell><date when-iso="1925-12-01">Dec 1</date></cell></row>
+<row>
+<cell><date when-iso="1925-11-28">Nov 28</date></cell> 
+<cell><bibl><title>Terrible Hobby of Sir J. Londe</title></bibl></cell> 
+<cell><date when-iso="1925-12-01">Dec. 1</date></cell></row>
+<row>
+<cell><date when-iso="1925-12-01">Dec 1</date></cell> 
+<cell><bibl><title>Charter House of Parma in 2 vols</title></bibl></cell> 
+<cell><date when-iso="1925-12-10">Dec 10</date></cell></row>
+<row>
+<cell><date when-iso="1925-12-10">&quot; 10</date></cell> 
+<cell><bibl><title>Budden Brooks in 2 vols.</title></bibl></cell> 
+<cell><date when-iso="1926-01-19">Jan 19</date></cell></row>
+<row>
+<cell><date when-iso="1925-12-10">&quot; &quot;</date></cell> 
+<cell><bibl><title>Children of the Age</title></bibl></cell> 
+<cell><date when-iso="1926-04-13" cert="medium" resp="#cwulfman">Apr 13</date></cell></row>
+<row>
+<cell><date when-iso="1925-12-10">&quot; &quot;</date></cell> 
+<cell><bibl><title>House of Gentle Folks</title></bibl></cell> 
+<cell><date when-iso="1926-02-02">Feb. 2</date></cell></row>
+<row>
+<cell><date when-iso="1925-12-10">&quot; &quot;</date></cell> 
+<cell><bibl><title>Father and Children</title></bibl></cell> 
+<cell><date when-iso="1926-01-19">Jan 19</date></cell></row>
+<row>
+<cell><date when-iso="1926-01028">Jan 28</date></cell> 
+<cell><bibl><title><del rend="strikeout">Canning Wonder</del> D' Looks at Literature</title></bibl></cell> 
+<cell><date when-iso="1926-02-02">Feb. 2</date></cell></row>
+<row>
+<cell><date when-iso="1926-01-30">30</date></cell> 
+<cell><bibl><title>In our Time</title></bibl> <note>new copy bought</note></cell> 
+<cell></cell></row>
+<row>
+<cell><date when-iso="1926-01-30"></date></cell> 
+<cell><bibl><title>Bull fighting</title></bibl></cell> 
+<cell><date when-iso="1926-01-30">Jan 30</date></cell></row>
+<row>
+<cell><date when-iso="1926-03-29">March 29</date></cell> 
+<cell><bibl><title>Best Short Stories 1935 Am</title></bibl></cell> 
+<cell><date when-iso="1926-05-10">May 10</date></cell></row>
+<row>
+<cell><date when-iso="1926-04-01">April 1</date></cell> 
+<cell><bibl><title>Flurried years</title></bibl></cell> 
+<cell><date when-iso="1926-04-13">Ap. 13</date></cell></row>
+<row>
+<cell><date when-iso="1926-04-01">&quot; &quot;</date></cell> 
+<cell><bibl><title>Along the Road</title></bibl></cell> 
+<cell><date when-iso="1926-04-24">Ap 24</date></cell></row>
+<row>
+<cell><date when-iso="1926-04-13">&quot; 13</date></cell> 
+<cell><bibl><title>Strait is the fate</title></bibl></cell> 
+<cell><date when-iso="1926-04-24">&quot; &quot;</date></cell></row>
+<row>
+<cell><date when-iso="1926-04-17">&quot; 17</date></cell> 
+<cell><bibl><title>Collected Poems. Sandburg.</title></bibl></cell> 
+<cell><date when-iso="1926-04-14">&quot; &quot;</date></cell></row>
+<row>
+<cell><date when-iso="1926-04-21">&quot; 21</date></cell> 
+<cell><bibl><title>The Crime at Vanderlynden's</title></bibl></cell> 
+<cell><date when-iso="1926-"><date when-iso="1926-">BB</date></date></cell></row>
+</table>               	
                	<pb facs="#s2" />
-               	1926								to Thomas Cook & Son
+               	<date when-iso="1926">1926</date>
+								to Thomas Cook &amp; Son
                	Ap. 26		HEMINGWAY				Madrid
                		Salve Vale	c/o Gerald Murphy		Villa America
                					B B					Cap d'Antibes	A.M.
@@ -154,7 +244,7 @@
                			Two Friends							Sept 10
                			On the Eve							Sept 10
                	May 14	Problems of Philosophy				Sept 13
-               			(July 3rd forwarded letters & Little Review
+               			(July 3rd forwarded letters &amp; Little Review
                				 to Madrid Thos Cook)
                	Aug 20.	Mirrors to France					Sept 10
                	Sept 10	Sportsman's Sketches				Oct 1
@@ -171,7 +261,7 @@
                	"	18	Sailors Return.
                	Dec 16	Spanish Journey						Mch 12
                		Feb 28 brought back the Common Reader	Feb. 28
-               	Feb 17	+ <*>	19.60 paid
+               	Feb 17	+ /*/	19.60 paid
                	Mch 12	Go she must							Mch 12
                	Ap. 23	Inquisition							BB.
                	May 31	Garnell								
@@ -179,13 +269,13 @@
                	<pb facs="#s3" />
                	1927		HEMINGWAY
                				6 rue Férou	VIe
-               	Jun 11	Story of a <*>						June 13
+               	Jun 11	Story of a /*/						June 13
                		"	Sun also Rises	42 + 4.80 = 46.80 paid.
                	"		Transition.
                			ask Hemingway about "Grandmother"
-               	Sept 20	<*>
+               	Sept 20	/*/
                			Grandmother							Oct 18
-               			<*>		53. francs
+               			/*/		53. francs
                	Oct 18	Time + Western Man					Oct 19
                	"	19	Black Cat.							"	25
                	"	25	Barnum's Own Story					Nov. 15
@@ -213,7 +303,7 @@
                	<pb facs="#s4" />
                			HEMINGWAY
                	Mch 3	Wonder book of the Wild				March 8
-               	"	8	<*> + Character.
+               	"	8	/*/ + Character.
                	S.B. received cheque for Frs. 350		Feb 22
                	for E.H.'s account						1929
                	
@@ -226,16 +316,16 @@
                	"	23	Zola + His Time						May 14
                	"	26	Guillotine + Its Servants			May 14
                	"	26	Dial January 1929
-               	May 16	Life in the Middle Ages vol II & III BB
+               	May 16	Life in the Middle Ages vol II &amp; III BB
                	"	21	Diary of Dostoievsky's Wife			July 2
                	June 1	4 parcels = signed sheets) by reg. post = 42.80
                	June 3.	Bookman's Day book					June 5
                	"	5	Three Lives
                			Mlle Turpin comes
                	"	21	Contemporary Russian literature
-               	"	24	Round that Green Cloth.		<*>		BB
+               	"	24	Round that Green Cloth.		/*/		BB
                	"	29	Politicians and the War				July 2
-               	Aug 22	<*>	Torrents of Spring
+               	Aug 22	/*/	Torrents of Spring
                							see letter
                		gave	Sun Also Rises 	wants	T.S.E.
                				In Our Time		to	A. Marcos
@@ -246,11 +336,11 @@
                	Sept 19	Lady Chatterley's Lover				Sept. 27.
                			War										27.
                			This quarter No 5						27.
-               		25	<*> of Sir W. Raleigh				Oct 19
+               		25	/*/ of Sir W. Raleigh				Oct 19
                		27.	On the Eve
                		27	A Sportsmans Sketches
                		27.	Idiot	brought by a gentleman		Jan 23
-               	Oct 11	Balzac in <*>						Oct 19
+               	Oct 11	Balzac in /*/						Oct 19
                	
                	Nov 7		to his credit		29F
                				-- reg. postage		 5 40
@@ -271,7 +361,7 @@
                	Sept 7  
                	
                	
-               	Sept 7	Virgin & the Gipsy					Sept 23
+               	Sept 7	Virgin &amp; the Gipsy					Sept 23
                			Pagany								Sept 23
                	
                	<pb facs="#s8" />
@@ -287,7 +377,7 @@
                			New Writing II
                	
                	1937	borrowed New Masses
-               	Dec		& other papers
+               	Dec		&amp; other papers
                			returned
                	
                	March 30 SB sent off on Queen Mary
@@ -300,7 +390,7 @@
                			changed at 32 frs				1600
                				he bought from AM			 636
                							balance			 964
-               	March 27 bought at Shakespeare & Co		 113
+               	March 27 bought at Shakespeare &amp; Co		 113
                			SB refunded 900					 851
                				less	113					 787
                						787 credit E.H.	      64
@@ -335,6 +425,7 @@
                		to replace 5 copies SB gave to E.H.
                	
                	<pb facs="#s14" />
+	      </table>
                	<!-- verso blank -->
                			 
                	
