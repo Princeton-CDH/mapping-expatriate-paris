@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <respStmt xml:id="elspeth">
+                    <persName><Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-08-25">
+                <ab>
+                    Transcribed cards
+                    Assumedly should be "Katherine Mansfield"?
+                   
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298//m/mansfield/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+
+    </facsimile>
+    <text>
+        <body>
+            <ab>
+                <pb facs="#s1" />
+                		Miss Catherine Mansfield
+                		Select Hotel
+                		Place de la Sorbonne
+                
+                Oct 6	Windy McPherson					Oct 11
+                		Poor White						Oct 6
+                		Winesburg						Oct 11
+                Oct 11	The Brimming Cup				Oct 16
+                Oct 16	Peter Whipple					Oct 21
+                		Three Lives
+                Oct 23	The Triumph of the Egg			Oct 24
+                
+                <pb facs="#s2" />
+                <!-- verso blank -->
+                
+            </ab>
+        </body>
+    </text>
+</TEI>
