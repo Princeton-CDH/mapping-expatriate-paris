@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" >
   <teiHeader>
     <fileDesc>
@@ -27,7 +27,7 @@
             <idno>C0108</idno>
           </msIdentifier>
         </msDesc>
-        <xi:include href="personography.xml" xpointer="people" parse="xml">
+        <xi:include href="../../personography.xml" xpointer="people" parse="xml">
           <xi:fallback>
             <listperson>
               <head>People not available</head>
@@ -41,6 +41,9 @@
       <textClass>          
         <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
       </textClass>
+    	<particDesc>
+    		<person role="cardholder" ana="#alde.pa"><persName>Pauline Alderman</persName></person>
+    	</particDesc>
     </profileDesc>
     <revisionDesc>
       <change when="2015-05-26" who="#cwulfman">First pass at complete encoding.</change>
