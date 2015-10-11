@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -167,7 +167,7 @@
 						<head><date when-iso="1919-01-29">1919-01-29</date></head>
 						<listEvent>
 							<event type="subscription">
-								<p>Subsc <persName>Mlle Dobkevilch</persName>
+								<p>Subsc <persName ref="#dobkevilch">Mlle Dobkevilch</persName>
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
 									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 									<measure type="price" unit="franc" quantity="16">16</measure>
@@ -181,7 +181,7 @@
 						<head><date when-iso="1919-01-30">1919-01-30</date></head>
 						<listEvent>
 							<event type="subscription">
-								<p>Subsc <persName>M Leventhal</persName>
+								<p>Subsc <persName ref="#leventhal">M Leventhal</persName>
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
 									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 									<measure type="price" unit="franc" quantity="8">8</measure>
@@ -190,7 +190,7 @@
 							</event>
 							
 							<event type="subscription">
-								<p>Subsc <persName>Mrs Barker</persName>
+								<p>Subsc <persName ref="#barker">Mrs. Barker</persName>
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
 									<measure type="frequency" unit="volume" quantity="2">2 vol</measure>
 									<measure type="price" unit="franc" quantity="12">12</measure>
@@ -1339,44 +1339,9 @@
 
 
 					</div>
-					<div type="day">
-						<head><date when-iso="1919-08-01">1919-08-01</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1919-08-02">1919-08-02</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1919-08-03">1919-08-03</date></head>
-
-
-					</div>
 				</div>
 				<div type="month" n="8">
 					<head><date>August</date></head>
-					<div type="day">
-						<head><date when-iso="1919-07-28">1919-07-28</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1919-07-29">1919-07-29</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1919-07-30">1919-07-30</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1919-07-31">1919-07-31</date></head>
-
-
-					</div>
 					<div type="day">
 						<head><date when-iso="1919-08-01">1919-08-01</date></head>
 
@@ -1429,8 +1394,13 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1919-08-11">1919-08-11</date></head>
-
-
+						<listEvent>
+							<event type="reimbursement">
+								<p>Dep <persName ref="#barker">Mrs. Barker</persName> remimbursed
+								<measure type="reimbursement" unit="franc" quantity="7">7</measure>
+								</p>
+							</event>
+						</listEvent>
 					</div>
 					<div type="day">
 						<head><date when-iso="1919-08-12">1919-08-12</date></head>
