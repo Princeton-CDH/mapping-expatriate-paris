@@ -2,7 +2,6 @@
 
 <?xml-model href="../schemas/personography.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <<<<<<< HEAD
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -78,20 +77,37 @@
 	  <note><ref target="http://en.wikipedia.org/wiki/Pierre_Victor_Auger"/></note>
 	</person>
 
-	<person>
+	<person xml:id="bake.th">
 	  <persName>
 	    <surname>Baker</surname>
 	    <forename>Thornton</forename>
 	  </persName>
 	</person>
 
-	<person>
+      	<person xml:id="bake.th.mrs">
+      		<persName>
+      			<surname>Baker</surname>
+      			<forename>Thornton</forename>
+      		</persName>
+      	</person>
+
+
+      	
+	<person xml:id="bald.ja">
 	  <persName>
 	    <surname>Baldwin</surname>
 	    <forename>James Mark</forename>
 	  </persName>
 	  <note><ref target="http://en.wikipedia.org/wiki/James_Mark_Baldwin"/></note>
 	</person>
+      	
+  <person xml:id="bald.ja.mrs">
+  	<persName>
+  		<surname>Baldwin</surname>
+  	</persName>
+  </person>
+      	
+      	
 
 	<person>
 	  <persName>
@@ -4138,6 +4154,8 @@
 
 	<listRelation>
 	  <relation name="spousal" mutual="#mian.ma #mian.ar"/>
+		<relation name="spousal" mutual="#baker.th #baker.th.mrs"/>
+		<relation name="spousal" mutual="#bald.ja.mrs #bald.ja"></relation>
 	</listRelation>
 
       </listPerson>
