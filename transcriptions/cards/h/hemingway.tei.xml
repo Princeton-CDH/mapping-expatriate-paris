@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+            	<title>An Encoded Transcription of a Borrower's Card: <persName ana="#hemi.er">Ernest Hemingway</persName></title>
                 <respStmt xml:id="elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
@@ -26,8 +26,26 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+            	 	
+            	<xi:include href="../../personography.xml" xpointer="people" parse="xml">
+            		<xi:fallback>
+            			<listperson>
+            				<head>People not available</head>
+            				<person/>
+            			</listperson>
+            		</xi:fallback>
+            	</xi:include>
             </sourceDesc>
         </fileDesc>
+    	<profileDesc>
+    		<textClass>
+    			<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode>
+    			<!-- library cards -->
+    		</textClass>
+    		<particDesc>
+    			<person role="cardholder" ana="#hemi.er"><persName>Ernest Hemingway</persName></person>
+    		</particDesc>
+    	</profileDesc>
         <revisionDesc>
             <change who="#elspeth" when="2015-07-24">
                 <ab>
@@ -105,9 +123,11 @@
     </facsimile>
     <text>
         <body>
-            <ab>
-                <pb facs="#s1" />
-               	<date when="1925">1925</date>					<note>subs to March 23-1926</note>
+            
+<div type="card">
+	<div type="recto">               
+ 	<pb facs="#s1" />
+ <head>              	<date when="1925">1925</date>					<note>subs to March 23-1926</note>
                	<persName>HEMINGWAY</persName>
                	<address><addrLine><del rend="overstrike">113 Rue N.D. des Champs</del></addrLine></address>
                	<address><addrLine><del rend="overstrike">19 rue Froidevaux</del> 14e</addrLine></address>
@@ -118,7 +138,7 @@
                	  M.O. 13<lb/>
                	  Suisse</addrLine>
 		</address>
-		</note>
+		</note></head>
 		
 		<note>copy of <bibl>Farewell to Arms</bibl> = <measure type="currency" unit="dollar" quantity="1.87">$1.87</measure></note>
 
@@ -227,9 +247,11 @@
 <cell><date when-iso="1926-04-21">&quot; 21</date></cell> 
 <cell><bibl><title>The Crime at Vanderlynden's</title></bibl></cell> 
 <cell><date when-iso="1926-"><date when-iso="1926-">BB</date></date></cell></row>
-</table>               	
-               	<pb facs="#s2" />
-               	<date when-iso="1926">1926</date>
+</table>  
+       </div>     	
+<div type="verso">
+	<pb facs="#s2" />
+<head>               	<date when-iso="1926">1926</date>
 		<date when-iso="1926-04-26">Ap.26</date>
 		<persName>HEMINGWAY</persName>
 
@@ -253,7 +275,7 @@
 		  </address>
 		</del>
 
-              	<note><ab>B B</ab></note>
+              	<note><ab>B B</ab></note></head>
 		<table>
 <row><cell><date when-iso="1926-04-26">Ap. 26</date></cell> <cell><bibl><title>Early Poems Yeats</title></bibl></cell> <cell><date>BB</date></cell></row>
 <row><cell><date when-iso="1926-">" 29</date></cell> <cell><bibl><title>Outcast of the Island</title></bibl></cell> <cell><date when-iso="1926-">BB</date></cell></row>
@@ -290,14 +312,18 @@
 <row><cell>Ap. 23</cell> <cell>Inquisition</cell> <cell>BB.</cell></row>
 <row><cell>May 31</cell> <cell>Garnell</cell> <cell></cell></row>
                	</table>
-		
-               	<pb facs="#s3" />
-
+</div></div>
+        	
+        	
+<div type="card"> 
+	<div type="recto">
+  	<pb facs="#s3" />
+<head>
                	<date when-iso="1927">1927</date>
 		<persName>HEMINGWAY</persName>
                	<address>
 		  <addrLine>6 rue Férou VIe</addrLine>
-		</address>
+		</address></head>
 		<table>
 <row><cell>Jun 11</cell> <cell>Story of a Wonder Man</cell> <cell>June 13</cell></row>
 <row><cell></cell> <cell><del rend="overstrike"><bibl><title>Sun also Rises</title></bibl> <measure type="currency" unit="franc" quantity="42">42</measure> + <measure type="currency" unit="franc" quantity="4.80">4.80</measure> = <measure type="currency" unit="fran" quantity="46.80">46.80</measure> paid.</del></cell></row>
@@ -330,8 +356,11 @@
 <row><cell>" 24</cell> <cell>Plough &amp; Stars</cell> <cell>" "</cell></row>
 <row><cell>" 28</cell> <cell>Magic Mountain 2 vols</cell> <cell>BB</cell></row>
                	</table>
-               	<pb facs="#s4" />
-               	<persName>HEMINGWAY</persName>
+</div>
+        	
+<div type="verso">
+	<pb facs="#s4" />
+<head>               	<persName>HEMINGWAY</persName></head>
 <table>		
 <row><cell>Mch 3</cell> <cell>Wonder book of the Wild</cell> <cell><date>March 8</date></cell></row>
 <row><cell>" 8</cell> <cell>Genius &amp; Character.</cell> <cell/></row>
@@ -366,9 +395,12 @@
 </cell>
 <cell/></row>
 					
-</table>               	
-<pb facs="#s5" />
-<date when-iso="1929">1929</date>	<persName>HEMINGWAY</persName>
+</table>  </div>  </div>      
+
+        	<div type="card">        	
+<div type="recto"><pb facs="#s5" />
+<head>	
+<date when-iso="1929">1929</date>	<persName>HEMINGWAY</persName></head>
 
 <table>
                	
@@ -382,7 +414,7 @@
 <row><cell><date when-iso="1929-10-11">Oct 11</date></cell> <cell><bibl><title>Balzac in <unclear/></title></bibl></cell> <cell><date when-iso="1929-10-19">Oct 19</date></cell></row>
 </table>
 
-
+<ab>
 <date when-iso="1929-11-07">Nov 7</date>		to his credit		29F
                				-- reg. postage		 5 40
                									23 60
@@ -393,29 +425,38 @@
                				not paid			   192.50
                										23.60
                	<date when-iso="1929-11-23">Nov 23</date>		paid ------			   168.90
-               	
-               	<pb facs="#s6" />
+	</ab>
+               	</div>
+<div type="verso">               	<pb facs="#s6" />
                	<!-- verso blank -->
-               	
+ </div>  
+        	</div> 
+<div type="card">        	
+ <div type="recto">       	
                	<pb facs="#s7" />
+<head> 	
                	<date when-iso="1931">1931</date>		<persName>HEMINGWAY</persName>
                	<date when-iso="1931-09-07">Sept 7</date> 
-
-               <del rend="overstrike">
+</head>
+ <ab>              <del rend="overstrike">
 	<table>
                	 <row> <cell><date when-iso="1931-09-07">Sept 7</date></cell> <cell><bibl><title>Virgin &amp; the Gipsy</title></bibl></cell> <cell><date when-iso="1931-09-32">Sept 23</date></cell></row>
                <row> <cell><date when-iso="1931-09-07"/></cell> <cell><bibl><title>Pagany</title></bibl></cell> <cell><date when-iso="1931-09-23">Sept 23</date></cell></row>
                	</table></del>
-
-
-               	<pb facs="#s8" />
+</ab>
+ </div>
+ <div type="verso">
+ 	<pb facs="#s8" />
                	<!-- verso blank -->
-               	
-               	<pb facs="#s9" />
-               	<date when-iso="1937">1937</date>	<persName>HEMINGWAY Ernest</persName>
+ </div>              	
+ </div>
+        	<div type="card">
+<div type="recto">        		
+        		<pb facs="#s9" />
+<head>               	<date when-iso="1937">1937</date>	<persName>HEMINGWAY Ernest</persName>
                			
                					<address><addrLine>Key West Florida</addrLine></address>
-               					<address><addrLine>Majestic Hotel Barcelona</addrLine></address>
+               					<address><addrLine>Majestic Hotel Barcelona</addrLine></address></head>
 <table>
   <row><cell><date when-iso="1937-05-07">May 7</date></cell> <cell><bibl><title>Something of Myself</title></bibl></cell></row>
   <row><cell><date when-iso="1937-05-07"/></cell>            <cell><bibl><title>New Writing I</title></bibl></cell></row>
@@ -463,11 +504,18 @@
     </cell>
   </row>
 </table>
-               	<pb facs="#s10" />
+</div>
+ <div type="verso">
+ 	<pb facs="#s10" />
                	<!-- verso blank -->
-               	
-               	<pb facs="#s11" />
-		<date when-iso="1933">1933</date> <persName>Hemingway</persName>
+</div>               	
+ </div>   
+        	
+        	
+<div type="card">        	
+<div type="recto">
+	<pb facs="#s11" />
+<head>		<date when-iso="1933">1933</date> <persName>Hemingway</persName></head>
                	
 <table>
   <row>
@@ -478,34 +526,51 @@
   <row>
     <cell><date when-iso="1933-11-10"/></cell>
     <cell><bibl><title>Discursions on Travel Art and Life</title></bibl></cell>
-    <cellNov 21
-	Men of Ness	Nov 25
-	Orators 33v paid Nov 21
+    <cell><date when-iso="1933-11-21">Nov 21</date></cell>
+  </row>
+	<row>
+		<cell><date when-iso="1933-11-10"/></cell>
+		<cell><bibl><title>Men of Ness	Nov 25</title></bibl></cell>
+		<cell><date when-iso="1933-11-21">Nov 21</date></cell>
+	</row>
+	
+<row>	
+	<cell><date when-iso="1933-11-10"/></cell>
+	<cell><bibl><title>Orators 33v</title></bibl>  <note>paid Nov 21</note></cell>
+	<cell/>
+</row>
 </table>
-<pb facs="#s12" />
+</div>
+        	
+<div type="verso">
+	<pb facs="#s12" />
                	<!-- verso blank -->
-               	
-               	<pb facs="#s13" />
-               	1938		Hemingway, Ernest
-               										Gone
-               	Sept 7	Life + Death of Spanish Towns
-               	Sept 7	Dead Don't Care		Sept 10
-               	Sept 10	sent instead "With Malice Toward Some"
-               			for library
-               	Sept. 30 Homage to Catalonia
-               	Oct 26	9 Saturday Reviews
-               	Nov		Education of Hyman Kaplan
-               		Nov 28 5 copies of the Fifth column
-               		arrived from Paris branch Brentanos (??)
-               		to replace 5 copies SB gave to E.H.
-               	
-               	<pb facs="#s14" />
-	      </table>
-               	<!-- verso blank -->
-               			 
-               	
-                
-            </ab>
+               </div>
+        	</div>
+        	
+ <div type="card">       	
+ <div type="recto"> 
+ 	<pb facs="#s13" />
+              <head> 	<date when="1938">1938</date>		<persName>Hemingway, Ernest</persName></head>
+<table>
+	
+<row><cell>Sept 7</cell> <cell>Life + Death of Spanish Towns</cell> <cell>Gone</cell></row>
+<row><cell>Sept 7</cell>	<cell>Dead Don't Care</cell>		<cell>Sept 10</cell></row>
+<row><cell>Sept 10</cell>	<cell>sent instead <bibl><title>&quot;With Malice Toward Some&quot;</title></bibl> for library</cell></row>
+<row><cell>Sept. 30</cell> <cell><bibl><title>Homage to Catalonia</title></bibl></cell></row>
+<row><cell>Oct 26</cell>	<cell>9 Saturday Reviews</cell></row>
+<row><cell>Nov</cell>		<cell><bibl><title>Education of Hyman Kaplan</title></bibl></cell></row>
+</table>
+<note>               		<date when-iso="1938-11-28">Nov 28</date> 5 copies of <bibl><title>the Fifth column</title></bibl>
+               		arrived from Paris branch Brentanos (?!)
+               		to replace 5 copies <ref>SB</ref> gave to E.H.</note>
+</div>               	
+ <div type="verso">
+ 	<pb facs="#s14" />
+
+               	<!-- verso blank -->     	
+ </div>               
+</div>            
         </body>
     </text>
 </TEI>

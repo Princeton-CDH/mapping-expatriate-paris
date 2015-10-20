@@ -45,15 +45,27 @@
     </xdb:store>
   </target>
   
-  <target name="load-transcriptions" description="load TEI transcriptions of cards">
+  <target name="load-cards" description="load TEI transcriptions of cards">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
 	       uri="${xmldb.approot}/transcriptions" createcollection="true"
 	       createsubcollections="true"
 	       type="xml"
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${approot}/transcriptions">
-	<include name="**/*.tei.xml" />
+	<include name="cards/**/*.tei.xml" />
 	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-notebook" description="load TEI transcription of notebook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}/transcriptions" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}/transcriptions">
+	<include name="notebook.xml" />
       </fileset>
     </xdb:store>
   </target>

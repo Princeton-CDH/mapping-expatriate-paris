@@ -29,7 +29,15 @@
         <html>
             <head>
                 <meta charset="utf-8"/>
-                <title>fluff</title>
+            	<link rel="stylesheet" type="text/css" href="../css/preview.css"/>
+                <title>Preview</title>
+            		<style type="text/css">
+            			
+            			.date { color: red; }
+            			.persName { background-color: yellow; }
+            			.bibl { background-color: pink; }
+            			.address { color: blue; }
+            		</style>
             </head>
             <body>
                 <div id="metadata">
@@ -71,11 +79,11 @@
     </xsl:template>
     
     <xsl:template match="tei:back">
-        <section>
+<!--        <section>
             <header>Back Matter</header>
             <xsl:apply-templates />
         </section>
-    </xsl:template>
+-->    </xsl:template>
     
     <xsl:template match="tei:div">
         <div>
@@ -102,4 +110,24 @@
     <xsl:template match="tei:cell">
         <td><xsl:apply-templates/></td>
     </xsl:template>
+	
+		<xsl:template match="tei:date">
+			<span class="date"><xsl:apply-templates /></span>
+		</xsl:template>
+	
+		<xsl:template match="tei:persName">
+			<span class="persName"><xsl:apply-templates /></span>
+		</xsl:template>
+	
+		<xsl:template match="tei:bibl">
+			<span class="bibl"><xsl:apply-templates /></span>
+		</xsl:template>
+	
+		<xsl:template match="tei:address">
+			<div class="address">
+				<xsl:apply-templates />
+			</div>
+		</xsl:template>
+	
+	
 </xsl:stylesheet>
