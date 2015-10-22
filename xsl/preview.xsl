@@ -41,7 +41,7 @@
             </head>
             <body>
                 <div id="metadata">
-                    <xsl:apply-templates select="tei:TEI/teiHeader" />
+                    
                 </div>
                 <div id="facsimile">
                 <xsl:apply-templates select="tei:TEI/tei:facsimile" />
