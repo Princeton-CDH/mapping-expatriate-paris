@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>An Encoded Transcription of a Borrower's Card: <persName ref="#alve.el">Elvira de
+						Alvear</persName></title>
+				<respStmt xml:id="jdmccart">
+					<persName>McCarty, Jesse</persName>
+					<resp>transcriber</resp>
+				</respStmt>
+				<respStmt xml:id="cwulfman">
+					<persName>Wulfman, Cliff</persName>
+					<resp>encoder</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Princeton University</publisher>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier>
+						<settlement>Princeton</settlement>
+						<repository>Princeton University. Library. Dept. of Rare Books and Special
+							Collections</repository>
+						<collection>Sylvia Beach Papers</collection>
+						<idno>C0108</idno>
+					</msIdentifier>
+				</msDesc>
+				<xi:include href="../../personography.xml" xpointer="people" parse="xml">
+					<xi:fallback>
+						<listperson>
+							<head>People not available</head>
+							<person/>
+						</listperson>
+					</xi:fallback>
+				</xi:include>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode>
+				<!-- library cards -->
+			</textClass>
+			<particDesc>
+				<person role="cardholder" ana="#alve.el">
+					<persName>Elvira de Alvear</persName>
+				</person>
+			</particDesc>
+		</profileDesc>
+		<revisionDesc>
+			<change who="#cwulfman" when="2015-10-20">First transcription.</change>
+		</revisionDesc>
+	</teiHeader>
+	<facsimile xml:base="pudl0123/825298/a/alvear/">
+		<surfaceGrp type="envelope">
+			<surface xml:id="s1" type="recto">
+				<graphic url="00000001.jp2"/>
+			</surface>
+			<surface xml:id="s2" type="verso">
+				<graphic url="00000002.jp2"/>
+			</surface>
+		</surfaceGrp>
+		<!-- Nota Bene: cards appear to have been shot in reverse chronological order -->
+		<surfaceGrp type="card">
+			<surface xml:id="s3" type="recto">
+				<graphic url="00000003.jp2"/>
+			</surface>
+			<surface xml:id="s4" type="verso">
+				<graphic url="00000004.jp2"/>
+			</surface>
+		</surfaceGrp>
+		<surfaceGrp type="card">
+			<surface xml:id="s5" type="recto">
+				<graphic url="00000005.jp2"/>
+			</surface>
+			<surface xml:id="s6" type="verso">
+				<graphic url="00000006.jp2"/>
+			</surface>
+		</surfaceGrp>
+		<surfaceGrp type="card">
+			<surface xml:id="s7" type="recto">
+				<graphic url="00000007.jp2"/>
+			</surface>
+			<surface xml:id="s8" type="verso">
+				<graphic url="00000008.jp2"/>
+			</surface>
+		</surfaceGrp>
+		<surfaceGrp type="card">
+			<surface xml:id="s9" type="recto">
+				<graphic url="00000009.jp2"/>
+			</surface>
+			<surface xml:id="s10" type="verso">
+				<graphic url="00000010.jp2"/>
+			</surface>
+		</surfaceGrp>
+		<surfaceGrp type="card">
+			<surface xml:id="s11" type="recto">
+				<graphic url="00000011.jp2"/>
+			</surface>
+			<surface xml:id="s12" type="verso">
+				<graphic url="00000012.jp2"/>
+			</surface>
+		</surfaceGrp>
+	</facsimile>
+	<text>
+		<body>
+			<div>
+				<!-- The envelope -->
+				<div type="recto">
+					<pb facs="#s1"/>
+					<ab><unclear /> <persName ref="#alve.el">Madamoiselle E. de Alvear</persName></ab>
+				</div>
+				<div type="verso">
+					<pb facs="#s2"/>
+					<ab>
+						<address>
+							<orgName>Shakespeare and Company</orgName>
+							<persName>Sylvia Beach</persName>
+							<street>12 rue de l'Odéon</street>
+							<settlement>Paris</settlement> <district>VIe</district>
+						</address>
+					</ab>
+				</div>
+			</div>
+
+			<div type="card" n="1">
+				<!-- card 1 -->
+				<div type="recto">
+					<pb facs="#s7"/>
+					<head>
+						<date when="1928-04-27">1928 April 27</date>
+					<persName ref="#alve.el">Mademoiselle Elvira de Alvear</persName>
+					<note>(has forgotten her add.)</note>
+					
+					<date>11 de  Setti
+						Setiembre 1,4,6,9.</date>
+					<address><settlement>Buenos Aires</settlement>
+						<country>Argentina</country></address>
+					
+					
+					</head>						
+					
+					<ab>						
+						1 year
+						
+						
+						July 6th         <del> sent 2 parcelles (books left here to be sent)
+							
+							1 pound = 10,20              registered postage
+							1 p     =  9,30                  "         "
+							19,50</del>
+						
+					</ab>
+				</div>
+				<div type="verso">
+					<pb facs="#s8"/>
+					<!-- blank verso -->
+				</div>
+			</div>
+
+			<div type="card" n="2">
+				<!-- card 2 -->
+				<div type="recto">
+					<pb facs="#s5"/>
+					
+					<!-- untranscribed -->
+				</div>
+				<div type="verso">
+					<pb facs="#s6"/>
+					<!-- blank verso -->
+				</div>
+			</div>
+
+			<div type="card" n="3">
+				<!-- card 3 -->
+				<div type="recto">
+					<pb facs="#s3"/>
+				</div>
+				<div type="verso">
+					<pb facs="#s4"/>
+					<!-- blank verso -->
+				</div>
+			</div>
+
+
+
+			<div type="card" n="4">
+				<!-- card 4 is blank -->
+				<div type="recto">
+					<pb facs="#s9"/>
+				</div>
+				<div type="verso">
+					<pb facs="#s10"/>
+				</div>
+			</div>
+
+			<div>
+				<!-- 1 letter-head sheet -->
+				<div type="recto">
+					<pb facs="#s11"/>
+<head>
+
+	<address>					
+						<orgName>"SHAKESPEARE AND COMPANY"</orgName>
+						<persName ref="#beac.sy">-SYLVIA BEACH-</persName>
+						<street>12, RUE DE L'ODEON, 12</street>
+						<settlement>PARIS</settlement> <district>(VIe)</district>
+						<addrLine>Tel. Littre 33-76              R.C. Seine No284-402</addrLine>
+						
+</address>
+<address>						
+						<persName ref="#alve.el">Mademoiselle Elvira de Alvear</persName>
+						<street>40 rue Spontini</street>                        
+						<settlement>Paris</settlement> <district>16</district>
+						
+</address>						
+					<date when="1930-08-08">8 Aout 1930</date>
+					
+</head>					
+								
+<table>
+<row><cell><bibl><title>Disc from work in Progress</title>      <author>J. Joyce</author></bibl></cell> <cell>375</cell></row>
+<row><cell><bibl><title>Haveth Childers Everywhere</title> <author>&#x3003;</author> <note>signed no38</note></bibl></cell> <cell>850</cell></row>
+<row><cell><bibl><title>Pomes Penyeach</title>                  <author>J. Joyce</author></bibl></cell> <cell>12</cell></row>
+<row><cell><bibl><title>Anabasis</title>       <note>limited &amp; signed no99</note></bibl></cell> <cell>300</cell></row>
+<row><cell><bibl><title>Song for Simeon</title>       <unclear>"</unclear> <author>T.S. Eliot</author> no192</bibl></cell> <cell>100</cell></row>
+<row><cell><bibl><title>Alexander Pope</title>             by <author>E. Sitwell</author></bibl></cell> <cell>105</cell></row>
+<row><cell><bibl><title>The Bridge</title>                 by <author>Hart Crane</author></bibl></cell> <cell>70</cell></row>
+<row><cell><bibl><title>White Buildings</title>                <author>"    "</author></bibl></cell> <cell>56</cell></row>
+<row><cell><bibl><title>James Joyce's Ulysses</title>  by <author>Stuart Gilbert</author></bibl></cell> <cell>150</cell></row>
+<row><cell><bibl><title>Brief Candles</title>   by <author>A. Huxley</author> <note>1st edition</note></bibl></cell> <cell>110</cell></row>
+<row><cell><bibl><title>The One who is Legion</title> by <author>N.Barney</author> <note>limited</note></bibl></cell> <cell>160</cell></row>
+<row><cell><bibl><title>Transition Stories</title></bibl></cell> <cell>70</cell></row>
+<row><cell><bibl><title>Pansies</title>                by <author>D.H. Lawrence</author></bibl></cell> <cell>25</cell></row>
+<row><cell><bibl><title>American Mercury</title></bibl></cell> <cell>18</cell></row>
+<row><cell><bibl><title>Transition no19</title></bibl></cell> <cell>30</cell></row>
+	<row><cell>total  frs:</cell>                 <cell>2486</cell></row>
+	<row><cell>check given for Mlle Monnier</cell><cell>1050</cell></row>
+	<row><cell/>                                  <cell>3530</cell></row>
+</table>						
+
+				</div>
+				<div type="verso">
+					<pb facs="#s12"/>
+				</div>
+			</div>
+		</body>
+
+	</text>
+</TEI>
