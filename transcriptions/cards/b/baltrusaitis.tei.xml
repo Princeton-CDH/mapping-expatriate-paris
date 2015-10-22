@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"  xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
-                <respStmt xml:id="carlca">
+                <title>An Encoded Transcription of a Borrower's Card: Madame Helene Baltrusaitis</title>
+                <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cwulfman">
+                    <persName>Wulfman, Cliff</persName>
+                    <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -22,8 +27,25 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+                <xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#balt.he"><persName>Madame Helene Baltrusaitis</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
             <change who="#yournetid">
                 <ab>
@@ -43,30 +65,44 @@
     </facsimile>
     <text>
         <body>
-            <ab>
-                <pb facs="#s1" />
+            
+   <div type="card"> 
+       <div type="recto">
+                    <pb facs="#s1" />
+               
                 
-                1958	Madame Helene Baltrusaitis
-                		70 American Embassy
-                		
-                	  5 Villa Virginie		gob <*> 1873
-                	  	 	Paris . XIV
-                	  	 								returned
-                11 July		Short Stories of Scott Fitzgerald
-                			Pogo Party					returned
+<head>  
+    <date when="1958">1958</date>
+    
+    <persName ref="#balt.he">Madame Helene Baltrusaitis</persName>
+                		<address><addrLine>70 American Embassy</addrLine></address>
+                                        <note><unclear>gob</unclear>  1873</note>
+                	  <address>
+                	      <street>5 Villa Virginie</street>		
+                	  	 	<settlement>Paris.</settlement>
+                	      <district>XIV</district>
+                	  </address>
+                	  	 				</head>
+           <ab>
+ returned
+                <date when="1958-07-11">11 July</date>		<bibl><title>Short Stories of Scott Fitzgerald</title></bibl>
+                			<bibl><title>Pogo Party</title></bibl>					returned
                 
-                <*>		  	The Art of Whistler, Elizabeth Robbins Pennell
-                		  						returned April 20 1961
+                <unclear/>		  	<bibl><title>The Art of Whistler</title>, <author>Elizabeth Robbins Pennell</author></bibl>
+                		  						returned <date when="1961-04-20">April 20 1961</date>
                 
-                Dec 14 1961	Saturday Night & Sunday Morning AlanSilitoe
-                			Look Back in Anger. John Osborne
-                			John  Braine:The Vodi
-                
+                <date when="1961-12-14">Dec 14 1961</date>	<bibl><title>Saturday Night &amp; Sunday Morning</title> <author>Alan Silitoe</author></bibl>
+                			<bibl><title>Look Back in Anger</title>. <author>John Osborne</author></bibl>
+                			<bibl><author>John  Braine</author>:<title>The Vodi</title></bibl>
+           </ab>
+                </div>
+       <div type="verso">
                 <pb facs="#s2" />
                 
-                <!Blank Verso>
-                
-            </ab>
+                <!-- Blank Verso -->
+       </div>
+   </div>
+            
         </body>
     </text>
 </TEI>
