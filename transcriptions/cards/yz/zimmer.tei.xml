@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="zimm.is">Mademoiselle Isabelle Zimmer</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#zimm.is"><persName>Mademoiselle Isabelle Zimmerman</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2015-10-22">
+                <ab>
+                    s1: top line, blurred: <unclear/>
+                    s3: July 27: <unclear/>
+                </ab>
+                <p> First level encoding </p>
+                <p> No year for any of the dates! </p>
+                <p> Removed "unclear" tag and replaced with "Mashi" </p>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/yz/zimmer/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                        <head>
+                            
+                            <note>Student</note>	                   		<unclear/>
+                            <date>Jan 16</date>		<persName ref="zimm.is">Mademoiselle Isabelle Zimmer</persName>
+                            				<address><street>111 Bd St Michel</street></address>
+                        </head> 			
+                        <ab> 			
+                            			Subsc 3 mos.  1 vol.		9 60
+                              							Dep.		7 00
+                        </ab>
+                        <ab>
+                            							
+                            <date>Jan 16</date>		<bibl><title>Jungle Book</title></bibl>					<date>21 Fevr</date>
+                            <date>21 Fevr.</date>	<bibl><title>The Light that Failed</title></bibl>	<date>Feb 27</date>
+                            
+                            <date>Feb 27</date>		<bibl><title>Oliver Twist</title></bibl>			<date>March 18</date>
+                            
+                            <date>March 18</date>	<bibl><title>Three Men in a Boat</title></bibl>		<date>March 30</date>
+                            
+                            <date>March 30</date>	<bibl><title>Just So Stories</title></bibl>			<date>April 15</date>
+                            				<note>(Keep She)</note>
+                            
+                            <date>April 15</date>	<bibl><title>Under the Greenwood Tree</title></bibl>  <date>May 7</date>
+                            
+                            		Renewed <date>April 16</date> 3 mos	1 vol	9 60
+                            		
+                            <date>May 7</date>		<bibl><title>She	</title></bibl>					<date>May 18</date>
+                            
+                            <date>May 18</date>		<bibl><title>Adventure</title>, <author>J. London</author></bibl>	<date>June 3</date>
+                            
+                            <date>June 3</date>		<bibl><title>Gitanjali</title>, <author>Tagore</author></bibl>
+                            				bought
+                            				
+                            <date>Oct 30</date>		Renewed 3  mos	1 vol		9 60
+                            								Dep		7
+                            <date>Oct 30</date>		<bibl><title>The Passionate Friends</title></bibl>	<date>Nov 12</date>
+                        </ab>
+                </div>
+                <div type="verso">
+                    <pb facs="#s2" />
+                        <ab>
+                            <date>Nov 12</date>		<bibl><title>Wee Willie Winkie</title></bibl>		<date>Dec 7</date>
+                                
+                            <date>Dec 7</date>		<bibl><title>Hungry Stones</title></bibl>                
+                       </ab>
+                </div>
+                <div type="recto">   
+                    <pb facs="#s3" />
+                        <head> 
+                                			<persName ref="zimm.is">Mademoiselle Zimmer</persName>
+                                			  <address><addrLine>Chez <persName>Mme Goanvec</persName>
+                                			    Hotel Jolie Kerity
+                                			    				<district>Cote du Nord</district></addrLine></address>
+                        </head>
+                        <ab>
+                            <date>Dec 7</date>		<bibl><title>Hungry Stones</title></bibl>					<date>Dec 18</date>
+                                
+                            <date>Dec 18</date>		<bibl><title>The Gardener</title></bibl>					<date>Jan 3</date>
+                                
+                            <date>Jan 3</date>		<bibl><title>The Road</title></bibl>						<date>Jan 25</date>
+                                
+                            <date>Jan 25</date>		<bibl><title>Tales of Mystery &amp; Imagination</title></bibl>	<date>Feb 12</date>
+                                
+                            <date>Feb 12</date>		<bibl><title>Justice</title></bibl>							<date>March 1</date>
+                                
+                            <date>March 1</date>		<bibl><title>Shakespeare</title> (Tome 11)</bibl> 			<date>March 10</date>
+                                
+                            <date>March 10</date>	<bibl><title>Typhoon</title></bibl>							<date>April 4</date>
+                                
+                            <date>April 4</date>		<bibl><title>The Admirable Crighton</title></bibl>			<date>April 18</date>
+                                
+                            <date>April 18</date>	<bibl><title>The Crescent Moon</title></bibl>				<date>April 30</date>
+                                
+                            <date>April 30</date>	<bibl><title>Kim</title></bibl>								<date>June 10</date>
+                                
+                            <date>June 10</date>		<bibl><title>The Vicar of Wakefield</title></bibl>			<date>July 27</date>
+                                			(owes 30.40 for 6 mos
+                                			 subsc &amp; a fine)
+                            <date>Jan 30</date>		Renewed 6 mos 1 vol.
+                                
+                            <date>July 27</date>	<bibl><title>Mashi</title></bibl>								<date>August 17</date>
+                                	              <bibl><title> The Young Visitors</title></bibl>
+                        </ab>
+               </div>
+               <div type="verso">
+                    <pb facs="#s4" />
+                 
+                        <!-- Verso Blank -->
+               </div>
+            </div>      
+                    
+        </body>
+    </text>
+</TEI>

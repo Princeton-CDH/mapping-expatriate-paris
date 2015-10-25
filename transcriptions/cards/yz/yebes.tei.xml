@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="yebe">Comtesse de Yebes</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#yebe"><persName>Comtesse de Yebes</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2015-10-25">
+                <p> First level encoding </p>
+                <p> Changed "Nots" to "Note" and removed unclear tag </p>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/yz/yebes/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                        <head>
+                    
+                          		<persName ref="yebe">YEBES
+                          		  Comtesse de</persName>
+                          <date>1930</date>	 <address><street>Serrano 43,</street> <settlement>Madrid</settlement></address>
+                          		  <address><addrLine>(Villa Trois Fontaines,</addrLine> <settlement>Biarritz)</settlement></address>
+                        </head>
+                        <ab>
+                            (debit)							(B.P.)
+                        </ab>
+                        <ab>
+                          
+                          <date when="1930-10-09">Oct 9</date>	<bibl><title>The Edwardians</title>, <author>V. Sackville-West</author></bibl>		56,00
+                          								post.			 4,80
+                          		<bibl><title>The Water Gypsies,</title> <author>A.P. Herbert</author></bibl>			56,00
+                          		
+                          		<bibl><title>Bengal Lancer,</title> <author>Frances Yeats. Brown</author></bibl>		66,00
+                          								post.			 7,50
+                          		
+                          		<date when="1930-11-17">Nov. 17th</date>	paid					   190.30
+                          		
+                          		<bibl><title>Point Counterpoint</title></bibl>						25.
+                          		<bibl><title>Brief Candles</title></bibl>							12 50
+                          		<bibl><title>Room of one's own</title></bibl>						35
+                          		<bibl><title>Note in Music</title></bibl>						55
+                          		<bibl><title>Dumb Animal</title></bibl>								55
+                          		<bibl>2 <title>A.L.P.</title></bibl>								18
+                          		 <date when="1930-11-17">Nov. 17th</date>	paid					   200.50
+                          <date when="1931">1931</date>		sent to <address><addrLine>Les Trois Fontaines,</addrLine> <settlement>Biarritz</settlement></address>
+                          <date when="1931-10-06">Oct 6</date>	<bibl><title>Letters of K. Mansfield</title></bibl>					90.50
+                          		<bibl><title>Journal</title></bibl>									48
+                          		<bibl><title>Poems</title></bibl>									36
+                          		<bibl><title>Life as we have known it</title></bibl>				30
+                          		<bibl><title>Axel's Castle</title></bibl>							70
+                          						postage					10
+                          									paid	   281,50
+                          				sent bill <date when="1931-12-29">Dec. 29th '31</date>
+                          					received cheque <date when="1931-12-30">Dec 30</date>
+                        </ab>
+                </div>
+                <div type="verso">
+                    <pb facs="#s2" />
+                        <ab>
+                             <date when="1931-12-11">Dec 11</date>	<bibl><title>To Have &amp; Have Not</title></bibl>  returned <date when="1932-01-03">Jan 3</date>		75,00
+                             							  postage			 3,20
+                             <date when="1931-12-21">21</date>	<bibl><title>Pepita</title></bibl>									84
+                             							   post				 5
+                             <date when="1938">1938</date>
+                             <date when="1938-01-05">Jan 5</date>	<bibl><title>Pericles,</title> <author>Compton MacKenzie</author></bibl>			   153,00
+                             									post		 3,20
+                             											   248,40
+                             					sent bill <date when="1938-01-07">Jan 7</date> paid <date when="1938-01-27">Jan 27</date>
+                             
+                             
+                             <date when="1938-03-29">March 29</date>	<bibl><title>Decline &amp; Fall</title></bibl>						 6 50
+                             				post							 1 60
+                             
+                             <date when="1938-06-11">June 11</date>		<bibl><title>Three Guineas</title></bibl>						67 50
+                             							postage				 1 60
+                             												77.20
+                             			sent bill <date when="1938-07-02">July 2</date> paid by M.O. <date when="1938-07-22">July 22</date>
+                               <date when="1939">1939</date>
+                             <date when="1939-04-24">April 24</date>	postage returning <bibl><title>Rebecca</title></bibl>			 4.50
+                        </ab>
+                </div>
+            </div> 
+        </body>
+    </text>
+</TEI>
