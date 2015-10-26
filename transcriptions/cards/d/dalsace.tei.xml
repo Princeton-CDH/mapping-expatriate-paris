@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dals">Mme. Dalsace</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc><xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#dals"><persName>Mme. Dalsace</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-06-03">
+                <ab>
+                    Transcribed cards.
+                    
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/d/dalsace/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+    
+    </facsimile>
+    <text>
+        <body>
+            <div type="card"> 
+                <div type="recto">
+
+                <pb facs="#s1" />
+                    <ab>
+                <date when="1932">1932</date>		<persName ref="#dals">Mme. DALSACE</persName>		aut 41-78
+                 to
+                <date when="1933-03-17">17 March 1933</date>	<address><addrLine>5 avenue Alphonse XIII</addrLine></address>
+                						died <date when="1939">summer 1939</date>
+                <date when="1932-12-17">17 Dec.</date>		dep. 60		3m. 2v.  paid by	50f
+                			<bibl><title>Backwater</title></bibl>						<date when="1932-01-17">17 Jan</date> -
+                			<bibl><title>Pointed Roofs</title></bibl>					<date when="1932-12-31">31 Dec.</date>
+                			<bibl><title>D.M. Richardson</title></bibl>	<date when="1933-06-22">22 June</date>			3- Dec. ?
+                <date when="1932-12-30">30 Dec.</date>		<bibl><title>Honeycomb</title></bibl>						<date when="1933-04-07">7  April</date>
+                <date when="1933-01-17">17 Jan</date>		<bibl><title>Pointed Roof</title></bibl>	<date when="1933-06-22">22 June</date>
+                <date when="1933-03-29">29 March</date> letter
+                renewed <date when="1933-04-07">7 April</date> 1v 6mo 50f to <date when="1933-09-01">1 Sept. 1933</date>
+                <date when="1933-04-07">7 April</date>		<bibl><title>Dawns Left Hand</title></bibl>					<date when="1933-05-08">8 May</date>
+                
+                			extra book from
+                				<date when="1933-03-17">17 March</date> - to <date when="1933-05-08">8 May</date>
+                				
+                			too late to attend to now; move
+                			to la rentrée
+                <date when="1924-04">April 25</date>	<bibl><title>Dorothy Richardson</title> <author>(Powys)</author></bibl>
+                			Adelphi <date when="1924-04">April 1924</date>
+                    </ab>
+                </div>
+                <div type="verso">
+                <pb facs="#s2" />
+                <!-- verso blank -->
+                
+               
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
