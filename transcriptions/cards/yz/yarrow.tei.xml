@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <title>An Encoded Transcription A Borrower's Card:  <persName ref="yarr.c">Miss C. Yarrow</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -22,10 +26,36 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+                <xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#yarr.c"><persName>Miss C. Ybarra</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
-            <change who="#yournetid">
+            <change who="#elspeth" when="2015-10-27">
+                <p> First level encoding </p>
+                <ab>
+                Tried "biblScope" tag for the "Havelock Ellis" entries to note the volume #'s 
+                And used "from" and "to" within date tags to denote "Apr 7th 1934-1935"
+                Cleaned up "Short Novels XVIIIc" to include "v" for "volume #" instead of "L"
+                Changed "Prive" to "Private" on s4 "Diary of Leo Tolstoy"
+                Bottom of s4:  Changed "Told of Closing" to "told of closing" and did not classify as a bibl, looks more like a note
+                s5:  Changed "1935" to "1938" in subsc renewal info
+                s6:  Removed "unclear" tag and replaced with "Journey" in "Superficial Journey"
+                </ab>
                 <ab>
                     s2: 5 March P.C. <unclear/> (Crossed out)
                     s6: Mar 9	Superficial <unclear/>
@@ -63,239 +93,280 @@
     </facsimile>
     <text>
         <body>
-            <ab>
-                <pb facs="#s1" />
-                
-                1934		YARROW			LIT 83-39
-                			  Miss C.
-                			  114 rue de Vaugirard
-                7 April 1934 - 1935			dep. 50f		157.50f
-                			Flush							April 9
-                April 9		Lady with the Dog				April 13
-                 "			Cherry Orchard					April 13
-                 "	  13	Instigations						  16
-                 	  16	Tarr								  26
-                 			Red &amp; the Black 2 vols			  May 4
-                  May 4		Moll Flanders					 	  12
-                  	  12	Charterhouse of Parma card		 June 15
-                June  15	Ford's Plays		 12 June	  	  23
-                	  23	Death in the afternoon			 July 17
-                	  17	Artificial Princess				 July 18
-                	  18	Aspern Papers x					 13 Aug
-                8 Aug.		Modern Greece					  9
-                			Green view of life				  9
-                			Days in Attica					  9
-                9 "			Portrait of a Lady				  2 Oct.
-                			Reflections on the death of a porcupine 6"
-                Oct 15		Thus Spake (for sale copy)		  3 Nov
-                3 Nov.		Totem + taboo					  13 - 
-                3 - 		Spenser's Poems   0.50			 Nov 8
-                13 -		Ellis Studies III				 Nov 18
-                			 "	   "	  VII 0.50			 Nov 18
-                18			Blake (Oxford ed.)				 Dec 10
-                10			Way of all Flesh				 Dec 14
-                14 Dec.		  Dr. Doolittle		(extra)		 Dec 18
-                18			Heaven's My Destination			 Dec 28
-                28			Life as we have Known it		 Jan 2
-                Jan 2		Jane Eyre						 Jann 12                
-                
-                 <pb facs="#s2" />
-                
-                							Yarrow
-                Jan 12		Tenant of Wildfell Hall 2 vols		  	17
-                17			Life of C. Brontë Gaskell			9 Feb
-                17			Mill on the Floss						21
-                21 "		My life I. Duncan extra 18 days		9 Feb.
-                9 Feb_		Hamwood paper						18
-                9 - 		Short Novels XVIII c L. III 0.50 = 4f 18
-                9 -			As I Lay dying						  20
-                20 -		Erasmus								5
-                5 March.	Golden Bough (p.c. ap 25) P.C. <unclear/>
-                						p.c. Feb 10, 1936
-                										returned
-                				never returned				Oct. 29. 1936
-                				will return the book
-                				cancel bill and transfer
-                				dep. to new card
-                
-                Renewed O
-                
-                 <pb facs="#s3" />
-                
-                1936			YARROW
-                  Mlle. C.
-                  			Hotel St Pères.
-                  					Rue de St Pères. 6eme
-                  					
-                  			1 year. 2 vols.						300.
-                  									Deposit		 60
-                  			 pd. Oct 6.	Deposit from last time	 50
-                  			 	(pd. 100. will pay rest later)	110
-                Sept. 19. 1936	-	Sept 19: 1937
-                
-                Sept 19	.	A.B.C. Murders.					Sept 22
-                		Autobiographical Studies			Sept 28
-                Sept 22.	Closed Garden					Sept 26
-                 "	 26.	Oscar Wilde Discovers America	 Oct 6
-                 											 Sept 28
-                 		 	Sparkenbroke	50c a day		 Oct 15
-                 		 	Mary Mary.	pd. 50c a day 2v.	Sept 28
-                 Oct 6.		Murder on the Blue Train		 Oct 9
-                 			Art + Artist					 Oct 15.
-                 	 15.	Crock of Gold.					 Oct 29
-                 	 		Agamemnon  - - Oepidus			 Oct 24
-                 Oct 24		Feminane Attitudes.				 Oct 28
-                 							Golden Bar owes	109.00
-                 										returned
-                 Oct. 29	Chronicle of my Life			 Nov. 5
-                 	  29	Dog beneath the Skin			 Nov. 13
-                 Nov. 5		Counterfeiters					 Nov. 16
-                 	  13	New Writing Autumn					  16
-                 	  16	Final Struggle.					 Nov. 23.
-                 	  16	Immortalist						 Nov. 21
-                 	  21. 	Lafcadios Adventures.			 Nov. 21
-                 	  21	Christianity + Patriotism		 Dec 2
-                 	  21	Kreutzer Sonata					 Dec 7
-                 Dec. 2		What is Surrealism.				 Dec. 7
-                
-                 <pb facs="#s4" />
-                
-                1937				YARROW
-                		52 rue St Andrè des Arts.
-                Dec 2	Lafcadio's Adventures renewed. Dec 24. Jan 30
-                	7.	Oxford Book of Modern Verse.		Jan 4.
-                					sent p.c. Dec 30.
-                Jan 4.	Anatomy of Frustration				Jan 30.
-                	30.	Dierdre								Feb. 17
-                	30	Strange River.						Feb. 8
-                Feb 8	The Idiot.							Feb 17
-                		In the land of Youth (Extra) pd 10.	Feb. 17.
-                		Sylvia + Bruno.	(Extra)				April 24
-                	17	Inhibitions Symptoms + Anxiety		Feb 20
-                	20	Eyeless in Gaza.					March 3.
-                	20	Lord Jim.							Feb 22
-                Mar 3.	Indian Idylls						March 6
-                	3.	Holy Mountain						March 6
-                	6.	Lord Jim _	sent pc April 3.		April.24.
-                April 24 Lady Chatterley's Lover.			April 29.
-                		Shakespeare. M. Murray.				May 7
-                	29	Lawrence + Brett.						7
-                May 7	Not I but the wind.						12
-                	7.	Paul Cezanne.							12
-                	12	War and Peace.						July 26
-                	12	Prive Life Diary of Leo Tolstoy		June 15
-                June 15	Montaigne							July 26
-                	26	War + Peace	
-                	27	Etched in Moonlight					Oct 29
-                	27	Told of Closing	M.H.N.
-                		will be keeping books out while on
-                		holidays.
-                				subsc due Sept 14 1937
-                Oct 29	As I lay dying
-                
-                 <pb facs="#s5" />
-                
-                1937		YARROW Dauton 76-29					At noon
-                		   52 rue St André des Arts.Paris - V	 Home
-                		   
-                (June 26	War &amp; Peace still out) -------------returned
-                	  29	As I lay Dying	--	----		--	Jan. 24
-                Oct 30	 Renewed Sept 19 1937 - Sept 19 1935 	360v
-                
-                Oct 30	All Alone							Nov 22
-                Nov 22	Morte d'Arthur						Jan. 24
-                Jan. 24	Weather in the Streets				Feb. 4
-                		Movies for the Millions.			Feb. 4
-                Feb. 10	Invitation to the Waltz				Feb. 26
-                Feb. 26	Irsh Fairy Tales					March 1
-                Feb 26.	Movers + Shakers					March 1
-                March 1	What Maisie Knew					March 17
-                	  1	Ashenden							March 17
-                	17	Beaumont + Fletcher (II)			April 6
-                	17	Years								April 6
-                	
-            	April 6	Sanctuary							Apr 22
-            			Lawrence s Collected Poems			Apr. 22
-            	  "	 22	Collected Papers Freud				June 9
-            	  "  22	Light in August						June 9
-            	June 9	Imperial City						July 6
-            	July 6	Tobacco Road						July 8
-            	July 8	De Profundis						July 13
-            	July 13	Picture of Dorian Grey				July 21
-            	 "	 13	Study of British Genius				July 21
-            	July 21	Happy Prince + Other Tales			July 26
-            		 21	Sketch for a Portrait of Rimbaud	July 30
-            	July 26	T E Laurence &amp; his Friends			Sept. 15
-            		 30	Princess Casamassima				Sept 27
-            	Sept 15	Case of the Lame Canary				Sept 27
-                
-                 <pb facs="#s6" />
-                
-                										To Sept 19 1939
-                Oct 17	Grimm Fairy Tales					Nov 8
-                 Subscription 1 y	1 vol	300v
-                 	Make keep vol until we telephone her
-                 	without extra charge 	Dan. 76-29
-                 Renewed (supposedly) Sept 19. 1938	Home at Noon
-                 				   to Sept 19  1939
-                
-                Nov 8	Arthur Rimbaud						Dec 2
-                Dec 2/3	Possessed (Modern Movement in Art)	Dec 3
-                	2	Here are the Ladies		Dec 3		Jan 18
-                			Miss Yarrow came on the 3rd
-                			 brought back Modern Movement in Art
-                Dec 3		 took The Possessed				Feb 4
-                
-                Jan 18	Totem &amp; Taboo.						Feb 20
-                Feb 4	Gone with the Wind					Feb 13
-                	13	Letters of Lewis Carroll			Feb 16
-                	16	Jurgen								May 22
-                Mar 9	Superficial <unclear/>						March 27
-                March 27 Gulliver's Travels					July 19
-                May 22	Mosses from an Old Manse			July 26
-                		 p.c. June 14th
-                		Ask Mrs Yarrow about Mrs Carrington
-                	  Carrington who ordered a book, in Dec.
-                	  + did not come for it
-                	  		said was Mrs Max Ernst
-                	  		  write to rue Jacob
-                July 19	Sound &amp; The Fury					July 29
-                
-                July 26	Wuthering Heights <unclear/> Agnes Grey	Oct. 20
-                July 29	Daring young man					Oct. 20
-                 - 	 29	Sally Bowles						Oct. 20
-                 -	 29	Soldiers Play						Oct. 20
-                 - 	 29 Wild Palms  A purse of copper		Oct. 20 <!--crossed out -->
-                 	 29	Life alone the passaic river		Oct. 20
-                
-                 <pb facs="#s7" />
-                
-                1939		YARROW
-                			  Miss C.
-                			114 rue de Vaugirard 52 rue St. André
-                										des Arts. Paris V
-                		has still 15 days from Oct. 20
-                
-                July 24.	A purse of copper				Oct. 20
-                Oct. 20		Dr Jekyl and Mr. Hyde			Dec 14
-                								ren. Nov. 22
-                Ren. 6 m. 2 vol. Nov. 22 1939 to May 22 1940. 180v.
-                
-                Nov. 22		Twilight of the Idols			Jan 2.
-                Dec 14		Mysteries of Udolpho			Feb 6
-                Jan 2		Studies. H. Ellis vol III		April 29
-                Feb 6		Edgar Allen Poe. Ransome		April 29
-                April 29	Story of an African Farm		May 1st
-                	  29	Keats Poems OSA					May 18
-                May 1st		Life of Olive Schreiner			May 9
-                	9		Mother Goose					June 6
-                	18		Totem &amp; Taboo					June 6
-                
-                 <pb facs="#s8" />
-                
-                <!-- Verso Blank -->
-                
-            </ab>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                        <head>
+                        <date when="1934">1934</date>		<note>LIT 83-39 <!-- phone # --></note>
+                                      <persName ref="yarr.c">YARROW			
+                         			  Miss C.</persName>
+                         			  <address><street>114 rue de Vaugirard</street></address>
+                        </head>
+                        <ab>
+                         <date from="1934-04-07" to="1935-04-07">7 April 1934 - 1935</date>		dep. 50f		157.50f
+                        </ab>
+                        <ab>
+                         			<bibl><title>Flush</title></bibl>							<date when="1934-04-09">April 9</date>
+                         <date when="1934-04-09">April 9</date>		<bibl><title>Lady with the Dog</title></bibl>	<date when="1934-04-13">April 13</date>
+                         <date when="1934-04-09"> "	</date>		<bibl><title>Cherry Orchard</title></bibl>		<date when="1934-04-13">April 13</date>
+                         <date when="1934-04-13">"    13</date>	<bibl><title>Instigations</title></bibl>		<date when="1934-04-16">  16</date>
+                         <date when="1934-04-16"> 	  16</date>	<bibl><title>Tarr</title></bibl>				<date when="1934-04-26">	26</date>
+                          			<bibl><title>Red &amp; the Black</title> 2 vols</bibl>			            <date when="1934-05-04">May 4</date>
+                         <date when="1934-05-04"> May 4</date>	<bibl><title>Moll Flanders</title></bibl>		<date when="1934-05-12">  12</date>
+                         <date when="1934-05-12">	  12</date>	<bibl><title>Charterhouse of Parma</title></bibl> <note>card	12 June</note>	 <date when="1934-06-15">June 15</date>
+                         <date when="1934-06-15">June  15</date> <bibl><title>Ford's Plays</title></bibl>		<date when="1934-06-23">  23</date>
+                         <date when="1934-06-23">	  23</date>	<bibl><title>Death in the afternoon</title></bibl>	<date when="1934-07-17">July 17</date>
+                         <date when="1934-07-17">	  17</date>	<bibl><title>Artificial Princess</title></bibl>	<date when="1934-07-18">July 18</date>
+                         <date when="1934-07-18">	  18</date>	<bibl><title>Aspern Papers</title></bibl> x		<date when="1934-08-13">13 Aug</date>
+                         <date when="1934-08-08">8 Aug.</date>	<bibl><title>Modern Greece</title></bibl>		<date when="1934-08-09">  9</date>
+                         			                            <bibl><title>Green view of life</title></bibl>	<date when="1934-08-09">  9</date>
+                         			                            <bibl><title>Days in Attica</title></bibl>		<date when="1934-08-09">  9</date>
+                         <date when="1934-08-09">9 "</date>		<bibl><title>Portrait of a Lady</title></bibl>	<date when="1934-10-02">2 Oct.</date>
+                         			                            <bibl><title>Reflections on the death of a porcupine</title></bibl> <date when="1934-10-06">6"</date>
+                         <date when="1934-10-15">Oct 15</date>	<bibl><title>Thus Spake</title></bibl> (for sale copy)	<date when="1934-11-03">3 Nov</date>
+                         <date when="1934-11-03">3 Nov.</date>	<bibl><title>Totem + taboo</title></bibl>		<date when="1934-11-13">13 - </date>
+                         <date when="1934-11-03">3 - </date>	<bibl><title>Spenser's Poems</title></bibl>   0.50	 <date when="1934-11-08">Nov 8</date>
+                         <date when="1934-11-13">13 -</date>	<bibl><title>Ellis Studies</title><biblScope unit="volume"> III</biblScope></bibl>	<date when="1934-11-18">Nov 18</date>
+                         			                            <bibl><title>"	   "</title><biblScope unit="volume">	  VII</biblScope></bibl> 0.50 <date when="1934-11-18"> Nov 18</date>
+                         <date when="1934-11-18">18	</date>		<bibl><title>Blake</title> (Oxford ed.)</bibl>	 <date when="1934-12-10">Dec 10</date>
+                         <date when="1934-12-10">10	</date>		<bibl><title>Way of all Flesh</title></bibl>	 <date when="1934-12-14">Dec 14</date>
+                         <date when="1934-12-14">14 Dec.</date>	<bibl><title>Dr. Doolittle</title></bibl> (extra) <date when="1934-12-18"> Dec 18</date>
+                         <date when="1934-12-18">18	</date>		<bibl><title>Heaven's My Destination</title></bibl>	<date when="1934-12-28">Dec 28</date>
+                         <date when="1934-12-28">28	</date>		<bibl><title>Life as we have Known it</title></bibl> <date when="1935-01-02">Jan 2</date>
+                         <date when="1935-01-02">Jan 2</date>	<bibl><title>Jane Eyre</title></bibl>			  <date when="1935-01-12">Jann 12</date>                
+                        </ab>
+                </div>
+                <div type="verso">
+                     <pb facs="#s2" />
+                        <head>
+                    							<persName ref="yarr.c">Yarrow</persName>
+                        </head>
+                        <ab>
+                        <date when="1935-01-12">Jan 12</date>	<bibl><title>Tenant of Wildfell Hall</title></bibl> 2 vols	<date when="1935-01-17">	17</date>
+                        <date when="1935-01-17">17	</date>		<bibl><title>Life of C. Brontë</title> <author>Gaskell</author></bibl>	<date when="1935-02-09">9 Feb</date>
+                        <date when="1935-01-17">17	</date>		<bibl><title>Mill on the Floss</title></bibl>	<date when="1935-01-21">	21</date>
+                        <date when="1935-01-21">21 "</date>		<bibl><title>My life</title> <author>I. Duncan</author></bibl> extra 18 days <date when="1935-02-09">9 Feb.</date>
+                        <date when="1935-02-09">9 Feb_	</date>	<bibl><title>Hamwood paper</title></bibl>		<date when="1935-02-18">18</date>
+                        <date when="1935-02-09">9 - </date>		<bibl><title>Short Novels XVIIIc</title> <biblScope unit="volume">v. III</biblScope></bibl> 0.50 = 4f <date when="1935-02-18">18</date>
+                        <date when="1935-02-09">9 -	</date>		<bibl><title>As I Lay dying</title></bibl>		<date when="1935-02-20">20</date>
+                        <date when="1935-02-20">20 -</date>		<bibl><title>Erasmus</title></bibl>				<date when="1935-03-05">	5</date>
+                        <date when="1935-03-05">5 March.</date>	<bibl><title>Golden Bough</title></bibl> (p.c. <date when="1935-04-25">ap 25</date>) P.C. <unclear/>
+                        						p.c. <date when="1936-02-10">Feb 10, 1936</date>
+                                                                
+                                        never returned				returned <date when="1936-10-29">Oct. 29. 1936</date>
+                        				will return the book
+                        				cancel bill and transfer
+                        				dep. to new card
+                        
+                        Renewed O
+                        </ab>
+                </div>
+                 <div type="recto">
+                     <pb facs="#s3" />
+                        <head>
+                         <date when="1936">1936</date>			<persName ref="yarr.c">YARROW
+                                                                 Mlle. C.</persName>
+                           			<address><addrLine>Hotel St Pères.</addrLine>
+                           					<street>Rue de St Pères.</street> <district>6eme</district></address>
+                        </head>
+                        <ab>			
+                           			1 year. 2 vols.						300.
+                           									Deposit		 60
+                           			 pd. <date when="1936-10-06">Oct 6.</date>	Deposit from last time	 50
+                           			 	(pd. 100. will pay rest later)	110
+                         <date from="1936-09-19" to="1937-09-19">Sept. 19. 1936	-	Sept 19: 1937</date>
+                        </ab>
+                        <ab>
+                         <date when="1936-09-19">Sept 19.</date> <bibl><title>A.B.C. Murders.	</title></bibl>	<date when="1936-09-22">Sept 22</date>
+                         		                                 <bibl><title>Autobiographical Studies</title></bibl>	<date when="1936-09-28">Sept 28</date>
+                         <date when="1936-09-22">Sept 22.</date> <bibl><title>Closed Garden</title></bibl>		<date when="1936-09-26">Sept 26</date>
+                         <date when="1936-09-26"> "	 26.</date>	 <bibl><title>Oscar Wilde Discovers America</title></bibl> <date when="1936-10-06">Oct 6</date>
+                          											                                            <date when="1936-09-28"> Sept 28 <!-- crossed out --></date>
+                          		 	                             <bibl><title>Sparkenbroke</title></bibl>	50c a day <date when="1936-10-15"> Oct 15</date>
+                          		 	                             <bibl><title>Mary Mary.</title></bibl>	pd. 50c a day 2v. <date when="1936-09-28">Sept 28</date>
+                         <date when="1936-10-06">Oct 6.</date>	 <bibl><title>Murder on the Blue Train</title></bibl> <date when="1936-10-09">Oct 9</date>
+                          			                             <bibl><title>Art + Artist</title></bibl>		<date when="1936-10-15"> Oct 15.</date>
+                         <date when="1936-10-15"> 	 15.</date>	 <bibl><title>Crock of Gold.</title></bibl>		<date when="1936-10-29"> Oct 29</date>
+                          	 		                             <bibl><title>Agamemnon  - - Oepidus</title></bibl>	<date when="1936-10-24">Oct 24</date>
+                         <date when="1936-10-24"> Oct 24</date>	 <bibl><title>Feminane Attitudes.</title></bibl> <date when="1936-10-28"> Oct 28</date>
+                          							             <bibl><title>Golden Bar</title></bibl> owes	109.00
+                          										                                            returned
+                         <date when="1936-10-29">Oct. 29</date>	 <bibl><title>Chronicle of my Life</title></bibl> <date when="1936-11-05">Nov. 5</date>
+                         <date when="1936-10-29"> 	  29</date>	 <bibl><title>Dog beneath the Skin</title></bibl> <date when="1936-11-13">Nov. 13</date>
+                         <date when="1936-11-05"> Nov. 5</date>	 <bibl><title>Counterfeiters</title></bibl>		<date when="1936-11-16">Nov. 16</date>
+                         <date when="1936-11-13"> 	  13</date>	 <bibl><title>New Writing Autumn</title></bibl>	<date when="1936-11-16">  16</date>
+                         <date when="1936-11-16"> 	  16</date>	 <bibl><title>Final Struggle.	</title></bibl>	<date when="1936-11-23"> Nov. 23.</date>
+                         <date when="1936-11-16"> 	  16</date>	 <bibl><title>Immortalist</title></bibl>		<date when="1936-11-21"> Nov. 21</date>
+                         <date when="1936-11-21"> 	  21.</date> <bibl><title>Lafcadios Adventures.</title></bibl> <date when="1936-11-21">Nov. 21</date>
+                         <date when="1936-11-21"> 	  21</date>	 <bibl><title>Christianity + Patriotism</title></bibl> <date when="1936-12-02"> Dec 2</date>
+                         <date when="1936-11-21"> 	  21</date>	 <bibl><title>Kreutzer Sonata</title></bibl>	<date when="1936-12-07"> Dec 7</date>
+                         <date when="1936-12-02"> Dec. 2</date>	 <bibl><title>What is Surrealism.</title></bibl><date when="1936-12-07"> Dec. 7</date>
+                        </ab>
+                 </div>
+                 <div type="verso">
+                     <pb facs="#s4" />
+                        <head>
+                        <date when="1937">1937</date>				<persName ref="yarr.c">YARROW</persName>
+                        		<address><street>52 rue St Andrè des Arts.</street></address>
+                        </head>
+                        <ab>
+                        <date when="1936-12-02">Dec 2</date>	<bibl><title>Lafcadio's Adventures</title></bibl> renewed. <date when="1936-12-24">Dec 24.</date> <date when="1937-01-30">Jan 30</date>
+                        <date when="1936-12-07">	7.</date>	<bibl><title>Oxford Book of Modern Verse.</title></bibl> <date when="1937-01-04">Jan 4.</date>
+                        					sent p.c. <date when="1936-12-30">Dec 30.</date>
+                        <date when="1937-01-04">Jan 4.</date>	<bibl><title>Anatomy of Frustration</title></bibl> <date when="1937-01-30">Jan 30.</date>
+                        <date when="1937-01-30">	30.</date>	<bibl><title>Dierdre</title></bibl>				<date when="1937-02-17">Feb. 17</date>
+                        <date when="1937-01-30">	30</date>	<bibl><title>Strange River.</title></bibl>		<date when="1937-02-08">Feb. 8</date>
+                        <date when="1937-02-08">Feb 8</date>	<bibl><title>The Idiot.</title></bibl>			<date when="1937-02-17">Feb 17</date>
+                        		                                <bibl><title>In the land of Youth</title></bibl> (Extra) pd 10.	<date when="1937-02-17">Feb. 17.</date>
+                        		                                <bibl><title>Sylvia + Bruno.</title></bibl>	(Extra)	<date when="1937-04-24">April 24</date>
+                        <date when="1937-02-17">	17</date>	<bibl><title>Inhibitions Symptoms + Anxiety</title></bibl> <date when="1937-02-20">Feb 20</date>
+                        <date when="1937-02-20">	20</date>	<bibl><title>Eyeless in Gaza.</title></bibl>	<date when="1937-03-03">March 3.</date>
+                        <date when="1937-02-20">	20</date>	<bibl><title>Lord Jim.</title></bibl>			<date when="1937-02-22">Feb 22</date>
+                        <date when="1937-03-03">Mar 3.</date>	<bibl><title>Indian Idylls</title></bibl>		<date when="1937-03-06">March 6</date>
+                        <date when="1937-03-03">	3.</date>	<bibl><title>Holy Mountain</title></bibl>		<date when="1937-03-06">March 6</date>
+                        <date when="1937-03-06">	6.</date>	<bibl><title>Lord Jim</title></bibl> _	sent pc <date when="1937-04-03">April 3.</date>		<date when="1937-04-24">April.24.</date>
+                        <date when="1937-04-24">April 24</date> <bibl><title>Lady Chatterley's Lover.</title></bibl> <date when="1937-04-29">April 29.</date>
+                        		                                <bibl><title>Shakespeare.</title> <author>M. Murray.</author></bibl> <date when="1937-05-07">May 7</date>
+                        <date when="1937-04-29">	29</date>	<bibl><title>Lawrence + Brett.</title></bibl>	<date when="1937-05-07">	7</date>
+                        <date when="1937-05-07">May 7</date>	<bibl><title>Not I but the wind.</title></bibl>	<date when="1937-05-12">	12</date>
+                        <date when="1937-05-07">	7.</date>	<bibl><title>Paul Cezanne.</title></bibl>		<date when="1937-05-12">	12</date>
+                        <date when="1937-05-12">	12</date>	<bibl><title>War and Peace.</title></bibl>		<date when="1937-07-26">July 26</date>
+                        <date when="1937-05-12">	12</date>	<bibl><title>Private Life Diary of Leo Tolstoy</title></bibl> <date when="1937-06-15">June 15</date>
+                        <date when="1937-06-15">June 15</date>	<bibl><title>Montaigne</title></bibl>			<date when="1937-07-26">July 26</date>
+                        <date when="1937-06-26">	26</date>	<bibl><title>War + Peace</title></bibl>	
+                        <date when="1937-06-27">	27</date>	<bibl><title>Etched in Moonlight</title></bibl>	<date when="1937-10-29">Oct 29</date>
+                        <date when="1937-06-27">	27</date>	told of closing	<persName>M.H.N. <!-- looks like initials --></persName>
+                        		                                will be keeping books out while on
+                        		                                holidays.
+                        				                            subsc due <date when="1937-09-14">Sept 14 1937</date>
+                        <date when="1937-09-29">Oct 29</date>	<bibl><title>As I lay dying</title></bibl>
+                        </ab>
+                 </div>
+                 <div type="recto">
+                     <pb facs="#s5" />
+                        <head>
+                        <date when="1937">1937</date>		<persName ref="yarr.c">YARROW</persName> <note>Dauton 76-29	At noon Home <!-- phone # with time to call --></note>
+                        		   <address><street>52 rue St André des Arts.</street> <settlement>Paris</settlement> <district>- V</district></address>	 
+                        </head>
+                        <ab>
+                        (<date when="1937-06-26">June 26</date>	<bibl><title>War &amp; Peace</title></bibl> still out) -------------returned
+                        <date when="1937-06-29">	  29</date>	<bibl><title>As I lay Dying</title></bibl>	--	----		--	<date when="1938-01-24">Jan. 24</date>
+                        </ab>
+                        <ab>
+                        <date when="1937-10-30">Oct 30</date>	 Renewed <date from="1937-09-19" to="1938-09-19">Sept 19 1937 - Sept 19 1938</date> 	360v
+                        </ab>
+                        <ab>
+                        <date when="1937-10-30">Oct 30</date>	<bibl><title>All Alone</title></bibl>		    <date when="1937-11-22">Nov 22</date>
+                        <date when="1937-11-22">Nov 22</date>	<bibl><title>Morte d'Arthur</title></bibl>	    <date when="1938-01-24">Jan. 24</date>
+                        <date when="1938-01-24">Jan. 24</date>	<bibl><title>Weather in the Streets</title></bibl> <date when="1938-02-04">Feb. 4</date>
+                        		                                <bibl><title>Movies for the Millions.</title></bibl> <date when="1938-02-04">Feb. 4</date>
+                        <date when="1938-02-10">Feb. 10</date>	<bibl><title>Invitation to the Waltz</title></bibl>	<date when="1938-02-26">Feb. 26</date>
+                        <date when="1938-02-26">Feb. 26</date>	<bibl><title>Irsh Fairy Tales</title></bibl>    <date when="1938-03-01">March 1</date>
+                        <date when="1938-02-26">Feb 26.</date>	<bibl><title>Movers + Shakers</title></bibl>    <date when="1938-03-01">March 1</date>
+                        <date when="1938-03-01">March 1</date>	<bibl><title>What Maisie Knew</title></bibl>    <date when="1938-03-17">March 17</date>
+                        <date when="1938-03-01">	  1</date>	<bibl><title>Ashenden</title></bibl>		    <date when="1938-03-17">March 17</date>
+                        <date when="1938-03-17">	17</date>	<bibl><title>Beaumont + Fletcher</title><biblScope unit="volume"> (II)</biblScope></bibl> <date when="1938-04-06">April 6</date>
+                        <date when="1938-03-17">	17</date>	<bibl><title>Years</title></bibl>				<date when="1938-04-06">April 6</date>
+                        	
+                    	<date when="1938-04-06">April 6</date>	<bibl><title>Sanctuary</title></bibl>			<date when="1938-04-22">Apr 22</date>
+                    			<bibl><author>Lawrence s</author> <title>Collected Poems</title></bibl>			<date when="1938-04-22">Apr. 22</date>
+                    	<date when="1938-04-22">  "	 22</date>	<bibl><title>Collected Papers</title> <author>Freud</author></bibl>	<date when="1938-06-09">June 9</date>
+                    	<date when="1938-04-22">  "  22</date>	<bibl><title>Light in August</title></bibl>		<date when="1938-06-09">June 9</date>
+                    	<date when="1938-06-09">June 9</date>	<bibl><title>Imperial City</title></bibl>		<date when="1938-07-06">July 6</date>
+                    	<date when="1938-07-06">July 6</date>	<bibl><title>Tobacco Road</title></bibl>	    <date when="1938-07-08">July 8</date>
+                    	<date when="1938-07-08">July 8</date>	<bibl><title>De Profundis</title></bibl>		<date when="1938-07-13">July 13</date>
+                    	<date when="1938-07-13">July 13</date>	<bibl><title>Picture of Dorian Grey</title></bibl> <date when="1938-07-21">July 21</date>
+                    	<date when="1938-07-13"> "	 13</date>	<bibl><title>Study of British Genius</title></bibl>	<date when="1938-07-21">July 21</date>
+                    	<date when="1938-07-21">July 21</date>	<bibl><title>Happy Prince + Other Tales</title></bibl> <date when="1938-07-26">July 26</date>
+                    	<date when="1938-07-21">	 21</date>	<bibl><title>Sketch for a Portrait of Rimbaud</title></bibl> <date when="1938-07-30">July 30</date>
+                    	<date when="1938-07-26">July 26</date>	<bibl><title>T E Laurence &amp; his Friends</title></bibl> <date when="1938-09-15">Sept. 15</date>
+                    	<date when="1938-07-30">	 30</date>	<bibl><title>Princess Casamassima</title></bibl> <date when="1938-09-27">Sept 27</date>
+                    	<date when="1938-09-15">Sept 15</date>	<bibl><title>Case of the Lame Canary</title></bibl>	<date when="1938-09-27">Sept 27</date>
+                        </ab>
+                 </div>
+                 <div type="verso">
+                     <pb facs="#s6" />
+                        <head>
+                    										  <date from="1938-09-19" to="1939-09-19">To Sept 19 1939</date>
+                        </head>
+                        <ab>
+                        <date when="1938-10-17">Oct 17</date>	<bibl><title>Grimm Fairy Tales</title></bibl>	<date when="1938-11-08">Nov 8</date>
+                        </ab>
+                        <ab>
+                         Subscription 1 y	1 vol	300v
+                         	Make keep vol until we telephone <persName ref="yarr.c">her</persName>
+                         	without extra charge 	<note>Dan. 76-29  Home at Noon <!-- phone # and time to call --></note>
+                         Renewed (supposedly) <date from="1938-09-19" to="1939-09-19">Sept 19. 1938	
+                         				   to Sept 19  1939</date>
+                        </ab>
+                        <ab>
+                        <date when="1938-11-08">Nov 8</date>	<bibl><title>Arthur Rimbaud</title></bibl>		<date when="1938-12-02">Dec 2</date>
+                        <date when="1938-12-02">Dec 2 <!-- crossed out --></date> <date when="1938-12-03">3</date>	<bibl><title>Possessed <!-- crossed out --></title></bibl> <bibl><title>(Modern Movement in Art)</title></bibl>	<date when="1938-12-03">Dec 3</date>
+                        <date when="1938-12-02">	2</date>	<bibl><title>Here are the Ladies</title></bibl>		<date when="1938-12-03">Dec 3 <!-- crossed out --></date> <date when="1939-01-18">Jan 18</date>
+                        			<persName ref="yarr.c">Miss Yarrow</persName> came on the <date when="1938-12-03">3rd</date>
+                        			 brought back <bibl><title>Modern Movement in Art</title></bibl>
+                        <date when="1938-12-03">Dec 3</date>	<bibl><title>took The Possessed</title></bibl>	<date when="1939-02-04">Feb 4</date>
+                        
+                        <date when="1939-01-18">Jan 18</date>	<bibl><title>Totem &amp; Taboo.</title></bibl>	<date when="1939-02-20">Feb 20</date>
+                        <date when="1939-02-04">Feb 4</date>	<bibl><title>Gone with the Wind</title></bibl>	<date when="1939-02-13">Feb 13</date>
+                        <date when="1939-02-13">	13</date>	<bibl><title>Letters of Lewis Carroll</title></bibl> <date when="1939-02-16">Feb 16</date>
+                        <date when="1939-02-16">	16</date>	<bibl><title>Jurgen</title></bibl>				<date when="1939-05-22">May 22</date>
+                        <date when="1939-03-09">Mar 9</date>	<bibl><title>Superficial Journey</title></bibl>	<date when="1939-03-27">March 27</date>
+                        <date when="1939-03-27">March 27</date> <bibl><title>Gulliver's Travels</title></bibl>	<date when="1939-07-19">July 19</date>
+                        <date when="1939-05-22">May 22</date>	<bibl><title>Mosses from an Old Manse</title></bibl> <date when="1939-07-26">July 26</date>
+                        		 p.c. <date when="1939-06-14">June 14th</date>
+                        		Ask <persName ref="yarr.c">Mrs Yarrow</persName> about <persName>Miss Carrington</persName>
+                        	  <persName>Carrington</persName> who ordered a book, in <date when="1938-12">Dec.</date>
+                        	  + did not come for it
+                        	  		said was <persName>Mrs Max Ernst <!-- married name of "Leonora Carrington," who didn't actually marry Max Ernst? --></persName>
+                        	  		  write to <address><street>rue Jacob</street></address>
+                        <date when="1939-07-19">July 19</date>	<bibl><title>Sound &amp; The Fury</title></bibl> <date when="1939-07-29">July 29</date>
+                        
+                        <date when="1939-07-26">July 26</date>	<bibl><title>Wuthering Heights</title></bibl> <unclear/> <bibl><title>Agnes Grey</title></bibl>	<date when="1939-10-20">Oct. 20</date>
+                        <date when="1939-07-29">July 29</date>	<bibl><title>Daring young man</title></bibl>	<date when="1939-10-20">Oct. 20</date>
+                        <date when="1939-07-29"> - 	 29</date>	<bibl><title>Sally Bowles</title></bibl>		<date when="1939-10-20">Oct. 20</date>
+                        <date when="1939-07-29"> -	 29</date>	<bibl><title>Soldiers Play</title></bibl>		<date when="1939-10-20">Oct. 20</date>
+                        <date when="1939-07-29"> - 	 29</date>  <bibl><title>Wild Palms <!-- crossed out --></title></bibl>  <bibl><title>A purse of copper <!-- crossed out --></title></bibl>	<date when="1939-10-20">Oct. 20 </date>
+                        <date when="1939-07-29"> 	 29</date>	<bibl><title>Life alone the passaic river</title></bibl> <date when="1939-10-20">Oct. 20</date>
+                        </ab>
+                 </div>
+                 <div type="recto">
+                     <pb facs="#s7" />
+                        <head>
+                        <date when="1939">1939</date>		<persName ref="yarr.c">YARROW
+                        			                           Miss C.</persName>
+                        			<address><street>114 rue de Vaugirard <!-- crossed out --></street></address> <address><street>52 rue St. André
+                        										des Arts.</street> <settlement>Paris</settlement> <district>V</district></address>
+                        </head>
+                        <ab>
+                        		has still 15 days from <date when="1939-10-20">Oct. 20</date>
+                        </ab>
+                        <ab>
+                        <date when="1939-07-24">July 24.</date>	<bibl><title>A purse of copper</title></bibl>	<date when="1939-10-20">Oct. 20</date>
+                        <date when="1939-10-20">Oct. 20</date>	<bibl><title>Dr Jekyl and Mr. Hyde</title></bibl> <date when="1939-12-14">Dec 14</date>
+                        </ab>
+                        <ab>
+                        								ren. <date when="1939-11-22">Nov. 22</date>
+                        Ren. 6 m. 2 vol. <date from="1939-11-22" to="1940-05-22">Nov. 22 1939 to May 22 1940.</date> 180v.
+                        </ab>
+                        <ab>
+                        <date when="1939-11-22">Nov. 22</date>		<bibl><title>Twilight of the Idols</title></bibl> <date when="1940-01-02">Jan 2.</date>
+                        <date when="1939-12-14">Dec 14</date>		<bibl><title>Mysteries of Udolpho</title></bibl> <date when="1940-02-06">Feb 6</date>
+                        <date when="1940-01-02">Jan 2</date>		<bibl><title>Studies.</title> <author>H. Ellis</author> <biblScope unit="volume">vol III</biblScope></bibl>	<date when="1940-04-29">April 29</date>
+                        <date when="1940-02-06">Feb 6</date>		<bibl><title>Edgar Allen Poe.</title> <author>Ransome</author></bibl> <date when="1940-04-29">April 29</date>
+                        <date when="1940-04-29">April 29</date>	    <bibl><title>Story of an African Farm</title></bibl> <date when="1940-05-01">May 1st</date>
+                        <date when="1940-04-29">	  29</date>	    <bibl><author>Keats</author> <title>Poems</title> OSA <!-- what is this? --></bibl>	<date when="1940-05-18">May 18</date>
+                        <date when="1940-05-01">May 1st</date>		<bibl><title>Life of Olive Schreiner</title></bibl>	<date when="1940-05-09">May 9</date>
+                        <date when="1940-05-09">	9</date>		<bibl><title>Mother Goose</title></bibl>	<date when="1940-06-06">June 6</date>
+                        <date when="1940-05-18">	18</date>		<bibl><title>Totem &amp; Taboo</title></bibl> <date when="1940-06-06">June 6</date>
+                        </ab>
+                 </div>
+                 <div type="verso">
+                     <pb facs="#s8" />
+                    
+                    <!-- Verso Blank -->
+                 </div>
+             </div>
         </body>
     </text>
 </TEI>
