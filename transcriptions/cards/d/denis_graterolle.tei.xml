@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#daum.re">René Daumal</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#deni">Madame Denis-Graterolle</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
@@ -41,69 +41,73 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#daum.re"><persName>René Daumal</persName></person>
+                <person role="cardholder" ana="#deni"><persName>Mme. Denis-Graterolle</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-03">
+            <change who="elspeth" when="2015-06-08">
                 <ab>
                     Transcribed cards.
+                    s1:
+                    	Postage stamp?  Name written on, 
+                    	<unclear/> = no idea
+                    s2:
+                    	Back of "Bureau de cheque postaux", amount is filled out by hand
+                  
                     
                     	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/d/daumal/">
+    <facsimile xml:base="pudl0123/825298/d/denis_graterolle/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
         <surface xml:id="s2">
         	<graphic url="00000002.jp2" />
         </surface>
+      
+       
     
     </facsimile>
     <text>
         <body>
-            <div type="card"> 
-                <div type="recto">
-          <head>
-                <pb facs="#s1" />
-                <date when="1940">1940</date>		<persName ref="#daum.re">René Daumal</persName>
-                ( <address><orgName>NRF.</orgName>
-                    <settlement>à Mirande</settlement>
-               			<settlement>par Sartilly</settlement> <district>(Manche)</district></address>
-               	</head>
-              <ab> <date when="1940-06">June 10</date>		<persName ref="#beac.sy">SB</persName> cashed cheque for £12.5.0
-               					at 175
-               						paid			  2.125
-               				expenses to be deducted
-               				balance to be paid when
-               				<persName ref="#daum.re">M. Daumal</persName> sends address
-               				
-               				cheque on guaranty trust company
-               				of <address><placeName>New York, Bush House,</placeName> <district>Aldwych,</district>
-               				<settlement>London</settlement> <postCode>WC2</postCode></address>
-               					dated <date when="1940-06-01">June 1st</date>
-               							for <persName>Dorothy Whitney Elmhurst</persName>
-               								signed Kathleen Brown
-               									Attorney
-               				
-               				gave cheque to <persName>Keeler Faus</persName>
-               				to send to <address><country>America</country></address>
-                for deposit in <orgName><address><settlement>Princeton</settlement></address> Bank</orgName>
-            </ab>
+            <div>
+            <div type="recto">
+                <head><pb facs="#s1" />
+                POSTES, TÉLÉGRAPHES ET TÉLÉPHONES CHÈQUES POSTAUX
+                <unclear/>  <persName ref="#deni">M.m Maurice Denis</persName></head>
+                <ab>
+                								CORRESPONDANCE
+                							DU TITULAIRE DU COMPTE
+                						AU BÉNÉFICIARE DU CHÈQUE
+                </ab>
                 </div>
                 <div type="verso">
+                   
+                  <pb facs="#s2" />
+                    <head>
+                					<orgName>BUREAU DE CHEQUES POSTAUX</orgName>
+                		<address><settlement>PARIS</settlement></address>	(Ier Arrt) C-C 69 58
+                			<persName ref="#deni">Madame DENIS-GRATEROLLE</persName>
+                			<address><street>2 Bis Rue Schnapper</street>
+                		<settlement>ST GERMAIN-EN-LAYE</settlement> <district>Seine-et-Oise</district></address>
+                    </head>   <ab>									
+                De mandat sera représenté			du Chèque no   25
+                le............ vers.....			du..............
+                heures.  S'il reste impayé il sera	MONTANT DU CHÈQUE:
+                mis en instance au bureau			12 fr. 30c.
+                d.........................
                 
-               	<pb facs="#s2" />
-               	<!-- verso blank -->
-               	
+                POSTES TÉLÉGRAPHES ET TÉLÉPHONES	CHÈQUES POSTAUX
+                
+                    </ab>		
                 </div>
+              
+            
+           
             </div>
-               
-            
-            
         </body>
     </text>
 </TEI>
