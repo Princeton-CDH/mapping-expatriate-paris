@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#devi.lu">Madame Lucien Devies</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#devi.lu"><persName>Madame Lucien Devies</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-06-15">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	<unclear/> (under "Devies") = "IIe"?
+                    	<unclear/> (address) = "Pointe"?
+                  
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/d/devies">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+      
+    </facsimile>
+    <text>
+        <body>
+            
+                <div type="card"><div type="recto"><pb facs="#s1" />
+            	<head><date when="1941">1941</date>		<persName ref="#devi.lu">DEVIES
+            						Me. Lucien.</persName>
+            			<address><street>177 r. de la <unclear/>.</street></address></head>
+            			<ab>	3 m 1 vol A		65
+            					Dep.		50
+            	
+            	<date when="1941-02-04">Feb. 4</date>		<bibl><title>Manhattan Transfer</title></bibl>			<date when="1941-02-14">Feb 14</date>
+            	<date when="1941-02-14">14</date>		<bibl><title>Light in August</title></bibl>				<date when="1941-03-11">Mar. 11</date>
+            	<date when="1941-03-11">Mar 11</date>		<bibl><title>Men without women</title></bibl>			<date when="1941-03-18">Mar 18</date>
+            	<date when="1941-03-18">18</date>		<bibl><title>Mourning becomes Electra</title></bibl>	<date when="1941-03-25">Mar 25</date>
+            	<date when="1941-03-25">25</date>		<bibl><title>Mrs. Dalloway</title></bibl>				<date when="1941-04-07">April 7</date>
+            	<date when="1941-04-07">April 7</date>		<bibl><title>Fighting Angel</title></bibl>				<date when="1941-04-10">April 10</date>
+            		<date when="1941-04-10">10</date>		<bibl><title>Exile</title></bibl>						<date when="1941-04-18">April 18</date>
+            		<date when="1941-04-18">18</date>		<bibl><title>Northwest Passage</title></bibl>			<date when="1941-05-02">May 2</date>
+            	<date when="1941-05-02">May 2</date>		<bibl><title>Jane Eyre</title><biblScope unit="volume"> 2 vols</biblScope></bibl>			<date when="1941-05-08">May 8</date>
+            		<date when="1941-05-08">8</date>		<bibl><title>Erewhon</title></bibl>						<date when="1941-05-26">May 26</date>
+            	subscr	<date from="1941-05-04" to="1941-08-04">May 4 - aout 4. 1941</date> 1v3mA
+            	
+            	<date when="1941-05-26">May 26</date>		<bibl><title>It takes all kinds</title></bibl>			<date when="1941-06-24">June 24</date>
+            	<date when="1941-06-24">June 24</date>		<bibl><title>Pride + Prejudice</title></bibl>			<date when="1941-06-30">June 30</date>
+            	<date when="1941-06-30">June 30</date>		<bibl><title>Barchester Towers</title></bibl>			<date when="1941-07-17">July 17</date>
+            	<date when="1941-07-17">July 17</date>		<bibl><title>Point Counterpoint</title></bibl>			<date when="1941-07-29">July 29</date>
+            			(will return after holidays)</ab>
+            	</div><div type="verso">
+            	<pb facs="#s2" />
+            	<!-- verso blank -->	
+            	</div>
+            	</div>
+            
+        </body>
+    </text>
+</TEI>
