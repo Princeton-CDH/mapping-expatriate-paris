@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"  xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#balt.he">Madame Helene Baltrusaitis</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#bent.ay">Ayala Bentovim</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cwulfman">
-                    <persName>Wulfman, Cliff</persName>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -35,7 +34,6 @@
                         </listperson>
                     </xi:fallback>
                 </xi:include>
-                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -43,19 +41,18 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#balt.he"><persName>Madame Helene Baltrusaitis</persName></person>
+                <person role="cardholder" ana="#bent.ay"><persName>Ayala Bentovim</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
             <change who="#yournetid">
                 <ab>
-                    Card 1: Villa or Ville? "gob" or "gol?"
-                    		Illegible/Incomplete mark to left margin by "Art of Whistler"
+                    Card 1: unknown mark at the end of card Mr Gillie I???
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/b/baltrusaitis/">
+    <facsimile xml:base="pudl0123/825298/b/bentovim/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -66,42 +63,43 @@
     <text>
         <body>
             
-   <div type="card"> 
-       <div type="recto">
+                <div type="card">
+                <div type="recto">
                     <pb facs="#s1" />
-               
                 
-<head>  
-    <date when="1958">1958</date>
-    
-    <persName ref="#balt.he">Madame Helene Baltrusaitis</persName>
-                		<address><addrLine>70 American Embassy</addrLine></address>
-                                        <note><unclear>gob</unclear>  1873</note>
-                	  <address>
-                	      <street>5 Villa Virginie</street>		
-                	  	 	<settlement>Paris.</settlement>
-                	      <district>XIV</district>
-                	  </address>
-                	  	 				</head>
-           <ab>
- returned
-                <date when="1958-07-11">11 July</date>		<bibl><title>Short Stories of Scott Fitzgerald</title></bibl>
-                			<bibl><title>Pogo Party</title></bibl>					returned
+               <head> <date when="1938">1938</date>		
+                             <persName><surname>BENTOVIM</surname>
+                			 Mlle <forename>Ayala</forename></persName>
+                			<address><addrLine>Hotel Trianon Palace</addrLine>
+                				<street>rue Vaugirard</street></address>
+                 (Friend of Mr. Gille)	 
                 
-                <unclear/>		  	<bibl><title>The Art of Whistler</title>, <author>Elizabeth Robbins Pennell</author></bibl>
-                		  						returned <date when="1961-04-20">April 20 1961</date>
-                
-                <date when="1961-12-14">Dec 14 1961</date>	<bibl><title>Saturday Night &amp; Sunday Morning</title> <author>Alan Silitoe</author></bibl>
-                			<bibl><title>Look Back in Anger</title>. <author>John Osborne</author></bibl>
-                			<bibl><author>John  Braine</author>:<title>The Vodi</title></bibl>
-           </ab>
-                </div>
-       <div type="verso">
-                <pb facs="#s2" />
+			     (Mme Fleg Place Dauphine 10(?)
+               </head>
+					
+				<ab>
+				                    1  m  1  v  B		50
+											dep			50
+				</ab>
+				
+				<ab>
+				<date when="1938-06-16">June 16</date> Summing Up (owes 105 for book)
+								  dep kept to pay for
+						book
+							  minus dep  50
+							  			 55v
+						  paid <date when="1939-03-04">March 4</date>
+						    by Mr Gillie  <unclear/> 
+				</ab> 
+                </div> 
+						                  
+                <div type="verso">
+                    <pb facs="#s2" />
                 
                 <!-- Blank Verso -->
-       </div>
-   </div>
+                
+                </div>
+                </div>
             
         </body>
     </text>
