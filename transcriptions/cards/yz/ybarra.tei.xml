@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="ybar">Ybarra</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="people" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#ybar"><persName>Ybarra</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-10-25">
+                <ab> First level encoding.
+                    Corrected "25076" to "25-76" 
+                    Removed "unclear" tag and replaced with "Hotel," marked "As. me" as "unclear"
+                    Added ditto marks at end of "Gaudy Night" line
+                    Added guess and updated unclear tags to March 9 entry
+                </ab>
+                <p> No year is marked on the card--all dates are unknown! </p>
+                   
+                <ab>
+                    s1: Address <unclear/> San Regis. <unclear/> .me
+                    s1: March 9	Detective <unclear/> 1.
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/yz/ybarra/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                        <head>
+                    
+                    		<persName ref="yeat.an">YBARRA.</persName>
+                            <note>Ely 25-76 <!-- phone number--></note>
+                    					<address><addrLine>Hotel San Regis. <unclear>- As. me </unclear></addrLine>
+                    		      			<street>12	Jean-Goujon</street>
+                    								  <district>8e</district></address>
+                        </head>
+                        <ab>
+                                <date>Jan 15.</date>		<bibl><title>Mr. Norris changes trains.</title></bibl>			<date>18.</date>
+                            			<bibl><title>Honey in the Horn.</title></bibl>					22
+                            	<date>18.</date>		<bibl><title>Furys</title></bibl>	<bibl><title>Gaudy Light.</title></bibl>   <date>"</date>
+                            	<date>22.</date>		<bibl><title>Queen Victoria -</title> <author>Benson.</author></bibl>		<date>Feb.3.</date>
+                            			<bibl><title>Roll River</title></bibl>							<date>28</date>
+                            			<bibl><title>Appointment in Samarra.</title></bibl>				<date>25.</date>
+                            	<date>25.</date>		<bibl><title>Washington Legation Murder</title></bibl>			<date>28</date>
+                            	<date>"</date>		<bibl><title>Up in the Hills.</title></bibl>					<date>28.</date>
+                            	<date>28.</date>		<bibl><title>One-eyed moon.</title></bibl>					<date>Feb.3.</date>
+                            			<bibl><title>Everywoman.</title></bibl>							<date>"</date>
+                            <date>Feb. 3.</date>		<bibl><title>Spanish Cape Mystery.</title></bibl>				<date>8</date>
+                            			<bibl><title>Follow the Furys.</title></bibl>					<date>8</date>
+                            			<bibl><title>Come + Get it.</title></bibl>						<date>8.</date>
+                            	 <date>8.</date>		<bibl><title>Christin A.</title></bibl>							<date>13.</date>
+                            	 		<bibl><title>White Priory Murders.</title></bibl>				<date>13.</date>
+                            	 		<bibl><title>Farewell to 5th Ave	</title></bibl>				<date>13.</date>
+                            	 <date>13.</date>	<bibl><title>White Cockatoo.</title></bibl>						<date>15.</date>
+                            	 <date>15.</date>	<bibl><title>Three Loves.</title></bibl>					<date>March 7</date>
+                            <date>March 7.</date>	<bibl><title>Loss of Jane Vosper.</title></bibl>				<date>21</date>
+                            			<bibl><title>A.B.C. Murders.</title></bibl>						<date>9</date>
+                            	  <date>9.</date>	<bibl><title>Freedom Farewell.</title></bibl>					<date>23</date>
+                            	  		<bibl><title>Detective <unclear> No 1 </unclear></title></bibl>					<date>21</date>
+                            	  <date>12</date>	<bibl><title>Ticking Terror Murders</title></bibl>				<date>21</date>
+                            	  <date>21.</date>	<bibl><title>Pursuer.</title></bibl>							<date>23</date>
+                            	  <date>23.</date>	<bibl><title>Garden Murder Case.</title></bibl>				<date>Ap 15.</date>	
+                            	  		<bibl><title>Wind blew west.</title></bibl>					<date>30</date>
+                            	  <date>27.</date>	<bibl><title>House in Paris.</title></bibl>						<date>30</date>
+                            	  <date>30.</date>	<bibl><title>Century of Detective Stories.</title></bibl>	<date>Ap. 10</date>
+                            <date>April 29</date>	<bibl><title>Proletarian Literature</title></bibl>			<date>May 7.</date>
+                        </ab>
+                 </div>
+                 <div type="verso">
+                    <pb facs="#s2" />
+                        <head>
+                    
+                    			 <address><addrLine>Hotel Royard Marceau</addrLine> <street>Ave. Hoche</street></address>
+                        </head>
+                        <ab>
+                             <date>June 10.</date>		<bibl><title>Way of the Transgressor</title></bibl>			<date>20.</date>
+                             	 <date>14.</date>		<bibl><title>Return of a Heroine</title></bibl>				<date>20</date>
+                             	 <date>28</date>			<bibl><title>They walk in the city</title></bibl> B.B.
+                        </ab>
+                 </div>  
+            </div>    
+        </body>
+    </text>
+</TEI>
