@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
@@ -49,6 +49,48 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-03">1920-01-03</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#furze">Miss Furze</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="8">8</measure>
+									<measure type="deposit" unit="franc" quantity="14">Dep 14</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#denans">Mlle Denans</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#morette">Mme Morette</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="12">12</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#russier">Mlle Roussier</persName>
+									<measure type="duration" unit="month" quantity="6">6 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="20">20</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#rospars">Mlle Rospars</persName>
+									<measure type="duration" unit="month" quantity="6">6 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="20">20</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -59,11 +101,63 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-05">1920-01-05</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#sens-olive">Mlle Sens-Olive</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#desclos">M. Desclos</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#hazan">Mlle Hazan</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-06">1920-01-06</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#boudes">Mlle Boudes</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#violette">Mme Violette</persName>
+									<measure type="duration" unit="month" quantity="3">extended from 3 mos to six</measure>
+									<measure type="frequency" unit="volume" quantity="1">1</measure>
+									<measure type="price" unit="franc" quantity="8">8.00</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#beauvais">Mme Beauvais</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -74,16 +168,64 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-08">1920-01-08</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#pop">M. Pop</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-09">1920-01-09</date></head>
+						<listEvent>
+						
+							<event type="subscription">
+								<p>Subsc <persName ref="#pagan">M. Pagan</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#goldman">Mr Goldman</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
-						<head><date when-iso="1920-01-10">1920-01-10</date></head>
+						<head><date when-iso="1920-01-10"><sic>1920-01-23</sic></date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#culbertson">Culbertson</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#dufour">Mlle Dufour</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -94,6 +236,32 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-12">1920-01-12</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#astrue">Mlle Astrue</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#biétry">Mlle Biétry</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4.00</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#allegret">M. Allegret</persName>
+									<measure type="duration" unit="month" quantity="0">0</measure>
+									<measure type="frequency" unit="volume" quantity="0">0</measure>
+									<measure type="price" unit="franc" quantity="0">0</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -114,6 +282,16 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-16">1920-01-16</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#zimmer">Mlle Zimmer</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -129,6 +307,16 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-19">1920-01-19</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#gebhard">Mme Gebhard</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="12">12</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -144,16 +332,45 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-22">1920-01-22</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#danthan">Baronne Danthan</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="20">20</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#suter">M. Suter</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-23">1920-01-23</date></head>
+						
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-24">1920-01-24</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#fabreluce">Mlle Fabreluce</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="8">8</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -164,21 +381,117 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-26">1920-01-26</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#nersessian">Mlle Nersessian</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#germain">Mlle Germain</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-27">1920-01-27</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#girot">M. Girot</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#songée">Mme de Songée</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-28">1920-01-28</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#cahn">M. Cahn</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="6.60">6.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-01-29">1920-01-29</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#huchon">M. Huchon</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#royer">Mlle Royer</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#nicod">Madame Nicod</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#vipond">Mr Vipond</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#nissim">Mme Nissin</persName>
+									<measure type="duration" unit="month" quantity="6">6 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="16">16</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#whitecotton">Mrs Whitecotton</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -191,9 +504,7 @@
 						<head><date when-iso="1920-01-31">1920-01-31</date></head>
 
 
-					</div>
-					<div type="day">
-						<head><date when-iso="1920-02-01">1920-02-01</date></head>
+			
 
 
 					</div>
@@ -201,36 +512,7 @@
 				<div type="month" n="2">
 					<head><date>February</date></head>
 					<div type="day">
-						<head><date when-iso="1920-01-26">1920-01-26</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1920-01-27">1920-01-27</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1920-01-28">1920-01-28</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1920-01-29">1920-01-29</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1920-01-30">1920-01-30</date></head>
-
-
-					</div>
-					<div type="day">
-						<head><date when-iso="1920-01-31">1920-01-31</date></head>
-
-
-					</div>
-					<div type="day">
+				
 						<head><date when-iso="1920-02-01">1920-02-01</date></head>
 
 
@@ -247,31 +529,99 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-04">1920-02-04</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#jansse">Mlle Jansse</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-05">1920-02-05</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#castel">Mme Castel</persName>
+									<measure type="duration" unit="month" quantity="12">1 year</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="20">20.00</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#royer">Mlle Royer</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-06">1920-02-06</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#">Mlle</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-07">1920-02-07</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#hazant">Mlle Hagant</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-08">1920-02-08</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#boys">Mrs Boys</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="12">12</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-09">1920-02-09</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#pagan">Comte Pagan</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -282,21 +632,76 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-11">1920-02-11</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#goll">Mme Goll</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#maclos">Mme Maclos</persName>
+									<measure type="duration" unit="month" quantity="6">6 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="16">16</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-12">1920-02-12</date></head>
+						
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-13">1920-02-13</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#worthing">Mr Worthing</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#lafitte">Mme Lafitte</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#hincky">M. Hincky</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-14">1920-02-14</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#leroi">M. Leroi</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="6.80">6.80</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -307,6 +712,24 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-16">1920-02-16</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#sac">M. Sac</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#furze">Miss Furze</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="20">20</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -327,11 +750,47 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-20">1920-02-20</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#julian">Mr Julian</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-21">1920-02-21</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#rivard">Mlle Rivard</persName>
+									<measure type="duration" unit="month" quantity="6">6 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="16">16</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#boon">Mr Boon</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#robert">M. Robert</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -342,11 +801,48 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-23">1920-02-23</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#foglia">Mlle Foglia</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#lafitte">Mme Lafitte</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="5">5</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#rolland">Mlle Rolland</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-24">1920-02-24</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#citron">Mme Citron</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="20">20</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -362,11 +858,31 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-27">1920-02-27</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#cahn">M. Cahn</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="6.60">6.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-02-28">1920-02-28</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#spink">Miss Spink</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="6.90">6.90</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -380,21 +896,69 @@
 					<head><date>March</date></head>
 					<div type="day">
 						<head><date when-iso="1920-03-01">1920-03-01</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#dutihl">Mme Dutihl</persName>
+									<measure type="duration" unit="month" quantity="12">1 year</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="30">30</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-03-02">1920-03-02</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Subsc <persName ref="#nerassian">Mlle des Narassian</persName>
+									<measure type="duration" unit="month" quantity="3">3 mos</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="9.60">9.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="renewal">
+								<p>Renew <persName ref="#fabreluce">Mlle Fabreluce</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="8">8</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-03-03">1920-03-03</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#lyon">Fanny Lyon</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-03-04">1920-03-04</date></head>
+						<listEvent>
+							<event type="subscription">
+								<p>Subsc <persName ref="#hay">Miss Hay</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+									<measure type="price" unit="franc" quantity="6.60">6.60</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
@@ -405,6 +969,24 @@
 					</div>
 					<div type="day">
 						<head><date when-iso="1920-03-06">1920-03-06</date></head>
+						<listEvent>
+							<event type="renewal">
+								<p>Renew <persName ref="#hazant">Mlle Hazant</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="4">4</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+							<event type="subscription">
+								<p>Subsc <persName ref="#léna">M.Léna</persName>
+									<measure type="duration" unit="month" quantity="1">1 mo</measure>
+									<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+									<measure type="price" unit="franc" quantity="3">3</measure>
+									<measure type="deposit" unit="franc" quantity="0">0</measure>
+								</p>
+							</event>
+						</listEvent>
 
 
 					</div>
