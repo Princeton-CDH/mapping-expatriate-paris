@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
-                <respStmt ana="#elspeth">
-                    <persName><Green, Elspeth</persName>
+                <title>An Encoded Transcription of a Borrower's Card: <persName>Charles du Bos</persName></title>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
                     <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -22,8 +26,24 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
             </sourceDesc>
         </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder"><persName>Charles Du Bos</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
             <change who="elspeth" when="2015-06-16">
                 <ab>
@@ -44,12 +64,40 @@
     </facsimile>
     <text>
         <body>
-            <ab>
-                <pb facs="#s1" />
-                
+            
+                <div type="card"><div type="recto"><pb facs="#s1"/>
+                        <head> <persName>M. Charles Du Bos</persName>
+                                    <address><street>1 rue Budé (4e)</street></address>
+                                               Gob. 29-31</head>
+            <ab>  <date when="1926">1926</date>                                              <date when="1929">1929</date>
+              <date when="1926-02-22">Feb 22</date>    <bibl><title>Recollections of D. g. Rossetti</title></bibl>         <date when="1929-02-18">Mch 18th</date>
+              <date when="1926-02-22">"    "</date>    <bibl><title>Pre-Raphalite Diaries &amp; Letters</title></bibl>     <date when="1927-10-08">Oct 8 1927</date>
+                                                    brought back by <persName>Mme Lerrch</persName>
+              <date when="1922-02-22">"    "</date>    <bibl><title>D. g. Rossetti , Dupré</title></bibl>  <date when="1922-06-12">June 12th</date> p.c.  <date when="1922-03-18">Mch 18</date>
+              ---------------------------------------------------------
+                                        never brought back      <date when="1919">1919</date>
+              <date when="1927">1927</date>
+              <date when="1927-01-14">Jan 14</date>    <bibl><title>Life of Jesus</title>  <author>J. M. Murry</author></bibl>  (owes new copy) <persName>BB</persName>
+                                                    (-------------)
+                                                    ( never paid  )
+              <date when="1927-06-07">June 7</date>    <bibl><title>New Criterion</title></bibl> <date when="1926-06">June 1926</date>  due .53  
+              
+                        purchased
+                            <bibl><author>T.S. Eliot</author>  <title>Poems</title></bibl>           53
+                            <bibl><title>Adelphi</title> <date when="1927-06">June 1927</date></bibl>           18
+                            <bibl><title>New Criterion</title> <date when="1927-06">June 1927</date></bibl>     53
+                                           not paid for
+                                                        124
+                                                     
+              </ab></div>
+              <div type="verso">
+            	<pb facs="#s2"/>
+            	    
+            	    <!-- verso blank --></div>
+            	    </div>
             	
            		            
-            </ab>
+            
         </body>
     </text>
 </TEI>

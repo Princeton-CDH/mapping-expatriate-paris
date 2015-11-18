@@ -4,13 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#benj.wa">Walter Benjamin</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#zogh.m">Mlle M. de Zogheb</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
-                </respStmt> 
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -41,18 +41,18 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#benj.wa"><persName>Walter Benjamin</persName></person>
+                <person role="cardholder" ana="#zogh.m"><persName>Mlle M. de Zogheb</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="#yournetid">
+            <change who="#elspeth" when="2015-10-28">
                 <ab>
-                    <!-- Enter transcription notes and queries here -->
+                    First level encoding.
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/b/benjamin/">
+    <facsimile xml:base="pudl0123/825298/yz/de_zogheb/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -62,37 +62,37 @@
     </facsimile>
     <text>
         <body>
-            
-               <div type="card">
-                   
-                   <div type="recto">
-                   <pb facs="#s1" />
-                
-                <head>
-                <date when="1940">1940</date>		
-                            <persName><surname>BENJAMIN</surname>
-                			Monsieur <forename>Walter</forename></persName>
-                			 <address><street>10 rue Dombasle</street>	<district>15e</district></address>
-                </head>
-                			 
-                
-                
-                <ab>
-                <date when="1940-02-23">Feb 23</date>		<bibl><title>German - English Eng.Ger. Dicty
-                				                            (Carrells)</title></bibl>
-                <date when="1940-04-25">April 25</date>	    <bibl>Bacon's Physical &amp; Metaphysical
-                			                                 works (Bohn's Lit)</bibl>
-                </ab>
-               </div>
-                
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                        <head>
+                        <date when="1940">1940</date>			<persName ref="#zogh.m">de ZOGHEB
+                        				                    Mlle M. de Zogheb</persName>
+                        				               <address><street>29 Bd Jules Sandeau - </street><district>XVI</district></address>
+                        </head>
+                        <ab>
+                        				 	1	m	1  v  B			                            45
+                        				    dep. ref. <date when="1940-03-15">March 15</date>	50
+                        </ab>
+                        
+                        
+                        <ab>
+                            <date when="1940-01-31">Jan 31</date>	<bibl><title>Goodbye to Berlin</title></bibl> <date when="1940-02-06">Feb. 6</date>
+                        	<date when="1940-01-05">5</date>		<bibl><title>After many a Summer</title></bibl> due <date when="1940-01-13">13th Jan</date>) <date when="1940-03-15">March 15</date>
+                        	 						p.c. <date when="1940-02-24">Feb 24</date>
+                        	 						registered letter <date when="1940-03-12">March 12</date>
+                        	 						charge 	.70
+                        	 							   2.
+                        	 				all paid	   2.70
+                        	 				cancel
+                        </ab>
+                </div>
                 <div type="verso">
                     <pb facs="#s2" />
-                
-                <!-- Blank Verso -->
                     
+                    <!-- Verso Blank -->
                 </div>
-               </div>
-            
+            </div>
         </body>
     </text>
 </TEI>
