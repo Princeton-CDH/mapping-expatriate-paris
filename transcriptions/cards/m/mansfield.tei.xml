@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: Katherine Mansfield</title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#mans.ka"><persName>Katherine Mansfield</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-08-25">
+                <ab>
+                    Transcribed cards
+                    Assumedly should be "Katherine Mansfield"?
+                   
+                   no year on card, so no dates encoded (ID)
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/m/mansfield/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+
+    </facsimile>
+    <text>
+        <body>
+            <div type="card"><div type="recto">
+                <pb facs="#s1"/>
+                		<head><persName ref="#mans.ka">Miss Catherine Mansfield</persName>
+                		<address><orgName>Select Hotel</orgName>
+                		<placeName>Place de la Sorbonne</placeName></address></head>
+              <ab>  
+                Oct 6	<bibl><title>Windy McPherson	</title></bibl>				Oct 11
+                		<bibl><title>Poor White</title></bibl>						Oct 6
+                		<bibl><title>Winesburg</title></bibl>						Oct 11
+                Oct 11	<bibl><title>The Brimming Cup</title></bibl>				Oct 16
+                Oct 16	<bibl><title>Peter Whipple</title></bibl>					Oct 21
+                		<bibl><title>Three Lives</title></bibl>
+                Oct 23	<bibl><title>The Triumph of the Egg</title></bibl>			Oct 24
+              </ab>  </div><div type="verso">
+                <pb facs="#s2" />
+                <!-- verso blank --></div>
+                </div>
+            
+        </body>
+    </text>
+</TEI>
