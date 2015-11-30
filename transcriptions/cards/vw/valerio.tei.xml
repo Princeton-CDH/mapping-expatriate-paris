@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#vale">Mademoiselle Valério</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#vale"><persName>Mlle Valério</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2015-11-29">
+                <p> First level encoding </p>
+                <ab>
+                s1:  Corrected "unclear" to "Poems Allan Seeger"
+                     Removed "unclear" tag from "May 8"
+                     Corrected "Im ag Conversation" to "Imaginary Conversations"
+                s3:
+                Corrected "Avril 4" to "Août 4"
+                s5:
+                Corrected "Crone Yellow" to "Crome Yellow"
+                </ab>
+                <ab>
+                    s1: March 22 - Poems Allan <unclear/>
+                    s1: May 1st - Forsyte Saga - May 8 <unclear/>
+                    s1: May 31	Im ag <unclear/> Conversation
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/vw/valerio/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+        <surface xml:id="s5">
+            <graphic url="00000005.jp2" />
+        </surface>
+        <surface xml:id="s6">
+            <graphic url="00000006.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                    <date when="1925-01-11">1925
+                    Jan 11</date>		<persName ref="#vale">Mademoiselle Valério</persName>
+                    				<address><street>5. rue de l'Assomption ,</street> <district>(XVIe)</district></address>
+                    		till <date when="1925-08-20">Aug 20</date> <address><name>Hotel Chalet des Praz</name>
+                    					                       <settlement>Praz de Chamonix,</settlement> <district>Hte Savoie</district></address>
+                    </head>	
+                    <ab>
+                    			1	year	2	vols				48 64
+                    </ab>
+                    
+                    <ab>
+                    <date when="1925-01-11">Jan 11</date>		<bibl><title>Portrait of the Artist</title></bibl>	<date when="1925-01-25">Jan 25</date>
+                    <date when="1925-01-25">Jan 25</date>		<bibl><title>Dubliners</title></bibl>				<date when="1925-02-01">Feb 1st</date>
+                    			                                <bibl><title>Hassan</title></bibl>
+                    <date when="1925-02-01">Feb 1st</date>		<bibl><title>Daisy Miller</title></bibl>			<date when="1925-02-08">Feb 8</date>
+                    			                                <bibl><title>Plays. 5th Series</title> <author>Galsworthy</author></bibl>
+                    <date when="1925-02-08">Feb 8</date>		<bibl><title>Ave</title></bibl>						<date when="1925-03-01">March 1st</date>
+                    			                                <bibl><title>Trivia</title></bibl>
+                    <date when="1925-03-01">March 1st</date>	<bibl><title>Memoirs of a Midget</title></bibl>		<date when="1925-03-22">March 22</date>
+                    			                                <bibl><title>Vale</title></bibl>
+                    <date when="1925-03-22">March 22</date>	    <bibl><title>Poems Allan Seeger</title></bibl>		<date when="1925-04-12">April 12</date>
+                    			                                <bibl><title>"	</title><author>Robert Bridges</author></bibl>
+                    <date when="1925-04-12">April 12</date>	    <bibl><title>The Garden Party</title></bibl>		<date when="1925-05-01">May 1st</date>
+                    			                                <bibl><title>Letters RLS</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope> </bibl>				
+                    <date when="1925-05-01">May 1st</date> 	    <bibl><title>Forsyte Saga</title></bibl>			<date when="1925-05-08">May 8 </date>
+                    			                                <bibl><title>Letters of Stevenson</title></bibl>	<date when="1925-05-31">May 31</date>
+                    <date when="1925-05-08">May 8</date>.		<bibl><title>Lord Jim</title></bibl> <bibl><title>Back to</title></bibl>
+                    <date when="1925-05-08">May 8</date>		<bibl><title>Back to Methuselah</title></bibl>		<date when="1925-05-31">May 31</date>
+                    <date when="1925-05-31">May 31</date>		<bibl><title>Imaginary Conversations</title></bibl>	<date when="1925-07-02">July 2</date>
+                    <date when="1925-05-31">May 31</date>		<bibl><title>Blakes Poetical Works</title></bibl>	<date when="1925-07-02">July 2</date>
+                    <date when="1925-07-02">July 2</date>		<bibl><title>Everlasting Mercy &amp; The Widow in the Bye St</title></bibl> <date when="1925-07-15">Ju 15</date>
+                    <date when="1925-07-02">July 2</date>		<bibl><title>Poems</title> - <author>Walter de la Mare</author></bibl>	<date when="1925-07-15">" 15</date>
+                    <date when="1925-07-15"> "	15</date>		<bibl><title>Lord Jim</title></bibl>				<date when="1925-08-03">Aug. 3</date>
+                    <date when="1925-07-15"> 	15</date>		<bibl><title>Erewhon Revisited</title></bibl>		<date when="1925-08-03">"	 3</date>
+                    <date when="1925-07-15"> "	15</date>		<bibl><title>The Camomile</title></bibl>			<date when="1925-08-04">Aug 4</date>
+                    <date when="1925-07-15"> "	15</date>		<bibl><title>2 in a Tower</title></bibl>			<date when="1925-08-04">Aug 4</date>     
+                     </ab>
+                </div>
+                <div type="verso">
+                    <pb facs="#s2" />
+                    <ab>
+                    <date when="1925-07-15">July 15</date>		<bibl><title>Trumpet Major</title></bibl>			<date when="1925-08-04">Aug 4.</date>
+                    <date when="1925-08-04">Aug 4.</date>		<bibl><title>S. Bulter's Note Books</title></bibl>				B.B.
+                    <date when="1925-08-04"> "	"</date>		<bibl><title>The Marsden Case</title></bibl>      post. 1.75	<date when="1925-08-13">Aug 13</date>
+                    <date when="1925-08-13">Aug 13</date>		<bibl><title>Life's little Ironies</title></bibl> post 0.50		<date when="1925-08-21">Aug 21</date>
+                    <date when="1925-08-21">Aug 21</date>		<bibl><title>Mayor of Casterbridge)</title></bibl> p. 0.70		<date when="1925-08-29">Aug 29</date>
+                    <date when="1925-08-29">Aug 29</date>		<bibl><title>Men Like Gods.</title></bibl>			<date when="1925-09-13">Sept 13</date>	p. 1.05
+                    <date when="1925-09-18">Sept 18</date>		<bibl><title>Main Street</title></bibl>				<date when="1925-09-27">Sept 27</date>
+                    <date when="1925-09-18"> "	  "</date>		<bibl><title>Mr Proback</title></bibl> <bibl><title>Jacob's Room</title></bibl>	<date when="1925-09-27">	 .</date>
+                    <date when="1925-09-27">Sept 27</date>		<bibl><title>Lady Into Fox</title></bibl>			<date when="1925-09-29">Sept 29</date>
+                    			                                <bibl><title>Five Plays</title></bibl>			    <date when="1925-09-29">  .</date>
+                    			                                <bibl><title>Exiles</title></bibl>					<date when="1925-10-06">Oct. 6th</date>
+                    <date when="1925-09-29">Sept 29</date>		<bibl><title>Pointed Roofs ,</title></bibl> 		<date when="1925-10-06">"	  "</date>
+                    <date when="1925-10-06">Oct 6.</date>		<bibl><title>Nocturne</title></bibl>				<date when="1925-10-19">Oct 19</date>
+                    <date when="1925-10-06"> "	"</date>		<bibl><title>Sonia</title></bibl>					<date when="1925-10-13">Oct 13</date>
+                    <date when="1925-10-13">Oct 13</date>		<bibl><title>Youth</title></bibl>					<date when="1925-10-19">Oct 19</date>
+                    <date when="1925-10-19">Oct 19</date>		<bibl><title>Green Mansion</title></bibl>			<date when="1925-10-27">Oct. 27</date>
+                    <date when="1925-10-19"> "	"</date>		<bibl><title>Regiment of Women</title></bibl>
+                    <date when="1925-10-27">Oct. 27</date>		<bibl><title>Captures</title></bibl>				<date when="1925-11-05">Nov 5</date>
+                    <date when="1925-10-27"> "  "</date>		<bibl><title>Poems &amp; Plays.</title> <biblScope unit="volume" from="1">Vol I.</biblScope> <author>Scott</author></bibl>
+                    <date when="1925-11-05">Nov 5</date>		<bibl><title>The Crock of Gold</title></bibl>		<date when="1925-11-24">Nov 24</date>
+                    			                                <bibl><title>The Judge</title></bibl>
+                    <date when="1925-11-24">Nov 24</date>		<bibl><title>Chicago Poems</title></bibl>			<date when="1925-12-20">Dec 20</date>	1.25
+                    			                                <bibl><title>Mary Olivier</title></bibl>			<date when="1925-12-20">Dec 20 -</date> 
+                    <date when="1925-12-20">Dec 20</date>		<bibl><title>Plays in Prose and Verse</title></bibl><date when="1926-01-16">Jan. 16</date>
+                    			                                <bibl><title>Poems</title></bibl>					<date when="1926-01-16"> "	  "</date>
+                    			wants to know the price of
+                    			<bibl><title>Saturday Westminster Gazette</title></bibl>
+                    <date when="1926-01-16">Jan 16</date>		<bibl><title>The Dove's Nest</title></bibl>			<date when="1926-01-29">Jan 29</date>
+                    			                                <bibl><title>Rahab</title></bibl>					<date when="1926-01-29">"	 "</date>
+                    <date when="1926-01-29">Jan 29</date>		<bibl><title>Lorenzo</title></bibl>					<date when="1926-02-09">Feb 9</date>
+                    			                                <bibl><title>Family Letters of Rosetti</title></bibl>
+                    <date when="1926-02-09">Feb 9</date>		<bibl><title>Night &amp; Day</title></bibl>			<date when="1926-02-23">Feb 23</date>
+                    			                                <bibl><title>Three Wonder Plays</title></bibl>
+                    </ab>			
+                </div>
+                <div type="recto">
+                    <pb facs="#s3" />
+                    <head>
+                    								<persName ref="#vale">VALERIO</persName>
+                    </head>	
+                    <ab>
+                    <date when="1924-11-05">Nov 5</date>		<bibl><title>The Practice &amp; Theory of Bolshevism</title></bibl>	<date when="1924-11-19">Nov 19</date>
+                    <date when="1924-11-19"> "	19</date>		<bibl><title>James Joyce</title></bibl>				<date when="1924-11-29">Nov 29.</date>
+                     			                                <bibl><title>The Practice</title></bibl> <bibl><title>Saint Joan</title></bibl>	<date when="1924-11-20">Nov. 20</date>
+                    <date when="1924-11-20">  N. 20.</date>	    <bibl><title>The dark mother</title></bibl>,		<date when="1924-12-03">Dec 3</date>
+                    <date when="1924-11-20">  "	"</date>		<bibl><title>Windy McPhersons son</title></bibl>	<date when="1924-12-03">Dece 3</date>
+                    <date when="1924-12-03">Decem. 3</date>	    <bibl><title>Elsie and Her child</title></bibl>_(0,15)	<date when="1924-12-03">"	 "</date>
+                    <date when="1924-12-06">Dec 6</date>		<bibl><title>Bewilderment</title></bibl>		    <date when="1924-12-20">Dec 20</date>
+                    <date when="1924-12-20"> "	20</date>		<bibl><title>White monkey</title></bibl> (0,15)		<date when="1924-12-27">Dec 27</date>
+                     			                                <bibl><title>Under Western eyes</title></bibl>
+                    <date when="1924-12-20"> "	"</date>		<bibl><title>Many Marriages</title></bibl>			<date when="1925-01-10">Jani 10</date>
+                    <date when="1924-12-27">Dec 27</date>		<bibl><title>Under Western eyes</title></bibl>		<date when="1925-01-21">Jan 21</date>
+                        <date when="1925-01-10">Jan 10</date>		<bibl><title>Victory</title></bibl>				    <date when="1925-02-04">Feb 4</date>		
+                    </ab>
+                    <ab>
+                    subsc renew from Jan 11 1925 to Jan 11 26
+                    </ab>
+                    <ab>
+                    <date when="1925-01-21">Jan 21</date>		<bibl><title>Poe</title> <biblScope unit="volume" from="1">vol I</biblScope> and <biblScope unit="volume" from="3">III</biblScope></bibl>		
+                    <date when="1925-02-04">Feb 4</date>		<bibl><title>Nostromo</title></bibl>			    <date when="1925-03-04">March 4</date>		
+                    <date when="1925-02-04"> "	</date>		    <bibl><title>Mummer's Wife</title></bibl>					
+                    <date when="1925-03-04">March 4</date>		<bibl><title>Antic Hay</title></bibl>				<date when="1925-04-04">April 6 4</date>
+                    			                                <bibl><title>Mirror of the Sea</title></bibl>		<date when="1925-04-04">	 "</date>
+                    <date when="1925-04-08">April 8</date>		<bibl><title>Notes on Life &amp; Letters</title></bibl>	(pc <date when="1925-05-25">May 25</date> <date when="1925-06-11">Jun 11</date> owes 6 fr.	<date when="1925-06-13">June 13</date>
+                    			                                <bibl><title>Karma</title></bibl>					<date when="1925-06-13">"	  "</date>
+                    <date when="1925-07-15">July 15</date>		<bibl><title>Almayer's Folly</title></bibl>			<date when="1925-08-04">Août 4</date>
+                    			                                <bibl><title>Arrow of the hold</title></bibl> 		<date when="1925-08-04"> "	</date>  
+                    </ab>
+                    <ab>
+                    Adresse.	<persName ref="#vale">Mlle Valerio</persName>  <address><name>Chalet Ariel</name> <street>Esplanade Parmentier</street>
+                    							                                 <settlement>Berck Plage</settlement><district> Pas de Calais</district></address>
+                    </ab>
+                    <ab>
+                    <date when="1925-08-04">Aug. 4</date>		<bibl><title>Essays</title> <author>Thoreau</author></bibl>	post <date when="1925-11-02">Sep 2</date>
+                    post 3.20	                                <bibl><title> Thoreau.</title></bibl>				<date when="1925-11-02"> "	"</date>
+                    			                                <bibl><title>Past and Present</title></bibl>		<date when="1925-11-02"> "	"</date>
+                    			                                <bibl><title> Unity</title></bibl>				    <date when="1925-11-02">"		"</date>
+                    				No more books to be send
+                    							owes 3,20
+                    <date when="1925-11-13">Nov 13</date>		<bibl><title>Golden Treasury of Irish Verse</title></bibl>	<date when="1925-12-11">Dec 11</date>
+                    			                                <bibl><title>Six Elizabethian Plays</title></bibl>	<date when="1925-12-11">"	 "</date>
+                    <date when="1925-12-11">Dec 11</date>		<bibl><title>Ballads and Romances</title></bibl>	<date when="1925-12-24">Dec 24</date>
+                    			                                <bibl><title>Potterism</title></bibl>				<date when="1925-12-24"> "	 "</date>
+                   </ab> 			
+               </div> 
+               <div type="verso">
+                    <pb facs="#s4" />
+                    <head>
+                    <date when="1924">1924</date>		<persName ref="#vale">Mademoiselle Valerio</persName>
+                    </head>
+                    <ab>
+                    <date when="1924-01-11">Jan 11</date>		Renewed to <date when="1925-01-11">January 11th 1925</date> = 64f
+                    </ab>
+                    <ab>
+                    <date when="1924-01-02">Jan 2</date>		<bibl><title>Three Wonder Plays</title></bibl>		<date when="1924-02-13">Feb 13</date>
+                    			                                <bibl><title>Night &amp; Day</title></bibl>
+                    <date when="1924-02-23">Feb 23</date>
+                    <date when="1924-02-23">Feb 23</date>		<bibl><title>The Story of a Great Schoolmaster</title></bibl>	<date when="1924-03-01">March 1</date>
+                    			                                <bibl><title>Our America</title></bibl>
+                    <date when="1924-03-01">March 1</date>		<bibl><title>The Way Things Happen</title></bibl>	<date when="1924-03-03">March 3</date>
+                    			                                <bibl><title>Spoon River Anthology</title></bibl>	<date when="1924-03-10">March 10</date>
+                    <date when="1924-03-03">M. 3</date>		    <bibl><title>Jeremie &amp; Hamlet</title></bibl>	<date when="1924-03-08">March 8</date>
+                    			                                <bibl><title>Hey Rub a Dub.</title></bibl>			<date when="1924-04-03">Ap. 3</date>
+                    <date when="1924-03-10">Mch 10</date>		<bibl><title>Legend</title></bibl>					<date when="1924-04-03">Ap. 3</date>
+                    <date when="1924-04-03">Ap 3</date>		    <bibl><title>Riceyman Steps</title></bibl> 	0.25	<date when="1924-04-05">April 5</date>
+                    <date when="1924-04-03"> "	</date>		    <bibl><title>Told by an Idiot</title></bibl>0.75	<date when="1924-04-12">Ap. 12</date>
+                    <date when="1924-04-05">April 5</date>		<bibl><title>Poe's Works</title> <biblScope unit="volume" from="1">vol X</biblScope></bibl>	<date when="1924-04-12">Ap 12</date>
+                    <date when="1924-04-12">Ap 12</date>		<bibl><title>Demos</title></bibl>					<date when="1924-05-15">May 15</date>
+                    			                                <bibl><title>One of Conquerors</title></bibl>		<date when="1924-05-15"> "	 "</date>
+                    <date when="1924-05-15">May 15</date>		<bibl><title>The Lake</title></bibl>				<date when="1924-06-05">June 5</date>
+                    <date when="1924-06-05">June 5</date>		<bibl><title>Voyage out</title></bibl>				<date when="1924-06-19">June 19</date>
+                    <date when="1924-06-05"> "	 "</date>		<bibl><title>The Dream.</title></bibl>				<date when="1924-06-16">June 16</date>
+                    <date when="1924-06-16"> "	 16</date>		<bibl><title>Deirdre</title></bibl>					<date when="1924-06-19">June 19</date>
+                    <date when="1924-06-19">June 19</date>		<bibl><title>Holiday</title></bibl> 0.15			<date when="1924-06-27">June 27</date>
+                    <date when="1924-06-19"> "	 "</date>		<bibl><title>Lost In Corrick</title></bibl>			<date when="1924-06-27">"	 "</date>
+                    <date when="1924-06-27">June 27</date>		<bibl><title>Verses</title> <author>(Newmann)</author></bibl> <date when="1924-07-15">July 15</date>
+                    <date when="1924-06-27"> "	 "</date>		<bibl><title>Dark Mother</title></bibl> <bibl><title>A.B.C. of Atoms.</title></bibl>
+                    <date when="1924-07-15">July 15</date>		<bibl><title>Essays, Thoreau</title></bibl>         <date when="1924-09-04">Sept 4</date>	
+                    </ab>
+                    <ab>
+                        <address><name>Hotel des Glaciers</name> <settlement>Pralognam</settlement> <district>Savoie</district></address>
+                    </ab>
+                    <ab>
+                    			                                <bibl><title>Problem of China</title></bibl>        <date when="1924-09-10">Sept 10</date>		
+                    			                                <bibl><title>Zuleika. Dobson</title></bibl> (p.c. <date when="1924-08-28">Aug 28</date>) <date when="1924-09-04">Sept 4 </date>
+                    			                                <bibl><title>Moby Dick</title></bibl>				<date when="1924-09-10">Sept 10</date>
+                    				            wants <bibl><title>Outline of History</title></bibl>
+                    						          <bibl><title> Walden</title></bibl>
+                    						          <bibl><title>Congreve</title></bibl>
+                    <date when="1924-11-05">Nov 5</date>		<bibl><title>Lord Harker</title></bibl>				<date when="1924-11-19">Nov 19</date>
+                    </ab>			
+                </div> 
+                <div type="recto">
+                    <pb facs="#s5" />
+                    <head>
+                    <date when="1925-12-24">1925
+                    Dec 24</date>		     <persName ref="#vale">VALERIO</persName>
+                    						          <address><persName ref="#vale">Mademoiselle Valerio</persName>
+                    								<street>5 rue de l'Assomption</street></address>
+                    </head>
+                    
+                    <ab>
+                    <date when="1925-12-24">Dec 24.</date>	     <bibl><title>Charwoman's Daughter</title></bibl>	<date when="1926-01-07">Jan 7</date>
+                    		                                     <bibl><title>In the Land of Youth</title></bibl>	<date when="1926-01-07"> "	"</date>
+                    		                                     <bibl><title>Orphan Island</title></bibl> . 	no extra . 		 <date when="1926-01-07">"	"</date>
+                    </ab>
+                    <ab>
+                    <date when="1926-01-07">1926
+                    Jan 7</date>	Renewed to <date when="1926-07-11">July 11th</date> 2 vols = 68f
+                    </ab>
+                    <ab>
+                    
+                    <date when="1926-01-07">Jan 7</date> 	      <bibl><title>Counter Plot</title></bibl>.			<date when="1926-01-26">Jan 26</date>
+                    		                                      <bibl><title>Crome Yellow</title></bibl>			<date when="1926-01-26">"	"</date>
+                    <date when="1926-01-26">Jan 26</date>	      <bibl><title>Waste</title></bibl>					<date when="1926-02-02">Feb 2</date>
+                    <date when="1926-01-26"> "	</date>	          <bibl><title>Voysey Inheritance</title></bibl>	<date when="1926-02-02">"	"</date>
+                    <date when="1926-01-26"> "	</date>	          <bibl><title>Limbo.</title></bibl>				<date when="1926-02-02">"	"</date>
+                    <date when="1926-02-02">Feb 2</date>	      <bibl><title>Old Drama and the New</title></bibl>	.	<unclear>ren</unclear>		<date when="1926-03-02">Mch 2</date>
+                    <date when="1926-02-02"> "	"</date>	      <bibl><title>Candida for Truth.</title></bibl>	<date when="1926-02-09">Feb 9</date>
+                    <date when="1926-02-09"> "	9</date>	      <bibl><title>Abraham Lincoln</title></bibl>		<date when="1926-02-23">Feb 23</date>
+                    <date when="1926-02-23"> "	23</date>	      <bibl><title>Collected Poems</title><author> A.E.</author></bibl>	<date when="1926-03-02">Mch 2</date>
+                    <date when="1926-03-02">March 2</date>	      <bibl><title>Three Plays</title></bibl>			<date when="1926-03-02"> "	"</date>
+                    <date when="1926-03-02"> "	 "</date>	      <bibl><title>Christine Alberta's Fathers</title></bibl>	- -	<date when="1926-03-09">Mch 9</date>
+                    <date when="1926-03-02"> "	 "</date>	      <bibl><title>Sonia</title></bibl>					<date when="1926-03-23">"	23</date>
+                    <date when="1926-03-23"> "	 23</date>	      <bibl><title>To Morrow &amp; To Morrow.</title></bibl> <date when="1926-04-24">Ap 24</date>
+                    <date when="1926-03-23"> "	 "</date>	      <bibl><title>Old Wives' Tales</title></bibl>		<date when="1926-04-24">Ap 24</date>
+                    <date when="1926-03-23"> "	 "</date>	      <bibl><title>Tragedy of Man</title></bibl>		<date when="1926-04">Ap</date>
+                    <date when="1926-04-13">Ap 13</date>	      <bibl><title>And Even Now</title></bibl>			<date when="1926-04-24">Ap 24</date>
+                    <date when="1926-04-13"> "	"</date>	      <bibl><title>Christina Garland</title></bibl>		<date when="1926-04-24"> "	"</date>
+                    <date when="1926-04-24">Ap. 24</date>	      <bibl><title>On a Chinese Screen</title></bibl>	<date when="1926-05-17">May 17</date>
+                    		                                      <bibl><title>Last Poem.</title></bibl>			<date when="1926-05-17"> "	"</date>
+                    		                                      <bibl><title>Shropshire Lad</title></bibl>	    <date when="1926-05-17"> "	"</date>
+                    </ab>
+               </div> 
+               <div type="verso">
+                    <pb facs="#s6" />
+                    <head>
+                    <date when="1926">1926</date>		<persName ref="#vale">VALERIO</persName>
+                    </head>
+                    <ab>
+                    <date when="1926-05-18">May 18</date>		  <bibl><title>Passage to India</title></bibl>		<date when="1926-06-01">June 1st</date>
+                    <date when="1926-05-18"> "	"</date>		  <bibl><title>Red Oleanders</title></bibl> .		<date when="1926-06-01">"	 "</date>
+                    <date when="1926-06-01">June 1st</date>	      <bibl><title>Travel Diary of a Philosopher</title></bibl> 0.25 <date when="1926-06-08">June 8</date>
+                    <date when="1926-06-01"> "	 "</date>		  <bibl><title>Two Plays</title></bibl>				<date when="1926-06-08">"	8</date>
+                    <date when="1926-06-08">June 8</date>		  <bibl><title>Babbitt</title></bibl>				<date when="1926-06-23">"	23</date>
+                    <date when="1926-06-08"> "	 "</date>		  <bibl><title>Original Letter from India</title></bibl> .		<date when="1926-06-25">"	25</date>
+                    </ab>
+               </div>     
+           </div> 
+        </body>
+    </text>
+</TEI>
