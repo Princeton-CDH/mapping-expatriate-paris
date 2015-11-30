@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#bloc.ma">Marguerite Bloch</persName> </title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    Card 1: 23 Dec: Mainstreet owes <unclear/> "$"?
+                    Card 3: DEPOSIT: Fifty Francs
+                    
+               </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/b/bloch/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                
+                <head>
+                <date when="1932">1932</date>				
+                                 <persName ref="bloc.ma">Mme. Jean BLOCH</persName>
+                to <date when="1933-02-05">5 Feb. '33</date>	 
+                                                           <address><street>73 quai d'Orsay</street></address>
+                </head>
+                <ab>
+                			3 mo. 1 vol. 		dep 50		65 -
+                </ab>
+                <ab>
+                <date when="1932-11-05">5 Nov.</date> 		<bibl><title>American Tragedy</title></bibl>			<date when="1932-11-14">14 Nov.</date>
+                <date when="1932-11-14">14 Nov.</date>		<bibl><title>Waves</title></bibl>						<date when="1932-11-25">25  "</date>
+                <date when="1932-11-25">25	"</date>		<bibl><title>Death Comes for the Archbishop</title></bibl>	<date when="1932-12-03">3 Dec</date>
+                <date when="1932-12-03">3 Dec</date>		<bibl><title>Aaron's Rod</title></bibl>					<date when="1932-12-22">22 "</date>
+                <date when="1932-12-23">23	</date>		    <bibl><title>Mainstreet</title></bibl>	owes <unclear/> 2.50 card <date when="1933-02-02">2 Feb</date> <date when="1933-02-07">7 Feb</date>
+                <date when="1933-02-07">7 Feb</date>		<bibl><title>Return I dare not</title></bibl> owes 15f + 2.50 <unclear/>
+                							card <date when="1933-03-02">2 March</date> = 17f overdue
+                											                                         nobooks!
+                </ab>
+                </div>
+                
+                <div type="verso">
+                <pb facs="#s2" />
+                <ab>
+                <!-- Blank Verso -->
+                </ab>
+                </div>
+                </div>
+            
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s3" />
+                <head>
+                "SHAKESPEARE AND COMPANY"
+                	- SYLVIA BEACH -
+                <address><street>12, RUE DE L'ODEON</street><settlement>PARIS</settlement> <district>VIe</district></address>
+                	LENDING LIBRARY
+                  CARD OF MEMBERSHIP
+                
+                <persName ref="#bloc.ma">Mme. Jean Bloch</persName>
+                <address><street>73 quai d'Orsay</street></address>
+                <date when="1932-11-05">5 Nov 1932</date> 	  3 mo. 1 vol.
+                </head>
+                <ab>
+                DEPOSIT: Fifty Francs <unclear/>
+                </ab>
+                </div>
+                                
+                <div type="verso">
+                <pb facs="#s4" />
+                <ab>
+                Renewed: ____________________________
+                </ab>
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
