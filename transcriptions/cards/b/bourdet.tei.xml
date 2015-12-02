@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#bour.cl">Claude Bourdet</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/b/bourdet/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type ="recto">
+                <pb facs="#s1" />
+                <head>
+                <date when="1935">1935</date>			<persName ref="#bour.cl">Mr. Claude Bourdet</persName>
+                                                        <address><street>47 avenue d'Iena</street><district>XVI</district></address>
+                </head>
+                <ab>
+                1 v. 3 m.								40
+                		dep.							30
+                </ab>
+                <ab>
+                <date when="1935-02-02">2 Feb.</date>		<bibl><title>Criterion</title> <biblScope unit="issue" from="1935-01">Jan</biblScope>.</bibl>				<date when="1935-02-21">21</date>
+                <date when="1935-02-21">21 - </date>		<bibl><title>Ash Wednesday</title></bibl>				<date when="1935-02-17">17</date>
+                						                          card <date when="1935-04-10">10 April	</date>
+                <date when="1935-04-17">17 April</date>	    <bibl><title>Selected Essays</title> - <persName>Eliot</persName></bibl>		<date when="1935-05-17">17 May</date>
+                <date when="1935-05-17">17 May</date>		<bibl><title>After Strange gods</title></bibl>. <bibl><title>The Rock</title></bibl>	
+                Renew
+                            owes subsc. since <date when="1935-04-02">2 April</date>
+                
+                </ab>      					
+                </div>
+                
+                <pb facs="#s2" />
+                <div type="verso">
+                <!-- Verso Blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
