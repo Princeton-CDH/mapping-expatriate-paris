@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#mard.ja">Jacques Mardrus</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#mard.ja"><persName>Jacques Mardrus</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-08-25">
+                <ab>
+                    Transcribed cards
+                    <unclear/> next to sub info = illegible signature-like mark
+                    <unclear/> Dec 3 = no idea final word
+                   
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/m/mardrus/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto"><pb facs="#s1" />
+             <head>   <date when="1940">1940</date>			<persName ref="#mard.ja">MARDRUS
+                					Jacques</persName>
+                			<address><orgName>Hotel de Fleurus</orgName>
+                			<street>3 rue de Fleurus</street> <settlement>Paris</settlement> <district>6</district></address></head>
+                	<ab>Forgot to ask if address always the same
+                			2 m 1 vol S				50
+                <date when="1940-02-04">Febr 4</date> gave 	Dep ref <date when="1940-12-17">Dec 17.</date>			50   <unclear/>
+               							refunded Feb 12 1941
+               	<date when="1940-12-03">Dec 3.</date>	Reflexions on the death of <unclear/>		<date when="1940-12-17">Dec 17</date>
+               		Dep. ref <date when="1940-12-17">Dec 17</date>. sub suspended has still 2 months + 16 days
+               	
+               	<date when="1940-02-04">Feb 4</date>	Byron (Froude Ed.)					<date when="1940-02-12">Feb 12</date>
+               						has 2 months &amp; 8 days left
+               		<date when="1940-02-13">Feb. 13</date> has taken ABC of language. Fowler
+               											30
+               					instead of using rest of his
+               					subscription - calculated
+               					had 2 mos 2 wks left
+               					about 30 frs
+               						took ABC
+               				when re-subscribes has 1 week extra</ab>
+               	</div>
+              <div type="verso"> 	<pb facs="#s2" />
+               	<!-- verso blank --></div></div>
+				
+					
+            
+        </body>
+    </text>
+</TEI>
