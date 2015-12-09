@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#brem.he">Helene Brémond</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -22,6 +26,14 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
@@ -65,229 +77,286 @@
     </facsimile>
     <text>
         <body>
-            <ab>
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s1" />
-                
-                1921	BREMOND		Madame H.E. Bremond
-                						4 rue de Cerisoles.
-                										8e.
-                						telephone Elysée 61-76
-                							6 matin . res 10 2
+                <head>
+                <date>1921</date>	<persName ref="#brem.he">BREMOND</persName>		<persName ref="#brem.he">Madame H.E. Bremond</persName>
+                						<address>
+                						<street>4 rue de Cerisoles</street><district>8e</district>
+                						<addrLine><num>telephone Elysée 61-76</num></addrLine>
+                						</address>
+                						6 matin . res 10 2
+                </head>						
                 							
-                							
-                							
+                <ab>						
                 			1 year 1 vol. 		144
                 			Deposit				 50
-                							subs to March 5th-1928
-                Mch 5th.	Merry Go Round				Mch 16
-                 "	16		Her Son's Wife 0.25			 "	31
-                 "	31		Far End 0.25				Ap. 9
-                Ap. 9		Green Hat					 "	30
-                 "	30		Dark Laughter. 				May 14
-                May 14		Babbitt ren.	p-c.		July.13.
-                July 13		Liza of Lambeth.			 "	30
-                 "	30		Garden Party (suspended)	Aug 5.
-                Oct 1st		Main Street					Oct 18
-                 "	18		Daphne of Adeane			 "	22
-                 "	22		Hilda Lessways.				 "  28
-                 " 	29		<unclear/> Chinese <unclear/>				Nov 9
-                Nov 9		Tinkers Leane.				 "	28
-                 "	28		Exiles						Dec 3
-                Dec 3		Desire under the Elms		Jan 4
-                Jan 4		Essays of Macaulay			 "	28
-                 "	28		Portrait of Clare 0.25 3	Mch 3
+                							subs to <date when="1927-03-05">March 5th-1928</date>
+                </ab>
+                <ab>		
+                <date when="1927-03-05">Mch 5th.</date>	<bibl><title>Merry Go Round</title></bibl>				<date when="1927-03-16">Mch 16</date>
+                <date when="1927-03-16"> "	16</date>	<bibl><title>Her Son's Wife</title></bibl> 0.25			<date when="1927-03-31"> "	31</date>
+                <date when="1927-03-31"> "	31</date>	<bibl><title>Far End</title></bibl> 0.25				<date when="1927-04-09">Ap. 9</date>
+                <date when="1927-04-09">Ap. 9</date>	<bibl><title>Green Hat</title></bibl>					<date when="1927-04-30"> "	30</date>
+                <date when="1927-04-30"> "	30</date>	<bibl><title>Dark Laughter.</title></bibl> 				<date when="1927-05-14">May 14</date>
+                <date when="1927-05-14">May 14</date>	<bibl><title>Babbitt</title></bibl> ren.	p-c.		<date when="1927-07-13">July.13.</date>
+                <date when="1927-07-13">July 13</date>	<bibl><title>Liza of Lambeth</title></bibl>.			<date when="1927-07-30"> "	30</date>
+                <date when="1927-07-30"> "	30</date>	<bibl><title>Garden Party</title></bibl> (suspended)	<date when="1927-08-05">Aug 5.</date>
+                <date when="1927-10-01">Oct 1st</date>	<bibl><title>Main Street</title></bibl>					<date when="1927-10-18">Oct 18</date>
+                <date when="1927-10-18"> "	18</date>	<bibl><title>Daphne of Adeane</title></bibl>			<date when="1927-10-22"> "	22</date>
+                <date when="1927-10-22"> "	22</date>	<bibl><title>Hilda Lessways</title></bibl>.				<date when="1927-10-28"> "  28</date>
+                <date when="1927-10-29"> " 	29</date>	<bibl><title><unclear/> Chinese <unclear/></title></bibl>	<date when="1927-11-09">Nov 9</date>
+                   <date when="1927-11-09">Nov 9</date>	<bibl><title>Tinkers <unclear/>.</title></bibl>				<date when="1927-11-28">"	28</date>
+                <date when="1927-11-28"> "	28</date>	<bibl><title>Exiles</title></bibl>						<date when="1927-12-03">Dec 3</date>
+                <date when="1927-12-03">Dec 3</date>	<bibl><title>Desire under the Elms</title></bibl>		<date when="1928-01-04">Jan 4</date>
+                <date when="1927-01-04">Jan 4</date>	<bibl><title>Essays of Macaulay</title></bibl>			<date when="1928-01-28"> "	28</date>
+                <date when="1927-01-28"> "	28</date>	<bibl><title>Portrait of Clare</title></bibl> 0.25 3	<date when="1928-03-03">Mch 3</date>
                  								  29
                  								   3
                  								  35-8.75
-                Mch 3		C.   1.40		sub expired	 "	24
-                 "	24		S.R. 1 year 1 vol = 144 to March 5th 1929
-                 	24		Hard boiled Vuyin =7+21=28 = 7.f	Ap. 26		
+                <date when="1928-03-03">Mch 3</date>	C.   1.40		sub expired	 <date when="1928-03-24">"	24</date>
+                <date when="1928-03-24"> "	24</date>	S.R. 1 year 1 vol = 144 to <date to="1928-03-05">March 5th 1928</date>
+                <date when="1928-03-24"> 	24</date>	<bibl><title>Hard boiled Virgin</title></bibl> =7+21=28 = 7.f	<date when="1928-04-26">Ap. 26</date>		
+                </ab>
+                </div>
                 
+                <div type="verso">
                 <pb facs="#s2" />
+                <head>
+                		<persName ref="#brem.he">BREMOND</persName>				subs to <date to="1928-03-05">March 5th 1929</date>
+                </head>
+                <ab>
+                <date when="1928-04-21">Ap 21</date>		<bibl><title>Casuarina Tree</title></bibl>				<date when="1928-05-19">May 19</date>
+                <date when="1928-05-19">May 19</date>		<bibl><title>Passage to India</title></bibl>			<date when="1928-06-23">June 23</date>
+                <date when="1928-06-23">June 23</date>		<bibl><title>Oil</title></bibl>							<date when="1928-07-10">July 10</date>
                 
-                		BREMOND				subs to March 5th 1929
+                <date when="1928-09-08">Sept 8</date>		<bibl><title>Crimson Rope</title></bibl> 0.25			<date when="1928-09-11">Sept 11</date>
+                <date when="1928-09-11"> "	11</date>		<bibl><title>Women in Love</title></bibl>				<date when="1928-10-26">Oct 26.</date>
+                <date when="1928-10-26">Oct 26</date>		<bibl><title>Eternal Moment</title></bibl> 0.25 = 15	<date when="1928-11-10">Nov 10</date>
+                <date when="1928-11-10">Nov 10</date>		<bibl><title>Herland</title></bibl>						<date when="1928-11-28">Nov 28</date>
+                <date when="1928-11-28"> "	28</date>		<bibl><title>Queen Victoria</title></bibl>				<date when='1928-12-11'>Dec 11</date>
+                <date when="1928-12-11">Dec 11</date>		<bibl><title>Streets</title></bibl>						<date when="1928-12-15"> "	15</date>
+                <date when="1928-12-15"> "	15</date>		<bibl><title>Fielding</title> (<editor>Saintsbury</editor>).</bibl>		<date when="1928-12-29"> "	29</date>
+                <date when="1928-12-29"> "	29</date>		<bibl><title>Chalk Face</title></bibl>					<date when='1929-01-12'>Jan 12</date>
+                <date when="1929-01-12">Jan 12</date>		<bibl><title>Dubliners</title></bibl>					<date when="1929-02-18">Feb. 18</date>
+                <date when="1929-02-18"> "	Feb 18</date>	<bibl><title>Jacob's Room</title></bibl>				<date when="1929-02-28"> _	28</date>
+                <date when="1929-02-28"> 		28</date>	<bibl><title>Octavia</title></bibl>						<date when="1929-03-06">Mch. 6</date>
+                <date when="1929-03-06"> Mch. 6.</date>	    <bibl><title>Cats Cradle</title></bibl>  <date when="1929-04-16">Ap. 16</date> p.c.	<date when="1929-04-23">Ap 23</date>
+                </ab>
+                <ab>
+                    Suxsbs.	Renewed to <date to="1929-03-05">March 5th 1930</date>. 1HH
+                <date when="1929-03-23">	23</date>		<bibl><title>Men Without Women</title></bibl>.			<date when="1929-07-13">July 13</date>
+                <date when="1929-05-04">May 4</date>		<bibl><title>Well of Loneliness</title></bibl>			<date when="1929-05-14">May 14</date>
+                <date when="1929-07-13">July 13</date>		<bibl><title>Lily Christine</title></bibl> = 4.25		<date when="1929-07-30">July 30</date>
+                <date when="1929-11-09">Nov. 9</date>		<bibl><title>Moth &amp; Six Pence</title></bibl>		<date when="1929-11-30">Nov 30</date>
+                <date when="1929-11-25"> "	 25</date>		<bibl><title>Garden Party</title></bibl>		=15f	<date when="1929-12-05">Dec 5</date>
+                <date when="1929-12-05">Dec 5</date>		<bibl><title>High Wind in Jamaica</title></bibl> 0.50	<date when="1930-01-04">Jan 4</date>
+                				                                        <date when="1930-01-03">Jan 3</date> p.c.
+                <date when="1930-01-04">Jan 4</date>		<bibl><title>Accident</title></bibl>					<date when="1930-02-06">Feb. 6</date>
+                <date when="1930-02-06">Feb. 6.</date>		<bibl><title>New Year's Eve</title></bibl>.				<date when="1930-02-27">Feb 27</date>
+                <date when="1930-02-27">	27</date>		<bibl><title>Portrait of the Artist</title></bibl>		<date when="1930-04-11">April 11</date>
+                <date when="1930-04-25">Ap. 25</date>		<bibl><title>Farewell to Arms</title></bibl>        	<date when="1930-05-09">May 9</date>
+                <date when="1930-05-09">May 9</date>		S.R. to <date to="1931-03-06">March 6th - 1931</date> = 240f
+                <date when="1930-05-09">May 9</date>		<bibl><title>The Enormous Room</title></bibl>			<date when="1930-05-30">May 30</date>
+                </ab>
+                </div>
+                </div>
                 
-                Ap 21		Casuarina Tree				May 19
-                May 19		Passage to India			June 23
-                June 23		Oil							July 10
-                
-                Sept 8		Crimson Rope 0.25			Sept 11
-                 "	11		Women in Love				Oct 26.
-                Oct 26		Eternal Moment 0.25 = 15	Nov 10
-                Nov 10		Herland						Nov 28
-                 "	28		Queen Victoria				Dec 11
-                Dec 11		Streets						 "	15
-                 "	15		Fielding (Saintsbury).		 "	29
-                 "	29		Chalk Face					Jan 12
-                Jan 12		Dubliners					Feb. 18
-                 "	Feb 18	Jacob's Room				 _	28
-                 		28	Octavia						Mch. 6
-                 Mch. 6.	Cats Cradle  Ap. 16 p.c.	Ap 23
-                	Suxsbs.	Renewed to March 5th 1930. 1HH
-                	23		Men Without Women.			July 13
-                May 4		Well of Loneliness			May 14
-                July 13		Lily Christine = 4.25		July 30
-                Nov. 9		Moth &amp; Six Pence			Nov 30
-                 "	 25		Garden Party		=15f	Dec 5
-                Dec 5		High Wind in Jamaica 0.50	Jan 4
-                				Jan 3 p.c.
-                Jan 4		Accident					Feb. 6
-                Feb. 6.		New Year's Eve.				Feb 27
-                	27		Portrait of the Artist		April 11
-                Ap. 25		Farewell to Arms <unclear/>		May 9
-                May 9		S.R. to March 6th - 1931 = 240f
-                May 9		The Enormous Room			May 30
-                
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s3" />
-                
-                		BREMOND	
-                							subs to March 6th 1931
-                
-                May 30		Best Short Stories of 1929 am. 	June 8.
-                June 8		Ladies of Lynton				 "	19
-                 "	19		Gallery of Woman vol I			 "	27
-                 "	27		Women in Love					July 8
-                July 8		Partners in Crime				 "	17
-                 "	17		Bishop Murder Case				 "	28
-                 "  28		Bliss							Aug. 18
+                <head>
+                		<persName ref="#brem.he">BREMOND</persName>	
+                							subs to <date when="1930-03-06">March 6th 1931</date>
+                </head>
+                <ab>
+                <date when="1930-05-30">May 30</date>		<bibl><title>Best Short Stories of 1929 Am.</title></bibl> 	<date when="1930-06-08">June 8.</date>
+                <date when="1930-06-08">June 8</date>		<bibl><title>Ladies of Lynton</title></bibl>				<date when="1930-06-19"> "	19</date>
+                <date when="1930-06-19"> "	19</date>		<bibl><title>Gallery of Woman</title><biblScope from="1">vol I</biblScope></bibl>			<date when="1930-06-27"> "	27</date>
+                <date when="1930-06-27"> "	27</date>		<bibl><title>Women in Love</title></bibl>					<date when="1930-07-08">July 8</date>
+                <date when="1930-07-08">July 8</date>		<bibl><title>Partners in Crime</title></bibl>				<date when="1930-07-17"> "	17</date>
+                <date when="1930-07-17"> "	17</date>		<bibl><title>Bishop Murder Case</title></bibl>				<date when="1930-07-28"> "	28</date>
+                <date when="1930-07-28"> "  28</date>		<bibl><title>Bliss</title></bibl>							<date when="1930-08-18">Aug. 18</date>
                  
-                Sept 27		Shatter the Dream				Oct. 9
-                Oct 9		Not Without Laughter			 "	17
-                 "	17		The Edwardians					 "	28
-                 "	28		Lady Chatterly					Nov 10
-                Nov 18		Imperial Palace = 8f.			Nov 21
-                 "	21		Robert Peckham					 "	21
-                 "	28		Lost Girl						Dec 10
-                Dec 10		Woman with White Eyes			 "	18
-                 "	18		Bishop Murder Case				Jan 3
-                Jan 3		Brief Candles					 "	17
-                 "	3		Wooden <unclear/>						 "	17
-                 "	17		Christine						 "	21
-                 "	21		On Forsyte Change				 "	31
-                 "	31		The Ladybird					Feb 5
-                Feb 5		Selbys 							 "	11
-                	6		Poems &amp; Essays of Poe (Tauchnitz) "	11
-                 "	11		Fool of the Family				 "	18
-                 "	18		Virgin + Gipsy					 "	23
-                 "	23		Not in Music (S.B. owes Mme B., 1,30	Mch 3
+                <date when="1930-09-27">Sept 27</date>		<bibl><title>Shatter the Dream</title></bibl>				<date when="1930-10-09">Oct. 9</date>
+                <date when="1930-10-09">Oct 9</date>		<bibl><title>Not Without Laughter</title></bibl>			<date when="1930-10-17"> "	17</date>
+                <date when="1930-10-17"> "	17</date>		<bibl><title>The Edwardians</title></bibl>					<date when="1930-10-28"> "	28</date>
+                <date when="1930-10-28"> "	28</date>		<bibl><title>Lady Chatterly</title></bibl>					<date when="1930-11-10">Nov 10</date>
+                <date when="1930-11-18">Nov 18</date>		<bibl><title>Imperial Palace</title></bibl> = 8f.			<date when="1930-11-21">Nov 21</date>
+                <date when="1930-11-21"> "	21</date>		<bibl><title>Robert Peckham</title></bibl>					<date when="1930-11-21"> "	21</date>
+                <date when="1930-11-28"> "	28</date>		<bibl><title>Lost Girl</title></bibl>						<date when="1930-12-10">Dec 10</date>
+                <date when="1930-12-10">Dec 10</date>		<bibl><title>Woman with White Eyes</title></bibl>			<date when="1930-12-18"> "	18</date>
+                <date when="1930-12-18"> "	18</date>		<bibl><title>Bishop Murder Case</title></bibl>				<date when="1931-01-03">Jan 3</date>
+                <date when="1931-01-03">Jan 3</date>		<bibl><title>Brief Candles</title></bibl>					<date when="1931-01-17"> "	17</date>
+                <date when="1931-01-03"> "	3</date>		<bibl><title>Wooden <unclear/></title></bibl>				<date when="1931-01-17"> "	17</date>
+                <date when="1931-01-17"> "	17</date>		<bibl><title>Christine</title></bibl>						<date when="1931-01-21"> "	21</date>
+                <date when="1931-01-21"> "	21</date>		<bibl><title>On Forsyte Change</title></bibl>				<date when="1931-01-31"> "	31</date>
+                <date when="1931-01-31"> "	31</date>		<bibl><title>The Ladybird</title></bibl>					<date when="1931-02-05">Feb 5</date>
+                <date when="1931-02-05">Feb 5</date>		<bibl><title>Selbys</title></bibl> 							<date when="1931-02-11"> "	11</date>
+                <date when="1931-02-06">	6</date>		<bibl><title>Poems &amp; Essays of Poe</title> (<publisher>Tauchnitz</publisher>)</bibl> <date when="1931-02-11">"	11</date>
+                <date when="1931-02-11"> "	11</date>		<bibl><title>Fool of the Family</title></bibl>				<date when="1931-02-18"> "	18</date>
+                <date when="1931-02-18"> "	18</date>		<bibl><title>Virgin + Gipsy</title></bibl>					<date when="1931-02-23"> "	23</date>
+                <date when="1931-02-23"> "	23</date>		<bibl><title>Not in Music</title></bibl> (S.B. owes Mme B., 1,30	<date when="1931-03-03">Mch 3</date>
                  						   for stamp paid by Mlle P.)
-                				subs due March 6th
-                March 2		Cake and Ale.					March 14
-                 "	14		The Just.		Will pay next time Mch 30e
-                
+                				subs due <date when="1931-03-06">March 6th</date>
+                <date when="1931-03-02">March 2</date>		<bibl><title>Cake and Ale</title></bibl>.					<date when="1931-03-14">March 14</date>
+                <date when="1931-03-14"> "	14</date>		<bibl><title>The Just</title></bibl>.		Will pay next time <date when="1931-03-30">Mch 30e</date>
+                </ab>
+                </div>
+            
+                <div type="verso">
                 <pb facs="#s4" />
-                
-                 S.H.R.	BREMOND
-                
-                1931	J+R		1 year 1 vol 	240
-                						 sub to March 5th 1932
-                April 11	Mystery of the Blue Train.		April 21
-                 "	 21		Dumb Animal		=7.f.			May 19
-                May 19		Grand Hotel						 "	29
-                 "	29		No Other Tiger					June 10
-                June 10		Men Dislike Women				June 22
-                 "	22		Gentleman in the Parlour		July 9
-                July 9		The Other Horse					 "	16
-                 "	16		Philippe						
-                Aug 3 		E B Browning's Poetical Works	Aug 7
-                			Tennyson's Poetical Works
+                <head>
+                 S.H.R.	<persName ref="#brem.he">BREMOND</persName>
+                </head>
+                <ab>
+                <date when="1931">1931</date>	J+R		1 year 1 vol 	240
+                						 sub to <date when="1932-03-05">March 5th 1932</date>
+                </ab>
+                <ab> 
+                <date when="1931-04-11">April 11</date>	    <bibl><title>Mystery of the Blue Train</title></bibl>.		<date when="1931-04-21">April 21</date>
+                <date when="1931-04-21"> "	 21</date>		<bibl><title>Dumb Animal</title></bibl>		=7.f.			<date when="1931-05-19">May 19</date>
+                <date when="1931-05-19">May 19</date>		<bibl><title>Grand Hotel</title></bibl>						<date when="1931-05-29"> "	29</date>
+                <date when="1931-05-29"> "	29</date>		<bibl><title>No Other Tiger</title></bibl>					<date when="1931-06-10">June 10</date>
+                <date when="1931-06-10">June 10</date>		<bibl><title>Men Dislike Women</title></bibl>				<date when="1931-06-22">June 22</date>
+                <date when="1931-06-22"> "	22</date>		<bibl><title>Gentleman in the Parlour</title></bibl>		<date when="1931-07-09">July 9</date>
+                <date when="1931-07-09">July 9</date>		<bibl><title>The Other Horse</title></bibl>					<date when="1931-07-16"> "	16</date>
+                <date when="1931-07-16"> "	16</date>		<bibl><title>Philippe</title></bibl>						<date when="1931-08-03">    </date>
+                <date when="1931-08-03">  </date>		    <bibl><title>E B Browning's Poetical Works</title></bibl>	                            <date when="1931-08-03">  </date>
+                <date when="1931-08-03">  </date>		    <bibl><title>Tennyson's Poetical Works</title></bibl>                                   <date when="1931-08-03">  </date>
                 			
-                Oct 13		Return I Dare Not				Oct 19
-                Oct 22		Waves							Oct 30
-                Nov 9		Jungle Ways						Nov 16
-                	16		First Person Singular			Nov 23
-                Nov.23.		The Man who died				Nov 30
-                	30		First Lady Brendon				Dec 12
-                Dec 12		Dead Men Do Tell				Dec. 18
-                	18		Down's Left Hand				Jan 5
-                Jan 5		Wife of Stefan Tromholt 2 vols	Jan 12
-                	12		Maid in Waiting					Jan. 22
-                	22		Susan Spray						Feb 3
-                Feb 3		Murder at Wredes				Feb. 6
-                	6		Mother India p.c. Mar. 5		March 11
-                March 11	Plagued by the Nightingale		March 17
-                	17		Hatter's Castle					March 24
-                	24		French Husband					April 4
-                 Renewed March 6 1932 - March 6 1933	175 frs
-                April 4		Sanctuary						April 14
-                
+                <date when="1931-10-13">Oct 13</date>		<bibl><title>Return I Dare Not</title></bibl>				<date when="1931-10-19">Oct 19</date>
+                <date when="1931-10-22">Oct 22</date>		<bibl><title>Waves</title></bibl>							<date when="1931-10-30">Oct 30</date>
+                <date when="1931-11-09">Nov 9</date>		<bibl><title>Jungle Ways</title></bibl>						<date when="1931-11-16">Nov 16</date>
+                <date when="1931-11-16">	16</date>		<bibl><title>First Person Singular</title></bibl>			<date when="1931-11-23">Nov 23</date>
+                <date when="1931-11-23">Nov.23.</date>		<bibl><title>The Man who died</title></bibl>				<date when="1931-11-30">Nov 30</date>
+                <date when="1931-11-30">	30</date>		<bibl><title>First Lady Brendon</title></bibl>				<date when="1931-12-12">Dec 12</date>
+                <date when="1931-12-12">Dec 12</date>		<bibl><title>Dead Men Do Tell</title></bibl>				<date when="1931-12-18">Dec. 18</date>
+                <date when="1931-12-18">	18</date>		<bibl><title>Down's Left Hand</title></bibl>				<date when="1932-01-05">Jan 5</date>
+                <date when="1932-01-05">Jan 5</date>		<bibl><title>Wife of Stefan Tromholt</title><biblScope from="2">2 vols</biblScope></bibl>	<date when="1932-01-12">Jan 12</date>
+                <date when="1932-01-12">	12</date>		<bibl><title>Maid in Waiting</title></bibl>					<date when="1932-01-22">Jan. 22</date>
+                <date when="1932-01-22">	22</date>		<bibl><title>Susan Spray</title></bibl>						<date when="1932-02-03">Feb 3</date>
+                <date when="1932-02-03">Feb 3</date>		<bibl><title>Murder at Wredes</title></bibl>				<date when="1932-02-06">Feb. 6</date>
+                <date when="1932-02-06">	6</date>		<bibl><title>Mother India</title></bibl> p.c. <date when="1932-03-05">Mar. 5</date>		<date when="1932-03-11">March 11</date>
+                <date when="1932-03-11">March 11</date>	    <bibl><title>Plagued by the Nightingale</title></bibl>		<date when="1932-03-17">March 17</date>
+                <date when="1932-03-17">	17</date>		<bibl><title>Hatter's Castle</title></bibl>					<date when="1932-03-24">March 24</date>
+                <date when="1932-03-24">	24</date>		<bibl><title>French Husband</title></bibl>					<date when="1932-04-04">April 4</date>
+                 Renewed <date from="1932-03-06" to="1933-03-06">March 6 1932 - March 6 1933</date>	175 frs
+                <date when="1932-04-04">April 4</date>		<bibl><title>Sanctuary</title></bibl>						<date when="1932-04-14">April 14</date>
+                </ab>
+                </div>
+                </div>
+            
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s5" />
+                <head>
+                	<persName ref="#brem.he">BREMOND</persName>
+                    <address>
+                    <addrLine><num type="telephone">Inv. 05-92</num></addrLine>
+                    <street>4 rue de Cérisoles</street><district>8e</district>
+                    <addrLine><num type="telephone">Elysées 61-76</num></addrLine>
+                    <street>25 bis rue de Constantine</street><district>VII</district>
+                    </address>		
+                subscription to <date to="1933-03-06">6 March 1933</date> extended to <date to="1933-11">Nov 1933</date>
+                			
+                </head>
+                <ab>
+                <date when="1932-12-28">Dec 28</date>	<bibl><title>Brave New World</title></bibl>  card <date when="1933-01-25">25 Jan</date>		<date when="1933-02-01">1 Feb.</date>
+                <date when="1933-02-01">Feb. 1</date>	<bibl><title>Jeremiahs Princes</title></bibl>. card <date when="1933-02-10">10 Feb</date> 		<date when="1933-02-11">11</date>
+                <date when="1933-02-11">	11</date>	<bibl><title>Narrow Corner</title></bibl>						<date when="1933-02-18">18</date>
+                <date when="1933-02-18">	18</date>	<bibl><title>They were defeated</title></bibl>					<date when="1933-02-23">23</date>
+                <date when="1933-02-23">	23</date>	<bibl><title>Flowering Wilderness</title></bibl>				<date when="1933-02-27">27</date>
+                <date when="1933-02-27">	27</date>	<bibl><title>Famous Plays</title></bibl> card <date when="1933-03-08">8 March</date>			<date when="1933-03-13">13 March</date>
+                <date when="1933-03-29">March 29</date> <bibl><title>Peking Picnic</title></bibl>						<date when="1933-04-01">1 April</date>
+                <date when="1933-04-01">1 April</date>	<bibl><title>All men are enemies</title></bibl>					<date when="1933-04-24">24 "</date>
+                <date when="1933-04-24">24	</date>	    <bibl><title>Lovely Lady</title></bibl>		9 x 2 = 18			<date when="1933-05-09">9 May</date>
                 
-                	Inv. 05-92		BREMOND
-                subscription to 6 March 1933 extended to Nov 1933
-                			4 rue de Cérisoles 8e	Elysées 61-76
-                			25 bis rue de Constantine VII
-                Dec 28	Brave New World  card 25 Jan		1 Feb.
-                Feb. 1	Jeremiahs Princes. card 10 Feb 		11
-                	11	Narrow Corner						18
-                	18	They were defeated					23
-                	23	Flowering Wilderness				27
-                	27	Famous Plays card 8 March			13 March
-                March 29 Peking Picnic						1 April
-                1 April	All men are enemies					24 "
-                24		Lovely Lady		9 x 2 = 18			9 May
-                11 Oct. 1935 - 11 Oct. 1936  - 			175v
-                		Enburg Sheath				21
-                21 Oct-	Heaven's my destination		28
-                28 - 	Cathedral							23
-                		Inquisitor							23
-                23 Nov.	It can't happen here				13 Dec
-                13 Dec	Sanctuary							Jan 2
-                		Breakfast in bed. not new			Jan 2
-                Jan 2	Come &amp; get it		pd 4f				31
-                	31.	Kim -								Feb 14
-                Feb 14	Elizabeth &amp; Essex					Ap. 6.
-                Ap. 6.	Detective No 1						Aug 1
-                Sept 25. Famous Plays of 1935 -b			Oct 8
-                Oct.8.	Christina							Oct. 13.
-                	13.	Cosmopolitains. pc. Nov 1) .		Jan 4
-                											157.50
-                Renewed Oct 11 1936 - Oct 11th 1937			175.
+                <date from="1935-10-11" to="1936-10-11">11 Oct. 1935 - 11 Oct. 1936</date>  - 			175v
+                
+                <date when="1935-10-11">	</date>	    <bibl><title>Enburg Sheath</title></bibl>				       <date when="1935-10-21">21</date>
+                <date when="1935-10-21">21 Oct-</date>	<bibl><title>Heaven's my destination</title></bibl>		       <date when="1935-10-28">28</date>
+                <date when="1935-10-28">28 - </date>	<bibl><title>Cathedral</title></bibl>						   <date when="1935-11-23">23</date>
+                <date when="1935-10-28">	</date>	    <bibl><title>Inquisitor</title></bibl>						   <date when="1935-11-23">23</date>
+                <date when="1935-11-23">23 Nov.</date>	<bibl><title>It can't happen here</title></bibl>				<date when="1935-12-13">13 Dec</date>
+                <date when="1935-12-13">13 Dec</date>	<bibl><title>Sanctuary</title></bibl>							<date when="1936-01-02">Jan 2</date>
+                <date when="1935-12-13">	</date>	    <bibl><title>Breakfast in bed</title></bibl>. not new			<date when="1936-01-02">Jan 2</date>
+                <date when="1936-01-02">Jan 2</date>	<bibl><title>Come &amp; get it</title></bibl>		pd 4f		<date when="1936-01-31">31</date>
+                <date when="1936-01-31">	31.</date>	<bibl><title>Kim</title></bibl> -								<date when="1936-02-14">Feb 14</date>
+                <date when="1936-02-14">Feb 14</date>	<bibl><title>Elizabeth &amp; Essex</title></bibl>				<date when="1936-04-06">Ap. 6.</date>
+                <date when="1936-04-06">Ap. 6.</date>	<bibl><title>Detective No 1</title></bibl>						<date when="1936-08-01">Aug 1</date>
+                <date when="1936-09-25">Sept 25</date>. <bibl><title>Famous Plays of 1935</title></bibl> -b			   <date when="1936-10-08">Oct 8</date>
+                <date when="1936-10-08">Oct.8.</date>	<bibl><title>Christina</title></bibl>							<date when="1936-10-13">Oct. 13</date>.
+                <date when="1936-10-13">	13.</date>	<bibl><title>Cosmopolitains</title></bibl>. (pc. <date when="1935-11-01">Nov 1</date>) .		<date when="1936-01-04">Jan 4</date>
+                </ab>
+                <ab>                                         
+                                                            157.50
+                Renewed <date from="1936-10-11" to="1937-10-11">Oct 11 1936 - Oct 11th 1937</date>			175.
                 								extras		 17.75
                 						paid Jan 5 - 1937	175.25
-                Jan 5 (?) Kit Brandon						Feb 5
-                Feb 5	They Walk in the City
-                
+                </ab>
+                <ab>
+                <date when="1936-01-05">Jan 5</date> (?)<bibl><title>Kit Brandon</title></bibl>						<date when="1936-02-05">Feb 5</date>
+                <date when="1936-02-05">Feb 5</date>	<bibl><title>They Walk in the City</title></bibl>
+                </ab>
+                </div>
+            
+                <div type="verso">
                 <pb facs="#s6" />
-                
+                <ab>
                 						Manhattan
-                April 14	Swiss Family Robinson 		April 22
-                	  22	Evensong		p.c. June 30 July 19
-                
+                <date when="1936-04-14">April 14</date>	<bibl><title>Swiss Family Robinson</title></bibl> 		<date when="1936-04-22">April 22</date>
+                <date when="1936-04-22">	  22</date>	<bibl><title>Evensong</title></bibl>		p.c. <date when="1936-06-30">June 30</date> <date when="1936-07-19">July 19</date>
+                </ab>
+                </div>
+                </div>
+            
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s7" />
-                
-                1937			BREMOND
-                 - Oct 11th 1937
-                
-                Jan. 4. Laughing Gas.					Jan 18
-                	18	Kit Brandon						Feb. 5.
-                Feb 5	They walk in the city.			Feb 10
-                	10	Faithful Lovers					Feb 27
-                	27	Other Side						March 11
-                March 11 Very Heaven					bought
-                	Mai 20 sent p.c. Easter closing
-                  April 17 Sent letter Gs book _
-                April 19_	In memory of murder.		April 27.
-                	  27.t	Delicate Monster.			Jan 14
-                	  		 past du 15 Jun.
-                	  		 subsc expired Oct 11 1937 has not
+                <head>
+                <persName ref="#brem.he">BREMOND</persName>
+                  <date when="1937">1937</date>			
+                 - <date to="1937-10-11">Oct 11th 1937</date>
+                </head>
+                <ab>
+                <date when="1937-01-04">Jan. 4.</date>  <bibl><title>Laughing Gas</title></bibl>.					<date when="1937-01-18">Jan 18</date>
+                <date when="1937-01-18">	18</date>	<bibl><title>Kit Brandon</title></bibl>						<date when="1937-02-05">Feb. 5.</date>
+                <date when="1937-02-05">Feb 5</date>	<bibl><title>They walk in the city</title></bibl>.			<date when="1937-02-10">Feb 10</date>
+                <date when="1937-02-10">	10</date>	<bibl><title>Faithful Lovers</title></bibl>					<date when="1937-02-27">Feb 27</date>
+                <date when="1937-02-27">	27</date>	<bibl><title>Other Side</title></bibl>						<date when="1937-03-11">March 11</date>
+                <date when="1937-03-11">March 11</date> <bibl><title>Very Heaven</title></bibl>					bought
+                	<date when="1937-03-20">Mar 20</date> sent p.c. Easter closing
+                    <date when="1937-04-17">April 17</date> Sent letter Gs book _
+                <date when="1937-04-19">April 19</date>_	<bibl><title>In memory of murder</title></bibl>.		<date when="1937-04-27">April 27.</date>
+                <date when="1937-04-27">	  27</date>.t	<bibl><title>Delicate Monster</title></bibl>.			<date when="1938-06-14">Jun 14</date>
+                	  		 past du <date when="1937-06-15">15 Jun.</date>
+                </ab>
+                <ab>
+                	  		 subsc expired <date when="1937-10-11">Oct 11 1937</date> has not
                 	  	returned to renew it
-                	  	
-                
-                  March 14 - July 14 -			400		180fr
+                </ab>  	
+                <ab>
+                  <date from="1938-03-14" to="1938-07-14">March 14 - July 14</date> -			400		180fr
                 1 new vol- 4 mos.
-                
-                March 14- Summer Moonshine				Mar 25
-                	  25. Crooked <unclear/>					April 7
-                May 5	Rains Came		? did she bring	  yes
+                </ab>
+                <ab>
+                <date when="1938-03-14">March 14</date>- <bibl><title>Summer Moonshine</title></bibl>				<date when="1938-03-25">Mar 25</date>
+                <date when="1938-03-25">	  25</date>. <bibl><title>Crooked <unclear/></title></bibl>				<date when="1938-04-07">April 7</date>
+                <date when="1938-05-05">May 5</date>	 <bibl><title>Rains Came</title></bibl>		? did she bring	  yes
                 								back?
-                May 27	Six Plays						July 2
-                
+                <date when="1938-05-27">May 27</date>	 <bibl><title>Six Plays</title></bibl>						<date when="1938-07-02">July 2</date>
+                </ab>
+                </div>
+            
+                <div type="verso">
                 <pb facs="#s8" />
-                
+                <ab>
                 <!-- Verso Blank -->
-                
-            </ab>
+                </ab>
+                </div>
+                </div>
         </body>
     </text>
 </TEI>
