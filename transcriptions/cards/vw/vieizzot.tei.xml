@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#viei.ma">Mlle Marie-Thérèse Vieillot</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#viei.ma"><persName>Mlle Marie-Thérèse Vieillot</persName></person>
+            </particDesc>
+        </profileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2015-12-10">
+            <p> First level encoding </p>
+            <ab>
+            Deposit receipt card for Mlle Vieillot
+            Corrected "facsimile" tag to ".../vw/vieizzot" so it refers to the deposit card, which is categorized erroneously under "vieizzot"
+            </ab>
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/vw/vieizzot/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <ab>
+                    <address><name>"SHAKESPEARE AND COMPANY"</name>
+                    	<persName ref="#beac.sy">-SYVIA BEACH-</persName>
+                    <street>12, RUE DE L'ODÉON-</street><settlement>PARIS</settlement> <district>VIe</district></address>
+                    	LENDING LIBRARY
+                    	CARD OF MEMBERSHIP
+                    	
+                    <address><persName ref="#viei.ma">Mademoiselle Vieillot</persName>
+                    <street>4 rue Ferou</street></address>
+                    <date from="1940-03-01" to="1940-06-01">March 1st - June 1st 1940</date>
+                    
+                    Deposit: ____
+                    						<persName ref="#beac.sy">SB</persName>
+                    This card must be kept as receipt for the deposit
+                    </ab>
+                </div>  
+                <div type="verso">
+                    <pb facs="#s2" />
+                    <ab>
+                    Renewed :
+                    </ab>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
