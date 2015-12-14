@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#broo.al">Alden Brooks</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -22,6 +26,14 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
@@ -48,37 +60,50 @@
     </facsimile>
     <text>
         <body>
-            <ab>
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s1" />
+                <head>
+                		<persName ref="#broo.al">Mr Alden BROOKS</persName>
+                </head>
                 
-                		Mr Alder BROOKS
+                <ab>
+                <date when="1939-07-14">July 14 1939</date>	
+                                <persName ref="#beac.sy" full="init">S B</persName> sold <persName ref="#broo.al" full="init">A.B.</persName>'s copy
+                				of <bibl><title>Ulysses</title><edition>1st ed.</edition></bibl>			700v
+                </ab>
+                </div>
                 
-                
-                
-                July 14 1939	S B sold A.B.'s copy
-                				of Ulysses 1st ed.			700v
-                
+                <div type="verso">
                 <pb facs="#s2" />
                 
                 <!--Blank Verso-->
+                </div>
+                </div>
                 
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s3" />
+                <head>
+                		<persName ref="#broo.al">Alden BROOKS</persName>
+                </head>		
                 
-                		Alder BROOKS
-                		
-                
-                
-                July 14		sold Mr Brooks' copy Ulysses 1st ed
-                1939		  ordinary unsigned 700v
+                <ab>
+                <date when="1939-07-14">July 14	1939</date>
+                          sold <persName ref="#broo.al">Mr Brooks</persName>' copy <bibl><title>Ulysses</title><edition>1st ed</edition></bibl>
+                		  ordinary unsigned 700v
                 							commission
                 								200
                 					due to A.B.	500 frs
+                </ab>
+                </div>
                 
+                <div type="verso">
                 <pb facs="#s4" />
                 
                 <!-- Verso Blank -->
-                
-            </ab>
+                </div>
+                </div>
         </body>
     </text>
 </TEI>
