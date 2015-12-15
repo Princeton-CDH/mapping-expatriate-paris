@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#brul.co">Colette Brull</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#carlca">
+                <ab>
+                    NEED TO DETERMINE THE ACCURATE DATE YEAR AND CHANGE ALL DATES BELOW from 1900 to 19xx.
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/b/brullc/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                				<persName ref="#brul.co">BRULL Mlle Colette</persName>
+                				
+                			<address>
+                			    <street>1 Avenue du Gal Maishe 1.</street><district>XIVe</district>
+                			</address>
+                </head>	
+                <ab>
+                			1	m		1v.		st.			20.
+                						Dep					50
+                					pd. <date when="1900-12-06">dec. 6</date>
+                </ab>
+                <ab>
+                <date when="1900-12-02">Dec 2.</date>		<bibl><title>The Scarlet Letter</title></bibl>				<date when="1900-12-06">Dec 6</date>
+                <date when="1900-12-06">	6</date>		<bibl><title>Villette</title></bibl>						<date when="1900-12-10">Dec.10</date>
+                <date when="1900-12-10">	10</date>		<bibl><title>Professor</title></bibl>
+                </ab>
+                </div>
+            
+                <div type="verso">
+                 <pb facs="#s2" />
+                
+                <!-- Blank Verso -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
