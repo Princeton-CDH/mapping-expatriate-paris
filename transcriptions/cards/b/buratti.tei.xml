@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#bura.je">Jean Buratti</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/b/buratti/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                				
+                <date when="1941">1941</date>			<persName ref="#bura.je">Jean BURATTI</persName>
+                				                        <address>
+                				                        <street>14 rue Henri Say</street><settlement>Arrieres</settlement>
+                				                        </address>
+                </head>
+                <ab>    
+                						3 mos	1  v  S		50
+                									  dep	50
+                </ab>
+                <ab>
+                <date when="1941-11-06">Nov 6</date>	<bibl><title>Mill on The Floss</title></bibl> - <bibl><title>Silas Marner</title></bibl>	<date when="1941-11-13">Nov 13</date>
+                <date when="1941-11-13">Nov 13</date>	<bibl><title>Scenes of Clerical Life</title> (N.ed.)</bibl>		<date when="1941-11-27">Nov 27</date>
+                <date when="1941-11-27">Nov 27</date>	<bibl><title>Mr Midshipman Easy</title></bibl>					<date when="1941-12-11">Dec 11</date>
+                <date when="1941-12-11">Dec 11</date>	<bibl><title>Quentin Durward</title></bibl>						<date when="1941-12-24">Déc. 24</date>
+                
+                						left deposit
+                </ab>
+                </div>
+                
+                <div type="verso">
+                 <pb facs="#s2" />
+                
+                <!-- verso blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
