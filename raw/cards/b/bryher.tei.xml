@@ -4,10 +4,14 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#elle.an" type="pseudo" sort="1">Bryher</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -22,6 +26,14 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
@@ -42,26 +54,31 @@
     </facsimile>
     <text>
         <body>
-            <ab>
+                <div type="card">
+                <div type="recto">
                 <pb facs="#s1" />
-                
-                			Bryher (verso)
-                
+                <head>
+                    <persName ref="#elle.an" type="pseudo" sort="1">Bryher</persName> (verso)
+                </head>
+                </div>
+                <div type="verso">
                 <pb facs="#s2" />
-                
+                <head>
                 			Various accounts
-                			
-                Feb 	Mme Marcelle Auclair (Eagar)
-                		Wells' History Penguin				6.50
-                	28	Androcles &amp; The Lion (Tauchnitz)   20.00
+                </head>		
+                <ab>
+                <date when="1940-02-28">Feb</date> 	<bibl><title>Mme Marcelle Auclair</title> (Eagar)</bibl>
+                <date when="1940-02-28">	</date>	<bibl><title>Wells' History</title> Penguin</bibl>				6.50
+                <date when="1940-02-28">28</date>	<bibl><title>Androcles &amp; The Lion</title> (Tauchnitz)</bibl>   20.00
                 			never paid
-                
-                Bryher credit May 14 1940			377
+                </ab>
+                <ab>
+                <persName ref="#elle.an" type="pseudo" sort="1">Bryher</persName> credit <date when="1940-05-14">May 14 1940</date>			377
                 						WMS		   6010
-                						 "	S10
-                				
-                
-            </ab>
+                						 "	£10
+                </ab>				
+                </div>
+                </div>
         </body>
     </text>
 </TEI>
