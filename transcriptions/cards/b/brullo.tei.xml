@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#brul.od">Odile Brull</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/b/brull/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                <date when="1941">1941</date>			<persName ref="#brul.od">BRULL Mlle Odile</persName>			
+                			<address>
+                			<street>1 rue Neuve</street> 
+                			<settlement>Versailles</settlement>
+                			</address>
+                </head>		
+                <ab> 
+                			1m 1v. S				20
+                					Dep				50
+                </ab>
+                <ab>
+                <date when="1941-05-26">May 26</date>		<bibl><title>Country house</title></bibl>					<date when="1941-06-04">June 4</date>
+                <date when="1941-06-04">June 4</date>		<bibl><title>Ordeal of Richard Feveral</title></bibl>		<date when="1941-06-18">June 18</date>
+                <date when="1941-06-18">June 18</date>		<bibl><title>Under the greenwood tree</title></bibl>		<date when="1941-07-07">July 7</date>
+                Ren. <date from="1941-06-26" to="1941-07-26">June 26. July 26</date>. 1m 1v S			20
+                
+                <date when="1941-07-07">July 7</date>		<bibl><title>Sparkenbroke</title></bibl>					<date when="1941-09-20">Sept 20</date>
+                				(wrote to <persName ref="#brul.od">Mlle Brull</persName> <date when="1941-09-20">Sept 20</date>)
+                				 would reserve <bibl><title>Precious Bane</title></bibl>
+                <date when="1941-10-09">Oct. 9</date>	    <bibl><title>Precious bane</title></bibl>					<date when="1941-11-04">Nov 4</date>
+                  	Renewed <date when="1941-07-26" to="1941-10-26">July 26 - October 26 1941</date>		50
+                <date when="1941-11-04">Nov 4</date>		<bibl><title>Babbitt</title></bibl>
+                				<persName ref="#brul.od">Mlle Brull</persName> a écrit qu'elle a rendu
+                				  le volume
+                </ab>
+                </div>
+                
+                <div type="verso">
+                <pb facs="#s2" />
+                
+                <!-- verso blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
