@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wick.ki">Miss Kitty Wickes</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#wick.ki"><persName>Miss Kitty Wickes</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-01-06">
+                <p> First level encoding </p>
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/vw/wickes/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                    <date when="1933">1933</date>		<persName ref="#wick.ki">WICKES</persName>
+                    					           <address><addrLine><num type="telephone">passy 45.60</num></addrLine>
+                    			                   <persName ref="#wick.ki">Miss Kitty Wickes</persName>
+                    			                   <street>12 Rue Weber</street>	<district>16e</district></address>
+                    			<persName>Miss Strain</persName>
+                    </head>		
+                    <ab>
+                    				3	mos		1 v		30
+                    								dep	30
+                    </ab>								
+                    <ab>
+                    <date when="1933-12-05">Dec 5</date>	<bibl><title>Selected Poems</title> <author>E. Dickinson</author></bibl>	<date when="1933-12-12">Dec 12</date>
+                    <date when="1933-12-12">	12</date>	<bibl><title>Collected Poems of Elinor Wylie</title></bibl>
+                    								card <date when="1934-01-11">11.1.34</date>
+                    								 "	 <date when="1934-01-27">27.1.34</date>
+                    								letter <date when="1934-03-02">2-3-34</date>
+                    </ab>
+                    <ab>
+                    		Renewed to <date when="1934-03-17">17th March</date> 6v
+                    									                           85
+                    </ab>
+                    <ab>
+                    		ordered (paid 12.50)
+                    	<bibl><title>Inland Voyage - Travels with a 
+                    	
+                    		Donkey</title>	<publisher>Tauchnitz</publisher></bibl>
+                    		
+                    		Volume 	 "		contains
+                    		
+                    		only <bibl><title>Inland Voyage</title></bibl>
+                    		
+                    		Eng. edition contains both-
+                    		
+                    	Price 20v called up <persName ref="#wick.ki">K.W.</persName>
+                    	
+                    	<date when="1934-03-24">March 24</date>	-	out of town till
+                    	
+                    		Mon. wrote letter <date when="1934-03-28">March 28</date>
+                    	
+                    	asking Eng. ed. separate vols about 18v to be ordered (Chatto 1/6 each)
+                    </ab>	
+                </div> 
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
