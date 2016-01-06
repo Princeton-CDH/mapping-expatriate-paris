@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#whar.ja">Madame James Wharton</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#whar.ja"><persName>Madame James Wharton</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-01-06">
+                <p> First level encoding </p>
+                <ab>
+                s1:  Corrected "in and" to "maid"
+                     Corrected <unclear/> to "Composition"
+                </ab>
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/vw/wharton/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                            <persName ref="#whar.ja">WHARTON</persName>
+                    <date when="1927-02-28">1927	
+                    Feb. 28</date>			<address><persName ref="#whar.ja">Madame James Wharton</persName>
+                    						<street>45 Quai Bourbon.</street></address>
+                    </head>		
+                    		
+                    		
+                    		
+                    		
+                    <ab>		
+                    		1 m.	1 vol					25
+                    		Deposit							50
+                    		
+                    </ab>
+                    <ab>                        paid by <persName ref="#whar.ja">Mrs W</persName>. Mch 26.
+                	<date when="1927-02-28">Feb 28</date>	<bibl><title>Great Abnormal</title></bibl> 0.25 = 1.75 (maid said she paid 2f to someone else here)		<date when="1927-03-07">Mch 7</date>
+                	<date when="1927-03-28">Mch 28</date>	<bibl><title>Composition</title></bibl> 	0.25 <bibl><title>H. Ellis</title> by <author>I Goldberg</author></bibl> 0.50	<date when="1927-03-28">"	28</date>
+                												1.50 paid
+                	</ab>											
+                </div> 
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>    
+            </div>
+        </body>
+    </text>
+</TEI>
