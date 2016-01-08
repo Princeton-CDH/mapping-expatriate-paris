@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#will.ma">Lady Marjorie Williams</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#will.ma"><persName>Lady Marjorie Williams</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-01-08">
+                <p> First level encoding </p>
+                <ab>
+                     Nov 4	<unclear/> Journey ren.
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/vw/willaims/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                                <persName ref="#will.ma">WILLIAMS</persName>
+                    <date when="1927-10-26">1927		
+                    Oct 26</date>.					<address><persName ref="#will.ma">Lady Marjorie Williams</persName>
+                    							    <street>33 rue de la Tour</street>
+                    								<addrLine><num type="telephone">Passy 71-04</num></addrLine></address>
+                    </head>								
+                    <ab>
+                    		6 m		2 vols				150.
+                    		
+                    	subs to <date when="1928-04-26">April 26th 1928</date>
+                    </ab>	
+                    <ab>
+                	<date when="1927-10-26">Oct 26</date>	<bibl><title>Story of an African Farm</title></bibl>	        <date when="1927-11-04">Nov 4</date>
+                			                                <bibl><title>History of Witchcraft &amp; Demonoly</title></bibl><date when="1927-11-04">"	"</date>
+                	<date when="1927-11-04">Nov 4</date>	<bibl><title>Famous Trials in History</title></bibl> ren.		<date when="1927-11-28">Nov. 28</date>
+                	<date when="1927-11-04">"	4</date>	<bibl><title><unclear/> Journey</title></bibl> ren.				<date when="1927-11-25">Nov 25</date>
+                	<date when="1927-11-25"> "	25</date>	<bibl><title>Genius of Character</title></bibl> 0.25	= 3.75.	<date when="1927-12-10">Dec 10</date>
+                	<date when="1927-11-28"> "	28</date>	<bibl><title>Amazing Marriage</title></bibl>	ren				<date when="1928-01-10">Janv. 10</date>
+                	<date when="1928-01-10">Janv. 10</date> <bibl><title>Letters of Gertrude Bell</title>. <biblScope unit="volume" from="2">vol II</biblScope></bibl>	 <date when="1928-01-23">"	23</date>
+                	<date when="1928-01-23">	 23</date>	<bibl><title>Havid Andersen</title></bibl>						<date when="1928-01-27">"	27</date>
+                	<date when="1928-01-23">	 23</date>. <bibl><title>Tinkers Leave</title></bibl> 0.25			 = 7f	<date when="1928-02-20">Feb 20</date>
+                	<date when="1928-01-28">	 28</date>. <bibl><title>Letters of G. Bell</title> <biblScope unit="volume" from="2">Vol II</biblScope></bibl> 0.15  23	<date when="1928-02-20">Feb. 20</date>
+                	<date when="1928-02-20">Feb 20</date>	<bibl><title>Cavour</title></bibl>	0.50					                                              30f.  <date when="1928-03-10">Mch 10</date>
+                	<date when="1928-02-20">"	 "</date>	<bibl><title>Smoke ...</title></bibl>			0.60			<date when="1928-03-08">Mch 8</date>
+                	<date when="1928-03-08">Mch 8</date>	<bibl><title>Howards End</title></bibl>.						<date when="1928-03-17">Mch 17</date>.
+                	</ab>
+                </div>
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>    
+            </div>
+        </body>
+    </text>
+</TEI>
