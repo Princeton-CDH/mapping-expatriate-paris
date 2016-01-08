@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#maur.an">André Maurois</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#maur.an"><persName>André Maurois</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-08-29">
+                <ab>
+                    Transcribed cards
+                    s1:
+                    	<unclear/> Jan 10 = "Literationary"?
+               			<unclear/> 21 Fevr = "Horner"?  "Morner"?
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/m/maurois/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+
+    </facsimile>
+    <text>
+        <body>
+            
+        <div type="card">  <div type="recto">      <pb facs="#s1" />
+              <head>  <date when="1922-12-19">Dec. 19</date>	<persName ref="#maur.an">Monsieur Andre Maurois</persName>
+                			<address><street>2 rue Borghèse</street>
+                					<settlement>Neuilly</settlement></address>
+                	</head>
+                	<ab>Subscription 3 mos - 2 vols		20
+                					Dep.			14</ab>
+                
+             <ab>   <date when="1921-12-19">Dec. 19</date>	<bibl><title>Colors of Life</title></bibl>				<date when="1922-01-10">Jan. 10</date>
+                		<bibl><title>Speculative Dialogues</title></bibl>
+                		<bibl><title>Erewhon Revisited</title></bibl>
+                <date when="1922-01-10">Jan. 10</date>	<bibl><title>Irish Literary &amp; Musical Studies</title></bibl>	<date when="1922-01-23">Jan 23</date>
+                		<bibl><title>Aspern Papers</title></bibl>
+                
+                <date when="1922-01-23">Jan. 23</date>	<bibl><title>Poems </title><author>Hardy</author>	</bibl>				<date when="1922-02-21">21</date>
+                		<bibl><title>Erewhon</title></bibl>						<date when="1922-02-21">21 Fevr</date>
+                <date when="1922-02-05">Feb 5</date>	<bibl><title>Anthology</title>, <editor>H. Monroe</editor></bibl>		<date when="1922-02-21">21 Fev</date>
+                <date when="1922-02-21">21 Fevr</date>	<bibl><title>The Humour of Homer</title></bibl>			<date when="1922-04-13">April 13</date>
+                		<bibl><title>Mary, Mary</title></bibl>
+                
+                <date when="1922-03-05">March 5</date>
+                
+                <date when="1922-04-13">April 13</date> <bibl><title>Biography of a Super-tramp</title></bibl> <date when="1922-04-19">April 19</date>	<date when="1923-05-19">May 19th 1923</date>
+                		<bibl><title>Totem &amp; Taboo</title></bibl>		<date when="1922-04-22">1922	April 22</date>	
+                		<bibl><title>Mercury</title></bibl> Feb (extra)						came to 
+                												explain!
+               <date when="1922-04-09"> April 9</date>	<bibl><title>The Voyage Out</title></bibl>							!!!!</ab>
+                </div>
+              <div type="verso">  <pb facs="#s2" />
+                <!-- verso blank -->	</div>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
