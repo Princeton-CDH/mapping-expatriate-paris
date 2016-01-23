@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#chen.an">André Chenneviere</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-05-18">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	<unclear/> = "carol"?  some notation for bothering about returning book
+                    	Side of card might be cut off:  the description of Emile Bascou as
+                    		"(Charlotte Chennevier " with no end parenthesis seems incomplete
+                   
+                  
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/c/chenneviere/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+      
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                <date when="1933">1933</date>		
+               			<persName ref="#chen.an">André CHENNEVIERE</persName>				
+               			<address>
+               			<addrLine><num type="telephone">GOB:  92-04</num></addrLine>
+               			<street>3 rue de l'Aude</street><district>XIV</district>
+               			<street>113 rue Lamarck</street>
+               			</address>
+               	</head>
+                <ab>
+               				
+               	<date when="1933-12-19">Dec 19</date>	<bibl><title>Revue des Deux Mondes</title></bibl>		<date when="1933-03-24">March 24</date>
+               			containing gillet's 'James Joyce
+               			et son nouveau roman'
+               	<date when="1934">1934</date>
+               	<date when="1934-03-24">March 24</date> <bibl><title>Disinherited</title></bibl>           <date when="1935-10-07">7 Oct. 1935</date>
+               	<date when="1934-05-11">May 11</date>	<bibl><title>Bindle</title></bibl>		          <date when="1935-10-07">    </date>
+               	                card <date when="1934-06-19">19 June</date>	 
+               					card <date when="1934-07-20">July 20</date>
+               					letter <date when="1934-09-15">sept 15</date>
+               					   "  	<date when="1934-12-19">19 Dec</date>
+               		<date when="1935-10-01">Oct 1 1935</date> wrote to ask 
+                    <persName>Mme Emile Bascou (Charlotte Chennevier)</persName>
+               		to get back the books if
+               		she could
+                </ab>
+               	</div>
+                <div type="verso">
+               	<pb facs="#s2" />
+               	<!-- verso blank -->
+            	</div>
+            	</div>	
+            	
+            
+        </body>
+    </text>
+</TEI>
