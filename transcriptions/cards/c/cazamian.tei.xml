@@ -4,12 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#caza.ma">Marguerite Cazamian</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -35,66 +36,49 @@
                 </xi:include>
             </sourceDesc>
         </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
-            </particDesc>
-        </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-05-12">
                 <ab>
                     Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
-                    
-                    
+                    s1:
+                    	Date at top almost certainly 1944, but page folded over in image
+                	
                     	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/c/cazamian/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
         <surface xml:id="s2">
         	<graphic url="00000002.jp2" />
         </surface>
-        
-        
-        
+    
     </facsimile>
     <text>
         <body>
-            
-            
-          <div type="card">
-              <pb facs="#s1" />
+                <div type="card">
                 <div type="recto">
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
-                
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
-                </div>
+                <pb facs="#s1" />
+            	<head>
+                <date when="1944">44</date>		
+                        <persName ref="#caza.ma">Mademoiselle Marguerite Cazamian</persName>
+            			<address>
+            			<street>11 rue Monticelli</street>
+            			<settlement>Paris</settlement><district>14</district>
+            			</address>
+            	</head>
+            	<ab>
+            	<date when="1944-03-23">March 23</date>	<bibl><title><persName>John Donne</persName></title>, <persName>Jessop</persName></bibl>		returned <date when="1944-06">June</date>
+            	</ab>
+            	</div>
                 <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
+            	<pb facs="#s2" />
+            	<!-- verso blank -->		
                 </div>
-          
-          </div>
-                
-           		            
-            
+                </div>
         </body>
     </text>
 </TEI>

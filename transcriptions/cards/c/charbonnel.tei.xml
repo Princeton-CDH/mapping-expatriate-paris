@@ -4,12 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#char.ma">Mary Maryse Charbonnel</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -35,66 +36,59 @@
                 </xi:include>
             </sourceDesc>
         </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
-            </particDesc>
-        </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-05-13">
                 <ab>
                     Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
-                    
-                    
+                  	s1:
+                  		after "go to address," arrow pointing to address
                     	
+                </ab>
+            </change>
+            <change who="carl" when="2016-01-22">
+                <ab>
+                    Millin?
+                    
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/c/charbonnel/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
         <surface xml:id="s2">
         	<graphic url="00000002.jp2" />
         </surface>
-        
-        
-        
+      
     </facsimile>
     <text>
         <body>
-            
-            
-          <div type="card">
-              <pb facs="#s1" />
+                <div type="card">
                 <div type="recto">
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
-                
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
-                </div>
+                <pb facs="#s1" />
+            	<head>
+                <date when="1937">1937</date>	
+            	        <persName ref="#char.ma">MARYSE CHARBONNEL
+            			Mlle. Mary</persName>
+            		    <address>
+            		    <street>27 Avenue Pierre I' de Serbie</street>
+            		  	<district>XVIe</district>
+            		  	</address>
+            	</head>
+                <ab>
+            		  By the day. 		Deposit 50 fr.
+            	<date when="1937-11-29">Nov. 29.</date>	<bibl><title>Rhodes</title> (<persName>Millin</persName>.)</bibl> 2fr day
+            					letter <date when="1938-01-19">Jan 19</date>
+            			go to address
+            				hopeless
+                </ab>
+            	</div>
                 <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
+            	<pb facs="#s2" />
+            	<!-- verso blank -->
+            	</div>
                 </div>
-          
-          </div>
-                
-           		            
-            
         </body>
     </text>
 </TEI>
