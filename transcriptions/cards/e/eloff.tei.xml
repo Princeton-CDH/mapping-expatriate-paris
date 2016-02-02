@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#elof.fa"><persName>Fanie Eloff</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-06-18">
+                <ab>
+                    Transcribed cards.
+                    
+                    
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/e/eloff/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+    
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+               
+                    <head> <date when="1930">1930</date>      <persName ref="#elof.fa">ELOFF</persName> 
+                        <address>
+                        <persName ref="#elof.fa">Mr S Eloff</persName>   
+                            <street>115 rue N.D. des Champs</street>
+                            <street> 14. rue Cassini </street>
+                            <orgName>Odéon 46.96</orgName>
+                       </address> 
+                       
+                            3 m 1 vol           100
+                           20f Deposit of last card
+               </head> 
+                    <ab>
+                        <date when="1930-06-26">June 26</date>    <bibl><title>America Set Free</title></bibl>       <date when="1930-08-04">Aug 4</date>
+                        <date when="1930-08-04">Aug 4</date>
+                        
+                    Renewed April 5 - May 5 1934 12v
+                
+                        <date when="1930-04-05">Apri 05</date>    <bibl><title>South Wind</title></bibl>               <date when="1930-04-07">April 7</date>
+                        <date when="1930-04-07"> 07</date>         <bibl><title>High wind in jamaica</title></bibl>     <date when="1930-04-09"> 9</date>
+                        <date when="1930-04-09"> 09</date>          <bibl><title>Tobit Transplanted</title></bibl>      <date when="1930-04-16"> 16 </date>
+                        <date when="1930-04-16"> 16</date>          <bibl><title>Diary of a drug fiend</title></bibl>      <date when="1930-04-18"> 18 </date>
+                        <date when="1930-04-18"> 18</date>          <bibl><title>to the lighthouse</title></bibl>       <date when="1930-04-30"> 30 </date>
+                        <date when="1930-04-30"> 30</date>          <bibl><title>St. Francis (Chesterton) </title></bibl>      <date when="1930-05-09"> 9 </date>
+                  
+                    Renewed 6 May - 6 Aug                       30f
+                    
+                        <date when="1930-05-09"> 09</date>          <bibl><title>Vestal Fire</title></bibl>      <date when="1930-05-17"> May 17 </date>
+                        <date when="1930-05-17"> 17</date>          <bibl><title>Heart of a goof</title></bibl>      <date when="1930-05-23"> 23 </date>
+                        <date when="1930-05-23"> 23</date>          <bibl><title>Heartless land</title></bibl>      <date when="1930-06-03"> June 3 </date>
+                        <date when="1930-06-03"> 03</date>          <bibl><title>As the unicorn</title></bibl>      <date when="1930-06-07"> June 7 </date>
+                        <date when="1930-06-07"> 07</date>          <bibl><title>Three Cities</title></bibl>      <date when="1930-06-09"> June 9 </date>
+                        <date when="1930-06-09"> 09</date>          <bibl><title>12-30 from Croyden</title></bibl>      <date when="1930-06-12"> 12 </date>
+                        
+
+                    </ab> 
+                </div>    
+              
+              <div type="verso">
+                <pb facs="#s2" />
+                <!-- verso blank -->
+              </div>      
+                          
+            </div>
+        </body>
+    </text>
+</TEI>
