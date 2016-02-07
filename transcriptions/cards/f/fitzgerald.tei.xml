@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="fitz">Fitzgerald</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#fitz"><persName>Fitzgerald</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-06-19">
+                <ab>
+                    Transcribed cards.
+                    
+                    
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/f/fitzgerald/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+    
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+               <div type="recto">
+                <pb facs="#s1" />
+                <head><date when="1937">1937	</date>	<persName ref="fitz">FITZGERALD</persName>
+                Miss,	<address><orgName>Hotel Maleherbe.</orgName>
+                				<street>rue Vanguard</street></address>.</head>
+                <ab>		
+                		1m. 1v.						15.00.
+                
+               <date when="1937-09-15"> Sept. 15.</date>	<bibl><title>Weather in the Streets</title></bibl>	<date when="1937-09-16">Sept. 16</date>
+                    <date when="1937-09-16">16</date>	<bibl><title>Years	</title></bibl>					<date when="1937-09-17">17.</date>
+                    <date when="1937-09-17">17.</date>		<bibl><title>Waves.</title></bibl>						<date when="1937-09-22">22</date>
+                    <date when="1937-09-17">17.</date>		<bibl><title>Inside Europe</title></bibl>				<date when="1937-09-22">22</date>
+                    <date when="1937-09-22">22</date>		<bibl><title>Together &amp; Apart Marbacka</title></bibl>	<date when="1937-09-24">24</date>
+                    <date when="1937-09-24">24</date>		<bibl><title>the Road	</title></bibl>			<date when="1937-09-27">Sept 27</date>
+                    <date when="1937-09-24">24</date>	<bibl><title>Plagued by the Nightingale</title></bibl> <date when="1937-09-29">Sept 29</date>
+                    <date when="1937-09-29">29</date>	<bibl><title>Year Before Last</title></bibl>		<date when="1937-09-30">Sept 30</date>
+                    <date when="1937-09-30">30</date>		<bibl><title>In the American Grain</title></bibl>	<date when="1937-10-01">Oct 1</date>
+                    <date when="1937-10-01">Oct 1</date>	<bibl><title>Illusion &amp; Reality </title></bibl>2v a day <date when="1937-10-02">Oct 2</date>
+                    <date when="1937-10-02">2</date>		<bibl><title>Light in August	</title></bibl>		<date when="1937-10-05">Oct 5</date>
+                    <date when="1937-10-05">5</date>		<bibl><title>Wuthering Heights</title></bibl><bibl><title> Agnes Grey</title></bibl><date when="1937-10-06"> Oct 6</date>
+                    <date when="1937-10-06"> 6</date>		<bibl><title>American Criticism</title></bibl> (?)	<date when="1937-10-09">Oct 9</date>
+                					                                               Fiction
+                	<date when="1937-10-09">9</date>		<bibl><title>Hudson River Bracketed</title></bibl>	<date when="1937-10-11">Oct 11</date>
+                    <date when="1937-10-11">11</date>	<bibl><title>9 live under a Black Sun</title></bibl> <date when="1937-10-12">Oct 12</date>
+                    <date when="1937-10-12">12</date>		<bibl><title>Mind in chains	</title></bibl>		<date when="1937-10-13">Oct 13</date>
+                	<date when="1937-10-13">13</date>
+                </ab>
+              </div>  
+               <div type="verso">
+                <pb facs="#s2" />
+                <!-- verso blank -->
+               </div>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
