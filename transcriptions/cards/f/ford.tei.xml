@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+            	<title>An Encoded Transcription of a Borrower's Card: <persName ref="ford.fo">Ford Madox Ford</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+            	<respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+            		<resp>encoder</resp>
+            	</respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+            	<xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
+            		<xi:fallback>
+            			<listperson>
+            				<head>People not available</head>
+            				<person/>
+            			</listperson>
+            		</xi:fallback>
+            	</xi:include>
+            </sourceDesc>
+        </fileDesc>
+    	<profileDesc>
+    		<textClass>          
+    			<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    		</textClass>
+    		<particDesc>
+    			<person role="cardholder" ana="#ford.fo"><persName>Ford Madox Ford</persName></person>
+    		</particDesc>
+    	</profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-06-19">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	Front of envelope
+                    s2:
+                    	Back of envelope
+                    s3:
+                    	Bill slip?  Printed with "Shakespeare and Company"
+                    
+                    s5:
+                    	Note about "Metaphysical Poetry" runs vertically along side of card
+                    
+                    
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/f/ford/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+        	<graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+        	<graphic url="00000004.jp2" />
+        </surface>
+        <surface xml:id="s5">
+        	<graphic url="00000005.jp2" />
+        </surface>
+        <surface xml:id="s6">
+        	<graphic url="00000006.jp2" />
+        </surface>
+        
+        
+        
+    
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+            <div type="recto">
+                <pb facs="#s1" />
+                		<ab><address><orgName>Shakespeare and Company</orgName>
+                			<street>12 rue de l'Odeon</street>
+                				<settlement>Paris VI</settlement>
+                				
+                				<country>France</country></address></ab>
+            </div>  
+            	<div type="verso">
+                <pb facs="#s2" />
+                		<ab><address><persName ref="ford.fo">F.M. Ford</persName>
+                		<orgName>Apartment 31</orgName>
+                	<street>130 Morningside Drive</street>
+                		<settlement>New York City</settlement></address>
+                	
+                	book turned up
+                	
+                	in <bibl><title>to Have
+                		&amp; Have Not</title></bibl> jacket
+                	but "		not returned</ab>
+                </div>
+            	<div type="recto">
+                <pb facs="#s3" />
+                <ab>M	<persName ref="ford.fo">F.M. Ford</persName>,							<date type="1938-03-23">March 23rd 1938</date>
+                	c/o Guaranty Trust Co.,
+                	Paris.				DR TO
+                				"SHAKESPEARE AND COMPANY"
+                					--Sylvia Beach--
+                	BOOKSHOP							LENDING LIBRARY
+                				12, RUE DE L'OD´EON
+                					PARIS - 6e
+                	Téléph Danton 09-57					R.C. Seine No 284-402
+                	
+                				Grierson:  <bibl><title>The Metaphysical Poets
+                				from Donne to Butler</title></bibl>		Frs		54
+                							less deposit			20
+                								balance due, Frs.	34
+                				
+                				(Mrs Gatherer brought back all the
+                				books except this one which she was
+                				unable to find)
+                				
+                				I have been obliged to replace
+                				it at once in my library as it
+                				is very much in demand
+                									SB.
+                				
+                				we are devosted.  Hope you will forgive us.
+                				Cannot imagine how it happened.
+                				with many thanks.
+                							Janice Ford</ab>
+                </div>	
+            	<div type="verso">
+                	<pb facs="#s4" />
+                	<!-- verso blank -->
+                </div>	
+            	<div type="recto">
+                	<pb facs="#s5" />
+            		<ab>
+                	<bibl><title>Metaphysical Poetry</title></bibl> turned up April 6th
+                	in a jacket of Hemingway's to <bibl><title>Have &amp; Have Not</title></bibl>
+                	
+                	<date when="1938">1938</date>		<persName ref="ford.fo">FORD</persName>
+                	
+                				<address><street>31 rue de Seine</street>
+                				<orgName>(to Guaranty Trust
+                				Place de la Concorde,</orgName> <settlement>Paris)</settlement></address>
+                				
+                				1	m	several vols		30
+                									dep		20
+                	
+                	<date when="1938-03-02">March 2	</date>	<bibl><title>Metaphysical Poetry Donne to Butler</title></bibl>
+                				<bibl><title>Poems of Herbert</title></bibl> (World Classics)	<date when="1938-03-23">23</date>
+            			<bibl><title>George Herbert's Works	</title></bibl>			<date when="1938-03-23">23</date>
+            			<bibl><title>Vaughan's Works Muses Lib 2 vols</title></bibl> <date when="1938-03-23">Mar. 23</date>
+            			<bibl><title>Crashaw	</title></bibl>						<date when="1938-03-23">23</date>
+            			<bibl><title>Donne's Poems 2 vols</title></bibl> Oxford			<date when="1938-03-23">23</date>
+            			<bibl><title>To Have + Have Not		</title></bibl>			<date when="1938-03-23">23</date>
+                				(a mistake no doubt - evidently
+                				didn't borrow this -)
+                				
+                			<address><persName>Mrs Gatherer</persName>
+                				<street>31 rue de Seine</street></address>
+                				
+                				brought back all the books except
+                				<bibl><title>Metaphysical Poetry Donne to Butler</title></bibl>
+                				
+            			<persName ref="beac.sy">SB</persName> ordered another copy for library
+                				<date when="1938-03-23">March 23</date>
+                				
+                				<persName ref="ford.fo">FM Ford</persName> owes 6/-		54 frs
+                						minus dep		20
+                						balance due:	34
+                					sent bill <date when="1938-03-23">March 23 1938</date> to Guaranty
+                											Trust Co
+                			FMF sent cheque April 5 1938	Ford gone to US March 23
+            			<persName ref="beac.sy">SB</persName> owes Mrs Ford 34v</ab>
+                </div>	
+            	<div type="verso">
+                	<pb facs="#s6" />
+                	<!-- verso blank -->	
+                </div>	
+                
+                
+                
+            </div>
+        </body>
+    </text>
+</TEI>
