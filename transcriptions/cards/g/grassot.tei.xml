@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="grass.r">R Pissot Grassot</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#grass.r"><persName>R Pissot Grassot</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-07-23">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	<unclear/> Route de Tonneins = crossed out, hard to read
+                    	<unclear/> p. 2.35 = can't tell if "2f." or "28" (money or date)
+                    	<unclear/> Jan 27 = "Harker"?
+                   
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/g/grassot/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+               <div type="recto"> 
+                <pb facs="#s1" />
+                   
+               <ab>	<date when="1936-07-01">July 1936</date>	<address><persName ref="grass.r">GRASSOT</persName>	<street>9. rue des tanneries</street>
+               	<persName ref="grass.r">Mlle Pissot	Mme R.	</persName>	<street>9 rue des</street>
+                   <persName ref="grass.r"> became chez M.Y. Grassot</persName>	<street>Tanneries</street>
+               				<street>Route de Tonneins		13</street><unclear/>
+               				<district>Marmende (Lot et Garonne)</district></address>
+               	
+               <date when="1936-08-01">	Aug. 1.</date>	<bibl><title>Good Earth.</title></bibl>
+               			<bibl><title>Darby + Joan</title></bibl>					<date when="1936-08-27">Aug. 27</date>
+               	p. 3.60	<bibl><title>Elizabeth + Essex	</title></bibl>			<date when="1936-08-08">Aug. 8</date>
+                   <date when="1936-08-08">Aug. 8</date>	<bibl><title>Green Gates.</title></bibl>				<date when="1936-09-09">	Sept. 9</date>
+                   p. 2.10	<bibl><title>Faster Faster	</title></bibl>				<date when="1936-08-27">Aug. 27</date>
+               <date when="1936-10-23">	Oct 23.</date>	<bibl><title>Sparkenbroke</title></bibl>				<date when="1937-01-11">	Jan 11</date>
+               	p. 2.80
+                   <date when="1936-12-04">Dec. 4</date>	<bibl><title>Mourning comes Electra</title></bibl> p. 2.35	<date when="1937-01-11">	Jan 11</date>
+               	p. 2.35				Sent pc Dec <unclear/>
+               			<date when="1937-01-27">Jan 27</date> sent bill + postage 30.85
+                   <date when="1937-01-27">Jan 27</date>	<bibl><title>Sand <unclear/>	</title></bibl>			p.  1.80 <date when="1937-08-03">Aug 3</date>
+               		(<date when="1937-03-09">March 9th</date> sent bill for subsc &amp; postage 188.35)
+              <date when="1937-03-19"> 	March. 19. </date>Renewed <date when="1937-01-01">Jan 1st 1937</date> - <date when="1938-01-01">Jan 1st 1938.</date> 157.50
+               		by mandat 188.35	paid postage up to date  30.85
+               			SB acknowledged March 19 - 37
+               	<date when="1937-07-01">July. 1.</date> <bibl><title>Silver Rattle</title></bibl> p. 2.90		<date when="1937-08-03">	Aug 3.</date>
+               	<date when="1937-08-06">Aug. 6.</date>	<bibl><title>They walk in the city</title></bibl> p. 3.20	<date when="1937-08-28">Aug 28</date>
+               		(Remennecourt par Rengry.  Meuse)</ab>
+               </div>
+               	
+               	<div type="verso">
+               	<pb facs="#s2" />
+               	<!-- verso blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
