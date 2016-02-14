@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="good">Goodwin</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#good"><persName>Goodwin</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-07-23">
+                <ab>
+                    Transcribed cards (accidentally over-wrote, re-did on 7/23)
+                    s1:
+                    	Recall card with an amazing image of Shakespeare tearing his hair out
+                    s2:
+                    	Back of recall card, that has address
+                    s4:
+                    	Back has beginning of "Enfield" card
+                   
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/g/goodwin/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+        	<graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+        	<graphic url="00000004.jp2" />
+        </surface>
+        
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                    <ab>
+               	PLEASE RETURN:
+               	Henry James, Man and author
+               	which is being requested
+               	
+               	To:
+               <address><orgName>SHAKESPEARE AND COMPANY</orgName>
+               	 <street>12, RUE DE L'OD´EON</street><settlement>- PARIS</settlement><district>- VIe</district></address></ab>
+               	</div> 
+                <div type="verso">
+               	<pb facs="#s2" />
+               			<head>CARTE POSTALE
+               		<address><persName ref="good">Madame John Goodwin</persName>
+               			<orgName>Hôtel St James d'Albany</orgName>
+               				<street>211 rue St Honoré</street>
+               	<settlement>NON R´ECLAM´E PARIS I </settlement></address></head>
+                </div>
+                <div type="recto">
+                <pb facs="#s3" />
+                <ab><date when="1935">1935</date>		<address><persName ref="good">GOODWIN
+                			Mrs. John</persName>
+                			<orgName>Hôtel St James Albany</orgName></address>
+                
+                1v. 1m.									15v
+                1 dep.									50
+                
+                <date when="1935-10-16">16 Oct.</date>		<bibl><title>Henry James (Edgar)</title></bibl></ab>
+                </div>
+                <div type="verso">
+                <pb facs="#s4" />
+                    <ab>
+                <date when="1935">1935</date>		<persName >ENFIELD
+                			Miss J.</persName>
+                	<address>	<orgName>chez Mme Joure</orgName>
+                		<street>13 square du Port-Royale_</street></address>
+                									ref. <date when="1935-08-19">19 Aug-</date>
+                2v. 1m.								   	   dep. 60v
+                						owes 4v					25v
+              <date when="1935-07-18">  18 July</date>_	<bibl><title>Music at Night	</title></bibl>					<date when="1935-07-30">30</date>
+                        <bibl><title>Letters to Dixon G.M. Hopkins</title></bibl> new	<date when="1935-07-30">30</date>
+                        <date when="1935-07-30">30-</date>			<bibl><title>Eternal moment	</title></bibl>			  book	<date when="1935-07-30">30</date>
+                        <bibl><title>Twentieth c. anthology	</title></bibl>			<date when="1935-08-19">19</date>
+                <date when="1935-08-09">9 Aug-</date>		<bibl><title>9 Tailors</title></bibl>							<date when="1935-08-19">19</date>
+</ab>                </div>	
+                
+            </div>
+        </body>
+    </text>
+</TEI>
