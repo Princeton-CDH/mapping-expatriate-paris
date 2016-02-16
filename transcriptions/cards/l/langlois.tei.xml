@@ -4,12 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: Madame Langlois</title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -40,24 +41,22 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
+                <person role="cardholder" ana="#morr.ch"><persName>Christine Morrow</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-08-15">
                 <ab>
-                    Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
+                    Transcribed cards
+                    
+                   	
                     
                     
-                    	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/l/langlois/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -67,35 +66,27 @@
         
         
         
+        
     </facsimile>
     <text>
         <body>
-            
-            
-          <div type="card">
-              <div type="recto">
-              <pb facs="#s1" />
-                
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
-                
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
-                
-                <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
+           <div type="card">
+             <div type="recto">   <pb facs="#s1" />
+              <head>  <date when="1933">1933</date>		<persName ref="#lang">LANGLOIS</persName>
+                						<address><addrLine><num type="telephone">Danton 99-10</num></addrLine></address>
+                			<persName ref="#lang">Madame</persName>				- 11
+                					- 12
+                			<address><name>Palace Hotel</name> <street>1 rue du Four</street></address>
+                			
+                					by the day</head>
+             <ab>   <date when="1933-10-10">Oct 10</date>	<bibl><title>Autobiography of Alice B. Toklas</title></bibl>	<date when="1933-10-11">Oct 11</date>
+         </ab>    </div>   
+         <div type="verso">       <pb facs="#s2" />
+                <!-- verso blank -->
                 </div>
-          
-          </div>
-                
-           		            
-          </div>
+                							  
+               	</div>
+            
         </body>
     </text>
 </TEI>

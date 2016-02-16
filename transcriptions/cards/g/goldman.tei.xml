@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="gold.em">Emma Goldman</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
@@ -25,7 +25,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
                     <xi:fallback>
                         <listperson>
                             <head>People not available</head>
@@ -40,24 +40,20 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
+                <person role="cardholder" ana="#gold.em"><persName>Emma Goldman</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-07-21">
                 <ab>
                     Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
-                    
                     
                     	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/g/goldman/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -70,32 +66,25 @@
     </facsimile>
     <text>
         <body>
-            
-            
-          <div type="card">
-              <div type="recto">
-              <pb facs="#s1" />
+            <div type="card">
+               <div type="recto"> 
+                <pb facs="#s1" />
+                			<ab><persName ref="gold.em">GOLDMAN</persName>
+                			<address><persName ref="gold.em">Miss Emma Goldman</persName>
+                			<street>6 rue Chevert</street></address>
                 
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
+                <date when="1900-01-29">Jan 29	</date><bibl><title>Mourning Becomes Electra</title></bibl>	<date when="1900-02-01">Feb 1</date>
+                <date when="1900-02-01">Feb. 1</date>	<bibl><title>Strange Interlude</title></bibl>			<date when="1900-02-08">Feb 8</date>
                 
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
-                
+                		Left 14 frs. by mistake - to be
+                	used to pay for <bibl><title>Strange Interlude</title></bibl></ab>
+               </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
+                <pb facs="#s2" />
+                <!-- verso blank -->
                 </div>
-          
-          </div>
                 
-           		            
-          </div>
+            </div>
         </body>
     </text>
 </TEI>

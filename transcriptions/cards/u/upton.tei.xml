@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#upto.ma">Miss Mary Newton Upton</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#upto.ma"><persName>Miss Mary Newton Upton</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-01-21">
+                <ab>
+                     s1: Aug 8		Mr <unclear/> Michael &amp; Charles
+                     s1: Aug 31		<unclear/>		(Duidarna? Duirohanna?)
+                     s1: Sept 8. 	<unclear/> could stand up.
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/u/upton/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                                <persName ref="#upto.ma">UPTON</persName>
+                    <date when="1927-08-01">1927		
+                    Aug 1st</date>					<address><persName ref="#upto.ma">Miss Mary Newton Upton</persName>
+                    								<street>23 rue Racine</street></address>
+                    </head>			
+                    			
+                    			
+                    			
+                    <ab>			
+                    			1 m		1 vol					25
+                    			Deposit							50
+                    </ab>
+                    <ab>
+                    <date when="1927-08-01">Aug. 1st</date>	<bibl><title>To the Light House</title></bibl>	0.25			<date when="1927-08-05">Aug 5</date>
+                    <date when="1927-08-05">"	5</date>	<bibl><title>Life of J.E. Flecker</title></bibl>				<date when="1927-08-06">"	6</date>
+                    <date when="1927-08-06"> "	6</date>	<bibl><title>Casanova's Homecoming</title></bibl>.				<date when="1927-08-08"> "	8</date>
+                    <date when="1927-08-08"> "	8</date>	<bibl><title>Mr <unclear/> Michael &amp; Charles</title></bibl> .	extra Dep 150f/ <date when="1927-08-19">" 19</date>
+                    <date when="1927-08-19">"	19</date>	<bibl><title>Young Men in Love</title></bibl> 0.25				<date when="1927-08-29">"	29</date>
+                    <date when="1927-08-29"> "	29</date>	<bibl><title>Lady into Fox</title></bibl>						B B
+                    <date when="1927-08-31"> 	31</date>	<bibl><unclear/></bibl>									        <date when="1927-09-03">Sept 3</date>
+                    <date when="1927-09-03">Sept 3</date>	<bibl><title>Heloise &amp; Abelard</title></bibl>				<date when="1927-09-09"> -	 9</date>
+                    <date when="1927-09-08"> _	 8</date>. 	<bibl><title><unclear/> could stand up</title></bibl>.			<date when="1927-09-09">-	 9</date>
+                    </ab>
+                </div> 
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

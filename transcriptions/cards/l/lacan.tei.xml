@@ -4,12 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#laca.ja">Jacques Lacan</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -40,24 +41,20 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
+                <person role="cardholder" ana="#laca.ja"><persName>Jacques Lacan</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-08-14">
                 <ab>
-                    Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
+                    Transcribed cards
+            
                     
-                    
-                    	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/l/lacan/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -67,35 +64,26 @@
         
         
         
+        
     </facsimile>
     <text>
         <body>
+           <div type="card"><div type="recto">
+                <pb facs="#s1" />
+               <head>	<date when="1941">1941</date>			<persName ref="#laca.ja">LACAN
+               				Jacques</persName>
+               				<address><street>97 Boulevard Malesherbes</street></address></head>
+               				
+               			<ab>		1 m 1 v				25
+               						Dec 1. ref dep 100</ab>
+               
+              <ab> 	<date when="1941-10-15">Oct 15</date>	<bibl><title>Concise History of Ireland</title></bibl>	<date when="1941-12-01">Dec. 1.</date>
+               		ren		<date from="1941-11-15" to="1941-12-01">Nov. 15 - Dec. 1st</date> 12m	12.50</ab>
+               	</div><div type="verso">
+               	<pb facs="#s2" />
+               	<!-- verso blank --></div>
+               	</div>
             
-            
-          <div type="card">
-              <div type="recto">
-              <pb facs="#s1" />
-                
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
-                
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
-                
-                <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
-                </div>
-          
-          </div>
-                
-           		            
-          </div>
         </body>
     </text>
 </TEI>

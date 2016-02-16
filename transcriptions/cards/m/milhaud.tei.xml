@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#milh.da">Madame Darius Milhaud</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	    <particDesc>
+	        <person role="cardholder" ana="#milh.da"><persName>Madame Darius Milhaud</persName></person>
+	    </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/m/milhaud/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+              <div type="recto">  <pb facs="#s1" />
+                
+                <head><date when="1932">1932</date>			<persName ref="#milh.da">MILHAUD
+            	
+            				Mrs. Darius</persName>
+            				<address><street>10 Bd de Clichy</street></address></head>
+            				
+            				
+            				
+            	
+            	<ab><date when="1932-11-18">18 Nov.</date>		<bibl><title>Six Plays</title></bibl> card <date when="1932-12-14">14 Dec</date>			<date when="1932-12-20">20 Dec</date></ab>
+                </div>
+               <div type="verso"> <pb facs="#s2" />
+                
+                <!-- Verso Blank --></div></div>
+                
+              <div type="card"> <div type="recto"> <pb facs="#s3" />
+                
+              <head>  <date when="1938">1938</date>			<persName ref="#milh.da">Milhaud
+                				Mme Darius</persName>
+                				<address><street>10 Bd Clichy</street></address>
+                				</head>
+                				
+          <ab>      						1 m		1 v			25
+                						
+                						
+                <date when="1938-06-03">June 3</date>		<bibl><title>Famous Plays</title></bibl>			<date when="1938-06-21">June 21</date>
+                	owes 	<bibl><title>Tennyson's Poems</title></bibl>	13.50
+                							paid up <date when="1938-06-16">June 16</date>
+                							
+                				has 12 days left</ab>
+                </div>
+               <div type="verso"> <pb facs="#s4" />
+                
+                <!-- Verso Blank --></div>
+                </div>
+            
+        </body>
+    </text>
+</TEI>

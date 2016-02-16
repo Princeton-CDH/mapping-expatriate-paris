@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="gibe.ma">Madeleine Gibert</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#gibe.ma"><persName>Madeleine Gibert</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-07-19">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                   		Written on membership card 
+                    
+                    
+                    
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/g/gibert/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+        	<graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+        	<graphic url="00000004.jp2" />
+        </surface>
+        <surface xml:id="s5">
+        	<graphic url="00000005.jp2" />
+        </surface>
+        <surface xml:id="s6">
+        	<graphic url="00000006.jp2" />
+        </surface>
+        
+     
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+               <div type="recto"> 
+                <pb facs="#s1" />
+                <ab>returned everything <date when="1944-04-01">April 1944</date>
+                
+                <persName ref="gibe.ma">Madame Jean Gibert</persName>
+                
+                Archives 53.6g		<address><street>37. rue de Rivoli</street> <district>IV.e</district></address>
+                </ab>
+               </div> 
+               <div type="verso"> 
+                <pb facs="#s2" />
+                <!-- verso blank -->
+               </div> 
+               <div type="recto"> 
+                <pb facs="#s3" />
+                <ab><date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Madeleine Gibert</persName>
+                			<street>37 rue de Rivoli</street></address>
+                    
+               <date when="1944-03-27"> March 27</date>	<bibl><title>Full Moon in March</title></bibl>		returned
+                			<bibl><title>Autobiographies	</title></bibl>		all
+                			<bibl><title>Dramatis Personae</title></bibl>
+                				(wants <bibl><title>Lady Gregory</title></bibl>)</ab>
+               </div> 
+                <div type="verso">
+                <pb facs="#s4" />
+                <!-- verso blank -->
+                </div>
+                <div type="recto">
+                <pb facs="#s5" />
+                    <ab>
+                <date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Gibert</persName>
+                			<street>37 rue de Rivoli</street>
+                			<settlement>Paris</settlement></address>
+                
+               <date when="1944-03-27"> March 27</date>	<bibl><title>Full Moon in March</title></bibl>	<date when="1944-04-01">April</date>
+                        <bibl><title>Autobiographies</title></bibl>		<date when="1944-04-01">"</date>
+                        <bibl><title>Dramatis Personae</title></bibl>	<date when="1944-04-01">"</date>
+                	</ab>		
+                </div>
+                <div type="verso">
+                <pb facs="#s6" />
+                <!-- verso blank -->
+                </div>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

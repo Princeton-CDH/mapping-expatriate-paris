@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#lapo.ma">Madeleine Laporte</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#lapo.ma"><persName>Madeleine Laporte</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-08-15">
+                <ab>
+                    Transcribed cards
+                    
+                   	
+                    
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/l/laporte/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card"><div type="recto">
+                <pb facs="#s1" />
+            <head>    <date when="1933-11-01">1933 Nov 1</date>		<persName ref="#lapo.ma">LAPORTE</persName>
+                Oct 30	
+                		<persName ref="#lapo.ma">Mademoiselle Madeleine Laporte</persName>
+                			<address><street>30 rue des Boulangers</street>	<district>5e</district></address></head>
+                			
+                		<ab>		6 mos	1 v			50
+                							dep		30</ab>
+          <ab>  	
+            	<date when="1933-10-30">Oct 30</date>	<bibl><title>Roan Stallion</title></bibl>					<date when="1933-11-09">Nov 9</date>
+            	<date when="1933-11-07">7 Nov.</date>	<bibl><title>Introduction to EA. Robinson</title></bibl>	<date when="1933-11-17">Nov 17</date>
+            	<date when="1933-11-16">16	"</date>	<bibl><title>Works</title> <author>Chaucer</author> <biblScope unit="volume" from="6" to="6">VI</biblScope></bibl> extra.			<date when="1933-11-30">Nov 30</date>
+            	Nov <date when="1933-11-30">Nov 30</date> <bibl><title>Poems &amp; Plays of Goldsmith</title></bibl>	<date when="1933-12-08">Dec 8</date>
+            	<date when="1933-12-08">Dec 8</date>	<bibl><title>Essay on Comedy Meredith</title></bibl>		<date when="1933-12-13">Dec 13</date>
+            		<date when="1933-12-15">15</date>	<bibl><title>Past &amp; Present</title></bibl>						<date when="1933-12-21">21</date>
+            		<date when="1933-12-21">21</date>	<bibl><title>Robinson</title> (<author>Cistre</author>)</bibl>				<date when="1934-01-13">Jan 13</date>
+            	<date when="1934-01-13">Jan 13</date>	<bibl><title>good Earth</title></bibl>						<date when="1934-01-25">Jan 25</date>
+            		<date when="1934-01-24">24</date>	<bibl><title>George Meredith</title>, <author>Hammerton</author></bibl>		<date when="1934-01-16">Feb 16</date>
+            								2 1/2 mos.</ab>
+            	</div><div type="verso">
+            	<pb facs="#s2" />
+            	<!-- verso blank --></div>
+            	
+                </div>
+                							  
+               	
+            
+        </body>
+    </text>
+</TEI>

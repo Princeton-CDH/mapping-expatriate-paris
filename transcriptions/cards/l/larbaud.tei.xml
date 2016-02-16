@@ -4,12 +4,13 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#larb.va">Valery Larbaud</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
                     <resp>encoder</resp>
                 </respStmt>
             </titleStmt>
@@ -40,24 +41,22 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
+                <person role="cardholder" ana="#larb.va"><persName>Valery Larbaud</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-08-15">
                 <ab>
-                    Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
+                    Transcribed cards
+                    
+                   	
                     
                     
-                    	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/l/larbaud/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -67,35 +66,32 @@
         
         
         
+        
     </facsimile>
     <text>
         <body>
+            <div type="card"><div type="recto">
+                <pb facs="#s1" />
+                <head><persName ref="#larb.va">Monsieur Valery Larbaud</persName>		<address><name>Valbois</name> <settlement>par Saint Pourçain S/Sioule</settlement> <region>Allier</region></address>
+                			<address><street>71 Rue Cardinal Lemoine</street></address> 
+                				<address><name>Hiawatha East</name>
+                			<settlement>Shoreham Beach</settlement>
+                					<region>Sussex</region></address>			</head>		
+           <ab>     <bibl><title>Exiles</title></bibl>		<bibl><title>Modern American Poetry</title></bibl>				
+                		
+                		<bibl><title>Exiles</title></bibl>
+                			<address><name>Valbois</name>
+                			<settlement>par Saint Pourçain s/Sioule</settlement>
+                					<region>Allier</region></address>
+                
+                <date when="1900-01-29">Jan 29</date>	<bibl><title>The Turn of the Screw</title></bibl>		<date when="1900-02">Feb</date></ab>
+            </div>    
+             <div type="verso">   <pb facs="#s2" />
+                <!-- verso blank -->
+                
+                </div>							  
+               	</div>
             
-            
-          <div type="card">
-              <div type="recto">
-              <pb facs="#s1" />
-                
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
-                
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
-                
-                <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
-                </div>
-          
-          </div>
-                
-           		            
-          </div>
         </body>
     </text>
 </TEI>

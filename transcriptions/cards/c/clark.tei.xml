@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#clar.jo">John d'Arcy Clark</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#carlca" when="2016-02-09">
+                <ab>
+                    transcribed cards
+                    s1:
+                    <unclear/> = "Ocasilet"?
+                    <unclear/> = no idea, written over
+                    <unclear/> = "scews prote" also faint text written over
+                    <unclear/> = "proke"?
+                </ab>
+            </change>
+            <change who="#elspeth" when="2015-05-24">
+                <ab>
+                transcribed cards
+                s1:
+                	<unclear/> = "Ocasilet"?
+                	<unclear/> = no idea, written over
+                	<unclear/> = "scews prote" also faint text written over
+                	<unclear/> = "proke"?
+                
+                
+                  
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/c/clark/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+      
+      
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+             	<head>
+             	<date when="1939">1939</date>		
+             	                <persName ref="#clar.jo">CLARK, Darcy</persName>
+             					<address>
+             					<name>Hotel de Panthéon</name>
+             					<street>19 Pl. de Panthéon</street> 
+             					<district>VIe</district>
+             					</address>
+             	</head>
+                <ab>
+             				2m1v a					45v
+             					dep					50v
+             	</ab>			
+             	<ab>
+             	            <date from="1939-03-01" to="1939-05-01">March 1 - May 1	1939</date>
+             	<date when="1939-03-01">March 1</date>		<bibl><title>Wuthering Heights</title></bibl>			<date when="1939-03-23">Mar 23</date>
+             	<date when="1939-03-23">	23</date>		<bibl><title><unclear/> + Black</title> <biblScope unit="volume" from="1">(Vol. I)</biblScope></bibl>		<date when="1939-04-24">April 24</date>
+             	<date when="1939-03-24">	24</date>		<bibl><title>Washington Square</title></bibl>			<date when="1939-05-08">May 8</date>
+             	Renewed <date from="1939-05-01" to="1939-07-01">May 1 - July 1 1939</date>  2 vol 45
+             	<date when="1939-05-08">May 8</date>		<bibl><title>Aspern Papers</title></bibl>				<date when="1939-06-09">June 9.</date>
+             	<date when="1939-06-09">June 9</date>		<bibl><title>Daughters and <unclear/></title></bibl>
+             	<date when="1939-06-09">June 9</date>		<bibl><title>Importance of being earnest</title></bibl>	<date when="1939-06-30">june 30</date>
+             	<date when="1939-06-30">	30</date>		<bibl><title>The figure in the carpet</title></bibl>.	<date when="1939-07-11">july 11</date>
+             	<date when="1939-07-11">July 11</date>		<bibl><title>Candide</title> (<persName>Voltaire</persName>)</bibl>			<date when="1939-07-24">july 24</date>
+             			(will renew next time.)
+             	<date when="1939-07-24">	24</date>		<bibl><title><unclear/>    clerical life.</title></bibl>
+             	[subscription 1 w. to be deducted <unclear/> dep - end of week]
+             		<date when="1939-07-24">July 24.</date>
+             			Wrote <date when="1939-11-13">Nov. 13</date>. asking <persName>M.C.</persName> to return book
+             	</ab>
+             	</div>
+                <div type="verso">
+             	<pb facs="#s2" />
+             	<!-- verso blank -->
+             	</div>
+                </div>
+            	
+         </body>
+    </text>
+</TEI>

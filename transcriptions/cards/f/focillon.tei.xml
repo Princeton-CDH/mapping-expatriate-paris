@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#east.ma">Max Eastman</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="foci.ma">Marguerite Focillon</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
@@ -40,16 +40,13 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#east.ma"><persName>Max Eastman</persName></person>
+                <person role="cardholder" ana="#foci.ma"><persName>Marguerite Focillon</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-06-19">
                 <ab>
                     Transcribed cards.
-                    s2:
-                    	illegible markings, maybe unintentional
-                   
                     
                     
                     	
@@ -57,7 +54,7 @@
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/eastman/">
+    <facsimile xml:base="pudl0123/825298/f/focillon/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -67,35 +64,34 @@
         
         
         
+    
+        
     </facsimile>
     <text>
         <body>
-            
-            
-          <div type="card">
-              <div type="recto">
-              <pb facs="#s1" />
-                
-                    <ab>
-                    <date when="1932">1932</date>		
-                        <persName ref="#east.ma">Max Eastman</persName>
-                
-                		<address><orgName>Hotel de Lutèce</orgName>
-                		<street>rue Jules Chaplain</street></address>
-                
-                <date when="1932-11-07">7 Nov. </date>	<bibl><title>Bible lands</title></bibl>					presented
-                    </ab>
+            <div type="card">
+               <div type="recto">
+                <pb facs="#s1" />
+               <head> <date when="1961">1961</date>	<persName ref="foci.ma">Madame Focillon</persName>
+                		<address><street>60 rue de la Montagne Ste Geneviève</street>
+                		<settlement type="city">Paris</settlement></address></head>
+                <ab>
+                <date when="1961-01-24">Jan 24</date>		<bibl><title>Mr Hobbs' Vacation</title></bibl>		<date when="1961-03">March 1961</date>
+                                                            <bibl><title>Cousin to Human</title></bibl>		<date when="1961-03">"" ""</date>
+                                                            <bibl><title>Lolita	</title></bibl>			<date when="1961-03">"" ""</date>
+                                             			<bibl><title>The Coctail Party</title></bibl>
+                                             			<bibl><title>The Man who was loved</title></bibl>
+                		(Mme Focillon returned <bibl><title>Period Piece</title></bibl>)
+                </ab>
+               </div> 
                 
                 <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-                <unclear/></ab>
+                <pb facs="#s2" />
+                <!-- verso blank -->
                 </div>
-          
-          </div>
                 
-           		            
-          </div>
+                
+            </div>
         </body>
     </text>
 </TEI>
