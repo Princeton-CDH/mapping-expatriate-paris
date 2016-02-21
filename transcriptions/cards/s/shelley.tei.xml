@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#shel.do">Dorothy Shelley</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+            	<respStmt ana="#elspeth">
+            		<persName>Green, Elspeth</persName>
+            		<resp>encoder</resp>
+            	</respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+            	<xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+            		<xi:fallback>
+            			<listperson>
+            				<head>People not available</head>
+            				<person/>
+            			</listperson>
+            		</xi:fallback>
+            	</xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+			<person role="cardholder" ana="#shel.do"><persName>Dorothy Shelley</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+        	<change who="elspeth" when="2016-02-16">
+        		<p> First level encoding </p>
+        		<ab>
+        			s1:
+        				Changed "Roque" to "Rogue" in address
+        			s2:
+        				Changed <unclear/> to "Anthony"
+        			s6:
+        				Encoded "June 31" as "1939-06-30" since TEI wouldn't take invalid date
+        		</ab>
+        	</change>
+            <change who="#carlca">
+                <ab>
+                    s2: April 19	<unclear/>	Adverse	
+                    s3: July 13		The <unclear/>	<unclear/> .
+                    s5: 2 Nov. 	Modern <unclear/>		
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/s/shelley/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+        <surface xml:id="s5">
+            <graphic url="00000005.jp2" />
+        </surface>
+        <surface xml:id="s6">
+            <graphic url="00000006.jp2" />
+        </surface>
+        <surface xml:id="s7">
+            <graphic url="00000007.jp2" />
+        </surface>
+        <surface xml:id="s8">
+            <graphic url="00000008.jp2" />
+        </surface>
+        <surface xml:id="s9">
+            <graphic url="00000009.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+            	<div type="recto">
+	                <pb facs="#s1" />
+	                <head>
+	                				<persName ref="#shel.do">SHELLEY</persName>
+	                <date when="1933">1933</date>
+	                
+	                					<address><persName ref="#shel.do">Mrs Dorothy</persName>
+	                				<street>6 rue Armand Moisant</street><district>15e</district></address>
+	                								Moisant
+	                		
+	                <address><settlement>Omouville-La Rogue</settlement> <addrLine>par</addrLine> <settlement>Beaumont-Hague</settlement><region> (Manche)</region></address>
+	                </head>
+            		<ab>
+	               						6 mos		2 v			90
+	                 									dep		30
+	                </ab> 	
+	                <ab> 	
+	                <date when="1933-11-30">Nov 30</date>		<bibl><title>Leaves of Grass</title></bibl>	(put away copy when returned)	<date when="1933-12-19">Dec 19</date>
+	                <date when="1933-11-30">		</date>		<bibl><title>Garden Party</title></bibl>							<date when="1933-12-04">Dec 4</date>
+	                <date when="1933-12-04">	 4</date>		<bibl><title>American Tragedy</title></bibl>						<date when="1933-12-23">Dec 23</date>
+	                <date when="1933-12-19">	 19</date>		<bibl><title>Farewell to Arms</title></bibl>						<date when="1933-12-23">Dec 23</date>
+	                <date when="1933-12-23">	 23</date>		<bibl><title>Little Women</title></bibl>							<date when="1933-12-27">Dec 27</date>
+	                <date when="1933-12-23">	 	</date>		<bibl><title>Daddy Long Legs</title></bibl>							<date when="1933-12-27">Dec 27</date>
+	                <date when="1933-12-23">	 	</date>		<bibl><title>Precious Bane</title></bibl>							<date when="1934-01-09">Jan 9</date>
+	                <date when="1933-12-17">	 27</date>		<bibl><title>Rienzi</title></bibl>									<date when="1934-01-02">Jan 2</date>		
+	                <date when="1933-12-27">	 	</date>		<bibl><title>Tom Sawyer</title></bibl>								<date when="1934-01-02">Jan 2</date>
+	                <date when="1933-12-27">	 	</date>		<bibl><title>2 New Yorkers</title></bibl>							<date when="1934-01-02">Jan 2</date>
+	                <date when="1934-01-02">Jan 2</date>		<bibl><title>Brave New World</title></bibl>							<date when="1934-01-23">Jan 23</date>
+	                <date when="1934-01-02">		</date>		<bibl><title>Egoist</title></bibl>									<date when="1934-01-30">	30</date>
+	                <date when="1934-01-23">Jan 23</date>		<bibl><title>Point Counterpoint</title></bibl>						<date when="1934-01-30">	30</date>
+	                <date when="1934-01-30">	30</date>		<bibl><title>Flock of Birds</title></bibl>							<date when="1934-02-07">Feb 7</date>
+	                <date when="1934-01-30">	30</date>		<bibl><title>Ann Vickers</title></bibl>								<date when="1934-02-16">Feb 16</date>
+	            	<date when="1934-02-07">Feb 7</date>		<bibl><title>Mayor of Casterbridge</title></bibl>					<date when="1934-03-15">March 15</date>
+	            	<date when="1934-02-16">	16</date>		<bibl><title>Sir William Orpen</title></bibl>						<date when="1934-03-15">March 15</date>
+	            	<date when="1934-03-15">	15</date>		<bibl><title>Sanctuary</title></bibl>								<date when="1934-03-30"> "	 30</date>
+	            	<date when="1934-03-15">	15</date>		<bibl><title>Women in Love</title></bibl>							<date when="1934-03-30"> "	 30</date>
+	            	<date when="1934-04-03">April 3</date>		<bibl><title>Good Earth</title></bibl>								<date when="1934-04-10">April 10</date>
+	            	<date when="1934-04-03">		</date>		<bibl><title>Huckleberry Finn</title></bibl>						<date when="1934-04-10">April 10</date>
+	            	<date when="1934-04-10">	 10</date>		<bibl><title>Tower of London</title></bibl>							<date when="1934-04-20">April 20</date>
+	            		 										<bibl><title>American Beauty</title></bibl>	<bibl><title>Back Street</title></bibl>	<date when="1934-04-20">April 20</date>      
+	            	</ab>	 		
+	            </div> 
+            	<div type="verso">
+	                <pb facs="#s2" />
+	                <head>
+	                				<persName ref="#shel.do">SHELLEY</persName>
+	                </head>	
+            		<ab>
+	                <date when="1934-04-20">April 20</date>		<bibl><title>Sons &amp; Lovers</title></bibl>						<date when="1934-04-26">April 26</date>
+	                <date when="1934-04-20">		</date>		<bibl><title>Journal of Katherine Mansfield</title></bibl>			<date when="1934-04-26">April 26</date>
+	                <date when="1934-04-26">	  26</date>		<bibl><title>Fountain</title></bibl>								<date when="1934-05-19">	19</date>
+	                <date when="1934-04-26">	  26</date>		<bibl><title>Love &amp; Other Stories</title></bibl>				<date when="1934-05-19">	19</date>
+	                <date when="1934-05-19">	  19</date>		<bibl><title>Anthony Adverse</title></bibl>							<date when="1934-05-24">	24</date>
+	                <date when="1934-05-19">	  19</date>		<bibl><title>Wuthering Heights</title></bibl>						<date when="1934-05-24">	24</date>
+	                <date when="1934-05-19">	  19</date>		<bibl><title>3 New Yorkers</title></bibl>							<date when="1934-05-30">	30</date>
+	                <date when="1934-05-24">	  24</date>		<bibl><title>Brief Candles</title></bibl>							<date when="1934-05-30">	30</date>
+	                <date when="1934-05-24">	  24</date>		<bibl><title>Letters of K. Mansfield</title><biblScope unit="volume" from="1">vol I</biblScope></bibl>	<date when="1934-06-15">15 June</date>
+	                </ab>
+            		<ab>
+	                 Renewed <date from="1934-05-30" to="1934-11-30">May 30  -	Nov 30 1934</date>		90v
+	                </ab>
+            		<ab>
+	                <date when="1934-05-30">"	  30</date>		<bibl><title>Great Expectations</title></bibl>						<date when="1934-06-15">15 June</date>
+	                <date when="1934-06-15">June 15</date>		<bibl><title>Ulysses</title></bibl>									<date when="1934-07-12">12 	"</date>
+	                <date when="1934-06-15">	 15</date>	-	<bibl><title>Letters K. Mansfield</title><biblScope unit="volume" from="2">II</biblScope></bibl> <date when="1934-07-12">12	"</date>
+	                <date when="1934-07-12">	 12</date>		<bibl><title>Death in the Afternoon</title></bibl>					<date when="1934-07-25">	25</date>
+	                <date when="1934-07-12">	 12</date>		<bibl><title>Nijinsky</title></bibl>								<date when="1934-07-25">	25</date>
+	                p. 3,20	<date when="1934-07-25">25</date>	<bibl><title>Gauguin</title></bibl>									<date when="1934-08-06">	 6</date>
+	                		<date when="1934-07-25"> 25	</date>	<bibl><title>Constant Nymph</title></bibl>							<date when="1934-08-06"> 6 Aug</date>
+	            			<date when="1934-07-28">July 28</date><bibl><title>Sun also Rises</title></bibl>						<date when="1934-08-14">14	"</date>
+	            	p. 3f	<date when="1934-07-28">	</date>	<bibl><title>Jane Eyre</title></bibl>								<date when="1934-08-14">14 	"</date>
+	            			<date when="1934-08-14">14 Aug</date>-<bibl><title>Green Mansions</title></bibl>						<date when="1934-08-21">	21</date>
+	            	p. 2.60	<date when="1934-08-14">	</date>	<bibl><title>Mamba's daughters</title></bibl>						<date when="1934-08-21">	21</date>
+	            	  + 	<date when="1934-08-21">21 Aug</date>.<bibl><title>Bleak House</title></bibl><bibl><title>Medici</title></bibl>	<date when="1934-09-04">Sept 4</date>
+	            	p. 2.60	<date when="1934-08-21">	</date>	<bibl><title>Crock of Gold</title></bibl>							<date when="1934-09-04">Sept 4</date>
+	            			<date when="1934-09-04">Sept 4</date><bibl><title>Virgin &amp; the Gipsy</title></bibl>					<date when="1934-09-17">Sept 17</date>
+	            			<date when="1934-09-04">	</date>	<bibl><title>Thank Heaven Fasting</title></bibl>					<date when="1934-09-17">Sept 17</date>
+	            	p. 2.60	<date when="1934-09-04">	</date>	<bibl><title>Round the Fire Stories</title></bibl>					<date when="1934-09-17">Sept 17</date>
+	            	   3,60	<date when="1934-09-04">	</date>	<bibl><title>Moon Stone</title></bibl>
+	            	   		<date when="1934-09-04">	</date>	<bibl><title>My Life</title></bibl>									<date when="1934-09-17">Sept 17</date>
+	            			<date when="1934-09-05">Sept 5</date><bibl><title>Bleak House</title></bibl>
+	            	 p.	85	<date when="1934-09-05">	</date>	<bibl><title>Villette</title></bibl>								<date when="1934-10-18">Oct 18</date>
+	            			<date when="1934-09-17">Sept 17</date><bibl><title>My Antonia</title></bibl>							<date when="1934-10-18">Oct 18</date>
+	            	p. 4.40	<date when="1934-09-17">	</date>	<bibl><title>Darling &amp; Other Stories</title></bibl>				<date when="1934-10-18">Oct 18</date>
+	            			<date when="1934-09-17">	</date>	<bibl><title>Smoke Portrait in a Mirror</title></bibl>			(over)
+	            	</ab>			
+	            </div> 
+            	<div type="recto">
+	                <pb facs="#s3" />
+	                <head>
+	                To <date when="1929-06-15">June 15th, 1929</date>			<persName ref="#shel.do">SHELLEY</persName>
+	                </head>
+            		<ab>
+	                <date when="1929-04-22">Apr 22</date>		<bibl><title>Coleridge</title>	(Trail)</bibl>						<date when="1929-05-02">May 2</date>
+	                <date when="1929-05-02">May 2</date>		<bibl><title>Gone With the Wind</title></bibl>						<date when="1929-05-03">May 3</date>
+	                <date when="1929-05-02">	2</date>		<bibl><title>Biographia Litteraria</title></bibl>					<date when="1929-05-09">May 9</date>	
+	                <date when="1929-05-03">	3</date>		<bibl><title>Memoirs of My Dead Wife</title></bibl>					<date when="1929-05-09">May 9</date>
+	                <date when="1929-05-09">	9</date>		<bibl><title>Story of The English</title></bibl>					<date when="1929-05-15">May 15</date>
+	                <date when="1929-05-09">	9</date>		<bibl><title>Short History of the English</title></bibl>			<date when="1929-05-15">May 15</date>
+	                <date when="1929-05-09">	9</date>		<bibl><title>Letters of Lawrence</title></bibl>						<date when="1929-05-15">May 15</date>
+	                <date when="1929-05-15">	15</date>		<bibl><title>Rosalynde</title></bibl>								<date when="1929-05-19">May 19</date>
+	                <date when="1929-05-15">	15</date>		<bibl><title>Imperial Palace</title></bibl>							<date when="1929-05-25">May 25</date>
+	                <date when="1929-05-19">	19</date>		<bibl><title>Howards End</title></bibl>								<date when="1929-05-25">May 25</date>
+	                <date when="1929-05-25">	25</date>		<bibl><title>Poetry of Thomson</title></bibl>						<date when="1929-06-10">June 10</date>
+	                <date when="1929-05-15">	25</date>		<bibl><title>Three Soldiers</title></bibl>							<date when="1929-05-30">May 30</date>
+	                <date when="1929-05-30">	30</date>		<bibl><title>365 Days</title></bibl>								<date when="1929-06-10">June 10</date>
+	                </ab> 
+            		<ab>
+	                  Renewed 6 m. 2 v. A <date from="1929-06-01" to="1929-12-01">June 1st -	Dec 1st</date>. 39	  180
+	                </ab> 
+            		<ab>
+	                <date when="1929-06-10">June 10</date>		Vo	<bibl><author>Ben Jonson</author> (<title>Plays</title>. <biblScope unit="volume" from="3">vol III</biblScope>)</bibl>	<date when="1929-06-17">June 17</date>
+	                <date when="1929-06-10">	10</date>		<bibl><author>Sheridan</author>. <title>Dram. Works</title>. (<publisher>Oxford Univ. Press</publisher>)</bibl> <date when="1929-06-13">	13</date>
+	                <date when="1929-06-13">June 13</date>		<bibl><title>Egoist</title></bibl>									<date when="1929-06-24">June 24</date>
+	                <date when="1929-06-17"> "	17</date>		<bibl><title>Children of the Ghetto</title></bibl> ren <date when="1929-06-27">Jun 27</date> (rare)  X
+	                <date when="1929-06-24"> "	24</date>		<bibl><title>Hounds of Baskerville</title></bibl> - 				<date when="1929-06-27">June 27</date>
+	                <date when="1929-06-27"> "	27</date>		<bibl><title>House Divided</title></bibl>							<date when="1930-02-13">Feb 13</date>
+	                <date when="1929-06-27"> "	27</date>		<bibl><title>Chains</title></bibl>									<date when="1929-07-17">july 17</date>
+	                <date when="1929-06-27"> "	27</date>		<bibl><title>Rains Came</title></bibl>								<date when="1929-07-17">july 17</date>
+	                <date when="1929-06-27"> "	27</date>		<bibl><title>Sons</title></bibl>									<date when="1930-02-13">Feb 13</date>
+	                <date when="1929-06-27"> "	27</date>		<bibl><title>Egoist</title></bibl> (rare)							<date when="1929-06-29">june 29</date>
+	                <date when="1929-07-13">July 13</date>		<bibl><title>The dark gentleman</title></bibl>						<date when="1930-02-13">Feb 13</date>
+	                <date when="1929-07-13">July 13</date>		<bibl><title>Diana of the crossways</title></bibl> x			X
+	                <date when="1929-07-13">July 13</date>		<bibl><title>Death of a man</title></bibl>.							<date when="1930-02-13">Feb 13</date>
+	                <date when="1929-07-13">July 13</date>		<bibl><title>After such pleasures</title></bibl> -					<date when="1930-02-13">Feb 13</date>
+	                <date when="1929-07-13">July 13</date>		<bibl><title>The <unclear/>	<unclear/></title></bibl> .				<date when="1930-02-13">Feb 13</date>
+	                <date when="1929-07-13">July 13</date>		<bibl><title>Pie in the sky</title></bibl>							<date when="1930-02-13">Feb 13</date>
+	                </ab>
+            		<ab>
+	                				p.c. <date when="1929-10-10">Oct 10</date> asking if would like books sent
+	                					reply <date when="1929-10-26">Oct. 26</date> would like some books
+	                					is returning all except rare editions
+	                </ab>					
+	                	
+	            </div> 
+            	<div type="verso">
+	                <pb facs="#s4" />
+	                <head>
+	                				<persName ref="#shel.do">SHELLEY</persName>
+	                </head>	
+            		<ab>
+	                <date when="1900-01-10">Jan 10</date>		<bibl><title>All Alone</title></bibl>								<date when="1900-01-19">Jan 19</date>
+	                <date when="1900-01-14">Jan 14</date>		<bibl><title>Pursuer</title></bibl>									<date when="1900-01-18">Jan 18</date>
+	                <date when="1900-01-14">	14</date>		<bibl><title>Dusty Answer</title></bibl>							<date when="1900-01-18">Jan 18</date>
+	                <date when="1900-01-18">	18</date>		<bibl><title>Pamela</title></bibl>									<date when="1900-01-23">Jan 23</date>
+	                <date when="1900-01-18">	18</date>		<bibl><title>Great Laughter</title></bibl>							<date when="1900-01-23">Jan 23</date>
+	                <date when="1900-01-23">	23</date>		<bibl><title>Paradise Lost</title></bibl>							<date when="1900-02-08">Feb 8</date>
+	                <date when="1900-01-23">	23</date>		<bibl><title>House Divided</title></bibl>							<date when="1900-01-25">Jan 25</date>
+	                <date when="1900-01-25">	25</date>		<bibl><title>Sons</title></bibl> ren <date when="1900-02-08">Feb 8</date>	<date when="1900-02-08">Feb 8</date>
+	                <date when="1900-02-08">Feb 8</date>		<bibl><title>Books + Characters</title></bibl>						<date when="1900-02-09">Feb 9</date>
+	                <date when="1900-02-09">	9</date>		<bibl><title>Religio Medici</title></bibl>							<date when="1900-02-16">Feb 16</date>
+	                <date when="1900-02-11">	11</date>		<bibl><title>South Wind</title></bibl>								<date when="1900-02-15">Feb 15</date>
+	                <date when="1900-02-15">	15</date>		<bibl><title>Troubador</title></bibl>								<date when="1900-02-18">Feb 18</date>
+	                <date when="1900-02-16">	16</date>		<bibl><title>Sir Thomas Browne</title> - <author>Gosse</author></bibl>	<date when="1900-02-18">	18</date>
+	                <date when="1900-02-18">	18</date>		<bibl><title>Passage to India</title></bibl>						<date when="1900-02-21">Feb 21</date>
+	                <date when="1900-02-18">	18</date>		<bibl><title>Dodsworth</title></bibl>								<date when="1900-02-21">Feb 21</date>
+	                <date when="1900-02-21">	21</date>		<bibl><title>Rogue Herries</title></bibl>							<date when="1900-02-22">Feb 22</date>
+	                <date when="1900-02-21">		</date>		<bibl><title>Modern American Short Stories</title></bibl>			<date when="1900-02-27">Feb 27</date>
+	                <date when="1900-02-22">	22</date>		<bibl><title>Great Laughter</title></bibl>							<date when="1900-03-02">Mar 2</date>
+	                <date when="1900-02-27">	27</date>		<bibl><title>Sir Thomas Browne</title>-<author>Gosse</author></bibl><date when="1900-03-04">Mar 4</date>
+	            	<date when="1900-03-02">Mar 2</date>		<bibl><title>Capajon</title></bibl>	renew. <date when="1900-03-18">Mar. 18</date>	<date when="1900-03-22">Mar 22</date>
+	            	<date when="1900-03-04">Mar 4</date>		<bibl><title>House of the Seven Gables</title></bibl>				<date when="1900-03-09">Mar 9</date>
+	            	<date when="1900-03-08">	8</date>		<bibl><title>Jonson's Plays</title></bibl>							<date when="1900-03-08">Mar. 8</date>
+	            	<date when="1900-03-18">	18</date>		<bibl><title>Shakespeare his mind &amp; art</title></bibl>.			<date when="1900-04-03">Apr 3</date>
+	            	<date when="1900-03-22">	22</date>		<bibl><title>It Can't Happen Here</title></bibl>					<date when="1900-04-03">Apr 3</date>
+	            	<date when="1900-04-07">Apr. 7</date>		<bibl><title>Citadel</title></bibl>									<date when="1900-04-03">Apr 3</date>
+	            	<date when="1900-04-03">	3</date>		<bibl><title>Shakespeare</title> - <author>Dowden</author></bibl>	<date when="1900-04-12">Apr 12</date>
+	            	<date when="1900-04-03">	3</date>		<bibl><title>Crime + Punishment</title></bibl>						<date when="1900-04-07">April 7</date>
+	            	<date when="1900-04-07">	7</date>		<bibl><title>Queen Victoria</title></bibl>							<date when="1900-04-12">Apr 12</date>
+	            	<date when="1900-04-07">	7</date>		<bibl><title>Maud Evelyn</title></bibl>								<date when="1900-04-12">Apr 12</date>
+	            	<date when="1900-04-12">	12</date>		<bibl><title>Furys</title></bibl>									<date when="1900-04-19">Apr 19</date>
+	            	<date when="1900-04-12">	12</date>		<bibl><title>Samuel Taylor Coleridge</title></bibl>					<date when="1900-04-20">Apr 20</date>
+	            	<date when="1900-04-19">	19</date>		<bibl>Coleridge</bibl><bibl><title>Something of Myself</title></bibl><date when="1900-04-22">Apr 22</date>
+	            	<date when="1900-04-19">	19</date>		<bibl><title>Life of George Moore</title></bibl>					<date when="1900-04-30">Apr 30</date>
+	            	</ab>	
+	            </div>
+            	<div type="recto">
+	                <pb facs="#s5" />
+	                <head>
+	                <date when="1935">1935</date>			<persName ref="#shel.do">SHELLEY</persName>
+	                </head>
+            		<ab>
+	                <date when="1935-08-22">22 Aug</date> - _ <bibl><title>Precious Bane</title></bibl>							<date when="1935-09-10">Sept 10</date>
+	                p. 3.60									_ <bibl><title>Dombey + son</title></bibl>							<date when="1935-09-10">Sept 10</date>
+	                <date when="1935-09-10">Sept 10</date>	  <bibl><title>Mary Mary</title></bibl>								<date when="1935-10-02">Oct 2</date>
+	                p  6,20									  <bibl><title>Three Men in a Boat</title></bibl>
+	                 										  <bibl><title>Dusk at the Grove</title></bibl>
+	                   9.80									  <bibl><title>Moonstone</title></bibl>								<date when="1935-10-02">Oct 2</date>
+	                 										  <bibl><title>Main Street</title></bibl>							<date when="1935-10-08">8 -</date>
+	                 	  owes								  <bibl><title>To the Lighthouse</title></bibl>						<date when="1935-10-02">Oct 2</date>
+	                 	  									  <bibl><title>Land &amp; Sea Tales</title></bibl>					<date when="1935-10-02">Oct 2</date>
+	                <date when="1935-10-08">8. Oct</date>.	  <bibl><title>Rainbow</title></bibl>.								<date when="1935-10-02">	2</date>
+	                <date when="1935-10-08">		</date>	  <bibl><title>In our time</title></bibl>							<date when="1935-11-02">Nov 2</date>
+	            	<date when="1935-11-02">2 Nov</date>.	  <bibl><title>American Short Stories</title></bibl>				<date when="1935-11-28">28  30 Nov</date>
+	            	<date when="1935-11-02">		</date>	  <bibl><title>Modern <unclear/></title></bibl>						<date when="1936-01-16">Jan 16</date>
+	            	<date when="1935-11-28">28	"</date>	  <bibl><title>High Wind in Jamaica</title></bibl>					<date when="1935-12-27">	  27</date>
+	            	<date when="1935-11-28">28	"</date>	  <bibl><title>American Short Stories 1925</title></bibl>		    <date when="1935-12-27">27 Dec</date>.
+	            	<date when="1935-12-27">27 Dec</date>.	  <bibl><title>Maid in Waiting</title></bibl>						<date when="1936-01-08">Jan 8</date>.
+	            	</ab>
+            		<ab>
+	            		Renewed <date from="1935-11-30" to="1936-05-30">November 30 1935	-	May 30 1936</date>
+	            											<date when="1936-01-08">Jan 8</date>. Cheque 100 fr
+	            					postage
+	            	</ab>	
+            		<ab>
+	            	<date when="1936-01-09">Jan 9</date>.	  <bibl><title>On Forsyte Change</title></bibl>.					<date when="1936-01-29">Jan. 29</date>
+	            	<date when="1936-01-16">	16</date>     <bibl><title>February Hill</title></bibl>							<date when="1936-01-29">	 "</date>
+	            	<date when="1936-01-29">	29</date>.	  <bibl><title>Point Counter Point</title></bibl>					<date when="1936-03-05">March 5</date>
+	            	<date when="1936-01-29">		</date>	  <bibl><title>So red The Rose</title></bibl>.					 	<date when="1936-01-31">	 31</date>.
+	            	<date when="1936-01-31">	31</date>.	  <bibl><title>Crime + Punishment</title></bibl>.					<date when="1936-02-19">Feb. 19</date>.
+	            	<date when="1936-01-31">		</date>	  <bibl><title>Story - Jan. 1936</title></bibl>. - 	4f.				<date when="1936-02-04">Feb. 4</date>
+	            	<date when="1936-02-19">Feb. 19</date>.	  <bibl><title>Wife of Steffen Trombholt</title></bibl>.			<date when="1936-02-25">	  25</date>.
+	        		<date when="1936-02-25">	 25</date>.	  <bibl><title>Well of Loneliness</title></bibl>.		Keep		<date when="1936-03-05">March 5</date>
+	        		<date when="1936-02-25">	 	</date>	  <bibl><title>Sanctuary</title></bibl>. 		sent. p.c. <date when="1936-04-08">Ap 8</date>.
+	        		<date when="1936-04-10">April 10</date>	  <bibl><title>On Liberty etc</title>.<author>Mills</author></bibl>	<date when="1936-04-23">	 23</date>
+	        		<date when="1936-04-10">		</date>	  <bibl><title>Best Short Stories	1934 Eng. Am</title></bibl>	 	<date when="1936-04-30">	30</date>
+	        		<date when="1936-04-30">	  30</date>	  <bibl><title>"	  "		"		1932 Am</title></bibl>			<date when="1936-04-30">	 30</date>
+	        		<date when="1936-04-30">	  30</date>	  <bibl><title>Opening of a door</title></bibl>.					<date when="1936-05-23">	 23</date>
+	        		<date when="1936-04-30">	  30</date>	  <bibl><title>Magnolia Street</title></bibl>.						<date when="1936-05-23">	 23</date>
+	        		<date when="1936-05-23">May. 23</date>	  <bibl><title>Bernard Shaw</title>.<author>F. Harris</author></bibl><date when="1936-06-03">June 3</date>
+	        		<date when="1936-06-03">June 3</date>	  <bibl><title>Oscar Wilde</title>, <author>F. Harris</author>, <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>
+            		</ab>
+            		<ab>
+	        			Renewed <date from="1936-05-30" to="1936-11-30">May 30 1936	-	Nov 30 1936</date>			100v
+	        												2 vols
+	        		<date when="1936-06-03">June 3</date>	  <bibl><title>Heaven's my destination</title></bibl>				<date when="1936-06-16">	16</date>
+	        		<date when="1936-06-16">	16</date>.	  <bibl><title>Sorrell and Son</title></bibl>						<date when="1936-08-06">Aug 6</date>
+	        		<date when="1936-06-16">	16</date>.	  <bibl><title>1919</title></bibl> - 								<date when="1936-08-06"> "	6</date>
+	        		</ab>	
+	            </div> 
+            	<div type="verso">
+	                <pb facs="#s6" />
+	                <head>
+	                					<persName ref="#shel.do">SHELLEY</persName>
+	                </head>	
+            		<ab>
+	                		<date from="1937-05-30" to="1937-11-30">May 30th	-	November 30th 1937</date>		100f
+	                </ab>
+            		<ab>
+	                <date when="1937-07-05">July 5</date>		<bibl><title>Portrait in the Mirror</title></bibl>	_			<date when="1937-07-21">July 21</date>
+	                <date when="1937-07-05">	 5</date>		<bibl><title>Apartements to let</title></bibl>					<date when="1937-07-21">	 21</date>
+	                <date when="1937-07-21">	 21</date>		<bibl><title>Last Puritan</title></bibl>.						<date when="1937-09-05">Sept 5</date>.
+	                <date when="1937-07-21">	 21</date>.		<bibl><title>South Riding</title></bibl>						Returned
+	                <date when="1937-08-02">Aug. 2</date>		<bibl><title>Lorenzo Bunch</title></bibl>.						<date when="1937-09-03">Sept 3</date>
+	                <date when="1937-08-02">		</date>		<bibl><title>Stars look down</title></bibl> _					returned
+	                <date when="1937-10-21">Oct. 21</date>		<bibl><title>The Sun also Rises</title></bibl>					<date when="1937-10-28">Oct. 28</date>
+	                <date when="1937-10-21">	 21</date>		<bibl><title>Best Short Stories 1936</title></bibl>				<date when="1937-10-28">Oct. 28</date>
+	                <date when="1937-10-28">	 28</date>		<bibl><title>The Mother</title></bibl>							<date when="1937-11-16">Nov 16</date>
+	                <date when="1937-10-28">	 28</date>		<bibl><title>Hatter's Castle</title></bibl>						<date when="1937-11-16">Nov 16</date>
+	                <date when="1937-11-16">Nov 16</date>		<bibl><title>Dead Souls</title><biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl> <date when="1937-12-28">Dec 28</date>
+	                <date when="1937-11-16">Nov 16</date>		<bibl><title>Big Money</title></bibl> p.c. <date when="1937-12-29">Dec 29</date> <date when="1938-01-10">Jan. 10</date>
+	                <date when="1937-12-06">Dec 6</date>		<bibl><title>New Writing</title><biblScope unit="issue" from="4">No 4</biblScope></bibl> <date when="1937-12-28">Dec 28</date>
+	                </ab>
+            		<ab>
+	                  Renewed <date from="1937-11-30" to="1938-05-30">Nov 30 1937	-	May 30 1938</date>				100v ?
+	                										by cheque
+	                </ab>	
+            		<ab>
+	                <date when="1937-12-28">Dec 28</date>		<bibl><title>Eyeless in Gaza</title></bibl>						<date when="1938-01-29">Jan. 29</date>.
+	                <date when="1938-01-10">Jan. 10</date>		<bibl><title>Frost Selected poems</title></bibl>				<date when="1938-02-01">Feb. 1</date>
+	                <date when="1938-01-10"> "	10</date>		<bibl><author>Lindsay</author><title>Collected poems</title></bibl>. <date when="1938-02-01">Febr. 1</date>
+	                <date when="1938-01-10"> "	10</date>		<bibl><author>Dickinson</author><title>Selected poems</title></bibl>.<date when="1938-02-24">Feb 24</date>
+	                <date when="1938-01-29"> 	29</date>		<bibl><title>Soldiers' pay</title></bibl>						<date when="1938-02-24">Feb 24</date>
+	                <date when="1938-01-29"> 	29</date>		<bibl><title>Studs Longman</title></bibl>						<date when="1938-03-01">March 1</date>
+	                <date when="1938-02-01">Febr 1</date>		<bibl><author>Elinor Wylie</author><title>collected poems</title></bibl> <date when="1938-02-24">Feb. 24</date>
+	                <date when="1938-02-24">	 24</date>		<bibl><title>We Are Ten</title></bibl>.							<date when="1938-03-01">March 1</date>
+	                <date when="1938-03-01">March 1</date>		<bibl><title>Marie Antoinette</title></bibl>					<date when="1938-05-25">May 25</date>
+	                <date when="1938-03-01">		</date>		<bibl><title>Weather in the Streets</title></bibl>				<date when="1938-05-25">May 25</date>
+	                <date when="1938-03-25">March 25</date>		<bibl><title>Faber Book of Short Stories</title></bibl>			<date when="1938-05-31">May 31</date>
+	                </ab>
+            		<ab>
+	                  Renewed 6 m 2 v A		<date from="1938-12-31" to="1939-06-30">Dec 31st - June 31st 1939</date> 180 v/
+	                  									will send 	check <date when="1939-01-03">Jan 3</date>
+	                </ab>  
+            		<ab>
+	                <date when="1938-12-31">Dec 31st</date>		<bibl><title>To Have and Have Not</title></bibl>				<date when="1939-01-03">Jan 3</date>
+	                <date when="1939-01-03">Jan 3</date>		<bibl><title>Miscellany</title></bibl>							<date when="1939-01-05">Jan 5</date>
+	                <date when="1939-01-03">	3</date>		<bibl><title>Light in August</title></bibl>						<date when="1939-01-10">Jan 10</date>
+	                <date when="1939-01-05">	5</date>		<bibl><title>Butterfield 8</title></bibl> - 					<date when="1939-01-10">Jan 10</date>
+	                <date when="1939-01-10">	10</date>		<bibl><title>Tennyson</title>-<author>Brooke</author></bibl>	<date when="1939-01-13">Jan 13</date>
+	                </ab>	
+	            </div>  
+            	<div type="recto">
+	                <pb facs="#s7" />
+	                <head>
+	                <date when="1936">1936</date>.				<persName ref="#shel.do">SHELLEY</persName>.
+	                </head>
+            		<ab>
+	                <date when="1936-08-03">Aug. 3rd</date>.	<bibl><title>Oscar Wilde Discovers America</title></bibl>.		<date when="1936-08-24">Aug. 24</date>
+	                <date when="1936-08-03">		</date>		<bibl><title>Dubliners</title></bibl>.				p. 4.60.	<date when="1936-09-29">Sept 29</date>
+	                <date when="1936-08-26"> "	 26</date>.		<bibl><title>Dodsworth</title></bibl>							<date when="1936-09-21">	 21</date>
+	                <date when="1936-08-26"> 		</date>		<bibl><title>White Peacock</title></bibl>			p. 3.40.	<date when="1936-09-21">	 21</date>
+	                <date when="1936-09-21">Sept. 21</date>		<bibl><title>White Horses of Vienna</title></bibl>.				<date when="1936-10-13">Oct 13</date>
+	                <date when="1936-09-26">	  26</date>.	<bibl><title>Testament of Youth</title></bibl>		p. 2.40		<date when="1936-10-13">	13</date>
+	                <date when="1936-10-13">Oct 13</date>		<bibl><title>Burning Cactus</title></bibl>						<date when="1936-10-29">Oct 29</date>
+	                <date when="1936-10-13">Oct 13</date> 		<bibl><title>Faithful Lovers</title></bibl>.  total p.10.40 	<date when="1936-10-29">Oct 29</date>
+	                																						pd. <date when="1936-10-29">Oct. 29</date>
+	                <date when="1936-10-29">Oct. 29</date>		<bibl><title>English Verse</title>.<biblScope unit="volume" from="4">Vol. IV</biblScope></bibl>	<date when="1936-12-02">Dec. 2</date>
+	                <date when="1936-10-29">	 29</date>		<bibl><title>Rolling Stones</title></bibl>.						<date when="1936-12-02">Dec 2</date>.
+	                <date when="1936-12-02">Dec 2</date>		<bibl><title>Gallery of Women</title></bibl>					<date when="1936-12-14">Dec 14</date>
+	                <date when="1936-12-02">Dec. 2</date>.		<bibl><title>Best Short Stories</title></bibl>					<date when="1936-12-14">Dec. 14</date>
+	                </ab>
+            		<ab>
+	                	Renewed. <date from="1936-11-30" to="1937-05-30">Nov. 30th	-	May 30th 1937</date>	pd. <date when="1936-12-14">Dec. 14</date>	 100v.
+	                </ab>	
+            		<ab>
+	                <date when="1936-12-14">Dec. 14</date>.		<bibl><title>Sparkenbroke</title></bibl>.						<date when="1937-01-19">Jan 19</date>
+	                <date when="1936-12-14">	 14</date>.		<bibl><title>Swan Song</title></bibl>.							<date when="1936-12-30">Dec. 30</date>
+	                <date when="1936-12-30">	 30</date>.		<bibl><title>Maid in Waiting</title></bibl>						<date when="1937-01-19">Jan. 19</date>
+	                <date when="1937-01-19">Jan 19</date>		<bibl><title>Flowering Wilderness</title></bibl>				<date when="1937-02-23">Feb. 23</date>
+	                <date when="1937-01-29">Jan 29</date>		<bibl><title>Bliss</title></bibl>.								<date when="1937-02-02">Feb. 2</date>
+	                <date when="1937-02-02">Feb. 2</date>.		<bibl><title>Over the River</title></bibl>						<date when="1937-02-23">Feb 23</date>
+	                <date when="1937-02-23">Feb 23</date>		<bibl><title>Run</title></bibl>									<date when="1937-03-24">Mar. 24</date>
+	                <date when="1937-02-23">	23</date>		<bibl><title>Best Stories 1936</title></bibl>.					<date when="1937-03-24">	 24</date>
+	                <date when="1937-03-24">Mar. 24</date>.		<bibl><title>Back Street</title></bibl>.						<date when="1937-04-27">April 27</date>
+	                J<date when="1937-03-24">	 24</date>		<bibl><title>Women must work</title></bibl>						<date when="1937-04-27">	  27</date>
+	                J<date when="1937-04-27">Ap. 27</date>		<bibl><title>Invitation to the Waltz</title></bibl>.			<date when="1937-05-10">May 10</date>
+	                <date when="1937-04-27">	 27</date>.		<bibl><title>Magnolia Street</title></bibl>.					<date when="1937-05-26">May 26</date>
+	                <date when="1937-05-10">May 10</date>		<bibl><title>Year Before Last</title></bibl>					<date when="1937-05-26">May 26</date>
+	                <date when="1937-05-10">		</date>		<bibl><title>Tobit Transplanted</title></bibl>					<date when="1937-07-05">July 5</date>
+	                <date when="1937-05-10">		</date>		<bibl><title>Imitation of Life</title></bibl>					<date when="1937-07-05"> "	 5</date>
+	                <date when="1937-05-26">	 26</date>.		<bibl><title>Shame the Devil</title></bibl>						<date when="1937-07-05"> "	 5</date>
+	                <date when="1937-05-26">	 	</date>		<bibl><title>Good Earth</title></bibl>.							<date when="1937-07-05"> "	 5</date>.
+	               </ab> 	 		
+	            </div> 
+            	<div type="verso">
+	                <pb facs="#s8" />
+	                <head>
+	                <date when="1939">1939</date>				<persName ref="#shel.do">SHELLEY</persName> (Cardinaux)
+	                </head>
+            		<ab>
+	                		Postage
+	                <date when="1939-10-26">Oct 26</date>8.f 30	<bibl><title>Mamba's Daughter</title></bibl>					<date when="1940-02-13">Feb 13</date>
+	                											<bibl><title>There Thirteen</title></bibl>						<date when="1940-01-23">Jan 23</date>
+	                											<bibl><title>Hope of Heaven</title></bibl>						<date when="1940-01-23">Jan 23</date>
+	                											<bibl><title>Bright Shawl</title></bibl>						<date when="1940-01-23">Jan 23</date>
+	                </ab>
+            		<ab>
+	                				sent p.c. <date when="1940-01-15">Jan 15</date> asking for <bibl><title>Three 13</title></bibl>
+	                				<persName>P.L</persName>. wrote <date when="1940-01-11">Jan 11th</date> also
+	                						also <date when="1940-02-07">Feb 7</date>
+	                				<date when="1940-02-13">Feb 13</date> all returned except <bibl><title>The Egoist</title></bibl>
+	                																		  <bibl><title>Diana of the Crossways</title></bibl>
+	                																		  <bibl><title>Children of the Ghetto</title></bibl>
+	                </ab>								
+	            </div> 
+            	<div type="recto">
+	                <pb facs="#s9" />
+	                <head>
+	                <date when="1937">1937</date>.				<persName ref="#shel.do">SHELLEY</persName>
+	                
+	                <address><persName>Mademoiselle Denise Cardinaux.</persName>
+	                				<settlement>Omonville la Rogue</settlement>
+	                					<addrLine>par </addrLine><settlement>Beaumont - Hague</settlement>
+	                							<region>(Marche)</region></address>
+	                </head>	
+            		<ab>
+	                dated <date when="1937-07-14">July 14th</date>
+	                 received cheque for Frs 60
+	                 <date when="1937-07-16">July 16</date>
+	                 					3m.		2v.			60v.00.
+	                 						paid. <date when="1937-07-16">July 16th 1937</date>
+	                </ab> 
+            		<ab>
+	                <date when="1937-07-05">July 5</date>.		<bibl><title>Great Expectations</title></bibl>					<date when="1937-07-26">July 26</date>
+	                <date when="1937-07-05">	 5</date>.		<bibl><title>As I lay dying</title></bibl>.						<date when="1937-07-26">July 26</date>
+	                <date when="1937-07-26">	 26</date>.		<bibl><title>Proud Servant</title></bibl>						<date when="1937-08-02">Aug 2</date>
+	                	 	send <bibl><title>S Joan</title> by <author>Shaw</author></bibl> when it comes back
+	                <date when="1937-07-26">	 26</date>.		<bibl><title>Cosmopolitains</title></bibl>		post. 4.40		<date when="1937-09-03">Sept 3</date>
+	                <date when="1937-07-26">	 	</date>		<bibl><title>American Tragedy</title></bibl>					<date when="1937-09-03">Sept 3</date>
+	                <date when="1937-07-26">	 	</date>		<bibl><title>Saint Joan</title></bibl>.			post. 4.40		<date when="1937-08-02">Aug 2</date>
+	                <date when="1937-08-02">Aug 2</date>.		<bibl><title>Precious Bane</title></bibl>						<date when="1937-09-03">Sept 3</date>
+	                <date when="1937-08-02">		</date>		<bibl><title>42nd parallel</title></bibl>.		post. 4.80		<date when="1937-09-03">Sept 3</date>.
+	                <date when="1937-09-03">Sept 3</date>.		<bibl><title>Farewell to arms</title></bibl>.					<date when="1937-09-21">Sept 21</date>
+	                <date when="1937-09-03">		</date>		<bibl><title>They walk in the city</title></bibl>				<date when="1937-09-30">Sept 30</date>
+	                <date when="1937-09-03">		</date>		<bibl><title>Garden Party</title></bibl>			  3.60		<date when="1937-09-21">Sept 21</date>
+	                <date when="1937-09-03">		</date>		<bibl><title>Dove's Nest</title></bibl>							<date when="1937-10-21">Oct. 21</date>
+	                <date when="1937-09-22">Sept 22</date>		<bibl><title>Gone to Earth</title></bibl>			  3.20		<date when="1937-10-21">Oct. 21</date>
+	                <date when="1937-09-22">		</date>		<bibl><title>Martin Chuzzlewit</title></bibl>					<date when="1937-10-21">Oct. 21</date>
+	                </ab>			
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
