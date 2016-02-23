@@ -9,7 +9,6 @@
 
     <!-- Lucene-Based Full-Text Indexes -->
     <lucene>
-      <!-- MODS indexes -->
       <text qname="tei:body"/>
       <text qname="tei:persName"/>
       <text qname="tei:date"/>
@@ -17,6 +16,7 @@
 
     <!-- Range Indexes -->
     <create qname="tei:persName" type="xs:string"/>
-    <create qname="tei:date" type="xs:string"/>
+    <create qname="tei:date"     type="xs:string"/>
+    <create qname="@ref"         type="xs:string"/>
   </index>
 </collection>
