@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title> An Encoded Transcription of a Borrower's Card: <persName ref="#exid.pi">Pierre d'Exideuil</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="simo">Simon-Juquin</persName></title>
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
@@ -25,7 +25,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
                     <xi:fallback>
                         <listperson>
                             <head>People not available</head>
@@ -40,24 +40,21 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#exid.pi"><persName>Pierre d'Exideuil</persName></person>
+                <person role="cardholder" ana="#simo"><persName>Simon-Juquin</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
+            <change who="elspeth" when="2015-07-28">
                 <ab>
-                    Transcribed cards.
-                    s1:
-                    	<unclear/> (address) = "Ganjon"?
+                    Transcribed cards
+                    
                    
-                    
-                    
                     	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/e/exideuil/">
+    <facsimile xml:base="pudl0123/825298/j/simon_juquin/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2" />
         </surface>
@@ -65,48 +62,35 @@
         	<graphic url="00000002.jp2" />
         </surface>
         
-    
         
     </facsimile>
     <text>
         <body>
-            <div type="card">
-                <div type="recto">
+           <div type="card">
+               <div type="recto">
                 <pb facs="#s1" />
-                
-                    <ab>
-                        <date when="1934">1934</date>		
-                        <persName ref="#exid.pi">Pierre d'Exideuil</persName>
-                		
-                		   
-                        <persName ref="#exid.pi">M. Pierre</persName>
-                			
-                        <address><street>28 rue Jean Goujon</street></address>
-                			
-                
-                1v. 1m.									15
-                dep.				ref. <date when="1934-12-22">Dec 22	</date>		50f
-                
-                        <date when="1934-11-06">6 November</date><bibl><title>Restoration comedies (Summer 1)</title></bibl> <date when="1934-11-16">16 November</date>
-                        <date when="1934-11-16">16 November</date><bibl><title>Selected Essays, Eliot</title></bibl><date when="1934-11-05">05 November</date>
-        
-                
-                							books	72
-                									50
-                									22
-                    </ab>
-                </div>
-                <div type="verso">
-                    <pb facs="#s2" />
-                    <ab>
-               
-                <!-- verso blank -->
-                    </ab>
-                </div>
-                
+               	<ab><date when="1941">1941</date>		<persName ref="simo">SIMON-JUQUIN
+               				Madame</persName>
+               				<address><street>16 rue Séguien </street><district>- VI</district></address>
+               				
+               					2 m 1 v A		45
+               					pd Oct 24 dep	50
+               						ref. dep.
+               	
+               	    <date when="1941-10-13">	Oct 13</date>	<bibl><title>Man of Property</title></bibl>				<date when="1941-10-24">Oct 24</date>
+               	    <date when="1941-10-24">Oct 24</date>	<bibl><title>Rueful Mating</title></bibl>			<date when="1941-11-05">Nov. 5</date>
+               	    <date when="1941-11-05">Nov. 5</date>	<bibl><title>Water Gipsies</title></bibl>			<date when="1941-11-15">Nov 15	</date>
+               	<date when="1941-11-15">Nov 15	</date><bibl><title>Jane Eyre</title> 2 vols	</bibl>	<date when="1941-11-22">Nov 22</date>
+               	<date when="1941-12-06">Dec. 6</date>	<bibl><title>Tenant of Wildfell Hall</title></bibl>	<date when="1942-01-21">Jan. 21</date>
+               	</ab>
+               	</div>
+               <div type="verso">
+               	<pb facs="s2" />
+               	<!-- verso blank -->
+               </div>	
+               	
+               	
             </div>
-            
-            
         </body>
     </text>
 </TEI>
