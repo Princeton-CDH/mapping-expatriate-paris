@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<project basedir="." xmlns:xdb="http://exist-db.org/ant">
+  <description>MEP logbook ant tasks</description>
+  
+  <property name="eXist_home" value="/opt/local/exist" />
+  
+  <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
+    <classpath>
+      <fileset dir="${eXist_home}/lib/core">
+	<include name="*.jar" />
+      </fileset>
+      <pathelement location="${eXist_home}/exist.jar" />
+      <pathelement location="${eXist_home}/exist-optional.jar" />
+    </classpath>
+  </typedef>
+  
+  
+  <property name="xmldb.host" value="localhost" />
+  <property name="xmldb.port" value="8080" />
+  <property name="xmldb.user" value="admin" />
+  <property name="xmldb.passwd" value="admin" />
+  <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
+  <property name="xmldb.approot" value="${xmldb.url}/mep-data/transcriptions/logbooks" />
+
+  <property name="approot" value="/opt/local/mep-beach-logbooks/transcriptions" />
+  
+  <target name="load-conf" description="load the mep-beach-logbooks collection.xconf record">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.url}/system/config/db/mep-data/transcriptions/logbooks"
+	       createcollection="true">
+      <fileset dir="${approot}/db">
+	<include name="collection.xconf" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbooks" description="load set of completed logbooks"
+	  depends="load-logbook-1919, load-logbook-1920, load-logbook-1921, load-logbook-1922, load-logbook-1923"/>
+
+  <target name="load-logbook-1919" description="load the 1919 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}">
+	<include name="logbook-1919.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1920" description="load the 1920 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}">
+	<include name="logbook-1920.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1921" description="load the 1921 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}">
+	<include name="logbook-1921.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1922" description="load the 1922 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}">
+	<include name="logbook-1922.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1923" description="load the 1923 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${approot}">
+	<include name="logbook-1923.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+</project>
+
