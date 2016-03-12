@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#hami">Hamilton</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#carlca" when="2016-03-12">
+                <ab>
+                    Encoded cards.
+                    s1:
+                    address = "Maisheres"?    ==>    Malsherbes       
+                </ab>
+            </change>
+            <change who="#elspeth" when="2015-07-24">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                     address = "Maisheres"?
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/h/hamilton/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+               	<head>
+               	        
+               	        <persName ref="#hami">HAMILTON</persName>
+               	        <address>
+               			<name>Hotel Malsherbes</name>
+               			<street>5 rue Ferou</street>
+               			<street>11 rue Vaugirard</street>
+               			</address>
+               	</head>
+               	<ab>
+               						1 m 1 v			25
+               							dep			50
+               	<date when="1900-04-28">April 28</date> <bibl><title>Dodsworth</title></bibl>					<date when="1900-05-14">May 14</date>
+               	<date when="1900-05-14">May 14-</date>	<bibl><title>Flock of Birds</title></bibl>				<date when="1900-05-26">May 26</date>
+               	<date when="1900-05-26">	26</date>	<bibl><title>Plagued by the nightingale</title></bibl>	<date when="1900-06-01">June 1st</date>
+               		
+               					1m 1v a				25v
+               	<date from="1939-01-11" to="1939-02-11">1939 Jan 11 - Feb 11</date>	dep			50v
+               	
+               	<date when="1939-01-11">Jan 11</date>	<bibl><title>Dawn O'Hara</title></bibl>					<date when="1939-01-18">Jan 18</date>
+               	<date when="1939-01-18">Jan 18</date>	<bibl><title>Listen the Wind</title></bibl> 1v extra a day <date when="1939-01-19">Jan 19</date>
+               				look up whether old dep refunded
+               	<date when="1939-01-19">	19</date>	<bibl><title>Claverings</title></bibl>					<date when="1939-01-31">Jan 31</date>
+               	<date when="1939-01-31">	31</date>	<bibl><title>Gerald</title></bibl>						<date when="1939-02-14">Feb 14</date>
+               				1 m 1 v a
+               			<date from="1939-02-11" to="1939-03-11">Feb 11 - March 11</date>
+               	<date when="1939-02-24">Feb 24</date>	<bibl><title>Dr. Martino</title></bibl>					<date when="1939-03-10">Mar 10</date>
+               	</ab>
+               	</div>
+               	<div type="verso">
+                <pb facs="#s2" />
+               	<!-- verso blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
