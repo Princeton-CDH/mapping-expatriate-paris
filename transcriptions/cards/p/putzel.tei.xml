@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#putz.ho">Howard Putzel</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#putz.ho"><persName>Howard Putzel</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/p/putzel/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+           <div type="card">
+               <div type="recto">
+                <pb facs="#s1" />
+              <ab>  
+               <date when="1939"> 1939</date>			<persName ref="putz.ho">PUTZEL, Howard.	</persName>		III
+                			 <address><street> 27, rue jacob </street></address>_
+                			  
+            	<date when="1939-07-05">july 5</date>	<bibl><title>Young man with a horn.	</title></bibl>		<date when="1939-07-06">july 6</date>
+            		<date when="1939-07-06">6</date>	<bibl><title>Ellery Queen</title></bibl>
+            		<date when="1939-07-06">6</date>	<bibl><title>Being Geniuses together	</title></bibl>		<date when="1939-07-07">July 7</date>
+            		<date when="1939-07-07">7</date>	<bibl><title>Day of the Locust	</title></bibl>			<date when="1939-07-18">July 18</date>
+            		<date when="1937-07-18">18</date><bibl><title>	Wait until Spring	</title></bibl>			<date when="1939-07-24">July 24</date>
+            		<date when="1937-07-24">24</date>	<bibl><title>Bigger they come</title></bibl>				<date when="1939-07-29">July 29</date>
+            		[<bibl><title>Finnegans Wake</title></bibl> has been kept for
+            		 the <date when="1939-07-29">29th of july </date>- doesn't want so]
+            		 		must send <persName ref="putz.ho">Mr Putzel</persName> word
+            		 			library closing
+            		 	can sell to other customer)
+            		 		dep. ref <date when="1939-07-29">July 29</date>			50f
+            		 		
+            		 					paid 3f for 4 days subsc
+              </ab>
+                </div>
+               <div type="verso">
+                <pb facs="#s2" />
+                
+                <!-- Verso Blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
