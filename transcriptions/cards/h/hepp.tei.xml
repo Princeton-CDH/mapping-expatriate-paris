@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#mayr.ca">Henriette Sophie Marianne Hepp</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change who="#carlca" when="2016-03-15">
+                <ab>
+                    Encoded Cards
+                </ab>
+            </change>
+            <change who="#elspeth" when="2015-07-27">
+                <ab>
+                    Transcribed cards.
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/h/hepp/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+               	<head>
+               	<date when="1935-01-02">1935 Jan 2</date>		
+               	            <persName ref="#mayr.ca">HEPP</persName>
+               			    <persName ref="#mayr.ca">Madame Pierre Hepp</persName>
+               				<address>
+               				<street>14 rue Boyer</street>
+               				<settlement>Beauvais</settlement>
+               				<region>Oise</region>
+               				</address>
+               	</head>			
+               	<ab>
+               	            1 m		1 v				15
+               							dep			30
+               									left
+               	<date when="1935-01-02">Jan 2</date>   <bibl><title>Edwardians</title></bibl>					<date when="1935-01-31">31</date>
+               	<date when="1935-01-02">	</date>	   <bibl><title>Room of One's Own</title></bibl>			<date when="1935-02-10">Feb. 10.</date>
+               	<date when="1935-01-02">	</date>	   <bibl><title>Waves</title></bibl>						<date when="1935-02-10">Feb 10</date>
+               		Sent p.c. <date when="1935-02-05">Feb 5.</date>
+               	Renewed <date when="1935-02-02" to="1936-03-02">Feb 2 - March 2 1936</date> (m.o. <date when="1935-02-10">Feb 10</date>) 15
+               	
+               	</ab>
+               	</div>
+                <div type="verso">
+               	<pb facs="#s2" />
+               	<!-- verso blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
