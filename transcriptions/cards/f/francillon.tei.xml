@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#fran.ro">Robert Francillon</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#fran.ro"><persName>Robert Francillon</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2016-03-12">
+                <ab>
+                    Transcribed cards.
+                    
+                    
+                    
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/f/francillon/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+               <div type="recto"> 
+                <pb facs="#s1" />
+               <ab> 
+                   <date when="1934">1934 </date>           <persName ref="fran.ro">FRANCILLON</persName>
+                                <address><orgName>chez M. Maurice Schlumberger</orgName>
+                                <street>78 rue d' Assas Marnes la
+                                                Coquette </street></address>   12f
+                         dep. 38f   1v. 1m.
+                            ref. <date when="1934-07-20">July 20</date>    R.F.
+                
+              <date when="1934-05-26">  26 May </date>     <bibl><title>Blake</title></bibl> (<bibl><author>Foster Damon</author></bibl>)               <date to="1934-07-20"> July 20</date>
+                                                    ren.
+                Renewed <date from="1934-06-26">26 June</date> <date to="1934-07-26">- 26 July</date>                       12f
+                
+                <date to="1935">1935</date>
+                <date to="1935-11-05">5 Nov.</date>      <bibl><title>Metaphysical poets</title></bibl> <bibl><author>Leishman </author></bibl>        <date to="1934-12-02">2 Dec.</date>
+               </ab>
+                </div>
+                <div type="verso">
+                <pb facs="#s2" />
+                <!-- verso blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
