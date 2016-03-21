@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roll">Ms. Rollo</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#roll"><persName>Ms. Rollo</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="#carlca" when="2016-03-18">
+                <ab>
+                    Encoded Cards - First Pass
+                    
+                </ab>
+            </change>
+            <change who="#carlca">
+                <ab>
+                    s1: Sept. 12	<unclear/> Symphony
+                    s1: Sept 25.	<unclear/> <unclear/> <unclear/>, Color
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/r/rollo/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                <date when="1927-09-10">1927 Sept 10</date>			<persName ref="#roll">ROLLO</persName>			
+                                <persName ref="#roll">Ms. Rollo.</persName>
+                				<address>
+                				<street>4. rue Mignard.</street>
+                			    <settlement>Paris</settlement>
+                			    </address>
+                </head>											
+                				
+                				
+                <ab>				
+                				1 mois	2 vols		 35.
+                					Deposit			100.
+                									 50		- Ref.
+                									  S.B.
+                </ab>
+                <ab>
+                <date when="1927-09-10">Sept. 10.</date>	<bibl><title>Observations.</title></bibl>					<date when="1927-09-12">Sept. 12</date>
+                <date when="1927-09-10">	</date>		    <bibl><title>Sun in Splendour.</title></bibl>				B. B.
+                <date when="1927-09-12">Sept. 12</date>	    <bibl><title><unclear/> Symphony</title></bibl>	0.25		<date when="1927-09-13">Sept 13</date>
+                <date when="1927-09-12">	</date>		    <bibl><title>Magic Mountain</title></bibl> 0.25  5.50		<date when="1927-09-23"> - 23.</date>
+                <date when="1927-09-13">Sept 13</date>		<bibl><title>Chalk Fare</title></bibl>						<date when="1927-09-17">Sept 17</date>
+                <date when="1927-09-17">	 17</date>		<bibl><title>Ladies of Lyndon.</title></bibl>				<date when="1927-09-20"> -  20</date>
+                <date when="1927-09-20">	 20</date>		<bibl><title>Short History of Italian Painting</title></bibl> <date when="1927-09-26">- 26</date>
+                <date when="1927-09-23">	 23</date>		<bibl><title>Sister Carrie</title></bibl>					<date when="1927-09-29"> - 	29</date>
+                <date when="1927-09-25">	 25.</date>	    <bibl><title><unclear/> <unclear/> <unclear/>, Color</title></bibl>				<date when="1927-10-13">Oct 13</date>
+                <date when="1927-10-13">Oct 13</date>
+                
+                Ren <date from="1927-10-08" to="1927-11-01">October 8	-	November 1</date> v		25f
+                
+                <date when="1927-10-18">Oct 18</date>	<bibl><title>When the King Loses his head</title></bibl>		<date when="1927-10-20">Oct. 20</date>
+                <date when="1927-10-20">	20</date>	<bibl><title>Forsyte Saga.</title></bibl>						<date when="1927-11-02">Nov 2</date>
+                <date when="1927-11-02">Nov. 2</date>	<bibl><title>White Monkey</title></bibl>						<date when="1927-11-04">Nov 4</date>
+                <date when="1927-11-04"> "	 4</date>	<bibl><title>Theatre in Life</title></bibl>	0.25	=	0.75	<date when="1927-11-07">Nov 7</date>
+                <date when="1927-11-29">	 29.</date>	<bibl><title>Book of marriage</title></bibl>
+                </ab>
+                </div>
+                <div type="verso">
+                <pb facs="#s2" />
+                
+                <!-- Verso Blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>
