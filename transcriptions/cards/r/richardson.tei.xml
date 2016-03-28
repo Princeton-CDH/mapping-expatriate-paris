@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	    <particDesc>
+	        <person role="cardholder" ana="#rich"><persName>Richards-Orpen</persName></person>
+	    </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#yournetid">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/r/richardson/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+        <surface xml:id="s5">
+            <graphic url="00000005.jp2" />
+        </surface>
+        <surface xml:id="s6">
+            <graphic url="00000006.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+              <div type="recto">  <pb facs="#s1" />
+           <head>     
+                			<persName ref="#rich.ma">RICHARDSON</persName>
+                <date when="1924-08-30">1924 Aug 30</date>		<persName ref="#rich.ma">Miss Marian Richardson</persName>
+                		<address><street>11 rue Froidevaux</street></address>
+                
+                </head>
+                <ab>
+                			
+                			1	m	1	v				12
+                								Dep		20
+                								</ab><ab>
+                								
+                
+                <date when="1924-08-30">Aug 30</date>	<bibl><title>Chicago Poems</title></bibl>						p.c <date when="1924-12-04">Dec 4</date>
+                											pc <date when="1924-01-23">Jan 23</date>	</ab>
+     </div>  <div type="verso">         
+                <pb facs="#s2" />
+                
+                <!-- Verso Blank -->
+           </div> </div>
+             <div type="card">   <div type="recto"><pb facs="#s3" />
+        <head>        
+                <date when="1929-04-26">1929 Ap 26</date>		<persName>RICHARDSON</persName>
+                				<persName>Mrs A.W. Richardson</persName>
+                						<address><street>4 rue Leopold Robert</street></address>
+                	</head>					
+                						
+                				
+                		<ab>		
+                				1m	1vol			20
+                				Deposit				50</ab>
+                
+                
+                <ab>
+                
+                <date when="1929-04-26">Ap 26</date>		<bibl><title>Since Cezanne.</title></bibl>				<date when="1929-06-01">June 1st</date>
+                				1 week .5f.</ab>
+                </div>
+            <div type="verso">    <pb facs="#s4" />
+                
+                <!-- Verso Blank -->
+             </div>   </div>
+            <div type="card">  <div type="recto">  <pb facs="#s5" />
+                <head>
+                			<persName>RICHARDSON</persName>
+                <date when="1929-02-22">1929
+                Feb 22</date>			<persName>Mrs Arthur Richardson</persName>
+                				<address><street>4 rue Léopold Robert</street></address>
+                				
+                				</head>
+                			<ab>	
+                				
+                				3 mos	1v				60
+                						dep				50
+                	= to be kept toward price of book (87.50)
+                	</ab><ab>
+            	<date when="1929-02-22">Feb 22</date>		<bibl><title>Letters of Katherine Mansfield</title> <biblScope unit="volume" from="1" to="1">v 1</biblScope></bibl>	<date when="1929-02-28">Febr. 28.</date>
+            		<date when="1929-02-28">28</date>		<bibl><title>Spinoza</title></bibl>		<date when="1929-03-28">Mch 28th</date> .c
+            					<date when="1929-04-11">Ap. 11</date> p.c. <date when="1929-05-02">May 2</date> p.c.
+            								<date when="1929-06-15">June 15</date> p.c.
+            					= lost
+            							owes 37.¢50.</ab>
+                </div>
+           <div type="verso">     <pb facs="#s6" />
+                
+                <!-- Verso Blank -->
+             </div>   </div>
+            
+        </body>
+    </text>
+</TEI>
