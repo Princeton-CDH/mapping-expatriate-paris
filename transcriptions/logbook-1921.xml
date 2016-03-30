@@ -510,6 +510,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
 	  			</p>
 	  		</event>
+	  		<event type="supplement">
+	  			<p>Extra <persName ref="#martin">Mr Martin</persName>
+	  				<measure type="price" unit="franc" quantity="1">1</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -572,6 +577,13 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
 	  				<measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>Extra vol <persName ref="#racloz">Mlle Racloz</persName>
+	  				<measure type="duration" unit="month" quantity="1">extra vol</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 mos</measure>
+	  				<measure type="price" unit="franc" quantity="6">6</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1532,26 +1544,6 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	<div type='month' n='4'>
 	  <head><date>April</date></head>
 	  <div type='day'>
-	    <head><date when-iso='1921-03-28'>1921-03-28</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1921-03-29'>1921-03-29</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1921-03-30'>1921-03-30</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1921-03-31'>1921-03-31</date></head>
-
-
-	  </div>
-	  <div type='day'>
 	    <head><date when-iso='1921-04-01'>1921-04-01</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
@@ -1601,6 +1593,13 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>Extra vol subsc. <persName ref="#edwards">Edwards</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">extra vol</measure>
+	  				<measure type="price" unit="franc" quantity="5">5</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1876,6 +1875,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="price" unit="franc" quantity="8">8</measure>
 	  			</p>
 	  		</event>
+	  		<event type="supplement">
+	  			<p>extras <persName ref="#ramoz">M. Ramoz</persName>
+	  				<measure type="price" unit="franc" quantity="1.80">1.80</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -1923,7 +1927,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  <div type='day'>
 	    <head><date when-iso='1921-04-22'>1921-04-22</date></head>
 	  	<listEvent>
-	  		<event type="subscription">
+	  		<event type="supplement">
 	  			<p>Subsc <persName ref="#fernandez">M. Fernandez</persName> extra book
 	  				<measure type="price" unit="franc" quantity="10">10</measure>
 	  			</p>
@@ -4198,8 +4202,9 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
 	  			</p>
 	  		</event>
-	  		<event type="renewal">
+	  		<event type="supplement">
 	  			<p>Subsc <persName ref="#hervey">Mrs Hervey</persName> extra vol
+	  				<measure type="frequency" unit="volume" quantity="1">extra vol</measure>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="price" unit="franc" quantity="10">10</measure>
 	  				<measure type="deposit" unit="franc" quantity="7">extra dep 7</measure>
