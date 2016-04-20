@@ -37,7 +37,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1924-01-03'>1924-01-03</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#hayes">Mrs Hayes</persName>
+	  			<p>S r <persName ref="#hayes"><choice><orig>Mrs Hayes</orig> <reg>Mrs Hays</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="2">2 mo</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vs</measure>
 	  				<measure type="price" unit="franc" quantity="32">32.00</measure>
@@ -49,6 +49,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vs</measure>
 	  				<measure type="price" unit="franc" quantity="67">67.00</measure>
 	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D Refunded <persName ref="#s">Mr S</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -67,7 +72,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#macpherson">Miss MacPherson</persName>
+	  			<p>S <persName ref="#macpherson"><choice><orig>Miss</orig> <reg>Mrs</reg></choice> MacPherson</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12.00</measure>
@@ -82,7 +87,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#roberts">Miss Roberts</persName>
+	  			<p>S <persName ref="#roberts"><choice><orig>Miss</orig> <reg>Mrs</reg></choice> Roberts</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12.00</measure>
@@ -115,6 +120,21 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="3">3 mo</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="20">20.00</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>refunded <persName ref="#fabreluce">Fabreluce</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>refunded <persName ref="#hewitt">Hewitt</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>refunded <persName ref="#raymenton">Raymenton</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -158,6 +178,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#koop">Miss Koop</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -176,6 +201,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			<p>S r <persName ref="#homer">Mr Homer</persName>
 	  				<measure type="duration" unit="month" quantity="0.25">1 wk</measure>
 	  				<measure type="price" unit="franc" quantity="3">3.00</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#beach">Beach</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -345,6 +375,16 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="price" unit="franc" quantity="12">12.00</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Dep ref. <persName ref="#wilford">Mr Wilford</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Dep ref. <persName ref="#mcelwee">McElwee</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -358,6 +398,16 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="8">8.00</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>deposits refunded <persName ref="#irving">Mr Irving</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>deposits refunded <persName ref="#robertson">Mr Robertson</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -397,6 +447,17 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12.00</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#embril">Mr Embril</persName>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#mims">Mr Mims</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40f</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
