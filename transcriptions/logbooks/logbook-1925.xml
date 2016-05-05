@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax”?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -5234,7 +5234,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-08-01'>1925-08-01</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#tissier">Mlle Tissier</persName>
+	  			<p>S <persName ref="#tissier">Mlle Marcelle Tissier</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
@@ -5269,12 +5269,44 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
 	  			</p>
 	  		</event>
+	  		<event type="supplement">
+	  			<p><persName ref="#delancy">Mr Delancy</persName> gave 
+	  				<measure type="deposit" unit="franc" quantity="50">fifty deposit</measure>
+	  				<measure type="frequency" unit="volume" quantity="1"> on extra book</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposits refunded <persName ref="#clements">Mrs Clements</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40f</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposits refunded <persName ref="#george">Mr Gordon George</persName> £1 			
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposits refunded <persName ref="#stevens">Mr Stevens</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-08-04'>1925-08-04</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>Deposits refunded <persName ref="#hartes">Miss Irma Hartes</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20"></measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposits refunded <persName ref="#dreyfus">Mr Stanley Dreyfus</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -5282,7 +5314,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-08-05'>1925-08-05</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#baines">Miss Baines</persName>
+	  			<p>S <persName ref="#baines"><choice><orig>Miss Baines</orig> <reg>Mrs Earl Barnes</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
@@ -5310,6 +5342,13 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#crane">Mr W. D. Crane</persName> (a friend of Miss Holly, kept his book only a few days)
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="price" unit="franc" quantity="3">3</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5342,7 +5381,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#schirmer">Mrs Schirmer</persName>
+	  			<p>S <persName ref="#schirmer"><choice><orig>Mrs Schirmer</orig> <reg>Mrs Shimer</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="12">1 yr</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="110">110</measure>
@@ -5356,12 +5395,34 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#cameron">Miss Cameron</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="100">100</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#taylor">Mr Taylor</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-08-08'>1925-08-08</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#crel">Hood Crel</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#huard">Miss Huard</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -5378,7 +5439,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="4">4 vols</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
-	  				<measure type="deposit" unit="franc" quantity="280">280</measure>
+	  				<measure type="deposit" unit="franc" quantity="80">80</measure>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -5387,6 +5448,21 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#kimball">Miss Kimball</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#adams">Miss Adams</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#crane">Mr Crane</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5412,6 +5488,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#desternes">Mlle Desternes</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -5432,11 +5513,35 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-08-13'>1925-08-13</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#warner">Miss Warner</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-08-14'>1925-08-14</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#shereck">Miss Shereck</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#bourret">Mlle Bourret</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#derieu">Mr Derieu</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -5483,7 +5588,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-08-18'>1925-08-18</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#sargent">Mr Sargent</persName>
+	  			<p>S r <persName ref="#sargent"><choice><orig>Mr Sargent</orig> <reg> Mr Sargeant</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
@@ -5527,6 +5632,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#hughs">Miss Hughs</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -5541,6 +5651,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#mastenbrock">Mr Mastenbrock</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -5549,7 +5664,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-08-22'>1925-08-22</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#warfield">Miss Warfield</persName>
+	  			<p>S <persName ref="#warfield">Miss Frances Warfield</persName>
 	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="52">52</measure>
@@ -5565,7 +5680,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#howland">Miss Howland</persName>
+	  			<p>S <persName ref="#howland">Miss Isabella Howland</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
@@ -5578,6 +5693,16 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#andrews">Miss Andrews</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#tenney">Mr Tenney</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5598,6 +5723,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="price" unit="franc" quantity="99">99</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#fitzgerald">Fitzgerald</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -5613,17 +5743,41 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#paquin">Mr Paquin</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-08-26'>1925-08-26</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#lynahan">Miss Lynahan</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="70">20 + 50</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-08-27'>1925-08-27</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#hans">Miss Hans</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#jackson">B. Jackson</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -5664,6 +5818,16 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="reimbursement" unit="franc" quantity="80">80f</measure>
 	  			</p>
 	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#cabeen">Mrs Cabeen</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#rustad">Mr Rustad</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -5677,18 +5841,28 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-08-31'>1925-08-31</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#leary">Miss Leary</persName>
+	  			<p>S <persName ref="#leary">Miss <choice><orig>Leary</orig> <reg>O'Lery</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
-	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#rourrel">Mme Rourrel</persName>
+	  			<p>S r <persName ref="#rourrel">Mme <choice><orig>Rourrel</orig> <reg>Roussel</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#chamberlain">Miss Chamberlain</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#gibbons">Miss Gibbons</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5702,7 +5876,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-09-01'>1925-09-01</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#wilkes">Mrs Wilkes</persName>
+	  			<p>S <persName ref="#wilkes">Mrs Elis Wilkes</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
@@ -5725,7 +5899,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#moffat">Miss Moffat</persName>
+	  			<p>S <persName ref="#moffat">Miss A. Moffat</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
@@ -5793,7 +5967,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="supplement">
-	  			<p>Extra vol <persName ref="#warfield">Miss Warfield</persName>
+	  			<p>Extra vol <persName ref="#warfield">Miss <choice><orig>Warfield</orig> <reg>Warefied</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="6">6 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">extra vol</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -5895,7 +6069,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#zaidensky">Mr Zaidensky</persName>
+	  			<p>S <persName ref="#zaidensky">Mr <choice><orig>Zaidensky</orig> <reg>Zaidenberg</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
@@ -5977,7 +6151,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#k">Miss K</persName>
+	  			<p>S <persName ref="#kemure">Miss Kemure</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
@@ -6004,8 +6178,29 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  <div type='day'>
 	    <head><date when-iso='1925-09-14'>1925-09-14</date></head>
 	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>Subs renew <persName ref="#fichet">Mme Fichet</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12 frs</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#denby">Mr Denby</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 20 + 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#chaquin">Mr Chaquin</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="67">67</measure>
+	  			</p>
+	  		</event>
 	  		<event type="reimbursement">
-	  			<p>D. R. <persName ref="#fichet">Mme Fichet</persName>
+	  			<p>D. R. <persName ref="#fichet">Mme Fichet</persName> (1 vol)
 	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
@@ -6065,6 +6260,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">20 frs</measure>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -6112,7 +6308,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
-	  			<p><persName ref="#wilks">Mrs Wilks</persName> D. R.
+	  			<p><persName ref="#wilks">Mrs <choice><orig>Wilks</orig> <reg>Wickes</reg></choice></persName> D. R.
 	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
 	  			</p>
 	  		</event>
@@ -6159,6 +6355,21 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
 	  			</p>
 	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#knox">Miss Knox</persName>
+	  				<measure type="deposit" unit="franc" quantity="200">D 200</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposits refunded <persName ref="#hove">Mrs Hove</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20 frs</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#davis">Miss Davis</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="200">200f</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -6167,7 +6378,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1925-09-22'>1925-09-22</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S R <persName ref="#mims">Miss C. Mims</persName>
+	  			<p>S R <persName ref="#mims">Miss Cath. Mims</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="30">30</measure>
@@ -6175,11 +6386,18 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  		</event>
 	  		<event type="supplement">
 	  			<p>S extended <persName ref="#clark">Miss Clark</persName>
-	  				<measure type="price" unit="franc" quantity="20">20</measure>
+	  				<measure type="frequency" unit="franc" quantity="2">for two books</measure>
+	  				<measure type="price" unit="franc" quantity="20">20</measure> (instead of one year)
+	  				<measure type="deposit" unit="franc" quantity="20">Dep 20</measure>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
 	  			<p>D. R. <persName ref="#gruening">Miss Gruening</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#greenhood">Miss Greenhood</persName>
 	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
@@ -6248,7 +6466,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#maas">Mlle Maas</persName> (A.d.L)
+	  			<p>S <persName ref="#maas">Mlle Maas</persName> (A.des L.)
 	  				<measure type="duration" unit="month" quantity="12">1 year</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="81">81</measure>
@@ -6904,6 +7122,42 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
 	  			</p>
 	  		</event>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#nongayrol">Mr Nongayrol</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#hibbard">Miss D. Hibbard</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#harrison">Mr Harrison</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#thanhouser">Mrs Thanhouser</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="140">D 140</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#cilley">Miss Cilley</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
 	  	</listEvent>
 
 
@@ -6915,11 +7169,83 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-16'>1925-10-16</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#kendall">Mr Carlton Kendall</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="50">D 50</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#chomley">Miss Chomley</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#luard">Mlle Luard</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-17'>1925-10-17</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#grund">Miss Grund</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#pledge">Miss Pledge</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#mcdonald">Miss McDonald</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#hay">Miss Hay</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#edmonds">Miss G. Edmonds</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vol</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#crane">Mr Crane</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -6930,31 +7256,243 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-19'>1925-10-19</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#boccara">Mlle Boccara</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#cody">Mrs Cody</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S.R. <persName ref="#ames">Mr Ames</persName>
+	  				<measure type="duration" unit="month" quantity="2">2 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="24">24</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#sutherland">Mr Ch. Sutherland</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#fel">Mme Fel</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-20'>1925-10-20</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#savy">Mlle Savy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#smith">Miss Smith</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#jessel">Mr Jessel</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vol</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#carlisle">Mr Carlisle</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 volw</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#blake">Mr Blake</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#jaffe">Mr Jaffe</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#stumer">Miss Stumer</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-21'>1925-10-21</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#clarke">Miss A. Clarke</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#blumenthal">Mr Blumenthal</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#ravel">Mme Ravel</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S <persName ref="#nagy">Mr de Nagy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-22'>1925-10-22</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#dramey">Mlle Dramey</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#williams">Lady Williams</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#carlisle">Mr Carlisle</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="200">200</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#d'augbigné">Mr M. d'Aubigné</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-23'>1925-10-23</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#young">Mr W. Young</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="81">81</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#colens">Mr Colens</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="64">64</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#maspero">Mme Maspero</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#chapin">Mrs Chapin</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#houland">Miss Houland</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-24'>1925-10-24</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#wyer">Mr Wyer</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>S <persName ref="#hay">Miss Hay</persName> extended
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol extra</measure>
+	  				<measure type="price" unit="franc" quantity="10">10</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>S <persName ref="#mcdonald">Mr McDonald</persName> extended
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol extra</measure>
+	  				<measure type="price" unit="franc" quantity="10">10</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep ref <persName ref="#blumenthal">Mr Blumenthal</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20f</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -6965,36 +7503,216 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-26'>1925-10-26</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#duncan">Captain A. Duncan</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S R <persName ref="#campfermann">Mrs Campfermann</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vol</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-27'>1925-10-27</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#adkins">Miss Adkins</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#wells">Miss Wells</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#monteseau">Mlle Monteseau</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="67">67</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#thomas">Mr Thomas</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#kendall">Mr Kendall</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="50">50</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-28'>1925-10-28</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#rowe">Mrs H. P. Rowe</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#spicer">Miss Spicer</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#williams">Mr Williams</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#gunot">Mlle Gunot</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-29'>1925-10-29</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#hervey">Mrs Hervey</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="4">4 vols</measure>
+	  				<measure type="price" unit="franc" quantity="80">80</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#montricher">Mlle de Montricher</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#bancrof">Miss Bancrof</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-30'>1925-10-30</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#frank">Miss Frank</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="100">D 100</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#stumer">Miss Stumer</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#watson">Miss Watson</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-10-31'>1925-10-31</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-11-01'>1925-11-01</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#parr">Mr Parr</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#roussel">Mme Roussel</persName>
+	  				<measure type="duration" unit="month" quantity="0.25">1 week</measure>
+	  				<measure type="price" unit="franc" quantity="3">3</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#benedictus">Mr Benedictus</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#facteau">Mr Facteau</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#harter">Miss Harter</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#rogues">Miss Rogues</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#fel">Mme Fel</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7002,67 +7720,277 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	<div type='month' n='11'>
 	  <head><date>November</date></head>
 	  <div type='day'>
-	    <head><date when-iso='1925-10-26'>1925-10-26</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-10-27'>1925-10-27</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-10-28'>1925-10-28</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-10-29'>1925-10-29</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-10-30'>1925-10-30</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-10-31'>1925-10-31</date></head>
-
-
-	  </div>
-	  <div type='day'>
 	    <head><date when-iso='1925-11-01'>1925-11-01</date></head>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-02'>1925-11-02</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#harzberger">Mr Harzberger</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#schaufelberger">M. Schaufelberger</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-03'>1925-11-03</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S <persName ref="#tidman">Mr Tidman</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S <persName ref="#ives">Mr Ives</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#sauborn">Mrs Sauborn</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#stuart">Miss M. Stuart</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#king">Mrs King</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#bennett">Mr Fr. Bennett</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#camferman">Miss Camferman</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#carlisle">Mr Carlisle</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-04'>1925-11-04</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#latriehe">Mlle Latriehe</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#citrón">Mme Citrón</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="52">52</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#latriehe">Mlle Latriehe</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#spangler">Miss Spangler</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>S extended <persName ref="#duncan">Mr Duncan</persName>
+	  				<measure type="price" unit="franc" quantity="4">4</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S R <persName ref="#burlin">Mr G. Burlin</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-05'>1925-11-05</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#villechenon">Mlle Pinot de Villechenon</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#rivoallan">Mr Rivoallan</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="88">88</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#tissier">Mlle Tissier</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-06'>1925-11-06</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#ottocar">Mlle Ottocar</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#harrison">Miss Harrison</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="52">52</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#campbell">Miss Campbell</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#root">Miss Root</persName>
+	  				<measure type="duration" unit="month" quantity="2">2 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="24">24</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#warren">Miss Warren</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#stoneham">Mr Stoneham</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#brandt">Miss Brandt</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#menasce">Mr Menasce</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#guibaud">Mme Guibaud</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep ref <persName ref="#rourrel">Mme Rourrel</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-07'>1925-11-07</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#petit">Mlle Petit</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#howard">Miss Howard</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7073,11 +8001,85 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-09'>1925-11-09</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#carlisle">Mr Carlisle</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#laney">Mr Laney</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>S. Extended <persName ref="#king">Miss King</persName>
+	  				<measure type="price" unit="franc" quantity="4">4</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#wood">Mr R. Wood</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#bailward">Miss Bailward</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#frank">Miss M Frank</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="80">80</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#houtten">Miss von Houtten</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-10'>1925-11-10</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#davis">Miss Davis</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="67">67</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">Extra Dep 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#loving">Mrs Loving</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#bouthillier">Mr Bouthillier</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#buck">Mr Buck</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7088,16 +8090,108 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-12'>1925-11-12</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#kean">Mrs Kean</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep ref <persName ref="#chin">Mr Chin</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20f</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-13'>1925-11-13</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#blackburn">Miss Blackburn</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#lanux">Mme de Lanux</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#rose">Miss Rose</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#raudolph">Miss Raudolph</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#chomley">Miss Chomley</persName>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-14'>1925-11-14</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p><persName ref="#hyde">Miss Hyde</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#ergay">J. Ergay</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#gibbons">Miss Gibbons</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 year</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="64">64</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#mahorney">Miss Mahorney</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#fraser">Mr Fraser</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7108,31 +8202,266 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-16'>1925-11-16</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#macleish">Mr MacLeish</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 year</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#ames">Mr Ames</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#stevick">Miss R. Stevick</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#lerner">Miss Lerner</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#savy">Mlle Savy</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-17'>1925-11-17</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#landauer">Mrs Landauer</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">dep 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>S. extended <persName ref="#root">Miss Root</persName>
+	  				<measure type="price" unit="franc" quantity="8">8</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#gibney">Mr S. Gibney</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#windsor">Miss Windsor</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#fordham">Mr Fordham</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-18'>1925-11-18</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#olos">Miss Olos</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#maineard">Mr Maineard</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="67">67</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#miller">Miss Miller</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#miller">Mrs Miller</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#nakamura">Mr Taro Nakamura</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#simler">Mr Simler</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#campferman">Mrs Campferman</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-19'>1925-11-19</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#dauchy">Miss Dauchy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="supplement">
+	  			<p>S. ext. <persName ref="#sauboy">Mrs Sauboy</persName>
+	  				<measure type="price" unit="franc" quantity="4">4</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#imbs">Mr Imbs</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#stephenson">Miss B. Stephenson</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#boccara">Mlle Boccara</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-20'>1925-11-20</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#zaidenberg">Mr Zaidenberg</persName>
+	  				<measure type="duration" unit="month" quantity="2">2 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="24">24</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#carlisle">Mr Carlisle</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#nonseau">Mlle Nonseau</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#cortes">Mr Cortes</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="10">10</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-21'>1925-11-21</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#reavis">Mr Reavis</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#scudder">Miss Scudder</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#nagy">Mr de Nagy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#fournier">Mlle Fournier</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#blacke">Mr Blacke</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#williams">Mr Williams</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#draney">Mlle Draney</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7143,31 +8472,190 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-23'>1925-11-23</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#meerovitch">Mr Meerovitch</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#mims">Miss Mims</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-24'>1925-11-24</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#grosser">Mrs Grosser</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vols</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#lerner">Miss Lerner</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#goldet">Mlle Goldet</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#spangler">Miss Spangler</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#thomas">Mrs Thomas</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#tanhouser">Mr Tanhouser</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="60">60</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-25'>1925-11-25</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p><persName ref="#vaillant">Miss Vaillant</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#bradley">Miss Bradley</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-26'>1925-11-26</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#sargeant">Mr Sargeant</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#whitehead">Mrs Whitehead</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#drake">Mr Drake</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="duncan">Mlle Duncan</persName>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-27'>1925-11-27</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#jaffe">Mr Jaffe</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#strawbridge">Mr Strawbridge</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-28'>1925-11-28</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#machette">Miss Oralla Machette</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#heudon">Mme Heudon</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#wells">Miss Wells</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#benedictus">Mr Benedictus</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#bancroft">Miss Bancroft</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#deplanqs">Mme Deplanqs</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7178,69 +8666,240 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-11-30'>1925-11-30</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#smith">Mrs L. Smith</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#whitney">Miss M. Whitney</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#wiegand">Mr Green Wiegand</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#bell">Miss Bell</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#roemer">Mr Roemer</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#rowe">Mrs Rowe</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#elsmer">Mr Stewart-Elsmer</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-01'>1925-12-01</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-02'>1925-12-02</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-03'>1925-12-03</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-04'>1925-12-04</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-05'>1925-12-05</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-06'>1925-12-06</date></head>
-
+	
 
 	  </div>
 	</div>
 	<div type='month' n='12'>
 	  <head><date>December</date></head>
-	  <div type='day'>
-	    <head><date when-iso='1925-11-30'>1925-11-30</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-01'>1925-12-01</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-02'>1925-12-02</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-03'>1925-12-03</date></head>
-
-
-	  </div>
-	  <div type='day'>
-	    <head><date when-iso='1925-12-04'>1925-12-04</date></head>
-
-
-	  </div>
+		<div type='day'>
+			<head><date when-iso='1925-12-01'>1925-12-01</date></head>
+			<listEvent>
+				<event type="renewal">
+					<p>S. R. <persName ref="#schauffelberger">Mr Schauffelberger</persName>
+						<measure type="duration" unit="month" quantity="1">1 m</measure>
+						<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+						<measure type="price" unit="franc" quantity="12">12</measure>
+					</p>
+				</event>
+				<event type="subscription">
+					<p>S <persName ref="#mcgrew">Miss Tarn McGrew</persName>
+						<measure type="price" unit="franc" quantity="16">16</measure>
+						<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+					</p>
+				</event>
+				<event type="reimbursement">
+					<p>D. R. <persName ref="#nakamura">Mr Nakamura</persName>
+						<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+					</p>
+				</event>
+			</listEvent>
+			
+			
+		</div>
+		<div type='day'>
+			<head><date when-iso='1925-12-02'>1925-12-02</date></head>
+			<listEvent>
+				<event type="subscription">
+					<p>S <persName ref="#niece">Mr De la Niece</persName>
+						<measure type="duration" unit="month" quantity="3">3 m</measure>
+						<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+						<measure type="price" unit="franc" quantity="30">30</measure>
+						<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+					</p>
+				</event>
+				<event type="renewal">
+					<p>S. R. <persName ref="#stern">Mr Stern</persName>
+						<measure type="duration" unit="month" quantity="6">6 m</measure>
+						<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+						<measure type="price" unit="franc" quantity="67">67</measure>
+					</p>
+				</event>
+				<event type="renewal">
+					<p>S. R. <persName ref="#meerovitch">Mr Meerovitch</persName>
+						<measure type="duration" unit="month" quantity="1">1 m</measure>
+						<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+						<measure type="price" unit="franc" quantity="12">12</measure>
+					</p>
+				</event>
+				<event type="reimbursement">
+					<p>D. R. <persName ref="#stevick">Miss Stevick</persName>
+						<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+					</p>
+				</event>
+				<event type="reimbursement">
+					<p>D. R. <persName ref="#rose">Mrs Rose</persName>
+						<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+					</p>
+				</event>
+			</listEvent>
+			
+			
+		</div>
+		<div type='day'>
+			<head><date when-iso='1925-12-03'>1925-12-03</date></head>
+			<listEvent>
+				<event type="subscription">
+					<p>S <persName ref="#cairns">Mr Dorion Cairns</persName>
+						<measure type="duration" unit="month" quantity="1">1 m</measure>
+						<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+						<measure type="price" unit="franc" quantity="12">12</measure>
+						<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+					</p>
+				</event>
+				<event type="renewal">
+					<p>S. R. <persName ref="#tissier">Miss Tissier</persName>
+						<measure type="duration" unit="month" quantity="3">3 m</measure>
+						<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+						<measure type="price" unit="franc" quantity="40">40</measure>
+					</p>
+				</event>
+				<event type="reimbursement">
+					<p>D. R. <persName ref="#moffet">Miss Moffet</persName>
+						<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+					</p>
+				</event>
+			</listEvent>
+			
+			
+		</div>
+		<div type='day'>
+			<head><date when-iso='1925-12-04'>1925-12-04</date></head>
+			<listEvent>
+				<event type="renewal">
+					<p>S. R. <persName ref="#hauson">Mrs Hauson</persName>
+						<measure type="duration" unit="month" quantity="12">1 y.</measure>
+						<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+						<measure type="price" unit="franc" quantity="110">110</measure>
+					</p>
+				</event>
+				<event type="subscription">
+					<p>S <persName ref="#rossat">Mr T. S. de Rossat</persName>
+						<measure type="duration" unit="month" quantity="1">1 m</measure>
+						<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+						<measure type="price" unit="franc" quantity="16">16</measure>
+						<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+					</p>
+				</event>
+				<event type="subscription">
+					<p>S <persName ref="#bennett">Mrs Bennett</persName>
+						<measure type="duration" unit="month" quantity="3">3 m</measure>
+						<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+						<measure type="price" unit="franc" quantity="40">40</measure>
+						<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+					</p>
+				</event>
+				<event type="renewal">
+					<p>S. R. <persName ref="#jones">Mrs Jones</persName>
+						<measure type="duration" unit="month" quantity="3">3 m</measure>
+						<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+						<measure type="price" unit="franc" quantity="40">40</measure>
+					</p>
+				</event>
+			</listEvent>
+			
 	  <div type='day'>
 	    <head><date when-iso='1925-12-05'>1925-12-05</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S <persName ref="#rolland">Mlle Rolland</persName>
+	  				<measure type="duration" unit="month" quantity="0.25">1 week</measure>
+	  				<measure type="price" unit="franc" quantity="3">3</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#catalogne">Mr G. de Catalogne</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#moffet">Miss A. Moffet</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#moffet">Miss Moffet</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#stewart">Mr Stewart</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#king">Mrs King</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7251,31 +8910,197 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-07'>1925-12-07</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#lhomme">Mme Lhomme</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#stewart">Miss Stewart</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-08'>1925-12-08</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#wolf">Miss R. E. Wolf</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#petit">Mlle S. Petit</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-09'>1925-12-09</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#harwood">Mr Harwood</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#kennedy">Mr Kennedy</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#clarke">Miss Clarke</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#whitney">Miss M. Whitney</persName>
+	  				<measure type="duration" unit="month" quantity="2">2 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#poulain">Mme Poulain</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#hartes">Mrs Hartes</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#smyth">Miss Smyth</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  		    <p>D. R. <persName ref="#chomley">Miss Chomley</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#stoneham">Mr Stoneham</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-10'>1925-12-10</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#laney">Mr Laney</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vol</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#fosca">Mr Fosca</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="67">67</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-11'>1925-12-11</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#sauborn">Mrs Sauborn</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#murphy">Mr J. Murphy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#adkins">Miss Adkins</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="17.60">17.60</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#ludwigsohn">Mr Ludwigsohn</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-12'>1925-12-12</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#morena">Mme de Morena</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#boer">Miss De Boer</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#ninas">Mr Ninas</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7286,6 +9111,13 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-14'>1925-12-14</date></head>
+	  	<listEvent>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#bradly">Miss Bradly</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7296,21 +9128,171 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-16'>1925-12-16</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#landauer">Mrs Landauer</persName>
+	  				<measure type="duration" unit="month" quantity="0.5">2 weeks</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="8">8</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#lloyd">Miss Lloyd</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 year</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#leavitt">Miss Leavitt</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#kean">Mrs Kean</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep. refunded <persName ref="#landauer">Mrs Landauer</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40f</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep. refunded <persName ref="#bell">Mrs Bell</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40f</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-17'>1925-12-17</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#wyers">Mr Wyers</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#frieseke">Mrs Frieseke</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#singer">Mr Singer</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="110">110</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#mahorney">Miss Mahorney</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#ormsbee">Mrs Ormsbee</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-18'>1925-12-18</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#miller">Mrs Miller</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#warren">Miss Warren</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#miller">Miss Miller</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#olos">Miss Olos</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#windsor">Miss Windsor</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#lerner">Miss Lerner</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-19'>1925-12-19</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#kelley">Mrs Kelley</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#vienne">Mme De Vienne</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#stephenson">Miss Stephenson</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#bernheim">Mme Bernheim</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 y.</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="90">90</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#boccara">Mlle Boccara</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7321,21 +9303,152 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-21'>1925-12-21</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#smith">Mrs L. Smith</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#dale">Mr J. Dale</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#hall">Mrs O'Hagan Hall</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#sauborn">Mrs Sauborn</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#powell">Mrs Powell</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-22'>1925-12-22</date></head>
+	  	<listEvent>
+	  		<event type="supplement">
+	  			<p>S. ext. <persName ref="#guibaud">Mrs Guibaud</persName>
+	  				<measure type="price" unit="franc" quantity="6">6</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#nakamura">Mr Nakamura</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#galantiere">Mr L. Galantiere</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="67">67</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#wilford">Mr Wilford</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#mcgill">Mrs E McGill</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#guibaud">Mme Guibaud</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-23'>1925-12-23</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#carlisle">Mr Carlisle</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#bullington">Mr Bullington</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#kittredge">Miss Kittredge</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#francillon">Mr R. Francillon</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep ref: <persName ref="#drake">Mr Drake</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20f</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>dep ref: <persName ref="#campbell">Miss Campbell</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="40">40f</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-24'>1925-12-24</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#stumer">Miss Stumer</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#stumer">Miss Stumer</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="100">100</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7346,6 +9459,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-26'>1925-12-26</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S r <persName ref="#rivard">Mlle Rivard</persName>
+	  				<measure type="duration" unit="month" quantity="6">6 mos</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
+	  				<measure type="price" unit="franc" quantity="52">52</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -7356,21 +9478,130 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-28'>1925-12-28</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#skepper">Mr Skepper</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#sage">Mr R. Sage</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#millward">Mr Millward</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#wyers">Mr Wyers</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="30">30</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-29'>1925-12-29</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#dauchy">Mlle Dauchy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#rognes">Miss Rognes</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-30'>1925-12-30</date></head>
+	  	<listEvent>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#nagy">Mr de Nagy</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#wiegand">Mr Wiegand</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>D. R. <persName ref="#rive">Mr Rive</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1925-12-31'>1925-12-31</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#clark">Mr C. O. Clark</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#pickthall">Mrs Pickthall</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#bomin">Miss E. Bomin</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S. R. <persName ref="#carnay">Mr Carnay</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p>S <persName ref="#george">Mr H. St. George</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
