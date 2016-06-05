@@ -87,7 +87,7 @@
   </target>
 
   <target name="load-logbooks" description="load set of completed logbooks"
-	  depends="load-logbook-1919, load-logbook-1920, load-logbook-1921, load-logbook-1922, load-logbook-1923, load-logbook-1924"/>
+	  depends="load-logbook-1919, load-logbook-1920, load-logbook-1921, load-logbook-1922, load-logbook-1923, load-logbook-1924, load-logbook-1925, load-logbook-1926"/>
 
   <target name="load-logbook-1919" description="load the 1919 logbook">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
@@ -151,6 +151,28 @@
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${logbooks}">
 	<include name="logbook-1924.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1925" description="load the 1925 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1925.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1926" description="load the 1926 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1926.xml" />
       </fileset>
     </xdb:store>
   </target>
