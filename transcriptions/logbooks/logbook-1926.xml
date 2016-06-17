@@ -56,7 +56,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-01-04'>1926-01-04</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#bailward">Miss Bailward</persName>
+	  			<p><choice><orig>S r</orig><reg>S overdue</reg></choice> <persName ref="#bailward">Miss Bailward</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
@@ -116,11 +116,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#michaud">M. Michaud</persName> Prof.
+	  			<p>S <persName ref="#michaud">M. Michaud</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">Prof.</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -180,10 +181,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#valerio">Mlle Valerio</persName> (Prof.)
+	  			<p>S. R. <persName ref="#valerio">Mlle Valerio</persName>
 	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vol.</measure>
 	  				<measure type="price" unit="franc" quantity="68">68</measure>
+	  				<rs type="subcat">(Prof)</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -195,11 +197,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#lecaisme">Mlle Lecaisme</persName>
+	  			<p>S <persName ref="#lecaisme">Mlle <choice><orig>Lecaisme</orig><reg>Lecaisne</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol.</measure>
-	  				<measure type="price" unit="franc" quantity="52">52</measure>
-	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<measure type="price" unit="franc" quantity="32">Et. 32</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure> paid by check 50f + 2f
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -210,7 +212,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#goldets">Miss Goldets</persName>
+	  			<p>S. R. <persName ref="#goldets">Miss Goldet</persName> E.
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol.</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
@@ -256,7 +258,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#wates">Miss Pity Wates</persName>
+	  			<p>S <persName ref="#fitzwater">Miss Fitzwater</persName>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
 	  			</p>
@@ -291,14 +293,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#ames">Mr Ames</persName> (St.)
+	  			<p>S. R. <persName ref="#ames">Mr Ames</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">Stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#schauffelteger">Mr Schauffelteger</persName>
+	  			<p>S. R. <persName ref="#schauffelteger">Mr <choice><orig>Schauffelteger</orig><reg>Schauffelberger</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
@@ -313,7 +316,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#bacholle">Mlle Bacholle</persName>
+	  			<p>S <persName ref="#bacholle">Mlle M. Bacholle</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol.</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
@@ -325,14 +328,16 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols.</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<rs type="subcat">Prof</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#duclaus">Mr H. Duclaus</persName>
+	  			<p>S <persName ref="#duclaux">Mr H. Duclaux</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol.</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">Stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -343,7 +348,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#mclean">Mrs M. P. McLean</persName>
+	  			<p>S <persName ref="#mclean">Mrs M. T. McLean</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
@@ -358,7 +363,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-01-12'>1926-01-12</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#nuias">Mr Nuias</persName>
+	  			<p>S. R. <persName ref="#ninas">Mr Ninas</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -373,7 +378,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
-	  			<p>Deposit refunded <persName ref="#nuias">Mr Nuias</persName>
+	  			<p>Deposit refunded <persName ref="#ninas">Mr Ninas</persName>
 	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
@@ -408,7 +413,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-01-14'>1926-01-14</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#kemr">Miss Kemr</persName>
+	  			<p>S. R. <persName ref="#kemp">Miss Kemp</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
@@ -441,10 +446,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
 	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  				<rs type="subcat">Student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#sutherland">Mrs Sutherland</persName>
+	  			<p>S. R. <persName ref="#sutherland"><choice><orig>Mrs</orig><reg>Miss</reg></choice> Sutherland</persName>
 	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="85">85</measure>
@@ -478,7 +484,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#buske">Mr Buske</persName>
+	  			<p>S <persName ref="#burke">Mr Burke</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -539,7 +545,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#basket">Mlle S. Basket</persName>
+	  			<p>S <persName ref="#barket">Mlle S. Barket</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="50">50</measure>
@@ -547,7 +553,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
-	  			<p>Deposit refunded <persName ref="#micler">Mrs Micler</persName>
+	  			<p>Deposit refunded <persName ref="#micler">Mrs <choice><orig>Micler</orig><reg>Miller</reg></choice></persName>
 	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
@@ -571,10 +577,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">Stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S. R. <persName ref="#bennett">L. Bennett</persName>
+	  			<p>S. R. <persName ref="#bennett">Dr L. Bennett</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
@@ -698,12 +705,14 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">Student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="supplement">
-	  			<p>S. extended to 2 vols <persName ref="#alhuson">Mrs <unclear>Alhuson</unclear></persName>
+	  			<p>S. extended to 2 vols <persName ref="#alhuson">Mrs <choice><orig><unclear>Alhuson</unclear></orig><reg>Athurn</reg></choice></persName>
 	  				<measure type="price" unit="franc" quantity="8">8</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -739,6 +748,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -747,7 +757,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
-	  			<p>Deposit refunded <persName ref="#michell">Miss Michell</persName>
+	  			<p>Deposit refunded <persName ref="#michell"><choice><orig>Miss</orig><reg>Mrs</reg></choice> Michell</persName>
 	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
@@ -779,7 +789,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#arner">Mr S. W. Arner</persName>
+	  			<p>S <persName ref="#arner">Mr <choice><orig>S. W. Arner</orig><reg>S. Warner</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -787,11 +797,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#burns">Mr Burns</persName> St.
+	  			<p>S <persName ref="#burns">Mr Burns</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">Stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -808,6 +819,16 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  </div>
 	  <div type='day'>
 	    <head><date when-iso='1926-01-26'>1926-01-26</date></head>
+	  	<listEvent>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#jackson">Mrs J Jackson</persName>
+	  				<measure type="duration" unit="month" quantity="12">1 year</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="115">115f</measure>
+	  				<measure type="deposit" unit="franc" quantity="40">D 40</measure>
+	  			</p>
+	  		</event>
+	  	</listEvent>
 
 
 	  </div>
@@ -841,12 +862,13 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="4">4</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  				<rs type="subcat">Student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>R. S. Miss
+	  			<p>R. S. <persName ref="#clarke">Miss Clarke</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
-	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure> due 1
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  			</p>
 	  		</event>
@@ -913,6 +935,14 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  				<measure type="price" unit="franc" quantity="81">81</measure>
 	  			</p>
 	  		</event>
+	  		<event type="subscription">
+	  			<p>S. <persName ref="#dahlherz">Mr D'Arcy Dahlherz</persName>
+	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<measure type="deposit" unit="franc" quantity="20">D 20</measure>
+	  			</p>
+	  		</event>
 	  		<event type="renewal">
 	  			<p>S r <persName ref="#kelley">Mr Kelley</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
@@ -928,7 +958,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#rymd">Miss Rymd</persName>
+	  			<p>S <persName ref="#rymd">Miss <choice><orig>Rymd</orig><reg>Rynd</reg></choice></persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -971,7 +1001,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-01'>1926-02-01</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#macconnel">Mlle MacConnel</persName>
+	  			<p>S <persName ref="#macconnel">Mlle MacConnel</persName> H. i. L.
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
@@ -986,15 +1016,20 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-02'>1926-02-02</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#stephenson">Miss Stephenson</persName>
+	  			<p>S r <persName ref="#stephenson">Miss B. Stephenson</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
-	  			<p>Deposit Refunded <persName ref="#pinot">Mme Pinot</persName>
+	  			<p>Deposit Refunded <persName ref="#villechenon">Mme Pinot de Villechenon</persName>
 	  				<measure type="reimbursement" unit="franc" quantity="20">20f</measure>
+	  			</p>
+	  		</event>
+	  		<event type="reimbursement">
+	  			<p>Deposit refunded <persName ref="#peter">Miss Klein Peter</persName>
+	  				<measure type="reimbursement" unit="franc" quantity="20">20</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1005,14 +1040,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-03'>1926-02-03</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#schauffelberger">Mr Schauffelberger</persName> student
+	  			<p>S r <persName ref="#schauffelberger">Mr Schauffelberger</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#shanton">Miss Shanton</persName>
+	  			<p>S <persName ref="#shanton">Miss E. Shanton</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -1020,11 +1056,19 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#simon">M. Simon</persName> student
+	  			<p>S <persName ref="#simon">M. Simon</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  				<rs type="subcat">student</rs>
+	  			</p>
+	  		</event>
+	  		<event type="renewal">
+	  			<p>S R <persName ref="#stucker">Miss Stucker</persName>
+	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
+	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+	  				<measure type="price" unit="franc" quantity="15">15</measure>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1035,7 +1079,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-04'>1926-02-04</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#pellerin">Mlle Pellerin</persName>
+	  			<p>S <persName ref="#pellerin">Mlle H. Pellerin</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -1043,7 +1087,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#ericson">Mrs Ericson</persName>
+	  			<p>S <persName ref="#ericson">Mrs D. Ericson</persName>
 	  				<measure type="duration" unit="month" quantity="0.5">2 wks</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="7.50">7.50</measure>
@@ -1094,7 +1138,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-05'>1926-02-05</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#stewart">Miss Stewart</persName>
+	  			<p>S <persName ref="#stewart">Miss E. Stewart</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -1125,10 +1169,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#stewart">Miss Stewart</persName> Student
+	  			<p>S r <persName ref="#stewart">Miss J. M. Stewart</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1152,7 +1197,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#pottier">M. Pottier</persName>
+	  			<p>S <persName ref="#pottier">M. Ph. Pottier</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
@@ -1229,7 +1274,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#drake">Mr Drake</persName>
+	  			<p>S <persName ref="#drake">Mr C. C. Drake</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="50">50</measure>
@@ -1276,10 +1321,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-14'>1926-02-14</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#amouroux">Mlle Amouroux</persName> adl
+	  			<p>S r <persName ref="#amouroux">Mlle Amouroux</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  				<rs type="subcat">adl</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1300,10 +1346,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-17'>1926-02-17</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S <persName ref="#r">R</persName> student
+	  			<p>S <persName ref="#r">R</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -1324,11 +1371,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-18'>1926-02-18</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#gadreau">Mme Gadreau</persName> adl
+	  			<p>S <persName ref="#gadreau">Mme Gadreau</persName> 
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">adl</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -1339,7 +1387,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#coyle">Miss Coyle</persName>
+	  			<p>S <persName ref="#coyle">Miss C. Coyle</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
@@ -1347,7 +1395,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#?">Mme ?</persName>
+	  			<p>S <persName ref="#bringrau">Mme <unclear>Bringrau</unclear></persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mo</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="50">50</measure>
@@ -1374,7 +1422,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-19'>1926-02-19</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#wyndham">Mr Wyndham</persName>
+	  			<p>S <persName ref="#wyndham">Mr H. A. Wyndham</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
@@ -1396,10 +1444,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-20'>1926-02-20</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#ames">Mr Ames</persName> stud
+	  			<p>S r <persName ref="#ames">Mr Ames</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -1419,10 +1468,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#smith">Mr Smith</persName>
+	  			<p>S r <persName ref="#smith">Mr L. Smith</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="15">15</measure>
+	  			</p>
+	  		</event>
+	  		<event type="subscription">
+	  			<p><persName ref="#oguz">Mme Oguz</persName> left 40f deposit to pay for 2m sub=40f
+	  				<measure type="deposit" unit="franc" quantity="40">40f</measure>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -1456,7 +1510,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#salvees">Mr Salvees</persName>
+	  			<p>S <persName ref="#saluces">Mr Saluces</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="20">20</measure>
@@ -1464,11 +1518,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#keely">Miss Keely</persName> student
+	  			<p>S <persName ref="#keely">Miss Keely</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
 	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  				<rs type="subcat">Student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -1484,18 +1539,19 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-23'>1926-02-23</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#nutting">Mr Nutting</persName>
+	  			<p>S r <persName ref="#nutting">Mr M. C. Nutting</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#dernis">Mr Dernis</persName> stud
+	  			<p>S <persName ref="#dernis">Mr Dernis</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -1540,19 +1596,21 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-25'>1926-02-25</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#ekenberg">Miss Ekenberg</persName> student
+	  			<p>S <persName ref="#ekenberg">Miss Ekenberg</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="40">d 40</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#desternes">Mlle Desternes</persName> student
+	  			<p>S <persName ref="#desternes">Mlle Desternes</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -1564,11 +1622,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#catton">Mr Catton</persName> student
+	  			<p>S <persName ref="#catton">Mr Catton</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -1594,17 +1653,19 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-02-26'>1926-02-26</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#binder">Miss Binder</persName> student
+	  			<p>S r <persName ref="#binder">Miss Binder</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">student</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#fournier">Mlle Fournier</persName> stud
+	  			<p>S r <persName ref="#fournier">Mlle Fournier</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -1808,10 +1869,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-03-05'>1926-03-05</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#ames">Mr Ames</persName> stud
+	  			<p>S r <persName ref="#ames">Mr Ames</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -1867,10 +1929,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#macconnell">Mlle MacConnell</persName> AdL
+	  			<p>S r <persName ref="#macconnell">Mlle MacConnell</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -1965,18 +2028,20 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#kean">Miss Kean</persName> stud
+	  			<p>S r <persName ref="#kean">Miss Kean</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#bernot">Miss Bernot</persName> stud
+	  			<p>S <persName ref="#bernot">Miss Bernot</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2010,11 +2075,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#arnstein">Mr Arnstein</persName> stud.
+	  			<p>S <persName ref="#arnstein">Mr Arnstein</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">stud.</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2080,11 +2146,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#scholes">Miss Scholes</persName> stud
+	  			<p>S <persName ref="#scholes">Miss Scholes</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -2220,11 +2287,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-03-25'>1926-03-25</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#nouveau">Mlle Nouveau</persName> stud
+	  			<p>S <persName ref="#nouveau">Mlle Nouveau</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2345,10 +2413,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#cattan">Mr Cattan</persName> stud.
+	  			<p>S r <persName ref="#cattan">Mr Cattan</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud.</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2514,10 +2583,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#lhomme">Mme Lhomme</persName> AdL
+	  			<p>S r <persName ref="#lhomme">Mme Lhomme</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2644,11 +2714,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#champonnier">Mr Champonnier</persName> AdL
+	  			<p>S <persName ref="#champonnier">Mr Champonnier</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="50">d 50</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -2682,10 +2753,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#norris">Miss Norris</persName> stud.
+	  			<p>S r <persName ref="#norris">Miss Norris</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<rs type="subcat">stud.</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2696,11 +2768,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-04-16'>1926-04-16</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#bonifas">Mr Bonifas</persName> (Prof)
+	  			<p>S <persName ref="#bonifas">Mr Bonifas</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
 	  				<measure type="deposit" unit="franc" quantity="20">d 20</measure>
+	  				<rs type="subcat">Prof</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -2821,10 +2894,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#sessions">Miss Sessions</persName> stud.
+	  			<p>S <persName ref="#sessions">Miss Sessions</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud.</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -2899,24 +2973,27 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-04-26'>1926-04-26</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#delaney">Mr Delaney</persName> stud
+	  			<p>S r <persName ref="#delaney">Mr Delaney</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#binder">Miss Binder</persName> stud
+	  			<p>S r <persName ref="#binder">Miss Binder</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#bonin">Miss Bonin</persName> stud
+	  			<p>S r <persName ref="#bonin">Miss Bonin</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -3011,10 +3088,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-04-30'>1926-04-30</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#ames">Mrs Ames</persName> stud.
+	  			<p>S r <persName ref="#ames">Mrs Ames</persName>
 	  				<measure type="duration" unit="month" quantity="2">2 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="24">24</measure>
+	  				<rs type="subcat">stud.</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -3026,10 +3104,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#duclos">Mr Duclos</persName> stud
+	  			<p>S r <persName ref="#duclos">Mr Duclos</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -3087,10 +3166,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#verrier">Mlle Verrier</persName> (AdL)
+	  			<p>S r <persName ref="#verrier">Mlle Verrier</persName>
 	  				<measure type="duration" unit="month" quantity="2">2 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="24">24</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -3745,10 +3825,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#cattan">Mr Cattan</persName> stud
+	  			<p>S r <persName ref="#cattan">Mr Cattan</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -3766,11 +3847,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#medley">Mr Medley</persName> stud
+	  			<p>S <persName ref="#medley">Mr Medley</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vols</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="100">d 100</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -3915,33 +3997,37 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#barroux">Mr Barroux</persName> stud
+	  			<p>S <persName ref="#barroux">Mr Barroux</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="50">d 50</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#sarraute">Mlle Sarraute</persName> stud
+	  			<p>S r <persName ref="#sarraute">Mlle Sarraute</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#krisupokova">Miss Krisupokova</persName> stud.
+	  			<p>S r <persName ref="#krisupokova">Miss Krisupokova</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud.</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#ames">Mr Ames</persName> stud
+	  			<p>S <persName ref="#ames">Mr Ames</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="100">d 100</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -3971,10 +4057,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-06-08'>1926-06-08</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#seurre">Mlle Seurre</persName> Prof
+	  			<p>S r <persName ref="#seurre">Mlle Seurre</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">Prof</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -3985,11 +4072,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-06-09'>1926-06-09</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#clavier">Mr Clavier</persName> adl
+	  			<p>S <persName ref="#clavier">Mr Clavier</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="50">d 50</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -4414,10 +4502,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#ottensooser">Mlle Ottensooser</persName> AdL
+	  			<p>S r <persName ref="#ottensooser">Mlle Ottensooser</persName>
 	  				<measure type="duration" unit="month" quantity="12">1 yr</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="92">92</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="reimbursement">
@@ -4632,17 +4721,19 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S AdL <persName ref="#conolly">Miss Conolly</persName>
+	  			<p>S <persName ref="#conolly">Miss Conolly</persName>
 	  				<measure type="duration" unit="month" quantity="6">6 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="58.50">58.50</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#killen">Miss Killen</persName> AdL
+	  			<p>S r <persName ref="#killen">Miss Killen</persName>
 	  				<measure type="duration" unit="month" quantity="12">1 yr</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="92">92</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -4702,10 +4793,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#weiss">Mme Weiss</persName> AdL
+	  			<p>S r <persName ref="#weiss">Mme Weiss</persName>
 	  				<measure type="duration" unit="month" quantity="12">1 yr</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="92">92</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -4738,11 +4830,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-07-08'>1926-07-08</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S AdL <persName ref="#renault">Mlle Renault</persName>
+	  			<p>S <persName ref="#renault">Mlle Renault</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
 	  				<measure type="deposit" unit="franc" quantity="50">d 50</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -4768,10 +4861,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#shefford">Mr Shefford</persName> stud
+	  			<p>S r <persName ref="#shefford">Mr Shefford</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -4811,11 +4905,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r AdL <persName ref="#jaffe">Mrs Jaffe</persName>
+	  			<p>S r <persName ref="#jaffe">Mrs Jaffe</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 vol</measure>
 	  				<measure type="price" unit="franc" quantity="40">40</measure>
 	  				<measure type="deposit" unit="franc" quantity="100">d 100</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -4887,10 +4982,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#rivard">Mlle Rivard</persName> Prof.
+	  			<p>S r <persName ref="#rivard">Mlle Rivard</persName>
 	  				<measure type="duration" unit="month" quantity="3">3 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="32">32</measure>
+	  				<rs type="subcat">Prof</rs>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
@@ -4949,11 +5045,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#cowles">Miss Cowles</persName> stud
+	  			<p>S <persName ref="#cowles">Miss Cowles</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="50">50</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5018,11 +5115,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#thomas">Mlle Thomas</persName> stud
+	  			<p>S <persName ref="#thomas">Mlle Thomas</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="16">16</measure>
 	  				<measure type="deposit" unit="franc" quantity="100">d 100</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5033,10 +5131,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-07-23'>1926-07-23</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#delaney">Mr Delaney</persName> stud
+	  			<p>S r <persName ref="#delaney">Mr Delaney</persName>
 	  				<measure type="duration" unit="month" quantity="9">9 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="108">108</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5047,10 +5146,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-07-24'>1926-07-24</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#kennedy">Mr Kennedy</persName> stud
+	  			<p>S r <persName ref="#kennedy">Mr Kennedy</persName>
 	  				<measure type="duration" unit="month" quantity="2">2 mos</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="24">24</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5090,10 +5190,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  			</p>
 	  		</event>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#hunter">Mrs Hunter</persName> AdL
+	  			<p>S r <persName ref="#hunter">Mrs Hunter</persName>
 	  				<measure type="duration" unit="month" quantity="12">1 yr</measure>
 	  				<measure type="frequency" unit="volume" quantity="2">2 v</measure>
 	  				<measure type="price" unit="franc" quantity="120">120</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5271,11 +5372,12 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-08-03'>1926-08-03</date></head>
 	  	<listEvent>
 	  		<event type="subscription">
-	  			<p>S <persName ref="#hawlet">Mrs Hawlet</persName> stud
+	  			<p>S <persName ref="#hawlet">Mrs Hawlet</persName>
 	  				<measure type="duration" unit="month" quantity="1">1 m</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="12">12</measure>
 	  				<measure type="deposit" unit="franc" quantity="50">d 50</measure>
+	  				<rs type="subcat">stud</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
@@ -5294,10 +5396,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-08-04'>1926-08-04</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#heurgon">M Heurgon</persName> AdL
+	  			<p>S r <persName ref="#heurgon">M Heurgon</persName>
 	  				<measure type="duration" unit="month" quantity="4">4 vols</measure>
 	  				<measure type="frequency" unit="volume" quantity="3">3 mos</measure>
 	  				<measure type="price" unit="franc" quantity="80">80</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  	</listEvent>
@@ -5308,10 +5411,11 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	    <head><date when-iso='1926-08-05'>1926-08-05</date></head>
 	  	<listEvent>
 	  		<event type="renewal">
-	  			<p>S r <persName ref="#netter">Mme Lang Netter</persName> AdL
+	  			<p>S r <persName ref="#netter">Mme Lang Netter</persName>
 	  				<measure type="duration" unit="month" quantity="12">1 yr</measure>
 	  				<measure type="frequency" unit="volume" quantity="1">1 v</measure>
 	  				<measure type="price" unit="franc" quantity="92">92</measure>
+	  				<rs type="subcat">AdL</rs>
 	  			</p>
 	  		</event>
 	  		<event type="subscription">
