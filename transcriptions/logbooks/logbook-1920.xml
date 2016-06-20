@@ -1,6 +1,5 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="../../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax”?>
+	schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="../../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -49,7 +48,7 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#denans">Mlle Denans</persName>
+                                <p>Subsc renewed <persName ref="#denans">Mlle Denans</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
@@ -105,6 +104,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -113,6 +113,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -128,9 +129,10 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
-                            <event type="renewal">
+                            <event type="supplement">
                                 <p>Subsc <persName ref="#violette">Mme Violette</persName>
                                     <measure type="duration" unit="month" quantity="3">extended from 3 mos to six</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1</measure>
@@ -158,7 +160,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#pop">M. Pop</persName>
+                                <p>Subsc renewed <persName ref="#pop">M. Pop</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
@@ -185,6 +187,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -197,7 +200,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#culbertson">Culbertson</persName>
+                                <p>Subsc renewed <persName ref="#culbertson">Culbertson</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
@@ -227,10 +230,11 @@
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#biétry">Mlle Biétry</persName>
+                                <p>Subsc renewed <persName ref="#biétry">Mlle Biétry</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4.00</measure>
@@ -268,6 +272,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -325,10 +330,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#suter">M. Suter</persName>
+                                <p>Subsc <persName ref="#suter">M. Suter</persName> renewed
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -368,6 +374,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -390,6 +397,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -408,7 +416,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#cahn">M. Cahn</persName>
+                                <p>Subsc <persName ref="#cahn">M. Cahn</persName> renewed
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.60">6.60</measure>
@@ -427,6 +435,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Professor</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -435,6 +444,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Teacher</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -454,10 +464,11 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Subsc <persName ref="#nissim">Mme Nissin</persName>
+                                <p>Subsc <persName ref="#nissim">Mme Nissim</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -510,6 +521,7 @@
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -520,7 +532,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#castel">Mme Castel</persName>
+                                <p>Subsc <persName ref="#castel">Mme Castel</persName> renewed
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="20">20.00</measure>
@@ -531,6 +543,7 @@
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -546,6 +559,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -556,7 +570,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#hazant">Mlle Hazant</persName>
+                                <p>Subsc <persName ref="#hazant">Mlle Hazant</persName> renewed
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
@@ -585,7 +599,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#pagan">Comte Pagan</persName>
+                                <p>Subsc <persName ref="#pagan">Comte Pagan</persName> renewed
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="5">5</measure>
@@ -609,6 +623,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -616,6 +631,7 @@
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -638,7 +654,7 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Subsc <persName ref="#lafilte">Mme Lafilte</persName>
+                                <p>Subsc <persName ref="#lafitte">Mme Lafitte</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="5">5</measure>
@@ -651,6 +667,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -666,6 +683,7 @@
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.80">6.80</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -686,10 +704,11 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#furze">Miss Furze</persName>
+                                <p>Subsc <persName ref="#furze">Miss Furze</persName> renewed
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="20">20</measure>
@@ -722,6 +741,7 @@
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -737,6 +757,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -745,6 +766,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -772,20 +794,22 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#lafilte">Mme Lafilte</persName>
+                                <p>Subsc <persName ref="#lafilte">Mme Lafilte</persName> renewed
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="5">5</measure>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#rolland">Mlle Rolland</persName>
+                                <p>Subsc <persName ref="#rolland">Mlle Rolland</persName> renewed
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -820,7 +844,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#cahn">M. Cahn</persName>
+                                <p>Subsc <persName ref="#cahn">M. Cahn</persName> renewed 
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.60">6.60</measure>
@@ -838,6 +862,7 @@
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.90">6.90</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -858,10 +883,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#dutihl">Mme Dutihl</persName>
+                                <p>Subsc <persName ref="#dutihl">Mme Dutihl</persName> renewed
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="30">30</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -872,14 +898,15 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#nerassian">Mlle des Nerassian</persName>
+                                <p>Subsc <persName ref="#nerassian">Mlle des Nerassian</persName> renewed
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#fabreluce">Mlle Fabreluce</persName>
+                                <p>Subsc <persName ref="#fabreluce">Mlle Fabreluce</persName> renewed 
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="8">8</measure>
@@ -926,7 +953,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#hazant">Mlle Hazant</persName>
+                                <p>Subsc <persName ref="#hazant">Mlle Hazant</persName> renewed 
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
@@ -1004,6 +1031,7 @@
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28.00</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1014,7 +1042,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#goll">Mme. Goll </persName>renewed
+                                <p>Subsc <persName ref="#goll">Mme. Goll</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="4.80">4.80</measure>
@@ -1038,10 +1066,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Subsc <persName ref="#savitgky">Mme Savitgky</persName>
+                                <p>Subsc <persName ref="#savitzky">Mme Savitzky</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="30">30</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -1057,7 +1086,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#dercher">M. Dercher</persName>
+                                <p>Subsc <persName ref="#dercher">M. Dercher</persName> renewed
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="12">12</measure>
@@ -1076,6 +1105,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1091,6 +1121,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="0">0</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -1122,6 +1153,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4.00</measure>
                                     <measure type="deposit" unit="franc" quantity="3">Dep 3</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1137,7 +1169,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#leroy">M. Leroy </persName>renewed
+                                <p>Subsc <persName ref="#leroy">M. Leroy</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.60">6.60</measure>
@@ -1148,6 +1180,15 @@
                     <div type="day">
                         <head>
                             <date when-iso="1920-03-23">1920-03-23</date>
+                            <listEvent>
+                                <event type="renewal">
+                                    <p>Subsc. renewed
+                                    <measure type="duration" unit="month" quantity="1">1 mo</measure>
+                                        <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
+                                        <measure type="price" unit="franc" quantity="6.60">6.60</measure>
+                                    </p>
+                                </event>
+                            </listEvent>
                         </head>
                     </div>
                     <div type="day">
@@ -1161,7 +1202,7 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#vierne">Mlle Vierne </persName>renewed
+                                <p>Subsc <persName ref="#vierne">Mlle Vierne</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="12">12</measure>
@@ -1194,10 +1235,11 @@
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="40">40.00</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
-                            <event type="renewal">
-                                <p>Subsc <persName ref="#hay">Miss Hay </persName>changed
+                            <event type="supplement">
+                                <p>Subsc <persName ref="#hay">Miss Hay</persName> changed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 book</measure>
                                     <measure type="price" unit="franc" quantity="3">3</measure>
@@ -1209,6 +1251,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1239,17 +1282,18 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#vipond">Mr Vipond </persName>renewed
+                                <p>Subsc <persName ref="#vipond">Mr Vipond</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="12">12</measure>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#molènes">Mme de Molènes </persName>renewed
+                                <p>Subsc <persName ref="#molènes">Mme de Molènes</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1331,6 +1375,7 @@
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="17.10">17.10</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1341,10 +1386,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#hazant">Mlle Hazant </persName>renewed
+                                <p>Subsc <persName ref="#hazant">Mlle Hazant</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1393,6 +1439,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="6">Dep 6</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1424,6 +1471,7 @@
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1439,17 +1487,18 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#fabreluce">Mlle Fabreluce </persName>renewed
+                                <p>Subsc <persName ref="#fabreluce">Mlle Fabreluce</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="20">20</measure>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#walter">M. Walter</persName>
+                                <p>Subsc <persName ref="#walter">M. Walter</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="14">14</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1470,11 +1519,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#doux">Miss Doux</persName>
+                                <p>Subsc <persName ref="#doux">Miss Doux</persName>
                                     <measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="7">7.00</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7.00</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1505,10 +1555,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#goll">Mme Goll </persName>renewed
+                                <p>Subsc <persName ref="#goll">Mme Goll</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1536,7 +1587,7 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#lafilte">Mme Lafilte</persName>renewed
+                                <p>Subsc <persName ref="#lafilte">Mme Lafilte</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="12">12</measure>
@@ -1550,11 +1601,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#teilhac">Mlle Teilhac</persName>
+                                <p>Subsc <persName ref="#teilhac">Mlle Teilhac</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1565,11 +1617,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof.Subsc <persName ref="#fournery">M. Fournery</persName>
+                                <p>Subsc <persName ref="#fournery">M. Fournery</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1580,10 +1633,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Prof. Subsc <persName ref="#huchon">M. Huchon</persName> renewed
+                                <p>Subsc <persName ref="#huchon">M. Huchon</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -1594,10 +1648,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#dufour">Mlle Dufour</persName> renewed
+                                <p>Subsc <persName ref="#dufour">Mlle Dufour</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1651,10 +1706,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#jansse">Mlle Jansse</persName> renewed
+                                <p> Subsc <persName ref="#jansse">Mlle Jansse</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -1673,11 +1729,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#goukowsky">Mlle Goukowsky</persName>
+                                <p>Subsc <persName ref="#goukowsky">Mlle Goukowsky</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -1696,10 +1753,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof Subsc <persName ref="#desclos">M. Desclos</persName>
+                                <p>Subsc <persName ref="#desclos">M. Desclos</persName>
                                     <measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="7">7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1710,18 +1768,20 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#desgrez">Mlle Desgrez</persName>
+                                <p>Subsc <persName ref="#desgrez">Mlle Desgrez</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#zimmer">Mlle Zimmer</persName> Renewed
+                                <p>Subsc <persName ref="#zimmer">Mlle Zimmer</persName> Renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1810,10 +1870,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#henriet">Mlle Henriet</persName> renewed
+                                <p>Subsc <persName ref="#henriet">Mlle Henriet</persName> renewed
 									<measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="7">7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -1837,17 +1898,19 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof Subsc <persName ref="#renoir">M. Renoir</persName>
+                                <p>Subsc <persName ref="#renoir">M. Renoir</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#baker">Miss Bobby Baker</persName>
+                                <p>Subsc <persName ref="#baker">Miss Bobby Baker</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1871,10 +1934,11 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#long-netter">Mme Long-Netter</persName>
+                                <p>Subsc <persName ref="#long-netter">Mme Long-Netter</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1885,10 +1949,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#barbier">M. Barbier</persName>
+                                <p>Subsc <persName ref="#barbier">M. Barbier</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.90">6.90</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1906,10 +1971,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Prof Subsc <persName ref="#goguelat">Mme Goguelat</persName> renewed
+                                <p>Subsc <persName ref="#goguelat">Mme Goguelat</persName> renewed
 									<measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="7">7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1935,18 +2001,20 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#bernard">Mlle Bernard</persName>
+                                <p>Subsc <persName ref="#bernard">Mlle Bernard</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Prof Subsc <persName ref="#burt">Miss Burt</persName> renewed
+                                <p>Subsc <persName ref="#burt">Miss Burt</persName> renewed
 									<measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -1982,11 +2050,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#cogné">M. Cogné</persName>
+                                <p>Subsc <persName ref="#cogné">M. Cogné</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -2014,10 +2083,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>ADL Subsc <persName ref="#oerthel">M. Oerthel</persName> renewed
+                                <p>Subsc <persName ref="#oerthel">M. Oerthel</persName> renewed
 									<measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16.00</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2060,10 +2130,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#seurre">Mlle Seurre</persName> renewed
+                                <p>Subsc <persName ref="#seurre">Mlle Seurre</persName> renewed
 									<measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="7">7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -2075,10 +2146,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#walter">M. Walter</persName> renewed
+                                <p>Subsc <persName ref="#walter">M. Walter</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2132,18 +2204,20 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Prof Subsc <persName ref="#kolpaktchy">M. Kolpaktchy</persName>
+                                <p>Subsc <persName ref="#kolpaktchy">M. Kolpaktchy</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#foubert">Mlle Foubert</persName> renewed
+                                <p>Subsc <persName ref="#foubert">Mlle Foubert</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -2169,10 +2243,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#foglia">Mlle Foglia</persName> renewed
+                                <p>Subsc <persName ref="#foglia">Mlle Foglia</persName> renewed
 									<measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="8.50">8.50</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2183,11 +2258,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#desprets">M. Desprets</persName>
+                                <p>Subsc <persName ref="#desprets">M. Desprets</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2215,25 +2291,28 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#goukowsky">Mlle Goukowsky</persName> renewed
+                                <p>Subsc <persName ref="#goukowsky">Mlle Goukowsky</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#kori">Mr Kori</persName>
+                                <p>Subsc <persName ref="#kori">Mr Kori</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
-                            <event type="subscription">
-                                <p>Prof Subsc <persName ref="#verrier">M. Le Verrier</persName> changed to
+                            <event type="supplement">
+                                <p>Subsc <persName ref="#verrier">M. Le Verrier</persName> changed to
 									<measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="7">7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2244,18 +2323,19 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Subsc <persName ref="#brizard"/> renewed
+                                <p>Subsc <persName ref="#brizard">Mme Brizard</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="12">12</measure>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#lévy">Mlle Lévy (prov.)</persName>
+                                <p>Subsc <persName ref="#lévy">Mlle Lévy (prov.)</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="18.50">18.50</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2285,11 +2365,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#serin">Mlle Serin</persName>
+                                <p>Subsc <persName ref="#serin">Mlle Serin</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2312,10 +2393,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#latrasse">Mme Latrasse</persName> renewed
+                                <p>Subsc <persName ref="#latrasse">Mme Latrasse</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2500,6 +2582,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="5">5</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2510,17 +2593,19 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#benoist-mechin">M. Benoist-Mechin</persName>
+                                <p>Subsc <persName ref="#benoist-mechin">M. Benoist-Mechin</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>ADL Subsc <persName ref="#legay">Mme Legay</persName> renewed
+                                <p>Subsc <persName ref="#legay">Mme Legay</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2541,10 +2626,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>ADL Subsc <persName ref="#barbier">M. Barbier</persName> renewed
+                                <p>Subsc <persName ref="#barbier">M. Barbier</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.90">6.90</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -2596,10 +2682,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>ADL Subsc <persName ref="#molères">Mme de Molères</persName> renewed
+                                <p>Subsc <persName ref="#molères">Mme de Molères</persName> renewed
 									<measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="reimbursement">
@@ -2608,7 +2695,7 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Refunded Dep. <persName ref="#kofpolktchy">M. Kofpalktchy</persName>
+                                <p>Refunded Dep. <persName ref="#kolpolktchy">M. Kolpalktchy</persName>
                                     <measure type="reimbursement" unit="franc" quantity="7">7</measure>
                                 </p>
                             </event>
@@ -2634,10 +2721,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Stud. Subsc <persName ref="#leroi">M. Leroi</persName> renewed
+                                <p>Subsc <persName ref="#leroi">M. Leroi</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">Stud.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2653,10 +2741,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Stuent Subsc <persName ref="#goukowsky">Mlle Goukowsky</persName> renewed
+                                <p>Subsc <persName ref="#goukowsky">Mlle Goukowsky</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="4">4</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2667,25 +2756,28 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#piot">Mlle Piot</persName>
+                                <p>Subsc <persName ref="#piot">Mlle Piot</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#bourgogne">M. Bourgogne</persName>
+                                <p>Subsc <persName ref="#bourgogne">M. Bourgogne</persName>
                                     <measure type="duration" unit="month" quantity="2">2 mos</measure>
-                                    <measure type="frequency" unit="volume" quantity="1">1 vol (Prov.)</measure>
+                                    <measure type="frequency" unit="volume" quantity="1">1 vol</measure> (Prov.)
                                     <measure type="price" unit="franc" quantity="16">16</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#astruc">Lucienne Astruc</persName>
+                                <p>Subsc <persName ref="#astruc">Lucienne Astruc</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -2697,10 +2789,11 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#dufour">Mlle Dufour</persName> renewed
+                                <p>Subsc <persName ref="#dufour">Mlle Dufour</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -2812,10 +2905,11 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#regnault">M. Regnault</persName>
+                                <p>Subsc <persName ref="#regnault">M. Regnault</persName>
                                     <measure type="duration" unit="month" quantity="2">2 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="8">8.00</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -2845,9 +2939,10 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Prof Subsc <persName ref="#huchon">M. Huchon</persName> renewed
+                                <p>Subsc <persName ref="#huchon">M. Huchon</persName> renewed
 									<measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -2889,6 +2984,16 @@
                         <head>
                             <date when-iso="1920-07-31">1920-07-31</date>
                         </head>
+                        <listEvent>
+                            <event type="subscription">
+                                <p>Subsc. <persName ref="#janin">Mlle Janin</persName>
+                                    <measure type="duration" unit="month" quantity="2">2 mos</measure>
+                                    <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
+                                    <measure type="price" unit="franc" quantity="8">8.00</measure>
+                                    <rs type="subcat">Prof.</rs>
+                                </p>
+                            </event>
+                        </listEvent>
                     </div>
                 </div>
                 <div type="month" n="8">
@@ -3056,30 +3161,13 @@
                     <head>
                         <date>September</date>
                     </head>
-                    <div type="day">
-                        <head>
-                            <date when-iso="1920-08-30">1920-08-30</date>
-                        </head>
-                    </div>
-                    <div type="day">
-                        <head>
-                            <date when-iso="1920-08-31">1920-08-31</date>
-                        </head>
-                    </div>
-                    <div type="day">
                         <head>
                             <date when-iso="1920-09-01">1920-09-01</date>
                         </head>
-                    </div>
                     <div type="day">
                         <head>
                             <date when-iso="1920-09-02">1920-09-02</date>
-                        </head>
-                    </div>
-                    <div type="day">
-                        <head>
-                            <date when-iso="1920-09-03">1920-09-03</date>
-                        </head>
+                        </head>                        
                         <listEvent>
                             <event type="renewal">
                                 <p>Renew <persName ref="#hammond">Mr Hammond</persName>
@@ -3089,7 +3177,20 @@
                                     <measure type="deposit" unit="franc" quantity="0">0</measure>
                                 </p>
                             </event>
+                            <event type="supplement">
+                                <p>Subsc. <persName ref="#burt">Miss Burt</persName>
+                                    <measure type="duration" unit="month" quantity="12">1 year</measure>
+                                    <measure type="frequency" unit="volume" quantity="1">extra vol</measure>
+                                    <measure type="price" unit="franc" quantity="12">12</measure>
+                                    <rs type="subcat">Prof.</rs>
+                                </p>
+                            </event>
                         </listEvent>
+                    </div>
+                    <div type="day">
+                        <head>
+                            <date when-iso="1920-09-03">1920-09-03</date>
+                        </head>
                     </div>
                     <div type="day">
                         <head>
@@ -3125,11 +3226,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Renew <persName ref="#baker">Miss B. Baker</persName>
+                                <p>Subsc. <persName ref="#baker">Miss B. Baker</persName> renewed
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
-                                    <measure type="deposit" unit="franc" quantity="0">0</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3227,6 +3328,7 @@
 									<measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3384,6 +3486,7 @@
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -3391,6 +3494,7 @@
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="reimbursement">
@@ -3425,10 +3529,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Prof Subsc <persName ref="#manière">Mlle Manière</persName> renewed
+                                <p>Subsc <persName ref="#manière">Mlle Manière</persName> renewed
 									<measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="48">48.00</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="reimbursement">
@@ -3468,17 +3573,19 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#marsland">Miss Marsland</persName>
+                                <p>Subsc <persName ref="#marsland">Miss Marsland</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="24">24.00</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#barney">Miss Barney</persName>
+                                <p>Subsc <persName ref="#barney">Miss Barney</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="64">64</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -3511,11 +3618,12 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#deschamps">Mlle Deschamps</persName>
+                                <p>Subsc <persName ref="#deschamps">Mlle Deschamps</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3540,11 +3648,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#adams">Mr Adams</persName>
+                                <p>Subsc <persName ref="#adams">Mr Adams</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3555,10 +3664,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#julian">Mr Julian</persName>
+                                <p>Subsc <persName ref="#julian">Mr Julian</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -3583,17 +3693,19 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#wollf">Mr Nat Wollf</persName>
+                                <p>Subsc <persName ref="#wollf">Mr Nat Wollf</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#leroi">M. Leroi</persName> renewed
+                                <p>Subsc <persName ref="#leroi">M. Leroi</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3614,11 +3726,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subscription <persName ref="#guthrie">Mr Guthrie</persName>
+                                <p>Subscription <persName ref="#guthrie">Mr Guthrie</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="40">40</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3634,11 +3747,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#pissot">Mlle Pissot</persName>
+                                <p>Subsc <persName ref="#pissot">Mlle Pissot</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3717,11 +3831,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#gallagher">Father Gallagher</persName>
+                                <p>Subsc <persName ref="#gallagher">Father Gallagher</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -3740,18 +3855,20 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof Subsc <persName ref="#colens">M. Colens</persName>
+                                <p>Subsc <persName ref="#colens">M. Colens</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="40">40</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#zimmer">Mlle Zimmer</persName> renewed
+                                <p>Subsc <persName ref="#zimmer">Mlle Zimmer</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -3785,10 +3902,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Prof Subsc <persName ref="#pernot">Mlle Pernot</persName> renewed
+                                <p>Subsc <persName ref="#pernot">Mlle Pernot</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">Prof</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3804,10 +3922,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Prof. Subsc <persName ref="#henriet">Mlle Henriet</persName> renewed
+                                <p>Subsc <persName ref="#henriet">Mlle Henriet</persName> renewed
 									<measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -3831,16 +3950,18 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Prof. Subsc <persName ref="#rolland">Mlle Rolland</persName> renewed
+                                <p>Subsc <persName ref="#rolland">Mlle Rolland</persName> renewed
 									<measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#geas">Mlle Geas</persName>
+                                <p>Subsc <persName ref="#geas">Mlle Geas</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16.00</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3861,11 +3982,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#tournier">Mlle Tournier</persName>
+                                <p>Subsc <persName ref="#tournier">Mlle Tournier</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7.00</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -3926,7 +4048,7 @@
                             <date when-iso="1920-11-12">1920-11-12</date>
                         </head>
                         <listEvent>
-                            <event type="subscription">
+                            <event type="supplement">
                                 <p>Subsc <persName ref="#tournier">Mlle Tournier</persName> changed to
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
@@ -3935,7 +4057,7 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Subsc <persName ref="#raclog">Mlle Raclog</persName>
+                                <p>Subsc <persName ref="#racloz">Mlle Racloz</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
@@ -3943,11 +4065,12 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#benét">Mr Stephen Benét</persName>
+                                <p>Subsc <persName ref="#benét">Mr Stephen Benét</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="14">Dep 14</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -3956,6 +4079,7 @@
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -3965,7 +4089,7 @@
                             <date when-iso="1920-11-13">1920-11-13</date>
                         </head>
                         <listEvent>
-                            <event type="subscription">
+                            <event type="supplement">
                                 <p>Subsc <persName ref="#fabreluce">Mlle Fabreluce</persName> changed to
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
@@ -3994,11 +4118,12 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#bazin">Mlle Bazin</persName>
+                                <p>Subsc <persName ref="#bazin">Mlle Bazin</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="8">8</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4021,17 +4146,24 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#thomas">Mrs Thomas</persName>
+                                <p>Subsc <persName ref="#thomas">Mrs Thomas</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="20">20.00</measure>
+                                    <rs type="subcat">Prof.</rs>
+                                </p>
+                            </event>
+                            <event type="supplement">
+                                <p>Extra on <persName ref="#macles">Mlle Macles</persName> subsc.
+                                    <measure type="price" unit="franc" quantity="13">13</measure>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#garnier">M. Garnier</persName>
+                                <p>Subsc <persName ref="#garnier">M. Garnier</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="8">8.00</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4042,18 +4174,20 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>ADL Subsc <persName ref="#dufour">Mlle Dufour</persName> subsc. renewed
+                                <p>Subsc <persName ref="#dufour">Mlle Dufour</persName> subsc. renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#seurre">Mlle Seurre</persName>
+                                <p>Subsc <persName ref="#seurre">Mlle Seurre</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="14">Dep 14</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4077,11 +4211,12 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#carpentier">Mlle Carpentier</persName>
+                                <p>Subsc <persName ref="#carpentier">Mlle Carpentier</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -4107,10 +4242,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#baker">Miss Bobby Baker</persName> renewed
+                                <p>Subsc <persName ref="#baker">Miss Bobby Baker</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4156,17 +4292,19 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#bloch">Mme Jean Bloch</persName>
+                                <p>Subsc <persName ref="#bloch">Mme Jean Bloch</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="40">40.00</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#benoist-méchin">M. Benoist-Méchin</persName>
+                                <p>Subsc <persName ref="#benoist-méchin">M. Benoist-Méchin</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28.00</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4192,25 +4330,28 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#macartney">Mr Macartney</persName>
+                                <p>Subsc <persName ref="#macartney">Mr Macartney</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
                                     <measure type="deposit" unit="franc" quantity="14">Dep 14</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>ADL Subsc <persName ref="#oerthel">M. Oerthel</persName> renewed
+                                <p>Subsc <persName ref="#oerthel">M. Oerthel</persName> renewed
 									<measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#malherbe">Mlle Malherbe</persName>
+                                <p>Subsc <persName ref="#malherbe">Mlle Malherbe</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4256,10 +4397,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#waas">Mlle Waas</persName>
+                                <p>Subsc <persName ref="#waas">Mlle Waas</persName>
                                     <measure type="duration" unit="month" quantity="3">3 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4290,11 +4432,12 @@
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#cahn">M. Cahn</persName> renewed
+                                <p>Subsc <persName ref="#cahn">M. Cahn</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4310,10 +4453,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#friendofrenoir">friend of Renoir</persName>
+                                <p>Subsc <persName ref="#friendofrenoir">friend of Renoir</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4324,11 +4468,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#pingat">Mlle Pingat</persName>
+                                <p>Subsc <persName ref="#pingat">Mlle Pingat</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4363,17 +4508,19 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Student Subsc <persName ref="#wright">Mr Wright</persName>
+                                <p>Subsc <persName ref="#wright">Mr Wright</persName>
                                     <measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="6.40">6.40</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
-                                <p>Prof. Subsc <persName ref="#tournier">Mlle Tournier</persName> renewed
+                                <p>Subsc <persName ref="#tournier">Mlle Tournier</persName> renewed
 									<measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -4406,10 +4553,11 @@
                         </head>
                         <listEvent>
                             <event type="renewal">
-                                <p>Student Subsc <persName ref="#racloz">Mlle Racloz</persName> renewed
+                                <p>Subsc <persName ref="#racloz">Mlle Racloz</persName> renewed
 									<measure type="duration" unit="month" quantity="1">1 mo</measure>
                                     <measure type="frequency" unit="volume" quantity="2">2 vols</measure>
                                     <measure type="price" unit="franc" quantity="9.60">9.60</measure>
+                                    <rs type="subcat">Student</rs>
                                 </p>
                             </event>
                             <event type="renewal">
@@ -4427,10 +4575,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#georgio">M. De Georgio</persName>
+                                <p>Subsc <persName ref="#georgio">M. De Georgio</persName>
                                     <measure type="duration" unit="month" quantity="6">6 mos</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="28">28</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                         </listEvent>
@@ -4446,11 +4595,12 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>Prof. Subsc <persName ref="#trudgian">Miss Trudgian</persName>
+                                <p>Subsc <persName ref="#trudgian">Miss Trudgian</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="48">48</measure>
                                     <measure type="deposit" unit="franc" quantity="7">Dep 7</measure>
+                                    <rs type="subcat">Prof.</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -4486,10 +4636,11 @@
                         </head>
                         <listEvent>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#bradley">Mr Bradley</persName>
+                                <p>Subsc <persName ref="#bradley">Mr Bradley</persName>
                                     <measure type="duration" unit="month" quantity="12">1 year</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="48">48</measure>
+                                    <rs type="subcat">AdL</rs>
                                 </p>
                             </event>
                             <event type="subscription">
@@ -4531,10 +4682,11 @@
                                 </p>
                             </event>
                             <event type="subscription">
-                                <p>ADL Subsc <persName ref="#engelbach">Mme Engelbach</persName>
+                                <p>Subsc <persName ref="#engelbach">Mme Engelbach</persName>
                                     <measure type="duration" unit="month" quantity="3">3 m.</measure>
                                     <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
                                     <measure type="price" unit="franc" quantity="16">16</measure>
+                                    <rs type="subcat">A. d. L.</rs>
                                 </p>
                             </event>
                             <event type="renewal">
