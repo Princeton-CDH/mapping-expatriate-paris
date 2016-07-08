@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#coue.b">M de Couet</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	    <profileDesc>
+      <textClass>          
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+    	<particDesc>
+    		<person role="cardholder" ana="#coue.b"><persName>M de Couet</persName></person>
+    	</particDesc>
+    </profileDesc>
+
+        <revisionDesc>
+            <change who="#carlca" when="2016-03-02">
+                <ab>
+                    Encoded cards.             
+                    
+                </ab>
+            </change>
+            <change who="elspeth" when="2015-06-01">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	<unclear/> (May 3):  no idea
+                 
+                   
+               
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298//c/couet/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+       
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                <date when="1938">1938</date>		
+                            <persName ref="#coue.b">de COUET Madame</persName>
+                			<address>		
+                			<settlement>Villecresnes</settlement>
+                			<region>S et O.</region>
+                			</address>
+                </head>
+                
+                <ab>
+                			3 m. 1v			paid <date when="1938-02-17">Feb 17</date>	135
+                	left <date when="1938-05-12">May 12</date>	dep.		50 frcs.
+                <date when="1938-02-15">Febr. 15</date>	<bibl><title>Helen's Tower!</title></bibl>			<date when="1938-02-17">Feb 17</date>
+                <date when="1938-02-17">Febr. 17</date>	<bibl><title>Citadel</title></bibl>					<date when="1938-02-21">Feb 21</date>
+                <date when="1938-02-21">Feb 21</date>	<bibl><title>Rains Came</title></bibl>				<date when="1938-02-25">Febr. 25</date>
+                <date when="1938-02-25">""	25</date>	<bibl><title>Gone with the Wind</title></bibl>		<date when="1938-03-02">March 2</date>
+                <date when="1938-03-02">March 2</date>	<bibl><title>Pepita</title></bibl>.					<date when="1938-03-09">March 9</date>
+                <date when="1938-03-10">"	10</date>	<bibl><title>Black Virgin</title></bibl>			<date when="1938-03-14">March 14</date>
+                <date when="1938-03-14">"	14</date>	<bibl><title>Summing Up</title></bibl>				<date when="1938-03-17">March 17</date>
+                <date when="1938-03-17">	17</date>	<bibl><title>Enchanter's Nightshade</title></bibl>	<date when="1938-03-24">March 24</date>
+                <date when="1938-03-24">March 24</date>	<bibl><title>Prodigal Parents</title></bibl>		<date when="1938-03-29">Mar 29</date>
+                <date when="1938-03-29">	29</date>	<bibl><title>Those Were The Days</title></bibl> - owes 6f <date when="1938-04-08">April 8</date>
+                <date when="1938-04-08">April 8</date>	<bibl><title>Coming Din</title></bibl>				<date when="1938-04-26">Ap 26</date>
+                <date when="1938-04-26">"	26</date>	<bibl><title>Assignment in Utopia</title></bibl>	<date when="1938-05-03">May 3</date>
+                <date when="1938-05-03">May 3</date>	<bibl><title><unclear/> So Victoria</title></bibl>    	<date when="1938-05-12">May 12</date>
+                </ab>
+                </div>
+                
+                <div type="verso">
+                <pb facs="#s2" />
+                <!-- verso blank -->
+                </div>
+                </div>
+             
+            		
+            			
+            	
+            
+        </body>
+    </text>
+</TEI>

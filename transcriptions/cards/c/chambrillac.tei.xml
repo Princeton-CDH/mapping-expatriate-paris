@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#cham.re">René Chambrillac</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	    <profileDesc>
+      <textClass>          
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+    	<particDesc>
+    		<person role="cardholder" ana="#cham.re"><persName>René Chambrillac</persName></person>
+    	</particDesc>
+    </profileDesc>
+
+        <revisionDesc>
+            <change who="elspeth" when="2015-05-13">
+                <ab>
+                    Transcribed cards.
+                  
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/c/chambrillac/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+        	<graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+        	<graphic url="00000004.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+            	<head>
+            	<date when="1938">1938</date>	
+            	        <persName ref="#cham.re">Monsieur René Chambrillac</persName>			
+            			<address>
+            			<street>15 rue Perrier</street><district>VIIe</district>
+            			<addrLine><num type="telephone">Invalides 22.39</num></addrLine>
+            			<settlement>Paris</settlement> 
+            			</address>soir
+            	</head>
+            	<ab>
+            	<date when="1938-06-02">June 2</date>	<bibl><title>Poems of <persName>Alan Seeger</persName></title></bibl> }  returned
+            			<bibl><title>Letters and Diary</title></bibl>		 }
+            	</ab>
+            	</div>
+                <div type="verso">
+            	<pb facs="#2" />
+            	<!-- verso blank -->
+            	</div>
+                </div>
+                <div type="card">
+                <div type="recto">
+            	<pb facs="#3" />
+            	<head>
+            	<date when="1938">1938</date>
+            			<persName ref="#cham.re">CHAMBRILLAC, M. René de</persName>		
+            			<address>
+            			<addrLine><num>Inv 22-39</num></addrLine>
+            			<street>15 Rue Casimir Perrier</street><district>VII</district>
+            			</address>
+            	</head>
+                <ab>
+            	<date when="1928-07-28">July 28</date>  <bibl><title>SISTER CARRIE</title></bibl>				<date when="1928-10-21">Oct 21</date>
+            	<date when="1928-07-28">	 28</date>	<bibl><title>An American Tragedy</title></bibl>			<date when="1928-10-26">Oct 26</date>
+            	<date when="1928-07-28">	</date> 	<bibl><title>New American History</title></bibl>		<date when="1928-10-26">Oct 26</date>
+                <date when="1928-07-28">	</date> 	<bibl><title>Abraham Lincoln</title></bibl>				<date when="1928-10-26">Oct 26</date>
+                <date when="1928-07-28">	</date> 	<bibl><title>George Washington</title></bibl>			<date when="1928-10-26">Oct 26</date>
+                <date when="1928-07-28">	</date> 	<bibl><title>New Freedom</title></bibl>				<date when="1928-10-26">Oct 26</date>
+                <date when="1928-07-28">	</date> 	<bibl><title>Crowded Hours</title></bibl>				<date when="1928-10-26">Oct 26</date>
+                <date when="1928-07-28">	</date> 	<bibl><title>Strenuous Life</title></bibl>				<date when="1928-10-26">Oct 26</date>
+            	<date when="1940">1940</date>
+            	<date when="1940-03-29">March 29</date> <bibl><title>Secret War for Oil</title></bibl>			<date when="1928-04-18">April 18</date>
+            				phoned <date when="1940-04-17">april 17</date> <persName ref="#cham.re" full="init">M. de C</persName> promises
+            					to bring back book thursday <date when="1940-04-18">18th</date>
+            	<date when="1941">1941</date>
+            	<persName when="1941-05-28">May 28</persName>	De Valera (Penguin)
+                </ab>
+            	</div>
+                <div type="verso">
+            	<pb facs="#4" />
+            	<!-- verso blank-->
+            	</div>
+            	</div>
+            
+        </body>
+    </text>
+</TEI>

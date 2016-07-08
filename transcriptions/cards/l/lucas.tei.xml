@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#luca.b">B. Lucas</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#luca.b"><persName>B Lucas</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-08-16">
+                <ab>
+                    Transcribed cards
+                  
+                    
+                    
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/l/lucas/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+        
+        
+        
+
+    </facsimile>
+    <text>
+        <body>
+           <div type="card"><div type="recto">
+                <pb facs="#s1" />
+                <head><date when="1931">1931</date>		<persName ref="#luca.b">LUCAS</persName>
+                				<address><persName ref="#luca.b">Mr B. Lucas</persName>
+                					<name>Hotel Metropolitan</name>
+                						<street>rue Cambon.</street></address></head>
+                		<ab>
+                		(till to morrow left £2 (in drawer)
+                			1/2 m 2 vols			80
+                		Deposit					   100</ab><ab>
+            	
+            	<date when="1931-04-23">Ap. 23.</date>	<bibl><title>Stricken Deer</title></bibl>					<date when="1931-04-29">April 29</date>
+            	<date when="1931-04-23">"	"</date>	<bibl><title>Father + Son</title></bibl>					<date when="1931-04-29">April 29</date>
+            	<date when="1931-04-29">"	29</date>	<bibl><title>Gentleman in the Parlour</title></bibl>		<date when="1931-05-04">May 4</date>
+            			<bibl><title>Certain People</title></bibl>					<date when="1931-05-04">"	4</date>
+            	<date when="1931-05-04">May 4</date>	<bibl><title>Europe in Zigzags</title></bibl> 	8=16		<date when="1931-05-19">May 19</date>
+            			<bibl><title>Life of Leonore Duse</title></bibl>  16		<date when="1931-05-19">May 19</date></ab>
+            	</div><div type="verso">
+            	<pb facs="#s2" />
+            	<!-- verso blank --></div>
+            
+                
+                </div>
+            
+        </body>
+    </text>
+</TEI>

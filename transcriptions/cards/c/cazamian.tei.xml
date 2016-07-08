@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#caza.ma">Marguerite Cazamian</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	    <profileDesc>
+      <textClass>          
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+    	<particDesc>
+    		<person role="cardholder" ana="#caza.ma"><persName>Marguerite Cazamian</persName></person>
+    	</particDesc>
+    </profileDesc>
+
+        <revisionDesc>
+            <change who="elspeth" when="2015-05-12">
+                <ab>
+                    Transcribed cards.
+                    s1:
+                    	Date at top almost certainly 1944, but page folded over in image
+                	
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/c/cazamian/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+    
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+            	<head>
+                <date when="1944">44</date>		
+                        <persName ref="#caza.ma">Mademoiselle Marguerite Cazamian</persName>
+            			<address>
+            			<street>11 rue Monticelli</street>
+            			<settlement>Paris</settlement><district>14</district>
+            			</address>
+            	</head>
+            	<ab>
+            	<date when="1944-03-23">March 23</date>	<bibl><title><persName>John Donne</persName></title>, <persName>Jessop</persName></bibl>		returned <date when="1944-06">June</date>
+            	</ab>
+            	</div>
+                <div type="verso">
+            	<pb facs="#s2" />
+            	<!-- verso blank -->		
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>

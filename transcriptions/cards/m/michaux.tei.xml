@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#mich.he">Henri Michaux</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	    <particDesc>
+	        <person role="cardholder" ana="#mich.he"><persName>Henri Michaux</persName></person>
+	    </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#carlca">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/m/michaux/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+        <surface xml:id="s3">
+            <graphic url="00000003.jp2" />
+        </surface>
+        <surface xml:id="s4">
+            <graphic url="00000004.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+              <div type="recto">  <pb facs="#s1" />
+                
+                <head>		<persName ref="#mich.he">M. Henri Michaux</persName>
+                			
+                			<address><street>16 rue Seguier .</street>	<settlement>Paris .</settlement> <district>VI</district></address></head>
+                			
+                			
+                			
+           <ab>     <date when="1944-11-11">Nov 11 1944</date>		<bibl><title>Selections from De Quincey</title>(<author>Ridley</author></bibl> returned
+                					
+                					
+                					
+                <date when="1950-11-19">Nov 19 1950</date>		<bibl><title>Utopia</title> (<edition>Everyman ed.</edition>)</bibl>		<date when="1951-01-17">Jan 17</date>
+                
+                <date when="1951-01-18">Jan 18</date>		<bibl><title>Pageant of English Prose</title>
+                				<edition>Oxford ed.</edition> by<author> R M Leonard</author>	returned
+                			(500 passages by 325 authors)</bibl>	to <name>Amis des Livres</name>
+                			<bibl><title>The English Vision</title>, <author>Herbert Read</author></bibl>	
+                			
+                			<bibl><title>All Men are Brothers</title></bibl>	returned <date when="1951-06-07">June 7</date>
+                									by <persName ref="#mich.he">Michaux</persName>
+                
+                
+               <date when="1955-04-04"> 1955
+                April 4</date>		<bibl><title>The Milk of Paradise</title></bibl></ab>
+               </div> 
+            <div type="verso">    <pb facs="#s2" />
+                
+                <!-- Verso Blank -->
+              </div>  </div>
+        <div type="card">   <div type="recto">     <pb facs="#s3" />
+                
+                	<head>	<persName ref="#mich.he">Michaux</persName></head>
+                
+         <ab>       lent through <persName ref="#sail.ma">Saillet</persName> <date when="1961-06-30">June 30 1961</date>
+                
+                <bibl><title>De Quincey's Works</title> <biblScope unit="volume" from="1" to="3">vols 1-3</biblScope></bibl>. XVI-XI
+               <bibl> <title>Masson Black</title> + early ed.</bibl>
+                
+                <bibl><title>Confessions</title></bibl>
+                
+                and <bibl><biblScope unit="volume" from="14" to="14">vol XIV</biblScope>	<title>Autobiographies</title></bibl>
+                					returned all vols
+                					<date when="1961-10-04">Oct 4 1961</date></ab>
+       </div>   <div type="verso">  
+                <pb facs="#s4" />
+                
+                <!-- Verso Blank -->
+             </div>   </div>
+            
+        </body>
+    </text>
+</TEI>

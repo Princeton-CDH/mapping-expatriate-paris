@@ -20,9 +20,14 @@
   <property name="xmldb.user" value="admin" />
   <property name="xmldb.passwd" value="admin" />
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
-  <property name="xmldb.approot" value="${xmldb.url}/mep-data" />
 
-  <property name="approot" value="/opt/local/mep-data" />
+  <property name="xmldb.approot"        value="${xmldb.url}/mep-data" />
+  <property name="xmldb.transcriptions" value="${xmldb.approot}/transcriptions" />
+  <property name="xmldb.logbooks"       value="${xmldb.transcriptions}/logbooks" />
+
+  <property name="approot"        value="/opt/local/mep-data" />
+  <property name="transcriptions" value="${approot}/transcriptions" />
+  <property name="logbooks"       value="${transcriptions}/logbooks" />
   
   <target name="load-conf" description="load the mep-data collection.xconf record">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
@@ -34,42 +39,6 @@
     </xdb:store>
   </target>
 
-  <target name="load-personography" description="load the personography fragment">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}/transcriptions" createcollection="true"
-	       type="xml"
-	       mimetypesfile="mime-types.xml">
-      <fileset dir="${approot}/transcriptions">
-	<include name="personography.xml" />
-      </fileset>
-    </xdb:store>
-  </target>
-  
-  <target name="load-cards" description="load TEI transcriptions of cards">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}/transcriptions" createcollection="true"
-	       createsubcollections="true"
-	       type="xml"
-	       mimetypesfile="mime-types.xml">
-      <fileset dir="${approot}/transcriptions">
-	<include name="cards/**/*.tei.xml" />
-	<exclude name="**/work/**" />
-      </fileset>
-    </xdb:store>
-  </target>
-
-  <target name="load-notebook" description="load TEI transcription of notebook">
-    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.approot}/transcriptions" createcollection="true"
-	       createsubcollections="true"
-	       type="xml"
-	       mimetypesfile="mime-types.xml">
-      <fileset dir="${approot}/transcriptions">
-	<include name="notebook.xml" />
-      </fileset>
-    </xdb:store>
-  </target>
-
   <target name="load-schemas" description="load schemas for mep-data">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
 	       uri="${xmldb.approot}/schemas" createcollection="true"
@@ -77,6 +46,177 @@
 
       <fileset dir="${approot}/schemas">
 	<include name="**/*.rnc" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-personography" description="load the personography fragment">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.transcriptions}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${transcriptions}">
+	<include name="personography.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+  
+  <target name="load-notebook" description="load TEI transcription of notebook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.transcriptions}" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${transcriptions}">
+	<include name="notebook.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-cards" description="load TEI transcriptions of cards">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.transcriptions}" createcollection="true"
+	       createsubcollections="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${transcriptions}">
+	<include name="cards/**/*.tei.xml" />
+	<exclude name="**/work/**" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbooks" description="load set of completed logbooks"
+	  depends="load-logbook-1919, load-logbook-1920, load-logbook-1921, load-logbook-1922, load-logbook-1923, load-logbook-1924, load-logbook-1925, load-logbook-1926, load-logbook-1927, load-logbook-1928, load-logbook-1932, load-logbook-1933"/>
+
+  <target name="load-logbook-1919" description="load the 1919 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1919.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1920" description="load the 1920 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1920.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1921" description="load the 1921 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1921.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1922" description="load the 1922 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1922.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1923" description="load the 1923 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1923.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1924" description="load the 1924 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1924.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1925" description="load the 1925 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1925.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1926" description="load the 1926 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1926.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1927" description="load the 1927 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1927.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1928" description="load the 1928 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1928.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1932" description="load the 1932 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1932.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1933" description="load the 1933 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1933.xml" />
       </fileset>
     </xdb:store>
   </target>

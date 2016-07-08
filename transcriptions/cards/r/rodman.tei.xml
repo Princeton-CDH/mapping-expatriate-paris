@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rodm.se">Seldon Rodman</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#rodm.se"><persName>Seldon Rodman</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="#carlca" when="2016-03-24">
+                <ab>
+                    Encoded Cards - First Pass
+                    
+                </ab>
+            </change>
+            <change who="#carlca">
+                <ab>
+                    Transcribed Cards
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/r/rodman/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+                <div type="card">
+                <div type="recto">
+                <pb facs="#s1" />
+                <head>
+                			<persName ref="#rodm.se">RODMAN</persName>
+                			  <persName ref="#rodm.se">Seldon, Rodman</persName>
+                			  <address>
+                			  <name>70 American Express</name>
+                			  <street>Maximilianplatz 14</street>
+                			  <settlement>Munich</settlement>
+                			  </address>
+                </head>
+                <ab>
+                <date when="1900-09-24">Sept 24</date>		<bibl><title>Selected Poems of Yeats</title></bibl>		Frs.  53
+                				paid <date when="1900-09-28">Sept 28</date>				  20
+                						balance due			  33
+                						
+                			<persName ref="#beac.sy">S R</persName> paid postage for <bibl><title>Ulysses</title></bibl>	  10
+                						post				   4.70
+                							credit			   5.30
+                											33
+                											
+                						  33
+                						   5.30
+                						  27.70
+                						  
+                					balance due		Frs	27.70
+                </ab>
+                </div>
+                <div type="verso">
+                <pb facs="#s2" />
+                
+                <!-- Verso Blank -->
+                </div>
+                </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#trev.ju">Julian Trevelyan</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#trev.ju"><persName>Julian Trevelyan</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-01-24">
+                <p> First level encoding </p>
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/t/trevelyan/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                                <persName ref="#trev.ju">TREVELYAN</persName>
+                    <date when="1931-01-28">1931		
+                    Jan 28</date>			
+                                    <address><persName ref="#trev.ju">Julian Trevelyan</persName>
+                    				<street>7 Villa Brune</street> <district>XVe</district></address> (after <date when="1931-02-01">Feb 1</date>)
+                    				
+                    					for <persName>Count Morra di Lavriano LAVRIANO</persName>
+                    										
+                    					<address><name>Villa Metelliano METELLIANO</name>
+                    						  
+                    					<settlement>Cortona,</settlement> <street>Prov Via di Arezzo</street>
+                    								<country>Italie</country></address>
+                    					<address><addrLine>(Pegaso,</addrLine> <settlement>Rome)</settlement></address>
+                    </head>	
+                    <ab>
+                    <date when="1931-01-28">Jan 28</date>		send as soon as comes back
+                    			                             <bibl><title>James Joyce's Ulysses</title></bibl>	<bibl><title>Exiles</title></bibl>		<date when="1931-03-09">March 9</date>
+                    <date when="1931-01">Jan	</date>	     <bibl><title>The Odyssey in Dublin</title></bibl>						<date when="1931-02-21">Feb 21</date>
+                    p.6,90 paid	                             <bibl><title>Portrait of the Artist</title> (<publisher>Mod. Library</publisher>)</bibl> <date when="1931-03-09">March 9</date>
+                     	                                     <bibl><title>Dubliners</title>	 <publisher>"		"</publisher></bibl><date when="1931-03-09">March 9</date>
+                    <date when="1931-02-24">Feb 24</date>	 <bibl><title>Exiles</title></bibl>										<date when="1931-03-09">March 9</date>
+                    p.3,60
+                    
+                    <date when="1931-04-17">April 17th</date><bibl><title>The Ulysses of James Joyce</title>, by <author>Stuart Gilbert</author></bibl>	<date when="1931-07-15">July 15</date>
+                    post 6.60	The 					<date when="1931-06-23">June 23</date> p.c.
+                    </ab> 
+                
+                </div>
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

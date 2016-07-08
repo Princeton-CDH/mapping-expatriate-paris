@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="jean.lu">Lucie Jeanneney</persName></title>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#jean.lu"><persName>Lucie Jeanneney</persName></person>
+            </particDesc>
+        </profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2015-07-28">
+                <ab>
+                    Transcribed cards
+                    
+                    
+                   
+                    	
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/j/jeanneney/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+        	<graphic url="00000002.jp2" />
+        </surface>
+       
+        
+        
+        
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+               <div type="recto"> 
+                <pb facs="#s1" />
+               	<ab><date when="1940">1940</date>	<persName ref="jean.lu">Madame Jeanneney</persName>
+               		       au Sénat
+               			(<persName ref="mono">Madame Monod</persName>)
+               			<address><street>2 rue Rosa Bonheur</street> <district>- 15e</district></address>
+               			
+               			1 m 1 v					25
+               							dep		50
+               							ref <date when="1940-03-13">March 13</date>
+               	
+               	    <date when="1940-02-16">Feb 16</date>	<bibl><title>Diary of a Provincial Lady</title></bibl>		<date when="1940-02-19">Feb 19</date>
+               	    <date when="1940-02-19">Feb 19</date>	<bibl><title>Faster Faster</title></bibl>				<date when="1940-02-24">Feb 24</date>
+               	    <date when="1940-02-24">Feb 24</date>	<bibl><title>This was Ivor Trent	</title></bibl>		<date when="1940-02-28">Feb 28</date>
+               	    <date when="1940-02-28">Feb 28</date>	<bibl><title>Moon is Feminine	</title></bibl>		<date when="1940-03-05">March 5</date>	
+               	    <date when="1940-03-05">March 5</date>	<bibl><title>Whiteoak Harvest</title></bibl>				<date when="1940-03-11">March 11</date>
+               	<date when="1940-03-11">March 11</date> <bibl><title>Breakfast in bed</title></bibl>			<date when="1940-03-13">March 13</date>
+               	
+               	Renewed <date when="1940-12-11">Dec 11th 1940</date> <date when="1941-01-11">Jan 11 1941</date> 25
+               			arranged to take 4 vols (no deposit)
+               			of Mazo de la Roche and keep a month
+               	<date when="1940-12-11">Dec 11</date>	<bibl><title>Finch's Fortune</title></bibl>				<date when="1940-12-30">Dec 30</date>
+               	    <date when="1940-12-11">11</date>	<bibl><title>Whiteoaks	</title></bibl>				<date when="1940-12-30">Dec 30</date>
+               	    <date when="1940-12-11">11</date>	<bibl><title>Whiteoak Harvest</title></bibl>			<date when="1940-12-30">Dec 30</date>
+               	    <date when="1940-12-11">11</date>	<bibl><title>Master of Jalna	</title></bibl>			<date when="1940-12-30">Dec 30</date>
+               	</ab>
+               </div>
+               	<div type="verso">
+               	<pb facs="#s2" />
+               	<!-- verso blank -->
+               	</div>
+               	
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <orgName>Synops</orgName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <org role="cardholder"><orgName>Synops</orgName></org>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-03-06">
+                <p> First level encoding </p>
+            </change>
+            <change who="#carlca">
+                <ab>
+                    May 29	<unclear/> ordered 2 copies of Mannequin from America.
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/s/synops/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                    			C <address><name><orgName>Synops</orgName>
+                    					Droit Cinametogaphique</name>
+                    					
+                    						<street>25 rue D'Astorg.</street></address>
+                    </head>		
+                    <ab>
+                    <date when="1936-12-04">April. 3rd</date>.			1 mth. 1 vol.			15.
+                    
+                    
+                    									Dep. 30.
+                    									
+    											renewed again <date when="1936-05-18">May 18th</date>
+    				</ab>	
+                    <ab>
+                    <date when="1936-04-03">April 3</date>.		<bibl><title>Mannequin</title></bibl>.					<date when="1936-06-23">June 23</date>
+                    <date when="1936-04-03">	  3</date>		<bibl><title>Strange Case of Annie Spragg</title></bibl>.
+                    </ab>	
+                    <ab>
+                    	  		(overdue)		sent p.c. <date when="1936-05-12">May 12</date>.
+                    	Renewed. <date from="1936-05-03" to="1936-06-03">May 3	-	June 3rd</date>.					15 frs
+                    	telephone. Will return Sharpe Case of Annie Spragg.
+                    <date when="1936-05-29">May 29</date>	<unclear/> ordered 2 copies of <bibl><title>Mannequin</title></bibl> from America.
+                    		May keep library copy until copies come.
+                    			<bibl><title>Mannequin</title></bibl> O.P.
+                    			
+                    			wrote <orgName>Synops</orgName> to return
+                    			
+                    			lib. copy 	-	arr by post
+                    </ab>	
+                    <ab>
+                    	Renewed. <date from="1936-12-04" to="1937-01-04">Dec. 4th 1936	-	Jan 4th 1936</date>.		15v
+                    									                                               Extra deposit	20v.
+                    </ab>	
+                    <ab>
+                    <date when="1936-12-04">Dec 4</date>.	.	<bibl><title>Mannequin</title></bibl> .. wrote p.c. <date when="1937-03-17">March 17</date>. asking for book back.
+                    		wrote <date when="1937-04-13">13 April</date> - no answer.
+                    		wrote <date when="1937-06-15">15 june</date>	26 still no answer
+                    </ab>		
+                </div> 
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                    
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

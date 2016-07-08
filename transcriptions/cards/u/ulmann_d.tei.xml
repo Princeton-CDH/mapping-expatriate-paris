@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#ulma.d">Mlle Denise Ulmann</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#ulma.d"><persName>Mlle Denise Ulmann</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-01-21">
+                <p> First level encoding </p>
+                <ab>
+                No years for dates on this card
+                Corrected <unclear/> to "Harte"
+                </ab>
+                <ab>
+                    s1: Dec. 3rd.	Idyls of the Foothills, <unclear/>
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/u/ulmann_d/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                    <date when="1900-11-18">Nov. 18</date>		<address><persName ref="#ulma.d">Mademoiselle Denise Ulmann</persName>
+                    				            <street>28 Place St Ferdinand</street></address>
+                    </head>	
+                    <ab>
+                    <date when="1900-11-18">Nov. 18</date>		1 month 	-	2 vols.			6 40
+                    			                 		------ Deposit		   12 20
+                    </ab>	
+                    <ab>
+                    <date when="1900-11-18">Nov. 18</date>, <date>19</date>	<bibl><title>De Profundis</title>, <author>Wilde</author></bibl>			<date when="1900-11-28">Nov. 28</date>
+                    			                            <bibl><title>Dianna of the Crossways</title><author>Meredith</author></bibl>
+                    <date when="1900-11-28">Nov. 28</date>		            <bibl><title>Picture of Dorian Grey</title></bibl>.		                    <date when="1900-12-03">Dec. 3rd</date>
+                    			                            <bibl><title>Intentions</title></bibl>
+                    			
+                    			                            <bibl><title>Japan</title>, <author>Lafcadio Hearne</author></bibl>
+                    <date when="1900-12-03">Dec. 3rd</date>.	                <bibl><title>Idyls of the Foothills</title>, <author>Harte</author></bibl>
+                    			                            <bibl><title>Wilde</title>, <author>Arthur Rasome</author></bibl>
+                    </ab>			
+                </div> 
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

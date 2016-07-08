@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#samy.an">Anne Samyn</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#samy.an"><persName>Mademoiselle Anne Samyn</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="elspeth" when="2016-01-27">
+                <p> First level encoding </p>
+                
+            </change>
+            <change who="#carlca">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/s/samyn/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                    <date when="1961">1961</date>	<address><persName ref="#samy.an">Mademoiselle Anne Samyn</persName>
+                    		                        <street>23 rue Gubernatis</street>
+                    		                        <settlement>Nice</settlement></address>
+                    </head>		
+                    <ab>								
+                    										<date when="1962">1962</date>
+                    <date when="1961-10-04">Oct 4</date>	<bibl><title>North America</title></bibl>				<date when="1962-03-21">March 21</date>
+                    			                            <bibl><title>Indefinite Huntress</title></bibl>			<date when="1962-03-21">March 21</date>
+                    			
+                    			                   received <bibl><title>fruits confits</title></bibl>	            <date when="1961-10-19">Oct 19</date>
+                    			
+                    			wrote <date when="1962-03-13">March 13th 1962</date> asking
+                    			to return books
+                      <date when="1962-03">March?</date>	received letter saying would return books
+                      <date when="1962-03-21">March 21</date>	books arrived reg. post
+                      			acknowledged letter to <persName ref="#samy.an">Mlle Samyn</persName>
+                      			<date when="1962-03-21">March 21</date>, wd not be in Paris
+                      			in April - whole coll of 20s no
+                      			longer available so problem of
+                      			<bibl><title>Distinguished Air</title></bibl> (she wants to copy)
+                      			"difficult to solve"
+                     </ab> 			
+               </div>   
+                <div type="verso">
+                    <pb facs="#s2" />
+                    <ab>
+                    										
+                    										
+                    										
+                    										<date when="1962-03-26">March 26</date>
+                    
+                    
+                    
+                    <date when="1962-03-09">March 9</date>
+                    </ab>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#scot.a">Mr A. Scott</persName></title>
+                <respStmt ana="#carlca">
+                    <persName>Adair, Carl</persName>
+                    <resp>transcriber</resp>
+                </respStmt>
+                <respStmt ana="#elspeth">
+                    <persName>Green, Elspeth</persName>
+                    <resp>encoder</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Princeton University</publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Princeton</settlement>
+                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+                        <collection>Sylvia Beach Papers</collection>
+                        <idno>C0108</idno>
+                    </msIdentifier>
+                </msDesc>
+                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
+                    <xi:fallback>
+                        <listperson>
+                            <head>People not available</head>
+                            <person/>
+                        </listperson>
+                    </xi:fallback>
+                </xi:include>
+            </sourceDesc>
+        </fileDesc>
+	<profileDesc>
+	  <textClass>          
+            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+	  </textClass>
+	  <particDesc>
+	        <person role="cardholder" ana="#scot.a"><persName>Mr A. Scott</persName></person>
+	  </particDesc>
+	</profileDesc>
+        <revisionDesc>
+            <change who="#elspeth" when="2016-02-03">
+                <p> First level encoding </p>
+            </change>
+            <change who="#carlca">
+                <ab>
+                    <!-- Enter transcription notes and queries here -->
+                </ab>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile xml:base="pudl0123/825298/s/scott/">
+        <surface xml:id="s1">
+            <graphic url="00000001.jp2" />
+        </surface>
+        <surface xml:id="s2">
+            <graphic url="00000002.jp2" />
+        </surface>
+    </facsimile>
+    <text>
+        <body>
+            <div type="card">
+                <div type="recto">
+                    <pb facs="#s1" />
+                    <head>
+                    <date when="1932">1932</date>			<persName ref="#scot.a">SCOTT</persName>.
+                    
+                    to <date when="1933-05-06">6 May 1933</date>
+                    					<address><persName ref="#scot.a">Mr. A.</persName>
+                    					<street>13 rue de Vaugirard</street></address>
+                    </head>					
+                    <ab>
+                    <date when="1932-11-07">7 Nov</date>.		6 mos. 	1v.		student dep. 30.	50
+                    </ab>
+                    <ab>
+                    			                                <bibl><title>Main Currents</title> (5)</bibl>			<date when="1932-11-12">12 Nov</date>
+                    <date when="1932-11-12">12 Nov</date>.		<bibl><title>Poems</title><author>Robert Graves</author></bibl>.<date when="1932-11-15">15 "</date>
+                    <date when="1932-11-16">16 Nov</date>		<bibl><title>Appreciations</title></bibl>				<date when="1932-11-21">21 "</date>
+                    <date when="1932-11-21">21 "</date>		    <bibl><title>Greek Studies</title></bibl>				<date when="1932-11-29">	29</date>
+                    <date when="1932-11-29">29 "</date>		    <bibl><title>Essays Guardians</title></bibl>			<date when="1932-12-02">2 Dec</date>.
+                    <date when="1932-12-02">2 Dec</date>		<bibl><title>Gaston de la Tour</title></bibl>			<date when="1932-12-09">9	"</date>
+                    <date when="1932-12-09">9	"</date>		<bibl><title>Lyrical poetry from Blake</title></bibl>	<date when="1932-12-17">17 "</date>
+                    <date when="1932-12-17">17 "</date>		    <bibl><title>Essays in Criticism</title></bibl>			<date when="1932-12-22">22 "</date>
+                    <date when="1933-01-11">22 " 11 Jan</date>.	<bibl><title>Lit &amp; Dogma</title></bibl>				<date when="1933-01-26">26 "</date>
+                    <date when="1933-01-26">26 "</date>		    <bibl><title>Byron's Poetical Works</title></bibl>.		<date when="1933-02-06">6 Feb</date>
+                    <date when="1933-02-06">6 Feb</date>		<bibl>(<series>First Series</series>) <title>Essays in Criticism</title></bibl> <date when="1933-02-13">13 "</date>
+                    <date when="1933-02-13">13	</date>		    <bibl><title>Selections from Ruskin</title> I</bibl>	<date when="1933-02-22">	22</date>
+                    <date when="1933-02-20">20	</date>		    <bibl><title>Renaissance</title></bibl>					<date when="1933-02-27">	27</date>
+                    <date when="1933-02-27">27	</date>		    <bibl><title>Plato + Platonism</title></bibl>				B B
+                    </ab>
+                </div> 
+                <div type="verso">
+                    <pb facs="#s2" />
+                    
+                    <!-- Verso Blank -->
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
