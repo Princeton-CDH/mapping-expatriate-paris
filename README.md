@@ -2,7 +2,7 @@ Description of Project
 ======================
 
 [Mapping Expatriate Paris](http://mep.princeton.edu/) (MEP) is a digital
-humanities project, sponsored by [the Center for Digital Humanities at
+humanities project, sponsored by the [Center for Digital Humanities at
 Princeton University](http://digitalhumanities.princeton.edu/), that
 uses Sylvia Beach’s archives to recreate the world of the Lost
 Generation. MEP tracks the membership of the Shakespeare and Company
