@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../schemas/beachLogs.rnc" type="application/relax-ng-compact-syntax”?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 <teiHeader>
   <fileDesc>
     <titleStmt>
@@ -12,7 +10,22 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
       <p>Publication Information</p>
     </publicationStmt>
     <sourceDesc>
-      <p>Information about the source</p>
+    	<msDesc>
+    		<msIdentifier>
+    			<settlement>Princeton</settlement>
+    			<repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+    			<collection>Sylvia Beach Papers</collection>
+    			<idno>C0108</idno>
+    		</msIdentifier>
+    	</msDesc>
+    	<xi:include href="../personography.xml" xpointer="in-logbooks" parse="xml"> 
+    		<xi:fallback>
+    			<listPerson>
+    				<head>People not available</head>
+    				<person/>
+    			</listPerson>
+    		</xi:fallback>
+    	</xi:include>    	
     </sourceDesc>
   </fileDesc>
 </teiHeader>
@@ -1018,7 +1031,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  <head><date when-iso="1919-11-17">1919-11-17</date></head>
 	  <listEvent>
 	    <event type="subscription">
-	      <p>Subs <persName ref="#flot">Marcelle Flot</persName>
+	      <p>Subs <persName ref="#flot.ma">Marcelle Flot</persName>
 	      <measure type="duration" unit="month" quantity="12">1 year</measure>
 	      <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	      <measure type="price" unit="franc" quantity="28">28</measure>
@@ -1026,14 +1039,14 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	      </p>
 	    </event>
 	    <event type="subscription">
-	      <p>Subsc <persName ref="#worthing">Mrs. Worthing</persName>
+	      <p>Subsc <persName ref="#worthing2">Mrs. Worthing</persName>
 	      <measure type="duration" unit="month" quantity="3">3 m</measure>
 	      <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	      <measure type="price" unit="franc" quantity="12">12</measure>
 	      </p>
 	    </event>
 	    <event type="subscription">
-	      <p>Subsc <persName ref="#schwob">Lucie Schwob</persName>
+	      <p>Subsc <persName ref="#schw.lu">Lucie Schwob</persName>
 	      <measure type="duration" unit="month" quantity="1">1 month</measure>
 	      <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	      <measure type="price" unit="franc" quantity="4">4</measure>
@@ -1084,7 +1097,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
 	  <head><date when-iso="1919-11-19">1919-11-19</date></head>
 	  <listEvent>
 	    <event type="subscription">
-	      <p>Subsc <persName ref="#heanthel">Maurice Heanthel</persName>
+	      <p>Subsc <persName ref="#heat.ma">Maurice Heanthel</persName>
 	      <measure type="duration" unit="month" quantity="6">6 mos</measure>
 	      <measure type="frequency" unit="volume" quantity="1">1 vol</measure>
 	      <measure type="price" unit="franc" quantity="16">16</measure>
