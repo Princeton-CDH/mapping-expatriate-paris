@@ -2,6 +2,7 @@
 <project basedir="." xmlns:xdb="http://exist-db.org/ant">
   <description>MEP-data ant tasks</description>
   
+  <!-- Set eXist_home to the directory in which you installed eXist. -->
   <property name="eXist_home" value="/opt/local/exist" />
   
   <typedef resource="org/exist/ant/antlib.xml" uri="http://exist-db.org/ant">
@@ -15,23 +16,31 @@
   </typedef>
   
   
+  <!-- Set the following to match your system. -->
   <property name="xmldb.host" value="localhost" />
   <property name="xmldb.port" value="8080" />
   <property name="xmldb.user" value="admin" />
   <property name="xmldb.passwd" value="admin" />
+
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
 
-  <property name="xmldb.approot"        value="${xmldb.url}/mep-data" />
+  <!-- Be careful if you choose to customize these, as you may break the MEPApp,
+       if you install it.
+  -->
+  <property name="datadir"              value="mep-data"/>
+  <property name="xmldb.approot"        value="${xmldb.url}/${datadir}" />
+
   <property name="xmldb.transcriptions" value="${xmldb.approot}/transcriptions" />
   <property name="xmldb.logbooks"       value="${xmldb.transcriptions}/logbooks" />
 
+  <!-- Set approot to the directory in which you have stored the data. -->
   <property name="approot"        value="/opt/local/mep-data" />
   <property name="transcriptions" value="${approot}/transcriptions" />
   <property name="logbooks"       value="${transcriptions}/logbooks" />
   
   <target name="load-conf" description="load the mep-data collection.xconf record">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
-	       uri="${xmldb.url}/system/config/db/mep-data"
+	       uri="${xmldb.url}/system/config/db/${datadir}"
 	       createcollection="true">
       <fileset dir="${approot}/db">
 	<include name="collection.xconf" />
@@ -39,11 +48,13 @@
     </xdb:store>
   </target>
 
+  <target name="install" description="load all files"
+	  depends="load-conf, load-schemas, load-personography, load-notebook, load-cards, load-logbooks "/>
+
   <target name="load-schemas" description="load schemas for mep-data">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
 	       uri="${xmldb.approot}/schemas" createcollection="true"
 	       createsubcollections="true">
-
       <fileset dir="${approot}/schemas">
 	<include name="**/*.rnc" />
       </fileset>
@@ -87,7 +98,7 @@
   </target>
 
   <target name="load-logbooks" description="load set of completed logbooks"
-	  depends="load-logbook-1919, load-logbook-1920, load-logbook-1921, load-logbook-1922, load-logbook-1923, load-logbook-1924, load-logbook-1925, load-logbook-1926, load-logbook-1927, load-logbook-1928, load-logbook-1932, load-logbook-1933"/>
+	  depends="load-logbook-1919, load-logbook-1920, load-logbook-1921, load-logbook-1922, load-logbook-1923, load-logbook-1924, load-logbook-1925, load-logbook-1926, load-logbook-1927, load-logbook-1928, load-logbook-1932, load-logbook-1933, load-logbook-1939"/>
 
   <target name="load-logbook-1919" description="load the 1919 logbook">
     <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
@@ -217,6 +228,17 @@
 	       mimetypesfile="mime-types.xml">
       <fileset dir="${logbooks}">
 	<include name="logbook-1933.xml" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-logbook-1939" description="load the 1939 logbook">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.logbooks}" createcollection="true"
+	       type="xml"
+	       mimetypesfile="mime-types.xml">
+      <fileset dir="${logbooks}">
+	<include name="logbook-1939.xml" />
       </fileset>
     </xdb:store>
   </target>
