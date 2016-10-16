@@ -8,7 +8,11 @@ return //row[borrowerid = $borrower]/regularized_title
 return
     <core-data>
         <core-borrowers count="{count($borrowers)}">
-            { for $b in $borrowers order by $b return <borrower count="{count(//row[borrowerid = $b])}">{$b}</borrower> }
+            { 
+            for $b in $borrowers
+            let $count := count(//row[borrowerid = $b])
+            order by $count return <borrower count="{$count}">{$b}</borrower> 
+            }
         </core-borrowers>
         
         <core-titles count="{count(distinct-values($borrowed-books))}">
