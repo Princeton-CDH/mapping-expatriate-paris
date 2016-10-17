@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#levi.ma">Marie Levinson</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,10 +51,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/l/levinson/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -73,7 +64,7 @@
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
              <head>   <date when="1937">1937</date>			<persName ref="#levi.ma">LEVINSON.
                 Mlle Marie-</persName>
                 		<address><street>118 Bld Brune.</street>		<district>14e.</district></address>
@@ -81,14 +72,14 @@
                 			<ab>	1m. 1v. 10% red:	22.50
                 						Deposit.	30.00
                 				refunded</ab>
-         <ab>       <date when="1937-05-04">May 4.</date>	<bibl><title>Work of Art.</title></bibl>				<date when="1937-05-11">May 11</date>
-                	<date when="1937-05-11">11</date>	<bibl><title>Ann Vickers</title></bibl>					<date when="1937-05-25">May 25</date>
-                	<date when="1937-05-25">25</date>	<bibl><title>Dodsworth</title></bibl>					<date when="1937-05-28">May 28</date>
-                	<date when="1937-05-28">28</date>-	<bibl><title>Mainstreet.	</title></bibl>				<date when="1937-06-15">June 15</date>
-                	<date when="1937-06-15">15</date>	<bibl><title><unclear/></title></bibl>							<date when="1937-06-21">"	21</date>
+         <ab>       <date ana="#checkedOut" when="1937-05-04">May 4.</date>	<bibl ana="#borrowedItem" corresp="mep:00509p"><title>Work of Art.</title></bibl>				<date ana="#returned" when="1937-05-11">May 11</date>
+                	<date ana="#checkedOut" when="1937-05-11">11</date>	<bibl ana="#borrowedItem" corresp="mep:003p0x"><title>Ann Vickers</title></bibl>					<date ana="#returned" when="1937-05-25">May 25</date>
+                	<date ana="#checkedOut" when="1937-05-25">25</date>	<bibl ana="#borrowedItem" corresp="mep:001j2z"><title>Dodsworth</title></bibl>					<date ana="#returned" when="1937-05-28">May 28</date>
+                	<date ana="#checkedOut" when="1937-05-28">28</date>-	<bibl ana="#borrowedItem" corresp="mep:002f59"><title>Mainstreet.	</title></bibl>				<date ana="#returned" when="1937-06-15">June 15</date>
+                	<date ana="#checkedOut" when="1937-06-15">15</date>	<bibl ana="#borrowedItem"><title><unclear/></title></bibl>							<date ana="#returned" when="1937-06-21">"	21</date>
                 	
                 	
-                	<date when="1937-06-21">21</date>	<bibl><title>It can't happen here</title></bibl>		<date when="1937-07-16">July 16</date>
+                	<date ana="#checkedOut" when="1937-06-21">21</date>	<bibl ana="#borrowedItem" corresp="mep:000t2x"><title>It can't happen here</title></bibl>		<date ana="#returned" when="1937-07-16">July 16</date>
                 			<unclear/> Martin <unclear/>
                 					owes sub?
                 				sent pc.	<date when="1937-07-08">July 8.</date>
@@ -96,7 +87,7 @@
                 				owes for 12 days
                 		(refunded dep)</ab>
                 </div>
-         <div type="verso">       <pb facs="#s2" />
+         <div type="verso">       <pb facs="#s2"/>
                 <!-- verso blank -->
          </div>   </div>
         </body>

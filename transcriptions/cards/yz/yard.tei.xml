@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#yard.am">Mrs Amy Yard</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,17 +50,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/yz/yard/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                         <head>
                           		<persName ref="#yard.am">Y A R D</persName>
                           <date when="1926-03-05">1926
@@ -82,33 +73,33 @@
                           						 dep		20
                         </ab>
                         <ab>
-                          <date when="1926-03-05">March 5</date>	   <bibl><title>Tails from a Roll Top Desk</title></bibl> <date when="1926-03-08">Mch 8</date>
-                          <date when="1926-03-08"> "	  8	</date>	   <bibl><title>Little Ships</title></bibl>				<date when="1926-03-12">Mch 12</date>
-                          <date when="1926-03-12"> "	  12</date>	   <bibl><title>Tess of the D'Ubervilles.</title></bibl> <date when="1926-03-17">March 17</date>
-                          <date when="1926-03-17"> "	  17</date>	   <bibl><title>God's Stepchildren</title></bibl>		<date when="1926-03-19">March 19</date>
-                          <date when="1926-03-19"> "	  19</date>	   <bibl><title>Dawn O'Hara</title></bibl>				<date when="1926-03-22">March 22</date>
-                          <date when="1926-03-22"> "	  22</date>	   <bibl><title>Best Short Stories 1924</title></bibl>	<date when="1926-03-26">"	  26</date>
-                          <date when="1926-03-26"> "	  26</date>	   <bibl><title>Between the Dark &amp; the Day Light</title></bibl> <date when="1926-03-27">"	  27</date>
-                          <date when="1926-03-27"> "	  27</date>	   <bibl><title>Beyond</title></bibl>					<date when="1926-03-30"> "	  30</date>
-                          <date when="1926-03-30"> "	  30</date>	   <bibl><title>September</title></bibl>				<date when="1926-04-06">April 6</date>
-                          <date when="1926-04-06">April 6</date>	   <bibl><title>A Wanderer in Paris</title></bibl>		<date when="1926-04-15">Ap. 15</date>
+                          <date ana="#checkedOut" when="1926-03-05">March 5</date>	   <bibl ana="#borrowedItem" corresp="mep:00f25x"><title>Tails from a Roll Top Desk</title></bibl> <date ana="#returned" when="1926-03-08">Mch 8</date>
+                          <date ana="#checkedOut" when="1926-03-08"> "	  8	</date>	   <bibl ana="#borrowedItem" corresp="mep:006777"><title>Little Ships</title></bibl>				<date ana="#returned" when="1926-03-12">Mch 12</date>
+                          <date ana="#checkedOut" when="1926-03-12"> "	  12</date>	   <bibl ana="#borrowedItem" corresp="mep:004k4k"><title>Tess of the D'Ubervilles.</title></bibl> <date ana="#returned" when="1926-03-17">March 17</date>
+                          <date ana="#checkedOut" when="1926-03-17"> "	  17</date>	   <bibl ana="#borrowedItem" corresp="mep:001v6p"><title>God's Stepchildren</title></bibl>		<date ana="#returned" when="1926-03-19">March 19</date>
+                          <date ana="#checkedOut" when="1926-03-19"> "	  19</date>	   <bibl ana="#borrowedItem" corresp="mep:001r8g"><title>Dawn O'Hara</title></bibl>				<date ana="#returned" when="1926-03-22">March 22</date>
+                          <date ana="#checkedOut" when="1926-03-22"> "	  22</date>	   <bibl ana="#borrowedItem" corresp="mep:00f267"><title>Best Short Stories 1924</title></bibl>	<date ana="#returned" when="1926-03-26">"	  26</date>
+                          <date ana="#checkedOut" when="1926-03-26"> "	  26</date>	   <bibl ana="#borrowedItem" corresp="mep:00f27j"><title>Between the Dark &amp; the Day Light</title></bibl> <date ana="#returned" when="1926-03-27">"	  27</date>
+                          <date ana="#checkedOut" when="1926-03-27"> "	  27</date>	   <bibl ana="#borrowedItem" corresp="mep:001s1k"><title>Beyond</title></bibl>					<date ana="#returned" when="1926-03-30"> "	  30</date>
+                          <date ana="#checkedOut" when="1926-03-30"> "	  30</date>	   <bibl ana="#borrowedItem" corresp="mep:00c77f"><title>September</title></bibl>				<date ana="#returned" when="1926-04-06">April 6</date>
+                          <date ana="#checkedOut" when="1926-04-06">April 6</date>	   <bibl ana="#borrowedItem" corresp="mep:00876d"><title>A Wanderer in Paris</title></bibl>		<date ana="#returned" when="1926-04-15">Ap. 15</date>
                         </ab>
                         <ab>
                           			 Renewed for 1 m 1 vol to May 5th 15f.
                         </ab>
                         <ab>
-                          <date when="1926-04-15">	  15</date>	       <bibl><title>Landlord's at Lion's Head</title></bibl> <date when="1926-04-19">Ap  19</date>
-                          <date when="1926-04-19">	  19</date>	       <bibl><title>Crock of gold</title></bibl>             <date when="1926-04-21">Ap. 21</date>
-                          <date when="1926-04-21">	  21</date>	       <bibl><title>Ladies of Lyndon</title></bibl>			 <date when="1926-04-23">"	  23</date>
-                          <date when="1926-04-23">	  23</date>	       <bibl><title>In the Land of Youth</title></bibl>		 <date when="1926-04-26">"	  26</date>
-                          <date when="1926-04-26">	  26.</date>	   <bibl><title>Country House</title></bibl>			 <date when="1926-04-28">"	  28</date>
-                          <date when="1926-04-28">	  28</date>	       <bibl><title>Hilda Lessways</title></bibl>			 <date when="1926-04-30">"	  30</date>
-                          <date when="1926-04-30">	  30</date>	       <bibl><title>Clay <unclear/></title></bibl>			 <date when="1926-05-03">May  3</date>
-                          <date when="1926-05-03">May  3</date>		   <bibl><title>These Twain</title></bibl>				 <date when="1926-05-06">May  6</date>
+                          <date ana="#checkedOut" when="1926-04-15">	  15</date>	       <bibl ana="#borrowedItem" corresp="mep:00f28v"><title>Landlord's at Lion's Head</title></bibl> <date ana="#returned" when="1926-04-19">Ap  19</date>
+                          <date ana="#checkedOut" when="1926-04-19">	  19</date>	       <bibl ana="#borrowedItem" corresp="mep:00094d"><title>Crock of gold</title></bibl>             <date ana="#returned" when="1926-04-21">Ap. 21</date>
+                          <date ana="#checkedOut" when="1926-04-21">	  21</date>	       <bibl ana="#borrowedItem" corresp="mep:003r4q"><title>Ladies of Lyndon</title></bibl>			 <date ana="#returned" when="1926-04-23">"	  23</date>
+                          <date ana="#checkedOut" when="1926-04-23">	  23</date>	       <bibl ana="#borrowedItem" corresp="mep:00b90k"><title>In the Land of Youth</title></bibl>		 <date ana="#returned" when="1926-04-26">"	  26</date>
+                          <date ana="#checkedOut" when="1926-04-26">	  26.</date>	   <bibl ana="#borrowedItem" corresp="mep:002z0w"><title>Country House</title></bibl>			 <date ana="#returned" when="1926-04-28">"	  28</date>
+                          <date ana="#checkedOut" when="1926-04-28">	  28</date>	       <bibl ana="#borrowedItem" corresp="mep:00f295"><title>Hilda Lessways</title></bibl>			 <date ana="#returned" when="1926-04-30">"	  30</date>
+                          <date ana="#checkedOut" when="1926-04-30">	  30</date>	       <bibl ana="#borrowedItem" corresp="mep:00f30n"><title>Clay <unclear/></title></bibl>			 <date ana="#returned" when="1926-05-03">May  3</date>
+                          <date ana="#checkedOut" when="1926-05-03">May  3</date>		   <bibl ana="#borrowedItem" corresp="mep:00f31z"><title>These Twain</title></bibl>				 <date ana="#returned" when="1926-05-06">May  6</date>
                         </ab>
                 </div>
                 <div type="verso">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     
                     <!-- Verso Blank -->
                 </div>

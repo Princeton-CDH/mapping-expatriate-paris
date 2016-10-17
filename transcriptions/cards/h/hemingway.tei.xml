@@ -1,576 +1,1050 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-            	<title>An Encoded Transcription of a Borrower's Card: <persName ana="#hemi.er">Ernest Hemingway</persName></title>
-                <respStmt xml:id="elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-		<respStmt xml:id="cwulfman">
-		  <persName>Wulfman, Cliff</persName>
-		  <resp>encoder</resp>
-		</respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-            	 	
-            	<xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-            		<xi:fallback>
-            			<listperson>
-            				<head>People not available</head>
-            				<person/>
-            			</listperson>
-            		</xi:fallback>
-            	</xi:include>
-            </sourceDesc>
-        </fileDesc>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card: <persName ana="#hemi.er">Ernest Hemingway</persName></title>
+        <respStmt xml:id="elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt xml:id="cwulfman">
+          <persName>Wulfman, Cliff</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+        
+        
+      </sourceDesc>
+    </fileDesc>
     <profileDesc>
       <textClass>          
         <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
       </textClass>
-    	<particDesc>
-    		<person role="cardholder" ana="#hemi.er"><persName>Ernest Hemingway</persName></person>
-    	</particDesc>
+      <particDesc>
+        <person role="cardholder" ana="#hemi.er"><persName>Ernest Hemingway</persName></person>
+      </particDesc>
     </profileDesc>
 
-        <revisionDesc>
-            <change who="#elspeth" when="2015-07-24">
-                <ab>
-                    Transcribed cards.
-                    s1:
-                    	/*/ Children of the Age = return month indecipherable, but probably Jan or Feb.
-                    s2:
-                    	/*/ Feb 17 = crossed out, can't read
-                    s3:
-                    	/*/ Jun 11 = "Wondes Man"?
-                    	/*/ Sept 20 = crossed out, can't read
-                    	/*/ Sept 20 = no idea, crossed out
-                    s4:
-                    	/*/ March 8 = "gennis"?
-                    	/*/ June 24 = no idea, note before "BB"
-                    	/*/ Aug 22 = no idea
-                    s5:
-                    	/*/ Sept 25 = "AoW"?
-                    	/*/ Oct 11 = "Seipper"?
-                </ab>
-            </change>
-	    <change who="#cwulfman" when="2015-07-30">
-	      <p>Interpret return date of <bibl><title>Children of the Age</title></bibl> as April</p>
-	    </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/h/hemingway/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
-        </surface>
-        <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
-        </surface>
-        <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
-        </surface>
-        <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
-        </surface>
-        <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
-        </surface>
-        <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
-        </surface>
-        <surface xml:id="s7">
-        	<graphic url="00000007.jp2" />
-        </surface>
-        <surface xml:id="s8">
-        	<graphic url="00000008.jp2" />
-        </surface>
-        <surface xml:id="s9">
-        	<graphic url="00000009.jp2" />
-        </surface>
-        <surface xml:id="s10">
-        	<graphic url="00000010.jp2" />
-        </surface>
-        <surface xml:id="s11">
-        	<graphic url="00000011.jp2" />
-        </surface>
-        <surface xml:id="s12">
-        	<graphic url="00000012.jp2" />
-        </surface>
-        <surface xml:id="s13">
-        	<graphic url="00000013.jp2" />
-        </surface>
-        <surface xml:id="s14">
-        	<graphic url="00000014.jp2" />
-        </surface>
-        
-        
-        
-        
-        
-    </facsimile>
-    <text>
-        <body>
+    <revisionDesc>
+      <change who="#elspeth" when="2015-07-24">
+        <ab>
+          Transcribed cards.
+          s1:
+          /*/ Children of the Age = return month indecipherable, but probably Jan or Feb.
+          s2:
+          /*/ Feb 17 = crossed out, can't read
+          s3:
+          /*/ Jun 11 = "Wondes Man"?
+          /*/ Sept 20 = crossed out, can't read
+          /*/ Sept 20 = no idea, crossed out
+          s4:
+          /*/ March 8 = "gennis"?
+          /*/ June 24 = no idea, note before "BB"
+          /*/ Aug 22 = no idea
+          s5:
+          /*/ Sept 25 = "AoW"?
+          /*/ Oct 11 = "Seipper"?
+        </ab>
+      </change>
+      <change who="#cwulfman" when="2015-07-30">
+        <p>Interpret return date of <bibl ana="#borrowedItem" corresp="mep:005269"><title>Children of the Age</title></bibl> as April</p>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/h/hemingway/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+    <surface xml:id="s3">
+      <graphic url="00000003.jp2"/>
+    </surface>
+    <surface xml:id="s4">
+      <graphic url="00000004.jp2"/>
+    </surface>
+    <surface xml:id="s5">
+      <graphic url="00000005.jp2"/>
+    </surface>
+    <surface xml:id="s6">
+      <graphic url="00000006.jp2"/>
+    </surface>
+    <surface xml:id="s7">
+      <graphic url="00000007.jp2"/>
+    </surface>
+    <surface xml:id="s8">
+      <graphic url="00000008.jp2"/>
+    </surface>
+    <surface xml:id="s9">
+      <graphic url="00000009.jp2"/>
+    </surface>
+    <surface xml:id="s10">
+      <graphic url="00000010.jp2"/>
+    </surface>
+    <surface xml:id="s11">
+      <graphic url="00000011.jp2"/>
+    </surface>
+    <surface xml:id="s12">
+      <graphic url="00000012.jp2"/>
+    </surface>
+    <surface xml:id="s13">
+      <graphic url="00000013.jp2"/>
+    </surface>
+    <surface xml:id="s14">
+      <graphic url="00000014.jp2"/>
+    </surface>
+  </facsimile>
+
+
+  <text>
+    <body>
+      
+      <div type="card">
+        <div type="recto">               
+          <pb facs="#s1"/>
+          <head>
+            <date when="1925">1925</date>
+            <note>subs to March 23-1926</note>
+            <persName>HEMINGWAY</persName>
+            <address><addrLine><del rend="overstrike">113 Rue N.D. des Champs</del></addrLine></address>
+            <address><addrLine><del rend="overstrike">19 rue Froidevaux</del> 14e</addrLine></address>
+            <note><date>winter 1927</date>
+            <address>
+              <addrLine>Hotel Rosli<lb/>
+              Gstad<lb/>
+              M.O. 13<lb/>
+              Suisse</addrLine>
+            </address>
+            </note>
+          </head>
+          
+          <note>copy of <bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl> =
+          <measure type="currency" unit="dollar" quantity="1.87">$1.87</measure></note>
+
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-08">Oct 8</date>
+              <bibl ana="#borrowedItem"><title>Mammonart</title></bibl>.
+              <note>b b</note>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-12">〃 12</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00527m"><title>Sentimental Education</title></bibl> 
+              <date ana="#returned" when="1925-10-27">Oct. 27</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-14">〃 14</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00528x"><title>Sailing around the World</title></bibl>
+              <date ana="#returned" when="1925-10-22">Oct. 22</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-14">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005297"><title>Sea and the Jungle.</title></bibl> 
+              <date ana="#returned" when="1925-10-22">〃 〃</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-22">Oct 22</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00530q"><title>Lear of the Steppes</title></bibl> 
+              <date ana="#returned" when="1925-10-27">Oct 27.</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-22"/> 
+              <bibl ana="#borrowedItem" corresp="mep:005311"><title>Sportsman's Sketches vol 2</title></bibl> 
+              <date ana="#returned" when="1925-11-16">Nov 16</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-10-27">〃 27</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl> 
+              <date ana="#returned" when="1925-11-16">Nov 16</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-11-09">Nov 9</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00532b"><title>Bread of Deceit</title></bibl> 
+              <date ana="#returned" when="1925-11-24">Nov 24</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-11-16">Nov 16</date> 
+              <bibl ana="#borrowedItem"><title>Travel Diary of a Philosopher</title> 2 vols</bibl> 
+              <date ana="#returned" when="1925-11-24">〃 〃</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-11-23">〃 23</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00534z"><title>Parody Outline of History</title></bibl> 
+              <date ana="#returned" when="1925-12-10">Dec 10</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-11-24">Nov 24</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005358"><title>More Tales of the Uneasy</title></bibl> 
+              <date ana="#returned" when="1925-12-01">Dec 1</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-11-28">Nov 28</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00536k"><title>Terrible Hobby of Sir J. Londe</title></bibl> 
+              <date ana="#returned" when="1925-12-01">Dec. 1</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-12-01">Dec 1</date> 
+              <bibl ana="#borrowedItem"><title>Charter House of Parma</title> in 2 vols</bibl> 
+            <date ana="#returned" when="1925-12-10">Dec 10</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-12-10">〃 10</date> 
+              <bibl ana="#borrowedItem"><title>Budden Brooks</title> in 2 vols.</bibl> 
+              <date ana="#returned" when="1926-01-19">Jan 19</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-12-10">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005269"><title>Children of the Age</title></bibl> 
+              <date ana="#returned" when="1926-04-13" cert="medium" resp="#cwulfman">Apr 13</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-12-10">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00539h"><title>House of Gentle Folks</title></bibl> 
+              <date ana="#returned" when="1926-02-02">Feb. 2</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1925-12-10">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005400"><title>Father and Children</title></bibl> 
+              <date ana="#returned" when="1926-01-19">Jan 19</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-01-28">Jan 28</date>
+              <del rend="overstrike">Canning Wonder</del>
+              <bibl ana="#borrowedItem"><title>D' Looks at Literature</title></bibl> 
+              <date ana="#returned" when="1926-02-02">Feb. 2</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-01-30">30</date> 
+              <bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In our Time</title></bibl>
+              <note>new copy</note>
+              <note>bought</note> 
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-01-30">〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00542m"><title>Bull fighting</title></bibl> 
+            <date ana="#returned" when="1926-01-30">Jan 30</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-03-29">March 29</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00543x"><title>Best Short Stories 1935 Am</title></bibl> 
+            <date ana="#returned" when="1926-05-10">May 10</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-04-01">April 1</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005447"><title>Flurried years</title></bibl> 
+              <date ana="#returned" when="1926-04-13">Ap. 13</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-04-11">〃 11</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00316j"><title>Along the Road</title></bibl> 
+            <date ana="#returned" when="1926-04-24">Ap 24</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-04-13">〃 13</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00545j"><title>Strait is the fate</title></bibl> 
+              <date ana="#returned" when="1926-04-24">〃 〃</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-04-17">〃 17</date> 
+              <bibl ana="#borrowedItem">
+                <title>Collected Poems</title>.
+                <author>Sandburg</author>.
+              </bibl> 
+              <date ana="#returned" when="1926-04-24">〃 〃</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-04-21">〃 21</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005475"><title>The Crime at Vanderlynden's</title></bibl>
+              <note>B B</note>
+            </ab>
+        </div>          
+
+
+
+        <div type="verso">
+          <pb facs="#s2"/>
+          <head>
+            <date when="1926">1926</date>
+            <date when="1926-04-26">Ap.26</date>
+            <persName>HEMINGWAY</persName>
             
-<div type="card">
-	<div type="recto">               
- 	<pb facs="#s1" />
- <head>              	<date when="1925">1925</date>					<note>subs to March 23-1926</note>
-               	<persName>HEMINGWAY</persName>
-               	<address><addrLine><del rend="overstrike">113 Rue N.D. des Champs</del></addrLine></address>
-               	<address><addrLine><del rend="overstrike">19 rue Froidevaux</del> 14e</addrLine></address>
-               	<note><date>winter 1927</date>
-               	<address>
-		  <addrLine>Hotel Rosli<lb/>
-               	  Gstad<lb/>
-               	  M.O. 13<lb/>
-               	  Suisse</addrLine>
-		</address>
-		</note></head>
-		
-		<note>copy of <bibl>Farewell to Arms</bibl> = <measure type="currency" unit="dollar" quantity="1.87">$1.87</measure></note>
+            <del rend="overstrike">
+              to
+              <address>
+                <addrLine>Thomas Cook &amp; Son
+                <lb/> Madrid</addrLine>
+              </address>
+            </del>
+            
+            <del rend="overstrike">
+              <address>
+                <addrLine>Salve Vale c/o Gerald Murphy</addrLine>
+              </address>
+            </del>
+            
+            <del rend="overstrike">
+              <address>
+                <addrLine>Villa America</addrLine>
+                <addrLine>Cap d'Antibes A.M.</addrLine>
+              </address>
+            </del>
+            
+            <note>B B</note>
+          </head>
+          
 
-               	<table>
-<row>
-<cell><date when="1925-10-08">Oct 8</date></cell>
-<cell><bibl>Mammonart.</bibl></cell>
-<cell><date>b b</date></cell></row>
-<row>
-<cell><date when="1925-10-12">&quot; 12</date></cell> 
-<cell><bibl><title>Sentimental Education</title></bibl></cell> 
-<cell><date when="1925-10-27">Oct. 27</date></cell></row>
-<row>
-<cell><date when="1925-10-14">&quot; 14</date></cell> 
-<cell><bibl><title>Sailing around the World</title></bibl></cell> 
-<cell><date when="1925-10-22">Oct. 22</date></cell></row>
-<row>
-<cell><date when="1925-10-14">&quot; &quot;</date></cell> 
-<cell><bibl><title>Sea and the Jungle.</title></bibl></cell> 
-<cell><date when="1925-10-22">&quot; &quot;</date></cell></row>
-<row>
-<cell><date when="1925-10-22">Oct 22</date></cell> 
-<cell><bibl><title>Lear of the Steppes</title></bibl></cell> 
-<cell><date when="1925-10-27">Oct 27.</date></cell></row>
-<row>
-<cell><date when="1925-10-22"></date></cell> 
-<cell><bibl><title>Sportsman's Sketches vol 2</title></bibl></cell> 
-<cell><date when="1925-11-16">Nov 16</date></cell></row>
-<row>
-<cell><date when="1925-10-27">&quot; 27</date></cell> 
-<cell><bibl><title>Torrents of Spring</title></bibl></cell> 
-<cell><date when="1925-11-16">Nov 16</date></cell></row>
-<row>
-<cell><date when="1925-11-09">Nov 9</date></cell> 
-<cell><bibl><title>Bread of Deceit</title></bibl></cell> 
-<cell><date when="1925-11-24">Nov 24</date></cell></row>
-<row>
-<cell><date when="1925-11-16">Nov 16</date></cell> 
-<cell><bibl><title>Travel Diary of a Philosopher 2 vols "</title></bibl></cell> 
-<cell><date when="1925-11-24">&quot;</date></cell></row>
-<row>
-<cell><date when="1925-11-23">&quot; 23</date></cell> 
-<cell><bibl><title>Parody Outline of History</title></bibl></cell> 
-<cell><date when="1925-12-10">Dec 10</date></cell></row>
-<row>
-<cell><date when="1925-11-24">Nov 24</date></cell> 
-<cell><bibl><title>More Tales of the Uneasy</title></bibl></cell> 
-<cell><date when="1925-12-01">Dec 1</date></cell></row>
-<row>
-<cell><date when="1925-11-28">Nov 28</date></cell> 
-<cell><bibl><title>Terrible Hobby of Sir J. Londe</title></bibl></cell> 
-<cell><date when="1925-12-01">Dec. 1</date></cell></row>
-<row>
-<cell><date when="1925-12-01">Dec 1</date></cell> 
-<cell><bibl><title>Charter House of Parma in 2 vols</title></bibl></cell> 
-<cell><date when="1925-12-10">Dec 10</date></cell></row>
-<row>
-<cell><date when="1925-12-10">&quot; 10</date></cell> 
-<cell><bibl><title>Budden Brooks in 2 vols.</title></bibl></cell> 
-<cell><date when="1926-01-19">Jan 19</date></cell></row>
-<row>
-<cell><date when="1925-12-10">&quot; &quot;</date></cell> 
-<cell><bibl><title>Children of the Age</title></bibl></cell> 
-<cell><date when="1926-04-13" cert="medium" resp="#cwulfman">Apr 13</date></cell></row>
-<row>
-<cell><date when="1925-12-10">&quot; &quot;</date></cell> 
-<cell><bibl><title>House of Gentle Folks</title></bibl></cell> 
-<cell><date when="1926-02-02">Feb. 2</date></cell></row>
-<row>
-<cell><date when="1925-12-10">&quot; &quot;</date></cell> 
-<cell><bibl><title>Father and Children</title></bibl></cell> 
-<cell><date when="1926-01-19">Jan 19</date></cell></row>
-<row>
-<cell><date when="1926-01-28">Jan 28</date></cell> 
-<cell><bibl><title><del rend="overstrike">Canning Wonder</del> D' Looks at Literature</title></bibl></cell> 
-<cell><date when="1926-02-02">Feb. 2</date></cell></row>
-<row>
-<cell><date when="1926-01-30">30</date></cell> 
-<cell><bibl><title>In our Time</title></bibl> <note>new copy bought</note></cell> 
-<cell></cell></row>
-<row>
-<cell><date when="1926-01-30"></date></cell> 
-<cell><bibl><title>Bull fighting</title></bibl></cell> 
-<cell><date when="1926-01-30">Jan 30</date></cell></row>
-<row>
-<cell><date when="1926-03-29">March 29</date></cell> 
-<cell><bibl><title>Best Short Stories 1935 Am</title></bibl></cell> 
-<cell><date when="1926-05-10">May 10</date></cell></row>
-<row>
-<cell><date when="1926-04-01">April 1</date></cell> 
-<cell><bibl><title>Flurried years</title></bibl></cell> 
-<cell><date when="1926-04-13">Ap. 13</date></cell></row>
-<row>
-<cell><date when="1926-04-01">&quot; &quot;</date></cell> 
-<cell><bibl><title>Along the Road</title></bibl></cell> 
-<cell><date when="1926-04-24">Ap 24</date></cell></row>
-<row>
-<cell><date when="1926-04-13">&quot; 13</date></cell> 
-<cell><bibl><title>Strait is the fate</title></bibl></cell> 
-<cell><date when="1926-04-24">&quot; &quot;</date></cell></row>
-<row>
-<cell><date when="1926-04-17">&quot; 17</date></cell> 
-<cell><bibl><title>Collected Poems. Sandburg.</title></bibl></cell> 
-<cell><date when="1926-04-14">&quot; &quot;</date></cell></row>
-<row>
-<cell><date when="1926-04-21">&quot; 21</date></cell> 
-<cell><bibl><title>The Crime at Vanderlynden's</title></bibl></cell> 
-<cell><date when="1926"><date when="1926">BB</date></date></cell></row>
-</table>  
-       </div>     	
-<div type="verso">
-	<pb facs="#s2" />
-<head>               	<date when="1926">1926</date>
-		<date when="1926-04-26">Ap.26</date>
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-04-26">Ap. 26</date>
+            <bibl ana="#borrowedItem" corresp="mep:00548g"><title>Early Poems Yeats</title></bibl>
+            <note>BB</note>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-04-29">〃 29</date>
+            <bibl ana="#borrowedItem" corresp="mep:00549s"><title>Outcast of the Island</title></bibl>
+            <note>B B</note>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-04">May 4</date>
+            <bibl ana="#borrowedItem" corresp="mep:005508"><title>The Egoists</title></bibl>
+            <date ana="#returned" when="1926-05-10">May 10</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-04">〃 〃</date>
+            <bibl ana="#borrowedItem"><title>Steeplejacket</title> vol II</bibl>
+            <date ana="#returned" when="1926-05-10">May 10</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-04">〃 〃</date>
+            <bibl ana="#borrowedItem" corresp="mep:004c85"><title>Far away + Long Ago</title></bibl>
+            <date ana="#returned" when="1926-10-01">Oct 1st</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-05">〃 5</date>
+            <bibl ana="#borrowedItem" corresp="mep:00552w"><title>Thus Spoke Zarathustra</title></bibl>
+            <date ana="#returned" when="1926-09-13">Sept 13</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-10"> 10</date>
+            <bibl ana="#borrowedItem" corresp="mep:005536"><title>Knock Knock Knock</title></bibl>
+            <date ana="#returned" when="1926-11-02">Nov 2</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-10"/>
+            <bibl ana="#borrowedItem" corresp="mep:00554h"><title>Two Friends</title></bibl>
+            <date ana="#returned" when="1926-09-10">Sept 10</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-10"/>
+            <bibl ana="#borrowedItem" corresp="mep:00555t"><title>On the Eve</title></bibl>
+            <date ana="#returned" when="1926-09-10">Sept 10</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-05-14">May 14</date>
+            <bibl ana="#borrowedItem" corresp="mep:002n4n"><title>Problems of Philosophy</title></bibl>
+            <date ana="#returned" when="1926-09-13">Sept 13</date>
+          </ab>
+
+
+
+          <note>(<date ana="#checkedOut" when="1926-07-03">July 3rd</date> forwarded
+          letters &amp; <bibl ana="#borrowedItem"><title level="j">Little
+          Review</title></bibl> to <placeName>Madrid</placeName>
+          <orgName>Thos Cook</orgName>)
+          </note>
+
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-08-26">Aug 26.</date>
+            <bibl ana="#borrowedItem"><title>Mirrors to France</title></bibl>
+            <date ana="#returned" when="1926-09-10">Sept 10</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-09-10">Sept 10</date>
+            <bibl ana="#borrowedItem"><title>Sportsman's Sketches</title></bibl>
+            <date ana="#returned" when="1926-10-01">Oct 1</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-09-10">〃 〃</date>
+            <bibl ana="#borrowedItem"><title>Paul Cezanne</title></bibl>
+            <date ana="#returned" when="1926-10-01">〃 〃</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-09-25">〃 25</date>
+            <bibl ana="#borrowedItem"><title>New Republic</title> (<date>Sept 15</date>)</bibl>
+            <date ana="#returned" when="1926-10-01">〃 〃</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1926-10-01">Oct 1st</date>
+            <bibl ana="#borrowedItem"><title>Mastro Don Gesualdo</title>.</bibl>
+            <date ana="#returned" when="1926-10-11">Oct 11</date>
+          </ab>
+
+            <note>subscription due since <date when="1926-03-23">Mch 23d 1926</date></note>
+
+            <note><date when="1926-10-11">Oct 11th</date> SR to Mch 23rd 1927 = 150f.</note>
+
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-10-11">〃 〃</date>
+              <bibl ana="#borrowedItem"><title>Life Work + Evil Fate of G. de Maupassant</title></bibl>
+              <note>BB.</note>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-10-11">〃</date>
+              <bibl ana="#borrowedItem"><title>Americana</title> <date>1926</date></bibl>
+              <note>B.B.</note>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-10-29">〃 29</date>
+              <bibl ana="#borrowedItem"><title>On the Trail of the Ancient Man</title></bibl>
+              <date ana="#returned" when="1927-02-28">Feb 28</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-11-04">Nov 4</date>
+              <bibl ana="#borrowedItem"><title>Composition G Stein</title></bibl>
+              <date ana="#returned" when="1927-02-28">Feb 28</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1926-11-18">〃 18</date>
+              <bibl ana="#borrowedItem"><title>Sailors Return.</title></bibl>
+              <date ana="#returned"/>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="19226-12-16">Dec 16</date>
+              <bibl ana="#borrowedItem"><title>Spanish Journey</title></bibl>
+              <date ana="#returned" when="1927-03-12">Mch 12</date>
+            </ab>
+
+            <note>
+              <date ana="#checkedOut" when="1927-02-28">Feb 28</date> brought back <bibl ana="#borrowedItem" corresp="mep:00384v"><title>the Common Reader</title></bibl> <date ana="#returned" when="1927-02-28">Feb. 28</date></note>
+
+            <note><date when="1927-02-17">Feb 17</date> <del rend="overstrike"><unclear/> 19.60</del> paid</note>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1927-03-01" cert="low">Mch 12</date>
+              <bibl ana="#borrowedItem"><title>Go she must</title></bibl>
+              <date ana="#returned" when="1927-03-12">Mch 12</date>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1927-04-03">Ap. 23</date>
+              <bibl ana="#borrowedItem"><title>Inquisition</title></bibl>
+              <note>BB.</note>
+            </ab>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut">May 31</date>
+              <bibl ana="#borrowedItem"><title>Garnell</title></bibl>
+            </ab>
+          </div>
+        </div>
+        
+        
+        <div type="card"> 
+          <div type="recto">
+            <pb facs="#s3"/>
+            <head>
+              <date when="1927">1927</date>
+              <persName>HEMINGWAY</persName>
+              <address>
+                <addrLine>6 rue Férou VIe</addrLine>
+              </address>
+            </head>
+
+            <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1927-06-11">Jun 11</date>
+              <bibl ana="#borrowedItem"><title>Story of a Wonder Man</title></bibl>
+              <date ana="#returned" when="1927-06-13">June 13</date>
+            </ab>
+
+              <note><del rend="overstrike"><bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun also Rises</title></bibl> <measure type="currency" unit="franc" quantity="42">42</measure> + <measure type="currency" unit="franc" quantity="4.80">4.80</measure> = <measure type="currency" unit="fran" quantity="46.80">46.80</measure> paid.</del></note>
+
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1927-06-11">〃</date>
+                <bibl ana="#borrowedItem"><title>Transition.</title></bibl>
+                <metamark rend="line"/>
+              </ab>
+
+                <note>ask Hemingway about <bibl ana="#borrowedItem" corresp="mep:00557f"><title>"Grandmother"</title></bibl></note>
+
+                <ab ana="#borrowingEvent">
+                <date when="1927-09-20">Sept 20</date>
+                <del rend="overstrike"><unclear/></del><lb/>
+                <bibl ana="#borrowedItem"><title>Grandmother</title></bibl>
+                <date ana="#returned" when="1927-10-18">Oct 18</date>
+                </ab>
+                
+                <ab><del rend="overstrike"><unclear/></del><metamark rend="line"/></ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-10-18">Oct 18</date>
+                  <bibl ana="#borrowedItem"><title>Time &amp; Western Man</title></bibl>
+                  <date ana="#returned" when="1927-10-19">Oct 19</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-10-19">〃 19</date>
+                  <bibl ana="#borrowedItem"><title>Black Cat.</title></bibl>
+                  <date ana="#returned" when="1927-10-25">〃 25</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-10-25">〃 25</date>
+                  <bibl ana="#borrowedItem"><title>Barnum's Own Story</title></bibl>
+                  <date ana="#returned" when="1927-11-15">Nov. 15</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-10-25">〃 25</date>
+                  <bibl ana="#borrowedItem"><title>Mother India</title></bibl>
+                  <date ana="#returned" when="1927-11-15">- 15</date>
+                </ab>
+
+                <ab>
+                  <date when="1927-11-03">Nov 3</date>
+                  <del rend="overstrke"><bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl> 42 owe</del>
+                  <metamark rend="line"/>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-11-14">〃 14</date>
+                  <bibl ana="#borrowedItem"><title>Dial Nov.</title></bibl>
+                  <date ana="#returned" when="1927-12-07">Dec 7</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut">〃 14</date>
+                  <bibl ana="#borrowedItem"><title>Story of Ivy</title></bibl>
+                  <date ana="#returned">Nov 26</date>
+                </ab>
+
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-11-23"> 23</date>
+                  <bibl ana="#borrowedItem"><title>Shadow River</title></bibl>
+                  <date ana="#returned" when="1927-12-07">Dec 7</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-11-26">〃 26</date>
+                  <bibl ana="#borrowedItem"><title>Before the Bombardment</title></bibl>
+                  <date ana="#returned" when="1927-12-07">〃 〃</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-11">〃 ?</date>
+                  <bibl ana="#borrowedItem"><title>Bridge of San Luis Rey</title></bibl>
+                  <date ana="#returned" when="1927-12-07">〃 〃</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-12-07">Dec 7</date>
+                  <bibl ana="#borrowedItem"><title>Gambler.</title></bibl>
+                  <date ana="#returned" when="1928-02-13">Feb 13</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-12-07" cert="high"/>
+                  <bibl ana="#borrowedItem"><title>Insulted &amp; Injured</title></bibl>
+                  <date ana="#returned" when="1928-02-13">Feb 13</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-12-07" cert="high"/>
+                  <bibl ana="#borrowedItem"><title>Gallows Reach</title></bibl>
+                  <date ana="#returned" when="1928-02-06">Feb. 6</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1928-02-04">Feb. 4</date>
+                  <bibl ana="#borrowedItem"><title>Lawrence and the Arabs</title></bibl><note>pc Feb 21</note>
+                  <date ana="#returned" when="1928-02-24">Feb. 24</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1928-02-09">_ 9</date>
+                  <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl>
+                  <date ana="#returned" when="1928-03-03">Mch 3</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1928-02-11">〃 11</date>
+                  <bibl ana="#borrowedItem"><title>Recollections of the Irish War</title></bibl>
+                  <date ana="#returned" when="1928-03-03">〃 3</date>
+                </ab>
+
+                <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1928-02-11" cert="high"/>
+                  <bibl ana="#borrowedItem"><title>Riddle of the Irish</title></bibl>
+                  <date ana="#returned" when="1928-02-13">Feb 13</date>
+                </ab>
+
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" notAfter="1928-02-13">?</date>
+                <bibl ana="#borrowedItem"><title>Dial Jan 28</title></bibl>
+                <date ana="#returned" when="1928-02-13">Feb 13</date>
+              </ab>
+
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1928-02-13">Feb 13</date>
+                <bibl ana="#borrowedItem"><title>World's Illusion 2 vols</title></bibl>
+                <date ana="#returned" when="1928-02-28">〃 28</date>
+              </ab>
+
+              <ab><note><del rend="overstrike">(loaned 100f Feb 17)</del></note> <metamark rend="line"/></ab>
+
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1928-02-24">〃 24</date>
+                <bibl ana="#borrowedItem"><title>Emperor Jones</title></bibl>
+                <date ana="#returned" when="1928-03-03">Mch 3</date>
+              </ab>
+
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1928-02-24">〃 24</date>
+                <bibl ana="#borrowedItem"><title>Plough &amp; Stars</title></bibl>
+                <date ana="#returned" when="1928-03-03">〃 〃</date>
+              </ab>
+
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1928-02-28">〃 28</date>
+                <bibl ana="#borrowedItem"><title>Magic Mountain 2 vols</title></bibl>
+                <note>BB</note>
+              </ab>
+          </div>
+          
+          <div type="verso">
+            <pb facs="#s4"/>
+            <head>
+              <persName>HEMINGWAY</persName>
+            </head>
+
+	    <ab ana="#borrowingEvent">
+	      <date ana="#checkedOut" when="1928-03-03">Mch 3</date>
+	      <bibl ana="#borrowedItem"><title>Wonder book of the Wild</title></bibl>
+	      <date ana="#returned" when="1928-03-08">March 8</date>
+	    </ab>
+
+            <ab ana="#borrowingEvent">
+	      <date ana="#checkedOut" when="1928-03-08">〃 8</date>
+	      <bibl ana="#borrowedItem"><title>Genius &amp; Character.</title></bibl>
+	    </ab>
+
+	    <note> S.B. received cheque for Frs. 350 for E.H.'s account <date when="1929-02-22">Feb 22 1929</date></note>
+
+              <note>
+                <persName>Madame Jeanie Leitner</persName>
+                <address>
+                  <addrLine>8 Hamau d'Alleray</addrLine>
+                  <addrLine>Paris XVe</addrLine>
+                </address>
+              </note>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-04-23">Ap 23</date>
+		<bibl ana="#borrowedItem"><title>Dial</title> <date>Dec. 1928</date></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-04-23">〃 23</date>
+		<bibl ana="#borrowedItem"><title>Autobiography of Lord Alfred Douglas</title></bibl>
+		<date ana="#returned" when="1929-05-16">May 16</date>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-04-23">〃 23</date>
+		<bibl ana="#borrowedItem"><title>Zola + His Time</title></bibl>
+		<date ana="#returned" when="1929-05-14">May 14</date>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-04-26">〃 26</date>
+		<bibl ana="#borrowedItem"><title>Guillotine + Its Servants</title></bibl>
+		<date ana="#returned" when="1929-05-14">May 14</date>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-04-26">〃 26</date>
+		<bibl ana="#borrowedItem"><title>Dial</title> <date when="1929-01">January 1929</date></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-05-16">May 16</date>
+		<bibl ana="#borrowedItem"><title>Life in the Middle Ages vol II &amp; III</title></bibl>
+		<note>BB</note>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-05-21">〃 21 </date>
+		<bibl ana="#borrowedItem"><title>Diary of Dostoievsky's Wife</title></bibl>
+		<date ana="#returned" when="1929-07-02">July 2</date>
+	      </ab>
+
+              <note><date when="1929-06-01">June 1</date> 4 parcels = signed sheets) by reg. post = 42.80</note>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-06-03">June 3.</date>
+		<bibl ana="#borrowedItem"><title>Bookman's Day book</title></bibl>
+		<date ana="#returned" when="1929-06-05">June 5</date>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-06-05">〃 5</date>
+		<bibl ana="#borrowedItem"><title>Three Lives</title></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-06-05">〃 5</date>
+		<bibl ana="#borrowedItem"><title>Mlle Turpin comes</title></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-06-21">〃 21</date>
+		<bibl ana="#borrowedItem"><title>Contemporary Russian Literature</title></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-06-24">〃 24</date>
+		<bibl ana="#borrowedItem"><title>Round that Green Cloth.</title></bibl>
+		<note> probably BB</note>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-06-29">〃 29</date>
+		<bibl ana="#borrowedItem"><title>Politicians and the War</title></bibl>
+		<date ana="#returned" when="1929-07-02">July 2</date>
+	      </ab>
+
+              <note><date when="1929-08-22">Aug 22</date> <unclear>Sent</unclear> <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl><lb/>
+	      see letter <lb/>
+              gave <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl>
+              <bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In Our Time</title> to <persName>A. Marcos</persName></bibl>
+              <unclear>wants <bibl ana="#borrowedItem" corresp="mep:005592"><title>T. of S.</title></bibl></unclear>
+              </note>
+	    </div>
+          </div>
+
+
+
+            <div type="card">           
+              <div type="recto">
+		<pb facs="#s5"/>
+              <head>    
+		<date when="1929">1929</date>
 		<persName>HEMINGWAY</persName>
+	      </head>
 
-		<del rend="overstrike">
-		  to
-		  <address>
-		    <addrLine>Thomas Cook &amp; Son Madrid</addrLine>
-		  </address>
-		</del>
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-19">Sept 19</date>
+		<bibl ana="#borrowedItem" corresp="mep:00560j"><title>Lady Chatterley's Lover</title></bibl>
+		<date ana="#returned" when="1929-09-27">Sept. 27.</date>
+	      </ab>
 
-		<del rend="overstrike">
-		  <address>
-		    <addrLine>Salve Vale c/o Gerald Murphy</addrLine>
-		  </address>
-		</del>
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-19"/>
+		<bibl ana="#borrowedItem" corresp="mep:00561v"><title>War</title></bibl>
+		<date ana="#returned">27</date>.
+	      </ab>
 
-		<del rend="overstrike">
-		  <address>
-		    <addrLine>Villa America</addrLine>
-		    <addrLine>Cap d'Antibes A.M.</addrLine>
-		  </address>
-		</del>
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-19"/>
+		<bibl ana="#borrowedItem" corresp="mep:005625"><title>This quarter No 5</title></bibl>
+		<date ana="#returned" when="1929-09-27">27</date>.
+	      </ab>
 
-              	<note><ab>B B</ab></note></head>
-		<table>
-<row><cell><date when="1926-04-26">Ap. 26</date></cell> <cell><bibl><title>Early Poems Yeats</title></bibl></cell> <cell><date>BB</date></cell></row>
-<row><cell><date when="1926-">" 29</date></cell> <cell><bibl><title>Outcast of the Island</title></bibl></cell> <cell><date when="1926-">BB</date></cell></row>
-<row><cell><date when="1926-">May 4</date></cell> <cell><bibl><title>The Egoists</title></bibl></cell> <cell><date when="1926-">May 10</date></cell></row>
-<row><cell><date when="1926-">" 11</date></cell> <cell><bibl><title>Steeplejacket vol II</title></bibl></cell> <cell><date when="1926-">May 10</date></cell></row>
-<row><cell><date when="1926-">" "</date></cell> <cell><bibl><title>Far away + Long Ago</title></bibl></cell> <cell><date when="1926-">Oct 1st</date></cell></row>
-<row><cell><date when="1926-">" 5</date></cell> <cell><bibl><title>Thus Spoke Zarathustra</title></bibl></cell> <cell><date when="1926-">Sept 13</date></cell></row>
-<row><cell><date when="1926-"> 10</date></cell> <cell><bibl><title>Knock Knock Knock</title></bibl></cell> <cell><date when="1926-">Nov 2</date></cell></row>
-<row><cell><date when="1926-"></date></cell> <cell><bibl><title>Two Friends</title></bibl></cell> <cell><date when="1926-">Sept 10</date></cell></row>
-<row><cell><date when="1926-"></date></cell> <cell><bibl><title>On the Eve</title></bibl></cell> <cell><date when="1926-">Sept 10</date></cell></row>
-<row><cell><date when="1926-">May 14</date></cell> <cell><bibl><title>Problems of Philosophy</title></bibl></cell> <cell><date when="1926-">Sept 13</date></cell></row>
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-25">25</date>
+		<bibl ana="#borrowedItem"><title>Adv of Sir W. Raleigh</title></bibl>
+		<date ana="#returned" when="1929-10-19">Oct 19</date>
+	      </ab>
 
-<note>(<date when="1926-07-03">July 3rd</date> forwarded letters &amp; <bibl><title level="j">Little Review</title></bibl> to <placeName>Madrid</placeName> <orgName>Thos Cook</orgName>)</note>
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-27">27</date>.
+		<bibl ana="#borrowedItem" corresp="mep:00555t"><title>On the Eve</title></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-27">27</date>
+		<bibl ana="#borrowedItem" corresp="mep:005311"><title>A Sportsmans Sketches</title></bibl>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-09-27">27</date>.
+		<bibl ana="#borrowedItem" corresp="mep:00564s"><title>Idiot</title></bibl>
+		<note>brought by a gentleman</note>
+		<date ana="#returned" when="1930-01-23">Jan 23</date>
+	      </ab>
+
+              <ab ana="#borrowingEvent">
+		<date ana="#checkedOut" when="1929-10-11">Oct 11</date>
+		<bibl ana="#borrowedItem"><title>Balzac in Slippers</title></bibl>
+		<date ana="#returned" when="1929-10-19">Oct 19</date>
+	      </ab>
 
 
-<row><cell>Aug 20.</cell> <cell>Mirrors to France</cell> <cell>Sept 10</cell></row>
-<row><cell>Sept 10</cell> <cell>Sportsman's Sketches</cell> <cell>Oct 1</cell></row>
-<row><cell>" "</cell> <cell>Paul Cezanne</cell> <cell>" "</cell></row>
-<row><cell>" 25</cell> <cell>New Republic (Sept 15)</cell> <cell>" "</cell></row>
-<row><cell>Oct 1st</cell> <cell>Mastro Don Gesualdo.</cell> <cell>Oct 11</cell></row>
-<note>subscription due since Mch 23d 1926</note>
 
-<note><date when="1926-10-11">Oct 11th</date> SR to Mch 23rd 1927 = 150f.</note>
+              <ab>
+                <date when="1929-11-07">Nov 7</date>            to his credit           29F
+                -- reg. postage          5 40
+                23 60
+                <date ana="#checkedOut" when="1929-11-20">Nov 20</date> <bibl ana="#borrowedItem" corresp="mep:00566d"><title>Natural History of Animals</title></bibl>    87.50
+                <bibl ana="#borrowedItem" corresp="mep:00567q"><title>Grimm's Fairy Tales</title></bibl>                 35
+                <bibl ana="#borrowedItem" corresp="mep:005681"><title>Yellow Fairy Book</title></bibl>                   35
+                <bibl ana="#borrowedItem" corresp="mep:00569b"><title>Swiss Family Robinson</title></bibl>               35
+                not paid                           192.50
+                23.60
+                <date ana="#returned" when="1929-11-23">Nov 23</date>           paid ------                        168.90
+              </ab>
+              </div>
+              <div type="verso">                <pb facs="#s6"/>
+              <!-- verso blank -->
+              </div>  
+            </div> 
 
-<row><cell>" "</cell> <cell>Life Work + Evil Fate of G. de Maupassant</cell> <cell>BB.</cell></row>
-<row><cell>"</cell> <cell>Americana 1926</cell> <cell>B.B.</cell></row>
-<row><cell>" 29</cell> <cell>On the Trail of the Ancient Man</cell> <cell>Feb 28</cell></row>
-<row><cell>Nov 4</cell> <cell>Composition G Stein</cell> <cell>Feb 28</cell></row>
-<row><cell>" 18</cell> <cell>Sailors Return.</cell> <cell></cell></row>
-<row><cell>Dec 16</cell> <cell>Spanish Journey</cell> <cell>Mch 12</cell></row>
-<row><cell><date when="1926-02-28">Feb 28</date></cell><cell><note>brought back <bibl><title>the Common Reader</title></bibl></note></cell> <cell><date when="1926-">Feb. 28</date></cell></row>
-<row><cell>Feb 17</cell> <cell><del rend="overstrike"><unclear/> 19.60</del> paid</cell> <cell> -----</cell></row>
-<row><cell>Mch 12</cell> <cell>Go she must</cell> <cell>Mch 12</cell></row>
-<row><cell>Ap. 23</cell> <cell>Inquisition</cell> <cell>BB.</cell></row>
-<row><cell>May 31</cell> <cell>Garnell</cell> <cell></cell></row>
-               	</table>
-</div></div>
-        	
-        	
-<div type="card"> 
-	<div type="recto">
-  	<pb facs="#s3" />
-<head>
-               	<date when="1927">1927</date>
-		<persName>HEMINGWAY</persName>
-               	<address>
-		  <addrLine>6 rue Férou VIe</addrLine>
-		</address></head>
-		<table>
-<row><cell>Jun 11</cell> <cell>Story of a Wonder Man</cell> <cell>June 13</cell></row>
-<row><cell></cell> <cell><del rend="overstrike"><bibl><title>Sun also Rises</title></bibl> <measure type="currency" unit="franc" quantity="42">42</measure> + <measure type="currency" unit="franc" quantity="4.80">4.80</measure> = <measure type="currency" unit="fran" quantity="46.80">46.80</measure> paid.</del></cell></row>
-<row><cell>"</cell> <cell>Transition.</cell> <cell>---</cell></row>
-<row><cell/> <cell><note>ask Hemingway about <bibl><title>&quot;Grandmother&quot;</title></bibl></note></cell> <cell/></row>
-<row><cell>Sept 20</cell> <cell><del rend="overstrike"><unclear/></del></cell> <cell/></row>
-<row><cell></cell> <cell>Grandmother</cell> <cell>Oct 18</cell></row>
-<row><cell></cell> <cell><del rend="overstrike"><unclear/> 53. <unclear/></del></cell> <cell>---</cell></row>
-<row><cell>Oct 18</cell> <cell>Time &amp; Western Man</cell> <cell>Oct 19</cell></row>
-<row><cell>" 19</cell> <cell>Black Cat.</cell> <cell>" 25</cell></row>
-<row><cell>" 25</cell> <cell>Barnum's Own Story</cell> <cell>Nov. 15</cell></row>
-<row><cell>" 25</cell> <cell>Mother India</cell> <cell>- 15</cell></row>
-<row><cell>Nov 3</cell> <cell><del rend="overstrike"><bibl><title>Sun Also Rises</title></bibl> 42 owe</del></cell> <cell>---</cell></row>
-<row><cell>" 14</cell> <cell>Dial Nov.</cell> <cell>Dec 7</cell></row>
-<row><cell>" 14</cell> <cell>Story of Ivy</cell> <cell>Nov 26</cell></row>
-<row><cell> 23</cell> <cell>Shadow River</cell> <cell>Dec 7</cell></row>
-<row><cell>" 26</cell> <cell>Before the Bombardment</cell> <cell>" "</cell></row>
-<row><cell>" ?</cell> <cell>Bridge of San Luis Rey</cell> <cell>" "</cell></row>
-<row><cell>Dec 7</cell> <cell>Gambler.</cell> <cell>Feb 13</cell></row>
-<row><cell></cell> <cell>Insulted &amp; Injured</cell> <cell>Feb 13</cell></row>
-<row><cell></cell> <cell>Gallows Reach</cell> <cell>Feb. 6</cell></row>
-<row><cell>Feb. 4</cell> <cell><bibl><title>Lawrence of the Arabs</title></bibl> <note>pc Feb 21</note></cell> <cell>Feb. 24</cell></row>
-<row><cell>_ 9</cell> <cell>Torrents of Spring</cell> <cell>Mch 3</cell></row>
-<row><cell>" 11</cell> <cell>Recollections of the Irish War</cell> <cell>" 3</cell></row>
-<row><cell></cell> <cell>Riddle of the Irish</cell> <cell>Feb 13</cell></row>
-<row><cell>?</cell> <cell>Dial Jan 28</cell> <cell>Feb 13</cell></row>
-<row><cell>Feb 13</cell> <cell>World's Illusion 2 vols</cell> <cell>" 28</cell></row>
-<row><cell></cell> <cell><note><del rend="overstrike">(loaned 100f Feb 17)</del></note></cell> <cell/></row>
-<row><cell>" 24</cell> <cell>Emperor Jones</cell> <cell>Mch 3</cell></row>
-<row><cell>" 24</cell> <cell>Plough &amp; Stars</cell> <cell>" "</cell></row>
-<row><cell>" 28</cell> <cell>Magic Mountain 2 vols</cell> <cell>BB</cell></row>
-               	</table>
-</div>
-        	
-<div type="verso">
-	<pb facs="#s4" />
-<head>               	<persName>HEMINGWAY</persName></head>
-<table>		
-<row><cell>Mch 3</cell> <cell>Wonder book of the Wild</cell> <cell><date>March 8</date></cell></row>
-<row><cell>" 8</cell> <cell>Genius &amp; Character.</cell> <cell/></row>
-<row><cell></cell> <cell><note> S.B. received cheque for Frs. 350 for E.H.'s account</note></cell> <cell><date>Feb 22 1929</date></cell></row>
-<note>
-  <persName>Madame Jeanie Leitner</persName>
-  <address>
-    <addrLine>8 Hamau d'Alleray</addrLine>
-    <addrLine>Paris XVe</addrLine>
-  </address>
-</note>
-<row><cell>Ap 23</cell> <cell>Dial</cell> <cell>Dec. 1928</cell></row>
-<row><cell>" 23</cell> <cell>Autobiography of Lord Alfred Douglas</cell> <cell>May 16</cell></row>
-<row><cell>" 23</cell> <cell>Zola + His Time</cell> <cell>May 14</cell></row>
-<row><cell>" 26</cell> <cell>Guillotine + Its Servants</cell> <cell>May 14</cell></row>
-<row><cell>" 26</cell> <cell>Dial</cell> <cell>January 1929</cell></row>
-<row><cell>May 16</cell> <cell>Life in the Middle Ages vol II &amp; III</cell> <cell>BB</cell></row>
-<row><cell>" 21 </cell> <cell>Diary of Dostoievsky's Wife</cell> <cell>July 2</cell></row>
-<row><cell>June 1</cell> <cell>4 parcels = signed sheets) by reg. post = 42.80</cell> <cell/></row>
-<row><cell>June 3.</cell> <cell>Bookman's Day book</cell> <cell>June 5</cell></row>
-<row><cell>" 5</cell> <cell>Three Lives</cell> <cell/></row>
-<row><cell></cell> <cell>Mlle Turpin comes</cell> <cell/></row>
-<row><cell>" 21</cell> <cell>Contemporary Russian literature</cell> <cell/></row>
-<row><cell>" 24</cell> <cell>Round that Green Cloth.</cell> <cell><unclear>probably</unclear> BB</cell></row>
-<row><cell>" 29</cell> <cell>Politicians and the War</cell> <cell>July 2</cell></row>
-<row><cell>Aug 22</cell> <cell><unclear/> <bibl><title>Torrents of Spring</title></bibl><lb/>
-<note>see letter</note><lb/>
-<note>gave <bibl><title>Sun Also Rises</title></bibl>
-<bibl><title>In Our Time</title> to <persName>A. Marcos</persName></bibl>
-<unclear>wants <bibl><title>T. of S.</title></bibl></unclear>
-</note>
-</cell>
-<cell/></row>
-					
-</table>  </div>  </div>      
+            <div type="card">           
+              <div type="recto">        
+                <pb facs="#s7"/>
+                <head>  
+                  <date when="1931">1931</date>
+		  <persName>HEMINGWAY</persName>
+                  <date when="1931-09-07">Sept 7</date> 
+                </head>
 
-        	<div type="card">        	
-<div type="recto"><pb facs="#s5" />
-<head>	
-<date when="1929">1929</date>	<persName>HEMINGWAY</persName></head>
 
-<table>
-               	
-  <row><cell><date when="1929-09-19">Sept 19</date></cell> <cell><bibl><title>Lady Chatterley's Lover</title></bibl></cell> <cell><date when="1929-09-27">Sept. 27.</date></cell></row>
-<row><cell><date when="1929-09-19"/></cell> <cell><bibl><title>War</title></bibl></cell> <cell><date>27</date>.</cell></row>
-<row><cell><date when="1929-09-19"/></cell> <cell><bibl><title>This quarter No 5</title></bibl></cell> <cell><date>27</date>.</cell></row>
-<row><cell><date when="1929-09-25">25</date></cell> <cell><bibl><title><unclear/> of Sir W. Raleigh</title></bibl></cell> <cell><date when="1929-10-19">Oct 19</date></cell></row>
-<row><cell><date when="1929-09-27">27</date>.</cell> <cell><bibl><title>On the Eve</title></bibl></cell> <cell/></row>
-<row><cell><date when="1929-09-27">27</date></cell> <cell><bibl><title>A Sportsmans Sketches</title></bibl></cell> <cell/></row>
-<row><cell><date when="1929-09-27">27</date>.</cell> <cell><bibl><title>Idiot</title></bibl></cell> <cell><note>brought by a gentleman</note> <date when="1930-01-23">Jan 23</date></cell></row>
-<row><cell><date when="1929-10-11">Oct 11</date></cell> <cell><bibl><title>Balzac in <unclear/></title></bibl></cell> <cell><date when="1929-10-19">Oct 19</date></cell></row>
-</table>
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1931-09-07">Sept 7</date>
+		  <del rend="overstrike">
+		    <bibl ana="#borrowedItem" corresp="mep:000p90"><title>Virgin &amp; the Gipsy</title></bibl>
+		  </del>
+		  <date ana="#returned" when="1931-09-23">Sept 23</date>
+		</ab>
 
-<ab>
-<date when="1929-11-07">Nov 7</date>		to his credit		29F
-               				-- reg. postage		 5 40
-               									23 60
-<date when="1929-11-20">Nov 20</date> <bibl><title>Natural History of Animals</title></bibl> 	87.50
-               			<bibl><title>Grimm's Fairy Tales</title></bibl>			35
-               			<bibl><title>Yellow Fairy Book</title></bibl>			35
-               			<bibl><title>Swiss Family Robinson</title></bibl>		35
-               				not paid			   192.50
-               										23.60
-               	<date when="1929-11-23">Nov 23</date>		paid ------			   168.90
-	</ab>
-               	</div>
-<div type="verso">               	<pb facs="#s6" />
-               	<!-- verso blank -->
- </div>  
-        	</div> 
-<div type="card">        	
- <div type="recto">       	
-               	<pb facs="#s7" />
-<head> 	
-               	<date when="1931">1931</date>		<persName>HEMINGWAY</persName>
-               	<date when="1931-09-07">Sept 7</date> 
-</head>
- <ab>              <del rend="overstrike">
-	<table>
-               	 <row> <cell><date when="1931-09-07">Sept 7</date></cell> <cell><bibl><title>Virgin &amp; the Gipsy</title></bibl></cell> <cell><date when="1931-09-32">Sept 23</date></cell></row>
-               <row> <cell><date when="1931-09-07"/></cell> <cell><bibl><title>Pagany</title></bibl></cell> <cell><date when="1931-09-23">Sept 23</date></cell></row>
-               	</table></del>
-</ab>
- </div>
- <div type="verso">
- 	<pb facs="#s8" />
-               	<!-- verso blank -->
- </div>              	
- </div>
-        	<div type="card">
-<div type="recto">        		
-        		<pb facs="#s9" />
-<head>               	<date when="1937">1937</date>	<persName>HEMINGWAY Ernest</persName>
-               			
-               					<address><addrLine>Key West Florida</addrLine></address>
-               					<address><addrLine>Majestic Hotel Barcelona</addrLine></address></head>
-<table>
-  <row><cell><date when="1937-05-07">May 7</date></cell> <cell><bibl><title>Something of Myself</title></bibl></cell></row>
-  <row><cell><date when="1937-05-07"/></cell>            <cell><bibl><title>New Writing I</title></bibl></cell></row>
-  <row><cell><date when="1937-05-07"/></cell>            <cell><bibl><title>New Writing II</title></bibl></cell></row>
-               	
-  <row>
-    <cell><date when="1938-12">1938 Dec</date></cell>
-    <cell><note>borrowed <bibl><title>New Masses</title></bibl> &amp; other papers returned</note></cell>
-  </row>
+		<ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1931-09-07">Sept 7</date>
+		  <del rend="overstrike">
+		    <bibl ana="#borrowedItem" corresp="mep:00570t"><title>Pagany</title></bibl>
+		  </del>
+		  <date ana="#returned" when="1931-09-23">Sept 23</date>
+		</ab>
+              </div>
 
-  <row>
-    <cell><date when="1938-03-30">March 30</date></cell>
-    <cell>
-      <note><rs>SB</rs> sent off on <rs>Queen Mary</rs> Hemingway's play
-      to <address>
-      <persName>Maxwell E. Perkins</persName>
-      <addrLine>Scribner's, 597 5th Ave. N.Y.</addrLine>
-    </address>
-    1st class mail letter post, sealed	18.00
-      </note>
-    </cell>
-  </row>
 
-  <row>
-    <cell><date when="1938-03-26">March 26</date></cell>
-    <cell>
-      <note>
-	Hemingway gave A.M. $50<lb/>
-        changed at 32 frs 1600<lb/>
-        he bought from AM 636<lb/>
-	balance  964<lb/>
-      </note>
-    </cell>
-  </row>
-  <row>
-    <cell><date when="1938-03-27">March 27</date></cell>
-    <cell>
-      <note>
-	bought at Shakespeare &amp; Co 113
-	SB refunded 900    851
-	less 113					 787
-               						787 credit E.H.	      64
-               			less reviews (forgot to charge)?
-      </note>
-    </cell>
-  </row>
-</table>
-</div>
- <div type="verso">
- 	<pb facs="#s10" />
-               	<!-- verso blank -->
-</div>               	
- </div>   
-        	
-        	
-<div type="card">        	
-<div type="recto">
-	<pb facs="#s11" />
-<head>		<date when="1933">1933</date> <persName>Hemingway</persName></head>
-               	
-<table>
-  <row>
-    <cell><date when="1933-11-10">Nov 10</date></cell>
-    <cell><bibl><title>Sober Truth</title></bibl></cell>
-    <cell><date when="1933-11-21">Nov 21</date></cell>
-  </row>
-  <row>
-    <cell><date when="1933-11-10"/></cell>
-    <cell><bibl><title>Discursions on Travel Art and Life</title></bibl></cell>
-    <cell><date when="1933-11-21">Nov 21</date></cell>
-  </row>
-	<row>
-		<cell><date when="1933-11-10"/></cell>
-		<cell><bibl><title>Men of Ness	Nov 25</title></bibl></cell>
-		<cell><date when="1933-11-21">Nov 21</date></cell>
-	</row>
-	
-<row>	
-	<cell><date when="1933-11-10"/></cell>
-	<cell><bibl><title>Orators 33v</title></bibl>  <note>paid Nov 21</note></cell>
-	<cell/>
-</row>
-</table>
-</div>
-        	
-<div type="verso">
-	<pb facs="#s12" />
-               	<!-- verso blank -->
-               </div>
-        	</div>
-        	
- <div type="card">       	
- <div type="recto"> 
- 	<pb facs="#s13" />
-              <head> 	<date when="1938">1938</date>		<persName>Hemingway, Ernest</persName></head>
-<table>
-	
-<row><cell>Sept 7</cell> <cell>Life + Death of Spanish Towns</cell> <cell>Gone</cell></row>
-<row><cell>Sept 7</cell>	<cell>Dead Don't Care</cell>		<cell>Sept 10</cell></row>
-<row><cell>Sept 10</cell>	<cell>sent instead <bibl><title>&quot;With Malice Toward Some&quot;</title></bibl> for library</cell></row>
-<row><cell>Sept. 30</cell> <cell><bibl><title>Homage to Catalonia</title></bibl></cell></row>
-<row><cell>Oct 26</cell>	<cell>9 Saturday Reviews</cell></row>
-<row><cell>Nov</cell>		<cell><bibl><title>Education of Hyman Kaplan</title></bibl></cell></row>
-</table>
-<note>               		<date when="1938-11-28">Nov 28</date> 5 copies of <bibl><title>the Fifth column</title></bibl>
-               		arrived from Paris branch Brentanos (?!)
-               		to replace 5 copies <ref>SB</ref> gave to E.H.</note>
-</div>               	
- <div type="verso">
- 	<pb facs="#s14" />
+              <div type="verso">
+                <pb facs="#s8"/>
+                <!-- verso blank -->
+              </div>
 
-               	<!-- verso blank -->     	
- </div>               
-</div>            
-        </body>
-    </text>
-</TEI>
+            </div>
+
+
+
+            <div type="card">
+              <div type="recto">                        
+                <pb facs="#s9"/>
+                <head>
+		  <date when="1937">1937</date>
+		  <persName>HEMINGWAY Ernest</persName>
+                  <address><addrLine>Key West Florida</addrLine></address>
+                  <address><addrLine>Majestic Hotel Barcelona</addrLine></address>
+		</head>
+
+                <ab>
+		  <date ana="#checkedOut" when="1937-05-07">May 7</date>
+		  <bibl ana="#borrowedItem" corresp="mep:00250j"><title>Something of Myself</title></bibl>
+		  <bibl ana="#borrowedItem"><title>New Writing</title> I</bibl>
+		  <bibl ana="#borrowedItem"><title>New Writing</title> II</bibl>
+		</ab>
+                  
+
+                  <ab ana="#borrowingEvent">
+		    <date ana="#checkedOut" when="1938-12">1938 Dec</date>
+                    <note>borrowed <bibl ana="borrowedItem" corresp="mep:005714"><title>New Masses</title></bibl> &amp; other papers returned</note>
+                  </ab>
+
+		  <note>
+                    <date when="1938-03-30">March 30</date>
+		    <rs>SB</rs> sent off on <rs>Queen Mary</rs> Hemingway's play
+                      to <address>
+                      <persName>Maxwell E. Perkins</persName>
+                      <addrLine>Scribner's, 597 5th Ave. N.Y.</addrLine>
+                    </address>
+                    1st class mail letter post, sealed  18.00
+                  </note>
+
+
+                  <note>
+		    <date when="1938-03-26">March 26</date>
+                    <lb/>Hemingway gave A.M. $50
+                    <lb/>changed at 32 frs 1600
+                    <lb/>he bought from AM 636
+                    <lb/>balance  964
+                  </note>
+
+                  <note>
+                    <date when="1938-03-27">March 27</date>
+                    <lb/>bought at Shakespeare &amp; Co 113
+                    <lb/>    SB refunded 900    851
+                    <lb/>    less 113                                         787
+                    <lb/>    787 credit E.H.       64
+                    <lb/>    less reviews (forgot to charge)?
+                  </note>
+              </div>
+
+              <div type="verso">
+                <pb facs="#s10"/>
+                <!-- verso blank -->
+              </div>                    
+
+            </div>   
+            
+            
+            <div type="card">           
+              <div type="recto">
+                <pb facs="#s11"/>
+                <head>
+		  <date when="1933">1933</date>
+		  <persName>Hemingway</persName>
+		</head>
+                
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1933-11-10">Nov 10</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00572f"><title>Sober Truth</title></bibl>
+                    <date ana="#returned" when="1933-11-21">Nov 21</date>
+                  </ab>
+
+                  <ab ana="#borrowingEvent">
+		    <date ana="#checkedOut" when="1933-11-10"/>
+                    <bibl ana="#borrowedItem" corresp="mep:00573r"><title>Discursions on Travel Art and Life</title></bibl>
+                    <date ana="#returned" when="1933-11-21">Nov 21</date>
+                  </ab>
+
+                  <ab ana="#borrowingEvent">
+		    <date ana="#checkedOut" when="1933-11-10"/>
+                    <bibl ana="#borrowedItem"><title>Men of Ness</title></bibl>
+                    <date ana="#returned" when="1933-11-21">Nov 21</date>
+                  </ab>
+                  
+
+                  <ab ana="#borrowingEvent">    
+                    <date ana="#checkedOut" when="1933-11-10"/>
+                    <bibl ana="#borrowedItem" corresp="mep:00575c"><title>Orators 33v</title></bibl>
+		    <note>paid <date when="1933-11-21">Nov 21</date></note>
+                  </ab>
+
+              </div>
+              
+              <div type="verso">
+                <pb facs="#s12"/>
+                <!-- verso blank -->
+              </div>
+            </div>
+            
+            <div type="card">           
+              <div type="recto"> 
+                <pb facs="#s13"/>
+                <head>
+		  <date when="1938">1938</date>
+		  <persName>Hemingway, Ernest</persName>
+		</head>
+
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1938-09-07">Sept 7</date>
+		  <bibl ana="#borrowedItem"><title>Life + Death of Spanish Towns</title></bibl>
+		  <note>Gone</note>
+		</ab>
+
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1938-09-07">Sept 7</date>
+		  <bibl ana="#borrowedItem"><title>Dead Don't Care</title></bibl>
+		  <date ana="#returned" when="1938-09-10">Sept 10</date>
+		</ab>
+
+                <note>
+		  <date ana="#checkedOut" when="1938-09-10">Sept 10</date>
+		  sent instead <bibl ana="#borrowedItem" corresp="mep:003c3c"><title>"With Malice Toward Some"</title></bibl> for library
+		</note>
+
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1938-09-30">Sept. 30</date>
+		  <bibl ana="#borrowedItem" corresp="mep:00576p"><title>Homage to Catalonia</title></bibl>
+		</ab>
+
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1938-10-26">Oct 26</date>
+		  9 <bibl ana="#borrowedItem"><title>Saturday Review</title>s</bibl>
+		</ab>
+
+                <ab ana="#borrowingEvent">
+		  <date ana="#checkedOut" when="1938-11">Nov</date>
+		  <bibl ana="#borrowedItem" corresp="mep:005770"><title>Education of Hyman Kaplan</title></bibl>
+		</ab>
+
+                <note>
+                  <date ana="#checkedOut" when="1938-11-28">Nov 28</date> 5 copies of <bibl ana="#borrowedItem" corresp="mep:005789"><title>the Fifth column</title></bibl>
+                <lb/>arrived from Paris branch Brentanos (?!)
+                <lb/>to replace 5 copies <ref>SB</ref> gave to E.H.</note>
+              </div>                    
+              <div type="verso">
+                <pb facs="#s14"/>
+
+                <!-- verso blank -->            
+              </div>
+            </div>            
+          </body>
+        </text>
+      </TEI>

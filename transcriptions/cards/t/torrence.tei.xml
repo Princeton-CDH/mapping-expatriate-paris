@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#torr.ri">Mr. Ridgely Torrence</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/t/torrence/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     				<persName ref="#torr.ri">TORRENCE</persName>
                     <date when="1925-07-09">July 9					
@@ -78,12 +69,12 @@
                     						deposit_ 20
                     </ab>
                     <ab>
-                    <date when="1925-07-09">July 9</date>	<bibl><title>Dubliners</title></bibl>					<date when="1925-07-21">July 21</date>
-                    <date when="1925-07-23">July 23</date>	<bibl><title>Crock of Gold</title></bibl>				<date when="1925-08-04">Aug. 4</date>
+                    <date ana="#checkedOut" when="1925-07-09">July 9</date>	<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>					<date ana="#returned" when="1925-07-21">July 21</date>
+                    <date ana="#checkedOut" when="1925-07-23">July 23</date>	<bibl ana="#borrowedItem" corresp="mep:00094d"><title>Crock of Gold</title></bibl>				<date ana="#returned" when="1925-08-04">Aug. 4</date>
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

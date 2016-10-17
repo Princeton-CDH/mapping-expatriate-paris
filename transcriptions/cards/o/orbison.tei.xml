@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#orbi.ag">Agnes Orbison</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,47 +44,47 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/o/orbison/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1935">1935</date>			<persName ref="orbi.ag">ORBISON
                 				Miss Agnes</persName>
                 				<address><street>84 rue Botzaris</street></address>
                 				
                 				
-                <date when="1935-01-30">Jan 30</date>	<bibl><title>Wanderer in Paris	</title></bibl>				<date when="1935-02-02">2 Feb.</date>
-                		                                 <bibl><title>So youre going to Paris	</title></bibl>			<date when="1935-02-12">12</date>
-                <date when="1935-02-02">2 Feb_</date>	<bibl><title>Royal Flush	</title></bibl>					<date when="1935-02-12">	12 -</date>
-               <date when="1935-02-02"> 2 -	</date>	<bibl><title>Cold Count life in France</title></bibl>			<date when="1935-02-12">12 -</date>
+                <date ana="#checkedOut" when="1935-01-30">Jan 30</date>	<bibl ana="#borrowedItem" corresp="mep:00876d"><title>Wanderer in Paris	</title></bibl>				<date ana="#checkedOut" when="1935-02-02">2 Feb.</date>
+                		                                 <bibl ana="#borrowedItem" corresp="mep:008753"><title>So youre going to Paris	</title></bibl>			<date ana="#returned" when="1935-02-12">12</date>
+                <date ana="#checkedOut" when="1935-02-02">2 Feb_</date>	<bibl ana="#borrowedItem" corresp="mep:00288v"><title>Royal Flush	</title></bibl>					<date ana="#returned" when="1935-02-12">	12 -</date>
+               <date ana="#checkedOut" when="1935-02-02"> 2 -	</date>	<bibl ana="#borrowedItem" corresp="mep:00p338"><title>Cold Count life in France</title></bibl>			<date ana="#returned" when="1935-02-12">12 -</date>
                 </ab>
                </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                 
                 <!-- Verso Blank -->
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 <ab>
                <date when="1900-11-20"> Nov 20</date>	<persName>Mr Douglas Orbison</persName>
                 			<address><street>40, rue de Lille</street></address>
@@ -103,11 +94,11 @@
                 		
                 		1 mo 	1 vol					6 40
                 		
-            	<date when="1900-11-20">Nov 20</date>	<bibl><title>Relativity</title></bibl>					BB
-            	<date when="1900-11-24">Nov 24	</date><bibl><title>Tahiti</title></bibl>, <bibl><author>Calderon	</author></bibl>		<date when="1900-12-12">Dec 12</date>
-            	<date when="1900-12-12">Dec 12	</date><bibl><title>Strindberg 2nd Series</title></bibl>		<date when="1900-12-28">Dec 28</date>
-            	<date when="1900-12-28">Dec 28</date>	<bibl><title>When the King Loses his Head</title></bibl> BB
-            	<date when="1900-01-07">Jan 7</date>	<bibl><title>De Produndis	</title></bibl>			BB.
+            	<date ana="#checkedOut" when="1900-11-20">Nov 20</date>	<bibl ana="#borrowedItem" corresp="mep:00p34k"><title>Relativity</title></bibl>					BB
+            	<date ana="#checkedOut" when="1900-11-24">Nov 24	</date><bibl ana="#borrowedItem" corresp="mep:00p35w"><title>Tahiti</title></bibl>, <bibl ana="#borrowedItem"><author>Calderon	</author></bibl>		<date ana="#returned" when="1900-12-12">Dec 12</date>
+            	<date ana="#checkedOut" when="1900-12-12">Dec 12	</date><bibl ana="#borrowedItem" corresp="mep:00p366"><title>Strindberg 2nd Series</title></bibl>		<date ana="#returned" when="1900-12-28">Dec 28</date>
+            	<date ana="#checkedOut" when="1900-12-28">Dec 28</date>	<bibl ana="#borrowedItem" corresp="mep:00p37h"><title>When the King Loses his Head</title></bibl> BB
+            	<date ana="#checkedOut" when="1900-01-07">Jan 7</date>	<bibl ana="#borrowedItem" corresp="mep:00482g"><title>De Produndis	</title></bibl>			BB.
                 </ab>
                 </div>
             </div>

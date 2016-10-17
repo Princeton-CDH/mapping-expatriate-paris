@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#gras.r">R Pissot Grassot</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/grassot/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -74,7 +65,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                    
                <ab>	<date when="1936-07-01">July 1936</date>	<address><persName ref="#gras.r">GRASSOT</persName>	<street>9. rue des tanneries</street>
                	<persName ref="#gras.r">Mlle Pissot	Mme R.	</persName>	<street>9 rue des</street>
@@ -82,28 +73,28 @@
                				<street>Route de Tonneins		13</street>
                				<district>Marmende (Lot et Garonne)</district></address>
                	
-               <date when="1936-08-01">	Aug. 1.</date>	<bibl><title>Good Earth.</title></bibl>
-               			<bibl><title>Darby + Joan</title></bibl>					<date when="1936-08-27">Aug. 27</date>
-               	p. 3.60	<bibl><title>Elizabeth + Essex	</title></bibl>			<date when="1936-08-08">Aug. 8</date>
-                   <date when="1936-08-08">Aug. 8</date>	<bibl><title>Green Gates.</title></bibl>				<date when="1936-09-09">	Sept. 9</date>
-                   p. 2.10	<bibl><title>Faster Faster	</title></bibl>				<date when="1936-08-27">Aug. 27</date>
-               <date when="1936-10-23">	Oct 23.</date>	<bibl><title>Sparkenbroke</title></bibl>				<date when="1937-01-11">	Jan 11</date>
+               <date ana="#checkedOut" when="1936-08-01">	Aug. 1.</date>	<bibl ana="#borrowedItem"><title>Good Earth.</title></bibl>
+               			<bibl ana="#borrowedItem"><title>Darby + Joan</title></bibl>					<date ana="#checkedOut" when="1936-08-27">Aug. 27</date>
+               	p. 3.60	<bibl ana="#borrowedItem"><title>Elizabeth + Essex	</title></bibl>			<date ana="#returned" when="1936-08-08">Aug. 8</date>
+                   <date ana="#checkedOut" when="1936-08-08">Aug. 8</date>	<bibl ana="#borrowedItem"><title>Green Gates.</title></bibl>				<date ana="#checkedOut" when="1936-09-09">	Sept. 9</date>
+                   p. 2.10	<bibl ana="#borrowedItem"><title>Faster Faster	</title></bibl>				<date ana="#returned" when="1936-08-27">Aug. 27</date>
+               <date ana="#checkedOut" when="1936-10-23">	Oct 23.</date>	<bibl ana="#borrowedItem"><title>Sparkenbroke</title></bibl>				<date ana="#returned" when="1937-01-11">	Jan 11</date>
                	p. 2.80
-                   <date when="1936-12-04">Dec. 4</date>	<bibl><title>Mourning comes Electra</title></bibl> p. 2.35	<date when="1937-01-11">	Jan 11</date>
+                   <date ana="#checkedOut" when="1936-12-04">Dec. 4</date>	<bibl ana="#borrowedItem"><title>Mourning comes Electra</title></bibl> p. 2.35	<date ana="#returned" when="1937-01-11">	Jan 11</date>
                	p. 2.35				Sent pc Dec <unclear/>
                			<date when="1937-01-27">Jan 27</date> sent bill + postage 30.85
-                   <date when="1937-01-27">Jan 27</date>	<bibl><title>Sand <unclear/>	</title></bibl>			p.  1.80 <date when="1937-08-03">Aug 3</date>
+                   <date ana="#checkedOut" when="1937-01-27">Jan 27</date>	<bibl ana="#borrowedItem"><title>Sand <unclear/>	</title></bibl>			p.  1.80 <date ana="#returned" when="1937-08-03">Aug 3</date>
                		(<date when="1937-03-09">March 9th</date> sent bill for subsc &amp; postage 188.35)
               <date when="1937-03-19"> 	March. 19. </date>Renewed <date when="1937-01-01">Jan 1st 1937</date> - <date when="1938-01-01">Jan 1st 1938.</date> 157.50
                		by mandat 188.35	paid postage up to date  30.85
                			SB acknowledged March 19 - 37
-               	<date when="1937-07-01">July. 1.</date> <bibl><title>Silver Rattle</title></bibl> p. 2.90		<date when="1937-08-03">	Aug 3.</date>
-               	<date when="1937-08-06">Aug. 6.</date>	<bibl><title>They walk in the city</title></bibl> p. 3.20	<date when="1937-08-28">Aug 28</date>
+               	<date ana="#checkedOut" when="1937-07-01">July. 1.</date> <bibl ana="#borrowedItem"><title>Silver Rattle</title></bibl> p. 2.90		<date ana="#returned" when="1937-08-03">	Aug 3.</date>
+               	<date ana="#checkedOut" when="1937-08-06">Aug. 6.</date>	<bibl ana="#borrowedItem"><title>They walk in the city</title></bibl> p. 3.20	<date ana="#returned" when="1937-08-28">Aug 28</date>
                		(Remennecourt par Rengry.  Meuse)</ab>
                </div>
                	
                	<div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                 </div>
             </div>

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  Mlle Marie-Thérèse Vieillot</title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/vieillot/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1940">1940</date>		<persName ref="#viei.ma">VIEILLOT
                     			                  Mlle Marie-Thérèse</persName>
@@ -82,18 +73,18 @@
                     					(bal. due 5) pd. <date when="1940-03-08">March 8</date>
                     </ab>
                     <ab>
-                    <date when="1940-03-01">March 1</date>	<bibl><title>Death of the Heart</title></bibl>	      <date when="1940-03-08">March 8</date>
-                    <date when="1940-03-08">	8</date>	<bibl><title>House in Paris</title></bibl>		      <date when="1940-03-15">March 15</date>
-                    <date when="1940-03-15">	15</date>	<bibl><title>Adventures of a young man</title></bibl> <date when="1940-03-22">March 22</date>
-                    <date when="1940-03-22">	22</date>	<bibl><title>Passage to India</title></bibl>		  <date when="1940-03-29">March 29</date>
-                    <date when="1940-03-22">	22</date>	<bibl><title>Lions and Shadows</title></bibl>		  <date when="1940-04-05">April 5</date>
-                    <date when="1940-04-05">April 5</date>	<bibl><title>Grapes of Wrath</title></bibl>			  <date when="1940-04-29">April 29</date>
-                    <date when="1940-04-11">	11</date>	<bibl><title>  "			"</title></bibl>  renewed			_______
-                    <date when="1940-04-29">	29</date>	<bibl><title>Disinterited</title></bibl>. ren <date when="1940-05-06">May 6th</date>	<date when="1940-06-07">June 7</date>
+                    <date ana="#checkedOut" when="1940-03-01">March 1</date>	<bibl ana="#borrowedItem" corresp="mep:003m95"><title>Death of the Heart</title></bibl>	      <date ana="#returned" when="1940-03-08">March 8</date>
+                    <date ana="#checkedOut" when="1940-03-08">	8</date>	<bibl ana="#borrowedItem" corresp="mep:003335"><title>House in Paris</title></bibl>		      <date ana="#returned" when="1940-03-15">March 15</date>
+                    <date ana="#checkedOut" when="1940-03-15">	15</date>	<bibl ana="#borrowedItem" corresp="mep:00013w"><title>Adventures of a young man</title></bibl> <date ana="#returned" when="1940-03-22">March 22</date>
+                    <date ana="#checkedOut" when="1940-03-22">	22</date>	<bibl ana="#borrowedItem" corresp="mep:00117c"><title>Passage to India</title></bibl>		  <date ana="#returned" when="1940-03-29">March 29</date>
+                    <date ana="#checkedOut" when="1940-03-22">	22</date>	<bibl ana="#borrowedItem" corresp="mep:00095q"><title>Lions and Shadows</title></bibl>		  <date ana="#returned" when="1940-04-05">April 5</date>
+                    <date ana="#checkedOut" when="1940-04-05">April 5</date>	<bibl ana="#borrowedItem" corresp="mep:00012k"><title>Grapes of Wrath</title></bibl>			  <date ana="#returned" when="1940-04-29">April 29</date>
+                    <date ana="#checkedOut" when="1940-04-11">	11</date>	<bibl ana="#borrowedItem" corresp="mep:00666n"><title>  "			"</title></bibl>  renewed			_______
+                    <date ana="#checkedOut" when="1940-04-29">	29</date>	<bibl ana="#borrowedItem" corresp="mep:008486"><title>Disinterited</title></bibl>. ren <date ana="#returned" when="1940-05-06">May 6th</date>	<date when="1940-06-07">June 7</date>
                     </ab>	
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

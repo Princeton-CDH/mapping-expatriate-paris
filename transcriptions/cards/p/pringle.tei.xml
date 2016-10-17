@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#prin.su">Susan Pringle</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,23 +44,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/pringle/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1937">1937</date>		<persName ref="prin.su">PRINGLE
                 			Miss.</persName>
@@ -82,70 +73,70 @@
                 						dep		396
                 							dep				100
                 							
-                    <date when="1937-10-19">Oct 19</date>	<bibl><title>Whiteoak Harvest</title></bibl>					 <date when="1937-11-02">Nov 2</date>
-                    <bibl><title>Mary Queen of Scots</title></bibl>, <bibl><author>Zureig</author></bibl>			 <date when="1937-11-02">Nov 2</date>
-                    <date when="1937-11-02">Nov 2</date>	<bibl><title>Stranger Prince	</title></bibl>					<date when="1937-11-10"> Nov 10</date>
-                    <date when="1937-11-02">Nov 2</date>	<bibl><title>Memoir of A E</title></bibl>						<date when="1937-11-10"> Nov 10</date>
-               <date when="1937-11-10"> Nov 10</date>	<bibl><title>Garden Party</title></bibl>	ret. en post from <orgName>Le Chesnay</orgName> <date when="1937-11-16">Nov 16</date>
-                    <date when="1937-11-10"> Nov 10</date>	<bibl><title>Genghis Khan</title></bibl>, <bibl><author>Lamb</author></bibl>					<date when="1937-11-01">Nov 1</date>
-                    <date when="1937-11-10"> Nov 10</date>	<bibl><title>Very House</title></bibl>	returned by post from	<date when="1937-11-16">Nov 16</date>
-                    <date when="1937-11-10"> Nov 10</date>	<bibl><title>Ordeal in England</title></bibl>	<orgName>Le Chesnay</orgName>		<date when="1937-11-26">Nov 26</date>
+                    <date ana="#checkedOut" when="1937-10-19">Oct 19</date>	<bibl ana="#borrowedItem" corresp="mep:002w7h"><title>Whiteoak Harvest</title></bibl>					 <date ana="#checkedOut" when="1937-11-02">Nov 2</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sb6v"><title>Mary Queen of Scots</title></bibl>, <bibl ana="#borrowedItem"><author>Zureig</author></bibl>			 <date ana="#returned" when="1937-11-02">Nov 2</date>
+                    <date ana="#checkedOut" when="1937-11-02">Nov 2</date>	<bibl ana="#borrowedItem" corresp="mep:00fk6c"><title>Stranger Prince	</title></bibl>					<date ana="#returned" when="1937-11-10"> Nov 10</date>
+                    <date ana="#checkedOut" when="1937-11-02">Nov 2</date>	<bibl ana="#borrowedItem" corresp="mep:00112t"><title>Memoir of A E</title></bibl>						<date ana="#returned" when="1937-11-10"> Nov 10</date>
+               <date ana="#checkedOut" when="1937-11-10"> Nov 10</date>	<bibl ana="#borrowedItem" corresp="mep:004k5w"><title>Garden Party</title></bibl>	ret. en post from <orgName>Le Chesnay</orgName> <date when="1937-11-16">Nov 16</date>
+                    <date ana="#checkedOut" when="1937-11-10"> Nov 10</date>	<bibl ana="#borrowedItem" corresp="mep:00hs4w"><title>Genghis Khan</title></bibl>, <bibl ana="#borrowedItem"><author>Lamb</author></bibl>					<date ana="#returned" when="1937-11-01">Nov 1</date>
+                    <date ana="#checkedOut" when="1937-11-10"> Nov 10</date>	<bibl ana="#borrowedItem" corresp="mep:002f2c"><title>Very House</title></bibl>	returned by post from	<date ana="#returned" when="1937-11-16">Nov 16</date>
+                    <date ana="#checkedOut" when="1937-11-10"> Nov 10</date>	<bibl ana="#borrowedItem" corresp="mep:00892q"><title>Ordeal in England</title></bibl>	<orgName>Le Chesnay</orgName>		<date when="1937-11-26">Nov 26</date>
                 				sent list<date when="1937-11-17"> Nov 17</date>
-                    <date when="1937-11-26">26 </date>2.00	<bibl><title>We are Not Alone</title></bibl>				<date when="1937-12-06">Dec 6 </date>
-              <date when="1937-12-01">  Dec 1</date>  3.20	<bibl><title>Nothing is Safe</title></bibl>		P. 3.20		<date when="1937-12-10">Dec 10</date>
-              <date when="1937-12-06">  Dec. 6 </date>		<bibl><title>Pepita.	</title></bibl>						<date when="1937-12-20">Dec 20</date>
-                <date when="1937-12-06">Dec 6 </date> 4.40	<bibl><title>Three Ways Home.</title></bibl>				<date when="1937-12-14">Dec 14</date>
-                <date when="1937-12-15">Dec 15</date> 5,60	<bibl><title>John Cornelius	</title></bibl>				<date when="1938-01-05">Jan. 5</date>
-                			<bibl><title>Forbidden Journey</title></bibl>				<date when="1937-12-29">Dec 29</date>
-                	<date when="1937-12-15">15</date> 3,20	<bibl><title>Palmerston</title></bibl>						<date when="1938-12-24">Dec 24</date>
-                	<date when="1937-12-29">29</date> 3,20	<bibl><title>Diary of Selma Lägerlog	</title></bibl>		<date when="1939-01-05">Jan. 5</date>
+                    <date ana="#checkedOut" when="1937-11-26">26 </date>2.00	<bibl ana="#borrowedItem" corresp="mep:00ck5k"><title>We are Not Alone</title></bibl>				<date ana="#returned" when="1937-12-06">Dec 6 </date>
+              <date ana="#checkedOut" when="1937-12-01">  Dec 1</date>  3.20	<bibl ana="#borrowedItem" corresp="mep:009m70"><title>Nothing is Safe</title></bibl>		P. 3.20		<date ana="#returned" when="1937-12-10">Dec 10</date>
+              <date ana="#checkedOut" when="1937-12-06">  Dec. 6 </date>		<bibl ana="#borrowedItem" corresp="mep:001d2v"><title>Pepita.	</title></bibl>						<date ana="#returned" when="1937-12-20">Dec 20</date>
+                <date ana="#checkedOut" when="1937-12-06">Dec 6 </date> 4.40	<bibl ana="#borrowedItem" corresp="mep:00392h"><title>Three Ways Home.</title></bibl>				<date ana="#returned" when="1937-12-14">Dec 14</date>
+                <date ana="#checkedOut" when="1937-12-15">Dec 15</date> 5,60	<bibl ana="#borrowedItem" corresp="mep:003738"><title>John Cornelius	</title></bibl>				<date ana="#checkedOut" when="1938-01-05">Jan. 5</date>
+                			<bibl ana="#borrowedItem" corresp="mep:005z3j"><title>Forbidden Journey</title></bibl>				<date ana="#returned" when="1937-12-29">Dec 29</date>
+                	<date ana="#checkedOut" when="1937-12-15">15</date> 3,20	<bibl ana="#borrowedItem" corresp="mep:00sb75"><title>Palmerston</title></bibl>						<date ana="#returned" when="1938-12-24">Dec 24</date>
+                	<date ana="#checkedOut" when="1937-12-29">29</date> 3,20	<bibl ana="#borrowedItem" corresp="mep:003677"><title>Diary of Selma Lägerlog	</title></bibl>		<date ana="#returned" when="1939-01-05">Jan. 5</date>
                 <date when="1938">1938</date>
-                <date when="1938-01-05">Jan 5</date>		<bibl><title>Together &amp; Apart</title></bibl>				<date when="1939-01-17">Jan. 17.</date>
-                	<date when="1938-01-05">5</date>  3,20	<bibl><title>Christal Cabinet</title></bibl>				<date when="1939-01-27">Jan 27</date>
-                	<date when="1938-01-05">5</date>  2,00	<bibl><title>All Passion Spent	</title></bibl>			<date when="1939-01-19">Jan 19.</date>
-                <date when="1938-01-19">Jan 19</date> 4.40	<bibl><title>American Doctors Odyssey</title></bibl>		<date when="1939-01-22">Jan 22</date>
-                 <date when="1938-01-22">"	22</date>		<bibl><title>The Other Side</title></bibl>					<date when="1939-02-08">Feb 8</date>
-                 <date when="1938-01-22">"	22</date>		<bibl><title>The Citadel</title></bibl>						<date when="1939-01-26">Jan 26</date>
-                 <date when="1938-01-22">"	22</date>		<bibl><title>Charles Kingsley</title></bibl>				<date when="1939-02-04">Feb 4</date>
+                <date ana="#checkedOut" when="1938-01-05">Jan 5</date>		<bibl ana="#borrowedItem" corresp="mep:003r3d"><title>Together &amp; Apart</title></bibl>				<date ana="#returned" when="1939-01-17">Jan. 17.</date>
+                	<date ana="#checkedOut" when="1938-01-05">5</date>  3,20	<bibl ana="#borrowedItem" corresp="mep:003916"><title>Christal Cabinet</title></bibl>				<date ana="#returned" when="1939-01-27">Jan 27</date>
+                	<date ana="#checkedOut" when="1938-01-05">5</date>  2,00	<bibl ana="#borrowedItem" corresp="mep:004f07"><title>All Passion Spent	</title></bibl>			<date ana="#returned" when="1939-01-19">Jan 19.</date>
+                <date ana="#checkedOut" when="1938-01-19">Jan 19</date> 4.40	<bibl ana="#borrowedItem" corresp="mep:002q18"><title>American Doctors Odyssey</title></bibl>		<date ana="#returned" when="1939-01-22">Jan 22</date>
+                 <date ana="#checkedOut" when="1938-01-22">"	22</date>		<bibl ana="#borrowedItem" corresp="mep:004c7v"><title>The Other Side</title></bibl>					<date ana="#returned" when="1939-02-08">Feb 8</date>
+                 <date ana="#checkedOut" when="1938-01-22">"	22</date>		<bibl ana="#borrowedItem" corresp="mep:001c74"><title>The Citadel</title></bibl>						<date ana="#returned" when="1939-01-26">Jan 26</date>
+                 <date ana="#checkedOut" when="1938-01-22">"	22</date>		<bibl ana="#borrowedItem" corresp="mep:00374k"><title>Charles Kingsley</title></bibl>				<date ana="#returned" when="1939-02-04">Feb 4</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <ab>
                 				<persName ref="prin.su">PRINGLE</persName>
-                <date when="1939-01-29">Jan 29</date>	<bibl><title>Helen's Tower</title></bibl>					<date when="1939-02-14">Febr. 14</date>
-                	<date when="1939-01-29">29</date>	<bibl><title>These Foolish Things</title></bibl>			<date when="1939-02-04">Feb. 4</date>
-                    <date when="1939-02-08">Feb 8</date> 	3.20	<bibl><title>Edge of Taos Desert	</title></bibl>		<date when="1939-02-12">Feb 12</date>
-            	<date when="1939-02-12">Feb. 12</date>			<bibl><title>Enchanter's Nightshade</title></bibl> (p.c. <date when="1939-02-28">Feb 28</date>)<date when="1939-03-02"> March 2</date>
-            	<date when="1939-02-21">Feb. 21</date>	3,20	<bibl><title>Ends &amp; Means</title></bibl>				<date when="1939-03-01">March 1</date>
+                <date ana="#checkedOut" when="1939-01-29">Jan 29</date>	<bibl ana="#borrowedItem" corresp="mep:005s07"><title>Helen's Tower</title></bibl>					<date ana="#returned" when="1939-02-14">Febr. 14</date>
+                	<date ana="#checkedOut" when="1939-01-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:008870"><title>These Foolish Things</title></bibl>			<date ana="#returned" when="1939-02-04">Feb. 4</date>
+                    <date ana="#checkedOut" when="1939-02-08">Feb 8</date> 	3.20	<bibl ana="#borrowedItem" corresp="mep:00377h"><title>Edge of Taos Desert	</title></bibl>		<date ana="#returned" when="1939-02-12">Feb 12</date>
+            	<date ana="#checkedOut" when="1939-02-12">Feb. 12</date>			<bibl ana="#borrowedItem" corresp="mep:001f52"><title>Enchanter's Nightshade</title></bibl> (p.c. <date ana="#returned" when="1939-02-28">Feb 28</date>)<date when="1939-03-02"> March 2</date>
+            	<date ana="#checkedOut" when="1939-02-21">Feb. 21</date>	3,20	<bibl ana="#borrowedItem" corresp="mep:005105"><title>Ends &amp; Means</title></bibl>				<date ana="#returned" when="1939-03-01">March 1</date>
             						wrote to <persName ref="prin.su">Miss P.</persName> <date when="1939-02-24">Feb 24</date>
             						to return
-            	<date when="1939-03-03">March 3</date>	5,60	<bibl><title>This is My Story	</title></bibl>		<date when="1939-04-01">April 1</date>
-            		 <date when="1939-03-03">3</date>		<bibl><title>	Boy David	</title></bibl>				<date when="1939-03-12">March 12</date>
-            		 <date when="1939-03-12">12</date>	4.40	<bibl><title>Assignment in Utopia </title></bibl>(Postage)	<date when="1939-03-26">March 26</date>
+            	<date ana="#checkedOut" when="1939-03-03">March 3</date>	5,60	<bibl ana="#borrowedItem" corresp="mep:00cv07"><title>This is My Story	</title></bibl>		<date ana="#returned" when="1939-04-01">April 1</date>
+            		 <date ana="#checkedOut" when="1939-03-03">3</date>		<bibl ana="#borrowedItem"><title>	Boy David	</title></bibl>				<date ana="#returned" when="1939-03-12">March 12</date>
+            		 <date ana="#checkedOut" when="1939-03-12">12</date>	4.40	<bibl ana="#borrowedItem" corresp="mep:00fd9x"><title>Assignment in Utopia </title></bibl>(Postage)	<date ana="#returned" when="1939-03-26">March 26</date>
             	<date when="1939-03-26">Mar. 26</date>	
-            	<date when="1939-04-06">Ap. 6</date>	3.20	<bibl><title>The Summing Up.	</title></bibl>			<date when="1939-04-23">April 23</date>
-            	<date when="1939-04-11">April 11 </date>		<bibl><author>Mary Shelley</author></bibl> <bibl><title> Those were the days</title></bibl>	<date when="1939-04-24">April 24</date>
-            	<date when="1939-04-25">Apr 25</date>	3,20	<bibl><title>Northwest Passage</title></bibl>			<date when="1939-05-24">May 24</date>
-            	<date when="1939-04-29">April 29</date> 2.		<bibl><title>Spanish House</title></bibl>				<date when="1939-05-16">May 16</date>
-            	<date when="1939-05-22">May 22</date> 	3,20	<bibl><title>Across the Frontiers</title></bibl>		<date when="1939-06-09">June 9</date>
-            					<bibl><title>The V</title></bibl>
-            	<date when="1939-07-30">July 30</date>			<bibl><title>Elizabeth &amp; Essex	</title></bibl>		<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Years	</title></bibl>					<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Winged Pharaoh</title></bibl>				<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Things that Have Puzzled</title></bibl>	<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Prodigal Parents</title></bibl>			<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Rumblin Galleries</title></bibl>			<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Narrow Land</title></bibl>					<date when="1939-09-09">Sept 9</date>
-                    <bibl><title>Lamb in his Bosom</title></bibl>			<date when="1939-09-09">Sept 9</date>
-            	<date when="1939-09-09">Sept 9</date>			<bibl><title>Eleanor of Aquitaine</title></bibl>		<date when="1939-09-28">Sept 28</date>
-            					<bibl><title>Life of Katherine Mansfield</title></bibl>	<date when="1939-09-28">Sept 28</date>
+            	<date ana="#checkedOut" when="1939-04-06">Ap. 6</date>	3.20	<bibl ana="#borrowedItem" corresp="mep:003944"><title>The Summing Up.	</title></bibl>			<date ana="#returned" when="1939-04-23">April 23</date>
+            	<date ana="#checkedOut" when="1939-04-11">April 11 </date>		<bibl ana="#borrowedItem"><author>Mary Shelley</author></bibl> <bibl ana="#borrowedItem"><title> Those were the days</title></bibl>	<date ana="#returned" when="1939-04-24">April 24</date>
+            	<date ana="#checkedOut" when="1939-04-25">Apr 25</date>	3,20	<bibl ana="#borrowedItem" corresp="mep:00399p"><title>Northwest Passage</title></bibl>			<date ana="#returned" when="1939-05-24">May 24</date>
+            	<date ana="#checkedOut" when="1939-04-29">April 29</date> 2.		<bibl ana="#borrowedItem" corresp="mep:000441"><title>Spanish House</title></bibl>				<date ana="#returned" when="1939-05-16">May 16</date>
+            	<date ana="#checkedOut" when="1939-05-22">May 22</date> 	3,20	<bibl ana="#borrowedItem" corresp="mep:00sb8g"><title>Across the Frontiers</title></bibl>		<date ana="#checkedOut" when="1939-06-09">June 9</date>
+            					<bibl ana="#borrowedItem" corresp="mep:00sb9s"><title>The V</title></bibl>
+            	<date ana="#checkedOut" when="1939-07-30">July 30</date>			<bibl ana="#borrowedItem" corresp="mep:000t7g"><title>Elizabeth &amp; Essex	</title></bibl>		<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002c7c"><title>Years	</title></bibl>					<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002b3v"><title>Winged Pharaoh</title></bibl>				<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sc08"><title>Things that Have Puzzled</title></bibl>	<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00fj7d"><title>Prodigal Parents</title></bibl>			<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sc1k"><title>Rumblin Galleries</title></bibl>			<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sc2w"><title>Narrow Land</title></bibl>					<date ana="#checkedOut" when="1939-09-09">Sept 9</date>
+                    <bibl ana="#borrowedItem" corresp="mep:003k78"><title>Lamb in his Bosom</title></bibl>			<date ana="#returned" when="1939-09-09">Sept 9</date>
+            	<date ana="#checkedOut" when="1939-09-09">Sept 9</date>			<bibl ana="#borrowedItem" corresp="mep:005t80"><title>Eleanor of Aquitaine</title></bibl>		<date ana="#checkedOut" when="1939-09-28">Sept 28</date>
+            					<bibl ana="#borrowedItem" corresp="mep:00fg4x"><title>Life of Katherine Mansfield</title></bibl>	<date ana="#returned" when="1939-09-28">Sept 28</date>
                 </ab>
                 </div>
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab>
-                <date when="1931">1931</date>		<persName  ref="prin.su">PRINGLE</persName>
+                <date when="1931">1931</date>		<persName ref="prin.su">PRINGLE</persName>
                 
                 		<persName ref="prin.su">Lady Pringle</persName>
                 				<address><orgName>Hotel Ste Anne</orgName>
@@ -154,15 +145,15 @@
                 	1 m		1 vol	<date from="1931-02-27">Feb. 27th</date> - to<date to="1931-03-27"> Mch 27th</date>	40 -
                 									no dep.
                 									
-               <date when="1931-02-27"> Feb. 27th.</date>	<bibl><title>The Duel of the <unclear/>	</title></bibl>		_____
-                    <bibl><title>The Fool of the Family	</title></bibl>	<date when="1931-02-28">Feb. 28</date>
-                    <date when="1931-02-28">Feb. 28</date>.	<bibl><title>Precious Bane</title></bibl>				 <date when="1931-03-02"> Mch 2</date>
-                    <date when="1931-03-02"> Mch 2</date>		<bibl><title>Conquest of Happiness</title></bibl>		<date when="1931-03-05">"	5</date>
-                 <date when="1931-03-05">"	5</date>		<bibl><title>Look Homeward Angel.</title></bibl>		<date when="1931-03-20"> "	20</date>
+               <date ana="#checkedOut" when="1931-02-27"> Feb. 27th.</date>	<bibl ana="#borrowedItem" corresp="mep:00sc36"><title>The Duel of the <unclear/>	</title></bibl>		_____
+                    <bibl ana="#borrowedItem" corresp="mep:003r6b"><title>The Fool of the Family	</title></bibl>	<date ana="#returned" when="1931-02-28">Feb. 28</date>
+                    <date ana="#checkedOut" when="1931-02-28">Feb. 28</date>.	<bibl ana="#borrowedItem" corresp="mep:000q1s"><title>Precious Bane</title></bibl>				 <date ana="#returned" when="1931-03-02"> Mch 2</date>
+                    <date ana="#checkedOut" when="1931-03-02"> Mch 2</date>		<bibl ana="#borrowedItem" corresp="mep:00kt8w"><title>Conquest of Happiness</title></bibl>		<date ana="#returned" when="1931-03-05">"	5</date>
+                 <date ana="#checkedOut" when="1931-03-05">"	5</date>		<bibl ana="#borrowedItem" corresp="mep:001682"><title>Look Homeward Angel.</title></bibl>		<date ana="#returned" when="1931-03-20"> "	20</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 

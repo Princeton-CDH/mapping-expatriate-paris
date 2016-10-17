@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rivi.je">Jean Riviere</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -54,16 +45,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/riviere/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
-                <div type="recto"><pb facs="#s1" />
+                <div type="recto"><pb facs="#s1"/>
               <head>  
                 <date when="1900-05-10">May 10</date>		<persName ref="#rivi.je">Monsieur 	Jean Riviere</persName>
                 				<address><street>16 rue de l'Université</street></address>
@@ -73,19 +64,19 @@
                 		<ab>subsc 	6	mos.	1  vol.			20
                 							1</ab>
                 											<ab><date when="1900-05-26">May 26</date>
-                <date when="1900-05-10">May 10</date>		<bibl><title>Erewhon</title></bibl>
+                <date ana="#checkedOut" when="1900-05-10">May 10</date>		<bibl ana="#borrowedItem"><title>Erewhon</title></bibl>
                 
-            	<date when="1900-05-26">May 26</date>			<bibl><title>"	</title></bibl>						<date when="1900-07-15">July 15</date>
+            	<date ana="#checkedOut" when="1900-05-26">May 26</date>			<bibl ana="#borrowedItem"><title>"	</title></bibl>						<date ana="#returned" when="1900-07-15">July 15</date>
             	
-            	<date when="1900-07-15">July 15</date>		<bibl><title>Dansany's Plays</title></bibl>					<date when="1900-09-29">Sept 29</date>
-            				<bibl><title>Buried Alive</title></bibl>
-            				<bibl><title>Huckleberry Finn</title></bibl>
+            	<date ana="#checkedOut" when="1900-07-15">July 15</date>		<bibl ana="#borrowedItem"><title>Dansany's Plays</title></bibl>					<date ana="#checkedOut" when="1900-09-29">Sept 29</date>
+            				<bibl ana="#borrowedItem"><title>Buried Alive</title></bibl>
+            				<bibl ana="#borrowedItem"><title>Huckleberry Finn</title></bibl>
             				
-            	<date when="1900-09-29">Sept 29</date>
-            	<date when="1900-09-25">Sept 25</date>		<bibl><title>Waley's Chinese Poems</title></bibl>			<date when="1900-10-18">Oct 18</date>
-            				<bibl><title>Egoist</title></bibl></ab>
+            	<date ana="#returned" when="1900-09-29">Sept 29</date>
+            	<date ana="#checkedOut" when="1900-09-25">Sept 25</date>		<bibl ana="#borrowedItem"><title>Waley's Chinese Poems</title></bibl>			<date ana="#checkedOut" when="1900-10-18">Oct 18</date>
+            				<bibl ana="#borrowedItem"><title>Egoist</title></bibl></ab>
             </div>    
-            <div type="verso">    <pb facs="#s2" />
+            <div type="verso">    <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
              </div>   

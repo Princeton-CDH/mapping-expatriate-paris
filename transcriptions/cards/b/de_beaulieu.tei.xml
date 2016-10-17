@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#beau.be">Benoit de Beaulieu</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -49,24 +40,24 @@
             <change who="#yournetid">
                 <ab>
                     
-                    Card 1: 3 rue Emilie-Alléez --> Emile-Allez
+                    Card 1: 3 rue Emilie-Alléez --&gt; Emile-Allez
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/de_beaulieu/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 			<persName ref="#beau.be">Benoit de Beaulieu</persName>
                 			<address>
@@ -77,12 +68,12 @@
                 			  1m 1vol a				25
                 			  		dep mel	<date when="1900-02-14">Feb 14</date>	50v
                 
-                <date when="1900-01-13">Jan 13</date>	<bibl><title>Black Mischief</title></bibl>					<date when="1900-01-23">Jan 23</date>
-                <date when="1900-01-23">Jan 23</date>	<bibl><title>Wuthering Heights</title></bibl>				<date when="1900-02-14">Feb 14</date>
+                <date ana="#checkedOut" when="1900-01-13">Jan 13</date>	<bibl ana="#borrowedItem" corresp="mep:003m67"><title>Black Mischief</title></bibl>					<date ana="#returned" when="1900-01-23">Jan 23</date>
+                <date ana="#checkedOut" when="1900-01-23">Jan 23</date>	<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>				<date ana="#returned" when="1900-02-14">Feb 14</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Blank Verso -->
                 </div>

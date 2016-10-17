@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of Material from a Borrower's Card: <persName ref="#beac.sy">Sylvia Beach</persName></title>
@@ -46,10 +44,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/beach/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
          <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
@@ -57,7 +55,7 @@
             
                 <div type="card">
                    <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                 
                <head> 
                 <date when="1956">1956</date>	<persName>BEACH, Sylvia</persName>
@@ -68,26 +66,26 @@
                </head>
                 		 
                <ab>
-                <date when="1956-01">Jan</date>		
-                       <bibl> <title>Toussaint Louverture</title>, <author>Michel Vaucaire</author></bibl>
-                		<bibl><title>La Vie et L'Habitude</title>, <author>Builer</author> 
-                			trans by <editor role="translator">Larbaud</editor></bibl>             returned <date when="1956-04-01">Ap1</date>
-                		<bibl><title>Reviews: great Works of great authors:
-                		 criticisms</title> by <author>Poe</author></bibl>				 	<date when="1956-04-01">April 1</date>
-                		<bibl><author>A Lamartine</author>: <title>J.J. Rousseau</title></bibl>.
-                		<bibl><author>Coleridge</author> <title>La Chanson du vieux Marion</title>
+                <date ana="#checkedOut" when="1956-01">Jan</date>		
+                       <bibl ana="#borrowedItem" corresp="mep:000j03"> <title>Toussaint Louverture</title>, <author>Michel Vaucaire</author></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:000j1d"><title>La Vie et L'Habitude</title>, <author>Builer</author> 
+                			trans by <editor role="translator">Larbaud</editor></bibl>             returned <date ana="#checkedOut" when="1956-04-01">Ap1</date>
+                		<bibl ana="#borrowedItem"><title>Reviews: great Works of great authors:
+                		 criticisms</title> by <author>Poe</author></bibl>				 	<date ana="#checkedOut" when="1956-04-01">April 1</date>
+                		<bibl ana="#borrowedItem" corresp="mep:000j31"><author>A Lamartine</author>: <title>J.J. Rousseau</title></bibl>.
+                		<bibl ana="#borrowedItem" corresp="mep:000j4b"><author>Coleridge</author> <title>La Chanson du vieux Marion</title>
                 		 traduction <editor role="translator">Larbaud</editor></bibl>
-                		 <bibl><title>Hautes et Basses Classes en Italie</title>	  
+                		 <bibl ana="#borrowedItem" corresp="mep:000j5n"><title>Hautes et Basses Classes en Italie</title>	  
                 		 	<author>Walter Savage Landor</author> (<publisher>Victor Beaumond</publisher>
-                		 							<date when="1911">1911</date></bibl>      <date when="1956-04-01">April 1</date>
-                		<bibl><title>Lettres à André Gide</title>, <author>Larbaud</author>
+                		 							<date when="1911">1911</date></bibl>      <date ana="#checkedOut" when="1956-04-01">April 1</date>
+                		<bibl ana="#borrowedItem" corresp="mep:000j6z"><title>Lettres à André Gide</title>, <author>Larbaud</author>
                 		   introductions et notes de <editor>G. Jean-Aubry</editor>
                 		   <publisher>Stols</publisher> <publisher>Paris-La Haye</publisher> <date when="1948">1948</date></bibl>
-                 		<bibl><title>La Mort</title>, <author>Maeterlinck</author> (<publisher>Bibliothèque-Charpentier</publisher> <date when="1919">1919</date>)</bibl>
-                		<bibl><title>Confluences</title> <biblScope unit="issue">I</biblScope></bibl>
-                		<bibl><title>Confluences</title> <biblScope unit="issue">37</biblScope>/38 <title>Présence de <persName>Valéry Larbaud</persName></title> </bibl>
+                 		<bibl ana="#borrowedItem" corresp="mep:000j78"><title>La Mort</title>, <author>Maeterlinck</author> (<publisher>Bibliothèque-Charpentier</publisher> <date when="1919">1919</date>)</bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:000j8k"><title>Confluences</title> <biblScope unit="issue">I</biblScope></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:000j8k"><title>Confluences</title> <biblScope unit="issue">37</biblScope>/38 <title>Présence de <persName>Valéry Larbaud</persName></title> </bibl>
                 		
-                		<bibl><author>Maurice Maeterlinck</author>: <title>La Mort</title>
+                		<bibl ana="#borrowedItem" corresp="mep:000j78"><author>Maurice Maeterlinck</author>: <title>La Mort</title>
                 		  <publisher>Bibliothèque Charpentier</publisher>
                 		   <editor>Eugène Fasquelle</editor> Editeur
                 		   <address><street>11 rue de grenelle</street></address> 		<date when="1919">1919</date>
@@ -96,7 +94,7 @@
                 </div>
                 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                 
                 <ab>
                     <!-- Blank Verso -->

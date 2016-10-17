@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#merz.ma">Mathilde Merzbach</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,10 +51,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/merzbach/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
        
         
@@ -76,7 +67,7 @@
     <text>
         <body>
             
-         <div type="card"> <div type="recto">      <pb facs="#s1" />
+         <div type="card"> <div type="recto">      <pb facs="#s1"/>
       <head>          <date when="1938">1938</date>			<persName ref="#merz.ma">MERZBACH
                 				Mlle Mathilde</persName>
                 				<address><street>25 rue de la Faisanderie</street> <district>- 16e</district>
@@ -85,23 +76,23 @@
                 				(is to have 2 books) dep   100
                 				(cheque <date when="1938-03-03">March 3</date> 171,50)
                 		postage</ab><ab>
-                <date when="1938-03-03">March 3</date>	  3.20	<bibl><title>Shorter Lyrics of the 20th Century</title></bibl> <date when="1938-03-07">March 7</date>
-                				<bibl><title>Wild Swans at Coole</title></bibl>					<date when="1938-03-07">"</date>
-                	<date when="1938-03-07">7</date>	  3.20	<bibl><title>Chamber Music</title></bibl>					<date when="1938-03-18">March 18</date>
-                				<bibl><title>Poems of Gerard Manley Hopkins</title></bibl>	<date when="1938-03-18">"	18</date>
-                	<date when="1938-03-18">18</date>	p.3.20	<bibl><title>Moby Dick</title></bibl>						<date when="1938-03-28">March 28</date>
-                	<date when="1938-03-18">18</date>			<bibl><title>Leda-</title></bibl>							<date when="1938-03-28">March 28</date>
-                	<date when="1938-03-28">28</date>	  5.60	<bibl><title>Synge's Dramatic Works</title></bibl>			<date when="1938-04-14">April 14</date>
-                	<date when="1938-03-28">28</date>			<bibl><title>Vachel Lindsay's Collected Poems</title></bibl> <date when="1938-04-14">April 14</date>
-               <date when="1938-04-15"> April 15</date>	?	<bibl><title>Juan in America</title></bibl>					<date when="1938-05-04">May 4</date>
-                	<date when="1938-04-15">15</date>			<bibl><title>Faster! Faster</title></bibl>					<date when="1938-05-04">May 4</date>
-                <date when="1938-05-04">May 4</date>	  4.40	<bibl><title>Leaves of Grass</title></bibl>					<date when="1938-05-13">May 13</date>
-                				<bibl><title>Sir Philip Sidney's Poems</title></bibl> (<unclear/>Lib) <date when="1938-05-13">May 13</date>
-               <date when="1938-05-13">May 13</date>	p.4.40	<bibl><title>Herricks Poems</title> <biblScope unit="volume" from="1" to="1">Vol I</biblScope></bibl>			<date when="1938-07-07">July 7</date>
-                				<bibl><title>Shakespeare's Songs and Sonnets</title></bibl> <date when="1938-07-07">July 7</date>
-                				<bibl><title>Milton's Poems</title></bibl>					<date when="1938-07-07">July 7</date></ab>
+                <date ana="#checkedOut" when="1938-03-03">March 3</date>	  3.20	<bibl ana="#borrowedItem" corresp="mep:00n50n"><title>Shorter Lyrics of the 20th Century</title></bibl> <date ana="#checkedOut" when="1938-03-07">March 7</date>
+                				<bibl ana="#borrowedItem" corresp="mep:00n51z"><title>Wild Swans at Coole</title></bibl>					<date ana="#returned" when="1938-03-07">"</date>
+                	<date ana="#checkedOut" when="1938-03-07">7</date>	  3.20	<bibl ana="#borrowedItem" corresp="mep:004z1p"><title>Chamber Music</title></bibl>					<date ana="#checkedOut" when="1938-03-18">March 18</date>
+                				<bibl ana="#borrowedItem" corresp="mep:007d85"><title>Poems of Gerard Manley Hopkins</title></bibl>	<date ana="#returned" when="1938-03-18">"	18</date>
+                	<date ana="#checkedOut" when="1938-03-18">18</date>	p.3.20	<bibl ana="#borrowedItem" corresp="mep:001715"><title>Moby Dick</title></bibl>						<date ana="#returned" when="1938-03-28">March 28</date>
+                	<date ana="#checkedOut" when="1938-03-18">18</date>			<bibl ana="#borrowedItem" corresp="mep:00dz7g"><title>Leda-</title></bibl>							<date ana="#returned" when="1938-03-28">March 28</date>
+                	<date ana="#checkedOut" when="1938-03-28">28</date>	  5.60	<bibl ana="#borrowedItem" corresp="mep:009g86"><title>Synge's Dramatic Works</title></bibl>			<date ana="#returned" when="1938-04-14">April 14</date>
+                	<date ana="#checkedOut" when="1938-03-28">28</date>			<bibl ana="#borrowedItem" corresp="mep:00n528"><title>Vachel Lindsay's Collected Poems</title></bibl> <date ana="#returned" when="1938-04-14">April 14</date>
+               <date ana="#checkedOut" when="1938-04-15"> April 15</date>	?	<bibl ana="#borrowedItem" corresp="mep:000m3k"><title>Juan in America</title></bibl>					<date ana="#returned" when="1938-05-04">May 4</date>
+                	<date ana="#checkedOut" when="1938-04-15">15</date>			<bibl ana="#borrowedItem" corresp="mep:000t8s"><title>Faster! Faster</title></bibl>					<date ana="#returned" when="1938-05-04">May 4</date>
+                <date ana="#checkedOut" when="1938-05-04">May 4</date>	  4.40	<bibl ana="#borrowedItem" corresp="mep:005n2r"><title>Leaves of Grass</title></bibl>					<date ana="#checkedOut" when="1938-05-13">May 13</date>
+                				<bibl ana="#borrowedItem" corresp="mep:00n53k"><title>Sir Philip Sidney's Poems</title></bibl> (<unclear/>Lib) <date when="1938-05-13">May 13</date>
+               <date ana="#checkedOut" when="1938-05-13">May 13</date>	p.4.40	<bibl ana="#borrowedItem" corresp="mep:00ds9q"><title>Herricks Poems</title> <biblScope unit="volume" from="1" to="1">Vol I</biblScope></bibl>			<date ana="#checkedOut" when="1938-07-07">July 7</date>
+                				<bibl ana="#borrowedItem" corresp="mep:00n54w"><title>Shakespeare's Songs and Sonnets</title></bibl> <date ana="#checkedOut" when="1938-07-07">July 7</date>
+                				<bibl ana="#borrowedItem" corresp="mep:00n556"><title>Milton's Poems</title></bibl>					<date ana="#returned" when="1938-07-07">July 7</date></ab>
                 </div><div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                 
                 		</div>

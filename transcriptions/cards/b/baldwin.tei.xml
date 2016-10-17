@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"  xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#bald.he">Mrs. James Mark Baldwin</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-            	<xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-            	  <xi:fallback>
-            	    <listperson>
-            	      <head>People not available</head>
-            	      <person/>
-            	    </listperson>
-            	  </xi:fallback>
-            	</xi:include>
+            	
             </sourceDesc>
         </fileDesc>
     	<profileDesc>
@@ -61,29 +52,29 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/baldwin/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
           <div type="card">
 <div type="recto">
-	<pb facs="#s1" />
+	<pb facs="#s1"/>
                
   <head>              
   	<date when="1935">1935</date>		
@@ -94,70 +85,70 @@
   </head>
 	<ab>            						
                 sbsc. <date from="1935-11-02">2 Nov-</date>					(cheque) 100 -
-                p. 4.40   <date when="1935-11-02">2 Nov.</date> <bibl><title>Queen Victoria</title> (<author>Benson</author>)</bibl>	  	 <date when="1935-12-07">7 Dec</date>
-                		 p. 4.40 <bibl><title>Gay Life</title></bibl>					  	<date when="1935-11-15">15 Nov.</date>
-		<date when="1935-12-07">7 Dec</date> p. 	    .<bibl><title>Joseph &amp; his brethren</title> 2 vols</bibl>. 	<date when="1936-01-07">Jan 7</date>.
-                <date when="1935-12-10">10 "</date>	 p. 3.60 .<bibl><title>Poison in Parish</title></bibl>				<date when="1936-01-07">Jan 7</date>.
-		<date when="1936-01-07">Jan 7</date>.   p. 5.20 <bibl><title>Mr Pinkerton grows a beard</title></bibl>.	<date when="1936-01-07">March 5</date>
-		<bibl><title>Great Short Stories of <unclear>Delichar Myling ch.</unclear></title></bibl> <date when="1936-01-07">March 5</date>
-		<bibl><title>The House of the 4 Winds</title></bibl>.		<date when="1936-01-07">March 5</date>
+                p. 4.40   <date ana="#checkedOut" when="1935-11-02">2 Nov.</date> <bibl ana="#borrowedItem"><title>Queen Victoria</title> (<author>Benson</author>)</bibl>	  	 <date ana="#checkedOut" when="1935-12-07">7 Dec</date>
+                		 p. 4.40 <bibl ana="#borrowedItem"><title>Gay Life</title></bibl>					  	<date ana="#returned" when="1935-11-15">15 Nov.</date>
+		<date ana="#checkedOut" when="1935-12-07">7 Dec</date> p. 	    .<bibl ana="#borrowedItem"><title>Joseph &amp; his brethren</title> 2 vols</bibl>. 	<date ana="#returned" when="1936-01-07">Jan 7</date>.
+                <date ana="#checkedOut" when="1935-12-10">10 "</date>	 p. 3.60 .<bibl ana="#borrowedItem"><title>Poison in Parish</title></bibl>				<date ana="#returned" when="1936-01-07">Jan 7</date>.
+		<date ana="#checkedOut" when="1936-01-07">Jan 7</date>.   p. 5.20 <bibl ana="#borrowedItem"><title>Mr Pinkerton grows a beard</title></bibl>.	<date ana="#checkedOut" when="1936-01-07">March 5</date>
+		<bibl ana="#borrowedItem"><title>Great Short Stories of <unclear>Delichar Myling ch.</unclear></title></bibl> <date ana="#checkedOut" when="1936-01-07">March 5</date>
+		<bibl ana="#borrowedItem"><title>The House of the 4 Winds</title></bibl>.		<date ana="#returned" when="1936-01-07">March 5</date>
                 				  <note><unclear>Mhimmy</unclear> to town soon
                 				  no more books wanted</note>
                 				
                 		<note><date when="1936-04-15">April 15</date> <persName ref="#bald.he">Mrs Baldwin</persName> sent gifts to
                 		library:
-                	<bibl><author>Richard Haliburton</author>: <title>Seven League Books</title></bibl>
-                	<bibl><author>Bliss Berry</author>: <title>And Gladly Teach: Reminiscences</title></bibl>
-                		<date when="1936-04-21">April 21st</date>
-                	<bibl><author>H.V. Morton</author>: <title>In the Steps of the Master</title></bibl>
+                	<bibl ana="#borrowedItem"><author>Richard Haliburton</author>: <title>Seven League Books</title></bibl>
+                	<bibl ana="#borrowedItem"><author>Bliss Berry</author>: <title>And Gladly Teach: Reminiscences</title></bibl>
+                		<date ana="#checkedOut" when="1936-04-21">April 21st</date>
+                	<bibl ana="#borrowedItem"><author>H.V. Morton</author>: <title>In the Steps of the Master</title></bibl>
                 		  (<address><addrLine>Hotel Bon Acceuil</addrLine>
                 		    <addrLine>Montreaux, Suisse</addrLine></address>)
                 		   wrote to her <date when="1936-04-21">April 21st</date></note>
 	</ab>
                 </div>
  <div type="verso">               
- 	<pb facs="#s2" />               <!--Blank Verso -->
+ 	<pb facs="#s2"/>               <!--Blank Verso -->
                 </div>
           	
  <div type="recto">
- 	<pb facs="#s3" />
+ 	<pb facs="#s3"/>
  <head>             
               				<persName ref="#bald.he">Mrs Baldwin</persName>
               				
               				
               	<date when="1936">1935</date></head>
  	<ab> 
- 		<date when="1935-11-25">Nov 25</date> 
+ 		<date ana="#checkedOut" when="1935-11-25">Nov 25</date> 
  		3 copies at 16
-        		<bibl><title>The Dawn of World Order</title>
+        		<bibl ana="#borrowedItem"><title>The Dawn of World Order</title>
         				by <author>Nowell Charles Smith</author>
         					Je <author>Maxwell garnett</author></bibl>
         					postage		            				48.00		
         			postage									 2.40
         													50.40
-        		<date when="1935-12-23">23 Dec</date>.	2c. <bibl><title>If a man die</title></bibl> 	$1.75
+        		<date ana="#checkedOut" when="1935-12-23">23 Dec</date>.	2c. <bibl ana="#borrowedItem"><title>If a man die</title></bibl> 	$1.75
         				post. to<address><settlement> Montreux</settlement></address> &amp;amp; to <address><settlement>Nice</settlement></address>
  	</ab>
 </div>   
 <div type="verso">          	
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Blank Verso side of #s3 -->
 </div>
 <div type="recto">
-                <pb facs="#s5" />
+                <pb facs="#s5"/>
 <head>
                 <date when="1937">1937</date>		
                 <persName ref="#bald.he">Mrs BALDWIN</persName>
                 		<address><addrLine>Hotel Belmont</addrLine>   <addrLine>Rue Bassano 8e</addrLine></address>
  </head>               		
 	<ab>                                
-		<date when="1937-06-11">June 11</date> 	<bibl><title>Baedeker . Paris</title></bibl>				<date when="1937-09-03">Sept 3</date>
+		<date ana="#checkedOut" when="1937-06-11">June 11</date> 	<bibl ana="#borrowedItem"><title>Baedeker . Paris</title></bibl>				<date ana="#returned" when="1937-09-03">Sept 3</date>
                 			  <note>Please fetch book from hotel
                 			   &amp; send bill
-                			   		-></note>
+                			   		-&gt;</note>
                 			   		
-                <date when="1937-06-15">June 15</date> 	<bibl><title>Dauville Taxi</title></bibl>			61.25
+                <date ana="#checkedOut" when="1937-06-15">June 15</date> 	<bibl ana="#borrowedItem"><title>Dauville Taxi</title></bibl>			61.25
                 			 sent to
                 			  <address>
                 			  	 <persName>Mrs Dennis</persName>
@@ -174,7 +165,7 @@
    
 </div>             
 <div type="verso"> 
-	<pb facs="#s6" />
+	<pb facs="#s6"/>
                 
                 <!--Blank Verso side of #s5-->
 </div>

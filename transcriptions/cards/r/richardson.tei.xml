@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of Material from the Sylvia Beach Papers</title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -54,28 +45,28 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/richardson/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
-              <div type="recto">  <pb facs="#s1" />
+              <div type="recto">  <pb facs="#s1"/>
            <head>     
                 			<persName ref="#rich.ma">RICHARDSON</persName>
                 <date when="1924-08-30">1924 Aug 30</date>		<persName ref="#rich.ma">Miss Marian Richardson</persName>
@@ -89,14 +80,14 @@
                 								</ab><ab>
                 								
                 
-                <date when="1924-08-30">Aug 30</date>	<bibl><title>Chicago Poems</title></bibl>						p.c <date when="1924-12-04">Dec 4</date>
+                <date ana="#checkedOut" when="1924-08-30">Aug 30</date>	<bibl ana="#borrowedItem" corresp="mep:00b54q"><title>Chicago Poems</title></bibl>						p.c <date ana="#returned" when="1924-12-04">Dec 4</date>
                 											pc <date when="1924-01-23">Jan 23</date>	</ab>
      </div>  <div type="verso">         
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
            </div> </div>
-             <div type="card">   <div type="recto"><pb facs="#s3" />
+             <div type="card">   <div type="recto"><pb facs="#s3"/>
         <head>        
                 <date when="1929-04-26">1929 Ap 26</date>		<persName>RICHARDSON</persName>
                 				<persName>Mrs A.W. Richardson</persName>
@@ -111,14 +102,14 @@
                 
                 <ab>
                 
-                <date when="1929-04-26">Ap 26</date>		<bibl><title>Since Cezanne.</title></bibl>				<date when="1929-06-01">June 1st</date>
+                <date ana="#checkedOut" when="1929-04-26">Ap 26</date>		<bibl ana="#borrowedItem" corresp="mep:00q22x"><title>Since Cezanne.</title></bibl>				<date ana="#returned" when="1929-06-01">June 1st</date>
                 				1 week .5f.</ab>
                 </div>
-            <div type="verso">    <pb facs="#s4" />
+            <div type="verso">    <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
              </div>   </div>
-            <div type="card">  <div type="recto">  <pb facs="#s5" />
+            <div type="card">  <div type="recto">  <pb facs="#s5"/>
                 <head>
                 			<persName>RICHARDSON</persName>
                 <date when="1929-02-22">1929
@@ -132,14 +123,14 @@
                 						dep				50
                 	= to be kept toward price of book (87.50)
                 	</ab><ab>
-            	<date when="1929-02-22">Feb 22</date>		<bibl><title>Letters of Katherine Mansfield</title> <biblScope unit="volume" from="1" to="1">v 1</biblScope></bibl>	<date when="1929-02-28">Febr. 28.</date>
-            		<date when="1929-02-28">28</date>		<bibl><title>Spinoza</title></bibl>		<date when="1929-03-28">Mch 28th</date> .c
+            	<date ana="#checkedOut" when="1929-02-22">Feb 22</date>		<bibl ana="#borrowedItem" corresp="mep:005n4c"><title>Letters of Katherine Mansfield</title> <biblScope unit="volume" from="1" to="1">v 1</biblScope></bibl>	<date ana="#returned" when="1929-02-28">Febr. 28.</date>
+            		<date ana="#checkedOut" when="1929-02-28">28</date>		<bibl ana="#borrowedItem" corresp="mep:00s40b"><title>Spinoza</title></bibl>		<date ana="#returned" when="1929-03-28">Mch 28th</date> .c
             					<date when="1929-04-11">Ap. 11</date> p.c. <date when="1929-05-02">May 2</date> p.c.
             								<date when="1929-06-15">June 15</date> p.c.
             					= lost
             							owes 37.¢50.</ab>
                 </div>
-           <div type="verso">     <pb facs="#s6" />
+           <div type="verso">     <pb facs="#s6"/>
                 
                 <!-- Verso Blank -->
              </div>   </div>

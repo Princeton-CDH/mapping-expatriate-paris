@@ -20,7 +20,7 @@
   <property name="xmldb.host" value="localhost" />
   <property name="xmldb.port" value="8080" />
   <property name="xmldb.user" value="admin" />
-  <property name="xmldb.passwd" value="admin" />
+  <property name="xmldb.passwd" value="" />
 
   <property name="xmldb.url" value="xmldb:exist://${xmldb.host}:${xmldb.port}/exist/xmlrpc/db" />
 
@@ -57,6 +57,16 @@
 	       createsubcollections="true">
       <fileset dir="${approot}/schemas">
 	<include name="**/*.rnc" />
+      </fileset>
+    </xdb:store>
+  </target>
+
+  <target name="load-open-refine" description="load open-refine data">
+    <xdb:store user="${xmldb.user}" password="${xmldb.passwd}"
+	       uri="${xmldb.approot}" createcollection="true"
+	       createsubcollections="true">
+      <fileset dir="${approot}">
+	<include name="borrowed-titles.xml" />
       </fileset>
     </xdb:store>
   </target>

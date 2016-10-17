@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#ybar.pe">Ybarra</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -64,17 +55,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/yz/ybarra/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                         <head>
                     
                     		<persName ref="#yeat.an">YBARRA.</persName>
@@ -84,47 +75,47 @@
                     								  <district>8e</district></address>
                         </head>
                         <ab>
-                                <date>Jan 15.</date>		<bibl><title>Mr. Norris changes trains.</title></bibl>			<date>18.</date>
-                            			<bibl><title>Honey in the Horn.</title></bibl>					22
-                            	<date>18.</date>		<bibl><title>Furys</title></bibl>	<bibl><title>Gaudy Light.</title></bibl>   <date>"</date>
-                            	<date>22.</date>		<bibl><title>Queen Victoria -</title> <author>Benson.</author></bibl>		<date>Feb.3.</date>
-                            			<bibl><title>Roll River</title></bibl>							<date>28</date>
-                            			<bibl><title>Appointment in Samarra.</title></bibl>				<date>25.</date>
-                            	<date>25.</date>		<bibl><title>Washington Legation Murder</title></bibl>			<date>28</date>
-                            	<date>"</date>		<bibl><title>Up in the Hills.</title></bibl>					<date>28.</date>
-                            	<date>28.</date>		<bibl><title>One-eyed moon.</title></bibl>					<date>Feb.3.</date>
-                            			<bibl><title>Everywoman.</title></bibl>							<date>"</date>
-                            <date>Feb. 3.</date>		<bibl><title>Spanish Cape Mystery.</title></bibl>				<date>8</date>
-                            			<bibl><title>Follow the Furys.</title></bibl>					<date>8</date>
-                            			<bibl><title>Come + Get it.</title></bibl>						<date>8.</date>
-                            	 <date>8.</date>		<bibl><title>Christin A.</title></bibl>							<date>13.</date>
-                            	 		<bibl><title>White Priory Murders.</title></bibl>				<date>13.</date>
-                            	 		<bibl><title>Farewell to 5th Ave	</title></bibl>				<date>13.</date>
-                            	 <date>13.</date>	<bibl><title>White Cockatoo.</title></bibl>						<date>15.</date>
-                            	 <date>15.</date>	<bibl><title>Three Loves.</title></bibl>					<date>March 7</date>
-                            <date>March 7.</date>	<bibl><title>Loss of Jane Vosper.</title></bibl>				<date>21</date>
-                            			<bibl><title>A.B.C. Murders.</title></bibl>						<date>9</date>
-                            	  <date>9.</date>	<bibl><title>Freedom Farewell.</title></bibl>					<date>23</date>
-                            	  		<bibl><title>Detective <unclear> No 1 </unclear></title></bibl>					<date>21</date>
-                            	  <date>12</date>	<bibl><title>Ticking Terror Murders</title></bibl>				<date>21</date>
-                            	  <date>21.</date>	<bibl><title>Pursuer.</title></bibl>							<date>23</date>
-                            	  <date>23.</date>	<bibl><title>Garden Murder Case.</title></bibl>				<date>Ap 15.</date>	
-                            	  		<bibl><title>Wind blew west.</title></bibl>					<date>30</date>
-                            	  <date>27.</date>	<bibl><title>House in Paris.</title></bibl>						<date>30</date>
-                            	  <date>30.</date>	<bibl><title>Century of Detective Stories.</title></bibl>	<date>Ap. 10</date>
-                            <date>April 29</date>	<bibl><title>Proletarian Literature</title></bibl>			<date>May 7.</date>
+                                <date ana="#checkedOut">Jan 15.</date>		<bibl ana="#borrowedItem"><title>Mr. Norris changes trains.</title></bibl>			<date ana="#checkedOut">18.</date>
+                            			<bibl ana="#borrowedItem"><title>Honey in the Horn.</title></bibl>					22
+                            	<date ana="#checkedOut">18.</date>		<bibl ana="#borrowedItem"><title>Furys</title></bibl>	<bibl ana="#borrowedItem"><title>Gaudy Light.</title></bibl>   <date ana="#returned">"</date>
+                            	<date ana="#checkedOut">22.</date>		<bibl ana="#borrowedItem"><title>Queen Victoria -</title> <author>Benson.</author></bibl>		<date ana="#checkedOut">Feb.3.</date>
+                            			<bibl ana="#borrowedItem"><title>Roll River</title></bibl>							<date ana="#checkedOut">28</date>
+                            			<bibl ana="#borrowedItem"><title>Appointment in Samarra.</title></bibl>				<date ana="#returned">25.</date>
+                            	<date ana="#checkedOut">25.</date>		<bibl ana="#borrowedItem"><title>Washington Legation Murder</title></bibl>			<date ana="#returned">28</date>
+                            	<date ana="#checkedOut">"</date>		<bibl ana="#borrowedItem"><title>Up in the Hills.</title></bibl>					<date ana="#returned">28.</date>
+                            	<date ana="#checkedOut">28.</date>		<bibl ana="#borrowedItem"><title>One-eyed moon.</title></bibl>					<date ana="#checkedOut">Feb.3.</date>
+                            			<bibl ana="#borrowedItem"><title>Everywoman.</title></bibl>							<date ana="#returned">"</date>
+                            <date ana="#checkedOut">Feb. 3.</date>		<bibl ana="#borrowedItem"><title>Spanish Cape Mystery.</title></bibl>				<date ana="#checkedOut">8</date>
+                            			<bibl ana="#borrowedItem"><title>Follow the Furys.</title></bibl>					<date ana="#checkedOut">8</date>
+                            			<bibl ana="#borrowedItem"><title>Come + Get it.</title></bibl>						<date ana="#returned">8.</date>
+                            	 <date ana="#checkedOut">8.</date>		<bibl ana="#borrowedItem"><title>Christin A.</title></bibl>							<date ana="#checkedOut">13.</date>
+                            	 		<bibl ana="#borrowedItem"><title>White Priory Murders.</title></bibl>				<date ana="#checkedOut">13.</date>
+                            	 		<bibl ana="#borrowedItem"><title>Farewell to 5th Ave	</title></bibl>				<date ana="#returned">13.</date>
+                            	 <date ana="#checkedOut">13.</date>	<bibl ana="#borrowedItem"><title>White Cockatoo.</title></bibl>						<date ana="#returned">15.</date>
+                            	 <date ana="#checkedOut">15.</date>	<bibl ana="#borrowedItem"><title>Three Loves.</title></bibl>					<date ana="#returned">March 7</date>
+                            <date ana="#checkedOut">March 7.</date>	<bibl ana="#borrowedItem"><title>Loss of Jane Vosper.</title></bibl>				<date ana="#checkedOut">21</date>
+                            			<bibl ana="#borrowedItem"><title>A.B.C. Murders.</title></bibl>						<date ana="#returned">9</date>
+                            	  <date ana="#checkedOut">9.</date>	<bibl ana="#borrowedItem"><title>Freedom Farewell.</title></bibl>					<date ana="#checkedOut">23</date>
+                            	  		<bibl ana="#borrowedItem"><title>Detective <unclear> No 1 </unclear></title></bibl>					<date ana="#returned">21</date>
+                            	  <date ana="#checkedOut">12</date>	<bibl ana="#borrowedItem"><title>Ticking Terror Murders</title></bibl>				<date ana="#returned">21</date>
+                            	  <date ana="#checkedOut">21.</date>	<bibl ana="#borrowedItem"><title>Pursuer.</title></bibl>							<date ana="#returned">23</date>
+                            	  <date ana="#checkedOut">23.</date>	<bibl ana="#borrowedItem"><title>Garden Murder Case.</title></bibl>				<date ana="#checkedOut">Ap 15.</date>	
+                            	  		<bibl ana="#borrowedItem"><title>Wind blew west.</title></bibl>					<date ana="#returned">30</date>
+                            	  <date ana="#checkedOut">27.</date>	<bibl ana="#borrowedItem"><title>House in Paris.</title></bibl>						<date ana="#returned">30</date>
+                            	  <date ana="#checkedOut">30.</date>	<bibl ana="#borrowedItem"><title>Century of Detective Stories.</title></bibl>	<date ana="#returned">Ap. 10</date>
+                            <date ana="#checkedOut">April 29</date>	<bibl ana="#borrowedItem"><title>Proletarian Literature</title></bibl>			<date ana="#returned">May 7.</date>
                         </ab>
                  </div>
                  <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                         <head>
                     
                     			 <address><addrLine>Hotel Royard Marceau</addrLine> <street>Ave. Hoche</street></address>
                         </head>
                         <ab>
-                             <date>June 10.</date>		<bibl><title>Way of the Transgressor</title></bibl>			<date>20.</date>
-                             	 <date>14.</date>		<bibl><title>Return of a Heroine</title></bibl>				<date>20</date>
-                             	 <date>28</date>			<bibl><title>They walk in the city</title></bibl> B.B.
+                             <date ana="#checkedOut">June 10.</date>		<bibl ana="#borrowedItem"><title>Way of the Transgressor</title></bibl>			<date ana="#returned">20.</date>
+                             	 <date ana="#checkedOut">14.</date>		<bibl ana="#borrowedItem"><title>Return of a Heroine</title></bibl>				<date ana="#returned">20</date>
+                             	 <date ana="#checkedOut">28</date>			<bibl ana="#borrowedItem"><title>They walk in the city</title></bibl> B.B.
                         </ab>
                  </div>  
             </div>    

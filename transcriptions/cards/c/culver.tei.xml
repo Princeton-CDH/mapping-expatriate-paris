@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<teiHeader type="text">
 		<fileDesc>
 			<titleStmt>
 				<title>An Encoded Transcription of a Borrower's Card: <persName ref="#culv.do">Donald Culver</persName></title>
@@ -26,14 +24,7 @@
 						<idno>C0108</idno>
 					</msIdentifier>
 				</msDesc>
-				<xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-					<xi:fallback>
-						<listperson>
-							<head>People not available</head>
-							<person/>
-						</listperson>
-					</xi:fallback>
-				</xi:include>
+				
 			</sourceDesc>
 		</fileDesc>
 		    <profileDesc>
@@ -50,30 +41,30 @@
 				<ab>
 					Encoded Cards.
 					s1:
-					<unclear/> (duty on) = "Serutiny"? 			==> Scrutiny
-					<unclear/> (15 Nov) = crossed out, "deruct"?	==> Ordered
-					<unclear/> (Birds Beasts) = overwritten more numbers like line above ==> ??
+					<unclear/> (duty on) = "Serutiny"? 			==&gt; Scrutiny
+					<unclear/> (15 Nov) = crossed out, "deruct"?	==&gt; Ordered
+					<unclear/> (Birds Beasts) = overwritten more numbers like line above ==&gt; ??
 					<unclear/> (under Turn of Screw) = publishing info and other book
-					<unclear/> (23 Feb) = "Torrent of Sp"?	==> I think so..
+					<unclear/> (23 Feb) = "Torrent of Sp"?	==&gt; I think so..
 					s2:
-					<unclear/> (under Dec 30) = notation qualifying "overdue" ==> Book
+					<unclear/> (under Dec 30) = notation qualifying "overdue" ==&gt; Book
 					"D.S. Culver," next to "Language Jespersen," seems to be Culver's signature
 					s3:
-					<unclear/> (Jan 21) = "Morrey"?	==> Money
+					<unclear/> (Jan 21) = "Morrey"?	==&gt; Money
 					s4:
 					<unclear/> (Feb 31) = illegible financial note
-					<unclear/> (May 29) = "sina'?	==>	Since
+					<unclear/> (May 29) = "sina'?	==&gt;	Since
 					s5:
-					<unclear/> (Dec 14) = starts with B, ends in "io"	==> Beltraffio
+					<unclear/> (Dec 14) = starts with B, ends in "io"	==&gt; Beltraffio
 					s6:
 					Upside down, beginning of another name "Haltel"
 					s7:
 					"Culver" at top of card almost misspelled as "Culler" (over-written)
-					Funny symbol appears twice in "Presley" line, rendered as pi (π)		==> Mr
-					<unclear/> (Presley) = "culue"?	==> Culver
-					<unclear/> <unclear/> (Dec 5) = "Lout in S"?	==> ??
+					Funny symbol appears twice in "Presley" line, rendered as pi (π)		==&gt; Mr
+					<unclear/> (Presley) = "culue"?	==&gt; Culver
+					<unclear/> <unclear/> (Dec 5) = "Lout in S"?	==&gt; ??
 					s8:
-					<unclear/> (March 9) = "THN"? marking under "pd"	==> ??
+					<unclear/> (March 9) = "THN"? marking under "pd"	==&gt; ??
 				</ab>
 			</change>
             <change who="elspeth" when="2015-06-02">
@@ -110,34 +101,34 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298//c/culver/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
        <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
+        	<graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
+        	<graphic url="00000006.jp2"/>
         </surface>
         <surface xml:id="s7">
-        	<graphic url="00000007.jp2" />
+        	<graphic url="00000007.jp2"/>
         </surface>
         <surface xml:id="s8">
-        	<graphic url="00000008.jp2" />
+        	<graphic url="00000008.jp2"/>
         </surface>
         <surface xml:id="s9">
-        	<graphic url="00000009.jp2" />
+        	<graphic url="00000009.jp2"/>
         </surface>
         <surface xml:id="s10">
-        	<graphic url="00000010.jp2" />
+        	<graphic url="00000010.jp2"/>
         </surface>
       
        
@@ -146,7 +137,7 @@
         <body>
             	<div type="card">
             	<div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1932">1932</date>			
                 				<persName ref="#culv.do">CULVER</persName>
@@ -160,60 +151,60 @@
                 </head>
                 <ab>
                 <date when="1932-03-01">March 1 1932</date>	balance						1,20
-                <date when="1932-03-01">	</date>			duty on <bibl><title>Scrutiny</title></bibl>			7,50
-                <date when="1932-09-27">Sept 27</date>		<bibl><title>Devil in the Flesh</title></bibl>		   10
-                <date when="1932-09-27">	</date>			<bibl><title>New Republic</title></bibl>				6
-                <date when="1932-09-27">	</date>			<bibl><title>Emily Bronte's Poems</title></bibl>		4
+                <date ana="#checkedOut" when="1932-03-01">	</date>			duty on <bibl ana="#borrowedItem" corresp="mep:002h09"><title>Scrutiny</title></bibl>			7,50
+                <date ana="#checkedOut" when="1932-09-27">Sept 27</date>		<bibl ana="#borrowedItem" corresp="mep:00g60q"><title>Devil in the Flesh</title></bibl>		   10
+                <date ana="#checkedOut" when="1932-09-27">	</date>			<bibl ana="#borrowedItem" corresp="mep:00141b"><title>New Republic</title></bibl>				6
+                <date ana="#checkedOut" when="1932-09-27">	</date>			<bibl ana="#borrowedItem" corresp="mep:00rp4r"><title>Emily Bronte's Poems</title></bibl>		4
                 				
-                							paid <date when="1932-10-19">Oct 19</date>	   28,70
-                <date when="1932-11-15">15 Nov.</date> ordered	<bibl>Marx <title>Capital</title></bibl> H 848 62V.	   32
-                									owes	<bibl><title>Birds Beasts + Flowers</title></bibl> <unclear/> 18 -
-                									owes	<bibl><title>New Statesman</title></bibl> <bibl><title>Republic</title></bibl>		6 - 
+                							paid <date ana="#returned" when="1932-10-19">Oct 19</date>	   28,70
+                <date ana="#checkedOut" when="1932-11-15">15 Nov.</date> ordered	<bibl ana="#borrowedItem" corresp="mep:00qn8g">Marx <title>Capital</title></bibl> H 848 62V.	   32
+                									owes	<bibl ana="#borrowedItem" corresp="mep:00mj7m"><title>Birds Beasts + Flowers</title></bibl> <unclear/> 18 -
+                									owes	<bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl> <bibl ana="#borrowedItem" corresp="mep:00cf0x"><title>Republic</title></bibl>		6 - 
                 																	   56
-                							paid <date when="1932-11-23">23/11/32</date>  30
+                							paid <date ana="#returned" when="1932-11-23">23/11/32</date>  30
                 <date when="1932-12-12">12 Dec 1932	</date>				owes		   26
-                <date when="1932-12-12">	</date>		<bibl><title>Statesman</title> <biblScope unit="issue" from="1932-12-10">10 Dec.</biblScope></bibl>	4 50
-                <date when="1932-12-12">	</date> 	<bibl><title>For Lancelot Andrews</title></bibl> 30 -
-                <date when="1932-12-12">	</date>  	<bibl><title>Ariel poems</title> <biblScope unit="issue" from="1929-08-23">8.23.29</biblScope></bibl>= 21 -
+                <date ana="#checkedOut" when="1932-12-12">	</date>		<bibl ana="#borrowedItem" corresp="mep:001f99"><title>Statesman</title> <biblScope unit="issue" from="1932-12-10">10 Dec.</biblScope></bibl>	4 50
+                <date ana="#checkedOut" when="1932-12-12">	</date> 	<bibl ana="#borrowedItem" corresp="mep:005q6j"><title>For Lancelot Andrews</title></bibl> 30 -
+                <date ana="#checkedOut" when="1932-12-12">	</date>  	<bibl ana="#borrowedItem" corresp="mep:00rp52"><title>Ariel poems</title> <biblScope unit="issue" from="1929-08-23">8.23.29</biblScope></bibl>= 21 -
                   					   55			55
-                <date when="1932-12-17">17 Dec.</date>						owes 	81 50
-            	<date when="1932-12-17">	</date>		<bibl><title>Sweeney Agonistes</title></bibl>  14
-            	<date when="1932-12-17">	</date>		<bibl><title>Statesman</title> <biblScope unit="issue" from="1932-12-03">3 Dec</biblScope></bibl>		4.50
+                <date ana="#returned" when="1932-12-17">17 Dec.</date>						owes 	81 50
+            	<date ana="#checkedOut" when="1932-12-17">	</date>		<bibl ana="#borrowedItem" corresp="mep:00kr43"><title>Sweeney Agonistes</title></bibl>  14
+            	<date ana="#checkedOut" when="1932-12-17">	</date>		<bibl ana="#borrowedItem" corresp="mep:001f99"><title>Statesman</title> <biblScope unit="issue" from="1932-12-03">3 Dec</biblScope></bibl>		4.50
             						   							18.50		18 50
-            						   <date when="1932-12-17">17 Dec.</date> pd. 100000
+            						   <date ana="#returned" when="1932-12-17">17 Dec.</date> pd. 100000
             	<date when="1933">1933</date>	
-                <date when="1933-01-24">	</date>		<bibl><title>Orators</title></bibl>				37.50
-            	<date when="1933-01-24">24 Jan</date>	<bibl><title>Sympathy</title></bibl>			37.50		
-            	<date when="1933-01-24">	</date>  	<bibl>(M-L) <title>Turn of the Screw</title></bibl>	28.50			
-            	<date when="1933-01-24">	</date>  	<bibl>(Tauch) <title>3 Soldiers</title></bibl>				12.50			
-            	<date when="1933-02-23">23 Feb</date>  	<bibl><title>Torrents of Sp.</title></bibl>			   115.50					 
+                <date ana="#checkedOut" when="1933-01-24">	</date>		<bibl ana="#borrowedItem" corresp="mep:00hr20"><title>Orators</title></bibl>				37.50
+            	<date ana="#checkedOut" when="1933-01-24">24 Jan</date>	<bibl ana="#borrowedItem" corresp="mep:00rp6c"><title>Sympathy</title></bibl>			37.50		
+            	<date ana="#checkedOut" when="1933-01-24">	</date>  	<bibl ana="#borrowedItem" corresp="mep:009q84">(M-L) <title>Turn of the Screw</title></bibl>	28.50			
+            	<date ana="#checkedOut" when="1933-01-24">	</date>  	<bibl ana="#borrowedItem" corresp="mep:002061">(Tauch) <title>3 Soldiers</title></bibl>				12.50			
+            	<date ana="#checkedOut" when="1933-02-23">23 Feb</date>  	<bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Sp.</title></bibl>			   115.50					 
             								10		125.50 pd	13 pd
-            	<date when="1933-03-24">24 March</date>	<bibl><title>New Verse</title></bibl> 3-
-            	<date when="1933-03-24">	</date>		<bibl><title>Republic</title></bibl>  6
+            	<date ana="#checkedOut" when="1933-03-24">24 March</date>	<bibl ana="#borrowedItem" corresp="mep:000f7f"><title>New Verse</title></bibl> 3-
+            	<date ana="#checkedOut" when="1933-03-24">	</date>		<bibl ana="#borrowedItem" corresp="mep:00cf0x"><title>Republic</title></bibl>  6
             													  9
                 </ab>
             	</div>
         		<div type="verso">
-            	<pb facs="#s2" />
+            	<pb facs="#s2"/>
             	<head>
             	<date when="1933">1933</date>			<persName ref="#culv.do">CULVER</persName>				134.50 pd
             	</head>
             	<ab>
-            	<date when="1933-04-03">3 April</date>		<bibl><title>Laments for the Living</title></bibl>	 12-
-            	<date when="1933-05-16">16 May</date>		<bibl><title>History Russian Rev</title><biblScope unit="volume" from="1"> I</biblScope></bibl>	 90-
-            	<date when="1933-06-22">22 June</date>		1m subsc to <date to="1933-07-10">10th July</date>	 25
+            	<date ana="#checkedOut" when="1933-04-03">3 April</date>		<bibl ana="#borrowedItem" corresp="mep:00rp7p"><title>Laments for the Living</title></bibl>	 12-
+            	<date ana="#checkedOut" when="1933-05-16">16 May</date>		<bibl ana="#borrowedItem" corresp="mep:00rp80"><title>History Russian Rev</title><biblScope unit="volume" from="1"> I</biblScope></bibl>	 90-
+            	<date ana="#returned" when="1933-06-22">22 June</date>		1m subsc to <date ana="#checkedOut" to="1933-07-10">10th July</date>	 25
             				fines.					  8.50
             				reviews					 13.50
-            				rental <bibl><title>Criterion</title><biblScope unit="issue" from="6">6</biblScope></bibl>		  6-
-            										paid <date when="1933-07-13">13 July</date>
-            	<date when="1933-10-12">Oct 12</date>		<bibl><title>Scrutiny</title> <biblScope unit="issue" from="1932-09">Sept No</biblScope></bibl>		12
-            	<date when="1933-11-03">3 Nov</date>		<bibl><title>Young + Evil</title></bibl>			50
-            	<date when="1933-12-23">Dec 23</date>		<bibl><title>Gentlemen I address you</title></bibl>	50
-            	<date when="1933-12-30">Dec 30</date>		Nov 1 mos subsc		    22 50
+            				rental <bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title><biblScope unit="issue" from="6">6</biblScope></bibl>		  6-
+            										paid <date ana="#returned" when="1933-07-13">13 July</date>
+            	<date ana="#checkedOut" when="1933-10-12">Oct 12</date>		<bibl ana="#borrowedItem" corresp="mep:002h09"><title>Scrutiny</title> <biblScope unit="issue" from="1932-09">Sept No</biblScope></bibl>		12
+            	<date ana="#checkedOut" when="1933-11-03">3 Nov</date>		<bibl ana="#borrowedItem" corresp="mep:00rp99"><title>Young + Evil</title></bibl>			50
+            	<date ana="#checkedOut" when="1933-12-23">Dec 23</date>		<bibl ana="#borrowedItem" corresp="mep:00bv00"><title>Gentlemen I address you</title></bibl>	50
+            	<date ana="#returned" when="1933-12-30">Dec 30</date>		Nov 1 mos subsc		    22 50
             				book
             				overdue 15 days			15
-            	<date when="1934-01-30">Jan 30</date>		<bibl><title>Dance of Death</title></bibl>			10.75
-            			subscription <date from="1934-01-30" to="1934-03-01">30 Jan-1 March</date>	22.50
+            	<date ana="#checkedOut" when="1934-01-30">Jan 30</date>		<bibl ana="#borrowedItem" corresp="mep:00k819"><title>Dance of Death</title></bibl>			10.75
+            			subscription <date ana="#returned" from="1934-01-30" to="1934-03-01">30 Jan-1 March</date>	22.50
             						<date from="1934-03-01" to="1934-04-01">1 March-1 April</date>	22.50
             						bill sent	   205.25
             						1, <date when="1934-04-23">23. April</date>
@@ -223,57 +214,57 @@
             	Renewed <date when="1934-10-09" to="1934-11-09">Oct 9 - November 9 1934</date> 	1 vol. pd 15
             			will pay subsc 	dep refunded	  	  60
             				next time 		<date when="1934-10-23">23 Oct</date> 	<persName ref="#culv.do">D.S. Culver</persName>
-            	<date when="1934-10-19">Oct 19</date>		<bibl><title>Language</title>, <persName>Jespersen</persName></bibl>	 <date when="1934-10-11">Oct 11</date>
-            	<date when="1934-10-11">	11</date>		<bibl><title>Growth &amp; Structure of the English Language</title></bibl> <date when="1934-10-23">23 Oct</date>
-            	<date when="1934-10-26">	26</date>		<bibl><title>Growth of the Eng Language</title></bibl>		<date when="1934-10-31">Oct 31</date>
-            	<date when="1934-10-31">	31</date>		<bibl><title>Return to Yesterday</title></bibl>				<date when="1934-11-03">3 Nov.</date>
-            	<date when="1934-11-03">3 Nov.</date>		<bibl><title>Words + Idioms</title></bibl>					<date when="1934-12-01">1 Dec</date>
+            	<date ana="#checkedOut" when="1934-10-19">Oct 19</date>		<bibl ana="#borrowedItem" corresp="mep:00cg62"><title>Language</title>, <persName>Jespersen</persName></bibl>	 <date ana="#returned" when="1934-10-11">Oct 11</date>
+            	<date ana="#checkedOut" when="1934-10-11">	11</date>		<bibl ana="#borrowedItem" corresp="mep:00bb8b"><title>Growth &amp; Structure of the English Language</title></bibl> <date ana="#returned" when="1934-10-23">23 Oct</date>
+            	<date ana="#checkedOut" when="1934-10-26">	26</date>		<bibl ana="#borrowedItem" corresp="mep:00rq0s"><title>Growth of the Eng Language</title></bibl>		<date ana="#returned" when="1934-10-31">Oct 31</date>
+            	<date ana="#checkedOut" when="1934-10-31">	31</date>		<bibl ana="#borrowedItem" corresp="mep:00b27t"><title>Return to Yesterday</title></bibl>				<date ana="#returned" when="1934-11-03">3 Nov.</date>
+            	<date ana="#checkedOut" when="1934-11-03">3 Nov.</date>		<bibl ana="#borrowedItem" corresp="mep:007g4g"><title>Words + Idioms</title></bibl>					<date ana="#returned" when="1934-12-01">1 Dec</date>
             	</ab>
             	</div>
         		</div>
         		
         		<div type="card">
             	<div type="recto">
-        		<pb facs="#s3" />
+        		<pb facs="#s3"/>
             	<head>
             	<date when="1934">1934</date>				
             								<persName ref="#culv.do">CULVER</persName>
             	Renewed <date from="1934-11-09" to="1934-12-09">9 Nov - 9 Dec. 1934</date>					15f
             	</head>
             	<ab>
-            	<date when="1934-12-01">1 Dec.</date>	<bibl><title>American Language</title></bibl>				<date when="1934-12-08">8 Dec.</date>
-            	<date when="1934-12-08">8-	</date>		<bibl><title>Main Street</title></bibl>						<date when="1934-12-18">18 "</date>
-            	<date when="1934-12-09">9	</date>		<bibl><title>Room with a View</title></bibl>				<date when="1935-01-05">Jan 5</date>
+            	<date ana="#checkedOut" when="1934-12-01">1 Dec.</date>	<bibl ana="#borrowedItem" corresp="mep:00jm24"><title>American Language</title></bibl>				<date ana="#returned" when="1934-12-08">8 Dec.</date>
+            	<date ana="#checkedOut" when="1934-12-08">8-	</date>		<bibl ana="#borrowedItem" corresp="mep:002f59"><title>Main Street</title></bibl>						<date ana="#returned" when="1934-12-18">18 "</date>
+            	<date ana="#checkedOut" when="1934-12-09">9	</date>		<bibl ana="#borrowedItem" corresp="mep:00190d"><title>Room with a View</title></bibl>				<date ana="#returned" when="1935-01-05">Jan 5</date>
             					will return next time
             	
             	Renewed <date when="1934-12-09" to="1935-01-09">Dec 9 - Jan 9 1935</date>					15v
-            	<date when="1935-01-04">Jan 4</date>	<bibl><title>G.L. Dickinson</title></bibl> (extras paid in advance 5v) <date when="1935-01-12">Jan 12</date>
-            	<date when="1935-01-12">Jan 12</date>	<bibl><title>Emerson and Others</title></bibl>			<date when="1935-01-19">	19</date>
-            	<date when="1935-01-12">	12</date>	<bibl><title>Deerslayer</title></bibl> 0 60				<date when="1935-01-18">18 Jan</date>
+            	<date ana="#checkedOut" when="1935-01-04">Jan 4</date>	<bibl ana="#borrowedItem" corresp="mep:003246"><title>G.L. Dickinson</title></bibl> (extras paid in advance 5v) <date ana="#returned" when="1935-01-12">Jan 12</date>
+            	<date ana="#checkedOut" when="1935-01-12">Jan 12</date>	<bibl ana="#borrowedItem" corresp="mep:00dj3x"><title>Emerson and Others</title></bibl>			<date ana="#returned" when="1935-01-19">	19</date>
+            	<date ana="#checkedOut" when="1935-01-12">	12</date>	<bibl ana="#borrowedItem" corresp="mep:00rq13"><title>Deerslayer</title></bibl> 0 60				<date ana="#returned" when="1935-01-18">18 Jan</date>
             	Ren <date when="1935-01-09" to="1935-02-09">Jan 9 - Feb 9 1935</date> 1 v					15
-            	<date when="1935-01-18">18 Jan.</date>	<bibl><title>Wine of the Puritans</title></bibl> 0 50	<date when="1935-01-19">	19</date>
-            	<date when="1935-01-19">19-	</date>		<bibl><title>Poor Richards almanac</title></bibl>		<date when="1935-01-21">21</date>
-            	<date when="1935-01-19">19-	</date>		<bibl><title>G.L. Dickinson</title></bibl> 0.50			<date when="1935-01-29">29</date>
-            	<date when="1935-01-21">21-	</date>		<bibl><title>White Money</title></bibl>	   0.50			<date when="1935-01-22">	22</date>
-            	<date when="1935-01-21">21-	</date>		<bibl><title>Tono Bungay</title></bibl>	   0.50 } pd	<date when="1935-01-22">	22</date>
-            	<date when="1935-01-26">26	</date>		<bibl><title>Emerson</title>, <persName>van W. Brust</persName></bibl>		<date when="1935-01-29">	29</date>
-            	<date when="1935-01-30">30-	</date>		<bibl><title>Criterion</title></bibl>  	1v a day		<date when="1935-02-02">2 Feb</date>
-            	<date when="1935-02-02">2 Feb-</date>	<bibl><title>Moby Dick</title></bibl>					<date when="1935-02-16">16</date>
-            	<date when="1935-02-16">16-	</date>		<bibl><title>Leaves of Grass</title></bibl>				<date when="1935-02-05">	5.</date>
-            	<date when="1935-02-19">19-	</date>		<bibl><title>Prose works</title> <persName>Whitman</persName></bibl>			<date when="1935-02-25">	25</date>
-            	<date when="1935-02-25">25	</date>		<bibl><title>Ordeal of Mark Twain</title></bibl>		<date when="1935-02-20">	20</date>
+            	<date ana="#checkedOut" when="1935-01-18">18 Jan.</date>	<bibl ana="#borrowedItem" corresp="mep:00gc6z"><title>Wine of the Puritans</title></bibl> 0 50	<date ana="#returned" when="1935-01-19">	19</date>
+            	<date ana="#checkedOut" when="1935-01-19">19-	</date>		<bibl ana="#borrowedItem" corresp="mep:00rq2d"><title>Poor Richards almanac</title></bibl>		<date ana="#returned" when="1935-01-21">21</date>
+            	<date ana="#checkedOut" when="1935-01-19">19-	</date>		<bibl ana="#borrowedItem" corresp="mep:003246"><title>G.L. Dickinson</title></bibl> 0.50			<date ana="#returned" when="1935-01-29">29</date>
+            	<date ana="#checkedOut" when="1935-01-21">21-	</date>		<bibl ana="#borrowedItem" corresp="mep:005b56"><title>White Money</title></bibl>	   0.50			<date ana="#returned" when="1935-01-22">	22</date>
+            	<date ana="#checkedOut" when="1935-01-21">21-	</date>		<bibl ana="#borrowedItem" corresp="mep:001n9z"><title>Tono Bungay</title></bibl>	   0.50 } pd	<date ana="#returned" when="1935-01-22">	22</date>
+            	<date ana="#checkedOut" when="1935-01-26">26	</date>		<bibl ana="#borrowedItem" corresp="mep:00bh5s"><title>Emerson</title>, <persName>van W. Brust</persName></bibl>		<date ana="#returned" when="1935-01-29">	29</date>
+            	<date ana="#checkedOut" when="1935-01-30">30-	</date>		<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title></bibl>  	1v a day		<date ana="#returned" when="1935-02-02">2 Feb</date>
+            	<date ana="#checkedOut" when="1935-02-02">2 Feb-</date>	<bibl ana="#borrowedItem" corresp="mep:001715"><title>Moby Dick</title></bibl>					<date ana="#returned" when="1935-02-16">16</date>
+            	<date ana="#checkedOut" when="1935-02-16">16-	</date>		<bibl ana="#borrowedItem" corresp="mep:005n2r"><title>Leaves of Grass</title></bibl>				<date ana="#returned" when="1935-02-05">	5.</date>
+            	<date ana="#checkedOut" when="1935-02-19">19-	</date>		<bibl ana="#borrowedItem" corresp="mep:00rq3q"><title>Prose works</title> <persName>Whitman</persName></bibl>			<date ana="#returned" when="1935-02-25">	25</date>
+            	<date ana="#checkedOut" when="1935-02-25">25	</date>		<bibl ana="#borrowedItem" corresp="mep:00r656"><title>Ordeal of Mark Twain</title></bibl>		<date ana="#returned" when="1935-02-20">	20</date>
             	<date when="1935-02-25">25</date>	Renewed<date from="1935-02-09" to="1935-05-09"> 9 Feb - 9 May 1935</date> --------		40f
             	<date when="1935-03-20">20 March.</date>Words + idioms				<date when="1935-03-29">	29</date>
-            	<date when="1935-03-20">	</date>		<bibl><title>xxx Cantos</title></bibl>					<date when="1935-03-29">	29</date>
-            	<date when="1935-03-20">	</date>		<bibl><title>Small countries</title></bibl> ] 1 pd		<date when="1935-04-05">5 April</date>
-            	<date when="1935-03-02">29 "</date>		<bibl><title>American Language</title></bibl>			<date when="1935-04-05">April 5</date>
-            	<date when="1935-04-05">5 April</date>	<bibl><title>Slang</title></bibl>						<date when="1935-04-15">	15</date>
-            	<date when="1935-04-15">15	</date>		<bibl><title>Kangaroo</title></bibl>					<date when="1935-04-27">27 Ap-</date>
+            	<date ana="#checkedOut" when="1935-03-20">	</date>		<bibl ana="#borrowedItem" corresp="mep:00rq41"><title>xxx Cantos</title></bibl>					<date ana="#returned" when="1935-03-29">	29</date>
+            	<date ana="#checkedOut" when="1935-03-20">	</date>		<bibl ana="#borrowedItem" corresp="mep:00rq5b"><title>Small countries</title></bibl> ] 1 pd		<date ana="#returned" when="1935-04-05">5 April</date>
+            	<date ana="#checkedOut" when="1935-03-02">29 "</date>		<bibl ana="#borrowedItem" corresp="mep:00jm24"><title>American Language</title></bibl>			<date ana="#returned" when="1935-04-05">April 5</date>
+            	<date ana="#checkedOut" when="1935-04-05">5 April</date>	<bibl ana="#borrowedItem" corresp="mep:00rq6n"><title>Slang</title></bibl>						<date ana="#returned" when="1935-04-15">	15</date>
+            	<date ana="#checkedOut" when="1935-04-15">15	</date>		<bibl ana="#borrowedItem" corresp="mep:006v48"><title>Kangaroo</title></bibl>					<date ana="#returned" when="1935-04-27">27 Ap-</date>
             	</ab>
             	</div>
         		
         		<div type="verso">
-            	<pb facs="#s4" />
+            	<pb facs="#s4"/>
             	<head>
             	<date when="1933">1933</date>		
             				<persName ref="#culv.do">CULVER Mr. Donald</persName>
@@ -284,27 +275,27 @@
             	<ab>
             	<date when="1933-02-10">10 Feb.</date>		1m. 1v. dep. 50f X ref. <date when="1933-07-13">13 July</date>	25-
             	
-            	<date when="1933-02-10">	</date>		<bibl><title>From Flushing to Calvary</title></bibl>		<date when="1933-02-17">17.</date>
-            	<date when="1933-02-17">17 "</date>		<bibl><title>Conquistador</title></bibl>					<date when="1933-03-01"> 1</date>
-            	<date when="1933-02-22">22 "</date>		<bibl><title>Tom Sawyer</title></bibl> 12 f a day			<date when="1933-03-01"> 1</date>
-            	<date when="1933-03-01">1 March</date>	<bibl><title>Earth horizon</title></bibl>	owes 8f			<date when="1933-03-24">24</date>
-            	<date when="1933-03-24">24 "</date>		<bibl><title>Hasty bunch</title></bibl> (and <date when="1933-03-13">13 March</date>		<date when="1933-03-27">27</date>
-            	<date when="1933-03-27">27 "</date>		<bibl><title>One man's initiation</title></bibl>			<date when="1933-03-31">31</date>
+            	<date ana="#checkedOut" when="1933-02-10">	</date>		<bibl ana="#borrowedItem" corresp="mep:00hf16"><title>From Flushing to Calvary</title></bibl>		<date ana="#returned" when="1933-02-17">17.</date>
+            	<date ana="#checkedOut" when="1933-02-17">17 "</date>		<bibl ana="#borrowedItem" corresp="mep:001q3n"><title>Conquistador</title></bibl>					<date ana="#returned" when="1933-03-01"> 1</date>
+            	<date ana="#checkedOut" when="1933-02-22">22 "</date>		<bibl ana="#borrowedItem" corresp="mep:00gr32"><title>Tom Sawyer</title></bibl> 12 f a day			<date ana="#returned" when="1933-03-01"> 1</date>
+            	<date ana="#checkedOut" when="1933-03-01">1 March</date>	<bibl ana="#borrowedItem" corresp="mep:004z7j"><title>Earth horizon</title></bibl>	owes 8f			<date ana="#returned" when="1933-03-24">24</date>
+            	<date ana="#checkedOut" when="1933-03-24">24 "</date>		<bibl ana="#borrowedItem" corresp="mep:00928w"><title>Hasty bunch</title></bibl> (and <date ana="#returned" when="1933-03-13">13 March</date>		<date when="1933-03-27">27</date>
+            	<date ana="#checkedOut" when="1933-03-27">27 "</date>		<bibl ana="#borrowedItem" corresp="mep:00n81s"><title>One man's initiation</title></bibl>			<date ana="#returned" when="1933-03-31">31</date>
             	subscription expired <date when="1933-03-10">10 March</date>
             	
-            	<date when="1933-03-31">31	</date>		<bibl><title>Venetian Blinds</title></bibl>  + 8f			<date when="1933-04-03">3 April</date>
-            	<date when="1933-03-31">31	</date>		<bibl><title>Dream Psychology</title></bibl> (2f a day)	card <date when="1933-04-12">12 April</date> <date when="1933-05-03">3 May</date>
-            	<date when="1933-04-03">3 April</date>	<bibl><title>Superficial Journey Tokyo Peking</title></bibl> extra <date when="1933-05-03">3 May</date>
-            	<date when="1933-05-03">3 May</date>	<bibl><persName>Trotzsky</persName> <title>His. Rus. Rev.</title> <biblScope unit="volume" from="1">I</biblScope></bibl>		<date when="1933-05-03">15</date>
+            	<date ana="#checkedOut" when="1933-03-31">31	</date>		<bibl ana="#borrowedItem" corresp="mep:002t9k"><title>Venetian Blinds</title></bibl>  + 8f			<date ana="#returned" when="1933-04-03">3 April</date>
+            	<date ana="#checkedOut" when="1933-03-31">31	</date>		<bibl ana="#borrowedItem" corresp="mep:00jq38"><title>Dream Psychology</title></bibl> (2f a day)	card <date ana="#returned" when="1933-04-12">12 April</date> <date when="1933-05-03">3 May</date>
+            	<date ana="#checkedOut" when="1933-04-03">3 April</date>	<bibl ana="#borrowedItem" corresp="mep:00rq7z"><title>Superficial Journey Tokyo Peking</title></bibl> extra <date ana="#returned" when="1933-05-03">3 May</date>
+            	<date ana="#checkedOut" when="1933-05-03">3 May</date>	<bibl ana="#borrowedItem" corresp="mep:00rq88"><persName>Trotzsky</persName> <title>His. Rus. Rev.</title> <biblScope unit="volume" from="1">I</biblScope></bibl>		<date ana="#returned" when="1933-05-03">15</date>
             	renewed to <date to="1933-06-10">10 June</date> 1v. 3 ms 65f
-            	<date when="1933-05-16">16 May</date> 	<bibl><title>Fire crackers</title></bibl>		owes 02f	<date when="1933-05-29">29 May</date>
-            	<date when="1933-05-29">29 "</date>		<bibl><title>Democracy in Crisis</title></bibl>	} due <date when="1933-06-05">5 June</date> <date when="1933-06-22">June 22</date>
-            	<date when="1933-05-29">	</date>		<bibl><title>Europa since the war</title></bibl> (2f a day)	<date when="1933-06-13">13 June</date>
+            	<date ana="#checkedOut" when="1933-05-16">16 May</date> 	<bibl ana="#borrowedItem" corresp="mep:003q90"><title>Fire crackers</title></bibl>		owes 02f	<date ana="#returned" when="1933-05-29">29 May</date>
+            	<date ana="#checkedOut" when="1933-05-29">29 "</date>		<bibl ana="#borrowedItem" corresp="mep:008r6j"><title>Democracy in Crisis</title></bibl>	} due <date ana="#returned" when="1933-06-05">5 June</date> <date when="1933-06-22">June 22</date>
+            	<date ana="#checkedOut" when="1933-05-29">	</date>		<bibl ana="#borrowedItem" corresp="mep:004782"><title>Europa since the war</title></bibl> (2f a day)	<date ana="#returned" when="1933-06-13">13 June</date>
             									cand <date when="1933-06-15">15 June</date>
-            	<date when="1933-06-13">13 June</date>	<bibl><title>Criterion</title></bibl>						<date when="1933-06-22">June 22</date>
-            	<date when="1933-06-13">	</date>		<bibl><title>Symposium</title></bibl> } 1.50 a day			<date when="1933-07-05">5 July</date>
-            	<date when="1933-06-22">22 June</date>	<bibl><title>Criterion</title> <biblScope unit="issue" from="1933-04">April 1933</biblScope></bibl> 50f		<date when="1933-07-05">5 "</date>
-            	<date when="1933-06-22">	</date>		<bibl><title>Where Angels Fear to tread</title></bibl>		<date when="1933-07-05">5 "</date>
+            	<date ana="#checkedOut" when="1933-06-13">13 June</date>	<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title></bibl>						<date ana="#returned" when="1933-06-22">June 22</date>
+            	<date ana="#checkedOut" when="1933-06-13">	</date>		<bibl ana="#borrowedItem" corresp="mep:00d82d"><title>Symposium</title></bibl> } 1.50 a day			<date ana="#returned" when="1933-07-05">5 July</date>
+            	<date ana="#checkedOut" when="1933-06-22">22 June</date>	<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title> <biblScope unit="issue" from="1933-04">April 1933</biblScope></bibl> 50f		<date ana="#returned" when="1933-07-05">5 "</date>
+            	<date ana="#checkedOut" when="1933-06-22">	</date>		<bibl ana="#borrowedItem" corresp="mep:00175d"><title>Where Angels Fear to tread</title></bibl>		<date ana="#returned" when="1933-07-05">5 "</date>
             											to account
             	</ab>
             	</div>
@@ -312,7 +303,7 @@
         		
         		<div type="card">
         		<div type="recto">
-            	<pb facs="#s5" />
+            	<pb facs="#s5"/>
             	<head>
             		<persName ref="#culv.do">CULVER</persName>		
             				<address>
@@ -320,42 +311,42 @@
             				</address>
             	</head>
             	<ab>
-            	<date when="1935-04-27">27 April</date>.	<bibl><title>Flower beneath foot</title></bibl>				<date when="1935-05-06">6 May</date>
-            	<date when="1935-05-10">May 10</date>		<bibl><title>Criterion</title><biblScope unit="issue" from="1935-04"> April 1935</biblScope></bibl>			<date when="1935-05-24">24</date>
-            	<date when="1935-05-10">	</date>	subo	<bibl><title>Good by to all that</title></bibl>				<date when="1935-05-24">24</date>
-            	<date when="1935-05-24">24 May.</date>		<bibl><title>Letters G.M. Hopkins to Bridges</title></bibl> 0.50 May <date when="1935-06-01">June 1</date>
+            	<date ana="#checkedOut" when="1935-04-27">27 April</date>.	<bibl ana="#borrowedItem" corresp="mep:00rq9k"><title>Flower beneath foot</title></bibl>				<date ana="#returned" when="1935-05-06">6 May</date>
+            	<date ana="#checkedOut" when="1935-05-10">May 10</date>		<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title><biblScope unit="issue" from="1935-04"> April 1935</biblScope></bibl>			<date ana="#returned" when="1935-05-24">24</date>
+            	<date ana="#checkedOut" when="1935-05-10">	</date>	subo	<bibl ana="#borrowedItem" corresp="mep:00761b"><title>Good by to all that</title></bibl>				<date ana="#returned" when="1935-05-24">24</date>
+            	<date ana="#checkedOut" when="1935-05-24">24 May.</date>		<bibl ana="#borrowedItem" corresp="mep:00rr02"><title>Letters G.M. Hopkins to Bridges</title></bibl> 0.50 May <date ana="#returned" when="1935-06-01">June 1</date>
             	Renewed <date from="1935-05-09" to="1935-06-09">9 May - 9 June</date>						15v
             	
-            	<date when="1935-05-24">24 May</date>		<bibl><persName>Lawrence</persName> . <title>The arabs</title></bibl>  0.50		<date when="1935-06-28">28 June</date>
-            	<date when="1935-06-01">June 1</date>		<bibl><title>Scrutinies</title></bibl>						<date when="1935-06-07">7 June</date>
-            	<date when="1935-06-07">7 "	</date>			<bibl><title>Backward glance</title></bibl>					<date when="1935-06-11">11 - </date>
-            	<date when="1935-06-18">18 - </date>		<bibl><title>Howards End</title></bibl>						<date when="1935-06-28">28 June</date>
+            	<date ana="#checkedOut" when="1935-05-24">24 May</date>		<bibl ana="#borrowedItem" corresp="mep:00rr1c"><persName>Lawrence</persName> . <title>The arabs</title></bibl>  0.50		<date ana="#returned" when="1935-06-28">28 June</date>
+            	<date ana="#checkedOut" when="1935-06-01">June 1</date>		<bibl ana="#borrowedItem" corresp="mep:00dj47"><title>Scrutinies</title></bibl>						<date ana="#returned" when="1935-06-07">7 June</date>
+            	<date ana="#checkedOut" when="1935-06-07">7 "	</date>			<bibl ana="#borrowedItem" corresp="mep:003157"><title>Backward glance</title></bibl>					<date ana="#returned" when="1935-06-11">11 - </date>
+            	<date ana="#checkedOut" when="1935-06-18">18 - </date>		<bibl ana="#borrowedItem" corresp="mep:00145k"><title>Howards End</title></bibl>						<date ana="#returned" when="1935-06-28">28 June</date>
             		Renewed <date from="1935-06-09" to="1935-07-09">9 June - 9 July</date>			15v
             	owes 	"		15v
             	New Statesman	 3v
             					18v pd. <date when="1935-11-04">4 Nov.</date>
             																			dep. 30
             	<date when="1935-11-04">1935 4 Nov.</date>	1 v. 1m.						 15v		
-            	<date when="1935-11-04">	</date>		<bibl><title>Flowering Judas</title></bibl> 0.50		 	<date when="1935-11-16">16</date>	 
-            	<date when="1935-11-04">	</date>		<bibl><title>Art of the Novel</title></bibl>				<date when="1935-11-12">12 Nov.</date>
-            	<date when="1935-11-16">16-	</date>		<bibl><title>Determination</title></bibl>					<date when="1935-11-25">25</date>
-            	<date when="1935-11-16">	</date>		<bibl><title>Pleasant plays_</title></bibl>					<date when="1935-11-25">25</date>
-            	<date when="1935-11-25">25	</date>		<bibl><title>Man &amp; superman</title></bibl>				<date when="1935-12-11">11</date>
-            	<date when="1935-12-02">2 Dec.</date>	<bibl><title>After strange gods</title></bibl> 0.50			<date when="1935-12-11">11 Dec.</date>
-            	<date when="1935-12-07">7 - </date>		<bibl><title>American</title></bibl> 0.50					<date when="1935-12-21">21</date>
-            	<date when="1935-12-11">11 -</date> 	<bibl><title>What Maisie knew</title></bibl>				<date when="1935-12-18">18</date>
-            	<date when="1935-12-14">14 -</date>		<bibl><title>Author of Beltraffio</title></bibl>			<date when="1935-12-18">18 Dec.</date>
-            	<date when="1935-12-21">21 Dec.</date>	<bibl><title>Spoils of Poynton</title></bibl>				<date when="1936-01-11">Jan 11</date>  <date when="1936-01-04">Jan 4</date>
+            	<date ana="#checkedOut" when="1935-11-04">	</date>		<bibl ana="#borrowedItem" corresp="mep:000r40"><title>Flowering Judas</title></bibl> 0.50		 	<date ana="#returned" when="1935-11-16">16</date>	 
+            	<date ana="#checkedOut" when="1935-11-04">	</date>		<bibl ana="#borrowedItem" corresp="mep:004w5c"><title>Art of the Novel</title></bibl>				<date ana="#returned" when="1935-11-12">12 Nov.</date>
+            	<date ana="#checkedOut" when="1935-11-16">16-	</date>		<bibl ana="#borrowedItem" corresp="mep:00rr2p"><title>Determination</title></bibl>					<date ana="#returned" when="1935-11-25">25</date>
+            	<date ana="#checkedOut" when="1935-11-16">	</date>		<bibl ana="#borrowedItem" corresp="mep:001p7m"><title>Pleasant plays_</title></bibl>					<date ana="#returned" when="1935-11-25">25</date>
+            	<date ana="#checkedOut" when="1935-11-25">25	</date>		<bibl ana="#borrowedItem" corresp="mep:00c44p"><title>Man &amp; superman</title></bibl>				<date ana="#returned" when="1935-12-11">11</date>
+            	<date ana="#checkedOut" when="1935-12-02">2 Dec.</date>	<bibl ana="#borrowedItem" corresp="mep:00164t"><title>After strange gods</title></bibl> 0.50			<date ana="#returned" when="1935-12-11">11 Dec.</date>
+            	<date ana="#checkedOut" when="1935-12-07">7 - </date>		<bibl ana="#borrowedItem" corresp="mep:002f3p"><title>American</title></bibl> 0.50					<date ana="#returned" when="1935-12-21">21</date>
+            	<date ana="#checkedOut" when="1935-12-11">11 -</date> 	<bibl ana="#borrowedItem" corresp="mep:00842b"><title>What Maisie knew</title></bibl>				<date ana="#returned" when="1935-12-18">18</date>
+            	<date ana="#checkedOut" when="1935-12-14">14 -</date>		<bibl ana="#borrowedItem" corresp="mep:00rr30"><title>Author of Beltraffio</title></bibl>			<date ana="#returned" when="1935-12-18">18 Dec.</date>
+            	<date ana="#checkedOut" when="1935-12-21">21 Dec.</date>	<bibl ana="#borrowedItem" corresp="mep:002t6n"><title>Spoils of Poynton</title></bibl>				<date ana="#returned" when="1936-01-11">Jan 11</date>  <date when="1936-01-04">Jan 4</date>
             	Renewed <date from="1935-12-04" to="1936-01-04">4 Dec - 4 Jan. 1936</date> -				15v
-            	<date when="1936-01-04">Jan 4</date>	<bibl><title>What Maisie Knew</title></bibl>	3.50 -		<date when="1936-02-04">Feb 4</date>
+            	<date ana="#checkedOut" when="1936-01-04">Jan 4</date>	<bibl ana="#borrowedItem" corresp="mep:00842b"><title>What Maisie Knew</title></bibl>	3.50 -		<date ana="#returned" when="1936-02-04">Feb 4</date>
             							Renew sub. 15 fr.
-            	<date when="1936-01-11">	11.</date>	<bibl><title>N.S.</title></bibl> 25 per day  bought
-            	<date when="1936-01-18">	18.</date>	<bibl><title>Criterion.</title></bibl> - extra				<date when="1936-02-04">Feb 4</date>
+            	<date ana="#checkedOut" when="1936-01-11">	11.</date>	<bibl ana="#borrowedItem" corresp="mep:00kz7p"><title>N.S.</title></bibl> 25 per day  bought
+            	<date ana="#checkedOut" when="1936-01-18">	18.</date>	<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion.</title></bibl> - extra				<date ana="#returned" when="1936-02-04">Feb 4</date>
             	</ab>
             	</div>
         		
         		<div type="verso">
-            	<pb facs="#s6" />
+            	<pb facs="#s6"/>
             	<head>
             	<date when="1935">1935</date>		
             				<persName>HALTEL Mr.</persName>
@@ -365,57 +356,57 @@
             	</head>
             	<ab>
             	1v - by day	(5v week)					dep. 30
-            	<date when="1935-04-09">9 April</date> - 	<bibl><title>Work of art</title></bibl>		ref. <date when="1935-04-16">16 Ap.</date>		 16
+            	<date ana="#checkedOut" when="1935-04-09">9 April</date> - 	<bibl ana="#borrowedItem" corresp="mep:00509p"><title>Work of art</title></bibl>		ref. <date ana="#returned" when="1935-04-16">16 Ap.</date>		 16
             	</ab>
             	</div>
         		</div>
         		
         		<div type="card">
         		<div type="recto">
-            	<pb facs="#s7" />
+            	<pb facs="#s7"/>
             	<head>
             	<date when="1936">1936</date>			
             				<persName ref="#culv.do">CULVER</persName>
             		to <date when="1936-09-04">Sept 4 - 1936</date>
             	</head>
         		<ab>
-            	<date when="1936-08-07">Aug. 7.</date>		<bibl><title>Travels in 2 Democracies</title></bibl>		<date when="1936-10-01">Oct 1</date>
-            					bought <bibl><title>Root + Flower</title></bibl>		36.
-            		<persName ref="#pres.ka">Mr Presley</persName> left. <bibl><title>The Poets Tongue</title></bibl> fr <persName ref="#culv.do">Mr Culver</persName>
+            	<date ana="#checkedOut" when="1936-08-07">Aug. 7.</date>		<bibl ana="#borrowedItem" corresp="mep:00rr49"><title>Travels in 2 Democracies</title></bibl>		<date ana="#checkedOut" when="1936-10-01">Oct 1</date>
+            					bought <bibl ana="#borrowedItem" corresp="mep:002w1n"><title>Root + Flower</title></bibl>		36.
+            		<persName ref="#pres.ka">Mr Presley</persName> left. <bibl ana="#borrowedItem" corresp="mep:00rr5m"><title>The Poets Tongue</title></bibl> fr <persName ref="#culv.do">Mr Culver</persName>
             							returned.
-            			4 <bibl><title>Tune + Tide</title>:	<biblScope unit="issue" from="1936-06-13">13</biblScope></bibl> 
-            				<bibl>			<biblScope unit="issue" from="1936-06-27">27 June.</biblScope></bibl>	 will pay 14v
-            				<bibl>			<biblScope unit="issue" from="1936-08-15">15 </biblScope></bibl>
-            				<bibl>			<biblScope unit="issue" from="1936-08-22">22 Aug.</biblScope></bibl>		returns
-            					<bibl><biblScope unit="issue" from="1936-09-23">Sept 23</biblScope> <title>New Republic.</title></bibl>		   5v
-            			Renewed. <date from="1936-09-04" to="1936-12-04">Sept 4 - Dec 4.</date>		40v
+            			4 <bibl ana="#borrowedItem" corresp="mep:003z04"><title>Tune + Tide</title>:	<biblScope unit="issue" from="1936-06-13">13</biblScope></bibl> 
+            				<bibl ana="#borrowedItem">			<biblScope unit="issue" from="1936-06-27">27 June.</biblScope></bibl>	 will pay 14v
+            				<bibl ana="#borrowedItem">			<biblScope unit="issue" from="1936-08-15">15 </biblScope></bibl>
+            				<bibl ana="#borrowedItem">			<biblScope unit="issue" from="1936-08-22">22 Aug.</biblScope></bibl>		returns
+            					<bibl ana="#borrowedItem" corresp="mep:00141b"><biblScope unit="issue" from="1936-09-23">Sept 23</biblScope> <title>New Republic.</title></bibl>		   5v
+            			Renewed. <date ana="#returned" from="1936-09-04" to="1936-12-04">Sept 4 - Dec 4.</date>		40v
             								pd. <date when="1936-11-07">Nov. 7.</date> 93v
-            				pd <date when="1936-11-14">Nov 14</date> owes	<bibl><title>Poems of William Owen</title></bibl>. 20.50
-            	<date when="1936-11-14">Nov 14</date>		<bibl><title>Ascent of F6</title></bibl>				nd.	<date when="1936-12-05">Dec 5</date>
-            	<date when="1936-11-14">	14</date>		<bibl><title>Criterion</title></bibl>	50c a day owes 7.50	<date when="1936-11-30">Nov 30.</date>
-            	<date when="1936-11-30">	30</date>		<bibl><title>Collected Poems Eliot.</title></bibl>			<date when="1936-12-05">Dec 5.</date>
-            	<date when="1936-11-30">	</date>		3. <bibl><title>Spectators</title></bibl>	owes 15.00.
-            	<date when="1936-11-30">	</date>		2. <bibl><title>New Statesman.</title></bibl> owes 10.00.
-            	<date when="1936-12-05">Dec 5.</date>		<bibl><title>Ordeal of Mark Twain</title></bibl>			<date when="1937-01-09">Jan 9.</date>
-            	<date when="1936-12-05">	</date>		1. <bibl><title>Spectator</title>. <biblScope unit="issue" from="1936-12-14">Dec 14</biblScope></bibl>.		5.00
-            	<date when="1936-12-05">	</date>		1. <bibl><title>New. Statesman</title> <biblScope unit="issue" from="1936-12-04">Dec 4</biblScope></bibl>		5.00
-            	<date when="1936-12-05">	</date>			<bibl><title>Peoples <unclear/> of Britain</title></bibl>	 .50.
-            	<date when="1937-01-09">Jan 9</date>		4. <bibl><title>Spectators</title></bibl>			   20.00.
-            	<date when="1937-01-09">	</date>		1 <bibl><title>New Statesman.</title></bibl>			5.00.
-            		   Subscription ren.<date from="1936-12-04" to="1937-01-04"> Dec 4 - Jan 4</date> 15.00.
-            	<date when="1937-01-16">Jan 16</date>		<bibl><title>New Statesman</title></bibl>				5.00
-            	<date when="1937-01-16">	</date>			<bibl><title>Spectator</title></bibl>				5.00
-            	<date when="1937-01-23">Jan 23</date>		<bibl><title>New Statesman</title></bibl>				5.00
-            	<date when="1937-01-23">	</date>			<bibl><title>Spectator</title></bibl>				5.00
+            				pd <date ana="#checkedOut" when="1936-11-14">Nov 14</date> owes	<bibl ana="#borrowedItem" corresp="mep:00rr6x"><title>Poems of William Owen</title></bibl>. 20.50
+            	<date ana="#checkedOut" when="1936-11-14">Nov 14</date>		<bibl ana="#borrowedItem" corresp="mep:009h47"><title>Ascent of F6</title></bibl>				nd.	<date ana="#returned" when="1936-12-05">Dec 5</date>
+            	<date ana="#checkedOut" when="1936-11-14">	14</date>		<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title></bibl>	50c a day owes 7.50	<date ana="#returned" when="1936-11-30">Nov 30.</date>
+            	<date ana="#checkedOut" when="1936-11-30">	30</date>		<bibl ana="#borrowedItem" corresp="mep:00rr77"><title>Collected Poems Eliot.</title></bibl>			<date ana="#returned" when="1936-12-05">Dec 5.</date>
+            	<date ana="#checkedOut" when="1936-11-30">	</date>		3. <bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectators</title></bibl>	owes 15.00.
+            	<date ana="#checkedOut" when="1936-11-30">	</date>		2. <bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman.</title></bibl> owes 10.00.
+            	<date ana="#checkedOut" when="1936-12-05">Dec 5.</date>		<bibl ana="#borrowedItem" corresp="mep:00r656"><title>Ordeal of Mark Twain</title></bibl>			<date ana="#returned" when="1937-01-09">Jan 9.</date>
+            	<date ana="#checkedOut" when="1936-12-05">	</date>		1. <bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title>. <biblScope unit="issue" from="1936-12-14">Dec 14</biblScope></bibl>.		5.00
+            	<date ana="#checkedOut" when="1936-12-05">	</date>		1. <bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New. Statesman</title> <biblScope unit="issue" from="1936-12-04">Dec 4</biblScope></bibl>		5.00
+            	<date ana="#checkedOut" when="1936-12-05">	</date>			<bibl ana="#borrowedItem"><title>Peoples <unclear/> of Britain</title></bibl>	 .50.
+            	<date ana="#checkedOut" when="1937-01-09">Jan 9</date>		4. <bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectators</title></bibl>			   20.00.
+            	<date ana="#checkedOut" when="1937-01-09">	</date>		1 <bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman.</title></bibl>			5.00.
+            		   Subscription ren.<date ana="#returned" from="1936-12-04" to="1937-01-04"> Dec 4 - Jan 4</date> 15.00.
+            	<date ana="#checkedOut" when="1937-01-16">Jan 16</date>		<bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl>				5.00
+            	<date ana="#checkedOut" when="1937-01-16">	</date>			<bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title></bibl>				5.00
+            	<date ana="#checkedOut" when="1937-01-23">Jan 23</date>		<bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl>				5.00
+            	<date ana="#checkedOut" when="1937-01-23">	</date>			<bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title></bibl>				5.00
             													   93.00
             													   20.50
-          			paid <date when="1937-02-09">Feb 9</date>	  113.50
+          			paid <date ana="#returned" when="1937-02-09">Feb 9</date>	  113.50
             										  		  	   20
             										  			  132.50
         		</ab>
             	</div>
         		<div type="verso">
-            	<pb facs="#s8" />
+            	<pb facs="#s8"/>
             	<head>
             	<persName ref="#culv.do">CULVER</persName>		
             				<date from="1936-01-04" to="1936-03-04">Jan 4 - March 4 1936</date>
@@ -424,36 +415,36 @@
             							paid up all dues <date when="1936-02-04">Feb 4</date>	30v
             	</head>
             	<ab>
-            	<date when="1936-02-04">Feb 4</date>		<bibl><title>Collected Poems of <persName>W.B. Yeats</persName>.</title></bibl> -
-            	<date when="1936-02-17">	17.</date>		<bibl><title>Near + Far</title> - <persName>Blunden</persName>.</bibl>			<date when="1936-03-22">	22.</date>
-            	<date when="1936-02-22">	22.</date>		<bibl><title>Draft of XXX Cantos</title>. <persName>E.P.</persName></bibl>		<date when="1936-04-03">April 3.</date>
+            	<date ana="#checkedOut" when="1936-02-04">Feb 4</date>		<bibl ana="#borrowedItem"><title>Collected Poems of <persName>W.B. Yeats</persName>.</title></bibl> -
+            	<date ana="#checkedOut" when="1936-02-17">	17.</date>		<bibl ana="#borrowedItem" corresp="mep:00rr9v"><title>Near + Far</title> - <persName>Blunden</persName>.</bibl>			<date ana="#returned" when="1936-03-22">	22.</date>
+            	<date ana="#checkedOut" when="1936-02-22">	22.</date>		<bibl ana="#borrowedItem" corresp="mep:00h01m"><title>Draft of XXX Cantos</title>. <persName>E.P.</persName></bibl>		<date ana="#returned" when="1936-04-03">April 3.</date>
             	<date when="1936-04-03">April 3.</date>										<date when="1936-03-09">March 9</date>
-            	<date when="1936-04-29">	29.</date>		<bibl><title>New S.</title></bibl>  bought.					<date when="1936-03-09">	"</date>
-            	<date when="1936-03-09">March 9</date>		<bibl><title>Collected Poems</title> <persName>Lawrence</persName> <biblScope unit="volume" from="2">vol 2</biblScope></bibl>	<date when="1936-04-03">April 3.</date>
-            	<date when="1936-03-09">	</date>			<bibl><title>Last Poems	" </title></bibl>tries pd.<unclear/> 6.75 fr	<date when="1936-04-03">"</date>
+            	<date ana="#checkedOut" when="1936-04-29">	29.</date>		<bibl ana="#borrowedItem" corresp="mep:00kx91"><title>New S.</title></bibl>  bought.					<date ana="#returned" when="1936-03-09">	"</date>
+            	<date ana="#checkedOut" when="1936-03-09">March 9</date>		<bibl ana="#borrowedItem" corresp="mep:002h8s"><title>Collected Poems</title> <persName>Lawrence</persName> <biblScope unit="volume" from="2">vol 2</biblScope></bibl>	<date ana="#returned" when="1936-04-03">April 3.</date>
+            	<date ana="#checkedOut" when="1936-03-09">	</date>			<bibl ana="#borrowedItem" corresp="mep:004k8t"><title>Last Poems	" </title></bibl>tries pd.<unclear/> 6.75 fr	<date when="1936-04-03">"</date>
             	renewed. <date from="1936-03-04" to="1936-05-04">March 4 - May 4.</date> .						30fr.
             	
-            	<date when="1936-04-03">April 3.</date>		<bibl><title>DH Lawrence</title></bibl>						<date when="1936-04-10">Ap 9. 10</date>
-            	<date when="1936-04-09">"	9</date>		<bibl><title>American Poetry</title></bibl> (Extra			<date when="1936-04-10">	10</date>
-            	<date when="1936-04-09">"	9</date>		<bibl><title>Poetry + Religion</title> <persName>Santayana</persName></bibl> Extra) <date when="1936-04-10"> 10.</date>
+            	<date ana="#checkedOut" when="1936-04-03">April 3.</date>		<bibl ana="#borrowedItem" corresp="mep:000q6b"><title>DH Lawrence</title></bibl>						<date ana="#returned" when="1936-04-10">Ap 9. 10</date>
+            	<date ana="#checkedOut" when="1936-04-09">"	9</date>		<bibl ana="#borrowedItem" corresp="mep:00rs0b"><title>American Poetry</title></bibl> (Extra			<date ana="#returned" when="1936-04-10">	10</date>
+            	<date ana="#checkedOut" when="1936-04-09">"	9</date>		<bibl ana="#borrowedItem" corresp="mep:00172g"><title>Poetry + Religion</title> <persName>Santayana</persName></bibl> Extra) <date ana="#returned" when="1936-04-10"> 10.</date>
             						Extras 1-0.
-            	<date when="1936-05-09">May 9.</date>		<bibl><title>Honey in the Horn</title></bibl>				<date when="1936-05-13">May 13</date>
-            	<date when="1936-05-13">	13</date>		<bibl><title>Babbitt</title></bibl>		paid extras <date when="1936-05-13">May 13</date>	<date when="1936-05-23">	23</date>
+            	<date ana="#checkedOut" when="1936-05-09">May 9.</date>		<bibl ana="#borrowedItem" corresp="mep:00f83z"><title>Honey in the Horn</title></bibl>				<date ana="#returned" when="1936-05-13">May 13</date>
+            	<date ana="#checkedOut" when="1936-05-13">	13</date>		<bibl ana="#borrowedItem" corresp="mep:00211r"><title>Babbitt</title></bibl>		paid extras <date ana="#returned" when="1936-05-13">May 13</date>	<date when="1936-05-23">	23</date>
             	Renewed <date from="1936-05-04" to="1936-06-04">May 4 - June 4 1936</date>					 15
             	
-            	<date when="1936-05-23">	23</date>.		<bibl><title>Honey in the Horn</title></bibl>				<date when="1936-05-29">	29.</date>
-            	<date when="1936-05-30">	30.</date>		<bibl><title>Abinger Harvest</title></bibl>					<date when="1936-06-06">June. 6</date>
-            	<date when="1936-06-05">June 5</date>		New  <bibl><title>Howards End.</title></bibl>				<date when="1936-06-06">	6</date>
-            	<date when="1936-06-06">	6.</date>		<bibl><title>Longest Journey</title></bibl>					<date when="1936-06-24">Jan 24</date>
-            	<date when="1936-06-24">June 24</date>		<bibl><title>Clio</title></bibl>							<date when="1936-07-03">July 3</date>
+            	<date ana="#checkedOut" when="1936-05-23">	23</date>.		<bibl ana="#borrowedItem" corresp="mep:00f83z"><title>Honey in the Horn</title></bibl>				<date ana="#returned" when="1936-05-29">	29.</date>
+            	<date ana="#checkedOut" when="1936-05-30">	30.</date>		<bibl ana="#borrowedItem" corresp="mep:00184c"><title>Abinger Harvest</title></bibl>					<date ana="#returned" when="1936-06-06">June. 6</date>
+            	<date ana="#checkedOut" when="1936-06-05">June 5</date>		New  <bibl ana="#borrowedItem" corresp="mep:00145k"><title>Howards End.</title></bibl>				<date ana="#returned" when="1936-06-06">	6</date>
+            	<date ana="#checkedOut" when="1936-06-06">	6.</date>		<bibl ana="#borrowedItem" corresp="mep:001298"><title>Longest Journey</title></bibl>					<date ana="#returned" when="1936-06-24">Jan 24</date>
+            	<date ana="#checkedOut" when="1936-06-24">June 24</date>		<bibl ana="#borrowedItem" corresp="mep:001045"><title>Clio</title></bibl>							<date ana="#returned" when="1936-07-03">July 3</date>
             	Renewed <date from="1936-06-04" to="1936-07-04">June 4 - July 4 1936</date> 15v
-            	<date when="1936-06-26">June 26.</date>		<bibl><title>House of Seven Gables</title></bibl> 			<date when="1936-07-03">July 3.</date>
+            	<date ana="#checkedOut" when="1936-06-26">June 26.</date>		<bibl ana="#borrowedItem" corresp="mep:00qt39"><title>House of Seven Gables</title></bibl> 			<date ana="#checkedOut" when="1936-07-03">July 3.</date>
             								owes  sub?  will pay later
-            					  also the <bibl><title>Clio</title></bibl>	33.00
+            					  also the <bibl ana="#borrowedItem" corresp="mep:001045"><title>Clio</title></bibl>	33.00
             					  	has come				33.00
-            	<date when="1936-07-11">July 11</date>		<bibl><title>Root and the Flower</title></bibl>.
-            	<date when="1936-07-28">	28.</date>		owes for <bibl><title>New Statesman</title></bibl> + <bibl><title>Nation</title></bibl>  3.00
-            	Renewed <date from="1936-07-04">July 4 - Sept 4</date>						30
+            	<date ana="#checkedOut" when="1936-07-11">July 11</date>		<bibl ana="#borrowedItem" corresp="mep:002w1n"><title>Root and the Flower</title></bibl>.
+            	<date ana="#checkedOut" when="1936-07-28">	28.</date>		owes for <bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl> + <bibl ana="#borrowedItem" corresp="mep:001g0s"><title>Nation</title></bibl>  3.00
+            	Renewed <date ana="#returned" from="1936-07-04">July 4 - Sept 4</date>						30
             												66.00
             	</ab>
             	</div>
@@ -461,29 +452,29 @@
         		
         		<div type="card">
         		<div type="recto">
-            	<pb facs="#s9" />
+            	<pb facs="#s9"/>
             	<head>
             	<date when="1937">1937</date>				<persName ref="#culv.do">CULVER</persName>
             	</head>
             	<ab>
-            	<date when="1937-03-09">March 9th</date>	<bibl><title>Spectator</title></bibl>	owes 5.00
-            									pd <date when="1937-03-20">March 20</date>
-            	<date when="1937-04-15">April 15.</date>	3 <bibl><title>Spectators</title></bibl>	10.00 owes
+            	<date ana="#checkedOut" when="1937-03-09">March 9th</date>	<bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title></bibl>	owes 5.00
+            									pd <date ana="#returned" when="1937-03-20">March 20</date>
+            	<date ana="#checkedOut" when="1937-04-15">April 15.</date>	3 <bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectators</title></bibl>	10.00 owes
             									paid.
-            	<date when="1937-04-15">	</date>		2 <bibl><title>Spectators</title></bibl> -		  owes.
-            	<date when="1937-05-14">May 14.</date>		<bibl><title>Tender is the night</title></bibl> 2v a day 15v
-            		<date from="1937-05-14" to="1937-06-14">May 14 - June 14 1937</date>					 15v
-            	<date when="1937-06-02">June 2.</date>		1 <bibl><title>Spectator</title></bibl>.					  5.00
-            	<date when="1937-06-02">	</date>			<bibl><title>Isaac Rosenberg's Poems</title></bibl>.		 85.00
+            	<date ana="#checkedOut" when="1937-04-15">	</date>		2 <bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectators</title></bibl> -		  owes.
+            	<date ana="#checkedOut" when="1937-05-14">May 14.</date>		<bibl ana="#borrowedItem" corresp="mep:00bx0j"><title>Tender is the night</title></bibl> 2v a day 15v
+            		<date ana="#returned" from="1937-05-14" to="1937-06-14">May 14 - June 14 1937</date>					 15v
+            	<date ana="#checkedOut" when="1937-06-02">June 2.</date>		1 <bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title></bibl>.					  5.00
+            	<date ana="#checkedOut" when="1937-06-02">	</date>			<bibl ana="#borrowedItem" corresp="mep:00rs1n"><title>Isaac Rosenberg's Poems</title></bibl>.		 85.00
             												105.00
             					credit for deposit refunded	 30.00
             									total due	 75.00
             			
-            			paid by mandat <date when="1937-08-31">Aug. 31. 1937</date>
+            			paid by mandat <date ana="#returned" when="1937-08-31">Aug. 31. 1937</date>
             	</ab>
             	</div>
         		<div type="verso">
-            	<pb facs="#s10" />
+            	<pb facs="#s10"/>
             	<!-- verso blank -->
             	</div>		
             	</div>            

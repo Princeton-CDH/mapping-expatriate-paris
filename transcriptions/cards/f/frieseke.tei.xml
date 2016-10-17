@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#frie.fr">Frances Frieseke</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,10 +48,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/f/frieseke/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -72,7 +63,7 @@
         <body>
            <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                    <ab>
                 <date when="1933">1933</date>          <persName ref="frie.fr">  FRIESEKE
                             
@@ -81,15 +72,15 @@
                                 (Calvados) </orgName>     <settlement>Blangy-le Cheau</settlement></address>
                          3 mos. to <date when="1933-09-14">14 Sept.</date>
                                                 65f     30f
-                <date when="1933-06-14">14 June </date>    <bibl><title>Little Book of Modern Verse</title></bibl>     <date when="1933-06-19">June 19</date>
-                          <bibl><title>  Second  </title></bibl>                        <date when="1933-07-18">18 July</date>
-                <date when="1933-07-18">18 July</date>     <bibl><title>Poems</title></bibl> <bibl><author>Alice Meynell</author></bibl>            <date when="1933-09-04">  Sept 4</date>
+                <date ana="#checkedOut" when="1933-06-14">14 June </date>    <bibl ana="#borrowedItem" corresp="mep:00s494"><title>Little Book of Modern Verse</title></bibl>     <date ana="#checkedOut" when="1933-06-19">June 19</date>
+                          <bibl ana="#borrowedItem"><title>  Second  </title></bibl>                        <date ana="#returned" when="1933-07-18">18 July</date>
+                <date ana="#checkedOut" when="1933-07-18">18 July</date>     <bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title></bibl> <bibl ana="#borrowedItem"><author>Alice Meynell</author></bibl>            <date ana="#returned" when="1933-09-04">  Sept 4</date>
                 postage 1.80
-               <date when="1933-09-04"> Sept 4 </date>     <bibl><title>Harp Weaver  </title></bibl>                  <date when="1933-09-25"> Sept 25</date>
+               <date ana="#checkedOut" when="1933-09-04"> Sept 4 </date>     <bibl ana="#borrowedItem" corresp="mep:00db2z"><title>Harp Weaver  </title></bibl>                  <date ana="#returned" when="1933-09-25"> Sept 25</date>
                    </ab>
                 </div>
                <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                 </div>
             </div>

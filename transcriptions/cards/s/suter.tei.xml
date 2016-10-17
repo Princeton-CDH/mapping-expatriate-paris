@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#sute.g">G.V. Suter</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -57,23 +48,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/suter/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     				<persName ref="#sute.g">SUTER</persName>
                     <date when="1929-11-15">1929
@@ -90,20 +81,20 @@
     								subs to <date when="1930-05-15">May 15th 1930</date>
     				</ab>
                     <ab>
-    				<date when="1929-11-15">Nov 15</date>		<bibl><title>Magic Island</title></bibl>						<date when="1929-12-13">Dec 13</date>
+    				<date ana="#checkedOut" when="1929-11-15">Nov 15</date>		<bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island</title></bibl>						<date ana="#returned" when="1929-12-13">Dec 13</date>
     									                                                                   <date when="1929-12-11">Dec 11</date> p.c.
-    				<date when="1929-12-13">Dec 13</date>		<bibl><title>England my England</title></bibl>.					<date when="1930-04-03">April 3</date>
+    				<date ana="#checkedOut" when="1929-12-13">Dec 13</date>		<bibl ana="#borrowedItem" corresp="mep:003f5j"><title>England my England</title></bibl>.					<date ana="#returned" when="1930-04-03">April 3</date>
     									                                                                   <date when="1930-03-11">Mch 11</date> p.c.    
     				</ab>					
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <head>
                     					<persName ref="#sute.g">SUTER</persName>
                     </head>					
                 </div>  
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     Student
                     <date when="1900-12-23">Dec 23</date>		<persName ref="sute.g">M. G. V. Suter</persName>
@@ -114,30 +105,30 @@
                     							Dep.			7
                     </ab>							
                     <ab>
-                    <date when="1929-12-23">Dec 23</date>	     <bibl><title>Lord Jim</title></bibl>						      <date when="1929-12-30">Dec 30</date>
+                    <date ana="#checkedOut" when="1929-12-23">Dec 23</date>	     <bibl ana="#borrowedItem" corresp="mep:00b406"><title>Lord Jim</title></bibl>						      <date ana="#returned" when="1929-12-30">Dec 30</date>
                     
-                    <date when="1929-12-30">Dec 30</date>	     <bibl><title>Heartbreak House</title></bibl>				      <date when="1930-01-22">Jan 22</date>
+                    <date ana="#checkedOut" when="1929-12-30">Dec 30</date>	     <bibl ana="#borrowedItem" corresp="mep:008w13"><title>Heartbreak House</title></bibl>				      <date ana="#returned" when="1930-01-22">Jan 22</date>
                     
                     		Renewed <date when="1930-01-23">Jan 23rd</date> 3 mos.
                     		
-                    <date when="1930-01-22">Jan 22</date>	     <bibl><title>Life &amp; Letters</title> <author>Hearn</author>, <editor>Bisland</editor></bibl>	<date when="1930-03-03">March 3</date>
+                    <date ana="#checkedOut" when="1930-01-22">Jan 22</date>	     <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life &amp; Letters</title> <author>Hearn</author>, <editor>Bisland</editor></bibl>	<date ana="#returned" when="1930-03-03">March 3</date>
                     
-                    <date when="1930-03-03">March 3</date>	     <bibl><title>Victorian Age in Literature</title></bibl>		  <date when="1930-03-16">March 16</date>
+                    <date ana="#checkedOut" when="1930-03-03">March 3</date>	     <bibl ana="#borrowedItem" corresp="mep:00br33"><title>Victorian Age in Literature</title></bibl>		  <date ana="#returned" when="1930-03-16">March 16</date>
                     
-                    <date when="1930-03-03">	</date>	         <bibl><title>The Niggar of the Narcissus</title></bibl>		  <date when="1930-03-23">March 23</date>
-                    <date when="1930-04-16">16 April</date>      <bibl><title>Harrington</title> <author>Meredith</author></bibl> <date when="1930-05-07">May 7</date>
+                    <date ana="#checkedOut" when="1930-03-03">	</date>	         <bibl ana="#borrowedItem" corresp="mep:00k444"><title>The Niggar of the Narcissus</title></bibl>		  <date ana="#returned" when="1930-03-23">March 23</date>
+                    <date ana="#checkedOut" when="1930-04-16">16 April</date>      <bibl ana="#borrowedItem" corresp="mep:00rk10"><title>Harrington</title> <author>Meredith</author></bibl> <date ana="#returned" when="1930-05-07">May 7</date>
                     
-                    <date when="1930-04-16">	</date>	         <bibl><title>Nostromo</title></bibl>						      <date when="1930-04-22">April 22</date>
+                    <date ana="#checkedOut" when="1930-04-16">	</date>	         <bibl ana="#borrowedItem" corresp="mep:00b67x"><title>Nostromo</title></bibl>						      <date ana="#returned" when="1930-04-22">April 22</date>
                     		
-                	<date when="1930-04-22">April 22</date>      <bibl><title>The Happy Prince</title></bibl>
+                	<date ana="#checkedOut" when="1930-04-22">April 22</date>      <bibl ana="#borrowedItem" corresp="mep:00rk29"><title>The Happy Prince</title></bibl>
                 	
-                			Renewed <date when="1930-04-23">April 23rd</date> 1 mo. 1 vol		4
+                			Renewed <date ana="#returned" when="1930-04-23">April 23rd</date> 1 mo. 1 vol		4
                 			
-                	<date when="1930-05-07">May 7</date>	     <bibl><title>Lord Ormond</title></bibl>						  <date when="1930-06-01">June 1st</date>
+                	<date ana="#checkedOut" when="1930-05-07">May 7</date>	     <bibl ana="#borrowedItem" corresp="mep:000k95"><title>Lord Ormond</title></bibl>						  <date ana="#returned" when="1930-06-01">June 1st</date>
                 	</ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div>

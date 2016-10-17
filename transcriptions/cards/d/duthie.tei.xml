@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#duth.en">Enid Duthie</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,10 +51,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/duthie/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -72,7 +63,7 @@
     <text>
         <body>
             
-             <div type="card">  <div type="recto"> <pb facs="#s1" />
+             <div type="card">  <div type="recto"> <pb facs="#s1"/>
                 <head><date when="1937">1937</date>		<persName ref="#duth.en">DUTHIE
                 			Mrs Enid</persName>
                 			<address><street>70 rue Notre Dame des Champs</street></address></head>
@@ -80,33 +71,33 @@
                 		<ab>	1m	2v						50
                 			left	dep				   100
                 
-                <date when="1937-10-18">Oct 18</date>		<bibl><title>Destiny of France</title></bibl>				<date when="1937-10-25">Oct 25</date>
-                			<bibl><title>Present Indicative</title></bibl>				<date when="1937-10-25">Oct 25</date>
-                	<date when="1937-10-25">25</date>		<bibl><title>Sally Bowles</title></bibl> (not counted as extra) <date when="1937-10-29">Oct 29</date>
-                	<date when="1937-10-25">25</date>		<bibl><title>Princess Casamassima</title></bibl>			<date when="1937-11-08">Nov 8</date>
-                	<date when="1937-10-25">25</date>		<bibl><title>Divorce Court Murder</title></bibl> 16v		<date when="1937-11-08">Nov 8</date>
-                	<date when="1937-10-29">29</date>		<bibl><title>Cards on the Table</title></bibl> (Extra 2)		<date when="1937-11-08">Nov 8</date>
+                <date ana="#checkedOut" when="1937-10-18">Oct 18</date>		<bibl ana="#borrowedItem" corresp="mep:004b7k"><title>Destiny of France</title></bibl>				<date ana="#checkedOut" when="1937-10-25">Oct 25</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00361c"><title>Present Indicative</title></bibl>				<date ana="#returned" when="1937-10-25">Oct 25</date>
+                	<date ana="#checkedOut" when="1937-10-25">25</date>		<bibl ana="#borrowedItem" corresp="mep:001c5h"><title>Sally Bowles</title></bibl> (not counted as extra) <date ana="#returned" when="1937-10-29">Oct 29</date>
+                	<date ana="#checkedOut" when="1937-10-25">25</date>		<bibl ana="#borrowedItem" corresp="mep:005161"><title>Princess Casamassima</title></bibl>			<date ana="#returned" when="1937-11-08">Nov 8</date>
+                	<date ana="#checkedOut" when="1937-10-25">25</date>		<bibl ana="#borrowedItem" corresp="mep:00517b"><title>Divorce Court Murder</title></bibl> 16v		<date ana="#returned" when="1937-11-08">Nov 8</date>
+                	<date ana="#checkedOut" when="1937-10-29">29</date>		<bibl ana="#borrowedItem" corresp="mep:00518n"><title>Cards on the Table</title></bibl> (Extra 2)		<date ana="#returned" when="1937-11-08">Nov 8</date>
                 									22v
-                	<date when="1937-10-29">29</date>		<bibl><title>Japans feet of Clay</title></bibl> 4v			<date when="1937-11-08">Nov 8</date>
+                	<date ana="#checkedOut" when="1937-10-29">29</date>		<bibl ana="#borrowedItem" corresp="mep:00369v"><title>Japans feet of Clay</title></bibl> 4v			<date ana="#returned" when="1937-11-08">Nov 8</date>
                 					paid extras 43v <date when="1937-11-08">Nov 8</date>
-                <date when="1937-11-08">Nov 8</date>		<bibl><title>Years</title></bibl>							<date when="1937-11-16">Nov 16</date>
-                		    <note><bibl><title>Purse of Coppers</title></bibl><!-- crossed out --></note> <bibl><title>Murder in the Mews</title></bibl>	<date when="1937-11-18">Nov. 18</date>
-                			<bibl><title>Action for Slander</title></bibl> extra 1v a day <date when="1937-11-16">Nov 16</date>
-                <date when="1937-11-16">Nov 16</date>		<bibl><title>Seven Who Fled</title></bibl>					<date when="1937-11-24">Nov 24</date>
-                			<bibl><title>Edge of taos Desert</title></bibl>				<date when="1937-11-24">Nov 24</date>
+                <date ana="#checkedOut" when="1937-11-08">Nov 8</date>		<bibl ana="#borrowedItem" corresp="mep:002c7c"><title>Years</title></bibl>							<date ana="#returned" when="1937-11-16">Nov 16</date>
+                		    <note><bibl ana="#borrowedItem" corresp="mep:00519z"><title>Purse of Coppers</title></bibl><!-- crossed out --></note> <bibl ana="#borrowedItem" corresp="mep:00520f"><title>Murder in the Mews</title></bibl>	<date ana="#checkedOut" when="1937-11-18">Nov. 18</date>
+                			<bibl ana="#borrowedItem" corresp="mep:003w26"><title>Action for Slander</title></bibl> extra 1v a day <date ana="#returned" when="1937-11-16">Nov 16</date>
+                <date ana="#checkedOut" when="1937-11-16">Nov 16</date>		<bibl ana="#borrowedItem" corresp="mep:00127n"><title>Seven Who Fled</title></bibl>					<date ana="#checkedOut" when="1937-11-24">Nov 24</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00377h"><title>Edge of taos Desert</title></bibl>				<date ana="#returned" when="1937-11-24">Nov 24</date>
                 <date from="1939-01-11" to="1939-07-11">Jan 11 - July 11, 1939</date>  6m 2v a				180v
                 								owes 10v paid <date when="1939-01-18">Jan 18</date>
                 
-                <date when="1939-01-18">Jan 18</date>		<bibl><title>Wind Blows Over</title></bibl>					<date when="1939-01-31">31</date>
-                	<date when="1939-01-18">18</date>		<bibl><title>Scandal of Father Brown</title></bibl>			<date when="1939-01-31">31</date>
-                	<date when="1939-01-31">31</date>		<bibl><title>Enchanted April</title></bibl>					<date when="1939-03-15">March 15</date>
-                	<date when="1939-01-31">31</date>		<bibl><title>Clio</title></bibl>							<date when="1939-03-15">March 15</date>
-                	<date when="1939-01-31">31</date>		<bibl><title>Adventures of Christopher Columin</title></bibl> 	<date when="1939-02-06">Feb  <note>Jan<!-- crossed out --></note> 6</date>
+                <date ana="#checkedOut" when="1939-01-18">Jan 18</date>		<bibl ana="#borrowedItem" corresp="mep:00521r"><title>Wind Blows Over</title></bibl>					<date ana="#returned" when="1939-01-31">31</date>
+                	<date ana="#checkedOut" when="1939-01-18">18</date>		<bibl ana="#borrowedItem" corresp="mep:00285x"><title>Scandal of Father Brown</title></bibl>			<date ana="#returned" when="1939-01-31">31</date>
+                	<date ana="#checkedOut" when="1939-01-31">31</date>		<bibl ana="#borrowedItem" corresp="mep:001r6v"><title>Enchanted April</title></bibl>					<date ana="#returned" when="1939-03-15">March 15</date>
+                	<date ana="#checkedOut" when="1939-01-31">31</date>		<bibl ana="#borrowedItem" corresp="mep:001045"><title>Clio</title></bibl>							<date ana="#returned" when="1939-03-15">March 15</date>
+                	<date ana="#checkedOut" when="1939-01-31">31</date>		<bibl ana="#borrowedItem" corresp="mep:00070m"><title>Adventures of Christopher Columin</title></bibl> 	<date ana="#returned" when="1939-02-06">Feb  <note>Jan<!-- crossed out --></note> 6</date>
                 <date when="1939-03-15">March 15</date>	(<persName ref="#duth.en">Mrs Duthie</persName> will come	sent card <date when="1938-03-10">3/10/38</date>
                 				<persName ref="#duth.en">herself</persName>)	owes fines 2 vols 30 days overdue
                 										at 0.50		30v</ab>
                 </div><div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                 					</div>
                 

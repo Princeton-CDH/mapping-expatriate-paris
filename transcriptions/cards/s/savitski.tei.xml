@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#savi.lu">Ludmila Savitski</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -60,23 +51,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/savitski/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                                 <persName ref="#savi.lu">STAVITSKI</persName>
                     <date when="1930-12-12">1930				
@@ -88,19 +79,19 @@
                     
                     
                     <ab>
-                    <date when="1930-12-12">Dec 12</date>		<bibl><title>Forty Second Parallel</title></bibl>			<date when="1930-12-15">Dec 15</date>
-                    <date when="1930-12-12"> "	"</date>		<bibl><title>Three Soldiers</title></bibl> p.c. <date when="1931-09-02">Sept 2 1931</date>	<date when="1931-09">Sept 1931</date>
-                    <date when="1930-12-12"> "  "</date>		<bibl><bibl>American Caravan</bibl> (1st)</bibl>			<date when="1930-12-22">Dec 22</date>
-                    <date when="1930-12-12"> "  "</date>		<bibl><title>The Garbage Man</title></bibl>					<date when="1930-12-22">Dec 22</date>    
+                    <date ana="#checkedOut" when="1930-12-12">Dec 12</date>		<bibl ana="#borrowedItem" corresp="mep:003s12"><title>Forty Second Parallel</title></bibl>			<date ana="#returned" when="1930-12-15">Dec 15</date>
+                    <date ana="#checkedOut" when="1930-12-12"> "	"</date>		<bibl ana="#borrowedItem" corresp="mep:002061"><title>Three Soldiers</title></bibl> p.c. <date ana="#returned" when="1931-09-02">Sept 2 1931</date>	<date when="1931-09">Sept 1931</date>
+                    <date ana="#checkedOut" when="1930-12-12"> "  "</date>		<bibl ana="#borrowedItem"><bibl ana="#borrowedItem">American Caravan</bibl> (1st)</bibl>			<date ana="#returned" when="1930-12-22">Dec 22</date>
+                    <date ana="#checkedOut" when="1930-12-12"> "  "</date>		<bibl ana="#borrowedItem" corresp="mep:00q70p"><title>The Garbage Man</title></bibl>					<date ana="#returned" when="1930-12-22">Dec 22</date>    
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>  
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     A d L                                                                   X
                     <date when="1931-03-16">March 16</date>	<address><persName ref="#savi.lu">Madame Ludmila Savitsky</persName>			
@@ -112,15 +103,15 @@
                     			Subsc. 1 year - 2 vols.
                     </ab>			
                     <ab>			
-                    <date when="1931-03-16">March 16</date>	    <bibl><title>Georgian Poetry</title></bibl>					    <date when="1931-07-29">July 29</date>
-                    			                                <bibl><title>Selections from Swinburne</title></bibl>
+                    <date ana="#checkedOut" when="1931-03-16">March 16</date>	    <bibl ana="#borrowedItem" corresp="mep:00gx4r"><title>Georgian Poetry</title></bibl>					    <date ana="#checkedOut" when="1931-07-29">July 29</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:006s1s"><title>Selections from Swinburne</title></bibl>
                     			
-                    <date when="1931-07-29">July 29</date>		<bibl><title>Dubliners</title></bibl>						    <date when="1931-02-21"> Feb 21</date>
-                    			                                <bibl><title>Chamber Music</title></bibl>
+                    <date ana="#checkedOut" when="1931-07-29">July 29</date>		<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>						    <date ana="#checkedOut" when="1931-02-21"> Feb 21</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:004z1p"><title>Chamber Music</title></bibl>
                     </ab>			
                 </div> 
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div>

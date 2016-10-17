@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roye">Royer-Sement</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -48,7 +39,7 @@
             <change who="#carlca" when="2016-03-15">
                 <ab>
                     Encoded Cards - First Pass
-                    s1: 21 Nov.	Queen Eliz. (<unclear/>) ==> MAB
+                    s1: 21 Nov.	Queen Eliz. (<unclear/>) ==&gt; MAB
                     s1: MOON AND SIXPENCE (Somerset Maugham)
                 </ab>
             </change>
@@ -62,17 +53,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/royer_sement/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1935">1935</date>				
                                     <persName ref="#roye">ROYER - SEMENT Mlle.</persName>
@@ -85,22 +76,22 @@
                 								50 ref <date when="1936-01-04">Jan 4</date>	dep. 50v
                 								12 50                25v
                 								37,50
-                <date when="1935-10-25">25 Oct.</date>	<bibl><title>Madam fears the dark</title></bibl>		<date when="1935-10-30">30 Oct</date>	 	
-                <date when="1935-10-30">30	-</date>	<bibl><title>Stoker Bush</title></bibl>				    <date when="1935-11-04">4 Nov.</date>
-                <date when="1935-11-04">4 Nov.</date>	<bibl><title>Wooden Pillow</title></bibl>				<date when="1935-11-09">9 -</date>
-                <date when="1935-11-04">	</date>	    <bibl><title>Out of bounds</title></bibl>			    <date when="1935-11-21">21 Nov -</date>
-                <date when="1935-11-09">9	-</date>	<bibl><title>House of The 4 winds</title></bibl>		<date when="1935-11-16">16</date>
-                <date when="1935-11-16">16</date>		<bibl><title>Furys</title></bibl>						<date when="1935-11-21">21</date>
-                <date when="1935-11-21">21	-</date>	<bibl><title>Queen Eliz. (Mab)</title></bibl>       	<date when="1935-12-05">5 Dec</date>
+                <date ana="#checkedOut" when="1935-10-25">25 Oct.</date>	<bibl ana="#borrowedItem" corresp="mep:00855j"><title>Madam fears the dark</title></bibl>		<date ana="#returned" when="1935-10-30">30 Oct</date>	 	
+                <date ana="#checkedOut" when="1935-10-30">30	-</date>	<bibl ana="#borrowedItem" corresp="mep:00sq6w"><title>Stoker Bush</title></bibl>				    <date ana="#returned" when="1935-11-04">4 Nov.</date>
+                <date ana="#checkedOut" when="1935-11-04">4 Nov.</date>	<bibl ana="#borrowedItem" corresp="mep:008s0z"><title>Wooden Pillow</title></bibl>				<date ana="#returned" when="1935-11-09">9 -</date>
+                <date ana="#checkedOut" when="1935-11-04">	</date>	    <bibl ana="#borrowedItem" corresp="mep:00g316"><title>Out of bounds</title></bibl>			    <date ana="#returned" when="1935-11-21">21 Nov -</date>
+                <date ana="#checkedOut" when="1935-11-09">9	-</date>	<bibl ana="#borrowedItem" corresp="mep:000c9h"><title>House of The 4 winds</title></bibl>		<date ana="#returned" when="1935-11-16">16</date>
+                <date ana="#checkedOut" when="1935-11-16">16</date>		<bibl ana="#borrowedItem" corresp="mep:00f848"><title>Furys</title></bibl>						<date ana="#returned" when="1935-11-21">21</date>
+                <date ana="#checkedOut" when="1935-11-21">21	-</date>	<bibl ana="#borrowedItem" corresp="mep:00sq76"><title>Queen Eliz. (Mab)</title></bibl>       	<date ana="#returned" when="1935-12-05">5 Dec</date>
                 Renewed <date from="1935-11-25" to="1935-12-25">25 Nov -	25 Dec. 1935</date>	----	25v
-                <date when="1935-11-30">30 Nov.</date>	<bibl><title>Moon &amp; 6d</title></bibl>				<date when="1935-12-05">5 Dec</date>
-                <date when="1935-12-05">5 Dec.</date>	<bibl><title>Holy Ireland</title></bibl>				<date when="1935-12-14">14	-</date>
-                <date when="1935-12-14">14	-</date>	<bibl><title>Honey in the horn</title></bibl>			<date when="1935-12-23">23</date>
-                <date when="1935-12-23">23	</date>	    <bibl><title>Silver Rattle</title></bibl>				<date when="1936-01-04">Jan 4</date>
+                <date ana="#checkedOut" when="1935-11-30">30 Nov.</date>	<bibl ana="#borrowedItem" corresp="mep:00sq8h"><title>Moon &amp; 6d</title></bibl>				<date ana="#returned" when="1935-12-05">5 Dec</date>
+                <date ana="#checkedOut" when="1935-12-05">5 Dec.</date>	<bibl ana="#borrowedItem" corresp="mep:009b55"><title>Holy Ireland</title></bibl>				<date ana="#returned" when="1935-12-14">14	-</date>
+                <date ana="#checkedOut" when="1935-12-14">14	-</date>	<bibl ana="#borrowedItem" corresp="mep:00f83z"><title>Honey in the horn</title></bibl>			<date ana="#returned" when="1935-12-23">23</date>
+                <date ana="#checkedOut" when="1935-12-23">23	</date>	    <bibl ana="#borrowedItem" corresp="mep:000t37"><title>Silver Rattle</title></bibl>				<date ana="#returned" when="1936-01-04">Jan 4</date>
                 </ab>
                 </div>   
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

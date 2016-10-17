@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="gide.an">André Gide</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,22 +49,22 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/gide/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
+        	<graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
+        	<graphic url="00000006.jp2"/>
         </surface>
         
      
@@ -83,48 +74,48 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                    <ab>
                 <date when="1935">1935</date>		<address><persName ref="gide.an">Monsieur André GIDE</persName>
                 			<street>1 rue Vaneau,</street><settlement>Paris</settlement> <district>- 7</district></address>
                 
-                <date when="1935-03-05">March 5</date>	<bibl><title>Geographie Magazine for Dec 1934</title></bibl>
-                	<date when="1935-03-07">7</date>		<bibl><title>"		"	Sept - Oct. Nov	</title></bibl>		30,00
+                <date ana="#checkedOut" when="1935-03-05">March 5</date>	<bibl ana="#borrowedItem" corresp="mep:00k48c"><title>Geographie Magazine for Dec 1934</title></bibl>
+                	<date ana="#checkedOut" when="1935-03-07">7</date>		<bibl ana="#borrowedItem" corresp="mep:00k49p"><title>"		"	Sept - Oct. Nov	</title></bibl>		30,00
                 		sent to <persName ref="gide.ca">Madame Gide</persName> post March 5 1.80
                 	<distinct>	Cuverville</distinct>			"	"	   7 3 80	 5,60
                 		subscription <persName ref="gide.ca">Mme Gide</persName> 1 year			64,00
                 								13 March paid	99.60</ab>
                </div> 
                <div type="verso"> 
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                </div> 
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                <ab> <date when="1950">1950</date>		<address><persName ref="gide.an">Gide, André</persName>
                 			<street>1 Bis rue Vaneau</street></address>
                 
-                <date when="1950-01-11">Jan 11	1950</date>	<bibl><title>Minor Elizabethan Drama</title></bibl>
-                				(containing <bibl><title>Arden of Faversham</title></bibl>)	not
-                				(<bibl><title>Everyman</title></bibl>)						returned
-                				(<bibl><title>Goborduc</title></bibl>
-                				<bibl><title>Spanish Tragedy</title></bibl></ab>
+                <date ana="#checkedOut" when="1950-01-11">Jan 11	1950</date>	<bibl ana="#borrowedItem" corresp="mep:00k505"><title>Minor Elizabethan Drama</title></bibl>
+                				(containing <bibl ana="#borrowedItem" corresp="mep:00k51g"><title>Arden of Faversham</title></bibl>)	not
+                				(<bibl ana="#borrowedItem" corresp="mep:00k52s"><title>Everyman</title></bibl>)						returned
+                				(<bibl ana="#borrowedItem" corresp="mep:00k533"><title>Goborduc</title></bibl>
+                				<bibl ana="#borrowedItem" corresp="mep:00k54d"><title>Spanish Tragedy</title></bibl></ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 <!-- verso blank -->
                 </div>
                 <div type="recto">
-                <pb facs="#s5" />
+                <pb facs="#s5"/>
                 	<ab><address><persName ref="gide.ca">Catherine Gide</persName>
                 	<street>224 Bd St Germain</street> <district>- VII</district>
                 		<orgName>Littré 1903</orgName></address>
                 
               <date when="1961-03-09">  March 9</date>
-                <date when="1961">1961</date>	<bibl><title>The Channel Islands</title></bibl></ab>
+                <date ana="#checkedOut" when="1961">1961</date>	<bibl ana="#borrowedItem" corresp="mep:00k55q"><title>The Channel Islands</title></bibl></ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s6" />
+                <pb facs="#s6"/>
                 <!-- verso blank -->
                 </div>		
                 	

@@ -1,100 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#lube.co">Constance de Lubersac</persName></title>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#i-davis">
-                    <persName>Davis, Ian</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#lube.co"><persName>Constance de Lubersac</persName></person>
-            </particDesc>
-        </profileDesc>
-        <revisionDesc>
-            <change who="elspeth" when="2015-08-14">
-                <ab>
-                    Transcribed cards
-                    s1:
-                    	<unclear/> Feb 11 = return date unclear
-                    	
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/l/de_lubersac/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
-        </surface>
-        <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
-        </surface>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card: <persName ref="#lube.co">Constance de Lubersac</persName></title>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#i-davis">
+          <persName>Davis, Ian</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special
+            Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
         
-        
-        
-        
-    </facsimile>
-    <text>
-        <body>
-           <div type="card"><div type="recto">
-                <pb facs="#s1" />
-          <head>     	<date when="1938">1938</date>	<persName ref="#lube.co">de LUBERSAC
-               		Ctsse
-               		Odon</persName>	<address><street>1 rue Charles Lamoureaux</street>	<district>16e</district></address>
-               		
-               							1 m 1 v		50
-               									dep	50
-               							(by cheque 100v)</head>
-             <ab>  	
-               	<date when="1938-01-31">Jan 31</date>	<bibl><title>Winged Pharoah</title></bibl>					<date when="1938-01-03">Jan. 3</date>
-               	<date when="1938-02-03">Feb 3</date>.	<bibl><title>Citadel</title></bibl>							<date when="1938-02-03">Febr. 3</date>
-               	<date when="1938-02-11">Febr. 11</date>. <bibl><title>Sparkenbroke</title></bibl>.					<date when="1938-02-28">Febr. 28</date>
-               	<date when="1938-02-28">Febr 28</date>	<bibl><title>Years</title></bibl>.							<date when="1938-03-07">March 7</date>
-               	Renewed <date from="1938-03-01" to="1938-04-03">March 1st - April 3 1938</date>	50
-               	<date when="1938-03-07">Mar. 7</date>	<bibl><title>Mrs Dalloway</title></bibl>						<date when="1938-03-11">March 11</date>
-               	<date when="1938-03-11">Mar - 11</date> <bibl><title>Stars Look Down</title></bibl>				<date when="1938-03-14">Mar. 14</date>
-               		<date when="1938-03-14">14</date>	<bibl><title>Pepita</title></bibl>							<date when="1938-03-21">March 21</date>
-               	<date when="1938-03-21">March 21</date> <bibl><title>Rains Came</title></bibl>						<date when="1938-03-31">March 31</date>
-               		left deposit</ab>
-             </div>  	
-           <div type="verso">    	<pb facs="#s2" />
-               	<!-- verso blank -->
-          </div>   </div>  	
-               	
-            
-        </body>
-    </text>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode>
+        <!-- library cards -->
+      </textClass>
+      <particDesc>
+        <person role="cardholder" ana="#lube.co">
+          <persName>Constance de Lubersac</persName>
+        </person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="elspeth" when="2015-08-14">
+        <ab> Transcribed cards s1: <unclear/> Feb 11 = return date unclear </ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/l/de_lubersac/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+  </facsimile>
+
+
+  <text>
+    <body>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s1"/>
+          <head>
+            <date when="1938">1938</date>
+            <persName ref="#lube.co">de LUBERSAC Ctsse Odon</persName>
+            <address>
+              <street>1 rue Charles Lamoureaux</street>
+              <district>16e</district>
+          </address> 1 m 1 v 50 dep 50 (by cheque 100v) </head>
+          
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-01-31">Jan 31</date>
+            <bibl ana="#borrowedItem" corresp="mep:002b3v">
+              <title>Winged Pharoah</title>
+            </bibl>
+            <date ana="#returned" when="1938-01-03">Jan. 3</date>
+          </ab>
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-02-03">Feb 3</date>. 
+            <bibl ana="#borrowedItem" corresp="mep:002p57">
+              <title>Citadel</title>
+            </bibl>
+            <date ana="#returned" when="1938-02-03">Febr. 3</date>
+          </ab>
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-02-11">Febr. 11</date>. 
+            <bibl ana="#borrowedItem" corresp="mep:002z2h">
+              <title>Sparkenbroke</title>
+              </bibl>.
+              <date ana="#returned" when="1938-02-28">Febr. 28</date>
+          </ab>
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-02-28">Febr 28</date>
+            <bibl ana="#borrowedItem" corresp="mep:002c7c">
+              <title>Years</title>
+              </bibl>.
+              <date ana="#returned" when="1938-03-07">March 7</date>
+          </ab>
+          
+          <note>Renewed <date from="1938-03-01" to="1938-04-03">March 1st - April 3
+          1938</date> 50</note>
+          
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-03-07">Mar. 7</date>
+            <bibl ana="#borrowedItem" corresp="mep:004j77">
+              <title>Mrs Dalloway</title>
+            </bibl>
+            <date ana="#returned" when="1938-03-11">March 11</date>
+          </ab>
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-03-11">Mar - 11</date>
+            <bibl ana="#borrowedItem" corresp="mep:009938">
+              <title>Stars Look Down</title>
+            </bibl>
+            <date ana="#returned" when="1938-03-14">Mar. 14</date>
+          </ab>
+          
+          <ab ana="#borrowingEvent"><date ana="#checkedOut" when="1938-03-14">14</date>
+          <bibl ana="#borrowedItem" corresp="mep:001d2v">
+            <title>Pepita</title>
+          </bibl>
+          <date ana="#returned" when="1938-03-21">March 21</date>
+          </ab>
+          
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1938-03-21">March 21</date>
+            <bibl ana="#borrowedItem" corresp="mep:002820">
+              <title>Rains Came</title>
+            </bibl>
+            <date ana="#returned" when="1938-03-31">March 31</date>
+          </ab>
+          
+          <note>left deposit</note>
+        </div>
+        <div type="verso">
+          <pb facs="#s2"/>
+          <!-- verso blank -->
+        </div>
+      </div>
+
+
+    </body>
+  </text>
 </TEI>

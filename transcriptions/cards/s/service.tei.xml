@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#serv.ro">Robert Service</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -57,17 +48,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/service/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     					<persName ref="#serv.ro">SERVICE</persName>
                     <date when="1922-12-01">1922		
@@ -81,42 +72,42 @@
                     											refunded
                     </ab>	
                     <ab>
-                    <date when="1922-12-01">Dec 1st</date>		<bibl><title>When Winter comes to Main Street</title></bibl>	<date when="1922-12-04">Dec 4</date>
-                    <date when="1922-12-01">	</date>		    <bibl><title>Twelve Men</title></bibl>					        <date when="1922-12-06">Dec 6</date>
-                    <date when="1922-12-04">Dec 4</date>	    <bibl><title>Through The Shadows With O.Henry</title></bibl>    <date when="1922-12-06">"	"</date>
-                    <date when="1922-12-06">Dec 6</date>	    <bibl><title>Books + Their Writers</title></bibl>			    <date when="1922-12-14">Dec 14</date>
-                    <date when="1922-12-06"> "	</date>	        <bibl><title>George Gissing</title></bibl>                      <date when="1922-12-14">     </date>
-                    <date when="1922-12-06"> 	</date>	        3 <bibl><title>Vanity Fair</title></bibl>					    <date when="1922-12-08">Dec 8</date>
-                    <date when="1922-12-14">Dec 14</date>	    2 <bibl><title>Vanity Fair</title></bibl> (0.15)			    <date when="1922-12-19">Dec 19</date>
-                    <date when="1922-12-14">	</date>	        <bibl><title>Books on the Table</title></bibl>				    <date when="1922-12-16">Dec 16</date>
-                    <date when="1922-12-14">	</date>	        <bibl><title>Life of Mrs Stevenson</title></bibl>               <date when="1922-12-16">   </date>
-                    <date when="1922-12-14">Dec 16</date>	    <bibl><title>Letters of Mark Twain</title></bibl>			    <date when="1922-12-23">Dec 23</date>
-                    <date when="1922-12-23">Dec 23</date>	    <bibl><title>Our America</title></bibl>                         <date when="1922-12-23">      </date>
-                    <date when="1922-12-23">Dec 23</date>	    <bibl><title>Tahiti</title></bibl>		Renewed <date when="1923-01-22">Jan 22</date>
-                    <date when="1922-12-23">	</date>	        <bibl><title>Calderon</title></bibl>                            <date when="1922-12-26">Dec 26</date>
-                    <date when="1922-12-26">Dec 26</date>	    <bibl><title>Nights</title></bibl>							    <date when="1922-12-28">Dec 28</date>
-                    <date when="1922-12-28">Dec 28</date>	    <bibl><title>George Meredith Life + Letters</title></bibl>	    <date when="1923-01-22">Jan 22</date>
-                    <date when="1923-02-15">Feb 15</date>	    <bibl><title>Reputations</title></bibl>						    <date when="1923-02-17">Feb 17</date>
-                    <date when="1923-02-17">Feb 17</date>	    <bibl><title>The Prussian Officer</title></bibl>			    <date when="1923-03-01">March 1st</date>
+                    <date ana="#checkedOut" when="1922-12-01">Dec 1st</date>		<bibl ana="#borrowedItem" corresp="mep:00qh0w"><title>When Winter comes to Main Street</title></bibl>	<date ana="#returned" when="1922-12-04">Dec 4</date>
+                    <date ana="#checkedOut" when="1922-12-01">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00bs1r"><title>Twelve Men</title></bibl>					        <date ana="#returned" when="1922-12-06">Dec 6</date>
+                    <date ana="#checkedOut" when="1922-12-04">Dec 4</date>	    <bibl ana="#borrowedItem" corresp="mep:00qh16"><title>Through The Shadows With O.Henry</title></bibl>    <date ana="#returned" when="1922-12-06">"	"</date>
+                    <date ana="#checkedOut" when="1922-12-06">Dec 6</date>	    <bibl ana="#borrowedItem" corresp="mep:00dn42"><title>Books + Their Writers</title></bibl>			    <date ana="#returned" when="1922-12-14">Dec 14</date>
+                    <date ana="#checkedOut" when="1922-12-06"> "	</date>	        <bibl ana="#borrowedItem" corresp="mep:00gt10"><title>George Gissing</title></bibl>                      <date ana="#returned" when="1922-12-14">     </date>
+                    <date ana="#checkedOut" when="1922-12-06"> 	</date>	        3 <bibl ana="#borrowedItem" corresp="mep:00b99c"><title>Vanity Fair</title></bibl>					    <date ana="#returned" when="1922-12-08">Dec 8</date>
+                    <date ana="#checkedOut" when="1922-12-14">Dec 14</date>	    2 <bibl ana="#borrowedItem" corresp="mep:00b99c"><title>Vanity Fair</title></bibl> (0.15)			    <date ana="#returned" when="1922-12-19">Dec 19</date>
+                    <date ana="#checkedOut" when="1922-12-14">	</date>	        <bibl ana="#borrowedItem" corresp="mep:00ng4c"><title>Books on the Table</title></bibl>				    <date ana="#returned" when="1922-12-16">Dec 16</date>
+                    <date ana="#checkedOut" when="1922-12-14">	</date>	        <bibl ana="#borrowedItem" corresp="mep:00qh2h"><title>Life of Mrs Stevenson</title></bibl>               <date ana="#returned" when="1922-12-16">   </date>
+                    <date ana="#checkedOut" when="1922-12-14">Dec 16</date>	    <bibl ana="#borrowedItem" corresp="mep:00bt11"><title>Letters of Mark Twain</title></bibl>			    <date ana="#returned" when="1922-12-23">Dec 23</date>
+                    <date ana="#checkedOut" when="1922-12-23">Dec 23</date>	    <bibl ana="#borrowedItem" corresp="mep:002f9j"><title>Our America</title></bibl>                         <date ana="#returned" when="1922-12-23">      </date>
+                    <date ana="#checkedOut" when="1922-12-23">Dec 23</date>	    <bibl ana="#borrowedItem" corresp="mep:00p35w"><title>Tahiti</title></bibl>		Renewed <date ana="#returned" when="1923-01-22">Jan 22</date>
+                    <date ana="#checkedOut" when="1922-12-23">	</date>	        <bibl ana="#borrowedItem" corresp="mep:00qh3t"><title>Calderon</title></bibl>                            <date ana="#returned" when="1922-12-26">Dec 26</date>
+                    <date ana="#checkedOut" when="1922-12-26">Dec 26</date>	    <bibl ana="#borrowedItem" corresp="mep:00qh44"><title>Nights</title></bibl>							    <date ana="#returned" when="1922-12-28">Dec 28</date>
+                    <date ana="#checkedOut" when="1922-12-28">Dec 28</date>	    <bibl ana="#borrowedItem" corresp="mep:00qh5f"><title>George Meredith Life + Letters</title></bibl>	    <date ana="#returned" when="1923-01-22">Jan 22</date>
+                    <date ana="#checkedOut" when="1923-02-15">Feb 15</date>	    <bibl ana="#borrowedItem" corresp="mep:00g76v"><title>Reputations</title></bibl>						    <date ana="#returned" when="1923-02-17">Feb 17</date>
+                    <date ana="#checkedOut" when="1923-02-17">Feb 17</date>	    <bibl ana="#borrowedItem" corresp="mep:00qh6r"><title>The Prussian Officer</title></bibl>			    <date ana="#returned" when="1923-03-01">March 1st</date>
                     </ab>
                     <ab>
                                             									<date when="1923-10-06">Oct 6</date>. renew
                     <date when="1923-10-06"> 1923 October 6th</date>	3 m 	2 vols.					40
                     </ab>
                     <ab>
-                    <date when="1923-10-06"> "	 "</date>	    <bibl><title>Bliss</title></bibl>							    <date when="1923-11-18">Nov. 18</date>		2.40
-                    <date when="1923-11-13">Nov 13</date>	    <bibl><title>Things that have interested me</title></bibl>	    <date when="1923-11-20">Nov. 20</date>
-                    <date when="1923-11-13"> "	"</date>	    <bibl><title>Friday Night</title></bibl>					    <date when="1923-11-20">"	 "</date>
-                    <date when="1923-11-20">Nov 20</date>	    <bibl><title>Sea and Sardinia</title></bibl>				    <date when="1923-12-12">Dec 12</date>
-                    <date when="1923-11-20"> "	"</date>	    <bibl><title>1001 Afternoons in Chicago</title></bibl>		    <date when="1923-11-27">Nov 27</date>
-                    <date when="1923-11-27">Nov 27</date>	    <bibl><title>Prize Stories O Henry Memorial</title></bibl>	    <date when="1923-12-12">Dec 12</date>
+                    <date ana="#checkedOut" when="1923-10-06"> "	 "</date>	    <bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>							    <date ana="#returned" when="1923-11-18">Nov. 18</date>		2.40
+                    <date ana="#checkedOut" when="1923-11-13">Nov 13</date>	    <bibl ana="#borrowedItem" corresp="mep:007w81"><title>Things that have interested me</title></bibl>	    <date ana="#returned" when="1923-11-20">Nov. 20</date>
+                    <date ana="#checkedOut" when="1923-11-13"> "	"</date>	    <bibl ana="#borrowedItem" corresp="mep:00ds2j"><title>Friday Night</title></bibl>					    <date ana="#returned" when="1923-11-20">"	 "</date>
+                    <date ana="#checkedOut" when="1923-11-20">Nov 20</date>	    <bibl ana="#borrowedItem" corresp="mep:002m32"><title>Sea and Sardinia</title></bibl>				    <date ana="#returned" when="1923-12-12">Dec 12</date>
+                    <date ana="#checkedOut" when="1923-11-20"> "	"</date>	    <bibl ana="#borrowedItem" corresp="mep:00bx53"><title>1001 Afternoons in Chicago</title></bibl>		    <date ana="#returned" when="1923-11-27">Nov 27</date>
+                    <date ana="#checkedOut" when="1923-11-27">Nov 27</date>	    <bibl ana="#borrowedItem" corresp="mep:00qh72"><title>Prize Stories O Henry Memorial</title></bibl>	    <date ana="#returned" when="1923-12-12">Dec 12</date>
                     </ab>
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <ab>
-                    <date when="1923-12-22">Dec 22</date>	    <bibl><title>Letters of Tchekov</title></bibl>				    <date when="1924-01-22">Jan 22</date>
-                    <date when="1923-12-22">		</date>     <bibl><title>Old Calabria</title></bibl>					    <date when="1924-01-22">"	"</date>
+                    <date ana="#checkedOut" when="1923-12-22">Dec 22</date>	    <bibl ana="#borrowedItem" corresp="mep:007r69"><title>Letters of Tchekov</title></bibl>				    <date ana="#returned" when="1924-01-22">Jan 22</date>
+                    <date ana="#checkedOut" when="1923-12-22">		</date>     <bibl ana="#borrowedItem" corresp="mep:009g2b"><title>Old Calabria</title></bibl>					    <date ana="#returned" when="1924-01-22">"	"</date>
                     </ab>
                     <ab>
                     <date when="1924-01-22">Jan 22</date>		    Renewed
@@ -129,15 +120,15 @@
                     </ab>
                     <ab>
                     <date when="1924-11-14">Nov 14</date>
-                    <date when="1924-11-14">Nov 14</date>	     <bibl><title>Eighteen Nineties</title></bibl>				    <date when="1924-11-19">Nov 19</date>
-                    <date when="1924-11-19"> "	19</date>	     <bibl><title>Joseph Conrad</title></bibl> (0.15)			    <date when="1924-12-03">Dec 3</date>
-                    <date when="1924-12-08">Dec 8</date>	     <bibl><title>James Joyce</title></bibl> (0,15)				    <date when="1924-12-26">Dec 26</date>
-                    <date when="1924-12-26"> "	26</date>	     <bibl><title>Best Short Stories 1923 Eng</title></bibl>		<date when="1925-01-20">Jan 20</date>
+                    <date ana="#checkedOut" when="1924-11-14">Nov 14</date>	     <bibl ana="#borrowedItem" corresp="mep:007z5n"><title>Eighteen Nineties</title></bibl>				    <date ana="#returned" when="1924-11-19">Nov 19</date>
+                    <date ana="#checkedOut" when="1924-11-19"> "	19</date>	     <bibl ana="#borrowedItem" corresp="mep:00nr66"><title>Joseph Conrad</title></bibl> (0.15)			    <date ana="#returned" when="1924-12-03">Dec 3</date>
+                    <date ana="#checkedOut" when="1924-12-08">Dec 8</date>	     <bibl ana="#borrowedItem" corresp="mep:007184"><title>James Joyce</title></bibl> (0,15)				    <date ana="#returned" when="1924-12-26">Dec 26</date>
+                    <date ana="#checkedOut" when="1924-12-26"> "	26</date>	     <bibl ana="#borrowedItem" corresp="mep:00qh8c"><title>Best Short Stories 1923 Eng</title></bibl>		<date ana="#returned" when="1925-01-20">Jan 20</date>
                     </ab> 
                     <ab>
                     <date when="1926-01-22">1926
                     Jan 22</date>.	Renewed to <date when="1926-02-22">Feb. 22</date>	=	15.f.
-                    <date when="1926-01-22"> "	"</date>	     <bibl><title>Sexual Life in Our Time</title></bibl>				B.B.
+                    <date ana="#checkedOut" when="1926-01-22"> "	"</date>	     <bibl ana="#borrowedItem" corresp="mep:00qh9p"><title>Sexual Life in Our Time</title></bibl>				B.B.
                     </ab>
                 </div>
             </div>

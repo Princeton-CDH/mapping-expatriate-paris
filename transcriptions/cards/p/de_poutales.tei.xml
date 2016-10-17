@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#pour.gu">Guy de Pourtales</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,23 +44,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/de_poutales/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1922">1922</date>
                 <date when="1922-01-31">Jan 31</date>		<persName ref="pour.gu">Mr Guy de Pourtales</persName>
@@ -79,36 +70,36 @@
                 			3 mos	2 vols				30
                 						Dep				14	(not refunded)
                 						
-                    <date when="1922-01-31">Jan 31</date>		<bibl><title>Keats Poems	</title></bibl>				<date when="1922-02-08">Feb 8</date>	
-                    <bibl><title>Hardy's Complete Poems	</title></bibl>	<date when="1922-02-08">Feb. 8</date>	
-            	<date when="1922-02-08">Feb. 8</date>		<bibl><title>Exiles</title></bibl>
-                    <bibl><title>Main Street	</title></bibl>				<date when="1922-02-15">Feb. 15</date>	
+                    <date ana="#checkedOut" when="1922-01-31">Jan 31</date>		<bibl ana="#borrowedItem" corresp="mep:00pf03"><title>Keats Poems	</title></bibl>				<date ana="#checkedOut" when="1922-02-08">Feb 8</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00pf1d"><title>Hardy's Complete Poems	</title></bibl>	<date ana="#returned" when="1922-02-08">Feb. 8</date>	
+            	<date ana="#checkedOut" when="1922-02-08">Feb. 8</date>		<bibl ana="#borrowedItem" corresp="mep:000b3c"><title>Exiles</title></bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:002f59"><title>Main Street	</title></bibl>				<date ana="#returned" when="1922-02-15">Feb. 15</date>	
             				
-            				<date when="1922-02-11">Feb 11</date> took <bibl><title>Ulysses</title></bibl> Fr150 (unpaid)
-                    <date when="1922-02-15">Feb. 15</date>		<bibl><title>The Evolution of an Intellectual</title></bibl> <date when="1922-03-29">March 29</date>	
-            				<bibl><title>Leaves of Grass</title></bibl> - owes 50f
-            	<date when="1922-03-29">March 29</date>	<bibl><author>William Blake,</author></bibl> <bibl><title>Sampson </title></bibl>		<date when="1922-06-07">June 7th</date>
-            				<bibl><title>Portrait of the Artist</title></bibl> bought April 3rd	not paid
-                    <date when="1922-04-03">April 3	</date>	<bibl><title>Lord Ormond &amp; His Aminta</title></bibl>	<date when="1922-06-07">June 7th</date> -	<date when="1922-05-08">May 8th </date>s. a p.c.
+            				<date ana="#checkedOut" when="1922-02-11">Feb 11</date> took <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl> Fr150 (unpaid)
+                    <date ana="#checkedOut" when="1922-02-15">Feb. 15</date>		<bibl ana="#borrowedItem" corresp="mep:00gw5s"><title>The Evolution of an Intellectual</title></bibl> <date ana="#checkedOut" when="1922-03-29">March 29</date>	
+            				<bibl ana="#borrowedItem" corresp="mep:005n2r"><title>Leaves of Grass</title></bibl> - owes 50f
+            	<date ana="#checkedOut" when="1922-03-29">March 29</date>	<bibl ana="#borrowedItem"><author>William Blake,</author></bibl> <bibl ana="#borrowedItem" corresp="mep:00pf2q"><title>Sampson </title></bibl>		<date ana="#checkedOut" when="1922-06-07">June 7th</date>
+            				<bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl> bought April 3rd	not paid
+                    <date ana="#checkedOut" when="1922-04-03">April 3	</date>	<bibl ana="#borrowedItem" corresp="mep:000k95"><title>Lord Ormond &amp; His Aminta</title></bibl>	<date ana="#returned" when="1922-06-07">June 7th</date> -	<date when="1922-05-08">May 8th </date>s. a p.c.
             	  <date when="1923">1923</date>		
-            	<date when="1923-01-27">Jan 27</date>		Renewed for 3 m 2 vols			30f	not paid
-                    "	"		<bibl><title>The Renaissance	</title></bibl>			<date when="1923-02-09">Feb 9</date>	
-                    "	"		<bibl><title>The Sheik</title></bibl>					<date when="1923-01-31">Jan 31</date>	
-                    <date when="1923-01-31">Jan 31</date>		<bibl><title>The Mill on the Floss</title></bibl>		<date when="1923-02-13">Feb. 13.</date>
-                    <date when="1923-02-09">Feb 9</date>		<bibl><title>The Egoist	</title></bibl>				<date when="1923-02-22">Feb 22</date>
-            				<bibl><title>Dubliners</title></bibl> (no extra charge)	 "	"
-                    <date when="1923-02-13">Feb. 13.</date>	<bibl><title>Miscellaneous Pieces</title></bibl>		<date when="1923-02-15">Feb 15</date>	
-            	<date when="1923-02-15">Feb 15</date>		<bibl><title>Reppresentative Men</title></bibl>
-                    <date when="1923-02-22">Feb 22</date>		<bibl><title>Emerson's Essays</title></bibl>			<date when="1923-02-22">Feb 22</date>	
+            	<date ana="#checkedOut" when="1923-01-27">Jan 27</date>		Renewed for 3 m 2 vols			30f	not paid
+                    "	"		<bibl ana="#borrowedItem" corresp="mep:00pf31"><title>The Renaissance	</title></bibl>			<date ana="#checkedOut" when="1923-02-09">Feb 9</date>	
+                    "	"		<bibl ana="#borrowedItem" corresp="mep:00pf4b"><title>The Sheik</title></bibl>					<date ana="#returned" when="1923-01-31">Jan 31</date>	
+                    <date ana="#checkedOut" when="1923-01-31">Jan 31</date>		<bibl ana="#borrowedItem" corresp="mep:001n2s"><title>The Mill on the Floss</title></bibl>		<date ana="#returned" when="1923-02-13">Feb. 13.</date>
+                    <date ana="#checkedOut" when="1923-02-09">Feb 9</date>		<bibl ana="#borrowedItem" corresp="mep:005508"><title>The Egoist	</title></bibl>				<date ana="#checkedOut" when="1923-02-22">Feb 22</date>
+            				<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl> (no extra charge)	 "	"
+                    <date ana="#checkedOut" when="1923-02-13">Feb. 13.</date>	<bibl ana="#borrowedItem" corresp="mep:00kd1d"><title>Miscellaneous Pieces</title></bibl>		<date ana="#returned" when="1923-02-15">Feb 15</date>	
+            	<date ana="#checkedOut" when="1923-02-15">Feb 15</date>		<bibl ana="#borrowedItem" corresp="mep:009w1b"><title>Reppresentative Men</title></bibl>
+                    <date ana="#checkedOut" when="1923-02-22">Feb 22</date>		<bibl ana="#borrowedItem" corresp="mep:009w01"><title>Emerson's Essays</title></bibl>			<date ana="#returned" when="1923-02-22">Feb 22</date>	
                 </ab>
                </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab>
                <date when="1937"> 1937</date>			<persName ref="pour.gu">de POURTALES.</persName>
                 
@@ -118,20 +109,20 @@
                 
                 				1 m.	1 v.				15.00
                 								Deposit 	30.00
-               <date when="1937-02-01"> Feb 1.	</date>	<bibl><author>P.B. Shelley</author></bibl>. <bibl><title>Dowden.	</title></bibl>		<date when="1937-02-15">Feb. 15</date>
+               <date ana="#checkedOut" when="1937-02-01"> Feb 1.	</date>	<bibl ana="#borrowedItem"><author>P.B. Shelley</author></bibl>. <bibl ana="#borrowedItem" corresp="mep:00pf5n"><title>Dowden.	</title></bibl>		<date ana="#returned" when="1937-02-15">Feb. 15</date>
                 	Renewed <date when="1937-05-21">May 21</date>. for 15 days.
-                <date when="1937-05-21">May 21</date>		<bibl><title>Kim.</title></bibl>							<date when="1937-05-28">May 28</date>
-                <date when="1937-06-07">June 7	</date>:		<bibl><title>The New Negro</title></bibl>				<date when="1937-06-09">June 9</date>
+                <date ana="#checkedOut" when="1937-05-21">May 21</date>		<bibl ana="#borrowedItem" corresp="mep:009x7g"><title>Kim.</title></bibl>							<date ana="#returned" when="1937-05-28">May 28</date>
+                <date ana="#checkedOut" when="1937-06-07">June 7	</date>:		<bibl ana="#borrowedItem" corresp="mep:00pf6z"><title>The New Negro</title></bibl>				<date ana="#returned" when="1937-06-09">June 9</date>
                 		(n'a rien payé en dehors du dépot.)
                 Renewed <date from="1937-06-09">June 9</date>	-	<date to="1937-07-09">July 9	1937</date>				25
                 
-                <date when="1937-06-09">June 9</date>	<bibl><title>Pilgrim's Progress</title></bibl>, <bibl><title>Southey's Life of Bunyan</title></bibl>)	<date when="1937-07-02">July 2</date>
+                <date ana="#checkedOut" when="1937-06-09">June 9</date>	<bibl ana="#borrowedItem" corresp="mep:00062z"><title>Pilgrim's Progress</title></bibl>, <bibl ana="#borrowedItem" corresp="mep:00pf78"><title>Southey's Life of Bunyan</title></bibl>)	<date ana="#returned" when="1937-07-02">July 2</date>
                 			bill. 1				
                 					left <date when="1937-07-02">July 2</date> .80 7 days to go.
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 </div>

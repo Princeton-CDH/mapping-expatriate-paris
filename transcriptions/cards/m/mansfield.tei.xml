@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: Katherine Mansfield</title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,10 +49,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/mansfield/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
 
@@ -74,15 +65,15 @@
                 		<address><orgName>Select Hotel</orgName>
                 		<placeName>Place de la Sorbonne</placeName></address></head>
               <ab>  
-                Oct 6	<bibl><title>Windy McPherson	</title></bibl>				Oct 11
-                		<bibl><title>Poor White</title></bibl>						Oct 6
-                		<bibl><title>Winesburg</title></bibl>						Oct 11
-                Oct 11	<bibl><title>The Brimming Cup</title></bibl>				Oct 16
-                Oct 16	<bibl><title>Peter Whipple</title></bibl>					Oct 21
-                		<bibl><title>Three Lives</title></bibl>
-                Oct 23	<bibl><title>The Triumph of the Egg</title></bibl>			Oct 24
+                Oct 6	<bibl ana="#borrowedItem" corresp="mep:006q8d"><title>Windy McPherson	</title></bibl>				Oct 11
+                		<bibl ana="#borrowedItem" corresp="mep:006q9q"><title>Poor White</title></bibl>						Oct 6
+                		<bibl ana="#borrowedItem" corresp="mep:006r06"><title>Winesburg</title></bibl>						Oct 11
+                Oct 11	<bibl ana="#borrowedItem" corresp="mep:006r1h"><title>The Brimming Cup</title></bibl>				Oct 16
+                Oct 16	<bibl ana="#borrowedItem" corresp="mep:006r2t"><title>Peter Whipple</title></bibl>					Oct 21
+                		<bibl ana="#borrowedItem" corresp="mep:001t7q"><title>Three Lives</title></bibl>
+                Oct 23	<bibl ana="#borrowedItem" corresp="mep:006r34"><title>The Triumph of the Egg</title></bibl>			Oct 24
               </ab>  </div><div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank --></div>
                 </div>
             

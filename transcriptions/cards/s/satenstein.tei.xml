@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#sate.sy">Sylvia Satenstein</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -68,17 +59,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/satenstein/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                                     <persName ref="#sate.sy">SATENSTEIN</persName>
                     <date when="1933-04-20">1933			
@@ -87,63 +78,63 @@
                     				<street>3 rue Bonaparte</street> <district>VI</district></address>
                     </head>				
                     <ab>				
-                    <date when="1933-01-20">20 Jan</date>.		3m	1v.	dep. 30					30 -
-                    			                            <bibl><title>Time + Western Man</title></bibl>		        <date when="1933-01-24">	24</date>
-                    <date when="1933-01-24">24	</date>		<bibl><title>Alexanderplatz</title></bibl>					<date when="1933-01-26">26 -</date>
-                    <date when="1933-01-26">26	</date>		<bibl><title>Pierre the Ambiguous</title></bibl>		    <date when="1933-01-28">	28</date>
-                    			                            <bibl><title>Of Human Bondage</title></bibl>
+                    <date ana="#checkedOut" when="1933-01-20">20 Jan</date>.		3m	1v.	dep. 30					30 -
+                    			                            <bibl ana="#borrowedItem" corresp="mep:004r4z"><title>Time + Western Man</title></bibl>		        <date ana="#returned" when="1933-01-24">	24</date>
+                    <date ana="#checkedOut" when="1933-01-24">24	</date>		<bibl ana="#borrowedItem" corresp="mep:00bw8r"><title>Alexanderplatz</title></bibl>					<date ana="#returned" when="1933-01-26">26 -</date>
+                    <date ana="#checkedOut" when="1933-01-26">26	</date>		<bibl ana="#borrowedItem" corresp="mep:00q60d"><title>Pierre the Ambiguous</title></bibl>		    <date ana="#checkedOut" when="1933-01-28">	28</date>
+                    			                            <bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage</title></bibl>
                     </ab>			
                     <ab>
-                    <date when="1933-01-28">28 Jan</date>	extra dep. 30f	<bibl><biblScope unit="volume" from="1">vol. 1 </biblScope><title>Lincoln Steffens</title></bibl>	<date when="1933-02-04">4 Feb</date>
-                    							                            <bibl><biblScope unit="volume" from="2">     2</biblScope></bibl> <date when="1933-02-04">4 Feb.</date>
-                    <date when="1933-02-09">9 Feb</date>.	<bibl><title>Folk lore in Old test</title></bibl>. card <date when="1933-02-27">27 Feb</date>	<date when="1933-07-19">19 July</date>
+                    <date ana="#checkedOut" when="1933-01-28">28 Jan</date>	extra dep. 30f	<bibl ana="#borrowedItem" corresp="mep:00q61q"><biblScope unit="volume" from="1">vol. 1 </biblScope><title>Lincoln Steffens</title></bibl>	<date ana="#checkedOut" when="1933-02-04">4 Feb</date>
+                    							                            <bibl ana="#borrowedItem"><biblScope unit="volume" from="2">     2</biblScope></bibl> <date ana="#returned" when="1933-02-04">4 Feb.</date>
+                    <date ana="#checkedOut" when="1933-02-09">9 Feb</date>.	<bibl ana="#borrowedItem" corresp="mep:00q621"><title>Folk lore in Old test</title></bibl>. card <date ana="#returned" when="1933-02-27">27 Feb</date>	<date when="1933-07-19">19 July</date>
                     							2 card <date when="1933-03-13">13 March</date>	
                         <date when="1933-07-19">19 July</date> B.B. by J.oan M
                     	owes sub. <date from="1933-04-20" to="1933-07-20">20 April - 20 July</date> = 3 mos.
                     </ab>	
                 </div>
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <ab>
                     			Books to be Kept
-                    <bibl><author>Arnold</author> BII - Adams: Raphael</bibl>
-                    <bibl><title>Brave New World</title>: <unclear/></bibl>
+                    <bibl ana="#borrowedItem"><author>Arnold</author> BII - Adams: Raphael</bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title>: <unclear/></bibl>
                     
-                    <bibl><title>Black Mischief</title>: Gentrar</bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:003m67"><title>Black Mischief</title>: Gentrar</bibl>
                     
-                    <bibl><title>Common Reader</title>: <unclear/></bibl>
-                    <bibl>Emma Goldmanz: Todd</bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00384v"><title>Common Reader</title>: <unclear/></bibl>
+                    <bibl ana="#borrowedItem">Emma Goldmanz: Todd</bibl>
                     						6. Le Vernin
-                    <bibl><title>Death in the A</title></bibl>: Hardy. Samson, . Vegnet,2. <unclear/> 4. Boscq
-                    <bibl><author>Eliot</author> <title>Essays</title></bibl> *	Douglas. 	5. Swinnerton	3. Shanahan
-                    <bibl><title>Fountain</title></bibl>: Vignet, Pissot . Sotiroft - Bouisevian
+                    <bibl ana="#borrowedItem" corresp="mep:00q63b"><title>Death in the A</title></bibl>: Hardy. Samson, . Vegnet,2. <unclear/> 4. Boscq
+                    <bibl ana="#borrowedItem" corresp="mep:000z0d"><author>Eliot</author> <title>Essays</title></bibl> *	Douglas. 	5. Swinnerton	3. Shanahan
+                    <bibl ana="#borrowedItem" corresp="mep:001x0c"><title>Fountain</title></bibl>: Vignet, Pissot . Sotiroft - Bouisevian
                     
-                    <bibl>Fortress: Ferguson</bibl>
+                    <bibl ana="#borrowedItem">Fortress: Ferguson</bibl>
                     
-                    <bibl>Faraway: Hardy, Pissot</bibl>
+                    <bibl ana="#borrowedItem">Faraway: Hardy, Pissot</bibl>
                     
-                    <bibl>Flowering Wilderness: <unclear/>, Watson, Bidot</bibl>
+                    <bibl ana="#borrowedItem">Flowering Wilderness: <unclear/>, Watson, Bidot</bibl>
                     					<unclear/>				<unclear/>
                     								Coleman
-                    <bibl><title>Lawrence Letters</title></bibl>: 3. Todd 4 <unclear/>, 1. Page, 2. Fisher
+                    <bibl ana="#borrowedItem" corresp="mep:00169c"><title>Lawrence Letters</title></bibl>: 3. Todd 4 <unclear/>, 1. Page, 2. Fisher
                     					Hardy, Raphael <unclear/>
-                    <bibl><author>Murry</author>'s <title>Son of Woman</title></bibl> - Stein
+                    <bibl ana="#borrowedItem" corresp="mep:004576"><author>Murry</author>'s <title>Son of Woman</title></bibl> - Stein
                     						<unclear/>
-                    <bibl><title>Light in August</title></bibl>: Tichner, Foster, 1 McGraw, Hill3, Coles
+                    <bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August</title></bibl>: Tichner, Foster, 1 McGraw, Hill3, Coles
                     											4 Highes
-                    <bibl>Magnolia St: Coleman</bibl>
-                    <bibl>Long Time Ago: Samson Tichner, McGraw, Raphael</bibl>
-                    <bibl>Maid in Waiting: Jansson</bibl>
-                    <bibl>Narrow Corners: Edwards, Ybarna, Worthing - Sharahan</bibl>
-                    <bibl>More Merry Go Round: Bailey Raphael</bibl>
-                    <bibl><title>Peking Picnic</title></bibl>: 1. Ferguson, Raphael, Hardy
+                    <bibl ana="#borrowedItem">Magnolia St: Coleman</bibl>
+                    <bibl ana="#borrowedItem">Long Time Ago: Samson Tichner, McGraw, Raphael</bibl>
+                    <bibl ana="#borrowedItem">Maid in Waiting: Jansson</bibl>
+                    <bibl ana="#borrowedItem">Narrow Corners: Edwards, Ybarna, Worthing - Sharahan</bibl>
+                    <bibl ana="#borrowedItem">More Merry Go Round: Bailey Raphael</bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00381x"><title>Peking Picnic</title></bibl>: 1. Ferguson, Raphael, Hardy
                     				2. Worthing
-                    <bibl>Plagued: Foster</bibl>
-                    <bibl>March of Democracy: Saunders, <unclear/>, Hardy.</bibl>
-                    <bibl>My Funniest Story, Perdeream</bibl>
-                    <bibl>Sons: Swinnerton</bibl>
-                    <bibl><title>Royal Flush</title>: Plummer</bibl>		<unclear/>: Yellowbus
-                    <bibl>Without my cloak: Samson: van Altina</bibl>
+                    <bibl ana="#borrowedItem">Plagued: Foster</bibl>
+                    <bibl ana="#borrowedItem">March of Democracy: Saunders, <unclear/>, Hardy.</bibl>
+                    <bibl ana="#borrowedItem">My Funniest Story, Perdeream</bibl>
+                    <bibl ana="#borrowedItem">Sons: Swinnerton</bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00288v"><title>Royal Flush</title>: Plummer</bibl>		<unclear/>: Yellowbus
+                    <bibl ana="#borrowedItem">Without my cloak: Samson: van Altina</bibl>
                     </ab>
                </div>   
             </div>

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#good">Goodwin</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -61,16 +52,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/goodwin/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         
         
@@ -81,7 +72,7 @@
         <body>
             <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                     <ab>
                	PLEASE RETURN:
                	Henry James, Man and author
@@ -92,7 +83,7 @@
                	 <street>12, RUE DE L'OD´EON</street><settlement>- PARIS</settlement><district>- VIe</district></address></ab>
                	</div> 
                 <div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                			<head>CARTE POSTALE
                		<address><persName ref="#good">Madame John Goodwin</persName>
                			<orgName>Hôtel St James d'Albany</orgName>
@@ -100,7 +91,7 @@
                	<settlement>NON R´ECLAM´E PARIS I </settlement></address></head>
                 </div>
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab><date when="1935">1935</date>		<address><persName ref="#good">GOODWIN
                 			Mrs. John</persName>
                 			<orgName>Hôtel St James Albany</orgName></address>
@@ -108,23 +99,23 @@
                 1v. 1m.									15v
                 1 dep.									50
                 
-                <date when="1935-10-16">16 Oct.</date>		<bibl><title>Henry James (Edgar)</title></bibl></ab>
+                <date ana="#checkedOut" when="1935-10-16">16 Oct.</date>		<bibl ana="#borrowedItem" corresp="mep:00kc89"><title>Henry James (Edgar)</title></bibl></ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                     <ab>
-                <date when="1935">1935</date>		<persName >ENFIELD
+                <date when="1935">1935</date>		<persName>ENFIELD
                 			Miss J.</persName>
                 	<address>	<orgName>chez Mme Joure</orgName>
                 		<street>13 square du Port-Royale_</street></address>
                 									ref. <date when="1935-08-19">19 Aug-</date>
                 2v. 1m.								   	   dep. 60v
                 						owes 4v					25v
-              <date when="1935-07-18">  18 July</date>_	<bibl><title>Music at Night	</title></bibl>					<date when="1935-07-30">30</date>
-                        <bibl><title>Letters to Dixon G.M. Hopkins</title></bibl> new	<date when="1935-07-30">30</date>
-                        <date when="1935-07-30">30-</date>			<bibl><title>Eternal moment	</title></bibl>			  book	<date when="1935-07-30">30</date>
-                        <bibl><title>Twentieth c. anthology	</title></bibl>			<date when="1935-08-19">19</date>
-                <date when="1935-08-09">9 Aug-</date>		<bibl><title>9 Tailors</title></bibl>							<date when="1935-08-19">19</date>
+              <date ana="#checkedOut" when="1935-07-18">  18 July</date>_	<bibl ana="#borrowedItem" corresp="mep:000n3v"><title>Music at Night	</title></bibl>					<date ana="#checkedOut" when="1935-07-30">30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00kc9m"><title>Letters to Dixon G.M. Hopkins</title></bibl> new	<date ana="#returned" when="1935-07-30">30</date>
+                        <date ana="#checkedOut" when="1935-07-30">30-</date>			<bibl ana="#borrowedItem" corresp="mep:00126b"><title>Eternal moment	</title></bibl>			  book	<date ana="#checkedOut" when="1935-07-30">30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00kd03"><title>Twentieth c. anthology	</title></bibl>			<date ana="#returned" when="1935-08-19">19</date>
+                <date ana="#checkedOut" when="1935-08-09">9 Aug-</date>		<bibl ana="#borrowedItem" corresp="mep:002d1s"><title>9 Tailors</title></bibl>							<date ana="#returned" when="1935-08-19">19</date>
 </ab>                </div>	
                 
             </div>

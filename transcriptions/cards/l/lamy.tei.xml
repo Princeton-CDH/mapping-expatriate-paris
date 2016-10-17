@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#lamy.ma">Marthe Lamy</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,16 +50,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/l/lamy/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         
         
@@ -77,65 +68,65 @@
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
        <head>         <date when="1934">1934</date>	<persName ref="#lamy.ma">Dr. LAMY</persName>			<address><addrLine><num type="telephone">Littre 38-70</num></addrLine><street>36, rue Vaneau</street></address></head>
          <ab>       <date when="1934-08-06">6 Aug.</date>					1v. 1m.			12-
                 								dep ref	30-</ab><ab>
-                		<bibl><title>Light in August</title></bibl>		<date when="1934-09-18">Sept 18</date>	<date when="1934-08-24">24 Aug</date>
-                <date when="1934-08-24">24	"</date>	<bibl><title>As I Lay dying</title></bibl>					<date when="1934-09-06">Sept 6</date>
+                		<bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August</title></bibl>		<date ana="#returned" when="1934-09-18">Sept 18</date>	<date when="1934-08-24">24 Aug</date>
+                <date ana="#checkedOut" when="1934-08-24">24	"</date>	<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I Lay dying</title></bibl>					<date ana="#returned" when="1934-09-06">Sept 6</date>
                 post: 2f
                 Renewed <date from="1934-09-06" type="1934-10-06">Sept 6 - October 6		1934</date>	12v
                 								(no dep.)
                 
-                <date when="1934-09-18">Sept 18</date>	<bibl><title>Pointed Roofs</title></bibl>					<date when="1934-09-28">Sept 28</date>
-                	<date when="1934-09-28">28</date>	<bibl><title>As I lay Dying</title></bibl>					<date when="1934-10-29">Oct 29</date>
-                <date when="1934-10-29">Oct 29</date>	<bibl><title>Backwater</title></bibl>						<date when="1934-11-07">Nov 7</date>
-                <date when="1934-11-07">Nov 7</date>	<bibl><title>Honeycomb</title></bibl>		
-                Renewed <date from="1934-11-07" to="1934-12-07">Nov 7 - Dec 7 1934</date>			12v
-                <date when="1934-11-20">Nov 20</date>	<bibl><title>Holy Deadlock</title></bibl>	p.c. <date when="1934-12-14">Dec 14</date>		<date when="1934-12-17">Dec 17</date>
+                <date ana="#checkedOut" when="1934-09-18">Sept 18</date>	<bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs</title></bibl>					<date ana="#returned" when="1934-09-28">Sept 28</date>
+                	<date ana="#checkedOut" when="1934-09-28">28</date>	<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I lay Dying</title></bibl>					<date ana="#returned" when="1934-10-29">Oct 29</date>
+                <date ana="#checkedOut" when="1934-10-29">Oct 29</date>	<bibl ana="#borrowedItem" corresp="mep:000r2c"><title>Backwater</title></bibl>						<date ana="#returned" when="1934-11-07">Nov 7</date>
+                <date ana="#checkedOut" when="1934-11-07">Nov 7</date>	<bibl ana="#borrowedItem" corresp="mep:000r3p"><title>Honeycomb</title></bibl>		
+                Renewed <date ana="#returned" from="1934-11-07" to="1934-12-07">Nov 7 - Dec 7 1934</date>			12v
+                <date ana="#checkedOut" when="1934-11-20">Nov 20</date>	<bibl ana="#borrowedItem" corresp="mep:00314x"><title>Holy Deadlock</title></bibl>	p.c. <date ana="#returned" when="1934-12-14">Dec 14</date>		<date when="1934-12-17">Dec 17</date>
                 <date when="1935">1935</date>
-                <date when="1935-04-10">10 April</date> <bibl><title>True Story</title> (<unclear/>)</bibl>					<date when="1934-12-17">17</date>
+                <date ana="#checkedOut" when="1935-04-10">10 April</date> <bibl ana="#borrowedItem" corresp="mep:00813t"><title>True Story</title> (<unclear/>)</bibl>					<date ana="#returned" when="1934-12-17">17</date>
                 <date when="1934-04-17">17 -</date> 	
-                <date when="1934-04-17">April 17</date> <bibl><title>Richard Kurt</title></bibl>					<date when="1935-07-17">July 17</date></ab>
+                <date ana="#checkedOut" when="1934-04-17">April 17</date> <bibl ana="#borrowedItem" corresp="mep:00mf83"><title>Richard Kurt</title></bibl>					<date ana="#returned" when="1935-07-17">July 17</date></ab>
           </div>      
-          <div type="verso">      <pb facs="#s2" />
+          <div type="verso">      <pb facs="#s2"/>
                 <!-- verso blank -->
                </div> </div>
-              <div type="card"> <div type="recto"> <pb facs="#s3" />
+              <div type="card"> <div type="recto"> <pb facs="#s3"/>
                 <head><date when="1941">1941</date>		<persName ref="#lamy.ma">LAMY</persName>
                 				<persName ref="#lamy.ma">Dr Marthe Lamy</persName>
                 <date when="1941-03-17">March 17</date> opened a/c
                 	</head>	<ab>
-                		<bibl><title>Master of Jalna</title></bibl>					30
-                		<bibl><title>Whiteoak Harvest</title></bibl>				30
+                		<bibl ana="#borrowedItem" corresp="mep:003j42"><title>Master of Jalna</title></bibl>					30
+                		<bibl ana="#borrowedItem" corresp="mep:002w7h"><title>Whiteoak Harvest</title></bibl>				30
                 		
-                		<bibl><title>The Foryste Saga</title> <biblScope unit="volume" from="1" to="3">3 vols</biblScope></bibl>			90
-                		<bibl><title>The White Monkey</title></bibl>				30
-                		<bibl><title>The Silver Spoon</title></bibl>				30
-                		<bibl><title>Swan Song</title></bibl>						20
-                		<bibl><title>On Forsyte Change</title></bibl>				30
-                		 (<bibl><title>Young Renny</title></bibl> not available)   260
+                		<bibl ana="#borrowedItem" corresp="mep:00mf9d"><title>The Foryste Saga</title> <biblScope unit="volume" from="1" to="3">3 vols</biblScope></bibl>			90
+                		<bibl ana="#borrowedItem" corresp="mep:00mg0w"><title>The White Monkey</title></bibl>				30
+                		<bibl ana="#borrowedItem" corresp="mep:005b4w"><title>The Silver Spoon</title></bibl>				30
+                		<bibl ana="#borrowedItem" corresp="mep:001n05"><title>Swan Song</title></bibl>						20
+                		<bibl ana="#borrowedItem" corresp="mep:00418d"><title>On Forsyte Change</title></bibl>				30
+                		 (<bibl ana="#borrowedItem" corresp="mep:003j5c"><title>Young Renny</title></bibl> not available)   260
                 		
-                		<bibl><title>Jalna</title></bibl>							30
-                		<bibl><title>Whiteoaks</title></bibl>						45
+                		<bibl ana="#borrowedItem" corresp="mep:003h9b"><title>Jalna</title></bibl>							30
+                		<bibl ana="#borrowedItem" corresp="mep:003j0t"><title>Whiteoaks</title></bibl>						45
                 						paid		   335.
                 
-                <date when="1941-03-26">March 26</date> <bibl><title>Young Renny</title></bibl>					<date when="1941-04-02">April 2</date>
-                <date when="1941-04-02">April 2</date>	<bibl><title>Rinch's Fortune</title></bibl> paid 30 frs.
-                <date when="1941-06-30">June 30</date>		on account	5f</ab>
+                <date ana="#checkedOut" when="1941-03-26">March 26</date> <bibl ana="#borrowedItem" corresp="mep:003j5c"><title>Young Renny</title></bibl>					<date ana="#returned" when="1941-04-02">April 2</date>
+                <date ana="#checkedOut" when="1941-04-02">April 2</date>	<bibl ana="#borrowedItem" corresp="mep:003j3r"><title>Rinch's Fortune</title></bibl> paid 30 frs.
+                <date ana="#returned" when="1941-06-30">June 30</date>		on account	5f</ab>
              </div>   
-          <div type="verso">      <pb facs="#s4" />
+          <div type="verso">      <pb facs="#s4"/>
               <head>  <date when="1931-08-20">1931 Aug 20</date>		<persName ref="#lamy.ma">LAMY</persName>
                 		<persName ref="#lamy.ma">Mademoiselle Lamy</persName>
                 			<address><street>36 rue Vaneau</street></address></head>
                 			
                 <ab>			1 m		1 v					22, 50
                 </ab><ab>
-                <date when="1931-08-20">Aug 20</date>	<bibl><title>Well of Loneliness</title></bibl>				<date when="1931-10-08">Oct 8</date>
+                <date ana="#checkedOut" when="1931-08-20">Aug 20</date>	<bibl ana="#borrowedItem" corresp="mep:002j82"><title>Well of Loneliness</title></bibl>				<date ana="#returned" when="1931-10-08">Oct 8</date>
                 						p.c. Sept 1
                 							 Oct
                 
-                <date when="1931-06-23">June 23</date>. <bibl><title>Death of the Heart</title></bibl>				<date when="1931-06-30">June 30</date></ab>
+                <date ana="#checkedOut" when="1931-06-23">June 23</date>. <bibl ana="#borrowedItem" corresp="mep:003m95"><title>Death of the Heart</title></bibl>				<date ana="#returned" when="1931-06-30">June 30</date></ab>
                 
                 							  
              </div>  	</div>

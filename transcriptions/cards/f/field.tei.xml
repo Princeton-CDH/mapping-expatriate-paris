@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="fiel.ge">George Field</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -56,10 +47,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/f/field/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -71,23 +62,23 @@
         <body>
            <div type="card"> 
               <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head><date when="1945">1945</date>	<persName ref="fiel.ge">George Field</persName>
                 			<address><orgName>gen Hosp 217</orgName></address>
                 </head>
                 <ab>
-                <date when="1945-03-12">March 12</date>	ten Minute Plays Loving returned
+                <date ana="#checkedOut" when="1945-03-12">March 12</date>	ten Minute Plays Loving returned
                 								by E v N
                 								
-                			<bibl><title>One Act Plays of today</title></bibl>
+                			<bibl ana="#borrowedItem" corresp="mep:008x30"><title>One Act Plays of today</title></bibl>
                 					Marriott
-                		<bibl><title>	Short Modern Plays Boas</title></bibl>
-                			<bibl><title>Fellow Countrymen</title></bibl>
+                		<bibl ana="#borrowedItem"><title>	Short Modern Plays Boas</title></bibl>
+                			<bibl ana="#borrowedItem" corresp="mep:00gk2c"><title>Fellow Countrymen</title></bibl>
                 					Miss Van Ness</ab>
               </div>  
                 
               <div type="verso">
-               <pb facs="#s2" />
+               <pb facs="#s2"/>
                 <!-- verso blank -->
                </div> 
                 

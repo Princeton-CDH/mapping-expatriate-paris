@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#caze.ed">Edmond Cazes</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/c/cazes/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
     
     </facsimile>
@@ -70,7 +61,7 @@
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
             	<head>
             	<date when="1938">1938</date>		
             				<persName ref="#caze.ed">M. Edmond Cazes</persName>
@@ -79,25 +70,56 @@
             				<settlement>Orléans</settlement><region>Loinet</region>
             				</address>
                 </head>
-                <ab>
-            				1 vol 1 m		25 francs
-            					deposit 50 francs
-            	<date when="1938-05-23">May 23</date>		<bibl><title>Dubliners</title></bibl>					<date when="1939-06-01">June 1</date>
-            	<date when="1938-06-01">June 1</date>		<bibl><title>Portrait of Artist as Young Man</title></bibl>	<date when="1939-06-15">June 15</date>
-            	<date when="1938-06-01">June 1</date>		(<bibl><title>What To Read</title> Fabian Bibliography</bibl>) returned
-            				(to be kept as long as desired)
-            	<date when="1938-06-15">June 15</date>		<bibl><title>Portrait of Artist as Young Man</title></bibl>	<date when="1939-06-30">June 30</date>
-            	subscription renewed 6 m 1 vol student 70
+                
+            				<note>1 vol 1 m		25 francs
+            					deposit 50 francs</note>
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1938-05-23">May 23</date>		
+            	    <bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>					
+            	    <date ana="#returned" when="1939-06-01">June 1</date>
+            	</ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-06-01">June 1</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:009p95"><title>Portrait of Artist as Young Man</title></bibl>	
+                        <date ana="#returned" when="1939-06-15">June 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-06-01">June 1</date>		
+                        (<bibl ana="#borrowedItem" corresp="mep:00fk1t"><title>What To Read</title> Fabian Bibliography</bibl>)
+                    </ab> 
+                    
+                    <note>returned</note>
+                    
+            				<note>(to be kept as long as desired)</note>
+            				
+            	<ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-06-15">June 15</date>		
+            	    <bibl ana="#borrowedItem" corresp="mep:009p95"><title>Portrait of Artist as Young Man</title></bibl>	
+            	    <date ana="#returned" when="1939-06-30">June 30</date>
+            	</ab>
+                    
+            	<note>subscription renewed 6 m 1 vol student 70</note>
             	
-            	<date when="1939-01-25">Jan 25</date>		<bibl><title>Fabian Essays</title></bibl>				<date when="1939-03-01">March 1st</date>
-            	<date when="1939-03-01">March 1</date>	    <bibl><title>Political and Cultural History</title> <biblScope unit="volume" from="2">Vol II</biblScope> (<persName>Hayes</persName>)</bibl> <date when="1939-06-15">June 15</date>
-            								
-            							ren <date when="1939-03-22">Mar 22</date>, ren <date when="1939-04-18">Apr 18</date>
-            							ren <date when="1939-05-10">May 10</date>
-                </ab>
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1939-01-25">Jan 25</date>		
+            	    <bibl ana="#borrowedItem" corresp="mep:009p8v"><title>Fabian Essays</title></bibl>				
+            	    <date ana="#returned" when="1939-03-01">March 1st</date>
+            	</ab>
+                    
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1939-03-01">March 1</date>	    
+            	    <bibl ana="#borrowedItem" corresp="mep:00fk24"><title>Political and Cultural History</title> <biblScope unit="volume" from="2">Vol II</biblScope> (<persName>Hayes</persName>)</bibl> 
+            	    <date ana="#returned" when="1939-06-15">June 15</date>
+            	</ab>
+                    
+            							<note>ren <date when="1939-03-22">Mar 22</date>, ren <date when="1939-04-18">Apr 18</date></note>
+            							<note>ren <date when="1939-05-10">May 10</date></note>
+                
             	</div>
             	<div type="verso">
-            	<pb facs="#s2" />
+            	<pb facs="#s2"/>
             	<!-- verso blank -->		
                 </div>
                 </div>

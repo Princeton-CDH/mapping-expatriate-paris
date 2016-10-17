@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#cros.ca">Caresse Crosby</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -67,16 +58,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298//c/crosby/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
        
     </facsimile>
@@ -84,38 +75,38 @@
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
              	<head>		
              	          <persName ref="#cros.ca">CROSBY</persName>
              	<date when="1929">1929</date>
              	</head>
                 <ab>
-             	<date when="1929-12-27">Dec 27</date>		<bibl><persName>H. Crosby.</persName> <title>Sleeping Together</title></bibl> 100f
+             	<date ana="#checkedOut" when="1929-12-27">Dec 27</date>		<bibl ana="#borrowedItem" corresp="mep:00jr27"><persName>H. Crosby.</persName> <title>Sleeping Together</title></bibl> 100f
              				1 5 copies on date  Nos 33.34.50.59.32
              	
-             	<date when="1929-12-27">"	"</date>		<bibl><persName>D.H. Lawrence.</persName> <title>The Escaped Cock</title></bibl>		H.C.
-             	2 copies	{	1 copy <bibl><title>Japon</title></bibl> on sale		   		$20
-             				1 	"  <bibl><title>Holland</title></bibl>	"	"				$10
+             	<date ana="#checkedOut" when="1929-12-27">"	"</date>		<bibl ana="#borrowedItem" corresp="mep:00jr3j"><persName>D.H. Lawrence.</persName> <title>The Escaped Cock</title></bibl>		H.C.
+             	2 copies	{	1 copy <bibl ana="#borrowedItem" corresp="mep:00h07g"><title>Japon</title></bibl> on sale		   		$20
+             				1 	"  <bibl ana="#borrowedItem" corresp="mep:00jr4v"><title>Holland</title></bibl>	"	"				$10
              	
-             	<date when="1930">1930</date>
-             	<date when="1930-01-10">Jan 10</date> sold	<bibl><title>Escaped Cock</title></bibl> $10					250
-             	<date when="1930-01-16">Jan 16</date>	"	<bibl><title>Sleeping Together</title></bibl>					150
-             	<date when="1930-02-01">Feb 1</date>		<bibl><title>"		"</title></bibl>							150
+             	<date ana="#returned" when="1930">1930</date>
+             	<date ana="#checkedOut" when="1930-01-10">Jan 10</date> sold	<bibl ana="#borrowedItem" corresp="mep:00jr55"><title>Escaped Cock</title></bibl> $10					250
+             	<date ana="#checkedOut" when="1930-01-16">Jan 16</date>	"	<bibl ana="#borrowedItem" corresp="mep:00jr27"><title>Sleeping Together</title></bibl>					150
+             	<date ana="#checkedOut" when="1930-02-01">Feb 1</date>		<bibl ana="#borrowedItem" corresp="mep:00666n"><title>"		"</title></bibl>							150
              				short stories						100
-             	<date when="1932">1932</date>
-             	<date when="1932-02-17">Feb 17</date>		<bibl><title>Sanctuary</title></bibl> paid by cheque <date when="1932-03-04">March 4</date>	 70
+             	<date ana="#returned" when="1932">1932</date>
+             	<date ana="#checkedOut" when="1932-02-17">Feb 17</date>		<bibl ana="#borrowedItem" corresp="mep:00218x"><title>Sanctuary</title></bibl> paid by cheque <date ana="#returned" when="1932-03-04">March 4</date>	 70
                 </ab>
              	</div>
                 
                 <div type="verso">
-             	<pb facs="#s2" />
+             	<pb facs="#s2"/>
              	<!-- verso blank -->
              	</div>
                 </div>
  
                 <div type="card">
                 <div type="recto">
-             	<pb facs="#s3" />
+             	<pb facs="#s3"/>
              	<head>
              	<date when="1931">1931</date>			
              	                <persName ref="#cros.ca">CROSBY</persName>
@@ -128,12 +119,12 @@
              	
              	
              	<ab>
-             	<date when="1931-11-25">Nov 25</date>		<bibl><title>Etched in Moonlight</title></bibl>			<date when="1931-12-22">Dec 22</date>
+             	<date ana="#checkedOut" when="1931-11-25">Nov 25</date>		<bibl ana="#borrowedItem" corresp="mep:004s2m"><title>Etched in Moonlight</title></bibl>			<date ana="#returned" when="1931-12-22">Dec 22</date>
              	</ab>
              	</div>
                 
                 <div type="verso">
-             	<pb facs="#s4" />
+             	<pb facs="#s4"/>
              	<!-- verso blank -->
              	</div>
             	</div>

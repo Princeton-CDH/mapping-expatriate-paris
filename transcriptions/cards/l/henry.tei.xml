@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#henr.ge">Georgette Henry</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -56,10 +47,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/l/henry/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -69,18 +60,18 @@
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                	<head><date when="1953">1953</date>	<persName ref="#henr.ge">Mademoiselle Georgette Henry</persName>
                			chez <persName>Mlle Tillion</persName>
                			<address><street>3 ave Daumesnil</street>
                			<settlement>St Mandé</settlement> <region>(Seine)</region></address></head><ab>
-               	<date when="1953-10-03">Oct 3</date>	<bibl><title>Prose Literature</title> <author>Hayward</author></bibl>	Returned
-               			<bibl><title>Poetry since 1939 </title><author>Spender</author></bibl>	following
-               			<bibl><title>Celebration</title> <author>Edith Sitwell</author></bibl>	week
-               			<bibl><title>The Players Boy</title></bibl>.			(left with
-               			<bibl><title>Fourteenth of October</title></bibl>		concierge)</ab>
+               	<date ana="#checkedOut" when="1953-10-03">Oct 3</date>	<bibl ana="#borrowedItem" corresp="mep:00m85s"><title>Prose Literature</title> <author>Hayward</author></bibl>	Returned
+               			<bibl ana="#borrowedItem" corresp="mep:00m863"><title>Poetry since 1939 </title><author>Spender</author></bibl>	following
+               			<bibl ana="#borrowedItem" corresp="mep:00m87d"><title>Celebration</title> <author>Edith Sitwell</author></bibl>	week
+               			<bibl ana="#borrowedItem" corresp="mep:00m88q"><title>The Players Boy</title></bibl>.			(left with
+               			<bibl ana="#borrowedItem" corresp="mep:00m891"><title>Fourteenth of October</title></bibl>		concierge)</ab>
                	</div>
-               <div type="verso">	<pb facs="#s2" />
+               <div type="verso">	<pb facs="#s2"/>
                	<!-- verso blank --></div>
                	</div>
             

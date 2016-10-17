@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#paul.ma">Marie-Jeanne Pauleau</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,89 +44,89 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/pauleau/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
               <ab>  
                 <date when="1952">1952</date>	<persName ref="paul.ma">Mlle Marie-Jeanne Pauleau</persName>
                 		<address><street>143 Bd Raspail</street></address>
                 		
                 		
-                <date when="1952-01-14">Jan 14</date>	<bibl><title>Murder in the Cathedral</title></bibl>
-                		<bibl><title>Fifty Years of Eng Lit 1900-1950</title></bibl>
-                			by<bibl><author> R A Scott James</author></bibl>
-                		<bibl><title>Prose Literature since 1939</title></bibl>
-                			<bibl><author>John Hayward</author></bibl>
-                		<bibl><title>Poetry since 1939</title></bibl>
-                			<bibl><author>Stephen Spender</author></bibl>
-                		<bibl><title>T S Eliot</title></bibl> by<bibl> <author>M C Bradbrook</author></bibl>
+                <date ana="#checkedOut" when="1952-01-14">Jan 14</date>	<bibl ana="#borrowedItem" corresp="mep:00208n"><title>Murder in the Cathedral</title></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00pm4q"><title>Fifty Years of Eng Lit 1900-1950</title></bibl>
+                			by<bibl ana="#borrowedItem"><author> R A Scott James</author></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00pm51"><title>Prose Literature since 1939</title></bibl>
+                			<bibl ana="#borrowedItem"><author>John Hayward</author></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00m863"><title>Poetry since 1939</title></bibl>
+                			<bibl ana="#borrowedItem"><author>Stephen Spender</author></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00j76b"><title>T S Eliot</title></bibl> by<bibl ana="#borrowedItem"> <author>M C Bradbrook</author></bibl>
               </ab>
                 </div>
                <div type="verso"> 
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                </div>
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab>
                 			<date when="1961">1961</date>
                 		<persName ref="paul.ma">Mlle Marie-Jeanne Pauleau</persName>
                 		<address><street>143 Bd Raspail</street></address>
                 		
-            	<date when="1961-01-21">Jan 21</date>	<bibl><title>Atlantic Monthly</title></bibl>
-            			<bibl><title>Saturday Night &amp; Sunday Morning</title></bibl>
-            								by <bibl><author>Sillicoe</author></bibl>
-            			<bibl><title>T S Eliot Coll Poems</title></bibl>
-            			<bibl><title>Dog beneath the Skin</title></bibl>
-            			<bibl><title>Coll Poems Marianne Moore</title></bibl>
-            			(gave <bibl><title>Faber Book of Modern Verse</title></bibl>
-            				<bibl><editor>Michael Roberts</editor></bibl>)
+            	<date ana="#checkedOut" when="1961-01-21">Jan 21</date>	<bibl ana="#borrowedItem" corresp="mep:00151m"><title>Atlantic Monthly</title></bibl>
+            			<bibl ana="#borrowedItem" corresp="mep:000f08"><title>Saturday Night &amp; Sunday Morning</title></bibl>
+            								by <bibl ana="#borrowedItem"><author>Sillicoe</author></bibl>
+            			<bibl ana="#borrowedItem" corresp="mep:00pm6b"><title>T S Eliot Coll Poems</title></bibl>
+            			<bibl ana="#borrowedItem" corresp="mep:00179n"><title>Dog beneath the Skin</title></bibl>
+            			<bibl ana="#borrowedItem" corresp="mep:00pm7n"><title>Coll Poems Marianne Moore</title></bibl>
+            			(gave <bibl ana="#borrowedItem" corresp="mep:00hh8x"><title>Faber Book of Modern Verse</title></bibl>
+            				<bibl ana="#borrowedItem"><editor>Michael Roberts</editor></bibl>)
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                <pb facs="#s5" />
+                <pb facs="#s5"/>
                 <ab>
                 		<persName ref="paul.ma">Mademoiselle Marie - Jeanne Pauleau</persName>
                 		<address><street>143 Bd Raspail</street></address>
                 		
                 <date when="1961">1961</date>
                 
-                <date when="1961-01-21">Jan 21</date>	<bibl><title>Atlantic Monthly Dec 1960</title></bibl>		<date when="1961-11-13">Nov 13 - 61</date>
-                    <bibl><title>Saturday Night &amp; Sunday Morning</title></bibl>	  <date when="1961-11-13">Nov 13 - 61</date>
-                		(gave <bibl><title>Faber Book of Modern Verse</title></bibl>)
-                		<bibl><title>T S Eliot Coll. Poems 1909 - 1935 Nov 13</title></bibl>
-                    <bibl><title>Deg beneath the Skin</title></bibl>			<date when="1961-11-13">Nov 13 - 61</date>
-                    <bibl><title>Coll Poems Marianne Moore</title></bibl>		<date when="1961-11-13">Nov 13 - 61</date>
+                <date ana="#checkedOut" when="1961-01-21">Jan 21</date>	<bibl ana="#borrowedItem" corresp="mep:00151m"><title>Atlantic Monthly Dec 1960</title></bibl>		<date ana="#checkedOut" when="1961-11-13">Nov 13 - 61</date>
+                    <bibl ana="#borrowedItem" corresp="mep:000f08"><title>Saturday Night &amp; Sunday Morning</title></bibl>	  <date ana="#checkedOut" when="1961-11-13">Nov 13 - 61</date>
+                		(gave <bibl ana="#borrowedItem" corresp="mep:00hh8x"><title>Faber Book of Modern Verse</title></bibl>)
+                		<bibl ana="#borrowedItem" corresp="mep:00pm6b"><title>T S Eliot Coll. Poems 1909 - 1935 Nov 13</title></bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00179n"><title>Deg beneath the Skin</title></bibl>			<date ana="#checkedOut" when="1961-11-13">Nov 13 - 61</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00pm7n"><title>Coll Poems Marianne Moore</title></bibl>		<date ana="#returned" when="1961-11-13">Nov 13 - 61</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s6" />
+                <pb facs="#s6"/>
                 
                 <!-- Verso Blank -->
                 </div>

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#smyt.cl">Clair Smyth-Pigott</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,17 +48,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/smyth-pigott/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                                 <persName ref="#smyt.cl">SMYTH - PIGOTT</persName>
                     <date when="1928-04-28">1928		
@@ -79,39 +70,39 @@
                     			Deposit	50f					 80
                     </ab>			
                     <ab>			
-                    <date when="1928-04-28">Ap. 28</date>	<bibl><title>Confessions of Marquis de Castelane</title></bibl> 0.25  ren owes 6.75		<date when="1928-05-25">May 25</date>
-                    <date when="1928-04-28"> "	 "</date>	<bibl><title>Jane our Stranger</title></bibl>		                  ren			    <date when="1928-05-25">"	"</date>
-                    <date when="1928-04-28"> "	 "</date>	<bibl><title>Jennifer Lorne</title></bibl>									            <date when="1928-05-17">May 17</date>
-                    <date when="1928-04-28"> "	 "</date>	<bibl><title>Divine Lady</title></bibl>		                    0.25
-                    <date when="1928-05-17">May 17</date>	<bibl><title>Little World</title></bibl>	                    0.25					<date when="1928-05-17"> "	"</date>
-                    <date when="1928-05-17"> "	 "</date>	<bibl><title>Venetian Glass Nephew</title></bibl>	            0.25 owes 2f			<date when="1928-05-25">May 25</date>
-                    <date when="1928-05-25">May 25</date>	<bibl><title>Madame de Pompadour</title></bibl>	    owes in all 8.75			        B B
-                    <date when="1928-05-25"> "	25</date>	<bibl><title>Elder Sister</title></bibl>									            B. B.
-                    <date when="1928-05-25"> "	"</date>	<bibl><title>Old Ladies</title></bibl>										            B. B.
+                    <date ana="#checkedOut" when="1928-04-28">Ap. 28</date>	<bibl ana="#borrowedItem" corresp="mep:00qx34"><title>Confessions of Marquis de Castelane</title></bibl> 0.25  ren owes 6.75		<date ana="#returned" when="1928-05-25">May 25</date>
+                    <date ana="#checkedOut" when="1928-04-28"> "	 "</date>	<bibl ana="#borrowedItem" corresp="mep:001h5m"><title>Jane our Stranger</title></bibl>		                  ren			    <date ana="#returned" when="1928-05-25">"	"</date>
+                    <date ana="#checkedOut" when="1928-04-28"> "	 "</date>	<bibl ana="#borrowedItem" corresp="mep:00hz6w"><title>Jennifer Lorne</title></bibl>									            <date ana="#returned" when="1928-05-17">May 17</date>
+                    <date ana="#checkedOut" when="1928-04-28"> "	 "</date>	<bibl ana="#borrowedItem" corresp="mep:00675m"><title>Divine Lady</title></bibl>		                    0.25
+                    <date ana="#checkedOut" when="1928-05-17">May 17</date>	<bibl ana="#borrowedItem" corresp="mep:00qx4f"><title>Little World</title></bibl>	                    0.25					<date ana="#returned" when="1928-05-17"> "	"</date>
+                    <date ana="#checkedOut" when="1928-05-17"> "	 "</date>	<bibl ana="#borrowedItem" corresp="mep:006d50"><title>Venetian Glass Nephew</title></bibl>	            0.25 owes 2f			<date ana="#returned" when="1928-05-25">May 25</date>
+                    <date ana="#checkedOut" when="1928-05-25">May 25</date>	<bibl ana="#borrowedItem" corresp="mep:00qx5r"><title>Madame de Pompadour</title></bibl>	    owes in all 8.75			        B B
+                    <date ana="#checkedOut" when="1928-05-25"> "	25</date>	<bibl ana="#borrowedItem" corresp="mep:001t0j"><title>Elder Sister</title></bibl>									            B. B.
+                    <date ana="#checkedOut" when="1928-05-25"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:001r19"><title>Old Ladies</title></bibl>										            B. B.
                     </ab>
                     <ab>
                     <date when="1928-09-16">Sept 16th</date>	S.R. 3 m	2 vols = 50f to <date when="1928-12-16">December 16th 1928</date>
                     </ab>
                     <ab>
-                    <date when="1928-09-16">Sept 16</date>	<bibl><title>Cat's Cradle</title></bibl>									            <date when="1928-10-11">Oct 11</date>
-                    <date when="1928-09-16"> "	 16</date>	<bibl><title>These Charming People</title></bibl>							            <date when="1928-09-27">Sept 27</date>
-                    <date when="1928-09-27"> "	 27</date>	<bibl><title>Romantic Woman</title></bibl>									            <date when="1928-10-11">Oct 11</date>
-                    <date when="1928-09-27"> 	</date>	    <bibl><title>Three Pilgrims &amp; a Tinker</title></bibl> extra					        <date when="1928-10-11">Oct 11</date>
-                    <date when="1928-10-11">Oct 11</date>	<bibl><title>Silver Stallion</title></bibl>  x								            <date when="1928-10-15">"	15</date>
-                    <date when="1928-10-11"> "	"</date>	<bibl><title>Four Tales</title></bibl>	x									            <date when="1928-10-15">"	15</date>
-                    <date when="1928-10-15"> "	15</date>	<bibl><title>Wayfarer</title></bibl>    x	0.2									        <date when="1928-10-23">  "	23</date>
-                     		                                <bibl><title>Conoisseur</title></bibl>  x									            <date when="1928-10-28">"	28</date>
+                    <date ana="#checkedOut" when="1928-09-16">Sept 16</date>	<bibl ana="#borrowedItem" corresp="mep:005m6q"><title>Cat's Cradle</title></bibl>									            <date ana="#returned" when="1928-10-11">Oct 11</date>
+                    <date ana="#checkedOut" when="1928-09-16"> "	 16</date>	<bibl ana="#borrowedItem" corresp="mep:00kw0z"><title>These Charming People</title></bibl>							            <date ana="#returned" when="1928-09-27">Sept 27</date>
+                    <date ana="#checkedOut" when="1928-09-27"> "	 27</date>	<bibl ana="#borrowedItem" corresp="mep:00p67b"><title>Romantic Woman</title></bibl>									            <date ana="#returned" when="1928-10-11">Oct 11</date>
+                    <date ana="#checkedOut" when="1928-09-27"> 	</date>	    <bibl ana="#borrowedItem" corresp="mep:00qx62"><title>Three Pilgrims &amp; a Tinker</title></bibl> extra					        <date ana="#returned" when="1928-10-11">Oct 11</date>
+                    <date ana="#checkedOut" when="1928-10-11">Oct 11</date>	<bibl ana="#borrowedItem" corresp="mep:00m94r"><title>Silver Stallion</title></bibl>  x								            <date ana="#returned" when="1928-10-15">"	15</date>
+                    <date ana="#checkedOut" when="1928-10-11"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00qx7c"><title>Four Tales</title></bibl>	x									            <date ana="#returned" when="1928-10-15">"	15</date>
+                    <date ana="#checkedOut" when="1928-10-15"> "	15</date>	<bibl ana="#borrowedItem" corresp="mep:00qx8p"><title>Wayfarer</title></bibl>    x	0.2									        <date ana="#checkedOut" when="1928-10-23">  "	23</date>
+                     		                                <bibl ana="#borrowedItem" corresp="mep:00nx6k"><title>Conoisseur</title></bibl>  x									            <date ana="#returned" when="1928-10-28">"	28</date>
                     </ab> 		
                 </div>   
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <head>
                     	<persName ref="#smyt.cl">SMYTH - PIGOTT</persName>
                     </head>
                     <ab>
-                    <date when="1928-10-23">Oct 23</date>	<bibl><title>School of Paris</title></bibl> 0.25					                     <date when="1928-11-06">Nov 6</date>
+                    <date ana="#checkedOut" when="1928-10-23">Oct 23</date>	<bibl ana="#borrowedItem" corresp="mep:00qx90"><title>School of Paris</title></bibl> 0.25					                     <date ana="#returned" when="1928-11-06">Nov 6</date>
                     
-                    <date when="1928-10-23"> "	23</date>	<bibl><title>Brawnyman</title></bibl>	0.25						
+                    <date ana="#checkedOut" when="1928-10-23"> "	23</date>	<bibl ana="#borrowedItem" corresp="mep:00nx86"><title>Brawnyman</title></bibl>	0.25						
                     </ab> 
                 </div>
             </div>

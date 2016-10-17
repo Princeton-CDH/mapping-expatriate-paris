@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#devi.lu">Madame Lucien Devies</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,42 +50,42 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/devies">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
       
     </facsimile>
     <text>
         <body>
             
-                <div type="card"><div type="recto"><pb facs="#s1" />
+                <div type="card"><div type="recto"><pb facs="#s1"/>
             	<head><date when="1941">1941</date>		<persName ref="#devi.lu">DEVIES
             						Me. Lucien.</persName>
             			<address><street>177 r. de la <unclear/>.</street></address></head>
             			<ab>	3 m 1 vol A		65
             					Dep.		50
             	
-            	<date when="1941-02-04">Feb. 4</date>		<bibl><title>Manhattan Transfer</title></bibl>			<date when="1941-02-14">Feb 14</date>
-            	<date when="1941-02-14">14</date>		<bibl><title>Light in August</title></bibl>				<date when="1941-03-11">Mar. 11</date>
-            	<date when="1941-03-11">Mar 11</date>		<bibl><title>Men without women</title></bibl>			<date when="1941-03-18">Mar 18</date>
-            	<date when="1941-03-18">18</date>		<bibl><title>Mourning becomes Electra</title></bibl>	<date when="1941-03-25">Mar 25</date>
-            	<date when="1941-03-25">25</date>		<bibl><title>Mrs. Dalloway</title></bibl>				<date when="1941-04-07">April 7</date>
-            	<date when="1941-04-07">April 7</date>		<bibl><title>Fighting Angel</title></bibl>				<date when="1941-04-10">April 10</date>
-            		<date when="1941-04-10">10</date>		<bibl><title>Exile</title></bibl>						<date when="1941-04-18">April 18</date>
-            		<date when="1941-04-18">18</date>		<bibl><title>Northwest Passage</title></bibl>			<date when="1941-05-02">May 2</date>
-            	<date when="1941-05-02">May 2</date>		<bibl><title>Jane Eyre</title><biblScope unit="volume"> 2 vols</biblScope></bibl>			<date when="1941-05-08">May 8</date>
-            		<date when="1941-05-08">8</date>		<bibl><title>Erewhon</title></bibl>						<date when="1941-05-26">May 26</date>
+            	<date ana="#checkedOut" when="1941-02-04">Feb. 4</date>		<bibl ana="#borrowedItem" corresp="mep:001t81"><title>Manhattan Transfer</title></bibl>			<date ana="#returned" when="1941-02-14">Feb 14</date>
+            	<date ana="#checkedOut" when="1941-02-14">14</date>		<bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August</title></bibl>				<date ana="#returned" when="1941-03-11">Mar. 11</date>
+            	<date ana="#checkedOut" when="1941-03-11">Mar 11</date>		<bibl ana="#borrowedItem" corresp="mep:002300"><title>Men without women</title></bibl>			<date ana="#returned" when="1941-03-18">Mar 18</date>
+            	<date ana="#checkedOut" when="1941-03-18">18</date>		<bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning becomes Electra</title></bibl>	<date ana="#returned" when="1941-03-25">Mar 25</date>
+            	<date ana="#checkedOut" when="1941-03-25">25</date>		<bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs. Dalloway</title></bibl>				<date ana="#returned" when="1941-04-07">April 7</date>
+            	<date ana="#checkedOut" when="1941-04-07">April 7</date>		<bibl ana="#borrowedItem" corresp="mep:000z3b"><title>Fighting Angel</title></bibl>				<date ana="#returned" when="1941-04-10">April 10</date>
+            		<date ana="#checkedOut" when="1941-04-10">10</date>		<bibl ana="#borrowedItem" corresp="mep:002w8t"><title>Exile</title></bibl>						<date ana="#returned" when="1941-04-18">April 18</date>
+            		<date ana="#checkedOut" when="1941-04-18">18</date>		<bibl ana="#borrowedItem" corresp="mep:00399p"><title>Northwest Passage</title></bibl>			<date ana="#returned" when="1941-05-02">May 2</date>
+            	<date ana="#checkedOut" when="1941-05-02">May 2</date>		<bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title><biblScope unit="volume"> 2 vols</biblScope></bibl>			<date ana="#returned" when="1941-05-08">May 8</date>
+            		<date ana="#checkedOut" when="1941-05-08">8</date>		<bibl ana="#borrowedItem" corresp="mep:000n45"><title>Erewhon</title></bibl>						<date ana="#returned" when="1941-05-26">May 26</date>
             	subscr	<date from="1941-05-04" to="1941-08-04">May 4 - aout 4. 1941</date> 1v3mA
             	
-            	<date when="1941-05-26">May 26</date>		<bibl><title>It takes all kinds</title></bibl>			<date when="1941-06-24">June 24</date>
-            	<date when="1941-06-24">June 24</date>		<bibl><title>Pride + Prejudice</title></bibl>			<date when="1941-06-30">June 30</date>
-            	<date when="1941-06-30">June 30</date>		<bibl><title>Barchester Towers</title></bibl>			<date when="1941-07-17">July 17</date>
-            	<date when="1941-07-17">July 17</date>		<bibl><title>Point Counterpoint</title></bibl>			<date when="1941-07-29">July 29</date>
+            	<date ana="#checkedOut" when="1941-05-26">May 26</date>		<bibl ana="#borrowedItem" corresp="mep:00287j"><title>It takes all kinds</title></bibl>			<date ana="#returned" when="1941-06-24">June 24</date>
+            	<date ana="#checkedOut" when="1941-06-24">June 24</date>		<bibl ana="#borrowedItem" corresp="mep:004j8j"><title>Pride + Prejudice</title></bibl>			<date ana="#returned" when="1941-06-30">June 30</date>
+            	<date ana="#checkedOut" when="1941-06-30">June 30</date>		<bibl ana="#borrowedItem" corresp="mep:004j9v"><title>Barchester Towers</title></bibl>			<date ana="#returned" when="1941-07-17">July 17</date>
+            	<date ana="#checkedOut" when="1941-07-17">July 17</date>		<bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counterpoint</title></bibl>			<date ana="#returned" when="1941-07-29">July 29</date>
             			(will return after holidays)</ab>
             	</div><div type="verso">
-            	<pb facs="#s2" />
+            	<pb facs="#s2"/>
             	<!-- verso blank -->	
             	</div>
             	</div>

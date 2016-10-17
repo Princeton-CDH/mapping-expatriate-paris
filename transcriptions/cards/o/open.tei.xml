@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An An Encoded Transcription of a Borrower's Card: <persName ref="#oppe.ge">George Oppen</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,17 +44,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/o/open/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
            <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 			To
                 				Publishers
@@ -73,28 +64,28 @@
                 				  </address>
                 	Publications received: -
                <date when="1932"> 1932</date>
-                <date when="1932-04-08">April 8</date>	2 <bibl><title>A Novelette &amp; Pother Prose</title></bibl>, <bibl><author>W.C. Williams</author></bibl>
+                <date ana="#checkedOut" when="1932-04-08">April 8</date>	2 <bibl ana="#borrowedItem" corresp="mep:00p28j"><title>A Novelette &amp; Pother Prose</title></bibl>, <bibl ana="#borrowedItem"><author>W.C. Williams</author></bibl>
                 					at 10/6.70					13,40
-                <date when="1932-07-04">July 4</date>	2 <bibl><title>Prolegomena</title></bibl> <bibl><title>How to Read</title></bibl>, <bibl><author>Ezra Pound</author></bibl>
+                <date ana="#checkedOut" when="1932-07-04">July 4</date>	2 <bibl ana="#borrowedItem" corresp="mep:00p29v"><title>Prolegomena</title></bibl> <bibl ana="#borrowedItem" corresp="mep:000r6m"><title>How to Read</title></bibl>, <bibl ana="#borrowedItem"><author>Ezra Pound</author></bibl>
                 					at 10/6.70					13,40
-                 <date when="1932-07-18">"	18</date>	3	 	"		"						20,10
-                 <date when="1932-07-19">"	19</date>	2<bibl><title> Objectivist Anthology</title></bibl> at 10/6,70		13.40
-                 							paid <date when="1932-09-01">Sept 1	</date>	Frs 60,30
+                 <date ana="#returned" when="1932-07-18">"	18</date>	3	 	"		"						20,10
+                 <date ana="#checkedOut" when="1932-07-19">"	19</date>	2<bibl ana="#borrowedItem"><title> Objectivist Anthology</title></bibl> at 10/6,70		13.40
+                 							paid <date ana="#returned" when="1932-09-01">Sept 1	</date>	Frs 60,30
                  							
-               <date when="1932-09-05"> Sept 5</date>	<bibl><title>Objectivist Anthology</title></bibl> at 10/6,70
-                	<date when="1932-09-03"> 3	</date><bibl><title>Novelette</title></bibl>  at 10/6,70
-                	<date when="1932-09-05"> 5</date>	<bibl><title>Prolegomena</title></bibl>,<bibl><title> How to Read </title></bibl>10/6,70
+               <date ana="#checkedOut" when="1932-09-05"> Sept 5</date>	<bibl ana="#borrowedItem" corresp="mep:00p30b"><title>Objectivist Anthology</title></bibl> at 10/6,70
+                	<date ana="#checkedOut" when="1932-09-03"> 3	</date><bibl ana="#borrowedItem" corresp="mep:00p31n"><title>Novelette</title></bibl>  at 10/6,70
+                	<date ana="#checkedOut" when="1932-09-05"> 5</date>	<bibl ana="#borrowedItem" corresp="mep:00p29v"><title>Prolegomena</title></bibl>,<bibl ana="#borrowedItem"><title> How to Read </title></bibl>10/6,70
                 	 
-                <date when="1932-10-03">Oct 3</date>/3<bibl><title> Novelette and Other Prose</title></bibl> at 10/6,70
-                	 9	<bibl><title>How to Read </title></bibl> 10/6,70
+                <date ana="#checkedOut" when="1932-10-03">Oct 3</date>/3<bibl ana="#borrowedItem"><title> Novelette and Other Prose</title></bibl> at 10/6,70
+                	 9	<bibl ana="#borrowedItem" corresp="mep:000r6m"><title>How to Read </title></bibl> 10/6,70
                 	 
-                <date when="1932-11-14">Nov 14</date>	10 <bibl><title>Prolegomena</title></bibl>, <bibl><title>How to Read</title></bibl>  10/6,70
+                <date ana="#checkedOut" when="1932-11-14">Nov 14</date>	10 <bibl ana="#borrowedItem" corresp="mep:00p29v"><title>Prolegomena</title></bibl>, <bibl ana="#borrowedItem" corresp="mep:000r6m"><title>How to Read</title></bibl>  10/6,70
                 
                 					paid Frs 113,90
                 </ab>
                </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

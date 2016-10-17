@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: Madame Langlois</title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,10 +49,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/l/langlois/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -71,7 +62,7 @@
     <text>
         <body>
            <div type="card">
-             <div type="recto">   <pb facs="#s1" />
+             <div type="recto">   <pb facs="#s1"/>
               <head>  <date when="1933">1933</date>		<persName ref="#lang">LANGLOIS</persName>
                 						<address><addrLine><num type="telephone">Danton 99-10</num></addrLine></address>
                 			<persName ref="#lang">Madame</persName>				- 11
@@ -79,9 +70,9 @@
                 			<address><name>Palace Hotel</name> <street>1 rue du Four</street></address>
                 			
                 					by the day</head>
-             <ab>   <date when="1933-10-10">Oct 10</date>	<bibl><title>Autobiography of Alice B. Toklas</title></bibl>	<date when="1933-10-11">Oct 11</date>
+             <ab>   <date ana="#checkedOut" when="1933-10-10">Oct 10</date>	<bibl ana="#borrowedItem" corresp="mep:008781"><title>Autobiography of Alice B. Toklas</title></bibl>	<date ana="#returned" when="1933-10-11">Oct 11</date>
          </ab>    </div>   
-         <div type="verso">       <pb facs="#s2" />
+         <div type="verso">       <pb facs="#s2"/>
                 <!-- verso blank -->
                 </div>
                 							  

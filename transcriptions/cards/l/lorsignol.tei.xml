@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#lors.pi">Pierre Lorsignol</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,10 +48,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/l/lorsignol/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -70,31 +61,31 @@
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head><date when="1938">1938</date>		<address><persName ref="#lors.pi">LORSIGNOL
                 			Monsieur Pierre</persName>
                 			<street>44 rue la Boétie</street></address></head>
                 			
                 			<ab>	6 mos 2 vols 180</ab><ab>
                 
-                <date when="1938-03-12">March 12</date> <bibl><title>Ulysses</title></bibl>						<date when="1938-04-09">April 9</date>
-                		<bibl><title>James Joyce the Making of Ulysses</title></bibl> <date when="1938-04-09">April 9</date>
+                <date ana="#checkedOut" when="1938-03-12">March 12</date> <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>						<date ana="#checkedOut" when="1938-04-09">April 9</date>
+                		<bibl ana="#borrowedItem" corresp="mep:00n38k"><title>James Joyce the Making of Ulysses</title></bibl> <date ana="#returned" when="1938-04-09">April 9</date>
                 <date when="1938-04-09">April 9</date>	(took nothing)					<date when="1938-05-07">May 7</date>
-                <date when="1938-04-30">Ap - 30</date>	<bibl><title>Pylon</title></bibl>							<date when="1938-05-07">May 7</date>
-                <date when="1938-04-30">Ap. 30</date>	<bibl><title>One's Company</title></bibl>					<date when="1938-05-07">May 7</date>
-                <date when="1938-05-07">May 7</date>	<bibl><title>Burmese Days</title></bibl>					<date when="1938-05-14">May 14</date>
-                <date when="1938-05-07">May 7</date>	<bibl><title>Sound + the Fury</title></bibl>				<date when="1938-05-14">May 14</date>
-                	<date when="1938-05-14">14</date>	<bibl><title>Tobacco Road</title></bibl>					<date when="1938-05-28">May 28</date>
-                	<date when="1938-05-14">14</date>	<bibl><title>Three Plays</title></bibl>.					<date when="1938-05-28">May 28</date>
-                	<date when="1938-05-28">28</date>	<bibl><title>The Intelligentsia of Great Britain</title></bibl> <date when="1938-07-16">July 16</date>
-                	<date when="1938-05-28">28</date>	<bibl><title>A Man Could Stand Up</title></bibl>.			<date when="1938-07-16">July 16</date>
-                <date when="1938-07-16">July 16</date>	<bibl><title>The Daring Young Man on the Flying Trapeze</title></bibl> <date when="1938-07-30">July 30</date>
-                <date when="1938-07-16">"	"</date>	<bibl><title>Tom's a Cold</title></bibl>					<date when="1938-07-30">July 30</date>
-                <date when="1938-07-30">July 30</date>	<bibl><title>Hey Rub a Dub Dub</title></bibl>				<date when="1938-09-03">Sept 3</date>
-                	<date when="1938-07-30">30</date>	<bibl><title>Soldier's Pay</title></bibl>					<date when="1938-09-03">Sept 3</date>
-                	<date when="1938-07-30">30</date>	<bibl><title>Conquistador:  American Fantasia</title></bibl> <date when="1938-09-03">Sept 3</date></ab>
+                <date ana="#checkedOut" when="1938-04-30">Ap - 30</date>	<bibl ana="#borrowedItem" corresp="mep:00205q"><title>Pylon</title></bibl>							<date ana="#returned" when="1938-05-07">May 7</date>
+                <date ana="#checkedOut" when="1938-04-30">Ap. 30</date>	<bibl ana="#borrowedItem" corresp="mep:00h25d"><title>One's Company</title></bibl>					<date ana="#returned" when="1938-05-07">May 7</date>
+                <date ana="#checkedOut" when="1938-05-07">May 7</date>	<bibl ana="#borrowedItem" corresp="mep:000x9x"><title>Burmese Days</title></bibl>					<date ana="#returned" when="1938-05-14">May 14</date>
+                <date ana="#checkedOut" when="1938-05-07">May 7</date>	<bibl ana="#borrowedItem" corresp="mep:001b6j"><title>Sound + the Fury</title></bibl>				<date ana="#returned" when="1938-05-14">May 14</date>
+                	<date ana="#checkedOut" when="1938-05-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00853x"><title>Tobacco Road</title></bibl>					<date ana="#returned" when="1938-05-28">May 28</date>
+                	<date ana="#checkedOut" when="1938-05-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:004q8x"><title>Three Plays</title></bibl>.					<date ana="#returned" when="1938-05-28">May 28</date>
+                	<date ana="#checkedOut" when="1938-05-28">28</date>	<bibl ana="#borrowedItem" corresp="mep:00n39w"><title>The Intelligentsia of Great Britain</title></bibl> <date ana="#returned" when="1938-07-16">July 16</date>
+                	<date ana="#checkedOut" when="1938-05-28">28</date>	<bibl ana="#borrowedItem" corresp="mep:00n40c"><title>A Man Could Stand Up</title></bibl>.			<date ana="#returned" when="1938-07-16">July 16</date>
+                <date ana="#checkedOut" when="1938-07-16">July 16</date>	<bibl ana="#borrowedItem" corresp="mep:00204d"><title>The Daring Young Man on the Flying Trapeze</title></bibl> <date ana="#returned" when="1938-07-30">July 30</date>
+                <date ana="#checkedOut" when="1938-07-16">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00n41p"><title>Tom's a Cold</title></bibl>					<date ana="#returned" when="1938-07-30">July 30</date>
+                <date ana="#checkedOut" when="1938-07-30">July 30</date>	<bibl ana="#borrowedItem" corresp="mep:005p1q"><title>Hey Rub a Dub Dub</title></bibl>				<date ana="#returned" when="1938-09-03">Sept 3</date>
+                	<date ana="#checkedOut" when="1938-07-30">30</date>	<bibl ana="#borrowedItem" corresp="mep:002319"><title>Soldier's Pay</title></bibl>					<date ana="#returned" when="1938-09-03">Sept 3</date>
+                	<date ana="#checkedOut" when="1938-07-30">30</date>	<bibl ana="#borrowedItem" corresp="mep:00n420"><title>Conquistador:  American Fantasia</title></bibl> <date ana="#returned" when="1938-09-03">Sept 3</date></ab>
                 </div>
-            <div type="verso">    <pb facs="#s2" />
+            <div type="verso">    <pb facs="#s2"/>
                 <!-- verso blank -->
             </div>
               </div>  

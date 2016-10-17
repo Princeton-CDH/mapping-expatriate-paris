@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#milh.ma">Madame Darius Milhaud</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -54,22 +45,22 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/milhaud/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
-              <div type="recto">  <pb facs="#s1" />
+              <div type="recto">  <pb facs="#s1"/>
                 
                 <head><date when="1932">1932</date>			<persName ref="#milh.ma">MILHAUD
             	
@@ -79,13 +70,13 @@
             				
             				
             	
-            	<ab><date when="1932-11-18">18 Nov.</date>		<bibl><title>Six Plays</title></bibl> card <date when="1932-12-14">14 Dec</date>			<date when="1932-12-20">20 Dec</date></ab>
+            	<ab><date ana="#checkedOut" when="1932-11-18">18 Nov.</date>		<bibl ana="#borrowedItem"><title>Six Plays</title></bibl> card <date ana="#returned" when="1932-12-14">14 Dec</date>			<date when="1932-12-20">20 Dec</date></ab>
                 </div>
-               <div type="verso"> <pb facs="#s2" />
+               <div type="verso"> <pb facs="#s2"/>
                 
                 <!-- Verso Blank --></div></div>
                 
-              <div type="card"> <div type="recto"> <pb facs="#s3" />
+              <div type="card"> <div type="recto"> <pb facs="#s3"/>
                 
               <head>  <date when="1938">1938</date>			<persName ref="#milh.ma">Milhaud
                 				Mme Darius</persName>
@@ -95,13 +86,13 @@
           <ab>      						1 m		1 v			25
                 						
                 						
-                <date when="1938-06-03">June 3</date>		<bibl><title>Famous Plays</title></bibl>			<date when="1938-06-21">June 21</date>
-                	owes 	<bibl><title>Tennyson's Poems</title></bibl>	13.50
-                							paid up <date when="1938-06-16">June 16</date>
+                <date ana="#checkedOut" when="1938-06-03">June 3</date>		<bibl ana="#borrowedItem"><title>Famous Plays</title></bibl>			<date ana="#checkedOut" when="1938-06-21">June 21</date>
+                	owes 	<bibl ana="#borrowedItem"><title>Tennyson's Poems</title></bibl>	13.50
+                							paid up <date ana="#returned" when="1938-06-16">June 16</date>
                 							
                 				has 12 days left</ab>
                 </div>
-               <div type="verso"> <pb facs="#s4" />
+               <div type="verso"> <pb facs="#s4"/>
                 
                 <!-- Verso Blank --></div>
                 </div>

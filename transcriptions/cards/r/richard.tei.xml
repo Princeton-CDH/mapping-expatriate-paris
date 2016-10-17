@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rich.p">P Richard</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -54,16 +45,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/richard/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
          <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
-               <div type="recto"> <pb facs="#s1" />
+               <div type="recto"> <pb facs="#s1"/>
                 <head>
                	<date when="1930-06-23">1930
                	June 23</date>			<persName ref="#rich.p">RICHARD</persName>
@@ -77,36 +68,36 @@
                						Deposit			   100
                				</ab>		
                	<ab>
-               	<date when="1930-06-23">June 23d.</date>	<bibl><title>Painted Veil</title></bibl>					<date when="1930-06-30">June 30</date>
-               				<bibl><title>Magic Island.</title></bibl>					 <date when="1930-06-30">"	 30</date>
-               	 <date when="1930-06-30">"	 30</date>		<bibl><title>Kristin Laurant Dalter</title></bibl>		3	<date when="1930-07-11">July 11</date>
-               	  <date when="1930-06-30">"	 30</date>		<bibl><title>Fire Krackers</title></bibl>
-               	  	 <date when="1930-06-30">30</date>		<bibl><title>Song of my Life</title></bibl>			3/12f	<date when="1930-07-11">July 11</date>
-               	<date when="1930-07-11">July 11</date>		<bibl><title>Life of I. Duncan</title></bibl>				 <date when="1930-07-17">"	 17</date>
-               	 <date when="1930-07-11">"	 11</date>		<bibl><title>Poor Women</title></bibl>						 <date when="1930-07-17">"	 17</date>
-               	 <date when="1930-07-17">"	 17</date>		<bibl><title>Russian Days</title></bibl>					 <date when="1930-07-28">"	 28</date>
-               	 			<bibl><title>Rogue Herries</title></bibl>					 <date when="1930-07-23">"	 23</date>
-               	 <date when="1930-07-23">"	 23</date>		<bibl><title>Death of a Hero	</title></bibl>				 <date when="1930-07-28">"	 28</date>
-               	 <date when="1930-07-23">"	 23</date>		<bibl><title>Charlotte Bronte</title></bibl>
+               	<date ana="#checkedOut" when="1930-06-23">June 23d.</date>	<bibl ana="#borrowedItem" corresp="mep:00061n"><title>Painted Veil</title></bibl>					<date ana="#checkedOut" when="1930-06-30">June 30</date>
+               				<bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island.</title></bibl>					 <date ana="#returned" when="1930-06-30">"	 30</date>
+               	 <date ana="#checkedOut" when="1930-06-30">"	 30</date>		<bibl ana="#borrowedItem" corresp="mep:00vr41"><title>Kristin Laurant Dalter</title></bibl>		3	<date ana="#returned" when="1930-07-11">July 11</date>
+               	  <date ana="#checkedOut" when="1930-06-30">"	 30</date>		<bibl ana="#borrowedItem" corresp="mep:003q90"><title>Fire Krackers</title></bibl>
+               	  	 <date ana="#checkedOut" when="1930-06-30">30</date>		<bibl ana="#borrowedItem" corresp="mep:00vr5b"><title>Song of my Life</title></bibl>			3/12f	<date ana="#returned" when="1930-07-11">July 11</date>
+               	<date ana="#checkedOut" when="1930-07-11">July 11</date>		<bibl ana="#borrowedItem" corresp="mep:00vr6n"><title>Life of I. Duncan</title></bibl>				 <date ana="#returned" when="1930-07-17">"	 17</date>
+               	 <date ana="#checkedOut" when="1930-07-11">"	 11</date>		<bibl ana="#borrowedItem" corresp="mep:00pb64"><title>Poor Women</title></bibl>						 <date ana="#returned" when="1930-07-17">"	 17</date>
+               	 <date ana="#checkedOut" when="1930-07-17">"	 17</date>		<bibl ana="#borrowedItem" corresp="mep:00kn3z"><title>Russian Days</title></bibl>					 <date ana="#checkedOut" when="1930-07-28">"	 28</date>
+               	 			<bibl ana="#borrowedItem" corresp="mep:00gq5d"><title>Rogue Herries</title></bibl>					 <date ana="#returned" when="1930-07-23">"	 23</date>
+               	 <date ana="#checkedOut" when="1930-07-23">"	 23</date>		<bibl ana="#borrowedItem" corresp="mep:001j4k"><title>Death of a Hero	</title></bibl>				 <date ana="#returned" when="1930-07-28">"	 28</date>
+               	 <date ana="#checkedOut" when="1930-07-23">"	 23</date>		<bibl ana="#borrowedItem" corresp="mep:00vr7z"><title>Charlotte Bronte</title></bibl>
                	 
-                 <date when="1930-07-23">"	 "</date>		S.R. 1m	2 vols = 80f
+                 <date ana="#returned" when="1930-07-23">"	 "</date>		S.R. 1m	2 vols = 80f
                  							= to <date when="1930-07-23">July 23rd 1930</date>
                  							
-                <date when="1930-07-25">July 25</date>		<bibl><title>Intimate Journal of G. Sand</title></bibl>		<date when="1930-07-30">July 30</date>
-                 <date when="1930-07-25">"	 25</date>		<bibl><title>All Alone</title></bibl>						 <date when="1930-07-30">"	 30</date>
-                <date when="1930-07-30">July 30</date>		<bibl><title>Golden Door</title></bibl>						 <date when="1930-07-31">"	 31</date>
-                			<bibl><title>Balzac in Slippers</title></bibl>				 <date when="1930-07-31">"	 31</date>
-                 <date when="1930-07-31">"	 31</date>		<bibl><title>Beethoven the Creator.</title></bibl>			<date when="1930-08-01">Aug 1st</date>
-                 <date when="1930-07-31">"	 31</date>		<bibl><title>Daughter of Earth</title></bibl>				<date when="1930-08-01">Aug 1st</date>
-                <date when="1930-08-01">Aug 1st</date>		<bibl><title>That Other Love</title></bibl>					 <date when="1930-08-04">"	4</date>
-                 <date when="1930-08-01">"	1st</date>		<bibl><title>Gentleman in the Parlor</title></bibl>			 <date when="1930-08-04">"	4</date>
+                <date ana="#checkedOut" when="1930-07-25">July 25</date>		<bibl ana="#borrowedItem" corresp="mep:00vr88"><title>Intimate Journal of G. Sand</title></bibl>		<date ana="#returned" when="1930-07-30">July 30</date>
+                 <date ana="#checkedOut" when="1930-07-25">"	 25</date>		<bibl ana="#borrowedItem" corresp="mep:005n32"><title>All Alone</title></bibl>						 <date ana="#returned" when="1930-07-30">"	 30</date>
+                <date ana="#checkedOut" when="1930-07-30">July 30</date>		<bibl ana="#borrowedItem" corresp="mep:00679v"><title>Golden Door</title></bibl>						 <date ana="#checkedOut" when="1930-07-31">"	 31</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00cd0n"><title>Balzac in Slippers</title></bibl>				 <date ana="#returned" when="1930-07-31">"	 31</date>
+                 <date ana="#checkedOut" when="1930-07-31">"	 31</date>		<bibl ana="#borrowedItem" corresp="mep:00vr9k"><title>Beethoven the Creator.</title></bibl>			<date ana="#returned" when="1930-08-01">Aug 1st</date>
+                 <date ana="#checkedOut" when="1930-07-31">"	 31</date>		<bibl ana="#borrowedItem" corresp="mep:00ts6p"><title>Daughter of Earth</title></bibl>				<date ana="#returned" when="1930-08-01">Aug 1st</date>
+                <date ana="#checkedOut" when="1930-08-01">Aug 1st</date>		<bibl ana="#borrowedItem" corresp="mep:00fw2m"><title>That Other Love</title></bibl>					 <date ana="#returned" when="1930-08-04">"	4</date>
+                 <date ana="#checkedOut" when="1930-08-01">"	1st</date>		<bibl ana="#borrowedItem" corresp="mep:00hs28"><title>Gentleman in the Parlor</title></bibl>			 <date ana="#returned" when="1930-08-04">"	4</date>
           </ab> </div>     
-             <div type="verso">   <pb facs="#s2" /><ab>
+             <div type="verso">   <pb facs="#s2"/><ab>
                 
-                <date when="1930-08-04">Aug 4</date>		<bibl><title>While the Bridegroom Tarried</title></bibl>	<date when="1930-08-18">Aug 18</date>
-                			<bibl><title>My 30 years war</title></bibl>
+                <date ana="#checkedOut" when="1930-08-04">Aug 4</date>		<bibl ana="#borrowedItem" corresp="mep:00bw7f"><title>While the Bridegroom Tarried</title></bibl>	<date ana="#checkedOut" when="1930-08-18">Aug 18</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00vs02"><title>My 30 years war</title></bibl>
                 			
-                <date when="1930-08-18">Aug 18</date>		S. R. to <date when="1930-08-28">Aug. 28th	1930</date>
+                <date ana="#returned" when="1930-08-18">Aug 18</date>		S. R. to <date when="1930-08-28">Aug. 28th	1930</date>
                 	
                 				interrupted - has still 10 days</ab>
               </div>  </div>

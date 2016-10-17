@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#kaop">Kaopeitzer</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,10 +51,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/k/kaopeitzer/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -71,7 +62,7 @@
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" /><head>
+                <pb facs="#s1"/><head>
                	<date when="1930-12-08">1930		
                	Dec 8</date>       <persName ref="#kaop">KAOPEITZER</persName>
                				<address><persName ref="#kaop">Kaopeitzer</persName>
@@ -80,13 +71,13 @@
                			<ab>1 m 1 v					32
                					dep				50</ab>
               <ab> 	
-               	<date when="1930-12-08">Dec 8</date>	<bibl><title>Atoms &amp; Electrons</title></bibl>				<date when="1931-01-06">Jan 6</date>
-               	<date when="1931-01-06">Jan 6</date>	<bibl><title>Sidelights on Relativity</title></bibl>		<date when="1931-01-08">Jan 8</date>
-               		<date when="1931-01-08">8</date>	<bibl><title>Marvels of Sound Light &amp; Electricity</title></bibl> <date when="1931-02-06">Feb 6</date>
+               	<date ana="#checkedOut" when="1930-12-08">Dec 8</date>	<bibl ana="#borrowedItem" corresp="mep:00kt3b"><title>Atoms &amp; Electrons</title></bibl>				<date ana="#returned" when="1931-01-06">Jan 6</date>
+               	<date ana="#checkedOut" when="1931-01-06">Jan 6</date>	<bibl ana="#borrowedItem" corresp="mep:00kt4n"><title>Sidelights on Relativity</title></bibl>		<date ana="#returned" when="1931-01-08">Jan 8</date>
+               		<date ana="#checkedOut" when="1931-01-08">8</date>	<bibl ana="#borrowedItem" corresp="mep:00kt5z"><title>Marvels of Sound Light &amp; Electricity</title></bibl> <date ana="#returned" when="1931-02-06">Feb 6</date>
                	Renewed <date from="1931-01-08" to="1931-02-08">Jan 8 - Feb 8 1931</date>				32 frs
-               	<date when="1931-02-06">Feb. 6</date>	<bibl><title>Space, time</title>, <author>Morton</author></bibl>				<date when="1931-02-07">Feb 7</date></ab>
+               	<date ana="#checkedOut" when="1931-02-06">Feb. 6</date>	<bibl ana="#borrowedItem" corresp="mep:00kt68"><title>Space, time</title>, <author>Morton</author></bibl>				<date ana="#returned" when="1931-02-07">Feb 7</date></ab>
                	</div>
-         <div type="verso">      	<pb facs="#s2" />
+         <div type="verso">      	<pb facs="#s2"/>
                	<!-- verso blank -->
                	</div>
                	

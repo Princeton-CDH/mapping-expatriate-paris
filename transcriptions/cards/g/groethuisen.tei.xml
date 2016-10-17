@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="groe">Groethuysen</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -55,10 +46,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/groethuisen/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -70,25 +61,25 @@
         <body>
             <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                			<ab><persName ref="groe">GROETHUISEN</persName>
                				(
                	
-               <date when="1900-01-18">Jan 18</date>	<bibl><title>These Thirteen</title></bibl>					<date when="1900-01-31">Jan 31</date>
-               		<date when="1900-01-18">18</date>	<bibl><title>Life + Letters of E. Dickinson</title>.</bibl>	<date when="1900-02-08">Feb 8</date>
-               			<bibl><title>Kora in Hell</title></bibl> <bibl><author>edited by Mabel Loomis Todd</author></bibl>
-               			<bibl><title>Improvisations	</title></bibl>				<date when="1900-02-08">Feb 8</date>
-               			    <bibl><title>selected Poems Ezra Pound</title></bibl>		<date when="1900-02-08">Feb 8</date>
-               			    <bibl><title>Harmonium	</title></bibl>					<date when="1900-02-08">Feb 8</date>
-               			    <bibl><title>Eleven New Cantos</title></bibl>				<date when="1900-02-08">Feb 8</date>
-               			    <bibl><title>Marianne Moore selected Poems </title></bibl>	<date when="1900-02-08">Feb 8</date>
-               			<bibl><title>Novelette and other Prose</title></bibl>		<date when="1900-01-28">Jan 28</date>
-               			<bibl><title>Life + Letters - Winter 1937 (H.D. Poem)</title></bibl>
+               <date ana="#checkedOut" when="1900-01-18">Jan 18</date>	<bibl ana="#borrowedItem" corresp="mep:00g11n"><title>These Thirteen</title></bibl>					<date ana="#returned" when="1900-01-31">Jan 31</date>
+               		<date ana="#checkedOut" when="1900-01-18">18</date>	<bibl ana="#borrowedItem" corresp="mep:00db5w"><title>Life + Letters of E. Dickinson</title>.</bibl>	<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00hb8j"><title>Kora in Hell</title></bibl> <bibl ana="#borrowedItem"><author>edited by Mabel Loomis Todd</author></bibl>
+               			<bibl ana="#borrowedItem" corresp="mep:00kf5x"><title>Improvisations	</title></bibl>				<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
+               			    <bibl ana="#borrowedItem" corresp="mep:00kf67"><title>selected Poems Ezra Pound</title></bibl>		<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
+               			    <bibl ana="#borrowedItem" corresp="mep:00h92d"><title>Harmonium	</title></bibl>					<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
+               			    <bibl ana="#borrowedItem" corresp="mep:00h93q"><title>Eleven New Cantos</title></bibl>				<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
+               			    <bibl ana="#borrowedItem" corresp="mep:00kf7j"><title>Marianne Moore selected Poems </title></bibl>	<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00kf8v"><title>Novelette and other Prose</title></bibl>		<date ana="#checkedOut" when="1900-01-28">Jan 28</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00kf95"><title>Life + Letters - Winter 1937 (H.D. Poem)</title></bibl>
                			</ab>
                 </div>
                	
                	<div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                	</div>
                 

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#desl.je">Jean Deslernes</persName></title>
@@ -27,14 +25,7 @@
                     </msIdentifier>
                 </msDesc>
             
-            <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                <xi:fallback>
-                    <listperson>
-                        <head>People not available</head>
-                        <person/>
-                    </listperson>
-                </xi:fallback>
-            </xi:include>
+            
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,23 +48,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/deslernes">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
       
     </facsimile>
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
             			<head><persName ref="#desl.je">Jean Deslernes</persName>
             			<address><street>12 rue Paul Albert -</street> <district>18e</district></address></head>
             	<ab>
-                    <date when="1946-12-07">1946 Dec 7</date> <bibl><title>Lost Weekend</title></bibl> (not returned)</ab>
+                    <date ana="#checkedOut" when="1946-12-07">1946 Dec 7</date> <bibl ana="#borrowedItem" corresp="mep:004j5m"><title>Lost Weekend</title></bibl> (not returned)</ab>
             	</div>
-            	<div type="verso"><ab><pb facs="#s2" />
+            	<div type="verso"><ab><pb facs="#s2"/>
             	<!-- verso blank --></ab>	</div>
             	</div>
             	

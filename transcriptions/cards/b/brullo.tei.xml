@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#brul.od">Odile Brull</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/brull/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1941">1941</date>			<persName ref="#brul.od">BRULL Mlle Odile</persName>			
                 			<address>
@@ -78,24 +69,24 @@
                 					Dep				50
                 </ab>
                 <ab>
-                <date when="1941-05-26">May 26</date>		<bibl><title>Country house</title></bibl>					<date when="1941-06-04">June 4</date>
-                <date when="1941-06-04">June 4</date>		<bibl><title>Ordeal of Richard Feveral</title></bibl>		<date when="1941-06-18">June 18</date>
-                <date when="1941-06-18">June 18</date>		<bibl><title>Under the greenwood tree</title></bibl>		<date when="1941-07-07">July 7</date>
+                <date ana="#checkedOut" when="1941-05-26">May 26</date>		<bibl ana="#borrowedItem" corresp="mep:002z0w"><title>Country house</title></bibl>					<date ana="#returned" when="1941-06-04">June 4</date>
+                <date ana="#checkedOut" when="1941-06-04">June 4</date>		<bibl ana="#borrowedItem" corresp="mep:000r9j"><title>Ordeal of Richard Feveral</title></bibl>		<date ana="#returned" when="1941-06-18">June 18</date>
+                <date ana="#checkedOut" when="1941-06-18">June 18</date>		<bibl ana="#borrowedItem" corresp="mep:002z16"><title>Under the greenwood tree</title></bibl>		<date ana="#returned" when="1941-07-07">July 7</date>
                 Ren. <date from="1941-06-26" to="1941-07-26">June 26. July 26</date>. 1m 1v S			20
                 
-                <date when="1941-07-07">July 7</date>		<bibl><title>Sparkenbroke</title></bibl>					<date when="1941-09-20">Sept 20</date>
-                				(wrote to <persName ref="#brul.od">Mlle Brull</persName> <date when="1941-09-20">Sept 20</date>)
-                				 would reserve <bibl><title>Precious Bane</title></bibl>
-                <date when="1941-10-09">Oct. 9</date>	    <bibl><title>Precious bane</title></bibl>					<date when="1941-11-04">Nov 4</date>
+                <date ana="#checkedOut" when="1941-07-07">July 7</date>		<bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>					<date ana="#returned" when="1941-09-20">Sept 20</date>
+                				(wrote to <persName ref="#brul.od">Mlle Brull</persName> <date ana="#checkedOut" when="1941-09-20">Sept 20</date>)
+                				 would reserve <bibl ana="#borrowedItem" corresp="mep:000q1s"><title>Precious Bane</title></bibl>
+                <date ana="#checkedOut" when="1941-10-09">Oct. 9</date>	    <bibl ana="#borrowedItem" corresp="mep:000q1s"><title>Precious bane</title></bibl>					<date ana="#returned" when="1941-11-04">Nov 4</date>
                   	Renewed <date when="1941-07-26" to="1941-10-26">July 26 - October 26 1941</date>		50
-                <date when="1941-11-04">Nov 4</date>		<bibl><title>Babbitt</title></bibl>
+                <date ana="#checkedOut" when="1941-11-04">Nov 4</date>		<bibl ana="#borrowedItem" corresp="mep:00211r"><title>Babbitt</title></bibl>
                 				<persName ref="#brul.od">Mlle Brull</persName> a écrit qu'elle a rendu
                 				  le volume
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- verso blank -->
                 </div>

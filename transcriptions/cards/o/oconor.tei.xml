@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#ocon.ro">Roderic O'Conor</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,37 +44,37 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/o/oconor/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
            <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1933">1933</date>			<persName ref="ocon.ro">O'CONOR
                 				Mr. Roderic</persName>
                 				<address><street>102 rue du Cherche Midi</street></address>
                 				
                 subscription 2 vol. 3 mo.	<date from="1933-06-18">18 June</date> <date to="1933-09-18">- 18 Sept. </date>	100f
-                    <date when="1933-07-07">7 July	</date>	<bibl><title>Hatters Castle</title></bibl>						 <date when="1933-07-12">12</date> 
-                    <bibl><title>Original letters from India	</title></bibl>		 <date when="1933-07-12">12</date> 
-                    <date when="1933-07-12">12 -</date> 		<bibl><title>Alexandre du Tilly	</title></bibl>				<date when="1933-07-28">28</date>	
-                    <date when="1933-07-12"> 12 -</date> 		<bibl><title>Lorenzo in Taos	</title></bibl>					<date when="1933-07-28">28</date>	
-                <date when="1933-07-28">28</date>			<bibl><title>Bull's Eye</title></bibl>							<date when="1933-08-08">8 Aug</date>
-                    <date when="1933-07-28">28</date>		<bibl><title>Ellen Terry's Memoirs</title></bibl>				<date when="1933-08-08">8</date>
-              <date when="1933-08-08">  8 Aug</date>	<bibl><title>Longest Journey</title></bibl>					<date when="1933-08-22">Aug 22</date>
-                			<bibl><title>Meriweather Mystery	</title></bibl>				 "
-                <date when="1933-08-22">22	</date>		<bibl><title>Ian + Felicity	</title></bibl>					<date when="1933-09-27">Sept 27</date>
-                			<bibl><title>Before the Fact	</title></bibl>					<date when="1933-09-27">Sept 27</date>
+                    <date ana="#checkedOut" when="1933-07-07">7 July	</date>	<bibl ana="#borrowedItem" corresp="mep:009699"><title>Hatters Castle</title></bibl>						 <date ana="#checkedOut" when="1933-07-12">12</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:00b982"><title>Original letters from India	</title></bibl>		 <date ana="#returned" when="1933-07-12">12</date> 
+                    <date ana="#checkedOut" when="1933-07-12">12 -</date> 		<bibl ana="#borrowedItem" corresp="mep:00nz3x"><title>Alexandre du Tilly	</title></bibl>				<date ana="#returned" when="1933-07-28">28</date>	
+                    <date ana="#checkedOut" when="1933-07-12"> 12 -</date> 		<bibl ana="#borrowedItem" corresp="mep:001q11"><title>Lorenzo in Taos	</title></bibl>					<date ana="#returned" when="1933-07-28">28</date>	
+                <date ana="#checkedOut" when="1933-07-28">28</date>			<bibl ana="#borrowedItem" corresp="mep:00kw2k"><title>Bull's Eye</title></bibl>							<date ana="#returned" when="1933-08-08">8 Aug</date>
+                    <date ana="#checkedOut" when="1933-07-28">28</date>		<bibl ana="#borrowedItem" corresp="mep:00nz47"><title>Ellen Terry's Memoirs</title></bibl>				<date ana="#returned" when="1933-08-08">8</date>
+              <date ana="#checkedOut" when="1933-08-08">  8 Aug</date>	<bibl ana="#borrowedItem" corresp="mep:001298"><title>Longest Journey</title></bibl>					<date ana="#checkedOut" when="1933-08-22">Aug 22</date>
+                			<bibl ana="#borrowedItem" corresp="mep:009b3j"><title>Meriweather Mystery	</title></bibl>				 "
+                <date ana="#checkedOut" when="1933-08-22">22	</date>		<bibl ana="#borrowedItem" corresp="mep:00981c"><title>Ian + Felicity	</title></bibl>					<date ana="#checkedOut" when="1933-09-27">Sept 27</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00nz5j"><title>Before the Fact	</title></bibl>					<date ana="#returned" when="1933-09-27">Sept 27</date>
                 </ab>
                 </div>
                <div type="verso"> 
-               <pb facs="#s2" />
+               <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                </div> 

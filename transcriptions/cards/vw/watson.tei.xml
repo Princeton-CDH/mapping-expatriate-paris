@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wats.sa">Miss S.P. Watson</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -59,35 +50,35 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/watson/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
         <surface xml:id="s7">
-            <graphic url="00000007.jp2" />
+            <graphic url="00000007.jp2"/>
         </surface>
         <surface xml:id="s8">
-            <graphic url="00000008.jp2" />
+            <graphic url="00000008.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1925-08-22">1925
                     Aug 22</date>.			<address><persName ref="#wats.sa">Miss Watson</persName>
@@ -101,17 +92,17 @@
                     								<persName ref="#wats.sa">S.P. Watson</persName>
                     </ab>	
                     <ab>
-                    <date when="1925-08-22">Aug 22</date>	<bibl><title>The Forsyte Saga</title></bibl>	<date when="1925-09-14">Sept 14</date>
-                    <date when="1925-09-01">Sept. 1st</date><bibl><title>Howard's End</title></bibl> _ (1.30 payé)	<date when="1925-09-18">Sept. 18</date>
+                    <date ana="#checkedOut" when="1925-08-22">Aug 22</date>	<bibl ana="#borrowedItem"><title>The Forsyte Saga</title></bibl>	<date ana="#returned" when="1925-09-14">Sept 14</date>
+                    <date ana="#checkedOut" when="1925-09-01">Sept. 1st</date><bibl ana="#borrowedItem"><title>Howard's End</title></bibl> _ (1.30 payé)	<date ana="#returned" when="1925-09-18">Sept. 18</date>
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>  
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     <date when="1932">1932</date>			<persName ref="#wats.sa">WATSON</persName>
                     
@@ -125,24 +116,24 @@
                     								owes 1v
                     </ab>								
                     <ab>								
-                    <date when="1932-11-10">Nov 10</date>	<bibl><title>Maid in Waiting</title></bibl>		<date when="1932-11-15">Nov 15</date>
-                    <date when="1932-11-15">	15</date>	<bibl><title>Sons</title></bibl>		pd. 14.	<date when="1932-12-01">1 Dec</date>
-                    <date when="1932-12-01">1 Dec.</date>	<bibl><title>Gods arrive</title></bibl>			<date when="1932-12-10">10 "</date>
-                    <date when="1932-12-10">10	"</date>	<bibl><title>Flowering Wilderness</title></bibl>.<date when="1932-12-12">12 "</date>
-                    <date when="1932-12-12">12	"</date>	<bibl><title>Spoon River</title></bibl>			<date when="1932-12-24">24 "</date>
-                    		                                <bibl><title>Shropshire &amp; M. Webb</title></bibl>.
-                    <date when="1932-12-27">27	"</date>	<bibl><title>Fountain</title></bibl>			<date when="1933-01-03">3 Jan.</date>
-                    <date when="1933-01-03">3 Jan</date>	<bibl><title>Black Mischief</title></bibl>		<date when="1933-01-11">11 Jan</date>
-                    <date when="1933-01-11">11	</date>	    <bibl><title>Hindoo Holiday</title></bibl>		<date when="1933-01-18">18	"</date>
+                    <date ana="#checkedOut" when="1932-11-10">Nov 10</date>	<bibl ana="#borrowedItem"><title>Maid in Waiting</title></bibl>		<date ana="#returned" when="1932-11-15">Nov 15</date>
+                    <date ana="#checkedOut" when="1932-11-15">	15</date>	<bibl ana="#borrowedItem"><title>Sons</title></bibl>		pd. 14.	<date ana="#returned" when="1932-12-01">1 Dec</date>
+                    <date ana="#checkedOut" when="1932-12-01">1 Dec.</date>	<bibl ana="#borrowedItem"><title>Gods arrive</title></bibl>			<date ana="#returned" when="1932-12-10">10 "</date>
+                    <date ana="#checkedOut" when="1932-12-10">10	"</date>	<bibl ana="#borrowedItem"><title>Flowering Wilderness</title></bibl>.<date ana="#returned" when="1932-12-12">12 "</date>
+                    <date ana="#checkedOut" when="1932-12-12">12	"</date>	<bibl ana="#borrowedItem"><title>Spoon River</title></bibl>			<date ana="#checkedOut" when="1932-12-24">24 "</date>
+                    		                                <bibl ana="#borrowedItem"><title>Shropshire &amp; M. Webb</title></bibl>.
+                    <date ana="#checkedOut" when="1932-12-27">27	"</date>	<bibl ana="#borrowedItem"><title>Fountain</title></bibl>			<date ana="#returned" when="1933-01-03">3 Jan.</date>
+                    <date ana="#checkedOut" when="1933-01-03">3 Jan</date>	<bibl ana="#borrowedItem"><title>Black Mischief</title></bibl>		<date ana="#returned" when="1933-01-11">11 Jan</date>
+                    <date ana="#checkedOut" when="1933-01-11">11	</date>	    <bibl ana="#borrowedItem"><title>Hindoo Holiday</title></bibl>		<date ana="#returned" when="1933-01-18">18	"</date>
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div> 
                 <div type="recto">
-                    <pb facs="#s5" />
+                    <pb facs="#s5"/>
                     <head>
                     <date when="1941">1941</date>		<address><persName ref="#wats.sa">WATSON
                     							             	Miss</persName>
@@ -150,108 +141,108 @@
                     						          <street>Bd St Michel</street></address>
                     </head>						
                     <ab>						
-                    <date when="1941-10-06">Oct. 6</date>	<bibl><title>March of Democracy</title> <biblScope unit="volume" from="1" to="2">Vol 1 &amp; II</biblScope></bibl>	returned
-                    <date when="1941-10-06">	 6</date>
+                    <date ana="#checkedOut" when="1941-10-06">Oct. 6</date>	<bibl ana="#borrowedItem"><title>March of Democracy</title> <biblScope unit="volume" from="1" to="2">Vol 1 &amp; II</biblScope></bibl>	returned
+                    <date ana="#returned" when="1941-10-06">	 6</date>
                     </ab>	
                     <ab>
                     	<date when="1942">1942</date>
-                    <date when="1942-06-21">June 21</date>	<bibl><title>Tree of Liberty</title></bibl>		<date when="1942-09-12">Sept 12</date>
-                    			                            <bibl><title>All this &amp; Heaven too</title></bibl> has read	
-                    			                            <bibl><title>American Beauty</title></bibl>		<date when="1942-09-12">Sept 12</date>
-                    			                            <bibl><title>This is my story</title></bibl>	<date when="1942-07-07">July 7</date>
-                    			                            <bibl><title>My Life Isadora</title></bibl>		<date when="1942-07-07">July 7</date>
-                    			                            <bibl><title>Seasoned Timber</title></bibl>		<date when="1942-07-07">July 7</date>
-                    			                            <bibl><title>Action for Slander</title></bibl>	<date when="1942-07-07">July 7</date>
-                    <date when="1942-07-16">July 16</date>	<bibl><title>Tail of the Comet</title></bibl>	<date when="1942-09-12">Sept 12</date>
-                				                            <bibl><title>Those United States</title></bibl>
-                				                            <bibl><title>Jonah's Gourd Vine</title></bibl>	<date when="1942-09-12">Sept 12</date>
-                				                            <bibl><title>Backward Glance</title></bibl>		<date when="1942-09-12">Sept 12</date>
-                	<date when="1942-09-03">Sept 3</date>	<bibl><title>Benjamin Franklin</title></bibl>	x
-                				                            <bibl><title>Rebellious Puritan</title></bibl>	x
+                    <date ana="#checkedOut" when="1942-06-21">June 21</date>	<bibl ana="#borrowedItem"><title>Tree of Liberty</title></bibl>		<date ana="#checkedOut" when="1942-09-12">Sept 12</date>
+                    			                            <bibl ana="#borrowedItem"><title>All this &amp; Heaven too</title></bibl> has read	
+                    			                            <bibl ana="#borrowedItem"><title>American Beauty</title></bibl>		<date ana="#checkedOut" when="1942-09-12">Sept 12</date>
+                    			                            <bibl ana="#borrowedItem"><title>This is my story</title></bibl>	<date ana="#checkedOut" when="1942-07-07">July 7</date>
+                    			                            <bibl ana="#borrowedItem"><title>My Life Isadora</title></bibl>		<date ana="#checkedOut" when="1942-07-07">July 7</date>
+                    			                            <bibl ana="#borrowedItem"><title>Seasoned Timber</title></bibl>		<date ana="#checkedOut" when="1942-07-07">July 7</date>
+                    			                            <bibl ana="#borrowedItem"><title>Action for Slander</title></bibl>	<date ana="#returned" when="1942-07-07">July 7</date>
+                    <date ana="#checkedOut" when="1942-07-16">July 16</date>	<bibl ana="#borrowedItem"><title>Tail of the Comet</title></bibl>	<date ana="#checkedOut" when="1942-09-12">Sept 12</date>
+                				                            <bibl ana="#borrowedItem"><title>Those United States</title></bibl>
+                				                            <bibl ana="#borrowedItem"><title>Jonah's Gourd Vine</title></bibl>	<date ana="#checkedOut" when="1942-09-12">Sept 12</date>
+                				                            <bibl ana="#borrowedItem"><title>Backward Glance</title></bibl>		<date ana="#returned" when="1942-09-12">Sept 12</date>
+                	<date ana="#checkedOut" when="1942-09-03">Sept 3</date>	<bibl ana="#borrowedItem"><title>Benjamin Franklin</title></bibl>	x
+                				                            <bibl ana="#borrowedItem"><title>Rebellious Puritan</title></bibl>	x
                 	</ab>
                     <ab>
                 	<date when="1943">1943</date>
-                	<date when="1943-04-13">April 13</date>	<bibl><title>As I Lay Dying</title></bibl>		<date when="1943-04-30">April 30</date>
-                				                            <bibl><title>Sanctuary</title></bibl>			<date when="1943-04-30">April 30</date>
-                	<date when="1943-03">March ?</date>		<bibl><title>Unforgotten Years</title></bibl> returned <date when="1943-07-08">July 8</date>
-                	<date when="1943-05-01">May 1</date>	<bibl><title>Daring Young Man</title></bibl>  returned by <persName>K D</persName> <date when="1943-05-19">May 19</date>
-                				                            <bibl><title>Forbidden Journey</title></bibl>x	<date when="1943-05-25">May 25</date>
-                				                            <bibl><title>Grapes of Wrath</title></bibl>		<date when="1943-05-18">May 18</date>
-                				                            <bibl><title>Let your Mind Alone</title></bibl> x	<date when="1943-05-25">May 25</date>
-                				                            <bibl><title>King Coal</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>	----<date when="1943-05">May</date>
-                				                            <bibl><title>Golden Apples</title></bibl>	x	<date when="1943-06-30">June 30</date>
-                				                            <bibl><title>Cradle of Life</title></bibl>		<date when="1943-05-18">May 18</date>
-                	<date when="1943-05-10">May 10</date>	<bibl><title>Coming Struggle for Latin America</title></bibl> <date when="1943-05-25">May 25</date>
+                	<date ana="#checkedOut" when="1943-04-13">April 13</date>	<bibl ana="#borrowedItem"><title>As I Lay Dying</title></bibl>		<date ana="#checkedOut" when="1943-04-30">April 30</date>
+                				                            <bibl ana="#borrowedItem"><title>Sanctuary</title></bibl>			<date ana="#returned" when="1943-04-30">April 30</date>
+                	<date ana="#checkedOut" when="1943-03">March ?</date>		<bibl ana="#borrowedItem"><title>Unforgotten Years</title></bibl> returned <date ana="#returned" when="1943-07-08">July 8</date>
+                	<date ana="#checkedOut" when="1943-05-01">May 1</date>	<bibl ana="#borrowedItem"><title>Daring Young Man</title></bibl>  returned by <persName>K D</persName> <date ana="#checkedOut" when="1943-05-19">May 19</date>
+                				                            <bibl ana="#borrowedItem"><title>Forbidden Journey</title></bibl>x	<date ana="#checkedOut" when="1943-05-25">May 25</date>
+                				                            <bibl ana="#borrowedItem"><title>Grapes of Wrath</title></bibl>		<date ana="#checkedOut" when="1943-05-18">May 18</date>
+                				                            <bibl ana="#borrowedItem"><title>Let your Mind Alone</title></bibl> x	<date ana="#checkedOut" when="1943-05-25">May 25</date>
+                				                            <bibl ana="#borrowedItem"><title>King Coal</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>	----<date ana="#checkedOut" when="1943-05">May</date>
+                				                            <bibl ana="#borrowedItem"><title>Golden Apples</title></bibl>	x	<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                				                            <bibl ana="#borrowedItem"><title>Cradle of Life</title></bibl>		<date ana="#returned" when="1943-05-18">May 18</date>
+                	<date ana="#checkedOut" when="1943-05-10">May 10</date>	<bibl ana="#borrowedItem"><title>Coming Struggle for Latin America</title></bibl> <date ana="#returned" when="1943-05-25">May 25</date>
                 	</ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s6" />
+                    <pb facs="#s6"/>
                     <head>
                         		<persName ref="#wats.sa">WATSON</persName>		<address><street>93 Bd St Michel</street></address>
                     </head>  
                     <ab>
                     <date when="1943">1943</date>
-                    <date when="1943-05-27">May 27</date>	<bibl><title>Green Margins</title></bibl>		<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>More than Somewhat</title></bibl>	<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>Fifth Column</title></bibl>		<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>From Bed to Wirre</title></bibl>	<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>More than Somewhat</title></bibl>	<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>Golden Margins</title></bibl>
-                    			                            <bibl><title>Grass Roof</title></bibl>			<date when="1943-09-20">Sept 20</date>
-                    <date when="1943-06-17">June 17</date>	<bibl><title>Kitty Foyle</title></bibl>			<date when="1943-09-20">Sept 20</date>
-                    			                            <bibl><title>Salamina</title></bibl>			<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>Road</title></bibl>				<date when="1943-06-30">June 30</date>
-                    			                            <bibl><title>Three Legged Tour in Greece</title></bibl>	<date when="1943-07-08">July 8</date>
-                    			                            <bibl><title>My Antonia</title></bibl>						
-                    			                            <bibl><title>Far away &amp; Long ago</title></bibl>	<date when="1943-07-03">July 3</date>
-                    			                            <bibl><title>Left Leg</title></bibl>			<date when="1943-06-30">June 30</date>
-                    <date when="1943-07-08">July 8</date>	<bibl><title>Lamb in his Bosom</title></bibl>	<date when="1943-09-13">Sept 13</date>
-                    			                            <bibl><title>February Hiss</title></bibl>		<date when="1943-09-20">Sept 20</date>
-                    			                            <bibl><title>Black is My True Love's Hair</title></bibl> <date when="1943-09-13">Sept 13</date>
-                    			                            <bibl><title>Deep Dark River</title></bibl> x	<date when="1943-11-23">Nov 23</date>
-                    			                            <bibl><title>Lonely Plough</title></bibl>	x	<date when="1943-11-09">Nov 9</date>
-                    			                            <bibl><title>Sweet Waters</title></bibl>		<date when="1943-07-03">July 3</date>
-                    			                            <bibl><title>Worlds within Worlds</title></bibl><date when="1943-10-23">Oct 23</date>
-                    			                            <bibl><title>Black Mischief</title></bibl>		<date when="1943-09-20">Sept 20</date>
-                    			                            <bibl><title>Breakfast in Bed</title></bibl>	<date when="1943-07-02">July 2</date>
-                    			                            <bibl><title>Dead Centre</title></bibl>			<date when="1943-09-13">Sept 13</date>
-                    			                            <bibl><title>Peace its Wonderful</title></bibl>	<date when="1943-09-20">Sept 20 July 3</date>
-                    			                            <bibl><title>Our Family</title></bibl>			<date when="1943-09-20">Sept 20</date>
-                    <date when="1943-09-15">Sept 15</date>	<bibl><title>I Claudius</title></bibl>			<date when="1943-10-23">Oct 23</date>
-                    			                            <bibl><title>Heavens My Destination</title></bibl> <date when="1943-11-23">Nov 23</date>
-                    			                            <bibl><title>Sun Also Rises</title></bibl>		<date when="1943-10-23">Oct 23</date>
-                    			                            <bibl><title>English Journey</title></bibl> X	<date when="1943-11-09">Nov 9</date>
-                    			                            <bibl><title>Loving Spirit</title></bibl>	    <date when="1943-10-23">Oct 23</date>
-                    			                            <bibl><title>Cities of Sicily</title></bibl>    <date when="1943-10-23">Oct 23</date>
-                    							            <bibl><title>Farthing Hall</title></bibl> 	    <date when="1943-10-23">Oct 23</date>
-                    							            <bibl><title>Moby Dick</title></bibl>		    <date when="1943-10-23">Oct 23</date>
-                    			                            <bibl><title>Doctor Martins</title></bibl>		<date when="1943-09-20">Sept 20</date>
-                    			                            <bibl><title>Manhattan Transfer</title></bibl>	<date when="1943-10-23">Oct 23</date>
-                    			                            <bibl><title>Late George Apley</title></bibl> X	<date when="1943-11-09">Nov 9</date>
-                    			                            <bibl><title>Poor White</title></bibl>			<date when="1943-09-20">Sept 20</date>
+                    <date ana="#checkedOut" when="1943-05-27">May 27</date>	<bibl ana="#borrowedItem"><title>Green Margins</title></bibl>		<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>More than Somewhat</title></bibl>	<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>Fifth Column</title></bibl>		<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>From Bed to Wirre</title></bibl>	<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>More than Somewhat</title></bibl>	<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>Golden Margins</title></bibl>
+                    			                            <bibl ana="#borrowedItem"><title>Grass Roof</title></bibl>			<date ana="#returned" when="1943-09-20">Sept 20</date>
+                    <date ana="#checkedOut" when="1943-06-17">June 17</date>	<bibl ana="#borrowedItem"><title>Kitty Foyle</title></bibl>			<date ana="#checkedOut" when="1943-09-20">Sept 20</date>
+                    			                            <bibl ana="#borrowedItem"><title>Salamina</title></bibl>			<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>Road</title></bibl>				<date ana="#checkedOut" when="1943-06-30">June 30</date>
+                    			                            <bibl ana="#borrowedItem"><title>Three Legged Tour in Greece</title></bibl>	<date ana="#checkedOut" when="1943-07-08">July 8</date>
+                    			                            <bibl ana="#borrowedItem"><title>My Antonia</title></bibl>						
+                    			                            <bibl ana="#borrowedItem"><title>Far away &amp; Long ago</title></bibl>	<date ana="#checkedOut" when="1943-07-03">July 3</date>
+                    			                            <bibl ana="#borrowedItem"><title>Left Leg</title></bibl>			<date ana="#returned" when="1943-06-30">June 30</date>
+                    <date ana="#checkedOut" when="1943-07-08">July 8</date>	<bibl ana="#borrowedItem"><title>Lamb in his Bosom</title></bibl>	<date ana="#checkedOut" when="1943-09-13">Sept 13</date>
+                    			                            <bibl ana="#borrowedItem"><title>February Hiss</title></bibl>		<date ana="#checkedOut" when="1943-09-20">Sept 20</date>
+                    			                            <bibl ana="#borrowedItem"><title>Black is My True Love's Hair</title></bibl> <date ana="#checkedOut" when="1943-09-13">Sept 13</date>
+                    			                            <bibl ana="#borrowedItem"><title>Deep Dark River</title></bibl> x	<date ana="#checkedOut" when="1943-11-23">Nov 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Lonely Plough</title></bibl>	x	<date ana="#checkedOut" when="1943-11-09">Nov 9</date>
+                    			                            <bibl ana="#borrowedItem"><title>Sweet Waters</title></bibl>		<date ana="#checkedOut" when="1943-07-03">July 3</date>
+                    			                            <bibl ana="#borrowedItem"><title>Worlds within Worlds</title></bibl><date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Black Mischief</title></bibl>		<date ana="#checkedOut" when="1943-09-20">Sept 20</date>
+                    			                            <bibl ana="#borrowedItem"><title>Breakfast in Bed</title></bibl>	<date ana="#checkedOut" when="1943-07-02">July 2</date>
+                    			                            <bibl ana="#borrowedItem"><title>Dead Centre</title></bibl>			<date ana="#checkedOut" when="1943-09-13">Sept 13</date>
+                    			                            <bibl ana="#borrowedItem"><title>Peace its Wonderful</title></bibl>	<date ana="#checkedOut" when="1943-09-20">Sept 20 July 3</date>
+                    			                            <bibl ana="#borrowedItem"><title>Our Family</title></bibl>			<date ana="#returned" when="1943-09-20">Sept 20</date>
+                    <date ana="#checkedOut" when="1943-09-15">Sept 15</date>	<bibl ana="#borrowedItem"><title>I Claudius</title></bibl>			<date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Heavens My Destination</title></bibl> <date ana="#checkedOut" when="1943-11-23">Nov 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Sun Also Rises</title></bibl>		<date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>English Journey</title></bibl> X	<date ana="#checkedOut" when="1943-11-09">Nov 9</date>
+                    			                            <bibl ana="#borrowedItem"><title>Loving Spirit</title></bibl>	    <date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Cities of Sicily</title></bibl>    <date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    							            <bibl ana="#borrowedItem"><title>Farthing Hall</title></bibl> 	    <date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    							            <bibl ana="#borrowedItem"><title>Moby Dick</title></bibl>		    <date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Doctor Martins</title></bibl>		<date ana="#checkedOut" when="1943-09-20">Sept 20</date>
+                    			                            <bibl ana="#borrowedItem"><title>Manhattan Transfer</title></bibl>	<date ana="#checkedOut" when="1943-10-23">Oct 23</date>
+                    			                            <bibl ana="#borrowedItem"><title>Late George Apley</title></bibl> X	<date ana="#checkedOut" when="1943-11-09">Nov 9</date>
+                    			                            <bibl ana="#borrowedItem"><title>Poor White</title></bibl>			<date ana="#returned" when="1943-09-20">Sept 20</date>
                     </ab>			
                 </div>  
                 <div type="recto">
-                    <pb facs="#s7" />
+                    <pb facs="#s7"/>
                     <head>
                     			<address><persName ref="#wats.sa">Miss Watson</persName>
                     			<name>Foyer Int. des Etudiantes</name>
                     		<street>93. Bd St Michel</street></address>
                     </head>		
                     <ab>		
-                    <date when="1945-03">March 1945</date>	<bibl><title>Helen of the High Hand</title></bibl>
-                    				                        <bibl><title>The Card</title></bibl>
+                    <date ana="#checkedOut" when="1945-03">March 1945</date>	<bibl ana="#borrowedItem"><title>Helen of the High Hand</title></bibl>
+                    				                        <bibl ana="#borrowedItem"><title>The Card</title></bibl>
                     			
                     				<persName ref="#four.jea">Mme Fournier</persName> borrowed
-                    				<bibl><author>Karel Capek</author>'s <title>England</title></bibl> (not returned)
+                    				<bibl ana="#borrowedItem"><author>Karel Capek</author>'s <title>England</title></bibl> (not returned)
                     </ab>	
                     <ab>
-                    <date when="1958-04-28">April 28 1958</date>	<bibl><title>Ten North Frederick</title></bibl>
-                    				                                <bibl><title>Jefferson Davis</title></bibl> (can Keep)
+                    <date ana="#checkedOut" when="1958-04-28">April 28 1958</date>	<bibl ana="#borrowedItem"><title>Ten North Frederick</title></bibl>
+                    				                                <bibl ana="#borrowedItem"><title>Jefferson Davis</title></bibl> (can Keep)
                     </ab>				
                 </div>  
                 <div type="verso">
-                    <pb facs="#s8" />
+                    <pb facs="#s8"/>
                     
                     <!-- Verso Blank -->
                 </div>

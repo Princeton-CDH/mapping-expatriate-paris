@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#oppe.ge">George Oppen</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,17 +44,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/o/oppen/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                <date when="1933"> 1933</date>			<persName ref="oppe.ge">OPPEN</persName>
                 
@@ -75,25 +66,25 @@
                 						2 wks 2 v				20  42 75
                 							dep				   100	80f
                 							
-               <date when="1933-01-19"> Jan 19	</date>	<bibl><title>Poems</title></bibl> <bibl><author>T S Eliot	</author></bibl>				3 Feb
-                			<bibl><title>Spring &amp; All</title></bibl>					<date when="1933-02-03">3 Feb</date>
-                			<bibl><title>History of the Russian Revolution</title></bibl>
-            	<date when="1933-01-28">28 Jan</date>		Volume I to pay			vol II	<date when="1933-02-06">6 Feb.</date><date when="1933-01-28"> 28 Jan</date>
+               <date ana="#checkedOut" when="1933-01-19"> Jan 19	</date>	<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title></bibl> <bibl ana="#borrowedItem"><author>T S Eliot	</author></bibl>				3 Feb
+                			<bibl ana="#borrowedItem" corresp="mep:00g96d"><title>Spring &amp; All</title></bibl>					<date ana="#checkedOut" when="1933-02-03">3 Feb</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00fs61"><title>History of the Russian Revolution</title></bibl>
+            	<date ana="#returned" when="1933-01-28">28 Jan</date>		Volume I to pay			vol II	<date when="1933-02-06">6 Feb.</date><date when="1933-01-28"> 28 Jan</date>
             	<date when="1933-02-06">6 Feb.</date>		 "	 III						<date when="1933-02-13">13 "</date>
             	<date when="1933-02-13">13</date>	-	subscription expired 	<date when="1933-02-02">2 February</date>
             						"	renewed to<date when="1933-02-19"> 19</date>	"		20f
-            	<date when="1933-02-13">13 Feb.</date>		<bibl><title>What Life Should</title></bibl>	owes 37 25
-            					mean to you.					<date when="1933-02-21">21</date>
-                    <bibl><title>Explorations</title></bibl>				<date when="1933-02-21">21</date>
+            	<date ana="#checkedOut" when="1933-02-13">13 Feb.</date>		<bibl ana="#borrowedItem" corresp="mep:00p32z"><title>What Life Should</title></bibl>	owes 37 25
+            					mean to you.					<date ana="#checkedOut" when="1933-02-21">21</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00h880"><title>Explorations</title></bibl>				<date ana="#returned" when="1933-02-21">21</date>
             	
             	
             	
             	
             	to be deducted from deposit						100f
             	
-            		subscription <date from="1933-02-02">2</date> <date to="1933-02-19">- 19 Feb</date> 	20f
-            		<bibl><title>Ash Wednesday</title></bibl>				18
-            		<bibl><title>Ben Jonson</title></bibl>					19.25
+            		subscription <date from="1933-02-02">2</date> <date ana="#checkedOut" to="1933-02-19">- 19 Feb</date> 	20f
+            		<bibl ana="#borrowedItem" corresp="mep:002w94"><title>Ash Wednesday</title></bibl>				18
+            		<bibl ana="#borrowedItem" corresp="mep:00665b"><title>Ben Jonson</title></bibl>					19.25
             									57.25		balance
             												to pay to Oppen
             												
@@ -102,7 +93,7 @@
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

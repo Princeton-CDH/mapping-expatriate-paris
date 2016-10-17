@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roub.al">Alexis Roubin</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -48,7 +39,7 @@
             <change who="#carlca" when="2016-03-18">
                 <ab>
                     Encoded Cards - First Pass
-                    N.R.F. --> Nouvelle Revue Française
+                    N.R.F. --&gt; Nouvelle Revue Française
                 </ab>
             </change>
             <change who="#carlca">
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/roubin/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1939">1939</date>		
                             <persName ref="#roub.al">ROUBIN M. Alexis</persName>
@@ -81,21 +72,21 @@
                 			</address>
                 </head>
                 <ab>
-                <date when="1939-01-04">Jan 4</date>	
-                        <bibl><title>N R F</title> <biblScope unit="issue" from="05-01">1er Mai</biblScope> (A L P)</bibl>
-                		<bibl><title>Revue de Paris</title> <biblScope unit="issue" from="1929-06-15">15 Juin 1929</biblScope>	(<persName>Thiébaud</persName>)</bibl>         returned
+                <date ana="#checkedOut" when="1939-01-04">Jan 4</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00sn6b"><title>N R F</title> <biblScope unit="issue" from="05-01">1er Mai</biblScope> (A L P)</bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00sn7n"><title>Revue de Paris</title> <biblScope unit="issue" from="1929-06-15">15 Juin 1929</biblScope>	(<persName>Thiébaud</persName>)</bibl>         returned
                 						
-                		<bibl><title>Revue Européenne</title> (<biblScope unit="issue" from="1929-05-01">1er mai 1929</biblScope> <persName>Chadourne</persName></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00sn8z"><title>Revue Européenne</title> (<biblScope unit="issue" from="1929-05-01">1er mai 1929</biblScope> <persName>Chadourne</persName></bibl>
                 							
-                		<bibl><title>Revue Anglo - Américaine</title> <biblScope unit="issue" from="1924-12">Dec 1924</biblScope> <persName>Cazameau</persName></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00sn98"><title>Revue Anglo - Américaine</title> <biblScope unit="issue" from="1924-12">Dec 1924</biblScope> <persName>Cazameau</persName></bibl>
                 					
-                		<bibl><title>Revue des 2 Mondes</title> <biblScope unit="issue" from="1933-04-15">15 aout 1933</biblScope> (<persName>Gillet</persName>)</bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des 2 Mondes</title> <biblScope unit="issue" from="1933-04-15">15 aout 1933</biblScope> (<persName>Gillet</persName>)</bibl>
                 					
-                		<bibl><title>Revue universale</title> <biblScope unit="issue" from="1935-06-15">15 juin 1935</biblScope> (<persName>Paul Dubois</persName>)</bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00sp0r"><title>Revue universale</title> <biblScope unit="issue" from="1935-06-15">15 juin 1935</biblScope> (<persName>Paul Dubois</persName>)</bibl>
                 					
-                		<bibl><title>Revue des Deux Mondes</title> <biblScope unit="issue" from="1925-08-01">1er aout 1925</biblScope> <persName>Gillet</persName></bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des Deux Mondes</title> <biblScope unit="issue" from="1925-08-01">1er aout 1925</biblScope> <persName>Gillet</persName></bibl>
                 					
-                		<bibl><title>Mercure</title> <biblScope unit="issue" from="1922-06-01">1er juin 1922</biblScope> (<persName>Pound</persName>)</bibl>
+                		<bibl ana="#borrowedItem" corresp="mep:008g6b"><title>Mercure</title> <biblScope unit="issue" from="1922-06-01">1er juin 1922</biblScope> (<persName>Pound</persName>)</bibl>
                 		
                 		
                 		wrote to <persName ref="#roub.al">Mr Roubin</persName>
@@ -103,7 +94,7 @@
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

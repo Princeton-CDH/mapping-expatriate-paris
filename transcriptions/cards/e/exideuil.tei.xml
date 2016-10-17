@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title> An Encoded Transcription of a Borrower's Card: <persName ref="#exid.pi">Pierre d'Exideuil</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/e/exideuil/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
     
@@ -72,7 +63,7 @@
         <body>
             <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 
                     <ab>
                         <date when="1934">1934</date>		
@@ -87,8 +78,8 @@
                 1v. 1m.									15
                 dep.				ref. <date when="1934-12-22">Dec 22	</date>		50f
                 
-                        <date when="1934-11-06">6 November</date><bibl><title>Restoration comedies (Summer 1)</title></bibl> <date when="1934-11-16">16 November</date>
-                        <date when="1934-11-16">16 November</date><bibl><title>Selected Essays, Eliot</title></bibl><date when="1934-11-05">05 November</date>
+                        <date ana="#checkedOut" when="1934-11-06">6 November</date><bibl ana="#borrowedItem" corresp="mep:00js5f"><title>Restoration comedies (Summer 1)</title></bibl> <date ana="#returned" when="1934-11-16">16 November</date>
+                        <date ana="#checkedOut" when="1934-11-16">16 November</date><bibl ana="#borrowedItem" corresp="mep:009v12"><title>Selected Essays, Eliot</title></bibl><date ana="#returned" when="1934-11-05">05 November</date>
         
                 
                 							books	72
@@ -97,7 +88,7 @@
                     </ab>
                 </div>
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <ab>
                
                 <!-- verso blank -->

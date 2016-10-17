@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#caye.je">Jean de Cayeux</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -58,10 +49,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/c/cayeux/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
     
     </facsimile>
@@ -69,7 +60,7 @@
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
             	<head>
             	<date when="1937">1937</date>		<persName ref="#caye.je">DE CAYEUX Jean</persName>
             	<unclear/>		
@@ -81,16 +72,16 @@
             	<ab>
             	<date when="1937-02-11">Feb 11</date>	3 m 1v			40.00
             				dep.		30.00
-            	<date when="1937-02-11">Feb 11</date>	<bibl><title>Poor Splendid Wings</title></bibl>		<date when="1937-03-01">March 1</date>
+            	<date ana="#checkedOut" when="1937-02-11">Feb 11</date>	<bibl ana="#borrowedItem" corresp="mep:00fk0h"><title>Poor Splendid Wings</title></bibl>		<date ana="#returned" when="1937-03-01">March 1</date>
             					  owes 1 franc.
-            	<date when="1937-03-01">March 1.</date> <bibl><title>Buttered Side Down</title></bibl>.	<date when="1937-04-29">April 29</date>
+            	<date ana="#checkedOut" when="1937-03-01">March 1.</date> <bibl ana="#borrowedItem" corresp="mep:003s59"><title>Buttered Side Down</title></bibl>.	<date ana="#returned" when="1937-04-29">April 29</date>
             	<date when="1937-03-20">March 20</date> sent pc Easter closing + book returned!
             	<date when="1937-04-20">April 20</date> sent pc. for book.		2d. 10 . 30
             			Interrupted <date when="1937-04-29">April 29</date> - 12 days left
             	</ab>
             	</div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
             	<!-- verso blank -->
             	</div>		
                 </div>

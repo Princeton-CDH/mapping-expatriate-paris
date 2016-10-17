@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#deno.pi">M. Pierre Denoel</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,10 +49,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/denoel/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
     
     </facsimile>
@@ -69,27 +60,27 @@
         <body>
             <div type="card">
             
-                <div type="recto"><pb facs="#s1" />
+                <div type="recto"><pb facs="#s1"/>
                <head> <date when="1934">1934</date>		<persName ref="#deno.pi">DENOEL
                 				M. Pierre</persName>
                 			<address><street>8 rue Charles Beck VII</street></address></head>
                 <ab>
                 <date when="1934-08-30">30 Aug.</date>	1v. 1m.					dep. 30f
                 						ref. <date when="1934-10-30">30 Oct</date>	 12f
-                <date when="1934-08-30">30 Aug.</date>	<bibl><title>Dr. Martino</title></bibl> 0.50 card <date when="1934-10-08">8 Oct</date>	<date when="1934-10-30">30 Oct.</date>
+                <date ana="#checkedOut" when="1934-08-30">30 Aug.</date>	<bibl ana="#borrowedItem" corresp="mep:004c9g"><title>Dr. Martino</title></bibl> 0.50 card <date ana="#returned" when="1934-10-08">8 Oct</date>	<date when="1934-10-30">30 Oct.</date>
                 							ren. <date when="1934-10-10">Oct 10</date>
                 Renewed <date from="1934-09-30" to="1934-10-30">Sept 30 - Oct 30 1934</date> 1 v 	 15v
                 
                 							deposit - 30f
                 								ref. <date when="1934-11-28">Nov 28</date>
                 Renewed <date from="1934-10-30" to="1934-11-30">30 Oct -  30 Nov</date>	-		 25f
-            	<date when="1934-10-30">30 Oct</date>-	<bibl><title>Doomington Wanderer</title></bibl>			<date when="1934-11-07">Nov 7</date>
-            	<date when="1934-11-07">Nov 7</date>	<bibl><title>My Best Adventure Story</title></bibl>		<date when="1934-11-28">Nov 28</date>
-            			<bibl><title>Lovat Dickson Mag.</title> April</bibl> 0.25
-            	<date when="1934-11-28">"	28</date>
+            	<date ana="#checkedOut" when="1934-10-30">30 Oct</date>-	<bibl ana="#borrowedItem" corresp="mep:004d0z"><title>Doomington Wanderer</title></bibl>			<date ana="#returned" when="1934-11-07">Nov 7</date>
+            	<date ana="#checkedOut" when="1934-11-07">Nov 7</date>	<bibl ana="#borrowedItem" corresp="mep:003k8k"><title>My Best Adventure Story</title></bibl>		<date ana="#checkedOut" when="1934-11-28">Nov 28</date>
+            			<bibl ana="#borrowedItem" corresp="mep:004d18"><title>Lovat Dickson Mag.</title> April</bibl> 0.25
+            	<date ana="#returned" when="1934-11-28">"	28</date>
                </ab> </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
             </div>
             
