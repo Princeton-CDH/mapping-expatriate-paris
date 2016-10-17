@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card <persName ref="#beac"></persName></title>
+                <title>An Encoded Transcription of a Borrower's Card <persName ref="#beac"/></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -54,10 +45,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/beaches/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
@@ -65,7 +56,7 @@
             
                 <div type="card">
                     <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                 <head>
                 			<persName>BEACHES</persName>
                 
@@ -74,18 +65,18 @@
                 
                 </head>
                 	<ab>
-                	   sent	<bibl><title>Room of Ones Own</title></bibl>
-                			<bibl><title>Marina</title></bibl>
-                			<bibl><title>Phantasmagoria</title></bibl>
-                			<bibl><author>Giraudoux</author></bibl>
-                			<bibl><author>Severine</author></bibl> 
-                			<bibl><title>Rue Sans Nom</title></bibl>
-                			<bibl><title>Vie de Proust</title></bibl>
+                	   sent	<bibl ana="#borrowedItem" corresp="mep:000j9w"><title>Room of Ones Own</title></bibl>
+                			<bibl ana="#borrowedItem" corresp="mep:000k0c"><title>Marina</title></bibl>
+                			<bibl ana="#borrowedItem" corresp="mep:000k1p"><title>Phantasmagoria</title></bibl>
+                			<bibl ana="#borrowedItem"><author>Giraudoux</author></bibl>
+                			<bibl ana="#borrowedItem"><author>Severine</author></bibl> 
+                			<bibl ana="#borrowedItem" corresp="mep:000k20"><title>Rue Sans Nom</title></bibl>
+                			<bibl ana="#borrowedItem" corresp="mep:000k39"><title>Vie de Proust</title></bibl>
                 	</ab>
                 </div>
                 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                 
                 <!-- Blank Verso -->
                     

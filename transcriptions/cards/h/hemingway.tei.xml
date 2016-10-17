@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
     <fileDesc>
       <titleStmt>
         <title>An Encoded Transcription of a Borrower's Card: <persName ana="#hemi.er">Ernest Hemingway</persName></title>
@@ -27,14 +25,7 @@
           </msIdentifier>
         </msDesc>
         
-        <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-          <xi:fallback>
-            <listperson>
-              <head>People not available</head>
-              <person/>
-            </listperson>
-          </xi:fallback>
-        </xi:include>
+        
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -68,52 +59,52 @@
         </ab>
       </change>
       <change who="#cwulfman" when="2015-07-30">
-        <p>Interpret return date of <bibl><title>Children of the Age</title></bibl> as April</p>
+        <p>Interpret return date of <bibl ana="#borrowedItem" corresp="mep:005269"><title>Children of the Age</title></bibl> as April</p>
       </change>
     </revisionDesc>
   </teiHeader>
   <facsimile xml:base="pudl0123/825298/h/hemingway/">
     <surface xml:id="s1">
-      <graphic url="00000001.jp2" />
+      <graphic url="00000001.jp2"/>
     </surface>
     <surface xml:id="s2">
-      <graphic url="00000002.jp2" />
+      <graphic url="00000002.jp2"/>
     </surface>
     <surface xml:id="s3">
-      <graphic url="00000003.jp2" />
+      <graphic url="00000003.jp2"/>
     </surface>
     <surface xml:id="s4">
-      <graphic url="00000004.jp2" />
+      <graphic url="00000004.jp2"/>
     </surface>
     <surface xml:id="s5">
-      <graphic url="00000005.jp2" />
+      <graphic url="00000005.jp2"/>
     </surface>
     <surface xml:id="s6">
-      <graphic url="00000006.jp2" />
+      <graphic url="00000006.jp2"/>
     </surface>
     <surface xml:id="s7">
-      <graphic url="00000007.jp2" />
+      <graphic url="00000007.jp2"/>
     </surface>
     <surface xml:id="s8">
-      <graphic url="00000008.jp2" />
+      <graphic url="00000008.jp2"/>
     </surface>
     <surface xml:id="s9">
-      <graphic url="00000009.jp2" />
+      <graphic url="00000009.jp2"/>
     </surface>
     <surface xml:id="s10">
-      <graphic url="00000010.jp2" />
+      <graphic url="00000010.jp2"/>
     </surface>
     <surface xml:id="s11">
-      <graphic url="00000011.jp2" />
+      <graphic url="00000011.jp2"/>
     </surface>
     <surface xml:id="s12">
-      <graphic url="00000012.jp2" />
+      <graphic url="00000012.jp2"/>
     </surface>
     <surface xml:id="s13">
-      <graphic url="00000013.jp2" />
+      <graphic url="00000013.jp2"/>
     </surface>
     <surface xml:id="s14">
-      <graphic url="00000014.jp2" />
+      <graphic url="00000014.jp2"/>
     </surface>
   </facsimile>
 
@@ -123,7 +114,7 @@
       
       <div type="card">
         <div type="recto">               
-          <pb facs="#s1" />
+          <pb facs="#s1"/>
           <head>
             <date when="1925">1925</date>
             <note>subs to March 23-1926</note>
@@ -140,9 +131,8 @@
             </note>
           </head>
           
-          <note>copy of <bibl><title>Farewell to Arms</title></bibl> =
-          <measure type="currency" unit="dollar"
-          quantity="1.87">$1.87</measure></note>
+          <note>copy of <bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl> =
+          <measure type="currency" unit="dollar" quantity="1.87">$1.87</measure></note>
 
 
             <ab ana="#borrowingEvent">
@@ -152,68 +142,68 @@
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-10-12">&#x3003; 12</date> 
-              <bibl ana="#borrowedItem"><title>Sentimental Education</title></bibl> 
+              <date ana="#checkedOut" when="1925-10-12">〃 12</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00527m"><title>Sentimental Education</title></bibl> 
               <date ana="#returned" when="1925-10-27">Oct. 27</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-10-14">&#x3003; 14</date> 
-              <bibl ana="#borrowedItem"><title>Sailing around the World</title></bibl>
+              <date ana="#checkedOut" when="1925-10-14">〃 14</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00528x"><title>Sailing around the World</title></bibl>
               <date ana="#returned" when="1925-10-22">Oct. 22</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-10-14">&#x3003; &#x3003;</date> 
-              <bibl ana="#borrowedItem"><title>Sea and the Jungle.</title></bibl> 
-              <date ana="#returned" when="1925-10-22">&#x3003; &#x3003;</date>
+              <date ana="#checkedOut" when="1925-10-14">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005297"><title>Sea and the Jungle.</title></bibl> 
+              <date ana="#returned" when="1925-10-22">〃 〃</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1925-10-22">Oct 22</date> 
-              <bibl ana="#borrowedItem"><title>Lear of the Steppes</title></bibl> 
+              <bibl ana="#borrowedItem" corresp="mep:00530q"><title>Lear of the Steppes</title></bibl> 
               <date ana="#returned" when="1925-10-27">Oct 27.</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-10-22"></date> 
-              <bibl ana="#borrowedItem"><title>Sportsman's Sketches vol 2</title></bibl> 
+              <date ana="#checkedOut" when="1925-10-22"/> 
+              <bibl ana="#borrowedItem" corresp="mep:005311"><title>Sportsman's Sketches vol 2</title></bibl> 
               <date ana="#returned" when="1925-11-16">Nov 16</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-10-27">&#x3003; 27</date> 
-              <bibl ana="#borrowedItem"><title>Torrents of Spring</title></bibl> 
+              <date ana="#checkedOut" when="1925-10-27">〃 27</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl> 
               <date ana="#returned" when="1925-11-16">Nov 16</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1925-11-09">Nov 9</date> 
-              <bibl ana="#borrowedItem"><title>Bread of Deceit</title></bibl> 
+              <bibl ana="#borrowedItem" corresp="mep:00532b"><title>Bread of Deceit</title></bibl> 
               <date ana="#returned" when="1925-11-24">Nov 24</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1925-11-16">Nov 16</date> 
               <bibl ana="#borrowedItem"><title>Travel Diary of a Philosopher</title> 2 vols</bibl> 
-              <date ana="#returned" when="1925-11-24">&#x3003; &#x3003;</date>
+              <date ana="#returned" when="1925-11-24">〃 〃</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-11-23">&#x3003; 23</date> 
-              <bibl ana="#borrowedItem"><title>Parody Outline of History</title></bibl> 
+              <date ana="#checkedOut" when="1925-11-23">〃 23</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00534z"><title>Parody Outline of History</title></bibl> 
               <date ana="#returned" when="1925-12-10">Dec 10</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1925-11-24">Nov 24</date> 
-              <bibl ana="#borrowedItem"><title>More Tales of the Uneasy</title></bibl> 
+              <bibl ana="#borrowedItem" corresp="mep:005358"><title>More Tales of the Uneasy</title></bibl> 
               <date ana="#returned" when="1925-12-01">Dec 1</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1925-11-28">Nov 28</date> 
-              <bibl ana="#borrowedItem"><title>Terrible Hobby of Sir J. Londe</title></bibl> 
+              <bibl ana="#borrowedItem" corresp="mep:00536k"><title>Terrible Hobby of Sir J. Londe</title></bibl> 
               <date ana="#returned" when="1925-12-01">Dec. 1</date>
             </ab>
 
@@ -224,26 +214,26 @@
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-12-10">&#x3003; 10</date> 
+              <date ana="#checkedOut" when="1925-12-10">〃 10</date> 
               <bibl ana="#borrowedItem"><title>Budden Brooks</title> in 2 vols.</bibl> 
               <date ana="#returned" when="1926-01-19">Jan 19</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-12-10">&#x3003; &#x3003;</date> 
-              <bibl ana="#borrowedItem"><title>Children of the Age</title></bibl> 
+              <date ana="#checkedOut" when="1925-12-10">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005269"><title>Children of the Age</title></bibl> 
               <date ana="#returned" when="1926-04-13" cert="medium" resp="#cwulfman">Apr 13</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-12-10">&#x3003; &#x3003;</date> 
-              <bibl ana="#borrowedItem"><title>House of Gentle Folks</title></bibl> 
+              <date ana="#checkedOut" when="1925-12-10">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00539h"><title>House of Gentle Folks</title></bibl> 
               <date ana="#returned" when="1926-02-02">Feb. 2</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1925-12-10">&#x3003; &#x3003;</date> 
-              <bibl ana="#borrowedItem"><title>Father and Children</title></bibl> 
+              <date ana="#checkedOut" when="1925-12-10">〃 〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005400"><title>Father and Children</title></bibl> 
               <date ana="#returned" when="1926-01-19">Jan 19</date>
             </ab>
 
@@ -256,53 +246,53 @@
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1926-01-30">30</date> 
-              <bibl ana="#borrowedItem"><title>In our Time</title></bibl>
+              <bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In our Time</title></bibl>
               <note>new copy</note>
               <note>bought</note> 
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-01-30">&#x3003;</date> 
-              <bibl ana="#borrowedItem"><title>Bull fighting</title></bibl> 
+              <date ana="#checkedOut" when="1926-01-30">〃</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00542m"><title>Bull fighting</title></bibl> 
             <date ana="#returned" when="1926-01-30">Jan 30</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1926-03-29">March 29</date> 
-              <bibl ana="#borrowedItem"><title>Best Short Stories 1935 Am</title></bibl> 
+              <bibl ana="#borrowedItem" corresp="mep:00543x"><title>Best Short Stories 1935 Am</title></bibl> 
             <date ana="#returned" when="1926-05-10">May 10</date>
             </ab>
 
             <ab ana="#borrowingEvent">
               <date ana="#checkedOut" when="1926-04-01">April 1</date> 
-              <bibl ana="#borrowedItem"><title>Flurried years</title></bibl> 
+              <bibl ana="#borrowedItem" corresp="mep:005447"><title>Flurried years</title></bibl> 
               <date ana="#returned" when="1926-04-13">Ap. 13</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-04-11">&#x3003; 11</date> 
-              <bibl ana="#borrowedItem"><title>Along the Road</title></bibl> 
+              <date ana="#checkedOut" when="1926-04-11">〃 11</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00316j"><title>Along the Road</title></bibl> 
             <date ana="#returned" when="1926-04-24">Ap 24</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-04-13">&#x3003; 13</date> 
-              <bibl ana="#borrowedItem"><title>Strait is the fate</title></bibl> 
-              <date ana="#returned" when="1926-04-24">&#x3003; &#x3003;</date>
+              <date ana="#checkedOut" when="1926-04-13">〃 13</date> 
+              <bibl ana="#borrowedItem" corresp="mep:00545j"><title>Strait is the fate</title></bibl> 
+              <date ana="#returned" when="1926-04-24">〃 〃</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-04-17">&#x3003; 17</date> 
+              <date ana="#checkedOut" when="1926-04-17">〃 17</date> 
               <bibl ana="#borrowedItem">
                 <title>Collected Poems</title>.
                 <author>Sandburg</author>.
               </bibl> 
-              <date ana="#returned" when="1926-04-24">&#x3003; &#x3003;</date>
+              <date ana="#returned" when="1926-04-24">〃 〃</date>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-04-21">&#x3003; 21</date> 
-              <bibl ana="#borrowedItem"><title>The Crime at Vanderlynden's</title></bibl>
+              <date ana="#checkedOut" when="1926-04-21">〃 21</date> 
+              <bibl ana="#borrowedItem" corresp="mep:005475"><title>The Crime at Vanderlynden's</title></bibl>
               <note>B B</note>
             </ab>
         </div>          
@@ -310,7 +300,7 @@
 
 
         <div type="verso">
-          <pb facs="#s2" />
+          <pb facs="#s2"/>
           <head>
             <date when="1926">1926</date>
             <date when="1926-04-26">Ap.26</date>
@@ -343,68 +333,68 @@
 
           <ab ana="#borrowingEvent">
             <date ana="#checkedOut" when="1926-04-26">Ap. 26</date>
-            <bibl ana="#borrowedItem"><title>Early Poems Yeats</title></bibl>
+            <bibl ana="#borrowedItem" corresp="mep:00548g"><title>Early Poems Yeats</title></bibl>
             <note>BB</note>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-04-29">&#x3003; 29</date>
-            <bibl ana="#borrowedItem"><title>Outcast of the Island</title></bibl>
+            <date ana="#checkedOut" when="1926-04-29">〃 29</date>
+            <bibl ana="#borrowedItem" corresp="mep:00549s"><title>Outcast of the Island</title></bibl>
             <note>B B</note>
           </ab>
 
           <ab ana="#borrowingEvent">
             <date ana="#checkedOut" when="1926-05-04">May 4</date>
-            <bibl ana="#borrowedItem"><title>The Egoists</title></bibl>
+            <bibl ana="#borrowedItem" corresp="mep:005508"><title>The Egoists</title></bibl>
             <date ana="#returned" when="1926-05-10">May 10</date>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-05-04">&#x3003; &#x3003;</date>
+            <date ana="#checkedOut" when="1926-05-04">〃 〃</date>
             <bibl ana="#borrowedItem"><title>Steeplejacket</title> vol II</bibl>
             <date ana="#returned" when="1926-05-10">May 10</date>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-05-04">&#x3003; &#x3003;</date>
-            <bibl ana="#borrowedItem"><title>Far away + Long Ago</title></bibl>
+            <date ana="#checkedOut" when="1926-05-04">〃 〃</date>
+            <bibl ana="#borrowedItem" corresp="mep:004c85"><title>Far away + Long Ago</title></bibl>
             <date ana="#returned" when="1926-10-01">Oct 1st</date>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-05-05">&#x3003; 5</date>
-            <bibl ana="#borrowedItem"><title>Thus Spoke Zarathustra</title></bibl>
+            <date ana="#checkedOut" when="1926-05-05">〃 5</date>
+            <bibl ana="#borrowedItem" corresp="mep:00552w"><title>Thus Spoke Zarathustra</title></bibl>
             <date ana="#returned" when="1926-09-13">Sept 13</date>
           </ab>
 
           <ab ana="#borrowingEvent">
             <date ana="#checkedOut" when="1926-05-10"> 10</date>
-            <bibl ana="#borrowedItem"><title>Knock Knock Knock</title></bibl>
+            <bibl ana="#borrowedItem" corresp="mep:005536"><title>Knock Knock Knock</title></bibl>
             <date ana="#returned" when="1926-11-02">Nov 2</date>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-05-10"></date>
-            <bibl ana="#borrowedItem"><title>Two Friends</title></bibl>
+            <date ana="#checkedOut" when="1926-05-10"/>
+            <bibl ana="#borrowedItem" corresp="mep:00554h"><title>Two Friends</title></bibl>
             <date ana="#returned" when="1926-09-10">Sept 10</date>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-05-10"></date>
-            <bibl ana="#borrowedItem"><title>On the Eve</title></bibl>
+            <date ana="#checkedOut" when="1926-05-10"/>
+            <bibl ana="#borrowedItem" corresp="mep:00555t"><title>On the Eve</title></bibl>
             <date ana="#returned" when="1926-09-10">Sept 10</date>
           </ab>
 
           <ab ana="#borrowingEvent">
             <date ana="#checkedOut" when="1926-05-14">May 14</date>
-            <bibl ana="#borrowedItem"><title>Problems of Philosophy</title></bibl>
+            <bibl ana="#borrowedItem" corresp="mep:002n4n"><title>Problems of Philosophy</title></bibl>
             <date ana="#returned" when="1926-09-13">Sept 13</date>
           </ab>
 
 
 
-          <note>(<date when="1926-07-03">July 3rd</date> forwarded
-          letters &amp; <bibl><title level="j">Little
+          <note>(<date ana="#checkedOut" when="1926-07-03">July 3rd</date> forwarded
+          letters &amp; <bibl ana="#borrowedItem"><title level="j">Little
           Review</title></bibl> to <placeName>Madrid</placeName>
           <orgName>Thos Cook</orgName>)
           </note>
@@ -423,15 +413,15 @@
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-09-10">&#x3003; &#x3003;</date>
+            <date ana="#checkedOut" when="1926-09-10">〃 〃</date>
             <bibl ana="#borrowedItem"><title>Paul Cezanne</title></bibl>
-            <date ana="#returned" when="1926-10-01">&#x3003; &#x3003;</date>
+            <date ana="#returned" when="1926-10-01">〃 〃</date>
           </ab>
 
           <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-09-25">&#x3003; 25</date>
+            <date ana="#checkedOut" when="1926-09-25">〃 25</date>
             <bibl ana="#borrowedItem"><title>New Republic</title> (<date>Sept 15</date>)</bibl>
-            <date ana="#returned" when="1926-10-01">&#x3003; &#x3003;</date>
+            <date ana="#returned" when="1926-10-01">〃 〃</date>
           </ab>
 
           <ab ana="#borrowingEvent">
@@ -446,19 +436,19 @@
 
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-10-11">&#x3003; &#x3003;</date>
+              <date ana="#checkedOut" when="1926-10-11">〃 〃</date>
               <bibl ana="#borrowedItem"><title>Life Work + Evil Fate of G. de Maupassant</title></bibl>
               <note>BB.</note>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-10-11">&#x3003;</date>
+              <date ana="#checkedOut" when="1926-10-11">〃</date>
               <bibl ana="#borrowedItem"><title>Americana</title> <date>1926</date></bibl>
               <note>B.B.</note>
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-10-29">&#x3003; 29</date>
+              <date ana="#checkedOut" when="1926-10-29">〃 29</date>
               <bibl ana="#borrowedItem"><title>On the Trail of the Ancient Man</title></bibl>
               <date ana="#returned" when="1927-02-28">Feb 28</date>
             </ab>
@@ -470,9 +460,9 @@
             </ab>
 
             <ab ana="#borrowingEvent">
-              <date ana="#checkedOut" when="1926-11-18">&#x3003; 18</date>
+              <date ana="#checkedOut" when="1926-11-18">〃 18</date>
               <bibl ana="#borrowedItem"><title>Sailors Return.</title></bibl>
-              <date ana="#returned"></date>
+              <date ana="#returned"/>
             </ab>
 
             <ab ana="#borrowingEvent">
@@ -482,7 +472,7 @@
             </ab>
 
             <note>
-              <date ana="#checkedOut" when="1927-02-28">Feb 28</date> brought back <bibl><title>the Common Reader</title></bibl> <date ana="#returned" when="1927-02-28">Feb. 28</date></note>
+              <date ana="#checkedOut" when="1927-02-28">Feb 28</date> brought back <bibl ana="#borrowedItem" corresp="mep:00384v"><title>the Common Reader</title></bibl> <date ana="#returned" when="1927-02-28">Feb. 28</date></note>
 
             <note><date when="1927-02-17">Feb 17</date> <del rend="overstrike"><unclear/> 19.60</del> paid</note>
 
@@ -508,7 +498,7 @@
         
         <div type="card"> 
           <div type="recto">
-            <pb facs="#s3" />
+            <pb facs="#s3"/>
             <head>
               <date when="1927">1927</date>
               <persName>HEMINGWAY</persName>
@@ -523,15 +513,15 @@
               <date ana="#returned" when="1927-06-13">June 13</date>
             </ab>
 
-              <note><del rend="overstrike"><bibl><title>Sun also Rises</title></bibl> <measure type="currency" unit="franc" quantity="42">42</measure> + <measure type="currency" unit="franc" quantity="4.80">4.80</measure> = <measure type="currency" unit="fran" quantity="46.80">46.80</measure> paid.</del></note>
+              <note><del rend="overstrike"><bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun also Rises</title></bibl> <measure type="currency" unit="franc" quantity="42">42</measure> + <measure type="currency" unit="franc" quantity="4.80">4.80</measure> = <measure type="currency" unit="fran" quantity="46.80">46.80</measure> paid.</del></note>
 
               <ab ana="#borrowingEvent">
-                <date ana="#checkedOut" when="1927-06-11">&#x3003;</date>
+                <date ana="#checkedOut" when="1927-06-11">〃</date>
                 <bibl ana="#borrowedItem"><title>Transition.</title></bibl>
-                <metamark rend="line" />
+                <metamark rend="line"/>
               </ab>
 
-                <note>ask Hemingway about <bibl><title>&quot;Grandmother&quot;</title></bibl></note>
+                <note>ask Hemingway about <bibl ana="#borrowedItem" corresp="mep:00557f"><title>"Grandmother"</title></bibl></note>
 
                 <ab ana="#borrowingEvent">
                 <date when="1927-09-20">Sept 20</date>
@@ -540,7 +530,7 @@
                 <date ana="#returned" when="1927-10-18">Oct 18</date>
                 </ab>
                 
-                <ab><del rend="overstrike"><unclear/></del><metamark rend="line" /></ab>
+                <ab><del rend="overstrike"><unclear/></del><metamark rend="line"/></ab>
 
                 <ab ana="#borrowingEvent">
                   <date ana="#checkedOut" when="1927-10-18">Oct 18</date>
@@ -549,37 +539,37 @@
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1927-10-19">&#x3003; 19</date>
+                  <date ana="#checkedOut" when="1927-10-19">〃 19</date>
                   <bibl ana="#borrowedItem"><title>Black Cat.</title></bibl>
-                  <date ana="#returned" when="1927-10-25">&#x3003; 25</date>
+                  <date ana="#returned" when="1927-10-25">〃 25</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1927-10-25">&#x3003; 25</date>
+                  <date ana="#checkedOut" when="1927-10-25">〃 25</date>
                   <bibl ana="#borrowedItem"><title>Barnum's Own Story</title></bibl>
                   <date ana="#returned" when="1927-11-15">Nov. 15</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1927-10-25">&#x3003; 25</date>
+                  <date ana="#checkedOut" when="1927-10-25">〃 25</date>
                   <bibl ana="#borrowedItem"><title>Mother India</title></bibl>
                   <date ana="#returned" when="1927-11-15">- 15</date>
                 </ab>
 
                 <ab>
                   <date when="1927-11-03">Nov 3</date>
-                  <del rend="overstrke"><bibl><title>Sun Also Rises</title></bibl> 42 owe</del>
-                  <metamark rend="line" />
+                  <del rend="overstrke"><bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl> 42 owe</del>
+                  <metamark rend="line"/>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1927-11-14">&#x3003; 14</date>
+                  <date ana="#checkedOut" when="1927-11-14">〃 14</date>
                   <bibl ana="#borrowedItem"><title>Dial Nov.</title></bibl>
                   <date ana="#returned" when="1927-12-07">Dec 7</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut">&#x3003; 14</date>
+                  <date ana="#checkedOut">〃 14</date>
                   <bibl ana="#borrowedItem"><title>Story of Ivy</title></bibl>
                   <date ana="#returned">Nov 26</date>
                 </ab>
@@ -592,15 +582,15 @@
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1927-11-26">&#x3003; 26</date>
+                  <date ana="#checkedOut" when="1927-11-26">〃 26</date>
                   <bibl ana="#borrowedItem"><title>Before the Bombardment</title></bibl>
-                  <date ana="#returned" when="1927-12-07">&#x3003; &#x3003;</date>
+                  <date ana="#returned" when="1927-12-07">〃 〃</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1927-11">&#x3003; ?</date>
+                  <date ana="#checkedOut" when="1927-11">〃 ?</date>
                   <bibl ana="#borrowedItem"><title>Bridge of San Luis Rey</title></bibl>
-                  <date ana="#returned" when="1927-12-07">&#x3003; &#x3003;</date>
+                  <date ana="#returned" when="1927-12-07">〃 〃</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
@@ -629,18 +619,18 @@
 
                 <ab ana="#borrowingEvent">
                   <date ana="#checkedOut" when="1928-02-09">_ 9</date>
-                  <bibl ana="#borrowedItem"><title>Torrents of Spring</title></bibl>
+                  <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl>
                   <date ana="#returned" when="1928-03-03">Mch 3</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1928-02-11">&#x3003; 11</date>
+                  <date ana="#checkedOut" when="1928-02-11">〃 11</date>
                   <bibl ana="#borrowedItem"><title>Recollections of the Irish War</title></bibl>
-                  <date ana="#returned" when="1928-03-03">&#x3003; 3</date>
+                  <date ana="#returned" when="1928-03-03">〃 3</date>
                 </ab>
 
                 <ab ana="#borrowingEvent">
-                  <date ana="#checkedOut" when="1928-02-11" cert="high" />
+                  <date ana="#checkedOut" when="1928-02-11" cert="high"/>
                   <bibl ana="#borrowedItem"><title>Riddle of the Irish</title></bibl>
                   <date ana="#returned" when="1928-02-13">Feb 13</date>
                 </ab>
@@ -654,32 +644,32 @@
               <ab ana="#borrowingEvent">
                 <date ana="#checkedOut" when="1928-02-13">Feb 13</date>
                 <bibl ana="#borrowedItem"><title>World's Illusion 2 vols</title></bibl>
-                <date ana="#returned" when="1928-02-28">&#x3003; 28</date>
+                <date ana="#returned" when="1928-02-28">〃 28</date>
               </ab>
 
-              <ab><note><del rend="overstrike">(loaned 100f Feb 17)</del></note> <metamark rend="line" /></ab>
+              <ab><note><del rend="overstrike">(loaned 100f Feb 17)</del></note> <metamark rend="line"/></ab>
 
               <ab ana="#borrowingEvent">
-                <date ana="#checkedOut" when="1928-02-24">&#x3003; 24</date>
+                <date ana="#checkedOut" when="1928-02-24">〃 24</date>
                 <bibl ana="#borrowedItem"><title>Emperor Jones</title></bibl>
                 <date ana="#returned" when="1928-03-03">Mch 3</date>
               </ab>
 
               <ab ana="#borrowingEvent">
-                <date ana="#checkedOut" when="1928-02-24">&#x3003; 24</date>
+                <date ana="#checkedOut" when="1928-02-24">〃 24</date>
                 <bibl ana="#borrowedItem"><title>Plough &amp; Stars</title></bibl>
-                <date ana="#returned" when="1928-03-03">&#x3003; &#x3003;</date>
+                <date ana="#returned" when="1928-03-03">〃 〃</date>
               </ab>
 
               <ab ana="#borrowingEvent">
-                <date ana="#checkedOut" when="1928-02-28">&#x3003; 28</date>
+                <date ana="#checkedOut" when="1928-02-28">〃 28</date>
                 <bibl ana="#borrowedItem"><title>Magic Mountain 2 vols</title></bibl>
                 <note>BB</note>
               </ab>
           </div>
           
           <div type="verso">
-            <pb facs="#s4" />
+            <pb facs="#s4"/>
             <head>
               <persName>HEMINGWAY</persName>
             </head>
@@ -691,7 +681,7 @@
 	    </ab>
 
             <ab ana="#borrowingEvent">
-	      <date ana="#checkedOut" when="1928-03-08">&#x3003; 8</date>
+	      <date ana="#checkedOut" when="1928-03-08">〃 8</date>
 	      <bibl ana="#borrowedItem"><title>Genius &amp; Character.</title></bibl>
 	    </ab>
 
@@ -711,25 +701,25 @@
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-04-23">&#x3003; 23</date>
+		<date ana="#checkedOut" when="1929-04-23">〃 23</date>
 		<bibl ana="#borrowedItem"><title>Autobiography of Lord Alfred Douglas</title></bibl>
 		<date ana="#returned" when="1929-05-16">May 16</date>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-04-23">&#x3003; 23</date>
+		<date ana="#checkedOut" when="1929-04-23">〃 23</date>
 		<bibl ana="#borrowedItem"><title>Zola + His Time</title></bibl>
 		<date ana="#returned" when="1929-05-14">May 14</date>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-04-26">&#x3003; 26</date>
+		<date ana="#checkedOut" when="1929-04-26">〃 26</date>
 		<bibl ana="#borrowedItem"><title>Guillotine + Its Servants</title></bibl>
 		<date ana="#returned" when="1929-05-14">May 14</date>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-04-26">&#x3003; 26</date>
+		<date ana="#checkedOut" when="1929-04-26">〃 26</date>
 		<bibl ana="#borrowedItem"><title>Dial</title> <date when="1929-01">January 1929</date></bibl>
 	      </ab>
 
@@ -740,7 +730,7 @@
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-05-21">&#x3003; 21 </date>
+		<date ana="#checkedOut" when="1929-05-21">〃 21 </date>
 		<bibl ana="#borrowedItem"><title>Diary of Dostoievsky's Wife</title></bibl>
 		<date ana="#returned" when="1929-07-02">July 2</date>
 	      </ab>
@@ -754,37 +744,37 @@
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-06-05">&#x3003; 5</date>
+		<date ana="#checkedOut" when="1929-06-05">〃 5</date>
 		<bibl ana="#borrowedItem"><title>Three Lives</title></bibl>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-06-05">&#x3003; 5</date>
+		<date ana="#checkedOut" when="1929-06-05">〃 5</date>
 		<bibl ana="#borrowedItem"><title>Mlle Turpin comes</title></bibl>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-06-21">&#x3003; 21</date>
+		<date ana="#checkedOut" when="1929-06-21">〃 21</date>
 		<bibl ana="#borrowedItem"><title>Contemporary Russian Literature</title></bibl>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-06-24">&#x3003; 24</date>
+		<date ana="#checkedOut" when="1929-06-24">〃 24</date>
 		<bibl ana="#borrowedItem"><title>Round that Green Cloth.</title></bibl>
 		<note> probably BB</note>
 	      </ab>
 
               <ab ana="#borrowingEvent">
-		<date ana="#checkedOut" when="1929-06-29">&#x3003; 29</date>
+		<date ana="#checkedOut" when="1929-06-29">〃 29</date>
 		<bibl ana="#borrowedItem"><title>Politicians and the War</title></bibl>
 		<date ana="#returned" when="1929-07-02">July 2</date>
 	      </ab>
 
-              <note><date when="1929-08-22">Aug 22</date> <unclear>Sent</unclear> <bibl><title>Torrents of Spring</title></bibl><lb/>
+              <note><date when="1929-08-22">Aug 22</date> <unclear>Sent</unclear> <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl><lb/>
 	      see letter <lb/>
-              gave <bibl><title>Sun Also Rises</title></bibl>
-              <bibl><title>In Our Time</title> to <persName>A. Marcos</persName></bibl>
-              <unclear>wants <bibl><title>T. of S.</title></bibl></unclear>
+              gave <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl>
+              <bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In Our Time</title> to <persName>A. Marcos</persName></bibl>
+              <unclear>wants <bibl ana="#borrowedItem" corresp="mep:005592"><title>T. of S.</title></bibl></unclear>
               </note>
 	    </div>
           </div>
@@ -793,7 +783,7 @@
 
             <div type="card">           
               <div type="recto">
-		<pb facs="#s5" />
+		<pb facs="#s5"/>
               <head>    
 		<date when="1929">1929</date>
 		<persName>HEMINGWAY</persName>
@@ -801,19 +791,19 @@
 
               <ab ana="#borrowingEvent">
 		<date ana="#checkedOut" when="1929-09-19">Sept 19</date>
-		<bibl ana="#borrowedItem"><title>Lady Chatterley's Lover</title></bibl>
+		<bibl ana="#borrowedItem" corresp="mep:00560j"><title>Lady Chatterley's Lover</title></bibl>
 		<date ana="#returned" when="1929-09-27">Sept. 27.</date>
 	      </ab>
 
               <ab ana="#borrowingEvent">
 		<date ana="#checkedOut" when="1929-09-19"/>
-		<bibl ana="#borrowedItem"><title>War</title></bibl>
+		<bibl ana="#borrowedItem" corresp="mep:00561v"><title>War</title></bibl>
 		<date ana="#returned">27</date>.
 	      </ab>
 
               <ab ana="#borrowingEvent">
 		<date ana="#checkedOut" when="1929-09-19"/>
-		<bibl ana="#borrowedItem"><title>This quarter No 5</title></bibl>
+		<bibl ana="#borrowedItem" corresp="mep:005625"><title>This quarter No 5</title></bibl>
 		<date ana="#returned" when="1929-09-27">27</date>.
 	      </ab>
 
@@ -825,17 +815,17 @@
 
               <ab ana="#borrowingEvent">
 		<date ana="#checkedOut" when="1929-09-27">27</date>.
-		<bibl ana="#borrowedItem"><title>On the Eve</title></bibl>
+		<bibl ana="#borrowedItem" corresp="mep:00555t"><title>On the Eve</title></bibl>
 	      </ab>
 
               <ab ana="#borrowingEvent">
 		<date ana="#checkedOut" when="1929-09-27">27</date>
-		<bibl ana="#borrowedItem"><title>A Sportsmans Sketches</title></bibl>
+		<bibl ana="#borrowedItem" corresp="mep:005311"><title>A Sportsmans Sketches</title></bibl>
 	      </ab>
 
               <ab ana="#borrowingEvent">
 		<date ana="#checkedOut" when="1929-09-27">27</date>.
-		<bibl ana="#borrowedItem"><title>Idiot</title></bibl>
+		<bibl ana="#borrowedItem" corresp="mep:00564s"><title>Idiot</title></bibl>
 		<note>brought by a gentleman</note>
 		<date ana="#returned" when="1930-01-23">Jan 23</date>
 	      </ab>
@@ -852,23 +842,23 @@
                 <date when="1929-11-07">Nov 7</date>            to his credit           29F
                 -- reg. postage          5 40
                 23 60
-                <date when="1929-11-20">Nov 20</date> <bibl><title>Natural History of Animals</title></bibl>    87.50
-                <bibl><title>Grimm's Fairy Tales</title></bibl>                 35
-                <bibl><title>Yellow Fairy Book</title></bibl>                   35
-                <bibl><title>Swiss Family Robinson</title></bibl>               35
+                <date ana="#checkedOut" when="1929-11-20">Nov 20</date> <bibl ana="#borrowedItem" corresp="mep:00566d"><title>Natural History of Animals</title></bibl>    87.50
+                <bibl ana="#borrowedItem" corresp="mep:00567q"><title>Grimm's Fairy Tales</title></bibl>                 35
+                <bibl ana="#borrowedItem" corresp="mep:005681"><title>Yellow Fairy Book</title></bibl>                   35
+                <bibl ana="#borrowedItem" corresp="mep:00569b"><title>Swiss Family Robinson</title></bibl>               35
                 not paid                           192.50
                 23.60
-                <date when="1929-11-23">Nov 23</date>           paid ------                        168.90
+                <date ana="#returned" when="1929-11-23">Nov 23</date>           paid ------                        168.90
               </ab>
               </div>
-              <div type="verso">                <pb facs="#s6" />
+              <div type="verso">                <pb facs="#s6"/>
               <!-- verso blank -->
               </div>  
             </div> 
 
             <div type="card">           
               <div type="recto">        
-                <pb facs="#s7" />
+                <pb facs="#s7"/>
                 <head>  
                   <date when="1931">1931</date>
 		  <persName>HEMINGWAY</persName>
@@ -879,7 +869,7 @@
                 <ab ana="#borrowingEvent">
 		  <date ana="#checkedOut" when="1931-09-07">Sept 7</date>
 		  <del rend="overstrike">
-		    <bibl ana="#borrowedItem"><title>Virgin &amp; the Gipsy</title></bibl>
+		    <bibl ana="#borrowedItem" corresp="mep:000p90"><title>Virgin &amp; the Gipsy</title></bibl>
 		  </del>
 		  <date ana="#returned" when="1931-09-23">Sept 23</date>
 		</ab>
@@ -887,7 +877,7 @@
 		<ab ana="#borrowingEvent">
 		  <date ana="#checkedOut" when="1931-09-07">Sept 7</date>
 		  <del rend="overstrike">
-		    <bibl ana="#borrowedItem"><title>Pagany</title></bibl>
+		    <bibl ana="#borrowedItem" corresp="mep:00570t"><title>Pagany</title></bibl>
 		  </del>
 		  <date ana="#returned" when="1931-09-23">Sept 23</date>
 		</ab>
@@ -895,7 +885,7 @@
 
 
               <div type="verso">
-                <pb facs="#s8" />
+                <pb facs="#s8"/>
                 <!-- verso blank -->
               </div>
 
@@ -905,7 +895,7 @@
 
             <div type="card">
               <div type="recto">                        
-                <pb facs="#s9" />
+                <pb facs="#s9"/>
                 <head>
 		  <date when="1937">1937</date>
 		  <persName>HEMINGWAY Ernest</persName>
@@ -914,16 +904,16 @@
 		</head>
 
                 <ab>
-		  <date when="1937-05-07">May 7</date>
-		  <bibl><title>Something of Myself</title></bibl>
-		  <bibl><title>New Writing</title> I</bibl>
-		  <bibl><title>New Writing</title> II</bibl>
+		  <date ana="#checkedOut" when="1937-05-07">May 7</date>
+		  <bibl ana="#borrowedItem" corresp="mep:00250j"><title>Something of Myself</title></bibl>
+		  <bibl ana="#borrowedItem"><title>New Writing</title> I</bibl>
+		  <bibl ana="#borrowedItem"><title>New Writing</title> II</bibl>
 		</ab>
                   
 
                   <ab ana="#borrowingEvent">
 		    <date ana="#checkedOut" when="1938-12">1938 Dec</date>
-                    <note>borrowed <bibl ana="borrowedItem"><title>New Masses</title></bibl> &amp; other papers returned</note>
+                    <note>borrowed <bibl ana="borrowedItem" corresp="mep:005714"><title>New Masses</title></bibl> &amp; other papers returned</note>
                   </ab>
 
 		  <note>
@@ -956,7 +946,7 @@
               </div>
 
               <div type="verso">
-                <pb facs="#s10" />
+                <pb facs="#s10"/>
                 <!-- verso blank -->
               </div>                    
 
@@ -965,7 +955,7 @@
             
             <div type="card">           
               <div type="recto">
-                <pb facs="#s11" />
+                <pb facs="#s11"/>
                 <head>
 		  <date when="1933">1933</date>
 		  <persName>Hemingway</persName>
@@ -973,13 +963,13 @@
                 
                 <ab ana="#borrowingEvent">
 		  <date ana="#checkedOut" when="1933-11-10">Nov 10</date>
-                    <bibl ana="#borrowedItem"><title>Sober Truth</title></bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00572f"><title>Sober Truth</title></bibl>
                     <date ana="#returned" when="1933-11-21">Nov 21</date>
                   </ab>
 
                   <ab ana="#borrowingEvent">
 		    <date ana="#checkedOut" when="1933-11-10"/>
-                    <bibl ana="#borrowedItem"><title>Discursions on Travel Art and Life</title></bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00573r"><title>Discursions on Travel Art and Life</title></bibl>
                     <date ana="#returned" when="1933-11-21">Nov 21</date>
                   </ab>
 
@@ -992,21 +982,21 @@
 
                   <ab ana="#borrowingEvent">    
                     <date ana="#checkedOut" when="1933-11-10"/>
-                    <bibl ana="#borrowedItem"><title>Orators 33v</title></bibl>
+                    <bibl ana="#borrowedItem" corresp="mep:00575c"><title>Orators 33v</title></bibl>
 		    <note>paid <date when="1933-11-21">Nov 21</date></note>
                   </ab>
 
               </div>
               
               <div type="verso">
-                <pb facs="#s12" />
+                <pb facs="#s12"/>
                 <!-- verso blank -->
               </div>
             </div>
             
             <div type="card">           
               <div type="recto"> 
-                <pb facs="#s13" />
+                <pb facs="#s13"/>
                 <head>
 		  <date when="1938">1938</date>
 		  <persName>Hemingway, Ernest</persName>
@@ -1025,32 +1015,32 @@
 		</ab>
 
                 <note>
-		  <date when="1938-09-10">Sept 10</date>
-		  sent instead <bibl><title>&quot;With Malice Toward Some&quot;</title></bibl> for library
+		  <date ana="#checkedOut" when="1938-09-10">Sept 10</date>
+		  sent instead <bibl ana="#borrowedItem" corresp="mep:003c3c"><title>"With Malice Toward Some"</title></bibl> for library
 		</note>
 
                 <ab ana="#borrowingEvent">
 		  <date ana="#checkedOut" when="1938-09-30">Sept. 30</date>
-		  <bibl ana="#borrowedItem"><title>Homage to Catalonia</title></bibl>
+		  <bibl ana="#borrowedItem" corresp="mep:00576p"><title>Homage to Catalonia</title></bibl>
 		</ab>
 
                 <ab ana="#borrowingEvent">
 		  <date ana="#checkedOut" when="1938-10-26">Oct 26</date>
-		  9 <bibl><title>Saturday Review</title>s</bibl>
+		  9 <bibl ana="#borrowedItem"><title>Saturday Review</title>s</bibl>
 		</ab>
 
                 <ab ana="#borrowingEvent">
 		  <date ana="#checkedOut" when="1938-11">Nov</date>
-		  <bibl ana="#borrowedItem"><title>Education of Hyman Kaplan</title></bibl>
+		  <bibl ana="#borrowedItem" corresp="mep:005770"><title>Education of Hyman Kaplan</title></bibl>
 		</ab>
 
                 <note>
-                  <date when="1938-11-28">Nov 28</date> 5 copies of <bibl><title>the Fifth column</title></bibl>
+                  <date ana="#checkedOut" when="1938-11-28">Nov 28</date> 5 copies of <bibl ana="#borrowedItem" corresp="mep:005789"><title>the Fifth column</title></bibl>
                 <lb/>arrived from Paris branch Brentanos (?!)
                 <lb/>to replace 5 copies <ref>SB</ref> gave to E.H.</note>
               </div>                    
               <div type="verso">
-                <pb facs="#s14" />
+                <pb facs="#s14"/>
 
                 <!-- verso blank -->            
               </div>

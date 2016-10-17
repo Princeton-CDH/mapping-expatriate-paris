@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#leve.su">Susanne Leveque</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/l/leveque/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -72,7 +63,7 @@
     <text>
         <body>
             <div type="card"><div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
               <head>  <date when="1936">1936</date>			<persName ref="#leve.su">LEVEQUE
                 Mlle Susanne.</persName>
                 			<address><street>1 rue Cabanis</street> <district>14eme.</district></address>
@@ -80,19 +71,19 @@
                 			1m. 1v.					15.00
                 							Deposit 30.00</ab><ab>
                 
-                <date when="1936-10-09">Oct 9.</date>	<bibl><title>Three men in a boat</title></bibl>				<date when="1963-10-16">Oct 16</date>
-                		<bibl><title>New Machiavelli</title></bibl> renew. <date when="1936-11-16">Nov. 16.</date><date when="1936-12-10">	Dec 10.</date>
+                <date ana="#checkedOut" when="1936-10-09">Oct 9.</date>	<bibl ana="#borrowedItem" corresp="mep:00c56k"><title>Three men in a boat</title></bibl>				<date ana="#checkedOut" when="1963-10-16">Oct 16</date>
+                		<bibl ana="#borrowedItem" corresp="mep:001z0n"><title>New Machiavelli</title></bibl> renew. <date ana="#returned" when="1936-11-16">Nov. 16.</date><date when="1936-12-10">	Dec 10.</date>
                 	Renewed <date from="1936-11-09" to="1936-12-09">Nov 9 - Dec 9</date> pd <date when="1936-11-16">Nov 16.</date>		15v.
                 	
                 				<address><name>Villa Mozart</name>
                 					<district>XVIe</district></address>
                 <date when="1939">1939</date>								ref <date when="1939-04-27">April 27</date> dep 50
                 					DBD
-                <date when="1939-04-20">Apr 20</date>	<bibl><title>National Velvet</title></bibl> 2v a day = 14v
+                <date ana="#checkedOut" when="1939-04-20">Apr 20</date>	<bibl ana="#borrowedItem" corresp="mep:000q8z"><title>National Velvet</title></bibl> 2v a day = 14v
                 
                 							<unclear/> Lèvéque</ab></div>
              <div type="verso">   
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                </div> </div>
             

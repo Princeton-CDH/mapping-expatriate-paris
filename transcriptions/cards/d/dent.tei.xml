@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dent">Mr. Dent</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,10 +49,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/dent/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
     
     </facsimile>
@@ -69,51 +60,51 @@
         <body>
             <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head><date when="1933">1933</date>		<persName ref="#dent">DENT
                 			Mr.</persName>
                 			<address><orgName>Hotel de Paris</orgName>
                 					<street>6 rue de Verneuil</street></address></head>
-            <ab> <date when="1933-01-23">23 Jan.</date>		<bibl><title>Lives of the Hunted</title></bibl>	dep. 30f
+            <ab> <date ana="#checkedOut" when="1933-01-23">23 Jan.</date>		<bibl ana="#borrowedItem" corresp="mep:004d2k"><title>Lives of the Hunted</title></bibl>	dep. 30f
                 								by day
-                								ref. <date when="1933-01-26">26 Jan</date> </ab></div>
+                								ref. <date ana="#returned" when="1933-01-26">26 Jan</date> </ab></div>
                <div type="verso">
                 <ab>
-                <pb facs="#s2" />
-                <bibl><author>OSSENDOWSKI</author>								<title>LENIN</title></bibl>
-                <bibl><author>George Moore</author>			<title>the Passing of the Essenes</title></bibl>
-                <bibl><author>Clemence Dane</author>			<title>Broome Stages</title></bibl>
-                <bibl><author>William Faulkner</author>		<title>Sanctuary</title></bibl>
-                <bibl><author>Richard Heron Ward</author>		<title>Compelled Hero</title></bibl>
-                <bibl><author>SS VAN DINE</author>				<title>THE SCARAB MURDER CASE</title></bibl>
-                <bibl><author>JOHN ERSKINE</author>			<title>CINDERELLA'S DAUGHTER</title></bibl>
-                <bibl><author>E. SACKVILLE WEST</author>		<title>SIMPSON A LIFE</title></bibl>
-                <bibl>/<author>V. SACKVILLE WEST</author>		<title>ALL PASSION SPENT</title></bibl>
-                <bibl><author>MAXIM GORKI</author>				<title>THE MAGNET</title></bibl>
-                <bibl><author>NAOMI MITCHISON</author>			<title>The Corn King &amp; Spring Queen</title></bibl>
-                <bibl><author>SAX ROHMER</author>				<title>DAUGHTER OF FU MANCHU</title></bibl>
-                <bibl><author>E. BARRINGTON</author>			<title>THE IRISH BEAUTIES</title></bibl>
-                <bibl><author>G.B. Stern</author>				<title>THE SHORTEST NIGHT</title></bibl>
-                <bibl><author>Frank O'Connor</author>			<title>Guests of the Nation</title></bibl>
-                <bibl><author>JAMES HANLEY</author>			<title>MEN IN DARKNESS</title></bibl>
-                <bibl><author>Susan Ertz</author>				<title>JULIAN PROBERT</title></bibl>
-                <bibl><author>Margaret Kennedy</author>		<title>RETURN I DARE NOT</title></bibl>
-                <bibl><author>J.S. Fletcher</author>			<title>MURDER IN FOUR DEGREES</title></bibl>
-                <bibl><author>D.H. Lawrence	</author>		<title>THE MAN WHO DIED</title></bibl>
-                <bibl><author>T.F. Powys</author>				<title>UNCLAY</title></bibl>
-                <bibl><author>SOMERset Maugham</author>		<title>FIRST PERSON SINGULAR</title></bibl>
-                <bibl><author>Mary Borden</author>				<title>SARAH GAY</title></bibl>
-                <bibl><author>George Davis	</author>		<title>THE OPENING OF A DOOR</title></bibl>
-                <bibl><author>Edith Olivier</author>			<title>DWARF's BLOOD</title></bibl>
-                <bibl><author>Virginia Woolf</author>			<title>THE WAVES</title></bibl>
-                <bibl><author>Sigrid Undset</author>			<title>THE WILD ORCHID</title></bibl>
-                <bibl><author>Kay Boyle	</author>			<title>PLAGUED BY THE NIGHINGALE</title></bibl>
-                <bibl><author>Sarah Gertrude Millin</author>	<title>THE SONS OF MRS AAB</title></bibl>
-                <bibl><author>R.H. Mottrain	</author>		<title>THE HEADLESS HOUND</title></bibl>
-                <bibl><author>Lawrence Vail</author>			<title>MURDER MURDER</title></bibl>
-                <bibl><author>Mazo de la Roche</author>		<title>FINCH'S FORTUNE</title></bibl>
-                <bibl><author>Hugh Walpole</author>			<title>JUDITH PARIS</title></bibl>
-                <bibl><author>EDNA FERBER</author>				<title>AMERICAN BEAUTY</title></bibl>
+                <pb facs="#s2"/>
+                <bibl ana="#borrowedItem" corresp="mep:004d3w"><author>OSSENDOWSKI</author>								<title>LENIN</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004d46"><author>George Moore</author>			<title>the Passing of the Essenes</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004d5h"><author>Clemence Dane</author>			<title>Broome Stages</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:00218x"><author>William Faulkner</author>		<title>Sanctuary</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004d6t"><author>Richard Heron Ward</author>		<title>Compelled Hero</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004d74"><author>SS VAN DINE</author>				<title>THE SCARAB MURDER CASE</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004d8f"><author>JOHN ERSKINE</author>			<title>CINDERELLA'S DAUGHTER</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004d9r"><author>E. SACKVILLE WEST</author>		<title>SIMPSON A LIFE</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f07">/<author>V. SACKVILLE WEST</author>		<title>ALL PASSION SPENT</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f1j"><author>MAXIM GORKI</author>				<title>THE MAGNET</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f2v"><author>NAOMI MITCHISON</author>			<title>The Corn King &amp; Spring Queen</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f35"><author>SAX ROHMER</author>				<title>DAUGHTER OF FU MANCHU</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f4g"><author>E. BARRINGTON</author>			<title>THE IRISH BEAUTIES</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f5s"><author>G.B. Stern</author>				<title>THE SHORTEST NIGHT</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f63"><author>Frank O'Connor</author>			<title>Guests of the Nation</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f7d"><author>JAMES HANLEY</author>			<title>MEN IN DARKNESS</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:003s7x"><author>Susan Ertz</author>				<title>JULIAN PROBERT</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:002f6m"><author>Margaret Kennedy</author>		<title>RETURN I DARE NOT</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f8q"><author>J.S. Fletcher</author>			<title>MURDER IN FOUR DEGREES</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004f91"><author>D.H. Lawrence	</author>		<title>THE MAN WHO DIED</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g0h"><author>T.F. Powys</author>				<title>UNCLAY</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g1t"><author>SOMERset Maugham</author>		<title>FIRST PERSON SINGULAR</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g24"><author>Mary Borden</author>				<title>SARAH GAY</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g3f"><author>George Davis	</author>		<title>THE OPENING OF A DOOR</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g4r"><author>Edith Olivier</author>			<title>DWARF's BLOOD</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g52"><author>Virginia Woolf</author>			<title>THE WAVES</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g6c"><author>Sigrid Undset</author>			<title>THE WILD ORCHID</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:002v1c"><author>Kay Boyle	</author>			<title>PLAGUED BY THE NIGHINGALE</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g7p"><author>Sarah Gertrude Millin</author>	<title>THE SONS OF MRS AAB</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g80"><author>R.H. Mottrain	</author>		<title>THE HEADLESS HOUND</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:004g99"><author>Lawrence Vail</author>			<title>MURDER MURDER</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:003j3r"><author>Mazo de la Roche</author>		<title>FINCH'S FORTUNE</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:003h81"><author>Hugh Walpole</author>			<title>JUDITH PARIS</title></bibl>
+                <bibl ana="#borrowedItem" corresp="mep:003q34"><author>EDNA FERBER</author>				<title>AMERICAN BEAUTY</title></bibl>
             </ab> </div> </div>
             
             

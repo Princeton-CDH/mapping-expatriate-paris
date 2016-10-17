@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#pelo.an">Andrée Pelorson</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,17 +44,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/pelorson/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1932">1932</date>			<persName ref="pelo.an">PELORSON</persName>
                 			<persName ref="pelo.an">Madame Pelorson</persName>
@@ -74,11 +65,11 @@
                 						deposit			21 - 
                 							deposit returned
                 									<date when="1932-05-12">May 12</date>
-                    <date when="1932-05-11">May 11</date>	<bibl><title>Rubiyat of Omar K.</title></bibl>				<date when="1932-05-12">May 12</date>
+                    <date ana="#checkedOut" when="1932-05-11">May 11</date>	<bibl ana="#borrowedItem" corresp="mep:00pn12"><title>Rubiyat of Omar K.</title></bibl>				<date ana="#returned" when="1932-05-12">May 12</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

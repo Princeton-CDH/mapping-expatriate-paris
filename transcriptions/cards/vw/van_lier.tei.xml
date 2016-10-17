@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#lier">Mr. van Lier</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/van_lier/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1922">1922</date>	<persName ref="#lier">Mr van Lier</persName>
                     			                     <address><name>Hotel Odessa</name>
@@ -76,13 +67,13 @@
                     					dep		14
                     </ab>
                     <ab>
-                    <date when="1922-02-17">Feb 17</date>	<bibl><title>Eminent Victorians</title></bibl>	<date when="1922-04-08">April 8th</date>
-                    		                                <bibl><title>The Lunatic at Large</title></bibl>	sent a p.c
-                    										                                                <date when="1922-02-26">Feb 26</date> s a p.c
+                    <date ana="#checkedOut" when="1922-02-17">Feb 17</date>	<bibl ana="#borrowedItem" corresp="mep:00074v"><title>Eminent Victorians</title></bibl>	<date ana="#checkedOut" when="1922-04-08">April 8th</date>
+                    		                                <bibl ana="#borrowedItem" corresp="mep:00bn4k"><title>The Lunatic at Large</title></bibl>	sent a p.c
+                    										                                                <date ana="#returned" when="1922-02-26">Feb 26</date> s a p.c
                     </ab>										
                 </div>   
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

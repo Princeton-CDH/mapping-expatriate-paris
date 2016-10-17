@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wort">Mrs. Worthing</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -59,74 +50,74 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/worthing/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1936">1936</date>				<persName ref="#wort">WORTHING</persName>
                     	-<date when="1936-12-12">Dec. 12. 1936</date>
                     </head>
                     <ab>
-                    <date when="1936-10-21">Oct 21</date>	<bibl><title>They walk in the city</title></bibl>			<date when="1936-10-31">Oct 31</date>.
-                    <date when="1936-10-31">	31</date>.	<bibl><title>Faithful Lovers</title></bibl>.				<date when="1936-11-06">Nov. 6</date>.
-                    <date when="1936-11-06">Nov. 6</date>.	<bibl><title>Daniel Deronda</title>. <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>. <date when="1936-11-24">Nov. 24.</date>
-                    <date when="1936-11-24">	24</date>.	<bibl><title>Gone with the Wind</title></bibl>.				<date when="1936-12-05">Dec. 5</date>
+                    <date ana="#checkedOut" when="1936-10-21">Oct 21</date>	<bibl ana="#borrowedItem" corresp="mep:000t65"><title>They walk in the city</title></bibl>			<date ana="#returned" when="1936-10-31">Oct 31</date>.
+                    <date ana="#checkedOut" when="1936-10-31">	31</date>.	<bibl ana="#borrowedItem" corresp="mep:00h28b"><title>Faithful Lovers</title></bibl>.				<date ana="#returned" when="1936-11-06">Nov. 6</date>.
+                    <date ana="#checkedOut" when="1936-11-06">Nov. 6</date>.	<bibl ana="#borrowedItem" corresp="mep:00dr1z"><title>Daniel Deronda</title>. <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>. <date ana="#returned" when="1936-11-24">Nov. 24.</date>
+                    <date ana="#checkedOut" when="1936-11-24">	24</date>.	<bibl ana="#borrowedItem" corresp="mep:001f3f"><title>Gone with the Wind</title></bibl>.				<date ana="#returned" when="1936-12-05">Dec. 5</date>
                     </ab>
                     <ab>
                     				Interrupted. 7 days left.
                     </ab>
                     <ab>
-                    <date when="1936-12-14">Dec 14</date>.	<bibl><title>San Felice</title></bibl>.						<date when="1936-12-19">Dec 19</date>
+                    <date ana="#checkedOut" when="1936-12-14">Dec 14</date>.	<bibl ana="#borrowedItem" corresp="mep:005t4r"><title>San Felice</title></bibl>.						<date ana="#returned" when="1936-12-19">Dec 19</date>
                     </ab>
                     <ab>
                     		Renewed. <date from="1936-12-21" to="1937-03-21">Dec 21	-	March 21st</date>: pd <date when="1936-12-14">Dec 14</date>	40v
                     </ab>	
                     <ab>
-                    <date when="1936-12-19">	19</date>	<bibl><title>Thinking Reed</title></bibl>.					<date when="1936-12-31">Dec 31</date>
-                    <date when="1936-12-31">	31</date>	<bibl><title>Butterfield Eight</title></bibl>				<date when="1937-01-05">Jan 5</date>.
-                    <date when="1937-01-05">Jan 5</date>.	<bibl><title>Danger in the Dark</title></bibl>.				<date when="1937-01-07">Jan 7</date>
-                    <date when="1937-01-07">Jan. 7</date>	<bibl><title>The portrait of a lady</title></bibl>			<date when="1937-01-16">Jan 16</date>
-                    <date when="1937-01-16">	 16</date>.	<bibl><title>Come and Get it</title></bibl>.				<date when="1937-01-21">Jan 21</date>.
-                    <date when="1937-01-21">	 21</date>	<bibl><title>Far Forest</title></bibl>.						<date when="1937-01-30">Jan 30</date>
-                    <date when="1937-01-30">	 30</date>	<bibl><title>Vein of Iron</title></bibl> _					<date when="1937-02-08">Feb 8</date>
-                    <date when="1937-02-08">	 8</date>.	<bibl><title>Crimson Hair Murders</title></bibl>			<date when="1937-02-12">Feb. 12</date>
-                    <date when="1937-02-12">	 12</date>.	<bibl><title>Green Marquis</title></bibl>					<date when="1937-02-18">	18</date>
-                    <date when="1937-02-18">	 18</date>	<bibl><title>Together and apart</title></bibl>.				<date when="1937-03-02">March 2</date>
-                    <date when="1937-03-02">March 2</date>.	<bibl><title>Broom Stages</title></bibl>.					<date when="1937-03-13">March 13</date>
-                    <date when="1937-03-13">	 13</date>.	<bibl><title>Busman's Honeymoon</title></bibl>.				<date when="1937-03-25">March 25</date>
-                    <date when="1937-03-25">	 25</date>	<bibl><title>Tender is the Night</title></bibl>				<date when="1937-04-02">April 2</date>
-                    <date when="1937-03-25">	 25</date>	<bibl><title>Little red Houses</title></bibl>				<date when="1937-04-02">"	  2</date>.
-                    <date when="1937-04-02">April 2</date>.	<bibl><title>Captain Nicholas</title></bibl>.				<date when="1937-04-08">April 8</date>
-                    <date when="1937-04-08">	 8</date>	<bibl><title>Imitation of Life</title></bibl>				<date when="1937-04-24">April 24</date>
-                    <date when="1937-04-24">	 24</date>	<bibl><title>Vestal Fire</title></bibl>.					<date when="1937-05-04">May. 4</date>.
-                    <date when="1937-05-04">May 4</date>	<bibl><title>Maid and Minx</title></bibl>					<date when="1937-05-11">May 11</date>
+                    <date ana="#checkedOut" when="1936-12-19">	19</date>	<bibl ana="#borrowedItem" corresp="mep:000w8b"><title>Thinking Reed</title></bibl>.					<date ana="#returned" when="1936-12-31">Dec 31</date>
+                    <date ana="#checkedOut" when="1936-12-31">	31</date>	<bibl ana="#borrowedItem" corresp="mep:00h29n"><title>Butterfield Eight</title></bibl>				<date ana="#returned" when="1937-01-05">Jan 5</date>.
+                    <date ana="#checkedOut" when="1937-01-05">Jan 5</date>.	<bibl ana="#borrowedItem" corresp="mep:005v3q"><title>Danger in the Dark</title></bibl>.				<date ana="#returned" when="1937-01-07">Jan 7</date>
+                    <date ana="#checkedOut" when="1937-01-07">Jan. 7</date>	<bibl ana="#borrowedItem" corresp="mep:00h304"><title>The portrait of a lady</title></bibl>			<date ana="#returned" when="1937-01-16">Jan 16</date>
+                    <date ana="#checkedOut" when="1937-01-16">	 16</date>.	<bibl ana="#borrowedItem" corresp="mep:00214p"><title>Come and Get it</title></bibl>.				<date ana="#returned" when="1937-01-21">Jan 21</date>.
+                    <date ana="#checkedOut" when="1937-01-21">	 21</date>	<bibl ana="#borrowedItem" corresp="mep:000t09"><title>Far Forest</title></bibl>.						<date ana="#returned" when="1937-01-30">Jan 30</date>
+                    <date ana="#checkedOut" when="1937-01-30">	 30</date>	<bibl ana="#borrowedItem" corresp="mep:003g8r"><title>Vein of Iron</title></bibl> _					<date ana="#returned" when="1937-02-08">Feb 8</date>
+                    <date ana="#checkedOut" when="1937-02-08">	 8</date>.	<bibl ana="#borrowedItem" corresp="mep:005s35"><title>Crimson Hair Murders</title></bibl>			<date ana="#returned" when="1937-02-12">Feb. 12</date>
+                    <date ana="#checkedOut" when="1937-02-12">	 12</date>.	<bibl ana="#borrowedItem" corresp="mep:00h31f"><title>Green Marquis</title></bibl>					<date ana="#returned" when="1937-02-18">	18</date>
+                    <date ana="#checkedOut" when="1937-02-18">	 18</date>	<bibl ana="#borrowedItem" corresp="mep:003r3d"><title>Together and apart</title></bibl>.				<date ana="#returned" when="1937-03-02">March 2</date>
+                    <date ana="#checkedOut" when="1937-03-02">March 2</date>.	<bibl ana="#borrowedItem" corresp="mep:004d5h"><title>Broom Stages</title></bibl>.					<date ana="#returned" when="1937-03-13">March 13</date>
+                    <date ana="#checkedOut" when="1937-03-13">	 13</date>.	<bibl ana="#borrowedItem" corresp="mep:004j1c"><title>Busman's Honeymoon</title></bibl>.				<date ana="#returned" when="1937-03-25">March 25</date>
+                    <date ana="#checkedOut" when="1937-03-25">	 25</date>	<bibl ana="#borrowedItem" corresp="mep:00bx0j"><title>Tender is the Night</title></bibl>				<date ana="#returned" when="1937-04-02">April 2</date>
+                    <date ana="#checkedOut" when="1937-03-25">	 25</date>	<bibl ana="#borrowedItem" corresp="mep:005w6x"><title>Little red Houses</title></bibl>				<date ana="#returned" when="1937-04-02">"	  2</date>.
+                    <date ana="#checkedOut" when="1937-04-02">April 2</date>.	<bibl ana="#borrowedItem" corresp="mep:00h32r"><title>Captain Nicholas</title></bibl>.				<date ana="#returned" when="1937-04-08">April 8</date>
+                    <date ana="#checkedOut" when="1937-04-08">	 8</date>	<bibl ana="#borrowedItem" corresp="mep:00h332"><title>Imitation of Life</title></bibl>				<date ana="#returned" when="1937-04-24">April 24</date>
+                    <date ana="#checkedOut" when="1937-04-24">	 24</date>	<bibl ana="#borrowedItem" corresp="mep:006n39"><title>Vestal Fire</title></bibl>.					<date ana="#returned" when="1937-05-04">May. 4</date>.
+                    <date ana="#checkedOut" when="1937-05-04">May 4</date>	<bibl ana="#borrowedItem" corresp="mep:00h34c"><title>Maid and Minx</title></bibl>					<date ana="#returned" when="1937-05-11">May 11</date>
                     </ab>
                     <ab>
                     		Renewed. <date from="1937-03-21" to="1937-06-21">March 21 - June 21</date>.				40.
                     </ab>	
                     <ab>
-                    <date when="1937-05-11">	 11</date>.	<bibl><title>Venetian Blinds</title></bibl>.				<date when="1937-05-19">May. 19</date>.
-                    <date when="1937-05-19">	 19</date>.	<bibl><title>Figure Away</title></bibl>.					<date when="1937-05-28">May 28</date>.
-                    <date when="1937-05-27">	 27</date>	<bibl><title>Ballerina</title></bibl>.						<date when="1937-06-03">June 3</date>
-                    <date when="1937-06-03">June 3</date>	<bibl><title>Burmese Days</title></bibl>					<date when="1937-06-14">June 14</date>
-                    <date when="1937-06-14">	 14</date>	<bibl><title>Open the Door</title></bibl>.					<date when="1937-06-24">June 24</date>       
+                    <date ana="#checkedOut" when="1937-05-11">	 11</date>.	<bibl ana="#borrowedItem" corresp="mep:002t9k"><title>Venetian Blinds</title></bibl>.				<date ana="#returned" when="1937-05-19">May. 19</date>.
+                    <date ana="#checkedOut" when="1937-05-19">	 19</date>.	<bibl ana="#borrowedItem" corresp="mep:005s63"><title>Figure Away</title></bibl>.					<date ana="#returned" when="1937-05-28">May 28</date>.
+                    <date ana="#checkedOut" when="1937-05-27">	 27</date>	<bibl ana="#borrowedItem" corresp="mep:00gs21"><title>Ballerina</title></bibl>.						<date ana="#returned" when="1937-06-03">June 3</date>
+                    <date ana="#checkedOut" when="1937-06-03">June 3</date>	<bibl ana="#borrowedItem" corresp="mep:000x9x"><title>Burmese Days</title></bibl>					<date ana="#returned" when="1937-06-14">June 14</date>
+                    <date ana="#checkedOut" when="1937-06-14">	 14</date>	<bibl ana="#borrowedItem" corresp="mep:00h35p"><title>Open the Door</title></bibl>.					<date ana="#returned" when="1937-06-24">June 24</date>       
                     </ab>	 
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <head>
                     						<persName ref="#wort">WORTHING</persName>
                     </head>
                     <ab>
-                    <date when="1937-06-24">June 24</date>.	<bibl><title>Honorable estate</title></bibl>.
+                    <date ana="#checkedOut" when="1937-06-24">June 24</date>.	<bibl ana="#borrowedItem" corresp="mep:00355b"><title>Honorable estate</title></bibl>.
                     </ab>
                     <ab>
                     		<persName ref="#wort">Mrs Worthing</persName> died. <date when="1937-07">July. 1937</date>.

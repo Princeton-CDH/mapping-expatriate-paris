@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#poir.ch">Christine Poirson</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,17 +44,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/poirson/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
            <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1936">1936</date>				<persName ref="poir.ch">POIRSON</persName>
                 
@@ -78,41 +69,41 @@
                 				1v. 3m. (new),					65
                 		-<date when="1936-10-09">Oct 9th</date>					Dep.		30
                 		
-                    <date when="1936-07-09"> July 9.	</date>		<bibl><title>Weather in the Streets</title></bibl>			 <date when="1936-07-15">15</date>
-        			 <date when="1936-07-15">15</date>.		<bibl><title>Sparkenbroke.</title></bibl>					<date when="1936-08-01">August 1</date>
-        		<date when="1936-08-01">Aug 1</date> p. 1 60	<bibl><title>Moll Flanders</title></bibl>					<date when="1936-08-24">Aug. 24</date>
-        			 p. 2.40	<bibl><title>Those Barren Leaves</title></bibl>				<date when="1936-08-24">Aug 24</date>
-        		<date when="1936-08-28">Aug 28</date>			<bibl><title>Tom Jones. vols 1 + 2.</title></bibl>			<date when="1936-10-05">Oct. 5</date>
+                    <date ana="#checkedOut" when="1936-07-09"> July 9.	</date>		<bibl ana="#borrowedItem" corresp="mep:000n0x"><title>Weather in the Streets</title></bibl>			 <date ana="#returned" when="1936-07-15">15</date>
+        			 <date ana="#checkedOut" when="1936-07-15">15</date>.		<bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke.</title></bibl>					<date ana="#returned" when="1936-08-01">August 1</date>
+        		<date ana="#checkedOut" when="1936-08-01">Aug 1</date> p. 1 60	<bibl ana="#borrowedItem" corresp="mep:005p68"><title>Moll Flanders</title></bibl>					<date ana="#checkedOut" when="1936-08-24">Aug. 24</date>
+        			 p. 2.40	<bibl ana="#borrowedItem" corresp="mep:000872"><title>Those Barren Leaves</title></bibl>				<date ana="#returned" when="1936-08-24">Aug 24</date>
+        		<date ana="#checkedOut" when="1936-08-28">Aug 28</date>			<bibl ana="#borrowedItem" corresp="mep:00pv1q"><title>Tom Jones. vols 1 + 2.</title></bibl>			<date ana="#returned" when="1936-10-05">Oct. 5</date>
         			 p. 3.80	Grass Roof. renewed <date when="1936-10-05">Oct 5.</date>		<date when="1936-10-28">Oct. 28.</date>
         			 Renewed. <date from="1938-12-23">Dec 23</date> - <date to="1939-01-23">Jan 23.	1939</date>		25v.
-        		<date to="1937-12-23">Dec 23</date>			<bibl><title>Gone with the Wind</title></bibl> (may keep	<date when="1939-01-08">Jan 8</date>
+        		<date ana="#checkedOut" to="1937-12-23">Dec 23</date>			<bibl ana="#borrowedItem" corresp="mep:001f3f"><title>Gone with the Wind</title></bibl> (may keep	<date ana="#returned" when="1939-01-08">Jan 8</date>
         											 a fortnight)
-        		<date when="1939-01-08">Jan 8</date>			<bibl><title>Inside Europe</title></bibl>					<date when="1939-02-02">Feb 2.</date>
+        		<date ana="#checkedOut" when="1939-01-08">Jan 8</date>			<bibl ana="#borrowedItem" corresp="mep:008d8d"><title>Inside Europe</title></bibl>					<date ana="#returned" when="1939-02-02">Feb 2.</date>
         					<date from="1939-04-03">1939 April 3rd</date> - <date to="1939-07-03">July 3rd 1939</date> 3 m 1 v A	65v
         		<date when="1939">1939</date>		will renew subsc
-        		<date when="1939-04-03">April 3	</date>	<bibl><title>Oscar Wilde</title></bibl>, <bibl><author>F. Harris</author></bibl>				<date when="1939-04-26">Apr 26</date>
-                    <date when="1939-04-03"> 3</date>		<bibl><title>Oscar Wilde Discovers America</title></bibl>		<date when="1939-04-26">Apr 26</date>
-        			<date when="1939-04-26"> 26	</date>	<bibl><title>Little Minister	</title></bibl>					<date when="1939-04-28">Apr 28</date>
-                    <date when="1939-04-28">28</date>		<bibl><title>Cardinal's Snuff Box</title></bibl>	<bibl><title>Nar. Velvet</title></bibl>	<date when="1939-06-13">June 13</date>	
-        		<date when="1939-06-13">June 13</date>		<bibl><title>Eyeless in Gaza.</title></bibl>		<bibl><title>Elizabeth then. G. Gardens</title></bibl> <date when="1939-07-17">july 17</date>
-                    <bibl><author>William Locke</author></bibl>: <bibl><title>Morals of Marcus Ordeyne</title></bibl>
-        				subsc due <date when="1939-07-03">july 3</date>			<bibl><title>Aunt Bridge	</title></bibl>		
-        						(sent p.c. <date when="1939-07-04">July 4</date>)	<bibl><title>White Sister</title></bibl>.<bibl><author> M. Crawford</author></bibl>
-        				Renewed <date from="1939-07-03">july 3 </date>- to <date to="1939-10-03">October 3</date>. 3m. 1 vol. A 	100
-        											<bibl><author>Mrs. Humphrey Ward</author></bibl>
+        		<date ana="#checkedOut" when="1939-04-03">April 3	</date>	<bibl ana="#borrowedItem" corresp="mep:00480v"><title>Oscar Wilde</title></bibl>, <bibl ana="#borrowedItem"><author>F. Harris</author></bibl>				<date ana="#returned" when="1939-04-26">Apr 26</date>
+                    <date ana="#checkedOut" when="1939-04-03"> 3</date>		<bibl ana="#borrowedItem" corresp="mep:00f445"><title>Oscar Wilde Discovers America</title></bibl>		<date ana="#returned" when="1939-04-26">Apr 26</date>
+        			<date ana="#checkedOut" when="1939-04-26"> 26	</date>	<bibl ana="#borrowedItem" corresp="mep:00mf0m"><title>Little Minister	</title></bibl>					<date ana="#returned" when="1939-04-28">Apr 28</date>
+                    <date ana="#checkedOut" when="1939-04-28">28</date>		<bibl ana="#borrowedItem" corresp="mep:00pv21"><title>Cardinal's Snuff Box</title></bibl>	<bibl ana="#borrowedItem" corresp="mep:00pv3b"><title>Nar. Velvet</title></bibl>	<date ana="#returned" when="1939-06-13">June 13</date>	
+        		<date ana="#checkedOut" when="1939-06-13">June 13</date>		<bibl ana="#borrowedItem" corresp="mep:000n2j"><title>Eyeless in Gaza.</title></bibl>		<bibl ana="#borrowedItem" corresp="mep:00pv4n"><title>Elizabeth then. G. Gardens</title></bibl> <date ana="#checkedOut" when="1939-07-17">july 17</date>
+                    <bibl ana="#borrowedItem"><author>William Locke</author></bibl>: <bibl ana="#borrowedItem" corresp="mep:00gq9n"><title>Morals of Marcus Ordeyne</title></bibl>
+        				subsc due <date ana="#checkedOut" when="1939-07-03">july 3</date>			<bibl ana="#borrowedItem" corresp="mep:00pv5z"><title>Aunt Bridge	</title></bibl>		
+        						(sent p.c. <date ana="#checkedOut" when="1939-07-04">July 4</date>)	<bibl ana="#borrowedItem" corresp="mep:00pv68"><title>White Sister</title></bibl>.<bibl ana="#borrowedItem"><author> M. Crawford</author></bibl>
+        				Renewed <date ana="#returned" from="1939-07-03">july 3 </date>- to <date ana="#checkedOut" to="1939-10-03">October 3</date>. 3m. 1 vol. A 	100
+        											<bibl ana="#borrowedItem"><author>Mrs. Humphrey Ward</author></bibl>
                 </ab>
                 </div>
                <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <ab>
                 				<persName ref="poir.ch">POIRSON</persName>
-                <date when="1939-07-18">July 18</date>		/ Portrait of the Artist		<date when="1939-10-03">Oct 3</date>
-                    / <bibl><title>Mortal Storm		</title></bibl>			<date when="1939-10-03">Oct 3</date>
-                    / <bibl><title>It Had to Happen	</title></bibl>			<date when="1939-10-03">Oct 3</date>
-                    / <bibl><title>Elizabeth &amp; Essex	</title></bibl>			<date when="1939-10-03">Oct 3</date>
-                    / <bibl><title>Plagued by the Nightingale</title></bibl>	<date when="1939-10-03">Oct 3</date>
-                    / <bibl><title>Sun also Rises</title></bibl>				<date when="1939-10-03">Oct 3</date>
-                    / <bibl><title>Princess Casamassima	</title></bibl>		<date when="1939-10-03">Oct 3</date>
+                <date when="1939-07-18">July 18</date>		/ Portrait of the Artist		<date ana="#checkedOut" when="1939-10-03">Oct 3</date>
+                    / <bibl ana="#borrowedItem" corresp="mep:009m5c"><title>Mortal Storm		</title></bibl>			<date ana="#checkedOut" when="1939-10-03">Oct 3</date>
+                    / <bibl ana="#borrowedItem" corresp="mep:009m9m"><title>It Had to Happen	</title></bibl>			<date ana="#checkedOut" when="1939-10-03">Oct 3</date>
+                    / <bibl ana="#borrowedItem" corresp="mep:000t7g"><title>Elizabeth &amp; Essex	</title></bibl>			<date ana="#checkedOut" when="1939-10-03">Oct 3</date>
+                    / <bibl ana="#borrowedItem" corresp="mep:002v1c"><title>Plagued by the Nightingale</title></bibl>	<date ana="#checkedOut" when="1939-10-03">Oct 3</date>
+                    / <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun also Rises</title></bibl>				<date ana="#checkedOut" when="1939-10-03">Oct 3</date>
+                    / <bibl ana="#borrowedItem" corresp="mep:005161"><title>Princess Casamassima	</title></bibl>		<date ana="#returned" when="1939-10-03">Oct 3</date>
                 </ab>
                 </div>
             </div>

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
             	<title>An Encoded Transcription of a Borrower's Card: <persName ref="imbs.br">Bravig Imbs</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-            	<xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-            		<xi:fallback>
-            			<listperson>
-            				<head>People not available</head>
-            				<person/>
-            			</listperson>
-            		</xi:fallback>
-            	</xi:include>
+            	
             </sourceDesc>
         </fileDesc>
     	<profileDesc>
@@ -66,16 +57,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/i/imbs/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         
         
@@ -84,13 +75,13 @@
         <body>
             <div type="card">
             	<div type="recto">	
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
             		<ab>
                	<date when="1922">1922</date> <persName ref="imbs.br">Bravig IMBS</persName>	<orgName>chez <persName>Madame Sabin</persName> <unclear/></orgName>
                							Garnes	(<unclear/> 0)
                				Le Tremblay	 has <unclear/>
-               	<date when="1922-08-18">Aug 18</date>	<bibl><title>Dance of Life</title></bibl>	sur Mauldre			<date when="1922-08-23">" 23</date>
-            			<bibl><title>Magic Mountain vol II</title></bibl>	chez <unclear/>	<date when="1922-08-23">" 23</date>
+               	<date ana="#checkedOut" when="1922-08-18">Aug 18</date>	<bibl ana="#borrowedItem" corresp="mep:00c183"><title>Dance of Life</title></bibl>	sur Mauldre			<date ana="#checkedOut" when="1922-08-23">" 23</date>
+            			<bibl ana="#borrowedItem" corresp="mep:00kh45"><title>Magic Mountain vol II</title></bibl>	chez <unclear/>	<date when="1922-08-23">" 23</date>
                			Pomes Penyeach 6.50 one
                		<address><street>5006 WABANSIA AVENUE</street>
                		<settlement>CHICAGO</settlement><district>, ILLINOIS</district></address>.
@@ -99,111 +90,111 @@
                	card <date when="1928">1928</date>		Pomes Penyeach-------- 					  6.50
                												DUE			156.50
                	<date when="1928-04-14">Ap: 14</date>	J.R. 1m 1vol = 25
-               	<date when="1928-04-14">"	"</date>	<bibl><title>True Chatterton	</title></bibl>					<date when="1928-04-24">May 24</date>
-               	<date when="1928-10-11">Oct 11</date>	<bibl><title>True Chatterton</title></bibl>						<date when="1929-01-22">Jan 22</date>
-            			<date when="1928-10-29">	29</date>	<bibl><title>New <unclear/> in 2 vols.	</title></bibl>	<date when="1928-11-15">Nov 15</date>
-               	<date when="1928-11-15">Nov 15</date>	<bibl><title>Bertrams in 2 vols	</title></bibl>				<date when="1928-11-21">"	21</date>
-               <date when="1928-11-21">	Nov 21</date>	<bibl><title>Small House at Allington</title></bibl>			<date when="1928-11-27">"	27</date>
-            			<date when="1928-11-28">28</date>	<bibl><title>Last Chronicles of Barset 2v</title></bibl>		<date when="1928-12-03">	Dec 3</date>
-               <date when="1928-12-03">	Dec 3</date>	<bibl><title>Barchester Towers</title></bibl>					<date when="1928-12-18">"	18</date>
-               <date when="1928-12-03">	"	3</date>	<bibl><title>Framley Parsonage</title></bibl>					<date when="1928-12-26">"	26</date>
-               	<date when="1928-12-26">"	26</date>	<bibl><title>Trollope a Commentary</title></bibl>				<date when="1929-01-02">Jan 2</date>
+               	<date ana="#checkedOut" when="1928-04-14">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00kh5g"><title>True Chatterton	</title></bibl>					<date ana="#returned" when="1928-04-24">May 24</date>
+               	<date ana="#checkedOut" when="1928-10-11">Oct 11</date>	<bibl ana="#borrowedItem" corresp="mep:00kh5g"><title>True Chatterton</title></bibl>						<date ana="#returned" when="1929-01-22">Jan 22</date>
+            			<date ana="#checkedOut" when="1928-10-29">	29</date>	<bibl ana="#borrowedItem"><title>New <unclear/> in 2 vols.	</title></bibl>	<date ana="#returned" when="1928-11-15">Nov 15</date>
+               	<date ana="#checkedOut" when="1928-11-15">Nov 15</date>	<bibl ana="#borrowedItem" corresp="mep:00kh73"><title>Bertrams in 2 vols	</title></bibl>				<date ana="#returned" when="1928-11-21">"	21</date>
+               <date ana="#checkedOut" when="1928-11-21">	Nov 21</date>	<bibl ana="#borrowedItem" corresp="mep:00kh8d"><title>Small House at Allington</title></bibl>			<date ana="#returned" when="1928-11-27">"	27</date>
+            			<date ana="#checkedOut" when="1928-11-28">28</date>	<bibl ana="#borrowedItem" corresp="mep:00kh9q"><title>Last Chronicles of Barset 2v</title></bibl>		<date ana="#returned" when="1928-12-03">	Dec 3</date>
+               <date ana="#checkedOut" when="1928-12-03">	Dec 3</date>	<bibl ana="#borrowedItem" corresp="mep:004j9v"><title>Barchester Towers</title></bibl>					<date ana="#returned" when="1928-12-18">"	18</date>
+               <date ana="#checkedOut" when="1928-12-03">	"	3</date>	<bibl ana="#borrowedItem" corresp="mep:009s34"><title>Framley Parsonage</title></bibl>					<date ana="#returned" when="1928-12-26">"	26</date>
+               	<date ana="#checkedOut" when="1928-12-26">"	26</date>	<bibl ana="#borrowedItem" corresp="mep:00kj06"><title>Trollope a Commentary</title></bibl>				<date ana="#returned" when="1929-01-02">Jan 2</date>
                			(what about subs?)
-               	<date when="1929-01-02">Jan 2</date>	<bibl><title>Golden Lion of Grand Pere</title></bibl>			<date when="1929-01-16">Jan 16</date>
-            			<date when="1929-01-02">"	2</date>	<bibl><title>An Autobiography - Trollope</title></bibl>			<date when="1929-01-16">Jan 16</date>
-               		<date when="1929-01-16">16</date>	<bibl><title>Orley Farm vols I-II</title></bibl>		vol I	<date when="1929-01-22">Jan 22</date>
-               		<bibl><title>	"		"	vol I</title></bibl>					<date when="1929-01-29">"	29</date>
-            			<date when="1929-01-22">Jan 22</date>	<bibl><title>"		"	vol III	</title></bibl>				<date when="1929-01-29">"	29</date>
-            			<date when="1929-01-22">"	"</date>	<bibl><title>Jane Eyre</title></bibl>							<date when="1929-01-29">"	29</date>
-               	<date when="1929-01-29">Jan 29</date>	<bibl><title>Gullivers Travels.</title></bibl>					<date when="1929-02-11">Feb 11</date>
-               	<date when="1929-02-11">Feb 11</date>	<bibl><title>Paul Cezanne</title></bibl>						<date when="1929-02-15">"	15</date>
-               	<date when="1929-02-11">"	11</date>	<bibl><title>History of English Literature</title></bibl>		<date when="1929-02-21">"	21</date>
-               	<date when="1929-11-15">"	15</date>	<bibl><title>Poetical Work of Spenser</title></bibl>
-               <date when="1929-11-29">	"	29</date>	<bibl><title>W. Shakespeare (Brands)	</title></bibl>			<date when="1929-02-27">Febr. 27.</date>
+               	<date ana="#checkedOut" when="1929-01-02">Jan 2</date>	<bibl ana="#borrowedItem" corresp="mep:00kj1h"><title>Golden Lion of Grand Pere</title></bibl>			<date ana="#returned" when="1929-01-16">Jan 16</date>
+            			<date ana="#checkedOut" when="1929-01-02">"	2</date>	<bibl ana="#borrowedItem" corresp="mep:00kj2t"><title>An Autobiography - Trollope</title></bibl>			<date ana="#returned" when="1929-01-16">Jan 16</date>
+               		<date ana="#checkedOut" when="1929-01-16">16</date>	<bibl ana="#borrowedItem" corresp="mep:00kj34"><title>Orley Farm vols I-II</title></bibl>		vol I	<date ana="#checkedOut" when="1929-01-22">Jan 22</date>
+               		<bibl ana="#borrowedItem" corresp="mep:00kj4f"><title>	"		"	vol I</title></bibl>					<date ana="#returned" when="1929-01-29">"	29</date>
+            			<date ana="#checkedOut" when="1929-01-22">Jan 22</date>	<bibl ana="#borrowedItem" corresp="mep:00kj5r"><title>"		"	vol III	</title></bibl>				<date ana="#returned" when="1929-01-29">"	29</date>
+            			<date ana="#checkedOut" when="1929-01-22">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title></bibl>							<date ana="#returned" when="1929-01-29">"	29</date>
+               	<date ana="#checkedOut" when="1929-01-29">Jan 29</date>	<bibl ana="#borrowedItem" corresp="mep:008c3k"><title>Gullivers Travels.</title></bibl>					<date ana="#returned" when="1929-02-11">Feb 11</date>
+               	<date ana="#checkedOut" when="1929-02-11">Feb 11</date>	<bibl ana="#borrowedItem" corresp="mep:00f63d"><title>Paul Cezanne</title></bibl>						<date ana="#returned" when="1929-02-15">"	15</date>
+               	<date ana="#checkedOut" when="1929-02-11">"	11</date>	<bibl ana="#borrowedItem" corresp="mep:00kj62"><title>History of English Literature</title></bibl>		<date ana="#returned" when="1929-02-21">"	21</date>
+               	<date ana="#checkedOut" when="1929-11-15">"	15</date>	<bibl ana="#borrowedItem" corresp="mep:00kj7c"><title>Poetical Work of Spenser</title></bibl>
+               <date ana="#checkedOut" when="1929-11-29">	"	29</date>	<bibl ana="#borrowedItem" corresp="mep:00kj8p"><title>W. Shakespeare (Brands)	</title></bibl>			<date ana="#returned" when="1929-02-27">Febr. 27.</date>
             		</ab>
             	</div>
                	<div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                		<ab>
                	<date when="1929">1929</date>	<address><addrLine><num type="telephone">Elysés 92-86</num></addrLine><street>64 rue Madame.</street>
                						<persName ref="imbs.br">IMBS</persName>
                			<addrLine><num type="telephone">Molitor 15-14</num></addrLine>	<street>7 rue de Chalet</street>
                										<settlement>Boulogne sur Seine.</settlement></address>
-               	<date when="1929-02-27">Fevrier 27</date>.	<bibl><title>Prime Minister vol I, II, III, IV.</title></bibl>	Mch.
+               	<date ana="#checkedOut" when="1929-02-27">Fevrier 27</date>.	<bibl ana="#borrowedItem" corresp="mep:001h9v"><title>Prime Minister vol I, II, III, IV.</title></bibl>	Mch.
                	
-               <date when="1929-04-02">	April 2</date>	<bibl><title>Am. Mercury	Feb 1927	</title></bibl>			<date when="1929-05-30">May 30</date>
-               			<bibl><title>"	"		Mch 1928</title></bibl>				<date when="1929-05-30">May 30</date>
-               			<bibl><title>		Aug 1928	</title></bibl>		<date when="1929-05-30">May 30</date>
-               			<date when="1929-05-30">May 30</date>	<bibl><title>Romany Rye	</title></bibl>						 <date when="1929-06-05">	June 5</date>
-               			<date when="1929-05-30">	"	"</date>	<bibl><title>Romano Lavo Lil</title></bibl>					 <date when="1929-06-05">	June 5</date>
+               <date ana="#checkedOut" when="1929-04-02">	April 2</date>	<bibl ana="#borrowedItem" corresp="mep:000380"><title>Am. Mercury	Feb 1927	</title></bibl>			<date ana="#checkedOut" when="1929-05-30">May 30</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00kj90"><title>"	"		Mch 1928</title></bibl>				<date ana="#checkedOut" when="1929-05-30">May 30</date>
+               			<bibl ana="#borrowedItem"><title>		Aug 1928	</title></bibl>		<date ana="#returned" when="1929-05-30">May 30</date>
+               			<date ana="#checkedOut" when="1929-05-30">May 30</date>	<bibl ana="#borrowedItem" corresp="mep:002b0x"><title>Romany Rye	</title></bibl>						 <date ana="#returned" when="1929-06-05">	June 5</date>
+               			<date ana="#checkedOut" when="1929-05-30">	"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00kk0g"><title>Romano Lavo Lil</title></bibl>					 <date ana="#returned" when="1929-06-05">	June 5</date>
                			Our Exag.							------
-               			<date when="1929-06-05">	June 5</date>	<bibl><title>Belton Estate</title></bibl>						<date when="1929-06-12">	June 12</date>
-               			<date when="1929-06-12">	June 12</date>	<bibl><title>Cranford</title></bibl>							<date when="1929-07-07">July 7</date>
-               			<date when="1929-07-07">July 7</date>	<bibl><title>Kept in the Dark	</title></bibl>				<date when="1929-08-03">Aug 3</date>
-               			<date when="1929-07-07"> 	"	7</date>	<bibl><title>Bible in Spain	</title></bibl>					<date when="1929-08-03">" 3</date>
-               			<date when="1929-08-03">Aug 3</date>	<bibl><title>Zuleika Dobson	</title></bibl>					<date when="1929-10-05">Oct 5</date>
-               			<date when="1929-08-05">"	5</date>	<bibl><title>Villette</title></bibl>							<date when="1929-08-20">Aug 20</date>	
-               			<date when="1929-08-10">"	10</date>	<bibl><title>Exile</title></bibl>								"<date when="1929-08-20">" 20</date>	
-               			<date when="1929-08-20">Aug 20</date>	<bibl><title><unclear/> in 2 vols.	</title></bibl>					<date when="1929-09-11">Sept 11</date>
-               			<date when="1929-09-11">Sept 11</date>	<bibl><title>Tenant of Wildfell Hall 2 vols</title></bibl>		<date when="1929-10-05">Oct 5</date>
-               	<date when="1929-10-05">Oct 5</date>	<bibl><title>Shirley	</title></bibl>							<date when="1929-10-31">Oct 31</date>
-               			<date when="1929-10-17">	Oct 17</date>	<bibl><title>Tom Jones vol I		</title></bibl>				<date when="1929-10-31">Oct 31</date>
-               			<bibl><title>Poems of R. Crashaw</title></bibl>					<date when="1929-11-09">	Nov 9</date>
-               			<date when="1929-10-31">31</date>	<bibl><title>William Congreve</title></bibl>					<date when="1929-12-07">Dec 7</date>
-               			<date when="1929-11-09">	Nov 9</date>	<bibl><title>Daisy Miller	</title></bibl>					<date when="1929-12-07">Dec 7</date>
-               	<date when="1929-12-07">Dec 7</date>	<bibl><title>Portrait of a Lady</title></bibl>					<date when="1929-12-28">"	28</date>
-               			<date when="1929-12-07">	"	7</date>	<bibl><title>Beast in the Jungle	</title></bibl>				<date when="1929-12-28">"	28</date>
-               			<date when="1929-12-07">	"	7</date>	<bibl><author>Henry James	</author></bibl>						<date when="1929-12-28">"	28</date>
-               	<date when="1929-12-28">"	28</date>	<bibl><title>Aspern Papers</title></bibl>				<date when="1930-02-01">Feb 1</date>	<date when="1930-01-11">Jan 11</date>
-               			<bibl><title>Golden Bowl in 2 vols	</title></bibl>			<date when="1930-01-11">Jan 11</date>
-               	<date when="1930-01-11">Jan 11</date>	<bibl><title>Wings of the Dove.</title></bibl>					<date when="1930-02-01">Feb 1</date>
-               											<bibl><title>Little Town in France..	</title></bibl>			<date when="1930-02-01">"	1</date>
+               			<date ana="#checkedOut" when="1929-06-05">	June 5</date>	<bibl ana="#borrowedItem" corresp="mep:00kk1s"><title>Belton Estate</title></bibl>						<date ana="#returned" when="1929-06-12">	June 12</date>
+               			<date ana="#checkedOut" when="1929-06-12">	June 12</date>	<bibl ana="#borrowedItem" corresp="mep:00176q"><title>Cranford</title></bibl>							<date ana="#returned" when="1929-07-07">July 7</date>
+               			<date ana="#checkedOut" when="1929-07-07">July 7</date>	<bibl ana="#borrowedItem" corresp="mep:00kk23"><title>Kept in the Dark	</title></bibl>				<date ana="#returned" when="1929-08-03">Aug 3</date>
+               			<date ana="#checkedOut" when="1929-07-07"> 	"	7</date>	<bibl ana="#borrowedItem" corresp="mep:00kk3d"><title>Bible in Spain	</title></bibl>					<date ana="#returned" when="1929-08-03">" 3</date>
+               			<date ana="#checkedOut" when="1929-08-03">Aug 3</date>	<bibl ana="#borrowedItem" corresp="mep:003z60"><title>Zuleika Dobson	</title></bibl>					<date ana="#returned" when="1929-10-05">Oct 5</date>
+               			<date ana="#checkedOut" when="1929-08-05">"	5</date>	<bibl ana="#borrowedItem" corresp="mep:002x83"><title>Villette</title></bibl>							<date ana="#returned" when="1929-08-20">Aug 20</date>	
+               			<date ana="#checkedOut" when="1929-08-10">"	10</date>	<bibl ana="#borrowedItem" corresp="mep:002w8t"><title>Exile</title></bibl>								"<date ana="#returned" when="1929-08-20">" 20</date>	
+               			<date ana="#checkedOut" when="1929-08-20">Aug 20</date>	<bibl ana="#borrowedItem"><title><unclear/> in 2 vols.	</title></bibl>					<date ana="#returned" when="1929-09-11">Sept 11</date>
+               			<date ana="#checkedOut" when="1929-09-11">Sept 11</date>	<bibl ana="#borrowedItem" corresp="mep:009v6m"><title>Tenant of Wildfell Hall 2 vols</title></bibl>		<date ana="#returned" when="1929-10-05">Oct 5</date>
+               	<date ana="#checkedOut" when="1929-10-05">Oct 5</date>	<bibl ana="#borrowedItem" corresp="mep:00kk51"><title>Shirley	</title></bibl>							<date ana="#returned" when="1929-10-31">Oct 31</date>
+               			<date ana="#checkedOut" when="1929-10-17">	Oct 17</date>	<bibl ana="#borrowedItem" corresp="mep:00kk6b"><title>Tom Jones vol I		</title></bibl>				<date ana="#checkedOut" when="1929-10-31">Oct 31</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00kk7n"><title>Poems of R. Crashaw</title></bibl>					<date ana="#returned" when="1929-11-09">	Nov 9</date>
+               			<date ana="#checkedOut" when="1929-10-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00kk8z"><title>William Congreve</title></bibl>					<date ana="#returned" when="1929-12-07">Dec 7</date>
+               			<date ana="#checkedOut" when="1929-11-09">	Nov 9</date>	<bibl ana="#borrowedItem" corresp="mep:00b33v"><title>Daisy Miller	</title></bibl>					<date ana="#returned" when="1929-12-07">Dec 7</date>
+               	<date ana="#checkedOut" when="1929-12-07">Dec 7</date>	<bibl ana="#borrowedItem" corresp="mep:002t7z"><title>Portrait of a Lady</title></bibl>					<date ana="#returned" when="1929-12-28">"	28</date>
+               			<date ana="#checkedOut" when="1929-12-07">	"	7</date>	<bibl ana="#borrowedItem" corresp="mep:00kk98"><title>Beast in the Jungle	</title></bibl>				<date ana="#returned" when="1929-12-28">"	28</date>
+               			<date ana="#checkedOut" when="1929-12-07">	"	7</date>	<bibl ana="#borrowedItem"><author>Henry James	</author></bibl>						<date ana="#returned" when="1929-12-28">"	28</date>
+               	<date ana="#checkedOut" when="1929-12-28">"	28</date>	<bibl ana="#borrowedItem" corresp="mep:002t5b"><title>Aspern Papers</title></bibl>				<date ana="#returned" when="1930-02-01">Feb 1</date>	<date ana="#checkedOut" when="1930-01-11">Jan 11</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00km0r"><title>Golden Bowl in 2 vols	</title></bibl>			<date ana="#returned" when="1930-01-11">Jan 11</date>
+               	<date ana="#checkedOut" when="1930-01-11">Jan 11</date>	<bibl ana="#borrowedItem" corresp="mep:00946t"><title>Wings of the Dove.</title></bibl>					<date ana="#checkedOut" when="1930-02-01">Feb 1</date>
+               											<bibl ana="#borrowedItem" corresp="mep:00km12"><title>Little Town in France..	</title></bibl>			<date ana="#returned" when="1930-02-01">"	1</date>
                		
                		<address><addrLine><num type="telephone">Elysés 61-00</num></addrLine></address>
                		</ab>
                	</div>
             	<div type="recto">
-               	<pb facs="#s3" />
+               	<pb facs="#s3"/>
                		<ab><persName ref="imbs.br">IMBS</persName>									Clément
                			<address><street>3 bis Av. Jean Baptiste Clement</street><district> Boulogne / Seine </district></address>
-               			<date when="1930-02-01">Feb 1</date>.	<bibl><title>What Maisie Knew</title></bibl>			<date when="1930-02-22">Feb. 22</date>
-               			<date when="1930-02-15">Feb. 15</date>	<bibl><title>Lesson of the Master</title></bibl>			<date when="1930-03-01">March 1</date>
-               			<date when="1930-02-22">	"	22</date>	<bibl><title>Adventures of Huckleberry Finn	</title></bibl>	<date when="1930-03-15">March 15</date>
-               			<date when="1930-02-22">	"	22</date>	<bibl><title>Letters of W. James	</title></bibl>				<date when="1930-03-01">March 1</date>
-               	<date when="1930-03-01">March 1</date>	<bibl><title>Esmond - English Humourists	</title></bibl>		<date when="1930-04-26">Ap. 26</date>
-               			<date when="1930-03-15">March 15</date> <bibl><title>Boswell: Life of Dr Johnson vol I</title></bibl>	<date when="1930-04-26">Ap. 26</date>
-               			<date when="1930-03-15">"	15</date>	<bibl><title>Humphry Clinker		</title></bibl>				<date when="1930-04-26">Ap. 26</date>
-               			<date when="1930-04-26">April 26</date> <bibl><title>Peregrine Pickle</title></bibl>					<date when="1930-05-22">May 22</date>
-               	<date when="1930-04-26">"	26</date>	<bibl><title>The Americans.</title></bibl>						<date when="1930-05-22">"	22</date>
-               	<date when="1930-05-22">May 22</date>	<bibl><title>Peregrine Pickle vol III</title></bibl>			<date when="1930-05-31">"	31</date>
-               											<bibl><title>Spoils of Poynton</title></bibl>					<date when="1930-07-11">July 11</date>
-               	<date when="1930-05-31">"	31</date>	<bibl><title>Ambassadors in 2 vols.</title></bibl>				<date when="1930-08-04">Aug 4</date>
-               			<date when="1930-05-31">"	31</date>	<bibl><title>Lorna Doone	</title></bibl>						<date when="1930-07-11">July 11</date>
-               <date when="1930-07-11">	July 11</date>	<bibl><title>Life of W. Blake</title></bibl>					<date when="1930-08-04">Aug</date>
-               	<date when="1930-07-11">"	"</date>	<bibl><title>Life of J. Barrow.	</title></bibl>				<date when="1930-08-04">Aug 4</date>
-               			<date when="1930-07-11">"	"</date><bibl><title>Diary of a Man of Fifty	</title></bibl>			<date when="1930-08-04">Aug 4</date>
-               			<date when="1930-08-04">	Aug 4</date>	<bibl><title>Tragic Nurse in 2 vols</title></bibl>				<date when="1930-10-04">Oct 4</date>
-               	<date when="1930-10-04">Oct 4</date>	<bibl><title>My Life J. Duncan	</title></bibl>				<date when="1930-11-01">"	1</date>
-               			<date when="1930-10-04">Oct 4</date>	(<bibl><author>Henry James's</author></bibl>) <bibl><title>Awkward Age</title></bibl>			<date when="1930-11-08">Nov 8</date>
-               	<date when="1930-11-08">Nov 8</date>	<bibl><title>Russian Days</title></bibl>						<date when="1930-11-08">"	"</date>
-               <date when="1930-11-08">	"	8</date>	<bibl><title>Emma</title></bibl>								<date when="1930-11-15">Nov 15</date>
-               	<date when="1930-11-15">"	15</date>	<bibl><title>Other House</title></bibl> p.c. Dec 5				<date when="1930-12-13">Dec 13</date>
-               <date when="1930-12-06">	Dec 6</date>	<bibl><title>Magic Island</title></bibl>						<date when="1931-01-10">Jan 10</date>
-               	<date when="1930-12-06">"	6</date>	<bibl><title>Princess Casamina	</title></bibl>				<date when="1931-01-10">"	10</date>
-               <date when="1931-01-10">	Jan 10</date>	<bibl><title>Joseph Andrews.	</title></bibl>					<date when="1931-03-07">Mch 7</date>
-               	<date when="1931-01-10">"	10</date>	<bibl><title>Washington Square</title></bibl>					B B.
-               	<date when="1931-01-10">"	"</date>	<bibl><title>Cranford</title></bibl>							B B
-               			<date when="1931-01-10">"	"</date>	<bibl><title>Confidence	</title></bibl>						B B.
-               			<date when="1931-01-10">"	"</date>	<bibl><title>Mill on the Floss</title></bibl>					<date when="1931-07-04">July 4</date>
-               			<date when="1931-01-10">"	"</date>	<bibl><title>Reverberator</title></bibl>
-               			<date when="1931-06-12">June 12</date>	<bibl><title>Daisy Miller	</title></bibl>					<date when="1931-07-04">July 4</date>
+               			<date ana="#checkedOut" when="1930-02-01">Feb 1</date>.	<bibl ana="#borrowedItem" corresp="mep:00842b"><title>What Maisie Knew</title></bibl>			<date ana="#returned" when="1930-02-22">Feb. 22</date>
+               			<date ana="#checkedOut" when="1930-02-15">Feb. 15</date>	<bibl ana="#borrowedItem" corresp="mep:00km2c"><title>Lesson of the Master</title></bibl>			<date ana="#returned" when="1930-03-01">March 1</date>
+               			<date ana="#checkedOut" when="1930-02-22">	"	22</date>	<bibl ana="#borrowedItem" corresp="mep:00km3p"><title>Adventures of Huckleberry Finn	</title></bibl>	<date ana="#returned" when="1930-03-15">March 15</date>
+               			<date ana="#checkedOut" when="1930-02-22">	"	22</date>	<bibl ana="#borrowedItem" corresp="mep:00km40"><title>Letters of W. James	</title></bibl>				<date ana="#returned" when="1930-03-01">March 1</date>
+               	<date ana="#checkedOut" when="1930-03-01">March 1</date>	<bibl ana="#borrowedItem" corresp="mep:00km59"><title>Esmond - English Humourists	</title></bibl>		<date ana="#returned" when="1930-04-26">Ap. 26</date>
+               			<date ana="#checkedOut" when="1930-03-15">March 15</date> <bibl ana="#borrowedItem" corresp="mep:00km6m"><title>Boswell: Life of Dr Johnson vol I</title></bibl>	<date ana="#returned" when="1930-04-26">Ap. 26</date>
+               			<date ana="#checkedOut" when="1930-03-15">"	15</date>	<bibl ana="#borrowedItem" corresp="mep:00b02q"><title>Humphry Clinker		</title></bibl>				<date ana="#returned" when="1930-04-26">Ap. 26</date>
+               			<date ana="#checkedOut" when="1930-04-26">April 26</date> <bibl ana="#borrowedItem" corresp="mep:00fp8t"><title>Peregrine Pickle</title></bibl>					<date ana="#returned" when="1930-05-22">May 22</date>
+               	<date ana="#checkedOut" when="1930-04-26">"	26</date>	<bibl ana="#borrowedItem" corresp="mep:00km7x"><title>The Americans.</title></bibl>						<date ana="#returned" when="1930-05-22">"	22</date>
+               	<date ana="#checkedOut" when="1930-05-22">May 22</date>	<bibl ana="#borrowedItem" corresp="mep:00fp8t"><title>Peregrine Pickle vol III</title></bibl>			<date ana="#checkedOut" when="1930-05-31">"	31</date>
+               											<bibl ana="#borrowedItem" corresp="mep:002t6n"><title>Spoils of Poynton</title></bibl>					<date ana="#returned" when="1930-07-11">July 11</date>
+               	<date ana="#checkedOut" when="1930-05-31">"	31</date>	<bibl ana="#borrowedItem" corresp="mep:006z5d"><title>Ambassadors in 2 vols.</title></bibl>				<date ana="#returned" when="1930-08-04">Aug 4</date>
+               			<date ana="#checkedOut" when="1930-05-31">"	31</date>	<bibl ana="#borrowedItem" corresp="mep:00k16x"><title>Lorna Doone	</title></bibl>						<date ana="#returned" when="1930-07-11">July 11</date>
+               <date ana="#checkedOut" when="1930-07-11">	July 11</date>	<bibl ana="#borrowedItem" corresp="mep:000v3h"><title>Life of W. Blake</title></bibl>					<date ana="#returned" when="1930-08-04">Aug</date>
+               	<date ana="#checkedOut" when="1930-07-11">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00km87"><title>Life of J. Barrow.	</title></bibl>				<date ana="#returned" when="1930-08-04">Aug 4</date>
+               			<date ana="#checkedOut" when="1930-07-11">"	"</date><bibl ana="#borrowedItem" corresp="mep:00km9j"><title>Diary of a Man of Fifty	</title></bibl>			<date ana="#returned" when="1930-08-04">Aug 4</date>
+               			<date ana="#checkedOut" when="1930-08-04">	Aug 4</date>	<bibl ana="#borrowedItem" corresp="mep:00kn01"><title>Tragic Nurse in 2 vols</title></bibl>				<date ana="#returned" when="1930-10-04">Oct 4</date>
+               	<date ana="#checkedOut" when="1930-10-04">Oct 4</date>	<bibl ana="#borrowedItem" corresp="mep:00kn1b"><title>My Life J. Duncan	</title></bibl>				<date ana="#returned" when="1930-11-01">"	1</date>
+               			<date ana="#checkedOut" when="1930-10-04">Oct 4</date>	(<bibl ana="#borrowedItem"><author>Henry James's</author></bibl>) <bibl ana="#borrowedItem" corresp="mep:00kn2n"><title>Awkward Age</title></bibl>			<date ana="#returned" when="1930-11-08">Nov 8</date>
+               	<date ana="#checkedOut" when="1930-11-08">Nov 8</date>	<bibl ana="#borrowedItem" corresp="mep:00kn3z"><title>Russian Days</title></bibl>						<date ana="#returned" when="1930-11-08">"	"</date>
+               <date ana="#checkedOut" when="1930-11-08">	"	8</date>	<bibl ana="#borrowedItem" corresp="mep:00920d"><title>Emma</title></bibl>								<date ana="#returned" when="1930-11-15">Nov 15</date>
+               	<date ana="#checkedOut" when="1930-11-15">"	15</date>	<bibl ana="#borrowedItem" corresp="mep:00kn48"><title>Other House</title></bibl> p.c. Dec 5				<date ana="#returned" when="1930-12-13">Dec 13</date>
+               <date ana="#checkedOut" when="1930-12-06">	Dec 6</date>	<bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island</title></bibl>						<date ana="#returned" when="1931-01-10">Jan 10</date>
+               	<date ana="#checkedOut" when="1930-12-06">"	6</date>	<bibl ana="#borrowedItem" corresp="mep:005161"><title>Princess Casamina	</title></bibl>				<date ana="#returned" when="1931-01-10">"	10</date>
+               <date ana="#checkedOut" when="1931-01-10">	Jan 10</date>	<bibl ana="#borrowedItem" corresp="mep:008n8b"><title>Joseph Andrews.	</title></bibl>					<date ana="#returned" when="1931-03-07">Mch 7</date>
+               	<date ana="#checkedOut" when="1931-01-10">"	10</date>	<bibl ana="#borrowedItem" corresp="mep:009j4h"><title>Washington Square</title></bibl>					B B.
+               	<date ana="#checkedOut" when="1931-01-10">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00176q"><title>Cranford</title></bibl>							B B
+               			<date ana="#checkedOut" when="1931-01-10">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00kn5k"><title>Confidence	</title></bibl>						B B.
+               			<date ana="#checkedOut" when="1931-01-10">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:001n2s"><title>Mill on the Floss</title></bibl>					<date ana="#returned" when="1931-07-04">July 4</date>
+               			<date ana="#checkedOut" when="1931-01-10">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00kn6w"><title>Reverberator</title></bibl>
+               			<date ana="#checkedOut" when="1931-06-12">June 12</date>	<bibl ana="#borrowedItem" corresp="mep:00b33v"><title>Daisy Miller	</title></bibl>					<date ana="#returned" when="1931-07-04">July 4</date>
                	</ab>
             	</div>
                	<div type="verso">
-               	<pb facs="#s4" />
+               	<pb facs="#s4"/>
                	<ab><date when="1931">1931</date>	<persName ref="imbs.br">IMBS</persName>
                				will see <persName ref="beac.sy">Miss Beach</persName> about ren. Subs.
-               	<date when="1931-07-04">July 4</date>	<bibl><time>Wuthering Heights</time></bibl>					<date when="1931-07-18">July 18</date>
+               	<date ana="#checkedOut" when="1931-07-04">July 4</date>	<bibl ana="#borrowedItem"><time>Wuthering Heights</time></bibl>					<date ana="#returned" when="1931-07-18">July 18</date>
                	</ab>
                	</div>
                	

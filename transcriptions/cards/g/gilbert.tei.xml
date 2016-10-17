@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="gilb.st">Stuart Gilbert</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -63,16 +54,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/gilbert/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         
         
@@ -83,7 +74,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                    <ab>
                 	<persName ref="gilb.st">Mr Stuart Gilbert</persName>		<persName ref="gilb.st">GILBERT</persName>
                 <date when="1928">1928</date>	<address><orgName>42 Avenue Pasteur
@@ -92,44 +83,44 @@
                 		<street>rue du casino</street>
                 		<settlement>Gourmalon, Pornic, (Loire Inf)</settlement></address>
                 
-                <date when="1928-10-30">Oct 30</date>		<bibl><title>Quarterly Review Oct 1922</title></bibl>	<date when="1928-03-01">March</date>
-                				(<bibl><title>Ulysses</title></bibl>, <bibl><title>Shane Leslie</title></bibl>)
-                Tersies 38	<unclear/>								<date when="1930-05-05">1930 May 5</date>
+                <date ana="#checkedOut" when="1928-10-30">Oct 30</date>		<bibl ana="#borrowedItem" corresp="mep:00k61r"><title>Quarterly Review Oct 1922</title></bibl>	<date ana="#checkedOut" when="1928-03-01">March</date>
+                				(<bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>, <bibl ana="#borrowedItem" corresp="mep:00k622"><title>Shane Leslie</title></bibl>)
+                Tersies 38	<unclear/>								<date ana="#checkedOut" when="1930-05-05">1930 May 5</date>
                 
-                March 11	<bibl><title>Shakespeare's Hamlet</title></bibl>
-                			<bibl><title>Concise History of Ireland</title></bibl>, Joyce 	B.B.
-                			( <unclear/> <bibl><title>Blake</title></bibl> by Foster Damon) <date when="1930">1930</date>	<date when="1930-05-05">May 5</date>
-                		?	<bibl><title>Poetry &amp; Prose</title></bibl> Blake			<date when="1930-05-05">" 	May 5</date>
-                       Dean "<bibl><title>Swift's Choice Works</title></bibl>"		<date when="1930-05-05">" 	May 5</date>
+                March 11	<bibl ana="#borrowedItem" corresp="mep:00k63c"><title>Shakespeare's Hamlet</title></bibl>
+                			<bibl ana="#borrowedItem" corresp="mep:00k64p"><title>Concise History of Ireland</title></bibl>, Joyce 	B.B.
+                			( <unclear/> <bibl ana="#borrowedItem" corresp="mep:000v26"><title>Blake</title></bibl> by Foster Damon) <date ana="#returned" when="1930">1930</date>	<date ana="#checkedOut" when="1930-05-05">May 5</date>
+                		?	<bibl ana="#borrowedItem" corresp="mep:00k650"><title>Poetry &amp; Prose</title></bibl> Blake			<date ana="#checkedOut" when="1930-05-05">" 	May 5</date>
+                       Dean "<bibl ana="#borrowedItem" corresp="mep:000z96"><title>Swift's Choice Works</title></bibl>"		<date ana="#returned" when="1930-05-05">" 	May 5</date>
                        
                        
                 <date when="1931">1931</date>												<date when="1931-05-15">May 15</date>
                 <date when="1931-02-17">Feb. 17	</date>	T.S. Eliot - <unclear/> belonging to <unclear/> J.J.)
-                       <date when="1931-03-13">Mch 13</date>		<bibl><title>Life of R. Browning</title></bibl> <unclear/>				<date when="1931-05-15">May 15</date>
-                	<date when="1931-03-13">13	</date>	<bibl><title>E.B. Browning's Poetical Works.</title></bibl>		"	<date when="1931-05-15">15_</date>
+                       <date ana="#checkedOut" when="1931-03-13">Mch 13</date>		<bibl ana="#borrowedItem" corresp="mep:00k669"><title>Life of R. Browning</title></bibl> <unclear/>				<date when="1931-05-15">May 15</date>
+                	<date ana="#checkedOut" when="1931-03-13">13	</date>	<bibl ana="#borrowedItem" corresp="mep:00k67m"><title>E.B. Browning's Poetical Works.</title></bibl>		"	<date ana="#returned" when="1931-05-15">15_</date>
                 Jun
-                <date when="1931-06-19">June 19	</date>	<bibl><title>Landmarks of 19c Century Paintings</title></bibl>	<date when="1931-07-02">July 2</date>
-                       <date when="1931-06-19">"	"	</date>	<bibl><title>Modern Movement in Art_.</title></bibl>	<date when="1931-07-02">July 2</date>
-                       <date when="1931-07-02">July 2</date>		<unclear/>								<date when="1931-07-30">	July 30</date>
-                			<bibl><title>Book of Marriage</title></bibl> to be sent
-                <date when="1931-07-04">July 4	</date>	1.	3m 1vol c		100f
-                       <date when="1931-07-04">July 4	</date>	<bibl><title>Reason in Society</title></bibl>					<date when="1931-07-30">July 30</date>
-                			<bibl><title>Southern Baroque Art</title></bibl>				<date when="1931-07-20">July 20</date>
-                <date when="1931-07-15">July 15	</date>	<bibl><title>Book of <unclear/>	</title></bibl>						<date when="1931-08-26">Aug 26</date>
+                <date ana="#checkedOut" when="1931-06-19">June 19	</date>	<bibl ana="#borrowedItem" corresp="mep:00k68x"><title>Landmarks of 19c Century Paintings</title></bibl>	<date ana="#returned" when="1931-07-02">July 2</date>
+                       <date ana="#checkedOut" when="1931-06-19">"	"	</date>	<bibl ana="#borrowedItem" corresp="mep:00f740"><title>Modern Movement in Art_.</title></bibl>	<date ana="#returned" when="1931-07-02">July 2</date>
+                       <date when="1931-07-02">July 2</date>		<unclear/>								<date ana="#checkedOut" when="1931-07-30">	July 30</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00k697"><title>Book of Marriage</title></bibl> to be sent
+                <date ana="#returned" when="1931-07-04">July 4	</date>	1.	3m 1vol c		100f
+                       <date ana="#checkedOut" when="1931-07-04">July 4	</date>	<bibl ana="#borrowedItem" corresp="mep:00k70q"><title>Reason in Society</title></bibl>					<date ana="#checkedOut" when="1931-07-30">July 30</date>
+                			<bibl ana="#borrowedItem" corresp="mep:00k711"><title>Southern Baroque Art</title></bibl>				<date ana="#returned" when="1931-07-20">July 20</date>
+                <date ana="#checkedOut" when="1931-07-15">July 15	</date>	<bibl ana="#borrowedItem" corresp="mep:00k72b"><title>Book of <unclear/>	</title></bibl>						<date ana="#returned" when="1931-08-26">Aug 26</date>
                 post:		<date when="1931-08-26">August 26</date> sent Frs 4 for postage
-               <date when="1931-08-05"> Aug 5</date>		<bibl><title>Conditioned Reflexes</title></bibl>				<date when="1931-11-18">Nov 18</date>
+               <date ana="#checkedOut" when="1931-08-05"> Aug 5</date>		<bibl ana="#borrowedItem" corresp="mep:00k73n"><title>Conditioned Reflexes</title></bibl>				<date ana="#returned" when="1931-11-18">Nov 18</date>
                 p. 3.85 </ab>
                </div>         
                
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                     <ab>
-                <date when="1931-08-28">Aug 28	</date>	<bibl><title>Ways of Behaviourism</title></bibl>				<date when="1931-11-18">Nov 18</date>
+                <date ana="#checkedOut" when="1931-08-28">Aug 28	</date>	<bibl ana="#borrowedItem" corresp="mep:00k74z"><title>Ways of Behaviourism</title></bibl>				<date ana="#returned" when="1931-11-18">Nov 18</date>
                 p. 1,85</ab>
                 </div>
                 
                <div type="recto"> 
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                    <ab>
                 <date when="1932">1932</date>		<persName ref="gilb.st">GILBERT</persName>
                 			<address><persName ref="gilb.st">Mr Stuart Gilbert</persName>
@@ -137,13 +128,13 @@
                 				<settlement>Paris</settlement> <district>IVe</district></address>
                 
                 
-                <date when="1932-05-30">May 30	</date>	<bibl><title>Symposium Oct 1931	</title></bibl>				<date when="1932-06-02">June 2</date>
-                       <date when="1932-06-02">June 2</date>		<bibl><title>Back to Montparnasse</title></bibl> pc <date when="1932-07-23">July 23</date> 	<date when="1932-07-25">July 25</date>
-                	14		<bibl><title>Hound &amp; Horn</title></bibl> containing				<date when="1932-07-25">July 25</date>
+                <date ana="#checkedOut" when="1932-05-30">May 30	</date>	<bibl ana="#borrowedItem" corresp="mep:00k758"><title>Symposium Oct 1931	</title></bibl>				<date ana="#returned" when="1932-06-02">June 2</date>
+                       <date ana="#checkedOut" when="1932-06-02">June 2</date>		<bibl ana="#borrowedItem" corresp="mep:00cm7g"><title>Back to Montparnasse</title></bibl> pc <date ana="#returned" when="1932-07-23">July 23</date> 	<date ana="#checkedOut" when="1932-07-25">July 25</date>
+                	14		<bibl ana="#borrowedItem" corresp="mep:002h1m"><title>Hound &amp; Horn</title></bibl> containing				<date ana="#returned" when="1932-07-25">July 25</date>
                 				Foster Damon's article on "</ab>
                </div> 
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 <!-- verso blank -->
                 </div>
                 

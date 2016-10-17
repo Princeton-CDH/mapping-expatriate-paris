@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wing">Mr Winger</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -58,17 +49,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/winger/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date>Dec. 2nd</date>		<address><persName ref="#wing">Mr Winger</persName>
                     				            <street>76 rue de Seine</street><addrLine> (Chez <persName>Mrs Newcomb</persName>)</addrLine>
@@ -79,17 +70,17 @@
                     			subscription 6 mos. - 1 vol			9 60
                     </ab>
                     <ab>
-                    <date>Dec. 2nd</date>	<bibl><title>Webster's White Devil</title></bibl>
+                    <date ana="#checkedOut">Dec. 2nd</date>	<bibl ana="#borrowedItem" corresp="mep:00ds45"><title>Webster's White Devil</title></bibl>
                     
-                    			            <bibl><title>Wire</title></bibl>							<date>Jan 5</date>
+                    			            <bibl ana="#borrowedItem" corresp="mep:00ds5g"><title>Wire</title></bibl>							<date ana="#returned">Jan 5</date>
                     			
-                    <date>Jan 5th</date>	<bibl><title>Sanscritt Literature</title></bibl>			<date>Jan 16</date>
-                    					    <bibl><title>Marlowe</title></bibl>		
+                    <date ana="#checkedOut">Jan 5th</date>	<bibl ana="#borrowedItem" corresp="mep:00ds6s"><title>Sanscritt Literature</title></bibl>			<date ana="#checkedOut">Jan 16</date>
+                    					    <bibl ana="#borrowedItem" corresp="mep:009z54"><title>Marlowe</title></bibl>		
                     					
-                    <date>Jan 15</date>		<bibl><title>Queen of China</title></bibl>
+                    <date ana="#checkedOut">Jan 15</date>		<bibl ana="#borrowedItem" corresp="mep:00ds73"><title>Queen of China</title></bibl>
                     
                     
-                    <date>Feb 27</date>		<bibl><title>Humour of Homer</title>, <author>Butler</author></bibl>
+                    <date ana="#checkedOut">Feb 27</date>		<bibl ana="#borrowedItem" corresp="mep:00ds8d"><title>Humour of Homer</title>, <author>Butler</author></bibl>
                     </ab>
                     <ab>
                     				<address><addrLine>Poste Restante</addrLine>
@@ -103,7 +94,7 @@
                     </ab>			  		
                 </div>
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

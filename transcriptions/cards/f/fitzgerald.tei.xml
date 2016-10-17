@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="fitz">Fitzgerald</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -56,10 +47,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/f/fitzgerald/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -71,35 +62,35 @@
         <body>
             <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head><date when="1937">1937	</date>	<persName ref="fitz">FITZGERALD</persName>
                 Miss,	<address><orgName>Hotel Maleherbe.</orgName>
                 				<street>rue Vanguard</street></address>.</head>
                 <ab>		
                 		1m. 1v.						15.00.
                 
-               <date when="1937-09-15"> Sept. 15.</date>	<bibl><title>Weather in the Streets</title></bibl>	<date when="1937-09-16">Sept. 16</date>
-                    <date when="1937-09-16">16</date>	<bibl><title>Years	</title></bibl>					<date when="1937-09-17">17.</date>
-                    <date when="1937-09-17">17.</date>		<bibl><title>Waves.</title></bibl>						<date when="1937-09-22">22</date>
-                    <date when="1937-09-17">17.</date>		<bibl><title>Inside Europe</title></bibl>				<date when="1937-09-22">22</date>
-                    <date when="1937-09-22">22</date>		<bibl><title>Together &amp; Apart Marbacka</title></bibl>	<date when="1937-09-24">24</date>
-                    <date when="1937-09-24">24</date>		<bibl><title>the Road	</title></bibl>			<date when="1937-09-27">Sept 27</date>
-                    <date when="1937-09-24">24</date>	<bibl><title>Plagued by the Nightingale</title></bibl> <date when="1937-09-29">Sept 29</date>
-                    <date when="1937-09-29">29</date>	<bibl><title>Year Before Last</title></bibl>		<date when="1937-09-30">Sept 30</date>
-                    <date when="1937-09-30">30</date>		<bibl><title>In the American Grain</title></bibl>	<date when="1937-10-01">Oct 1</date>
-                    <date when="1937-10-01">Oct 1</date>	<bibl><title>Illusion &amp; Reality </title></bibl>2v a day <date when="1937-10-02">Oct 2</date>
-                    <date when="1937-10-02">2</date>		<bibl><title>Light in August	</title></bibl>		<date when="1937-10-05">Oct 5</date>
-                    <date when="1937-10-05">5</date>		<bibl><title>Wuthering Heights</title></bibl><bibl><title> Agnes Grey</title></bibl><date when="1937-10-06"> Oct 6</date>
-                    <date when="1937-10-06"> 6</date>		<bibl><title>American Criticism</title></bibl> (?)	<date when="1937-10-09">Oct 9</date>
+               <date ana="#checkedOut" when="1937-09-15"> Sept. 15.</date>	<bibl ana="#borrowedItem" corresp="mep:000n0x"><title>Weather in the Streets</title></bibl>	<date ana="#returned" when="1937-09-16">Sept. 16</date>
+                    <date ana="#checkedOut" when="1937-09-16">16</date>	<bibl ana="#borrowedItem" corresp="mep:002c7c"><title>Years	</title></bibl>					<date ana="#returned" when="1937-09-17">17.</date>
+                    <date ana="#checkedOut" when="1937-09-17">17.</date>		<bibl ana="#borrowedItem" corresp="mep:002c8p"><title>Waves.</title></bibl>						<date ana="#returned" when="1937-09-22">22</date>
+                    <date ana="#checkedOut" when="1937-09-17">17.</date>		<bibl ana="#borrowedItem" corresp="mep:008d8d"><title>Inside Europe</title></bibl>				<date ana="#returned" when="1937-09-22">22</date>
+                    <date ana="#checkedOut" when="1937-09-22">22</date>		<bibl ana="#borrowedItem" corresp="mep:003r3d"><title>Together &amp; Apart Marbacka</title></bibl>	<date ana="#returned" when="1937-09-24">24</date>
+                    <date ana="#checkedOut" when="1937-09-24">24</date>		<bibl ana="#borrowedItem" corresp="mep:008608"><title>the Road	</title></bibl>			<date ana="#returned" when="1937-09-27">Sept 27</date>
+                    <date ana="#checkedOut" when="1937-09-24">24</date>	<bibl ana="#borrowedItem" corresp="mep:002v1c"><title>Plagued by the Nightingale</title></bibl> <date ana="#returned" when="1937-09-29">Sept 29</date>
+                    <date ana="#checkedOut" when="1937-09-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:00815f"><title>Year Before Last</title></bibl>		<date ana="#returned" when="1937-09-30">Sept 30</date>
+                    <date ana="#checkedOut" when="1937-09-30">30</date>		<bibl ana="#borrowedItem" corresp="mep:00824d"><title>In the American Grain</title></bibl>	<date ana="#returned" when="1937-10-01">Oct 1</date>
+                    <date ana="#checkedOut" when="1937-10-01">Oct 1</date>	<bibl ana="#borrowedItem" corresp="mep:001448"><title>Illusion &amp; Reality </title></bibl>2v a day <date ana="#returned" when="1937-10-02">Oct 2</date>
+                    <date ana="#checkedOut" when="1937-10-02">2</date>		<bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August	</title></bibl>		<date ana="#returned" when="1937-10-05">Oct 5</date>
+                    <date ana="#checkedOut" when="1937-10-05">5</date>		<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl><bibl ana="#borrowedItem"><title> Agnes Grey</title></bibl><date ana="#returned" when="1937-10-06"> Oct 6</date>
+                    <date ana="#checkedOut" when="1937-10-06"> 6</date>		<bibl ana="#borrowedItem" corresp="mep:00jw2b"><title>American Criticism</title></bibl> (?)	<date ana="#returned" when="1937-10-09">Oct 9</date>
                 					                                               Fiction
-                	<date when="1937-10-09">9</date>		<bibl><title>Hudson River Bracketed</title></bibl>	<date when="1937-10-11">Oct 11</date>
-                    <date when="1937-10-11">11</date>	<bibl><title>9 live under a Black Sun</title></bibl> <date when="1937-10-12">Oct 12</date>
-                    <date when="1937-10-12">12</date>		<bibl><title>Mind in chains	</title></bibl>		<date when="1937-10-13">Oct 13</date>
+                	<date ana="#checkedOut" when="1937-10-09">9</date>		<bibl ana="#borrowedItem" corresp="mep:00jw3n"><title>Hudson River Bracketed</title></bibl>	<date ana="#returned" when="1937-10-11">Oct 11</date>
+                    <date ana="#checkedOut" when="1937-10-11">11</date>	<bibl ana="#borrowedItem" corresp="mep:00jr0m"><title>9 live under a Black Sun</title></bibl> <date ana="#returned" when="1937-10-12">Oct 12</date>
+                    <date ana="#checkedOut" when="1937-10-12">12</date>		<bibl ana="#borrowedItem" corresp="mep:00372z"><title>Mind in chains	</title></bibl>		<date ana="#returned" when="1937-10-13">Oct 13</date>
                 	<date when="1937-10-13">13</date>
                 </ab>
               </div>  
                <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                </div>
                 

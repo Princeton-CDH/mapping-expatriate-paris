@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#john.ma">Miss Marian Willard</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,64 +46,64 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/willard/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
         <surface xml:id="s7">
-            <graphic url="00000007.jp2" />
+            <graphic url="00000007.jp2"/>
         </surface>
         <surface xml:id="s8">
-            <graphic url="00000008.jp2" />
+            <graphic url="00000008.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1937">1937</date>		<persName ref="#john.ma">WILLARD
                     			                     Miss Marian</persName>
                     </head>	
                     <ab>
-                    <date when="1937-07">July</date>	gave	<bibl><title>Dead Centre</title> (<author>Arthur Calder-Marshall</author>)</bibl>
-                    <date when="1937-07">July</date> 	gave	<bibl><title>Milarepa</title></bibl> (in French)
-                    <date when="1937-07">July</date>	gave	<bibl><title>Ramu's</title></bibl> ?
-                    <date when="1937-07">July</date>	gave 	<bibl><title>Sang Noir</title></bibl>
-                    <date when="1937-07-21">July 21</date>gave	<bibl><title>Amants Heureux Amants</title></bibl>
-                    				                            <bibl>Retouches à Mon URS</bibl>
+                    <date ana="#checkedOut" when="1937-07">July</date>	gave	<bibl ana="#borrowedItem"><title>Dead Centre</title> (<author>Arthur Calder-Marshall</author>)</bibl>
+                    <date ana="#checkedOut" when="1937-07">July</date> 	gave	<bibl ana="#borrowedItem"><title>Milarepa</title></bibl> (in French)
+                    <date ana="#checkedOut" when="1937-07">July</date>	gave	<bibl ana="#borrowedItem"><title>Ramu's</title></bibl> ?
+                    <date ana="#checkedOut" when="1937-07">July</date>	gave 	<bibl ana="#borrowedItem"><title>Sang Noir</title></bibl>
+                    <date ana="#checkedOut" when="1937-07-21">July 21</date>gave	<bibl ana="#borrowedItem"><title>Amants Heureux Amants</title></bibl>
+                    				                            <bibl ana="#borrowedItem">Retouches à Mon URS</bibl>
                     				
                     	<persName ref="#john.ma">Marian Willard</persName>
                     	
                     	2 à 7.20
                     	
-                    	sent 2 copies <date when="1937-02-06">Feb 6-37</date>
+                    	sent 2 copies <date ana="#checkedOut" when="1937-02-06">Feb 6-37</date>
                     	
-                    	<bibl><title>Etes-Vous Fous</title>
+                    	<bibl ana="#borrowedItem"><title>Etes-Vous Fous</title>
                     		<author>Renev	René Crevel</author></bibl>     
                     </ab>		
                 </div>
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div> 
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     <date when="1937">1937</date>		<address><persName ref="#john.ma">WILLARD
                     			                        Miss Marian</persName>
@@ -122,12 +113,12 @@
                     </head>			
                 </div>
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                    <pb facs="#s5" />
+                    <pb facs="#s5"/>
                     <head>
                     <date when="1937">1937</date>		<address><persName ref="#john.ma">WILLARD
                     			                        Miss Marian</persName>
@@ -135,19 +126,19 @@
                     			                        <street>50 rue de l'Université</street></address>
                     </head>	
                     <ab>
-                    <date when="1937-06-26">26 June</date>	<bibl><title>Burning Cactus</title></bibl> (will buy)	           <date when="1937-07-05">July 5</date>
-                    <date when="1937-06-26">26 	"</date>	<bibl><title>Collected Poems</title> <author>H D</author></bibl>   <date when="1937-07-05">July 5</date>
-                    <date when="1937-06-26">26	"</date>	<bibl><title>New Directions</title></bibl>
-                    <date when="1937-07-04">July 4</date>	<bibl><title>On Approval</title></bibl>. <bibl><title>Dead Centre</title></bibl>.
+                    <date ana="#checkedOut" when="1937-06-26">26 June</date>	<bibl ana="#borrowedItem"><title>Burning Cactus</title></bibl> (will buy)	           <date ana="#returned" when="1937-07-05">July 5</date>
+                    <date ana="#checkedOut" when="1937-06-26">26 	"</date>	<bibl ana="#borrowedItem"><title>Collected Poems</title> <author>H D</author></bibl>   <date ana="#returned" when="1937-07-05">July 5</date>
+                    <date ana="#checkedOut" when="1937-06-26">26	"</date>	<bibl ana="#borrowedItem"><title>New Directions</title></bibl>
+                    <date ana="#checkedOut" when="1937-07-04">July 4</date>	<bibl ana="#borrowedItem"><title>On Approval</title></bibl>. <bibl ana="#borrowedItem"><title>Dead Centre</title></bibl>.
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s6" />
+                    <pb facs="#s6"/>
                     
                     <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                    <pb facs="#s7" />
+                    <pb facs="#s7"/>
                     <head>
                     <date when="1937">1937</date>	<address><persName>WILLARD
                     
@@ -160,21 +151,21 @@
                       refunded <date when="1937-09-08">Sept 8</date>. extra Deposit <date when="1937-08-07">Aug 7</date>	50.00
                     </ab>
                     <ab>
-                    <date when="1937-08-04">Aug. 4</date>	<bibl><title>Free and Other Stories</title></bibl>.	      <date when="1937-08-05">Aug. 5</date>
-                    <date when="1937-08-05">	 5</date>	<bibl><title>Obscure Destinies</title></bibl>		      <date when="1937-08-07">	 7</date>
-                    <date when="1937-08-07">	 7</date>.	<bibl><title>Death comes to the Archbish</title></bibl>	  <date when="1937-09-06">Sept 6</date>.
-                    	 	                                <bibl><title>Pickwick Papers</title><biblScope unit="volume" from="1" to="2">vol i + ii</biblScope></bibl>	<date when="1937-09-06">Sept 6</date>
-                    	 	                                <bibl><title>Daniel Deronda</title><biblScope unit="volume" from="1" to="2">i + ii</biblScope></bibl>	<date when="1937-09-06">Sept 6</date>
-                    	 	                                <bibl><title>Ape of Innocence</title></bibl>.			  <date when="1937-09-06">Sept 6</date>.
-                    	 	                                <bibl><title>Chair on the Boulevards</title></bibl>		  <date when="1937-09-06">Sept 6</date>
-                    	 	                                <bibl><title>Paris sleeps</title></bibl>.				  <date when="1937-09-06">Sept 6</date>
-                    <date when="1937-09-06">Sept 6</date>	<bibl><title>Lost Horizon</title></bibl>				  <date when="1937-09-08">Sept 8</date>
-                    <date when="1937-09-06">	 6</date>	<bibl><title>The Little One</title></bibl>				  <date when="1937-09-13">	 13</date>
-                    <date when="1937-09-13">	 13</date>	<bibl><title>Winner take nothing</title></bibl>.		  <date when="1937-09-15">Sept 15</date>
+                    <date ana="#checkedOut" when="1937-08-04">Aug. 4</date>	<bibl ana="#borrowedItem"><title>Free and Other Stories</title></bibl>.	      <date ana="#returned" when="1937-08-05">Aug. 5</date>
+                    <date ana="#checkedOut" when="1937-08-05">	 5</date>	<bibl ana="#borrowedItem"><title>Obscure Destinies</title></bibl>		      <date ana="#returned" when="1937-08-07">	 7</date>
+                    <date ana="#checkedOut" when="1937-08-07">	 7</date>.	<bibl ana="#borrowedItem"><title>Death comes to the Archbish</title></bibl>	  <date ana="#checkedOut" when="1937-09-06">Sept 6</date>.
+                    	 	                                <bibl ana="#borrowedItem"><title>Pickwick Papers</title><biblScope unit="volume" from="1" to="2">vol i + ii</biblScope></bibl>	<date ana="#checkedOut" when="1937-09-06">Sept 6</date>
+                    	 	                                <bibl ana="#borrowedItem"><title>Daniel Deronda</title><biblScope unit="volume" from="1" to="2">i + ii</biblScope></bibl>	<date ana="#checkedOut" when="1937-09-06">Sept 6</date>
+                    	 	                                <bibl ana="#borrowedItem"><title>Ape of Innocence</title></bibl>.			  <date ana="#checkedOut" when="1937-09-06">Sept 6</date>.
+                    	 	                                <bibl ana="#borrowedItem"><title>Chair on the Boulevards</title></bibl>		  <date ana="#checkedOut" when="1937-09-06">Sept 6</date>
+                    	 	                                <bibl ana="#borrowedItem"><title>Paris sleeps</title></bibl>.				  <date ana="#returned" when="1937-09-06">Sept 6</date>
+                    <date ana="#checkedOut" when="1937-09-06">Sept 6</date>	<bibl ana="#borrowedItem"><title>Lost Horizon</title></bibl>				  <date ana="#returned" when="1937-09-08">Sept 8</date>
+                    <date ana="#checkedOut" when="1937-09-06">	 6</date>	<bibl ana="#borrowedItem"><title>The Little One</title></bibl>				  <date ana="#returned" when="1937-09-13">	 13</date>
+                    <date ana="#checkedOut" when="1937-09-13">	 13</date>	<bibl ana="#borrowedItem"><title>Winner take nothing</title></bibl>.		  <date ana="#returned" when="1937-09-15">Sept 15</date>
                     </ab>	 
                 </div> 
                 <div type="verso">
-                    <pb facs="#s8" />
+                    <pb facs="#s8"/>
                     
                     <!-- Verso Blank -->
                 </div>

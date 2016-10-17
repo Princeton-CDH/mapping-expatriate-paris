@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roge">Roger-Levy</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/roger_levy/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="verso">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1940">1940</date>		
                             <persName ref="#roge">ROGER - LEVY Mme</persName>
@@ -84,15 +75,17 @@
                 <ab>			
                 			 2 mos	1 v	  A				45
                 			 				dep			50
-                			 				
+                </ab>		 				
                 
-                <date when="1940-04-26">April 26</date>	<bibl><title>Sun Also Rises</title></bibl>				<date when="1940-05-20">May 20</date>
-                				wrote <date when="1940-05-22">May 22</date> to ask if another book to be sent
-                </ab>
+                <ab ana="#borrowingEvent"><date ana="#checkedOut" when="1940-04-26">April 26</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl>				
+                    <date ana="#returned" when="1940-05-20">May 20</date></ab>
+                    <note><date when="1940-05-22">May 22</date> wrote to ask if another book to be sent</note>
+                
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

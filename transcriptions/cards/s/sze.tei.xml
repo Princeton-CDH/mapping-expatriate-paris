@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#sze.ma">Maimie Sze</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -57,17 +48,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/sze/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1933">1933</date>				<persName ref="#sze.ma">SZE</persName>
                     
@@ -79,23 +70,23 @@
                     									  refunded <date when="1933-03-24">24 Mch</date> paid
                     </ab>									  
                     <ab>									  
-                    <date when="1933-03-07">March 7</date>		<bibl><title>Lovely Lady</title></bibl>							<date when="1933-03-11">11 Mar</date>
-                    <date when="1933-03-11">	  11</date>	    <bibl><title>Death in the Afternoon</title></bibl>				<date when="1933-03-14">14 -</date>
-                    <date when="1933-03-14">	  14</date>	    <bibl><title>Armed with Madness</title></bibl>					<date when="1933-03-18">18    </date>
-                    <date when="1933-03-18">18		</date>	    <bibl><title>Bula Matari</title></bibl>							<date when="1933-03-20">20    </date>
-                    <date when="1933-03-18">	</date>		    <bibl><title>Ann Vickers</title></bibl> (extra)					<date when="1933-03-20">20    </date>
-                    <date when="1933-03-20">20	</date>		    <bibl><title>Pocahontas</title></bibl>							<date when="1933-03-25">25     </date>
-                    <date when="1933-03-25">25	</date>		    <bibl><title>Mandoa</title></bibl>								<date when="1933-04-06">6 April</date>
-                    <date when="1933-04-06">6 April</date>		<bibl><title>Jungle Ways</title></bibl>							<date when="1933-04-27">27	"</date>
-                    <date when="1933-04-27">27	</date>		    <bibl><title>Lady Chatterley</title></bibl>						<date when="1933-04-27">27     </date>
-                    <date when="1933-04-27">	</date>		    <bibl><title>Is there a case for foreign missions</title></bibl><date when="1933-05-02">2 May</date>
-                    <date when="1933-05-02">2 May</date>		<bibl><title>This Was my World</title></bibl>					<date when="1933-05-12">12 May</date>
-                    <date when="1933-05-12">12 "</date>		    <bibl><title>Venetian blinds</title></bibl>						<date when="1933-05-24">24 -</date>
+                    <date ana="#checkedOut" when="1933-03-07">March 7</date>		<bibl ana="#borrowedItem" corresp="mep:002s3f"><title>Lovely Lady</title></bibl>							<date ana="#returned" when="1933-03-11">11 Mar</date>
+                    <date ana="#checkedOut" when="1933-03-11">	  11</date>	    <bibl ana="#borrowedItem" corresp="mep:002169"><title>Death in the Afternoon</title></bibl>				<date ana="#returned" when="1933-03-14">14 -</date>
+                    <date ana="#checkedOut" when="1933-03-14">	  14</date>	    <bibl ana="#borrowedItem" corresp="mep:006x9c"><title>Armed with Madness</title></bibl>					<date ana="#returned" when="1933-03-18">18    </date>
+                    <date ana="#checkedOut" when="1933-03-18">18		</date>	    <bibl ana="#borrowedItem" corresp="mep:00bv9s"><title>Bula Matari</title></bibl>							<date ana="#returned" when="1933-03-20">20    </date>
+                    <date ana="#checkedOut" when="1933-03-18">	</date>		    <bibl ana="#borrowedItem" corresp="mep:003p0x"><title>Ann Vickers</title></bibl> (extra)					<date ana="#returned" when="1933-03-20">20    </date>
+                    <date ana="#checkedOut" when="1933-03-20">20	</date>		    <bibl ana="#borrowedItem" corresp="mep:004z67"><title>Pocahontas</title></bibl>							<date ana="#returned" when="1933-03-25">25     </date>
+                    <date ana="#checkedOut" when="1933-03-25">25	</date>		    <bibl ana="#borrowedItem" corresp="mep:003g7f"><title>Mandoa</title></bibl>								<date ana="#returned" when="1933-04-06">6 April</date>
+                    <date ana="#checkedOut" when="1933-04-06">6 April</date>		<bibl ana="#borrowedItem" corresp="mep:00fr72"><title>Jungle Ways</title></bibl>							<date ana="#returned" when="1933-04-27">27	"</date>
+                    <date ana="#checkedOut" when="1933-04-27">27	</date>		    <bibl ana="#borrowedItem" corresp="mep:00455k"><title>Lady Chatterley</title></bibl>						<date ana="#returned" when="1933-04-27">27     </date>
+                    <date ana="#checkedOut" when="1933-04-27">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00rm6t"><title>Is there a case for foreign missions</title></bibl><date ana="#returned" when="1933-05-02">2 May</date>
+                    <date ana="#checkedOut" when="1933-05-02">2 May</date>		<bibl ana="#borrowedItem" corresp="mep:00kw74"><title>This Was my World</title></bibl>					<date ana="#returned" when="1933-05-12">12 May</date>
+                    <date ana="#checkedOut" when="1933-05-12">12 "</date>		    <bibl ana="#borrowedItem" corresp="mep:002t9k"><title>Venetian blinds</title></bibl>						<date ana="#returned" when="1933-05-24">24 -</date>
                     									<persName ref="#sze.ma">Maimie Sze</persName>.
                     </ab>									
                 </div>
                 <div type="verso">
-     				<pb facs="#s2" />
+     				<pb facs="#s2"/>
                     
                     <!-- Verso Blank -->              
                 </div>

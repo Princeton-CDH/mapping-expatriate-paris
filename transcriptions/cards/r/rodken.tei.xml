@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rodk.jo">John Rodken</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -61,17 +52,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rodken/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1900-05-28">May 28</date>		
                             <persName ref="#rodk.jo">Mr John Rodken</persName>
@@ -83,17 +74,17 @@
                 <ab>
                 		2 mos.	2 vols					19 20
                 		
-                <date when="1900-05-28">May 28</date>		<bibl><title>Shelley</title> (<publisher>Oxford</publisher>)</bibl>		BB
-                 <date when="1900-05-28">	</date>		    <bibl><title>Blake</title>(<publisher> "  </publisher>)</bibl> 	     <date when="1900-06-25">Jun 25th</date>
+                <date ana="#checkedOut" when="1900-05-28">May 28</date>		<bibl ana="#borrowedItem" corresp="mep:00bk0s"><title>Shelley</title> (<publisher>Oxford</publisher>)</bibl>		BB
+                 <date ana="#checkedOut" when="1900-05-28">	</date>		    <bibl ana="#borrowedItem" corresp="mep:000v26"><title>Blake</title>(<publisher> "  </publisher>)</bibl> 	     <date ana="#returned" when="1900-06-25">Jun 25th</date>
                 											                                 
-                <date when="1900-06-29">June 29</date>		<bibl><title>Some Contemporary Poets</title></bibl>			Sent a p.c.
+                <date ana="#checkedOut" when="1900-06-29">June 29</date>		<bibl ana="#borrowedItem" corresp="mep:00gw4g"><title>Some Contemporary Poets</title></bibl>			Sent a p.c.
                 
-                <date when="1900-09-09">Sept 9th</date>	    <bibl><title>The Portrait of the Artist as a Young Man</title></bibl>.  given to <persName>Joyce</persName>
+                <date ana="#checkedOut" when="1900-09-09">Sept 9th</date>	    <bibl ana="#borrowedItem" corresp="mep:009p95"><title>The Portrait of the Artist as a Young Man</title></bibl>.  given to <persName>Joyce</persName>
                 											  
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

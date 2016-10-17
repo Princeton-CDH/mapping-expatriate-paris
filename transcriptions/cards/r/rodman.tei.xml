@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rodm.se">Seldon Rodman</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rodman/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 			<persName ref="#rodm.se">RODMAN</persName>
                 			  <persName ref="#rodm.se">Seldon, Rodman</persName>
@@ -81,11 +72,11 @@
                 			  </address>
                 </head>
                 <ab>
-                <date when="1900-09-24">Sept 24</date>		<bibl><title>Selected Poems of Yeats</title></bibl>		Frs.  53
-                				paid <date when="1900-09-28">Sept 28</date>				  20
+                <date ana="#checkedOut" when="1900-09-24">Sept 24</date>		<bibl ana="#borrowedItem" corresp="mep:00sd81"><title>Selected Poems of Yeats</title></bibl>		Frs.  53
+                				paid <date ana="#returned" when="1900-09-28">Sept 28</date>				  20
                 						balance due			  33
                 						
-                			<persName ref="#beac.sy">S R</persName> paid postage for <bibl><title>Ulysses</title></bibl>	  10
+                			<persName ref="#beac.sy">S R</persName> paid postage for <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>	  10
                 						post				   4.70
                 							credit			   5.30
                 											33
@@ -98,7 +89,7 @@
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

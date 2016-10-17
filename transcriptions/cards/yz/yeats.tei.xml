@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#yeat.an">Miss Anne Yeats</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -52,23 +43,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/yz/yeats/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                         <head>
                              <date when="1939">1939</date>		
                                         <persName ref="#yeat.an">Yeats
@@ -79,28 +70,28 @@
                         <ab>   
                              
                              
-                             <date when="1939-06-09">June 9</date>		<bibl><title>Ulysses</title></bibl>						<date when="1939-06-19">June 19</date>
+                             <date ana="#checkedOut" when="1939-06-09">June 9</date>		<bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>						<date ana="#returned" when="1939-06-19">June 19</date>
                         </ab>
                 </div>
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                     <pb facs="#s3" />
+                     <pb facs="#s3"/>
                         <head>
                             <date when="1947">1947</date>		<persName ref="#yeat.an">Miss Anne Yeats</persName>
                             			<address><street>12 rue de l'Odeon</street></address>
                         </head> 			
                         <ab>
                             
-                            <date when="1947-05">May</date>			
-                                        <bibl><title>Plume</title></bibl> (gave <persName ref="#yeat.an">her</persName>)
-                            			<bibl><title>Black Boy</title></bibl>
-                            			<bibl><title>As I Lay Dying</title></bibl>
-                            			<bibl><title>Farewell to Arms</title></bibl>				returned
-                            			<bibl><title>Cassell's French-Eng-Eng-Fr. Dicty</title></bibl>
+                            <date ana="#checkedOut" when="1947-05">May</date>			
+                                        <bibl ana="#borrowedItem" corresp="mep:00f95v"><title>Plume</title></bibl> (gave <persName ref="#yeat.an">her</persName>)
+                            			<bibl ana="#borrowedItem" corresp="mep:009m0t"><title>Black Boy</title></bibl>
+                            			<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I Lay Dying</title></bibl>
+                            			<bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl>				returned
+                            			<bibl ana="#borrowedItem" corresp="mep:00f965"><title>Cassell's French-Eng-Eng-Fr. Dicty</title></bibl>
                             			
                             			
                             			
@@ -111,7 +102,7 @@
                         </ab>
                 </div>
                 <div type="verso">
-                     <pb facs="#s4" />
+                     <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div>

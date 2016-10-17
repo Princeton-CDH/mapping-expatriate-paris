@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#sarg">Mr Sargent</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -57,26 +48,26 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/sargent/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     		<persName ref="#sarg">Mr Sargent</persName>
                     </head>	
@@ -85,16 +76,16 @@
                     	Renewed <date from="1923-09-06" to="1923-10-06">Sept 6	-	Oct 6, 1923</date> 2 vols 12frs
                     </ab>
                     <ab>
-                    <date when="1923-09-06">Sept 6</date>		<bibl><title>Villa Rubein</title></bibl>				<date when="1923-09-13">Sept 13th</date>.
-                    			                                <bibl><title>The Dark Flower</title></bibl>				<date when="1923-09-14">Sept 14</date>
-                    <date when="1923-09-13">Sept 13th</date>.	<bibl><title>The Second Blooming</title></bibl>			<date when="1923-09-29">Sept 29</date>
-                    <date when="1923-09-13"> "	  "</date>		<bibl><title>Wounded Souls</title></bibl>
-                	<date when="1923-09-29">Sept 29</date>		<bibl><title>South Wind</title></bibl>					<date when="1923-10-10">Oct 10</date>
-                				                                <bibl><title>Half Way House</title></bibl>
+                    <date ana="#checkedOut" when="1923-09-06">Sept 6</date>		<bibl ana="#borrowedItem" corresp="mep:00q326"><title>Villa Rubein</title></bibl>				<date ana="#checkedOut" when="1923-09-13">Sept 13th</date>.
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00p750"><title>The Dark Flower</title></bibl>				<date ana="#returned" when="1923-09-14">Sept 14</date>
+                    <date ana="#checkedOut" when="1923-09-13">Sept 13th</date>.	<bibl ana="#borrowedItem" corresp="mep:00q33h"><title>The Second Blooming</title></bibl>			<date ana="#returned" when="1923-09-29">Sept 29</date>
+                    <date ana="#checkedOut" when="1923-09-13"> "	  "</date>		<bibl ana="#borrowedItem" corresp="mep:00q34t"><title>Wounded Souls</title></bibl>
+                	<date ana="#checkedOut" when="1923-09-29">Sept 29</date>		<bibl ana="#borrowedItem" corresp="mep:001f24"><title>South Wind</title></bibl>					<date ana="#checkedOut" when="1923-10-10">Oct 10</date>
+                				                                <bibl ana="#borrowedItem" corresp="mep:005v41"><title>Half Way House</title></bibl>
                 	</ab>			
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <head>
                     <date when="1923">1923</date>
                     Renewed		
@@ -106,40 +97,40 @@
                     			1 mo 	2 vols				12,00
                     </ab>
                     <ab>
-                    <date when="1923-03-23">March 23</date>	    <bibl><title>Innocents Abroad</title></bibl>			<date when="1923-03-10">March 30</date>
-                    			                                <bibl><title>Options</title></bibl>					
-                    <date when="1923-03-30">March 30</date>	    <bibl><title>Mrs Warren's Daughter</title></bibl>		<date when="1923-04-03">April 3</date>
-                    			                                <bibl><title>Beyond</title></bibl>
-                    <date when="1923-04-03">April 3</date>		<bibl><title>This Side of Paradise</title></bibl>		<date when="1923-04-13">April 13</date>
-                    			                                <bibl><title>The Strangers Wedding</title></bibl>
-                    <date when="1923-04-16">April 16</date>	    <bibl><title>Youth Triumphant</title></bibl>			<date when="1923-04-23">April 23</date>
-                    			                                <bibl><title>Lord Arthur Saville's Crime</title></bibl>	
-                    <date when="1923-04-23">April 23</date>	    <bibl><title>Tales of Wonder</title></bibl>		        <date when="1923-05-05">May 5</date>	
-                                                                                        Ren. <date from="1923-04-23" to="1923-05-23">April 23 May 23 1923 </date>
-                    			                                <bibl><title>The Stucco House</title></bibl>			
-                    <date when="1923-05-05">May 5</date>		<bibl><title>Promenades of an Impressionist</title></bibl>		
-                    			                                <bibl><title>The Country House</title></bibl>			<date when="1923-05-08">May 8th</date>
-                    <date when="1923-05-08">May 8</date>		<bibl><title>Melomaniacs</title></bibl>				    <date when="1923-05-14">May 14</date>
-                    					                        <bibl><title>Nos homo</title></bibl>
-                    <date when="1923-05-17"> May 17th</date>	<bibl>Me. <unclear/></bibl>					            <date when="1923-05-22">May 22</date>.
-                    <date when="1923-05-17">May 17th</date>		<bibl><title>Fraternity</title></bibl>			        <date when="1923-05-22">May 22</date>
+                    <date ana="#checkedOut" when="1923-03-23">March 23</date>	    <bibl ana="#borrowedItem" corresp="mep:00q354"><title>Innocents Abroad</title></bibl>			<date ana="#checkedOut" when="1923-03-10">March 30</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00nz75"><title>Options</title></bibl>					
+                    <date ana="#checkedOut" when="1923-03-30">March 30</date>	    <bibl ana="#borrowedItem" corresp="mep:00pd42"><title>Mrs Warren's Daughter</title></bibl>		<date ana="#checkedOut" when="1923-04-03">April 3</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:001s1k"><title>Beyond</title></bibl>
+                    <date ana="#checkedOut" when="1923-04-03">April 3</date>		<bibl ana="#borrowedItem" corresp="mep:00q36f"><title>This Side of Paradise</title></bibl>		<date ana="#checkedOut" when="1923-04-13">April 13</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:007s9h"><title>The Strangers Wedding</title></bibl>
+                    <date ana="#checkedOut" when="1923-04-16">April 16</date>	    <bibl ana="#borrowedItem" corresp="mep:00pd2f"><title>Youth Triumphant</title></bibl>			<date ana="#checkedOut" when="1923-04-23">April 23</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00p44v"><title>Lord Arthur Saville's Crime</title></bibl>	
+                    <date ana="#checkedOut" when="1923-04-23">April 23</date>	    <bibl ana="#borrowedItem" corresp="mep:004p8n"><title>Tales of Wonder</title></bibl>		        <date ana="#returned" when="1923-05-05">May 5</date>	
+                                                                                        Ren. <date ana="#checkedOut" from="1923-04-23" to="1923-05-23">April 23 May 23 1923 </date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:007q9z"><title>The Stucco House</title></bibl>			
+                    <date ana="#checkedOut" when="1923-05-05">May 5</date>		<bibl ana="#borrowedItem" corresp="mep:00ns0m"><title>Promenades of an Impressionist</title></bibl>		
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00c497"><title>The Country House</title></bibl>			<date ana="#returned" when="1923-05-08">May 8th</date>
+                    <date ana="#checkedOut" when="1923-05-08">May 8</date>		<bibl ana="#borrowedItem" corresp="mep:00q37r"><title>Melomaniacs</title></bibl>				    <date ana="#checkedOut" when="1923-05-14">May 14</date>
+                    					                        <bibl ana="#borrowedItem" corresp="mep:00q382"><title>Nos homo</title></bibl>
+                    <date ana="#checkedOut" when="1923-05-17"> May 17th</date>	<bibl ana="#borrowedItem">Me. <unclear/></bibl>					            <date ana="#returned" when="1923-05-22">May 22</date>.
+                    <date ana="#checkedOut" when="1923-05-17">May 17th</date>		<bibl ana="#borrowedItem" corresp="mep:00bn5w"><title>Fraternity</title></bibl>			        <date ana="#returned" when="1923-05-22">May 22</date>
                     </ab>
                     <ab>
                     		Renewed <date from="1923-06-16" to="1923-07-16">June 16	-	July 16, 1923</date>
                     						2 vols	12v
                     </ab>						
                     <ab>
-                    <date when="1923-06-16">June 16</date>		<bibl><title>The Forsyte Saga</title></bibl>			<date when="1923-07-02">July 2</date>
-                    			                                <bibl><title>The Stiff Lip</title></bibl>				<date when="1923-07-20">June 20</date>.
+                    <date ana="#checkedOut" when="1923-06-16">June 16</date>		<bibl ana="#borrowedItem" corresp="mep:001k1x"><title>The Forsyte Saga</title></bibl>			<date ana="#checkedOut" when="1923-07-02">July 2</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00bn7h"><title>The Stiff Lip</title></bibl>				<date ana="#returned" when="1923-07-20">June 20</date>.
                     </ab>			
                 </div> 
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     
                     <!-- Verso Blank -->
                 </div>  
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     <head>
                     					<persName ref="#sarg">SARGENT</persName>
                     <date when="1924-07-15">1924			
@@ -152,34 +143,34 @@
                     			1	m	2 vols				16
                     </ab>			
                     <ab>			
-                    <date when="1924-07-15">July 15</date>		<bibl><title>Saints Progress</title></bibl>				<date when="1924-07-14">July 14</date>
-                    			                                <bibl><title>Mrs Warren's Daughter</title></bibl>		<date when="1924-07-29">July 29</date>
-                    <date when="1924-07-19">July 19</date>		<bibl><title>Prejudices</title><biblScope unit="volume" from="3">3rd Series</biblScope></bibl>		<date when="1924-07-24">July 24</date>
-                    <date when="1924-07-24">July 24</date>		<bibl><title>"		</title><biblScope unit="volume" from="1">1st  "		</biblScope></bibl>	<date when="1924-07-29">July 29</date>
-                    <date when="1924-07-29">July 29</date>		<bibl><title>The American Language</title></bibl>		<date when="1924-07-30">July 30</date>
-                    			                                <bibl><title>Under Western Eyes</title></bibl>			<date when="1924-08-02">Aug 2</date>
-                    <date when="1924-08-02">Aug 2</date>		<bibl><title>South Wind</title></bibl>					<date when="1924-08-08">Aug 8</date>
-                    			                                <bibl><title>Twelve Men</title></bibl>					<date when="1924-08-05">Aug 5</date>
-                    <date when="1924-08-05">Aug 5</date>		<bibl><title>Sister Carrie</title></bibl>				<date when="1924-08-08">Aug 8</date>
-                    <date when="1924-08-08">Aug 8</date>		<bibl><title>The Color of a Great City</title></bibl>	<date when="1924-08-13">Aug 13</date>
-                    			                                <bibl><title>The Greatest Thing in the World</title></bibl>
-                    <date when="1924-08-14">Aug 14</date>		<bibl><title>Bread</title></bibl>					    <date when="1924-08-26">Aug 26</date>	
-                                                Ren <date from="1924-08-15" to="1924-09-15">Aug 15 Sept 15 1924</date> 16f
-                    			                                <bibl><title>Little Lord Fauntleroy</title></bibl>	    <date when="1924-08-26">Aug 26</date>		
-                    <date when="1924-08-26">Aug 26</date>		<bibl><title>Sara Crewe</title></bibl>				    <date when="1924-09-03">Sept 3</date>	
-    							                                <bibl><title>Prejudices</title> <biblScope unit="volume" from="2">2nd Series</biblScope></bibl>	<date when="1924-08-27">Aug 27</date>
-    				<date when="1924-08-30">Aug 30</date>		<bibl><title>Hey Rub a Dub Dub</title></bibl>		    <date when="1924-09-01">Sept 1</date>	
+                    <date ana="#checkedOut" when="1924-07-15">July 15</date>		<bibl ana="#borrowedItem" corresp="mep:00n959"><title>Saints Progress</title></bibl>				<date ana="#checkedOut" when="1924-07-14">July 14</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00pd42"><title>Mrs Warren's Daughter</title></bibl>		<date ana="#returned" when="1924-07-29">July 29</date>
+                    <date ana="#checkedOut" when="1924-07-19">July 19</date>		<bibl ana="#borrowedItem" corresp="mep:00f18k"><title>Prejudices</title><biblScope unit="volume" from="3">3rd Series</biblScope></bibl>		<date ana="#returned" when="1924-07-24">July 24</date>
+                    <date ana="#checkedOut" when="1924-07-24">July 24</date>		<bibl ana="#borrowedItem" corresp="mep:005q4x"><title>"		</title><biblScope unit="volume" from="1">1st  "		</biblScope></bibl>	<date ana="#returned" when="1924-07-29">July 29</date>
+                    <date ana="#checkedOut" when="1924-07-29">July 29</date>		<bibl ana="#borrowedItem" corresp="mep:00gb5c"><title>The American Language</title></bibl>		<date ana="#checkedOut" when="1924-07-30">July 30</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:007r0f"><title>Under Western Eyes</title></bibl>			<date ana="#returned" when="1924-08-02">Aug 2</date>
+                    <date ana="#checkedOut" when="1924-08-02">Aug 2</date>		<bibl ana="#borrowedItem" corresp="mep:001f24"><title>South Wind</title></bibl>					<date ana="#checkedOut" when="1924-08-08">Aug 8</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00bs1r"><title>Twelve Men</title></bibl>					<date ana="#returned" when="1924-08-05">Aug 5</date>
+                    <date ana="#checkedOut" when="1924-08-05">Aug 5</date>		<bibl ana="#borrowedItem" corresp="mep:001h6x"><title>Sister Carrie</title></bibl>				<date ana="#returned" when="1924-08-08">Aug 8</date>
+                    <date ana="#checkedOut" when="1924-08-08">Aug 8</date>		<bibl ana="#borrowedItem" corresp="mep:00p797"><title>The Color of a Great City</title></bibl>	<date ana="#checkedOut" when="1924-08-13">Aug 13</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:00q39c"><title>The Greatest Thing in the World</title></bibl>
+                    <date ana="#checkedOut" when="1924-08-14">Aug 14</date>		<bibl ana="#borrowedItem" corresp="mep:00q40v"><title>Bread</title></bibl>					    <date ana="#returned" when="1924-08-26">Aug 26</date>	
+                                                Ren <date ana="#checkedOut" from="1924-08-15" to="1924-09-15">Aug 15 Sept 15 1924</date> 16f
+                    			                                <bibl ana="#borrowedItem" corresp="mep:008b7j"><title>Little Lord Fauntleroy</title></bibl>	    <date ana="#returned" when="1924-08-26">Aug 26</date>		
+                    <date ana="#checkedOut" when="1924-08-26">Aug 26</date>		<bibl ana="#borrowedItem" corresp="mep:008b8v"><title>Sara Crewe</title></bibl>				    <date ana="#checkedOut" when="1924-09-03">Sept 3</date>	
+    							                                <bibl ana="#borrowedItem" corresp="mep:00f18k"><title>Prejudices</title> <biblScope unit="volume" from="2">2nd Series</biblScope></bibl>	<date ana="#returned" when="1924-08-27">Aug 27</date>
+    				<date ana="#checkedOut" when="1924-08-30">Aug 30</date>		<bibl ana="#borrowedItem" corresp="mep:005p1q"><title>Hey Rub a Dub Dub</title></bibl>		    <date ana="#returned" when="1924-09-01">Sept 1</date>	
     				                            Renewed to <date when="1924-10">October</date> 2vols = 16
-    				<date when="1924-09-01">Sept 1</date>		<bibl><title>Book of Prefaces</title></bibl>		    <date when="1924-09-02">Sept 2</date>	
-    				<date when="1924-09-04">Sept 4</date>		<bibl><title>Footprints in Spain</title></bibl>		    <date when="1924-09-16">Sept 16</date>	 
-    							                                <bibl><title>Rebecca of Sunnybrook Farm</title></bibl>  <date when="1924-09-16">" "</date>
-    				<date when="1924-09-18">Sept 18</date>		<bibl><title>The Pit</title></bibl>					    <date when="1924-10-03">Oct 3</date>
-    							                                <bibl><title>Mac Teague</title></bibl>				    <date when="1924-09-20">Sept 20</date>.
-    				<date when="1924-09-19">Sept 19</date>		<bibl><title>New Grub Sheet</title></bibl>			    <date when="1924-10-07">Oct 7</date>
+    				<date ana="#checkedOut" when="1924-09-01">Sept 1</date>		<bibl ana="#borrowedItem" corresp="mep:002g2n"><title>Book of Prefaces</title></bibl>		    <date ana="#returned" when="1924-09-02">Sept 2</date>	
+    				<date ana="#checkedOut" when="1924-09-04">Sept 4</date>		<bibl ana="#borrowedItem" corresp="mep:00q415"><title>Footprints in Spain</title></bibl>		    <date ana="#checkedOut" when="1924-09-16">Sept 16</date>	 
+    							                                <bibl ana="#borrowedItem" corresp="mep:00q42g"><title>Rebecca of Sunnybrook Farm</title></bibl>  <date ana="#returned" when="1924-09-16">" "</date>
+    				<date ana="#checkedOut" when="1924-09-18">Sept 18</date>		<bibl ana="#borrowedItem" corresp="mep:00q43s"><title>The Pit</title></bibl>					    <date ana="#checkedOut" when="1924-10-03">Oct 3</date>
+    							                                <bibl ana="#borrowedItem" corresp="mep:002z72"><title>Mac Teague</title></bibl>				    <date ana="#returned" when="1924-09-20">Sept 20</date>.
+    				<date ana="#checkedOut" when="1924-09-19">Sept 19</date>		<bibl ana="#borrowedItem" corresp="mep:00q443"><title>New Grub Sheet</title></bibl>			    <date ana="#returned" when="1924-10-07">Oct 7</date>
     				</ab>
                </div>
                 <div type="recto">
-                    <pb facs="#s5" />
+                    <pb facs="#s5"/>
                     
                     <!-- Verso Blank -->
                 </div>    

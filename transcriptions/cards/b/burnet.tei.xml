@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#burn.ma">Mary Scott Burnet</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -55,16 +46,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/burnet/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <ab>
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 
                 <date when="1938">1938</date>		 <persName ref="#burn.ma">Miss Mary Scott BURNET</persName>
                 			                         <address>
@@ -74,14 +65,14 @@
                 30 fr.	100 dep (130)				  dep  100
             	
             	            
-            	<date when="1938-03-02">March 2</date>	<bibl><title>Mc Teague</title></bibl>						<date when="1938-03-25">Mar. 25</date>
-            	<date when="1938-03-02">	  2</date>	<bibl><title>Blix</title> (Complete Works F. Norris)</bibl>	<date when="1938-03-25">Mar. 25</date>
-            	<date when="1938-03-25">	 25</date>	<bibl><title>Sketch for Portrait of Rimbaud</title></bibl> (extra)	<date when="1938-04-01">Ap 1</date>
+            	<date ana="#checkedOut" when="1938-03-02">March 2</date>	<bibl ana="#borrowedItem" corresp="mep:002z72"><title>Mc Teague</title></bibl>						<date ana="#returned" when="1938-03-25">Mar. 25</date>
+            	<date ana="#checkedOut" when="1938-03-02">	  2</date>	<bibl ana="#borrowedItem" corresp="mep:002z8c"><title>Blix</title> (Complete Works F. Norris)</bibl>	<date ana="#returned" when="1938-03-25">Mar. 25</date>
+            	<date ana="#checkedOut" when="1938-03-25">	 25</date>	<bibl ana="#borrowedItem" corresp="mep:002z9p"><title>Sketch for Portrait of Rimbaud</title></bibl> (extra)	<date ana="#returned" when="1938-04-01">Ap 1</date>
             		 						paid 14v extra
             		 	
             		 	(left deposit)
                 
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 

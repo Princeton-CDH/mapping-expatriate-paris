@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dudl.ka">Katherine Dudley</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,42 +49,42 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/dudley/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
+        	<graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
+        	<graphic url="00000006.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             
-                <div><div><pb facs="#s1" />
+                <div><div><pb facs="#s1"/>
                 		<head><persName ref="#dudl.ka">Dudley
                 		Miss Katherine</persName>
                 		<address><street>13 rue de Seine</street><district> - VI</district></address></head>
               <ab>  <date when="1943">1943</date>
-                <date when="1943-05-11">May 11</date>		<bibl><title>Dog Beneath the Skin</title></bibl>		<date when="1943-05">May -</date>
-                			<bibl><title>Mr Norris Changes Trains</title></bibl>	<date when="1943-05">May -</date>
-                			(<persName ref="#beac.sy">SB</persName>'s copy of <bibl><title>Tel Quel</title></bibl>)		<date when="1943-05">May -</date>
-                			(returned <bibl><title>Darling Young Man</title></bibl>)
-                								<date when="1943-05-19">May 19</date></ab>
+                <date ana="#checkedOut" when="1943-05-11">May 11</date>		<bibl ana="#borrowedItem" corresp="mep:00179n"><title>Dog Beneath the Skin</title></bibl>		<date ana="#checkedOut" when="1943-05">May -</date>
+                			<bibl ana="#borrowedItem" corresp="mep:000r87"><title>Mr Norris Changes Trains</title></bibl>	<date ana="#returned" when="1943-05">May -</date>
+                			(<persName ref="#beac.sy">SB</persName>'s copy of <bibl ana="#borrowedItem" corresp="mep:004w3r"><title>Tel Quel</title></bibl>)		<date ana="#checkedOut" when="1943-05">May -</date>
+                			(returned <bibl ana="#borrowedItem" corresp="mep:00204d"><title>Darling Young Man</title></bibl>)
+                								<date ana="#returned" when="1943-05-19">May 19</date></ab>
                 </div>
-                <div><ab><pb facs="#s2" />
+                <div><ab><pb facs="#s2"/>
                 Manking</ab></div>
                 </div>
-              <div type="card"> <div type="recto"> <pb facs="#s3" />
+              <div type="card"> <div type="recto"> <pb facs="#s3"/>
               <head>  <date when="1940">1940</date>		<persName ref="#dudl.ka">DUDLEY
                 			Miss Katherine</persName>
                 			<address><street>13 rue de Seine</street></address>
@@ -101,42 +92,42 @@
                 			1	m	1	v	25
                 			<date when="1940-12-17">Dec 17</date> ref dep	50
                 
-                <date when="1940-10-31">Oct 31</date>		<bibl><title>God's Little Acre</title></bibl>			<date when="1940-11-06">Nov 6</date>
-                <date when="1940-11-06">Nov 6</date>		<bibl><title>America (Kafka)</title></bibl>				<date when="1940-11-12">Nov. 12</date>
-                <date when="1940-11-12">Nov. 12</date>		<bibl><title>Art of the Novel</title> (<author>H. James</author>)</bibl>	<date when="1940-11-18">Nov 18</date>
-                <date when="1940-11-18">Nov 18</date>		<bibl><title>Pierre or the Ambiguities</title></bibl>	<date when="1940-11-25">Nov 25</date>
-                <date when="1940-11-25">Nov 25</date>		<bibl><title>Some American People</title></bibl>
-                Renewed <date from="1940-11-30" to="1940-12-31">Nov 31 - Dec 31, 1940</date> 1v, 1m A 25 -
-                <date when="1940-11-29">Nov 29</date>		<bibl><title>Hamlet</title></bibl> (2v) pd.				<date when="1940-12-12">Dec 12</date>
-                <date when="1940-12-12">Dec 12</date>		<bibl><title>Olive Tree</title></bibl>					<date when="1940-12-17">Dec 17</date></ab>
+                <date ana="#checkedOut" when="1940-10-31">Oct 31</date>		<bibl ana="#borrowedItem" corresp="mep:002t2d"><title>God's Little Acre</title></bibl>			<date ana="#returned" when="1940-11-06">Nov 6</date>
+                <date ana="#checkedOut" when="1940-11-06">Nov 6</date>		<bibl ana="#borrowedItem" corresp="mep:004w42"><title>America (Kafka)</title></bibl>				<date ana="#returned" when="1940-11-12">Nov. 12</date>
+                <date ana="#checkedOut" when="1940-11-12">Nov. 12</date>		<bibl ana="#borrowedItem" corresp="mep:004w5c"><title>Art of the Novel</title> (<author>H. James</author>)</bibl>	<date ana="#returned" when="1940-11-18">Nov 18</date>
+                <date ana="#checkedOut" when="1940-11-18">Nov 18</date>		<bibl ana="#borrowedItem" corresp="mep:003z2r"><title>Pierre or the Ambiguities</title></bibl>	<date ana="#returned" when="1940-11-25">Nov 25</date>
+                <date ana="#checkedOut" when="1940-11-25">Nov 25</date>		<bibl ana="#borrowedItem" corresp="mep:003q06"><title>Some American People</title></bibl>
+                Renewed <date ana="#returned" from="1940-11-30" to="1940-12-31">Nov 31 - Dec 31, 1940</date> 1v, 1m A 25 -
+                <date ana="#checkedOut" when="1940-11-29">Nov 29</date>		<bibl ana="#borrowedItem" corresp="mep:004w6p"><title>Hamlet</title></bibl> (2v) pd.				<date ana="#returned" when="1940-12-12">Dec 12</date>
+                <date ana="#checkedOut" when="1940-12-12">Dec 12</date>		<bibl ana="#borrowedItem" corresp="mep:004w70"><title>Olive Tree</title></bibl>					<date ana="#returned" when="1940-12-17">Dec 17</date></ab>
                </div> 
-               <div type="verso"> <pb facs="#s4" />
+               <div type="verso"> <pb facs="#s4"/>
                 <!-- verso blank --></div></div>
                 <div type="card">
-                <div type="recto"><pb facs="#s5" />
+                <div type="recto"><pb facs="#s5"/>
                 								<head><persName ref="#dudl.ka">K Dudley</persName>
                 <date when="1952">1952</date>  <persName ref="#harv.do">Mrs Harvey, Dorothy</persName>
                 			<address><street>13 rue de Seine</street></address></head>
                 			<ab>
                 			
-                			<bibl><title>Letters of Louise Guiney</title> 2 vols</bibl> returned
+                			<bibl ana="#borrowedItem" corresp="mep:004w89"><title>Letters of Louise Guiney</title> 2 vols</bibl> returned
                 			
-                			<bibl><title>The Hamlet</title>, <author>Faulkner</author></bibl>			returned
+                			<bibl ana="#borrowedItem" corresp="mep:004w9m"><title>The Hamlet</title>, <author>Faulkner</author></bibl>			returned
                 
-                <date when="1955-04-13">April 13. 55</date>	<bibl><title>The Hamlet</title></bibl>	  returned		<date when="1955-05-14">May 14</date>
-                			    <bibl><title>Light in August</title></bibl> by <persName ref="#dudl.ka">KD</persName>
-                				<bibl><title>Absalom Absalom</title></bibl>
+                <date ana="#checkedOut" when="1955-04-13">April 13. 55</date>	<bibl ana="#borrowedItem" corresp="mep:004w9m"><title>The Hamlet</title></bibl>	  returned		<date ana="#checkedOut" when="1955-05-14">May 14</date>
+                			    <bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August</title></bibl> by <persName ref="#dudl.ka">KD</persName>
+                				<bibl ana="#borrowedItem" corresp="mep:00226k"><title>Absalom Absalom</title></bibl>
                 
-                <date when="1958-04-21">April 21 1958</date>	<bibl><title>My Brother's Keeper</title></bibl> (<persName ref="#dudl.ka">K</persName> borrowed) returned
-                <date when="1958-12-17">Dec 17. 58</date>		<bibl><author>Amy Lowell</author></bibl> returned?
-                				<note><bibl><title>Oblomov</title></bibl><!-- crossed out --></note>							<date when="1960-04-18">Ap 18</date>
-                <date when="1960">1960</date>			<bibl><title>Dead Souls</title> <biblScope unit="volume">2 vols</biblScope> <editor role="translator">Constance Garnett</editor></bibl> Ap 18
-                				<date when="1960-04-18">April 18</date>     <note><bibl><title>The Tale of Gengi</title></bibl><!-- crossed out --></note>
-                			    <bibl><title>Evenings on a Farm near Dikanka</title></bibl>
-                				<bibl><title>The Overcoat</title></bibl>
-                				<bibl><title>Cousin is Human</title></bibl></ab>
+                <date ana="#checkedOut" when="1958-04-21">April 21 1958</date>	<bibl ana="#borrowedItem" corresp="mep:004x03"><title>My Brother's Keeper</title></bibl> (<persName ref="#dudl.ka">K</persName> borrowed) returned
+                <date ana="#checkedOut" when="1958-12-17">Dec 17. 58</date>		<bibl ana="#borrowedItem"><author>Amy Lowell</author></bibl> returned?
+                				<note><bibl ana="#borrowedItem" corresp="mep:004x1d"><title>Oblomov</title></bibl><!-- crossed out --></note>							<date when="1960-04-18">Ap 18</date>
+                <date ana="#checkedOut" when="1960">1960</date>			<bibl ana="#borrowedItem" corresp="mep:004x2q"><title>Dead Souls</title> <biblScope unit="volume">2 vols</biblScope> <editor role="translator">Constance Garnett</editor></bibl> Ap 18
+                				<date ana="#returned" when="1960-04-18">April 18</date>     <note><bibl ana="#borrowedItem" corresp="mep:004x31"><title>The Tale of Gengi</title></bibl><!-- crossed out --></note>
+                			    <bibl ana="#borrowedItem" corresp="mep:004x4b"><title>Evenings on a Farm near Dikanka</title></bibl>
+                				<bibl ana="#borrowedItem" corresp="mep:004x5n"><title>The Overcoat</title></bibl>
+                				<bibl ana="#borrowedItem" corresp="mep:004x6z"><title>Cousin is Human</title></bibl></ab>
                 </div>
-               <div type="verso"> <pb facs="#s6" />
+               <div type="verso"> <pb facs="#s6"/>
                 <!-- verso blank --></div>
                 </div>
             	

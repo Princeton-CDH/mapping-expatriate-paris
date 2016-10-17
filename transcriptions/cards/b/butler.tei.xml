@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#butl.h">H.M. Butler</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -56,10 +47,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/butler/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
@@ -67,7 +58,7 @@
                 
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1939">1939</date>			<persName ref="#butl.h">BUTLER. H.M.</persName>
                 				                        <address>
@@ -80,17 +71,17 @@
                 					dep			ref.		50
                 </ab>
                 <ab>
-                <date when="1939-07-05">july 5</date>	<bibl><title>Apes of God.</title></bibl>					<date when="1939-07-06">july 6</date>
-                <date when="1939-07-06">	 6</date>	<bibl><title>New Writing 2. spring 1939.</title></bibl>		<date when="1939-07-07">july 7</date>
-                <date when="1939-07-07">	 7</date>	<bibl><title>The wind in <unclear/></title></bibl>			<date when="1939-07-10">july 10</date>
-                <date when="1939-07-07">	 7</date>	<bibl><title>Escape to life</title></bibl>					<date when="1939-07-10">____ 10</date>
-                <date when="1939-07-10">	10</date>	<bibl><title><persName>Naomi Mitchinson</persName>'s Vienna Diary</title></bibl>	<date when="1939-07-13">July 13</date>
-                <date when="1939-07-10">	10</date>	<bibl><title>Looking forward</title></bibl>					<date when="1939-07-13">July 13</date>
-                <date when="1939-07-13">	13</date>	<bibl><title>Starting Point</title></bibl>					<date when="1939-07-17">july 17</date>
-                <date when="1939-07-13">	13</date>	<bibl><title>Revolution <unclear/></title></bibl>			<date when="1939-07-18">july 18</date>
-                <date when="1939-07-17">	17</date>	<bibl><title>Writer in a changing world</title></bibl>		<date when="1939-07-18">july 18</date>
-                <date when="1939-07-18">	18</date>	<bibl><title>Intelligentsia of Great Britain</title>, <persName>Minsky</persName></bibl>
-                <date when="1939-07-18">	18</date>	<bibl><title>A New American History</title>, <persName>Woodward</persName></bibl>
+                <date ana="#checkedOut" when="1939-07-05">july 5</date>	<bibl ana="#borrowedItem" corresp="mep:001c2k"><title>Apes of God.</title></bibl>					<date ana="#returned" when="1939-07-06">july 6</date>
+                <date ana="#checkedOut" when="1939-07-06">	 6</date>	<bibl ana="#borrowedItem" corresp="mep:00088c"><title>New Writing 2. spring 1939.</title></bibl>		<date ana="#returned" when="1939-07-07">july 7</date>
+                <date ana="#checkedOut" when="1939-07-07">	 7</date>	<bibl ana="#borrowedItem" corresp="mep:003m0c"><title>The wind in <unclear/></title></bibl>			<date ana="#returned" when="1939-07-10">july 10</date>
+                <date ana="#checkedOut" when="1939-07-07">	 7</date>	<bibl ana="#borrowedItem" corresp="mep:00080w"><title>Escape to life</title></bibl>					<date ana="#returned" when="1939-07-10">____ 10</date>
+                <date ana="#checkedOut" when="1939-07-10">	10</date>	<bibl ana="#borrowedItem"><title><persName>Naomi Mitchinson</persName>'s Vienna Diary</title></bibl>	<date ana="#returned" when="1939-07-13">July 13</date>
+                <date ana="#checkedOut" when="1939-07-10">	10</date>	<bibl ana="#borrowedItem" corresp="mep:003m20"><title>Looking forward</title></bibl>					<date ana="#returned" when="1939-07-13">July 13</date>
+                <date ana="#checkedOut" when="1939-07-13">	13</date>	<bibl ana="#borrowedItem" corresp="mep:001h1c"><title>Starting Point</title></bibl>					<date ana="#returned" when="1939-07-17">july 17</date>
+                <date ana="#checkedOut" when="1939-07-13">	13</date>	<bibl ana="#borrowedItem" corresp="mep:003m39"><title>Revolution <unclear/></title></bibl>			<date ana="#returned" when="1939-07-18">july 18</date>
+                <date ana="#checkedOut" when="1939-07-17">	17</date>	<bibl ana="#borrowedItem" corresp="mep:003m4m"><title>Writer in a changing world</title></bibl>		<date ana="#returned" when="1939-07-18">july 18</date>
+                <date ana="#checkedOut" when="1939-07-18">	18</date>	<bibl ana="#borrowedItem" corresp="mep:003m5x"><title>Intelligentsia of Great Britain</title>, <persName>Minsky</persName></bibl>
+                <date ana="#checkedOut" when="1939-07-18">	18</date>	<bibl ana="#borrowedItem" corresp="mep:002f87"><title>A New American History</title>, <persName>Woodward</persName></bibl>
                 	  wrote to <unclear/>  <date when="1939-07-28">July 28</date>
                 	        <address>
                 	  		<street>26 Willow Road</street>
@@ -104,30 +95,30 @@
                 	  		</address>
                 called <date when="1939-08-31">Aug 31</date> with deposit receipt. Knew
                 nothing about the books. Deposit was not
-                refunded to him. Advised <persName ref="#beac.sy" full="init">S B</persName> write to 
+                refunded to him. Advised <persName ref="#beac.sy">S B</persName> write to 
                 Butler
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <head>
                 <date when="1939">1939</date>
                 </head>
                 <ab>
-                	<persName ref="#beac.sy" full="init">S B</persName> enquired again at <address><name>Hotel de l'Univers</name></address>
+                	<persName ref="#beac.sy">S B</persName> enquired again at <address><name>Hotel de l'Univers</name></address>
                 	<date when="1939-09-10">Sept 10</date> but not a trace of books
                 	
                 	<date when="1939-10-04">Oct 4</date>	Proprietress of <address><name>Hotel de l'Univers</name></address> came
                 		   to say books not discovered anywhere
                 	 
-                	 <date when="1939-11-11">Nov 11</date> <persName ref="#beac.sy" full="init">S B</persName> wrote again
+                	 <date when="1939-11-11">Nov 11</date> <persName ref="#beac.sy">S B</persName> wrote again
                 	 
-                	 <date when="1939-11-27">Nov. 27. 1939</date>. received copy "<bibl><title>A New American History</title>". by W.E. Woodward</bibl>
-                     -  which <persName ref="#butl.h">Mr. Butler</persName> send - <persName ref="#beac.sy" full="init">S.B.</persName> will refund dep. of 50v
-                	 through <persName ref="#bern.fr" full="init">F.B.</persName> - I will advise Butler of same.
+                	 <date ana="#checkedOut" when="1939-11-27">Nov. 27. 1939</date>. received copy "<bibl ana="#borrowedItem" corresp="mep:002f87"><title>A New American History</title>". by W.E. Woodward</bibl>
+                     -  which <persName ref="#butl.h">Mr. Butler</persName> send - <persName ref="#beac.sy">S.B.</persName> will refund dep. of 50v
+                	 through <persName ref="#bern.fr">F.B.</persName> - I will advise Butler of same.
                 	 
-                	 Dep. ref. <date when="1939-11-27">Nov. 27 1939</date> via <persName ref="#bern.fr" full="init">F.B.</persName>
+                	 Dep. ref. <date when="1939-11-27">Nov. 27 1939</date> via <persName ref="#bern.fr">F.B.</persName>
                 </ab>
                 </div>
                 </div>

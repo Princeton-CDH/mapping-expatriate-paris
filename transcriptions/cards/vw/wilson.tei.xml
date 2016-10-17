@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wils.ma">Miss Margaret Wilson</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -58,23 +49,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/wilson/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                                 <persName ref="#wils.ma">WILSON</persName>
                     <date when="1927-03-03">1927		
@@ -90,26 +81,26 @@
                     </ab>
                     <ab>
                     			                            
-                    <date when="1927-03-03">Mch 3</date>.   <bibl><title>Studies</title><biblScope unit="volume" from="2"> vol II</biblScope></bibl><bibl><title>Sexual Inversion</title></bibl>	<date when="1927-03-16">March 16</date>
-                    <date when="1927-03-16"> "	16</date>.	<bibl><title>Studies</title><biblScope unit="volume" from="1">vol I</biblScope><title>Modesty</title><author>H. Ellis</author></bibl>	<date when="1927-03-16">"	  29</date>.
-                    <date when="1927-03-29">"	29</date>	<bibl><title>Studies</title><biblScope unit="volume" from="4">vol IV</biblScope><title>S.Selection</title><author>  "	</author></bibl><date when="1927-04-05">Ap. 5</date>
+                    <date ana="#checkedOut" when="1927-03-03">Mch 3</date>.   <bibl ana="#borrowedItem" corresp="mep:00cc1p"><title>Studies</title><biblScope unit="volume" from="2"> vol II</biblScope></bibl><bibl ana="#borrowedItem" corresp="mep:00dr56"><title>Sexual Inversion</title></bibl>	<date ana="#returned" when="1927-03-16">March 16</date>
+                    <date ana="#checkedOut" when="1927-03-16"> "	16</date>.	<bibl ana="#borrowedItem" corresp="mep:00cc1p"><title>Studies</title><biblScope unit="volume" from="1">vol I</biblScope><title>Modesty</title><author>H. Ellis</author></bibl>	<date ana="#returned" when="1927-03-16">"	  29</date>.
+                    <date ana="#checkedOut" when="1927-03-29">"	29</date>	<bibl ana="#borrowedItem" corresp="mep:00cc1p"><title>Studies</title><biblScope unit="volume" from="4">vol IV</biblScope><title>S.Selection</title><author>  "	</author></bibl><date ana="#returned" when="1927-04-05">Ap. 5</date>
                     </ab>
                     <ab>
                     <date when="1927-04-05">April 5</date>	S.R. to <date when="1927-05-03">May 3d.	1927</date>	=	25.
                     </ab>
                     <ab>
-                    <date when="1927-04-05"> "	5</date>	<bibl><title>Moby Dick</title></bibl>					<date when="1927-04-14">Ap. 14</date>
-                    <date when="1927-04-14">"	14</date>	<bibl><title>Dark Laughter</title></bibl> 0.25			<date when="1927-04-25">"	25</date>
-                    <date when="1927-04-25">"	25</date>	<bibl><title>Maggie</title></bibl>						<date when="1927-05-02">May 2</date>.
+                    <date ana="#checkedOut" when="1927-04-05"> "	5</date>	<bibl ana="#borrowedItem" corresp="mep:001715"><title>Moby Dick</title></bibl>					<date ana="#returned" when="1927-04-14">Ap. 14</date>
+                    <date ana="#checkedOut" when="1927-04-14">"	14</date>	<bibl ana="#borrowedItem" corresp="mep:009p20"><title>Dark Laughter</title></bibl> 0.25			<date ana="#returned" when="1927-04-25">"	25</date>
+                    <date ana="#checkedOut" when="1927-04-25">"	25</date>	<bibl ana="#borrowedItem" corresp="mep:00dr6h"><title>Maggie</title></bibl>						<date ana="#returned" when="1927-05-02">May 2</date>.
                     </ab>
                 </div>
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div> 
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     <date>Oct 6</date>	<address><persName>Miss Romer Wilson</persName>
                     		            <name>Hotel Recamier</name>
@@ -119,27 +110,27 @@
                     		1 week. 1 vol.						2
                     </ab>
                     <ab>
-                    <date>Oct 6</date>	<bibl><title>A Portrait of the Artist</title></bibl>		<date>Oct 7</date>
-                    <date>Oct 7</date>	<bibl><title>Untilled Field</title></bibl>					<date>Oct 10</date>
-                    <date>Oct 10</date>	<bibl><title>The Lake</title></bibl>						<date>Oct 11</date>
-                    <date>Oct 11</date>	<bibl><title>Muslin</title></bibl>
-                    <date>Oct 12</date>	<bibl><title>Lord Seymour and Some Women</title></bibl>		<date>Oct 13</date>
-                    <date>Oct 13</date>	<bibl><title>The Growth of the Soil</title></bibl>.			<date>Oct</date> 
-                    <date>Oct 15</date>	<bibl><title>And Even Now</title></bibl>					B B
-                    		            <bibl><title>Mark Twain's Letters</title></bibl>
+                    <date ana="#checkedOut">Oct 6</date>	<bibl ana="#borrowedItem" corresp="mep:000b4p"><title>A Portrait of the Artist</title></bibl>		<date ana="#returned">Oct 7</date>
+                    <date ana="#checkedOut">Oct 7</date>	<bibl ana="#borrowedItem" corresp="mep:00dr7t"><title>Untilled Field</title></bibl>					<date ana="#returned">Oct 10</date>
+                    <date ana="#checkedOut">Oct 10</date>	<bibl ana="#borrowedItem" corresp="mep:000k8v"><title>The Lake</title></bibl>						<date ana="#returned">Oct 11</date>
+                    <date ana="#checkedOut">Oct 11</date>	<bibl ana="#borrowedItem" corresp="mep:00dr84"><title>Muslin</title></bibl>
+                    <date ana="#checkedOut">Oct 12</date>	<bibl ana="#borrowedItem" corresp="mep:00dr9f"><title>Lord Seymour and Some Women</title></bibl>		<date ana="#returned">Oct 13</date>
+                    <date ana="#checkedOut">Oct 13</date>	<bibl ana="#borrowedItem" corresp="mep:007q8n"><title>The Growth of the Soil</title></bibl>.			<date ana="#returned">Oct</date> 
+                    <date ana="#checkedOut">Oct 15</date>	<bibl ana="#borrowedItem" corresp="mep:002x27"><title>And Even Now</title></bibl>					B B
+                    		            <bibl ana="#borrowedItem" corresp="mep:00ds0x"><title>Mark Twain's Letters</title></bibl>
                     </ab>		
                     <ab>		
                     			<address><persName>Miss Natalie Wilson</persName>
                     			<name>Hotel Récamier,</name> <street>Place St Sulpice</street></address>
                     </ab>	
                     <ab>
-                    <date when="1923-05-15">1923
-                    May 15</date>	    <bibl><title>Earham</title></bibl>							<date when="1923-05-16">May 16</date>
-                    		            <bibl><title>Friday Nights</title></bibl>
+                    <date ana="#checkedOut" when="1923-05-15">1923
+                    May 15</date>	    <bibl ana="#borrowedItem" corresp="mep:00ds17"><title>Earham</title></bibl>							<date ana="#checkedOut" when="1923-05-16">May 16</date>
+                    		            <bibl ana="#borrowedItem" corresp="mep:00ds2j"><title>Friday Nights</title></bibl>
                     </ab>		
                 </div>
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     <head>
                     <date>Oct 10</date>		<persName>Miss Natalie Wilson</persName>
                     </head>
@@ -147,7 +138,7 @@
                     			1 week	1 vol				2
                     </ab>
                     <ab>
-                    <date>Oct </date>	<bibl><title>Mare Nostrum</title></bibl>				B B
+                    <date ana="#checkedOut">Oct </date>	<bibl ana="#borrowedItem" corresp="mep:00ds3v"><title>Mare Nostrum</title></bibl>				B B
                     </ab>
                 </div>
             </div>

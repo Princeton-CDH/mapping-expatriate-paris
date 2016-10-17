@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="jord.ho">Howard Jordan</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -63,16 +54,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/j/jeanneney/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         
         
@@ -82,7 +73,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                    <ab>
                		"SHAKESPEARE AND COMPANY"
                			-<persName ref="#beac.sy">SYLVIA BEACH</persName>-
@@ -97,7 +88,7 @@
                		This card must be kept as a receipt for the deposit</ab>
                	</div>
                 <div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<ab>R Hayes
                		<address><orgName>Villa Martial</orgName>
                			<district>Stella Plage</district>
@@ -105,7 +96,7 @@
                			<district>Pas-de-lalais</district></address></ab>
                	</div>
                 <div type="recto">
-               	<pb facs="#s3" />
+               	<pb facs="#s3"/>
                	<ab><date when="1929">1929</date>	<persName ref="jord.ho">JORDAN	</persName>	<persName ref="jord.ho">Mr Howard Jordan</persName>
                	<date when="1929-08-15">August 15th</date>				<address><street>57 rue Bellechasse</street>
                									<settlement>Paris</settlement><district> 7e</district>
@@ -114,23 +105,23 @@
                			1 m 1 vol / Stud /			20
                			Deposit						50
                	
-               	<date when="1929-08-15">August 15th</date> <bibl><title>Gaspar Hauser</title></bibl> 0.25		<date when="1929-09-02">Sept 2.</date>
-               	    <date when="1929-09-02">Sept 2.</date>		<bibl><title>Son of man</title></bibl>. not brought back	B.B.
-               								<date when="1931-03-26">March 26 - 1932</date>
+               	<date ana="#checkedOut" when="1929-08-15">August 15th</date> <bibl ana="#borrowedItem" corresp="mep:00kq7r"><title>Gaspar Hauser</title></bibl> 0.25		<date ana="#returned" when="1929-09-02">Sept 2.</date>
+               	    <date ana="#checkedOut" when="1929-09-02">Sept 2.</date>		<bibl ana="#borrowedItem" corresp="mep:00kq82"><title>Son of man</title></bibl>. not brought back	B.B.
+               								<date ana="#returned" when="1931-03-26">March 26 - 1932</date>
                			
                			renewed (1m 1v)					25
                	
-               <date when="1929-08-29">	Aug 29</date>		<bibl><title>Thus spake Zarathustra</title></bibl> p.c. <date when="1931-05-10">5/10/32</date>
+               <date ana="#checkedOut" when="1929-08-29">	Aug 29</date>		<bibl ana="#borrowedItem" corresp="mep:00552w"><title>Thus spake Zarathustra</title></bibl> p.c. <date ana="#returned" when="1931-05-10">5/10/32</date>
                	
                		deposit forfeited		cancel
-               		subs<unclear/>	<date from="1929-09-29">Sept 29</date> <date to="1929-10-29">-> Oct 29</date>		20
+               		subs<unclear/>	<date from="1929-09-29">Sept 29</date> <date to="1929-10-29">-&gt; Oct 29</date>		20
                			rental	60 days-			30
                				<date from="1929-09-12">12 Sept</date>.<date to="1929-10-12">- 12 Oct.</date>		50 frs.
                				<date from="1929-10-12">12 Oct</date> <date from="1929-11-12">- 12 Nov.</date>
                	</ab>
                	</div>
                 <div type="verso">
-               	<pb facs="#s4" />
+               	<pb facs="#s4"/>
                	<!-- verso blank -->
                 </div>
                		 

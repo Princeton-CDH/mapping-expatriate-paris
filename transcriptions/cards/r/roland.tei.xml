@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roll.ma">Madeleine Roland</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/roland/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1935">1935</date>			
                                 <persName ref="#roll.ma">ROLAND Mlle. Madeleine</persName>
@@ -81,14 +72,14 @@
                 </head>
                 <ab>
                 1 v.  1 m.							dep. 50f
-                			                            <bibl><title>T.E. Lawrence</title></bibl>				refunded
-                <date when="1935-11-14">14 Nov.</date>	<bibl><title>In Arabia + after - yo</title></bibl>			<date when="1935-11-18">18 -</date>
-                <date when="1935-11-18">18 -</date>		<bibl><title>Young Lonigan</title></bibl>					<date when="1935-11-21">21</date>
-                <date when="1935-11-21">21	</date>		<bibl><title>To Make my Bread</title></bibl>				<date when="1935-11-23">23</date>
+                			                            <bibl ana="#borrowedItem"><title>T.E. Lawrence</title></bibl>				refunded
+                <date ana="#checkedOut" when="1935-11-14">14 Nov.</date>	<bibl ana="#borrowedItem"><title>In Arabia + after - yo</title></bibl>			<date ana="#returned" when="1935-11-18">18 -</date>
+                <date ana="#checkedOut" when="1935-11-18">18 -</date>		<bibl ana="#borrowedItem"><title>Young Lonigan</title></bibl>					<date ana="#returned" when="1935-11-21">21</date>
+                <date ana="#checkedOut" when="1935-11-21">21	</date>		<bibl ana="#borrowedItem"><title>To Make my Bread</title></bibl>				<date ana="#returned" when="1935-11-23">23</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#merr.le">Leonard Merriek</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/merriek/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
        
         
@@ -75,7 +66,7 @@
     <text>
         <body>
            <div type="card">
-              <div type="recto">  <pb facs="#s1" />
+              <div type="recto">  <pb facs="#s1"/>
               <head>  <date when="1934">1934</date>			<persName ref="#merr.le">Merriek
                 				Leonard</persName>
                 				<address><name>Hotel Magellan</name>
@@ -83,33 +74,33 @@
                 				
                 			<ab>				dep. 30f</ab>
                 
-            <ab>    <date when="1934-06-02">June 2</date>	<bibl><title>Miss Ogilvie finds herself</title></bibl>		<date when="1934-06-04">June 4</date>
+            <ab>    <date ana="#checkedOut" when="1934-06-02">June 2</date>	<bibl ana="#borrowedItem" corresp="mep:008h59"><title>Miss Ogilvie finds herself</title></bibl>		<date ana="#returned" when="1934-06-04">June 4</date>
                 
                 <date when="1935">1935</date>						dep. ref. <date when="1935-05-03">3 May</date>   50v
-                <date when="1935-04-03">3 April</date>	<bibl><title>Lady Chatterley</title></bibl>		<date when="1935-04-04">4Ap.	</date>		  25v
-            	<date when="1935-04-04">4 -</date> 	<bibl><author>Wells.</author> <title>Autobiog.</title> <biblScope unit="volume" from="2" to="2">II</biblScope></bibl>				<date when="1935-04-06">6 April</date>
-            	<date when="1935-04-06">6 -</date> 	<bibl><title>Plays</title> <author>Maugham</author> <biblScope unit="volume" from="6" to="6">VI</biblScope></bibl>				<date when="1935-04-08">8</date>
-            	<date when="1935-04-08">8</date>		<bibl><title>"</title>		<author>"</author>	  <biblScope unit="volume" from="5" to="5">V</biblScope></bibl>				<date when="1935-04-09">9</date>
-            	<date when="1935-04-09">9</date>	{	<bibl><title>Best Adventure</title></bibl>					<date when="1935-04-12">12</date>
-            			<bibl><title>Famous plays 1932</title></bibl>				<date when="1935-04-12">12</date>
-            	<date when="1935-04-12">12</date>		<bibl><title>Torture to be good</title></bibl>				<date when="1935-04-15">15</date>
-            			<bibl><title>Six plays</title></bibl>						<date when="1935-04-15">15</date>
-            	<date when="1935-04-15">15</date>		<bibl><title>Bright Candles</title></bibl>					<date when="1934-04-18">18</date>
-            	<date when="1935-04-15">15</date>		<bibl><title>England my England</title></bibl>_				<date when="1935-04-18">18</date>
-            	<date when="1935-04-18">18</date>		<bibl><title>Nocturne</title></bibl>						<date when="1935-04-20">20</date>
-            	<date when="1935-04-18">18</date>		<bibl><title>Ladybird</title></bibl>						<date when="1935-04-20">20</date>
-            	<date when="1935-04-20">20-</date>		<bibl><title>Here to-day</title></bibl>						<date when="1935-04-24">24</date>
-            	<date when="1935-04-20">20</date>		<bibl><title>Altogether</title></bibl>						<date when="1935-04-24">24</date>
-            	<date when="1935-04-24">24</date>		<bibl><title>Ellis Studies</title><biblScope unit="volume" from="1" to="1"> I</biblScope></bibl>					<date when="1935-04-26">26</date>
-            	<date when="1935-04-24">24</date>		<bibl>			  <biblScope unit="volume" from="2" to="2">II</biblScope></bibl>				<date when="1935-04-26">26</date>
-            	<date when="1935-04-26">26</date>		<bibl>	<title>"</title>		  <biblScope unit="volume" from="5" to="5">V</biblScope></bibl>					<date when="1935-04-29">29</date>
-            	<date when="1935-04-26">26</date>		<bibl><title>Darling</title> <author>Chekov</author></bibl>					<date when="1935-04-29">29</date>
-            	<date when="1935-04-29">29</date>		<bibl><title>Cherry Orchard</title></bibl>					<date when="1935-04-30">30</date>
-            			<bibl><title>Good Woman</title></bibl>						<date when="1935-04-30">30</date>
-            	<date when="1935-04-30">30</date>		<bibl><title>24 hours</title></bibl>						<date when="1935-05-03">3</date>
-            	<date when="1935-04-30">30</date>		<bibl><title>Murder Hew</title></bibl>						<date when="1935-05-03">3 Ma</date></ab>
+                <date ana="#checkedOut" when="1935-04-03">3 April</date>	<bibl ana="#borrowedItem" corresp="mep:00455k"><title>Lady Chatterley</title></bibl>		<date ana="#returned" when="1935-04-04">4Ap.	</date>		  25v
+            	<date ana="#checkedOut" when="1935-04-04">4 -</date> 	<bibl ana="#borrowedItem" corresp="mep:00128z"><author>Wells.</author> <title>Autobiog.</title> <biblScope unit="volume" from="2" to="2">II</biblScope></bibl>				<date ana="#returned" when="1935-04-06">6 April</date>
+            	<date ana="#checkedOut" when="1935-04-06">6 -</date> 	<bibl ana="#borrowedItem" corresp="mep:000s1b"><title>Plays</title> <author>Maugham</author> <biblScope unit="volume" from="6" to="6">VI</biblScope></bibl>				<date ana="#returned" when="1935-04-08">8</date>
+            	<date ana="#checkedOut" when="1935-04-08">8</date>		<bibl ana="#borrowedItem" corresp="mep:005q4x"><title>"</title>		<author>"</author>	  <biblScope unit="volume" from="5" to="5">V</biblScope></bibl>				<date ana="#returned" when="1935-04-09">9</date>
+            	<date ana="#checkedOut" when="1935-04-09">9</date>	{	<bibl ana="#borrowedItem" corresp="mep:00g372"><title>Best Adventure</title></bibl>					<date ana="#checkedOut" when="1935-04-12">12</date>
+            			<bibl ana="#borrowedItem" corresp="mep:00g38c"><title>Famous plays 1932</title></bibl>				<date ana="#returned" when="1935-04-12">12</date>
+            	<date ana="#checkedOut" when="1935-04-12">12</date>		<bibl ana="#borrowedItem" corresp="mep:00g39p"><title>Torture to be good</title></bibl>				<date ana="#checkedOut" when="1935-04-15">15</date>
+            			<bibl ana="#borrowedItem" corresp="mep:004609"><title>Six plays</title></bibl>						<date ana="#returned" when="1935-04-15">15</date>
+            	<date ana="#checkedOut" when="1935-04-15">15</date>		<bibl ana="#borrowedItem" corresp="mep:00g405"><title>Bright Candles</title></bibl>					<date ana="#returned" when="1934-04-18">18</date>
+            	<date ana="#checkedOut" when="1935-04-15">15</date>		<bibl ana="#borrowedItem" corresp="mep:003f5j"><title>England my England</title></bibl>_				<date ana="#returned" when="1935-04-18">18</date>
+            	<date ana="#checkedOut" when="1935-04-18">18</date>		<bibl ana="#borrowedItem" corresp="mep:001s5t"><title>Nocturne</title></bibl>						<date ana="#returned" when="1935-04-20">20</date>
+            	<date ana="#checkedOut" when="1935-04-18">18</date>		<bibl ana="#borrowedItem" corresp="mep:002928"><title>Ladybird</title></bibl>						<date ana="#returned" when="1935-04-20">20</date>
+            	<date ana="#checkedOut" when="1935-04-20">20-</date>		<bibl ana="#borrowedItem" corresp="mep:008q4n"><title>Here to-day</title></bibl>						<date ana="#returned" when="1935-04-24">24</date>
+            	<date ana="#checkedOut" when="1935-04-20">20</date>		<bibl ana="#borrowedItem" corresp="mep:002s99"><title>Altogether</title></bibl>						<date ana="#returned" when="1935-04-24">24</date>
+            	<date ana="#checkedOut" when="1935-04-24">24</date>		<bibl ana="#borrowedItem" corresp="mep:00f39f"><title>Ellis Studies</title><biblScope unit="volume" from="1" to="1"> I</biblScope></bibl>					<date ana="#returned" when="1935-04-26">26</date>
+            	<date ana="#checkedOut" when="1935-04-24">24</date>		<bibl ana="#borrowedItem">			  <biblScope unit="volume" from="2" to="2">II</biblScope></bibl>				<date ana="#returned" when="1935-04-26">26</date>
+            	<date ana="#checkedOut" when="1935-04-26">26</date>		<bibl ana="#borrowedItem" corresp="mep:005q4x">	<title>"</title>		  <biblScope unit="volume" from="5" to="5">V</biblScope></bibl>					<date ana="#returned" when="1935-04-29">29</date>
+            	<date ana="#checkedOut" when="1935-04-26">26</date>		<bibl ana="#borrowedItem" corresp="mep:00fg85"><title>Darling</title> <author>Chekov</author></bibl>					<date ana="#returned" when="1935-04-29">29</date>
+            	<date ana="#checkedOut" when="1935-04-29">29</date>		<bibl ana="#borrowedItem" corresp="mep:008h2c"><title>Cherry Orchard</title></bibl>					<date ana="#checkedOut" when="1935-04-30">30</date>
+            			<bibl ana="#borrowedItem" corresp="mep:006m5n"><title>Good Woman</title></bibl>						<date ana="#returned" when="1935-04-30">30</date>
+            	<date ana="#checkedOut" when="1935-04-30">30</date>		<bibl ana="#borrowedItem" corresp="mep:00g41g"><title>24 hours</title></bibl>						<date ana="#returned" when="1935-05-03">3</date>
+            	<date ana="#checkedOut" when="1935-04-30">30</date>		<bibl ana="#borrowedItem" corresp="mep:00g42s"><title>Murder Hew</title></bibl>						<date ana="#returned" when="1935-05-03">3 Ma</date></ab>
             	</div>
-            <div type="verso">	<pb facs="#s2" />
+            <div type="verso">	<pb facs="#s2"/>
             	<!-- verso blank -->
                 		
             		

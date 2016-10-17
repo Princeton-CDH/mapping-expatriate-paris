@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#melo.al">Alberte Mélot</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/melot/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         
        
@@ -74,7 +65,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head><date when="1938">1938</date>		<persName ref="#melo.al">MÉLOT
                 		Mademoiselle Alberte</persName>
                 		<address><street>6 rue Thénard</street> <district>- Ve</district></address>
@@ -84,15 +75,15 @@
                 				dep					50
                 			(can take 2 vols)
                 </ab><ab>
-                <date when="1938-10-31">Oct 31</date>	<bibl><title>One Act Plays of To Day, Marriott</title></bibl> <date when="1938-11-22">Nov 22</date>
-                		<bibl><title>Evan Harrington</title></bibl>					<date when="1938-11-22">Nov 22</date>
-                <date when="1938-11-22">Nov 22</date>	<bibl><title>Eight One-Act Plays</title></bibl>				<date when="1938-11-28">Nov 28</date>
-                	<date when="1938-11-22">"</date>	<bibl><title>Eight One Act</title></bibl> <bibl><title>Kiss for Cinderella</title></bibl> <date when="1938-11-28">Nov 28</date>
-                	<date when="1938-11-22">"</date>	<bibl><title>Ten Minute Plays</title></bibl>				<date when="1938-11-28">Nov 28</date>
-                	<date when="1938-11-22">"</date>	<bibl><title>Pawns</title> - <author>Drinkwater</author></bibl>				<date when="1938-11-28">Nov 28</date>
-                	<date when="1938-11-22">"</date>	<bibl><title>Mary Stuart</title>	<author>"</author></bibl>					<date when="1938-11-28">Nov 28</date></ab>
+                <date ana="#checkedOut" when="1938-10-31">Oct 31</date>	<bibl ana="#borrowedItem" corresp="mep:009b9d"><title>One Act Plays of To Day, Marriott</title></bibl> <date ana="#checkedOut" when="1938-11-22">Nov 22</date>
+                		<bibl ana="#borrowedItem" corresp="mep:009c0w"><title>Evan Harrington</title></bibl>					<date ana="#returned" when="1938-11-22">Nov 22</date>
+                <date ana="#checkedOut" when="1938-11-22">Nov 22</date>	<bibl ana="#borrowedItem" corresp="mep:008x1c"><title>Eight One-Act Plays</title></bibl>				<date ana="#returned" when="1938-11-28">Nov 28</date>
+                	<date ana="#checkedOut" when="1938-11-22">"</date>	<bibl ana="#borrowedItem" corresp="mep:009c16"><title>Eight One Act</title></bibl> <bibl ana="#borrowedItem" corresp="mep:00711z"><title>Kiss for Cinderella</title></bibl> <date ana="#returned" when="1938-11-28">Nov 28</date>
+                	<date ana="#checkedOut" when="1938-11-22">"</date>	<bibl ana="#borrowedItem" corresp="mep:008x2p"><title>Ten Minute Plays</title></bibl>				<date ana="#returned" when="1938-11-28">Nov 28</date>
+                	<date ana="#checkedOut" when="1938-11-22">"</date>	<bibl ana="#borrowedItem" corresp="mep:009c2h"><title>Pawns</title> - <author>Drinkwater</author></bibl>				<date ana="#returned" when="1938-11-28">Nov 28</date>
+                	<date ana="#checkedOut" when="1938-11-22">"</date>	<bibl ana="#borrowedItem" corresp="mep:009c3t"><title>Mary Stuart</title>	<author>"</author></bibl>					<date ana="#returned" when="1938-11-28">Nov 28</date></ab>
                 </div><div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
             		</div>
             	</div>

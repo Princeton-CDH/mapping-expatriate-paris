@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roge.sa">Samuel Rogers</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rogers/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1935">1935</date>			
                                 <persName ref="#roge.sa">ROGERS Mr. Samuel</persName>
@@ -79,19 +70,19 @@
                 				</address>
                 </head>
                 <ab>                        ref. <date when="1935-06-07">7 June</date>	dep. 30
-                <date when="1935-05-13">13 May</date>	<bibl><title>Dramatic Works</title> <biblScope unit="volume" from="9">IX</biblScope> <persName>Starptram</persName></bibl>			<date when="1935-05-23">May 23</date>							
+                <date ana="#checkedOut" when="1935-05-13">13 May</date>	<bibl ana="#borrowedItem" corresp="mep:00qm2b"><title>Dramatic Works</title> <biblScope unit="volume" from="9">IX</biblScope> <persName>Starptram</persName></bibl>			<date ana="#returned" when="1935-05-23">May 23</date>							
                 			
                 			
-                <date when="1935-05-23">May 23</date>	<bibl><title>Eight European Plays</title></bibl>				<date when="1935-05-31">May 31</date>
-                <date when="1935-05-23">	</date>		<bibl><title>Hound &amp; Horn</title></bibl> (H.J. No. no extra charge) <date when="1935-05-31">May 31</date>
-                <date when="1935-05-31">May 31</date>	<bibl><title>Fragments from Work in Progress</title></bibl>		    <date when="1935-06-07">	7</date>
-                <date when="1935-05-31">	</date>		<bibl><title>O.E.</title></bibl>									<date when="1935-06-07">7 June</date>
+                <date ana="#checkedOut" when="1935-05-23">May 23</date>	<bibl ana="#borrowedItem" corresp="mep:00pm0g"><title>Eight European Plays</title></bibl>				<date ana="#returned" when="1935-05-31">May 31</date>
+                <date ana="#checkedOut" when="1935-05-23">	</date>		<bibl ana="#borrowedItem" corresp="mep:002h1m"><title>Hound &amp; Horn</title></bibl> (H.J. No. no extra charge) <date ana="#returned" when="1935-05-31">May 31</date>
+                <date ana="#checkedOut" when="1935-05-31">May 31</date>	<bibl ana="#borrowedItem" corresp="mep:004v7q"><title>Fragments from Work in Progress</title></bibl>		    <date ana="#returned" when="1935-06-07">	7</date>
+                <date ana="#checkedOut" when="1935-05-31">	</date>		<bibl ana="#borrowedItem" corresp="mep:004s8g"><title>O.E.</title></bibl>									<date ana="#returned" when="1935-06-07">7 June</date>
                 					(wants to change subsc to 2 vols)
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <head>
                 <date when="1935">1935</date>					
                                         <persName ref="#bour">BOURASSIN Mle.</persName>
@@ -103,7 +94,7 @@
             	1 v. 1 m.											15
             									dep ref.	dep.	30
             										<date when="1935-04-27">27 April</date>
-            	<date when="1935-03-30">30 March</date> -		<bibl><title>Riddle</title> (<persName>Delamare</persName>)</bibl>				<date when="1935-04-27">27 April</date>
+            	<date ana="#checkedOut" when="1935-03-30">30 March</date> -		<bibl ana="#borrowedItem" corresp="mep:00sd9b"><title>Riddle</title> (<persName>Delamare</persName>)</bibl>				<date ana="#returned" when="1935-04-27">27 April</date>
                 </ab>
                 </div>
                 </div>

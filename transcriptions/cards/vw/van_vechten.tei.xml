@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription a Borrower's Card:  <persName ref="#vech.an">Mrs Ann van Vechten</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -55,23 +46,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/van_vechten/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1924-10-01">1924		
                     Oct 1</date>                <address><persName ref="#vech.an">Mrs Ann van Vecten</persName>
@@ -84,26 +75,26 @@
                     						dep		20
                     </ab>
                     <ab>
-                    <date when="1924-10-04">Oct 4</date>		<bibl><title>Sister Carrie</title></bibl>		<date when="1924-10-07">Oct 7</date>
-                    <date when="1924-10-07"> "	7</date>		<bibl><title>Eighteen Nineties</title></bibl>	<date when="1924-10-11">Oct 11</date>
-                    <date when="1924-10-11"> "	11</date>		<bibl><title>Undreamed of Shores</title></bibl> (0,15)	<date when="1924-10-14">Oct 14</date>
-                    <date when="1924-10-14"> "	14</date>		<bibl><title>Fraternity</title></bibl>			<date when="1924-10-17">Oct 17</date>
-                    <date when="1924-10-17"> "	17</date>		<bibl><title>Lord Jim</title></bibl>			<date when="1924-10-20">Oct 20</date>
-                    <date when="1924-10-20"> "	20</date>		<bibl><title>Some do not</title></bibl>			<date when="1924-10-25">Oct 25</date>
-                    <date when="1924-10-25"> "	25</date>		<bibl><title>Passage to India</title></bibl> (0,15)		<date when="1924-10-27">Oct 27</date>
-                     			                                <bibl><title>American Mercury</title> <biblScope unit="issue"><date when="1924-10">Oct</date></biblScope></bibl> (0.25)	<date when="1924-10-27">Oct 27</date>
-                    <date when="1924-10-27"> 	27</date>		<bibl><title>To morrow and to morrow</title></bibl>		<date when="1924-10-29">Oct 29</date>
-                    <date when="1924-10-29"> "	29</date>		<bibl><title>The Stiff Lip</title></bibl>		<date when="1924-10-31">Oct. 31</date>
-                    <date when="1924-10-31"> 	31</date>		<bibl><title>Riceyman Steps</title></bibl>	    <date when="1924-11-03">Nov 3</date>
+                    <date ana="#checkedOut" when="1924-10-04">Oct 4</date>		<bibl ana="#borrowedItem" corresp="mep:001h6x"><title>Sister Carrie</title></bibl>		<date ana="#returned" when="1924-10-07">Oct 7</date>
+                    <date ana="#checkedOut" when="1924-10-07"> "	7</date>		<bibl ana="#borrowedItem" corresp="mep:007z5n"><title>Eighteen Nineties</title></bibl>	<date ana="#returned" when="1924-10-11">Oct 11</date>
+                    <date ana="#checkedOut" when="1924-10-11"> "	11</date>		<bibl ana="#borrowedItem" corresp="mep:007m2z"><title>Undreamed of Shores</title></bibl> (0,15)	<date ana="#returned" when="1924-10-14">Oct 14</date>
+                    <date ana="#checkedOut" when="1924-10-14"> "	14</date>		<bibl ana="#borrowedItem" corresp="mep:00bn5w"><title>Fraternity</title></bibl>			<date ana="#returned" when="1924-10-17">Oct 17</date>
+                    <date ana="#checkedOut" when="1924-10-17"> "	17</date>		<bibl ana="#borrowedItem" corresp="mep:00b406"><title>Lord Jim</title></bibl>			<date ana="#returned" when="1924-10-20">Oct 20</date>
+                    <date ana="#checkedOut" when="1924-10-20"> "	20</date>		<bibl ana="#borrowedItem" corresp="mep:00bn66"><title>Some do not</title></bibl>			<date ana="#returned" when="1924-10-25">Oct 25</date>
+                    <date ana="#checkedOut" when="1924-10-25"> "	25</date>		<bibl ana="#borrowedItem" corresp="mep:00117c"><title>Passage to India</title></bibl> (0,15)		<date ana="#checkedOut" when="1924-10-27">Oct 27</date>
+                     			                                <bibl ana="#borrowedItem" corresp="mep:000380"><title>American Mercury</title> <biblScope unit="issue"><date when="1924-10">Oct</date></biblScope></bibl> (0.25)	<date ana="#returned" when="1924-10-27">Oct 27</date>
+                    <date ana="#checkedOut" when="1924-10-27"> 	27</date>		<bibl ana="#borrowedItem" corresp="mep:00671c"><title>To morrow and to morrow</title></bibl>		<date ana="#returned" when="1924-10-29">Oct 29</date>
+                    <date ana="#checkedOut" when="1924-10-29"> "	29</date>		<bibl ana="#borrowedItem" corresp="mep:00bn7h"><title>The Stiff Lip</title></bibl>		<date ana="#returned" when="1924-10-31">Oct. 31</date>
+                    <date ana="#checkedOut" when="1924-10-31"> 	31</date>		<bibl ana="#borrowedItem" corresp="mep:00b79t"><title>Riceyman Steps</title></bibl>	    <date ana="#returned" when="1924-11-03">Nov 3</date>
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                    
                     <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     <date when="1932">1932</date>			<persName ref="#vech.an">Van VECHTEN</persName>
                     
@@ -118,17 +109,17 @@
                     							refunded <date when="1932-11-14">14-11-32</date>
                     </ab>							
                     <ab>							
-                    <date when="1932-07-08">July 8</date>		<bibl><title>Fountain</title></bibl>			<date when="1932-07-16">July 16</date>
+                    <date ana="#checkedOut" when="1932-07-08">July 8</date>		<bibl ana="#borrowedItem" corresp="mep:001x0c"><title>Fountain</title></bibl>			<date ana="#checkedOut" when="1932-07-16">July 16</date>
                     				                                (To be kept two weeks)
-                    			                                <bibl><title>Hatter's Castle</title></bibl>		<date when="1932-07-19">July 19</date>
-                    <date when="1932-07-19">	19</date>		<bibl><title>Magnolia Street</title></bibl>		<date when="1932-07-22">July 22</date>
-                    <date when="1932-07-22">	22</date>		<bibl><title>Tobit Transplanted</title></bibl>	<date when="1932-08-01">August 1</date>
-                	<date when="1932-08-01">August 1</date>	    <bibl><title>Way of the Phoenix</title></bibl>	<date when="1932-08-08">Aug 8</date>
+                    			                                <bibl ana="#borrowedItem" corresp="mep:009699"><title>Hatter's Castle</title></bibl>		<date ana="#returned" when="1932-07-19">July 19</date>
+                    <date ana="#checkedOut" when="1932-07-19">	19</date>		<bibl ana="#borrowedItem" corresp="mep:009680"><title>Magnolia Street</title></bibl>		<date ana="#returned" when="1932-07-22">July 22</date>
+                    <date ana="#checkedOut" when="1932-07-22">	22</date>		<bibl ana="#borrowedItem" corresp="mep:002731"><title>Tobit Transplanted</title></bibl>	<date ana="#returned" when="1932-08-01">August 1</date>
+                	<date ana="#checkedOut" when="1932-08-01">August 1</date>	    <bibl ana="#borrowedItem" corresp="mep:00bn8t"><title>Way of the Phoenix</title></bibl>	<date ana="#returned" when="1932-08-08">Aug 8</date>
                 	post 2.20
                 	</ab>
                 </div>
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div>

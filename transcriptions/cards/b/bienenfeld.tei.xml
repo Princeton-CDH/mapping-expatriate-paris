@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card <persName ref="#bien.bi">Bianca Bienenfeld</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,16 +49,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/beinenfeld/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
@@ -75,7 +66,7 @@
             
                 <div type="card">
                     <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                 
                 <head>
                 <date when="1940">1940</date>
@@ -89,83 +80,83 @@
                 			1M		1V		_				25
                 						ref		dep <date when="1940-10-13">Oct 13</date>	50
                 
-                <date when="1940-07-29">July 29</date>	<bibl><title>Asiatica</title></bibl>		<date when="1940-08-05">Aug	5</date>
-                <date when="1940-08-05">Aug 5</date>	<bibl><title>Daring Young Man</title></bibl>	<date when="1940-08-12">Aug	12</date>
-                <date when="1940-08-12">12</date>	<bibl><title>Pylon</title></bibl>					<date when="1940-08-28">Aug 	28</date>
-                <date when="1940-08-28">28</date>	<bibl><title>Three Soldiers	</title></bibl>			<date when="1940-09-16">Sept	16</date>
+                <date ana="#checkedOut" when="1940-07-29">July 29</date>	<bibl ana="#borrowedItem" corresp="mep:001401"><title>Asiatica</title></bibl>		<date ana="#returned" when="1940-08-05">Aug	5</date>
+                <date ana="#checkedOut" when="1940-08-05">Aug 5</date>	<bibl ana="#borrowedItem" corresp="mep:00204d"><title>Daring Young Man</title></bibl>	<date ana="#returned" when="1940-08-12">Aug	12</date>
+                <date ana="#checkedOut" when="1940-08-12">12</date>	<bibl ana="#borrowedItem" corresp="mep:00205q"><title>Pylon</title></bibl>					<date ana="#returned" when="1940-08-28">Aug 	28</date>
+                <date ana="#checkedOut" when="1940-08-28">28</date>	<bibl ana="#borrowedItem" corresp="mep:002061"><title>Three Soldiers	</title></bibl>			<date ana="#returned" when="1940-09-16">Sept	16</date>
                 	
                 	Renewed - <date from="1940-08-29" to="1940-09-29">Aug 29 - Sept 29</date> 	15
                 
-                <date when="1940-09-16">Sept 16</date>	<bibl><title>Fifth Column</title></bibl>				<date when="1940-10-26">Sept 26</date>
-                <date when="1940-09-26">26</date>	<bibl><title>Adventures of a Young Man</title></bibl>		<date when="1940-10-08">Oct 8</date>
-                <date when="1940-10-08">Oct  8</date>	<bibl><title>Fifth Column</title></bibl>				<date when="1940-10-22">Oct 22</date>
-                <date when="1940-10-22">Oct  22</date>	<bibl><title>To Have &amp; Have Not	</title></bibl>		<date when="1940-10-31">Oct 31</date>
+                <date ana="#checkedOut" when="1940-09-16">Sept 16</date>	<bibl ana="#borrowedItem" corresp="mep:001b10"><title>Fifth Column</title></bibl>				<date ana="#returned" when="1940-10-26">Sept 26</date>
+                <date ana="#checkedOut" when="1940-09-26">26</date>	<bibl ana="#borrowedItem" corresp="mep:00013w"><title>Adventures of a Young Man</title></bibl>		<date ana="#returned" when="1940-10-08">Oct 8</date>
+                <date ana="#checkedOut" when="1940-10-08">Oct  8</date>	<bibl ana="#borrowedItem" corresp="mep:001b10"><title>Fifth Column</title></bibl>				<date ana="#returned" when="1940-10-22">Oct 22</date>
+                <date ana="#checkedOut" when="1940-10-22">Oct  22</date>	<bibl ana="#borrowedItem" corresp="mep:00207b"><title>To Have &amp; Have Not	</title></bibl>		<date ana="#returned" when="1940-10-31">Oct 31</date>
                 
                 Renewal to <date from="1940-09-29" to="1940-10-29">Sept 29 - Oct 29</date>, pd. <date when="1940-10-09">Oct 9</date>	   20
                 
-                <date when="1940-10-31">Oct  31</date>	<bibl><title>American Tragedy</title></bibl> (renewed)	<date when="1940-12-02">Dec 2</date>
-                <date when="1940-11-30">Nov  31</date>	<bibl><title>Murder in the Cathedral</title></bibl>		<date when="1940-12-02">Dec 2</date>
-                <date when="1940-12">Dec</date> 	   <bibl><title>Bird Alone</title></bibl>					<date when="1940-12-16">Dec 16</date>
+                <date ana="#checkedOut" when="1940-10-31">Oct  31</date>	<bibl ana="#borrowedItem" corresp="mep:001j38"><title>American Tragedy</title></bibl> (renewed)	<date ana="#returned" when="1940-12-02">Dec 2</date>
+                <date ana="#checkedOut" when="1940-11-30">Nov  31</date>	<bibl ana="#borrowedItem" corresp="mep:00208n"><title>Murder in the Cathedral</title></bibl>		<date ana="#returned" when="1940-12-02">Dec 2</date>
+                <date ana="#checkedOut" when="1940-12">Dec</date> 	   <bibl ana="#borrowedItem" corresp="mep:000x8m"><title>Bird Alone</title></bibl>					<date ana="#returned" when="1940-12-16">Dec 16</date>
                 
                 Renewed <date from="1940-11-29" to="1940-12-29">Nov 29 - Dec 29</date> , 1 v		S	   20
                 					2nd vol 2 weeks		   15
                 					
-                <date when="1940-12-16">Dec 16</date>	<bibl><title>Dodsworth</title></bibl>					<date when="1940-12-31">Dec 31</date>
-                <date when="1940-12-16">16</date>	<bibl><author>Poe</author>'s <title>Poems</title></bibl>	<date when="1940-12-23">Dec 23</date>
-                <date when="1940-12-23">23</date>	<bibl><title>Strange Interlude</title></bibl>				<date when="1940-12-31">Dec 31</date>
-                <date when="1940-12-31">31</date>	<bibl><title>Babbitt</title></bibl>						    <date when="1941-01-20">Jan 20</date>
-                                                    <bibl><title>Trent's Own Case</title></bibl>				<date when="1941-01-13">Jan 13</date>
+                <date ana="#checkedOut" when="1940-12-16">Dec 16</date>	<bibl ana="#borrowedItem" corresp="mep:001j2z"><title>Dodsworth</title></bibl>					<date ana="#returned" when="1940-12-31">Dec 31</date>
+                <date ana="#checkedOut" when="1940-12-16">16</date>	<bibl ana="#borrowedItem" corresp="mep:00209z"><author>Poe</author>'s <title>Poems</title></bibl>	<date ana="#returned" when="1940-12-23">Dec 23</date>
+                <date ana="#checkedOut" when="1940-12-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:00210f"><title>Strange Interlude</title></bibl>				<date ana="#returned" when="1940-12-31">Dec 31</date>
+                <date ana="#checkedOut" when="1940-12-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00211r"><title>Babbitt</title></bibl>						    <date ana="#checkedOut" when="1941-01-20">Jan 20</date>
+                                                    <bibl ana="#borrowedItem" corresp="mep:002122"><title>Trent's Own Case</title></bibl>				<date ana="#returned" when="1941-01-13">Jan 13</date>
                 
                 Ren <date from="1940-12-29" to="1941-01-29">Dec 29 - Jan 29</date>  1 m 2 v. 	S	30
                 
-                <date when="1941-01-13">Jan 13.</date>	<bibl><title>Trial of a Judge</title></bibl>
+                <date ana="#checkedOut" when="1941-01-13">Jan 13.</date>	<bibl ana="#borrowedItem" corresp="mep:00097b"><title>Trial of a Judge</title></bibl>
                 	</ab>
                 </div>
                 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                 <head>
                 			<persName ref="#bien.bi"><surname>BEINENFELD</surname></persName>
                 </head>
                 
                 <ab>
-                <date when="1941-01-20">Jan 20</date>. <bibl><title>To have &amp; have not</title></bibl>			<date when="1941-02-03">Feb 3</date>
+                <date ana="#checkedOut" when="1941-01-20">Jan 20</date>. <bibl ana="#borrowedItem" corresp="mep:00207b"><title>To have &amp; have not</title></bibl>			<date ana="#returned" when="1941-02-03">Feb 3</date>
                   
                   Ren. 1 m 1 vol S	<date from="1941-01-29" to="1941-02-28">Jan 29. Feb. 29</date>	  20
                 
-                    <date when="1941-02-03">Feb. 3</date>	<bibl><title>Big Money</title></bibl>				    <date when="1941-02-28">Feb 28</date>
+                    <date ana="#checkedOut" when="1941-02-03">Feb. 3</date>	<bibl ana="#borrowedItem" corresp="mep:00213c"><title>Big Money</title></bibl>				    <date ana="#returned" when="1941-02-28">Feb 28</date>
                 
                 Renewed <date from="1941-02-28" to="1941-03-29">Feb 28 - March 29	1941</date>
                 (<persName>Madame <surname>Bienenfeld</surname></persName>)					1 vol A 25
                 
-                <date when="1941-02-28">Feb 28</date>	<bibl><title>Come and Get It	</title></bibl>				<date when="1941-03-11">Mar. 11</date>
-                    <date when="1941-02-28">''</date>	<bibl><title>Nobody's in Town</title></bibl>				<date when="1941-03-18">Mar 18</date>
+                <date ana="#checkedOut" when="1941-02-28">Feb 28</date>	<bibl ana="#borrowedItem" corresp="mep:00214p"><title>Come and Get It	</title></bibl>				<date ana="#returned" when="1941-03-11">Mar. 11</date>
+                    <date ana="#checkedOut" when="1941-02-28">''</date>	<bibl ana="#borrowedItem" corresp="mep:002150"><title>Nobody's in Town</title></bibl>				<date ana="#returned" when="1941-03-18">Mar 18</date>
                 
                 Renewed <date from="1941-03-29" to="1941-04-29">March 29 - April 29, 1941</date> 1 m 1 vol A	25
                 
-                <date when="1941-03-18">Mar 18</date>	<bibl><title>Death in the afternoon</title></bibl>			<date when="1941-05-15">May 15</date>
-                <date when="1941-03-25">25</date>	<bibl><title>Light in August</title></bibl>					<date when="1941-04-09">April 9</date>
-                <date when="1941-04-09">April 9</date>	<bibl><title>To Have &amp; Have Not</title></bibl>	<date when="1941-04-15">April 15</date>
-                <date when="1941-04-15">15</date>	<bibl><title>Manhattan:Transfer</title></bibl>			<date when="1941-05-02">May 2</date>
-                <date when="1941-05-02">May 2</date>	<bibl><title>Sanctuary</title></bibl>			   <date when="1941-05-09">May 9</date>
-                <date when="1941-05-09">May 9</date>	<bibl><title>Grapes of Wrath</title></bibl>			<date when="1941-05-12">May 12</date>
-                <date when="1941-05-12">May 12</date>	<bibl><title>Backward Son</title></bibl>			<date when="1941-05-19">May 19</date>
+                <date ana="#checkedOut" when="1941-03-18">Mar 18</date>	<bibl ana="#borrowedItem" corresp="mep:002169"><title>Death in the afternoon</title></bibl>			<date ana="#returned" when="1941-05-15">May 15</date>
+                <date ana="#checkedOut" when="1941-03-25">25</date>	<bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August</title></bibl>					<date ana="#returned" when="1941-04-09">April 9</date>
+                <date ana="#checkedOut" when="1941-04-09">April 9</date>	<bibl ana="#borrowedItem" corresp="mep:00207b"><title>To Have &amp; Have Not</title></bibl>	<date ana="#returned" when="1941-04-15">April 15</date>
+                <date ana="#checkedOut" when="1941-04-15">15</date>	<bibl ana="#borrowedItem" corresp="mep:001t81"><title>Manhattan:Transfer</title></bibl>			<date ana="#returned" when="1941-05-02">May 2</date>
+                <date ana="#checkedOut" when="1941-05-02">May 2</date>	<bibl ana="#borrowedItem" corresp="mep:00218x"><title>Sanctuary</title></bibl>			   <date ana="#returned" when="1941-05-09">May 9</date>
+                <date ana="#checkedOut" when="1941-05-09">May 9</date>	<bibl ana="#borrowedItem" corresp="mep:00012k"><title>Grapes of Wrath</title></bibl>			<date ana="#returned" when="1941-05-12">May 12</date>
+                <date ana="#checkedOut" when="1941-05-12">May 12</date>	<bibl ana="#borrowedItem" corresp="mep:002197"><title>Backward Son</title></bibl>			<date ana="#returned" when="1941-05-19">May 19</date>
                 
                 Renewed <date from="1941-04-29" to="1941-05-29">April 29th 2 mos June 29th 1941</date> 45
                 
-                <date when="1941-05-19">May 19</date>	<bibl><title>Sister Carrie</title></bibl>			<date when="1941-05-27">May 27</date>
-                <date when="1941-05-27">27</date>	<bibl><title>Mr Norris changes trains</title></bibl>	<date when="1941-06-09">June 9</date>
-                <date when="1941-05-27">27</date>	<bibl><title>Gallery of Women</title>	<biblScope unit="volume">2 vols</biblScope>.</bibl>  ?	<date when="1941-06-09">June 9</date>
-                <date when="1941-06-09">June 9</date>	<bibl><title>We are the living</title></bibl>		<date when="1941-06-13">June 13</date>
-                <date when="1941-06-09">9</date>	<bibl><title>Southways</title></bibl>					<date when="1941-06-13">June 13</date>
-                <date when="1941-06-13">13</date>	<bibl><title>Journeyman</title></bibl>					<date when="1941-06-23">June 23</date>
-                <date when="1941-06-13">13</date>	<bibl><title>As I Lay Dying</title></bibl>				<date when="1941-06-23">23</date>
-                <date when="1941-06-23">23</date>	<bibl><title>Tortilla Flat</title></bibl>				<date when="1941-07-07">July 7</date>
-                <date when="1941-06-23">23</date>	<bibl><title>Absalom, absalom</title></bibl>			<date when="1941-07-15">July 15</date>
+                <date ana="#checkedOut" when="1941-05-19">May 19</date>	<bibl ana="#borrowedItem" corresp="mep:001h6x"><title>Sister Carrie</title></bibl>			<date ana="#returned" when="1941-05-27">May 27</date>
+                <date ana="#checkedOut" when="1941-05-27">27</date>	<bibl ana="#borrowedItem" corresp="mep:000r87"><title>Mr Norris changes trains</title></bibl>	<date ana="#returned" when="1941-06-09">June 9</date>
+                <date ana="#checkedOut" when="1941-05-27">27</date>	<bibl ana="#borrowedItem" corresp="mep:00220q"><title>Gallery of Women</title>	<biblScope unit="volume">2 vols</biblScope>.</bibl>  ?	<date ana="#returned" when="1941-06-09">June 9</date>
+                <date ana="#checkedOut" when="1941-06-09">June 9</date>	<bibl ana="#borrowedItem" corresp="mep:002211"><title>We are the living</title></bibl>		<date ana="#returned" when="1941-06-13">June 13</date>
+                <date ana="#checkedOut" when="1941-06-09">9</date>	<bibl ana="#borrowedItem" corresp="mep:00222b"><title>Southways</title></bibl>					<date ana="#returned" when="1941-06-13">June 13</date>
+                <date ana="#checkedOut" when="1941-06-13">13</date>	<bibl ana="#borrowedItem" corresp="mep:00223n"><title>Journeyman</title></bibl>					<date ana="#returned" when="1941-06-23">June 23</date>
+                <date ana="#checkedOut" when="1941-06-13">13</date>	<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I Lay Dying</title></bibl>				<date ana="#returned" when="1941-06-23">23</date>
+                <date ana="#checkedOut" when="1941-06-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:002258"><title>Tortilla Flat</title></bibl>				<date ana="#returned" when="1941-07-07">July 7</date>
+                <date ana="#checkedOut" when="1941-06-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:00226k"><title>Absalom, absalom</title></bibl>			<date ana="#returned" when="1941-07-15">July 15</date>
                 
                 Ren. <date from="1941-06-29" to="1941-07-29">June 29th - July 29th. 1941</date>. 1m 1v. 25
                 
-                <date when="1941-07-07">July 7</date>	<bibl><title>Adventures of a young man</title></bibl>	<date when="1941-07-23">July 23</date>
+                <date ana="#checkedOut" when="1941-07-07">July 7</date>	<bibl ana="#borrowedItem" corresp="mep:00013w"><title>Adventures of a young man</title></bibl>	<date ana="#returned" when="1941-07-23">July 23</date>
                 </ab>
                 
                 </div>
@@ -173,27 +164,27 @@
                 
                 <div type="card">
                     <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                 <head>
                 			<persName ref="#bien.bi">BIENENFELD</persName>
                 </head>
                 
                 <ab>
-                <date when="1941-07-15">July 15</date>		<bibl><title>Winner take nothing</title></bibl>		<date when="1941-07-29">July 29</date>
-                <date when="1941-07-23">23</date>		<bibl><title>Brave New World	</title></bibl>			<date when="1941-07-29">July 29</date>
-                <date when="1941-07-29">July 29</date>		<bibl><title>Dog beneath the Skin</title></bibl>	<date when="1941-09-05">Sept 5</date>
-                <date when="1941-07-29"> 29</date>  <bibl><title>Aaron's rod</title></bibl>					<date when="1941-09-05">" 5</date>
-                <date when="1941-07-29"> 29</date> 		<bibl><title>Charwoman's daughter</title></bibl>		<date when="1941-09-05">" 5</date>
-                <date when="1941-07-29"> 29</date> 	<bibl><title>Lake</title></bibl>						    <date when="1941-09-05">" 5</date>
-                <date when="1941-07-29"> 29</date> 		<bibl><author>Synge</author>'s <title>Travels in Wicklow, W. Kerry &amp; Connemara</title></bibl> <date when="1941-09-05">" 5</date>
+                <date ana="#checkedOut" when="1941-07-15">July 15</date>		<bibl ana="#borrowedItem" corresp="mep:00227w"><title>Winner take nothing</title></bibl>		<date ana="#returned" when="1941-07-29">July 29</date>
+                <date ana="#checkedOut" when="1941-07-23">23</date>		<bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World	</title></bibl>			<date ana="#returned" when="1941-07-29">July 29</date>
+                <date ana="#checkedOut" when="1941-07-29">July 29</date>		<bibl ana="#borrowedItem" corresp="mep:00179n"><title>Dog beneath the Skin</title></bibl>	<date ana="#returned" when="1941-09-05">Sept 5</date>
+                <date ana="#checkedOut" when="1941-07-29"> 29</date>  <bibl ana="#borrowedItem" corresp="mep:000q4q"><title>Aaron's rod</title></bibl>					<date ana="#returned" when="1941-09-05">" 5</date>
+                <date ana="#checkedOut" when="1941-07-29"> 29</date> 		<bibl ana="#borrowedItem" corresp="mep:002286"><title>Charwoman's daughter</title></bibl>		<date ana="#returned" when="1941-09-05">" 5</date>
+                <date ana="#checkedOut" when="1941-07-29"> 29</date> 	<bibl ana="#borrowedItem" corresp="mep:002033"><title>Lake</title></bibl>						    <date ana="#returned" when="1941-09-05">" 5</date>
+                <date ana="#checkedOut" when="1941-07-29"> 29</date> 		<bibl ana="#borrowedItem" corresp="mep:00229h"><author>Synge</author>'s <title>Travels in Wicklow, W. Kerry &amp; Connemara</title></bibl> <date ana="#returned" when="1941-09-05">" 5</date>
                 	 					
               
                 Ren. <date from="1941-07-29" to="1941-09-29">July 29 - Sept 29. 1941</date> 1 v 2 m	45
                 
-                <date when="1941-09-05">Sept 5</date>		<bibl><title>Men without women</title></bibl>		<date when="1941-09-19">Sept. 19</date>
-                <date when="1941-09-05">" 5</date>		<bibl><title>Soldier's pay</title></bibl>				<date when="1941-09-19">Sept. 19</date>
-                <date when="1941-09-19">Sept. 19</date>		<bibl><title>Man without Art</title></bibl>			<date when="1941-10-13">Oct. 13</date>
-                <date when="1941-09-19">Sept. 19</date>		<bibl><title>Flowering Judas</title></bibl>		    <date when="1941-10-13">Oct. 13</date>
+                <date ana="#checkedOut" when="1941-09-05">Sept 5</date>		<bibl ana="#borrowedItem" corresp="mep:002300"><title>Men without women</title></bibl>		<date ana="#returned" when="1941-09-19">Sept. 19</date>
+                <date ana="#checkedOut" when="1941-09-05">" 5</date>		<bibl ana="#borrowedItem" corresp="mep:002319"><title>Soldier's pay</title></bibl>				<date ana="#returned" when="1941-09-19">Sept. 19</date>
+                <date ana="#checkedOut" when="1941-09-19">Sept. 19</date>		<bibl ana="#borrowedItem" corresp="mep:00091g"><title>Man without Art</title></bibl>			<date ana="#returned" when="1941-10-13">Oct. 13</date>
+                <date ana="#checkedOut" when="1941-09-19">Sept. 19</date>		<bibl ana="#borrowedItem" corresp="mep:000r40"><title>Flowering Judas</title></bibl>		    <date ana="#returned" when="1941-10-13">Oct. 13</date>
                 
                 ref dep. <unclear>50 to M. </unclear>. <date when="1941-10-14">Oct 14. 1941</date> - 
                     
@@ -201,7 +192,7 @@
                     
                 </div>
                 
-                <div type="verso"><pb facs="#s4" />
+                <div type="verso"><pb facs="#s4"/>
                 
                     <ab>
                 <!-- Blank Verso -->

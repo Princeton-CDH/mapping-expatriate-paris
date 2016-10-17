@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#hart.fr">Françoise Hartmann</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -61,16 +52,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/h/hartmann/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         
         
@@ -80,7 +71,7 @@
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                	<head>
                	    <persName ref="#hart.fr">Mlle Francoise Hartmann</persName>
                		<address>
@@ -89,32 +80,32 @@
                	<date when="1952">1952</date>
                	</head>
                 <ab>
-               	<date when="1952">June 20</date> <bibl><title>the Fourteenth of October</title></bibl>	not returned?
-               	<date when="1952">	</date>	     <bibl><title>Portrait of the Artist as a young Dog</title></bibl>
-                <date when="1952">	</date>	     <bibl><title>a Room of One's Own</title></bibl>
-                <date when="1952">	</date>	     <bibl><title>a Passage to India</title></bibl>						returned
-                <date when="1952">	</date>	     <bibl><title>the Dog Beneath the Skin</title></bibl>
+               	<date ana="#checkedOut" when="1952">June 20</date> <bibl ana="#borrowedItem" corresp="mep:00s65f"><title>the Fourteenth of October</title></bibl>	not returned?
+               	<date ana="#checkedOut" when="1952">	</date>	     <bibl ana="#borrowedItem" corresp="mep:003h1v"><title>Portrait of the Artist as a young Dog</title></bibl>
+                <date ana="#checkedOut" when="1952">	</date>	     <bibl ana="#borrowedItem" corresp="mep:000j9w"><title>a Room of One's Own</title></bibl>
+                <date ana="#checkedOut" when="1952">	</date>	     <bibl ana="#borrowedItem" corresp="mep:00117c"><title>a Passage to India</title></bibl>						returned
+                <date ana="#checkedOut" when="1952">	</date>	     <bibl ana="#borrowedItem" corresp="mep:00179n"><title>the Dog Beneath the Skin</title></bibl>
                	
-               	<date when="1953">1953</date>
-               	<date when="1953-11-25">Nov 25</date>  <bibl><title>Portrait of the Artist as a Young Dog</title></bibl>	<date when="1953-12-11">Dec 11</date>
-               	<date when="1953-11-25">	</date>	   <bibl><title>Poetry since 1931</title>, <persName>Spender</persName></bibl>				<date when="1953-12-11">Dec 11</date>
+               	<date ana="#returned" when="1953">1953</date>
+               	<date ana="#checkedOut" when="1953-11-25">Nov 25</date>  <bibl ana="#borrowedItem" corresp="mep:003h1v"><title>Portrait of the Artist as a Young Dog</title></bibl>	<date ana="#returned" when="1953-12-11">Dec 11</date>
+               	<date ana="#checkedOut" when="1953-11-25">	</date>	   <bibl ana="#borrowedItem" corresp="mep:00s66r"><title>Poetry since 1931</title>, <persName>Spender</persName></bibl>				<date ana="#returned" when="1953-12-11">Dec 11</date>
                				(for Prof at British Institute)
                				for memorial <persName>Dylan Thomas</persName> B9 <date when="1953-11-25">Nov 25</date>
                				
-               					wrote to <persName ref="#hart.fr" full="init">F H</persName> <date when="1953-12-10">Dec 10</date>
+               					wrote to <persName ref="#hart.fr">F H</persName> <date when="1953-12-10">Dec 10</date>
                					asking to bring back
                 </ab>
                	</div>
                 
                 <div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                	</div>
                 </div>
                 
                 <div type="card">
                 <div type="recto">
-               	<pb facs="#s3" />
+               	<pb facs="#s3"/>
                	<head>
                	        <persName ref="#hart.fr">Mademoiselle Francoise Hartmann</persName>
                			<address>
@@ -124,13 +115,13 @@
                	</head>
                 
                 <ab>
-               	<date when="1955">1955</date>	<bibl><title>the Days Before</title>, <persName>K.A. Porter</persName></bibl>		May 10
-               			(gave <persName ref="#hart.fr" full="init">F.H.</persName> <bibl><title>What I Believe</title>, <persName>E M Forster</persName></bibl>)
+               	<date ana="#checkedOut" when="1955">1955</date>	<bibl ana="#borrowedItem" corresp="mep:00j10t"><title>the Days Before</title>, <persName>K.A. Porter</persName></bibl>		May 10
+               			(gave <persName ref="#hart.fr">F.H.</persName> <bibl ana="#borrowedItem" corresp="mep:003d58"><title>What I Believe</title>, <persName>E M Forster</persName></bibl>)
                 </ab>
                	</div>
                 
                 <div type="verso">
-               	<pb facs="#s4" />
+               	<pb facs="#s4"/>
                	<!-- verso blank -->
                 </div>
                 </div>

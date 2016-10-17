@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#math.ja">Jackson Mathews</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,22 +48,22 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/mathews/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
+        	<graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
+        	<graphic url="00000006.jp2"/>
         </surface>
         
         
@@ -81,7 +72,7 @@
     <text>
         <body>
             <div type="card">
-                <div type="recto"><pb facs="#s1" />
+                <div type="recto"><pb facs="#s1"/>
                 <head><date when="1938">1938</date>		<persName ref="#math.ja">Mathews	Jackson</persName>	TO BE KEPT HERE.
                 						See below.
                 			<address><street>22 rue de Londres</street> <settlement>Bruxelle</settlement></address>
@@ -90,50 +81,50 @@
                 							dep			24</ab>
                 
            <ab> 	<date when="1935-12-27">Dec 27</date>	<unclear/> <date when="1936-01-15">15 Janv 1936</date>
-            	<date when="1936-05-25">May 25</date>	<bibl><title>Make it New</title></bibl>						<date when="1936-06-08">8</date>
-            		<date when="1936-05-26">26</date>	<bibl><title>World's Body</title></bibl>					<date when="1936-06-08">8</date>
-            	<date when="1936-06-08">June 8</date>	<bibl><title>Fathers</title></bibl>	4 frs a day pd 28 frs <date when="1936-06-15">june 15</date>
-            	<date when="1936-06-15">"	15</date>	<bibl><title>Family Reunion</title></bibl> 4 frs a day owes 12v retur
-            						p.c. <date when="1936-07-20">July 20</date>			 ned
+            	<date ana="#checkedOut" when="1936-05-25">May 25</date>	<bibl ana="#borrowedItem" corresp="mep:00735r"><title>Make it New</title></bibl>						<date ana="#returned" when="1936-06-08">8</date>
+            		<date ana="#checkedOut" when="1936-05-26">26</date>	<bibl ana="#borrowedItem" corresp="mep:008f2t"><title>World's Body</title></bibl>					<date ana="#returned" when="1936-06-08">8</date>
+            	<date ana="#checkedOut" when="1936-06-08">June 8</date>	<bibl ana="#borrowedItem" corresp="mep:00077s"><title>Fathers</title></bibl>	4 frs a day pd 28 frs <date ana="#returned" when="1936-06-15">june 15</date>
+            	<date ana="#checkedOut" when="1936-06-15">"	15</date>	<bibl ana="#borrowedItem" corresp="mep:000f92"><title>Family Reunion</title></bibl> 4 frs a day owes 12v retur
+            						p.c. <date ana="#returned" when="1936-07-20">July 20</date>			 ned
         				<address><orgName>Central Washington College</orgName>
         					<settlement>Ellensburg,</settlement> <region>Washington</region></address>
         				If manuscript turns up. send it to
         				the above address in <address><country>America</country></address>_
         				<persName>Miss T. Jones</persName>_ Ms.</ab>
         		</div>
-        		<div type="verso"><pb facs="#s2" />
+        		<div type="verso"><pb facs="#s2"/>
         		<!-- verso blank --></div>
         		</div>
-        	<div type="card"><div type="recto">	<pb facs="#s3" />
+        	<div type="card"><div type="recto">	<pb facs="#s3"/>
         	<head>	<date when="1957">1957</date>		<persName ref="#math.ja">Mr Jackson Mathews</persName>
         					<address><street>18 rue de l'Odéon</street>
         					<settlement>Paris</settlement> <district>- VI</district></address>
         		</head>
-        	<ab>	<date when="1957-05-17">May 17</date>	<bibl><title>Collected Poems of Hardy</title></bibl>
-        								   <bibl><title>Rossetti</title></bibl>
+        	<ab>	<date ana="#checkedOut" when="1957-05-17">May 17</date>	<bibl ana="#borrowedItem" corresp="mep:008f34"><title>Collected Poems of Hardy</title></bibl>
+        								   <bibl ana="#borrowedItem" corresp="mep:008f4f"><title>Rossetti</title></bibl>
         				
-        				<bibl><author>Pound</author></bibl>'s Essays:
-        			1	<bibl><title>Instigations</title></bibl>
-        			2	<bibl><title>Make it New</title></bibl>
-        			3	<bibl><title>Pavannes &amp; Divisions</title></bibl>
-        			4 	<bibl><title>Polite Essays</title></bibl></ab></div>
+        				<bibl ana="#borrowedItem"><author>Pound</author></bibl>'s Essays:
+        			1	<bibl ana="#borrowedItem" corresp="mep:00657p"><title>Instigations</title></bibl>
+        			2	<bibl ana="#borrowedItem" corresp="mep:00735r"><title>Make it New</title></bibl>
+        			3	<bibl ana="#borrowedItem" corresp="mep:006552"><title>Pavannes &amp; Divisions</title></bibl>
+        			4 	<bibl ana="#borrowedItem" corresp="mep:008f5r"><title>Polite Essays</title></bibl></ab></div>
         		
-        		<div type="verso"><pb facs="#s4" />
+        		<div type="verso"><pb facs="#s4"/>
         		<!-- verso blank --></div>
         		</div>
-        		<div type="card"><div type="recto"><pb facs="#s5" />
+        		<div type="card"><div type="recto"><pb facs="#s5"/>
         		<head><date when="1957">1957</date>		<persName ref="#math.ja">Mr Jackson MATHEWS</persName>
         					<address><street>18 rue de l'Odéon</street></address></head>
         					
         				
-        			<ab>	<bibl><title>Hardy's Collected Poems</title></bibl>		returned July 57
-        				<bibl><title>Rossetti's Poetical works</title></bibl>
-        				<bibl><title>Instigations</title>, <author>E Pound</author></bibl>
-        				<bibl><title>Polite Essays</title>, <author>E.P.</author></bibl>
-        				<bibl><title>Make it New</title>, <author>EP</author></bibl>
-        				<bibl><title>Pavannes &amp; Divisions</title></bibl></ab>
+        			<ab>	<bibl ana="#borrowedItem" corresp="mep:008f62"><title>Hardy's Collected Poems</title></bibl>		returned July 57
+        				<bibl ana="#borrowedItem" corresp="mep:008f7c"><title>Rossetti's Poetical works</title></bibl>
+        				<bibl ana="#borrowedItem" corresp="mep:00657p"><title>Instigations</title>, <author>E Pound</author></bibl>
+        				<bibl ana="#borrowedItem" corresp="mep:008f5r"><title>Polite Essays</title>, <author>E.P.</author></bibl>
+        				<bibl ana="#borrowedItem" corresp="mep:00735r"><title>Make it New</title>, <author>EP</author></bibl>
+        				<bibl ana="#borrowedItem" corresp="mep:006552"><title>Pavannes &amp; Divisions</title></bibl></ab>
         		</div>
-        		<div type="verso"><pb facs="#s6" />
+        		<div type="verso"><pb facs="#s6"/>
         		<!-- verso blank --></div>
             </div>
         </body>

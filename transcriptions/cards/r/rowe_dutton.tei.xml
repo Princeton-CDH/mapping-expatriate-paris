@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rowe.gw">Mrs. Rowe-Dutton</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -61,17 +52,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rowe_dutton/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1935">1935</date>				
                 					<persName ref="#rowe.gw">Mrs. ROWE-DUTTON</persName>
@@ -83,53 +74,53 @@
                 1 v. 1 m. 							not pd	15f
                  dep.										30
                  								left
-                <date when="1935-03-11">11 March_</date>	<bibl><title>Mandoa</title></bibl>						<date when="1935-03-13">13</date>
-                <date when="1935-03-13">13  -</date> 		<bibl><title>Harsh voice</title></bibl> 0.50			<date when="1935-03-18">18</date>
-                <date when="1935-03-18">18  -</date>		<bibl><title>Rose Ansley</title></bibl>					<date when="1935-03-20">	20</date>
-                <date when="1935-03-20">20	-</date>		<bibl><title>Untilled field</title></bibl>				<date when="1935-03-23">	23</date>
-                <date when="1935-03-23">23	</date>		    <bibl><title>Mainsail home</title></bibl>				<date when="1935-03-27">	27</date>
-                <date when="1935-03-27">27	</date>		    <bibl><title>20 years a growing</title></bibl>			<date when="1395-03-29">	29</date>
-                <date when="1935-03-29">29	</date>		    <bibl><title>Snows of Helicon</title></bibl>			<date when="1935-04-01">	1</date>
-                <date when="1935-04-01">1 April</date>		<bibl><title>Dark Island</title></bibl>					<date when="1935-04-02">2 -</date>
-                <date when="1935-04-02">2	-</date>		<bibl><title>Love's cruelty</title></bibl>				<date when="1935-04-05">	5</date>
-                <date when="1935-04-05">5	</date>		    <bibl><title>Fat of the Cat</title></bibl>				<date when="1935-04-08">8</date>
-                <date when="1935-04-08">8	</date>		    <bibl><title>Happy Prince</title></bibl>				<date when="1935-04-10">10</date>
-                <date when="1935-04-10">10	-</date>		<bibl><title>Way of the Scarlet Pimpernel</title></bibl>	
-                <date when="1935-04-11">11	</date>		    <bibl><title>Animal Story Book</title></bibl>			<date when="1935-04-12">12</date>
+                <date ana="#checkedOut" when="1935-03-11">11 March_</date>	<bibl ana="#borrowedItem"><title>Mandoa</title></bibl>						<date ana="#returned" when="1935-03-13">13</date>
+                <date ana="#checkedOut" when="1935-03-13">13  -</date> 		<bibl ana="#borrowedItem"><title>Harsh voice</title></bibl> 0.50			<date ana="#returned" when="1935-03-18">18</date>
+                <date ana="#checkedOut" when="1935-03-18">18  -</date>		<bibl ana="#borrowedItem"><title>Rose Ansley</title></bibl>					<date ana="#returned" when="1935-03-20">	20</date>
+                <date ana="#checkedOut" when="1935-03-20">20	-</date>		<bibl ana="#borrowedItem"><title>Untilled field</title></bibl>				<date ana="#returned" when="1935-03-23">	23</date>
+                <date ana="#checkedOut" when="1935-03-23">23	</date>		    <bibl ana="#borrowedItem"><title>Mainsail home</title></bibl>				<date ana="#returned" when="1935-03-27">	27</date>
+                <date ana="#checkedOut" when="1935-03-27">27	</date>		    <bibl ana="#borrowedItem"><title>20 years a growing</title></bibl>			<date ana="#returned" when="1395-03-29">	29</date>
+                <date ana="#checkedOut" when="1935-03-29">29	</date>		    <bibl ana="#borrowedItem"><title>Snows of Helicon</title></bibl>			<date ana="#returned" when="1935-04-01">	1</date>
+                <date ana="#checkedOut" when="1935-04-01">1 April</date>		<bibl ana="#borrowedItem"><title>Dark Island</title></bibl>					<date ana="#returned" when="1935-04-02">2 -</date>
+                <date ana="#checkedOut" when="1935-04-02">2	-</date>		<bibl ana="#borrowedItem"><title>Love's cruelty</title></bibl>				<date ana="#returned" when="1935-04-05">	5</date>
+                <date ana="#checkedOut" when="1935-04-05">5	</date>		    <bibl ana="#borrowedItem"><title>Fat of the Cat</title></bibl>				<date ana="#returned" when="1935-04-08">8</date>
+                <date ana="#checkedOut" when="1935-04-08">8	</date>		    <bibl ana="#borrowedItem"><title>Happy Prince</title></bibl>				<date ana="#returned" when="1935-04-10">10</date>
+                <date ana="#checkedOut" when="1935-04-10">10	-</date>		<bibl ana="#borrowedItem"><title>Way of the Scarlet Pimpernel</title></bibl>	
+                <date ana="#checkedOut" when="1935-04-11">11	</date>		    <bibl ana="#borrowedItem"><title>Animal Story Book</title></bibl>			<date ana="#returned" when="1935-04-12">12</date>
                   Renewed 1 m	<date from="1935-04-11" to="1935-05-11">April 11 - May 11 1935</date>	 15v
-                <date when="1935-04-11">  	</date>		    <bibl><title>Right to Jeeves</title></bibl>				<date when="1935-04-17">17</date>
-                <date when="1935-04-17">17	-</date>		<bibl><title>Best Short Stories 1934</title></bibl>	0.50<date when="1935-04-23">23</date>
-                <date when="1935-04-23">23 April.</date>	<bibl><title>Chatto + Windus Miscellany</title></bibl>	<date when="1935-04-27">27 Apr</date>
+                <date ana="#checkedOut" when="1935-04-11">  	</date>		    <bibl ana="#borrowedItem"><title>Right to Jeeves</title></bibl>				<date ana="#returned" when="1935-04-17">17</date>
+                <date ana="#checkedOut" when="1935-04-17">17	-</date>		<bibl ana="#borrowedItem"><title>Best Short Stories 1934</title></bibl>	0.50<date ana="#returned" when="1935-04-23">23</date>
+                <date ana="#checkedOut" when="1935-04-23">23 April.</date>	<bibl ana="#borrowedItem"><title>Chatto + Windus Miscellany</title></bibl>	<date ana="#returned" when="1935-04-27">27 Apr</date>
                 
                   Renewed <date from="1935-11-06" to="1935-12-06">6 Nov -	6 December 1935</date>		 25v
-                <date when="1935-11-06">6 Nov.</date>		<bibl><title>House of the Four Winds</title></bibl>		<date when="1935-11-08">8</date>
-                <date when="1935-11-08">8	-</date>		<bibl><title>New Poetry</title> (revised <persName>Monroe</persName>)</bibl>	<date when="1935-11-09">9</date>
-                <date when="1935-11-09">9	</date>		    <bibl><title>Ripeness is all</title></bibl>				<date when="1935-11-12">12</date>
-                <date when="1935-11-12">12	-</date>		<bibl><title>Banquet</title></bibl>						<date when="1935-11-18">18</date>
-                <date when="1935-11-18">18	-</date>		<bibl><title>Letters Mansfield</title> <biblScope unit="volume" from="2">II</biblScope></bibl>		<date when="1935-11-20">20</date>
-                <date when="1935-11-20">20	</date>		    <bibl><title>England Their England</title></bibl>		<date when="1935-11-27">27</date>
+                <date ana="#checkedOut" when="1935-11-06">6 Nov.</date>		<bibl ana="#borrowedItem"><title>House of the Four Winds</title></bibl>		<date ana="#returned" when="1935-11-08">8</date>
+                <date ana="#checkedOut" when="1935-11-08">8	-</date>		<bibl ana="#borrowedItem"><title>New Poetry</title> (revised <persName>Monroe</persName>)</bibl>	<date ana="#returned" when="1935-11-09">9</date>
+                <date ana="#checkedOut" when="1935-11-09">9	</date>		    <bibl ana="#borrowedItem"><title>Ripeness is all</title></bibl>				<date ana="#returned" when="1935-11-12">12</date>
+                <date ana="#checkedOut" when="1935-11-12">12	-</date>		<bibl ana="#borrowedItem"><title>Banquet</title></bibl>						<date ana="#returned" when="1935-11-18">18</date>
+                <date ana="#checkedOut" when="1935-11-18">18	-</date>		<bibl ana="#borrowedItem"><title>Letters Mansfield</title> <biblScope unit="volume" from="2">II</biblScope></bibl>		<date ana="#returned" when="1935-11-20">20</date>
+                <date ana="#checkedOut" when="1935-11-20">20	</date>		    <bibl ana="#borrowedItem"><title>England Their England</title></bibl>		<date ana="#returned" when="1935-11-27">27</date>
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <head>
                 					<persName ref="#rowe.gw">ROWE-DUTTON</persName>
                 </head>	
                 <ab>
-                <date when="1935-11-27">27 Nov-</date>		<bibl><title>Up in the hills</title></bibl>					<date when="1935-11-29">29</date>
-                <date when="1935-11-29">29	"</date>		<bibl><title>Murder in the Orient Ex</title></bibl>			<date when="1935-12-03"> 3</date>
-                <date when="1935-11-29">	</date>		    <bibl><title>Portrait in a mirror</title></bibl>			<date when="1935-12-03">3</date>
-            	<date when="1935-12-03">3	-</date>		<bibl><title>Secret Agent</title></bibl>					<date when="1935-12-07">7</date>
-            	<date when="1935-12-07">7	-</date>		<bibl><title>House in Paris</title></bibl>  extra <unclear/> <date when="1935-12-06">6 Dec</date>	  <date when="1935-12-12">12 Dec</date>
+                <date ana="#checkedOut" when="1935-11-27">27 Nov-</date>		<bibl ana="#borrowedItem"><title>Up in the hills</title></bibl>					<date ana="#returned" when="1935-11-29">29</date>
+                <date ana="#checkedOut" when="1935-11-29">29	"</date>		<bibl ana="#borrowedItem"><title>Murder in the Orient Ex</title></bibl>			<date ana="#returned" when="1935-12-03"> 3</date>
+                <date ana="#checkedOut" when="1935-11-29">	</date>		    <bibl ana="#borrowedItem"><title>Portrait in a mirror</title></bibl>			<date ana="#returned" when="1935-12-03">3</date>
+            	<date ana="#checkedOut" when="1935-12-03">3	-</date>		<bibl ana="#borrowedItem"><title>Secret Agent</title></bibl>					<date ana="#returned" when="1935-12-07">7</date>
+            	<date ana="#checkedOut" when="1935-12-07">7	-</date>		<bibl ana="#borrowedItem"><title>House in Paris</title></bibl>  extra <unclear/> <date when="1935-12-06">6 Dec</date>	  <date when="1935-12-12">12 Dec</date>
             	
             		will start new subsc.	6 days early
             	<date when="1936">1936</date>
             		Renewed. <date from="1936-06-09" to="1936-07-09">June 9th	-	July 9th.</date> 1v.	15.--
-            	<date when="1936-06-09">June 9.</date>		<bibl><title>Confessions of a young man</title></bibl>.		<date when="1936-06-18">June. 18</date>
-            	<date when="1936-06-18">	 18</date>.	    <bibl><title>Shadowline</title></bibl>.						<date when="1936-06-23">23</date>
-            	<date when="1936-06-23">	 23</date>		<bibl><title>An Outcast of the Islands</title></bibl>		<date when="1936-06-29">29.</date>
-            	<date when="1936-06-29">	 29</date>		<bibl><title>Hail and Farewell</title></bibl>				<date when="1936-07-15">15.</date>
+            	<date ana="#checkedOut" when="1936-06-09">June 9.</date>		<bibl ana="#borrowedItem"><title>Confessions of a young man</title></bibl>.		<date ana="#returned" when="1936-06-18">June. 18</date>
+            	<date ana="#checkedOut" when="1936-06-18">	 18</date>.	    <bibl ana="#borrowedItem"><title>Shadowline</title></bibl>.						<date ana="#returned" when="1936-06-23">23</date>
+            	<date ana="#checkedOut" when="1936-06-23">	 23</date>		<bibl ana="#borrowedItem"><title>An Outcast of the Islands</title></bibl>		<date ana="#returned" when="1936-06-29">29.</date>
+            	<date ana="#checkedOut" when="1936-06-29">	 29</date>		<bibl ana="#borrowedItem"><title>Hail and Farewell</title></bibl>				<date ana="#returned" when="1936-07-15">15.</date>
                 </ab>
                 </div>
                 </div>

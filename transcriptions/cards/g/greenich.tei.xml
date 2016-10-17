@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="gree.sy">Sybil Greenich</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -58,10 +49,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/greenich/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -73,7 +64,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                					<ab><persName ref="gree.sy">GREENICH</persName>
                <date when="1938">1938</date>	<address><persName ref="gree.sy">Miss Sybil Greenich</persName>
                			<street>34 bis rue Molitor</street></address>
@@ -84,14 +75,14 @@
                							paid 90
                					balance due	.30	paid
                									 <date when="1938-05-20">May 20</date>
-               <date when="1938-05-14">	May 14</date>	<bibl><title>Extremes Meet</title></bibl>			<date when="1938-05-20">May 20</date>
-               		<date when="1938-05-14">14</date>	<bibl><title>The Red Saint</title></bibl>			<date when="1938-05-20">May 20</date>
-               <date when="1938-05-20">May 20</date>	<bibl><title>Road Deeping</title></bibl>			<date when="1938-07-09">July 9</date>
-               		<date when="1938-05-20">20</date>	<bibl><title>Figure of Eight</title></bibl>			<date when="1938-07-09">July 9</date>
+               <date ana="#checkedOut" when="1938-05-14">	May 14</date>	<bibl ana="#borrowedItem" corresp="mep:00c99m"><title>Extremes Meet</title></bibl>			<date ana="#returned" when="1938-05-20">May 20</date>
+               		<date ana="#checkedOut" when="1938-05-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00kf20"><title>The Red Saint</title></bibl>			<date ana="#returned" when="1938-05-20">May 20</date>
+               <date ana="#checkedOut" when="1938-05-20">May 20</date>	<bibl ana="#borrowedItem" corresp="mep:00kf39"><title>Road Deeping</title></bibl>			<date ana="#returned" when="1938-07-09">July 9</date>
+               		<date ana="#checkedOut" when="1938-05-20">20</date>	<bibl ana="#borrowedItem" corresp="mep:000s9t"><title>Figure of Eight</title></bibl>			<date ana="#returned" when="1938-07-09">July 9</date>
                					</ab>
                </div>	
                <div type="verso"> 
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                </div> 
               </div>  

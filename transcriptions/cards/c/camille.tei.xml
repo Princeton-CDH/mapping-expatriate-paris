@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#cami.ge">Georgette Camille</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -62,16 +53,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/c/camille/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
@@ -79,7 +70,7 @@
                 
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 
                 <head>  
                 <date when="1933">1933</date>	
@@ -92,29 +83,29 @@
                 </head>
                 <ab>
                 				dep ref. <date when="1933-11-02">Nov 2</date>		8O v
-                <date when="1933-10-31">Oct 31</date>	<bibl><title>Goodbye Stranger</title></bibl>			<date when="1933-11-02">Nov 2</date>
+                <date ana="#checkedOut" when="1933-10-31">Oct 31</date>	<bibl ana="#borrowedItem" corresp="mep:003t5k"><title>Goodbye Stranger</title></bibl>			<date ana="#returned" when="1933-11-02">Nov 2</date>
                 <date when="1934">1934</date>
-                <date when="1934-07-05">5 July</date>	<bibl><title>Dawn's Left Hand</title></bibl>
-                			reg. letter <date when="1934-11-15">Nov 15</date> owes 35
+                <date ana="#checkedOut" when="1934-07-05">5 July</date>	<bibl ana="#borrowedItem" corresp="mep:003t6w"><title>Dawn's Left Hand</title></bibl>
+                			reg. letter <date ana="#returned" when="1934-11-15">Nov 15</date> owes 35
                 <date when="1938">1938</date>
                 		subscription by the day 2 v dep 50 frs
                 									ref. <date when="1938-01-17">Jan 17</date>
-                <date when="1938-01-15">Jan 15</date>	<bibl><title>Nightwood</title></bibl>					 <date when="1938-01-17"> Jan 17</date>
+                <date ana="#checkedOut" when="1938-01-15">Jan 15</date>	<bibl ana="#borrowedItem" corresp="mep:001b85"><title>Nightwood</title></bibl>					 <date ana="#checkedOut" when="1938-01-17"> Jan 17</date>
                 			also returned Monday or Tuesday
                 	(lent years ago) paid 4 frs for 
-                					loan of <bibl><title>Nightwood</title></bibl> 2 days
+                					loan of <bibl ana="#borrowedItem" corresp="mep:001b85"><title>Nightwood</title></bibl> 2 days
                 </ab>
                 </div>
             
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank-->
                 </div>
                 </div>
             
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <head>
                 <date when="1938">1938</date>		
                             <persName ref="#cami.ge">Mlle Georgette CAMILLE</persName>
@@ -126,12 +117,12 @@
                 			by the day 2v
                 				dep ref. <date when="1938-05-23">May 23</date>	50,00
                 				
-                <date when="1938-05-19">May 19</date>		<bibl><title>Restoration Comedy</title>. <persName>Dobrée</persName></bibl> <date when="1933-05-23">May 23</date>
+                <date ana="#checkedOut" when="1938-05-19">May 19</date>		<bibl ana="#borrowedItem" corresp="mep:003t76"><title>Restoration Comedy</title>. <persName>Dobrée</persName></bibl> <date ana="#returned" when="1933-05-23">May 23</date>
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 <!-- verso blank-->
                 </div>
                 </div>

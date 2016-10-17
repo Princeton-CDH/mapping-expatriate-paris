@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#boun.ol">Olga Louise Bouniols</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -55,10 +46,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/bouniols/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
@@ -66,7 +57,7 @@
             
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1936">1936</date>			<persName ref="#boun.ol">BOUNIOLS</persName>
                 				                        Madame
@@ -81,54 +72,54 @@
                 				 					   (<date when="1936-02-27">Feb. 27</date>
                 </ab>
                 <ab>
-                <date when="1936-02-18">Feb 19</date>		<bibl><title>Pointed Roofs</title></bibl>	Wants <bibl><title>Backwater</title></bibl>.    <date when="1936-02-21">21.</date>
-                <date when="1936-02-19">	</date>		    <bibl><title>Inquisitor</title></bibl>			                <date when="1936-03-04">March 4</date> 
-                <date when="1936-02-21">	21</date>		<bibl><title>Portrait of Clare</title></bibl>			  	    <date when="1936-03-04">Mar 4</date>
-                <date when="1936-02-21">	</date>		    <bibl><title>Venetian Blinds</title></bibl> is this back?	
-                			                                Keeping <bibl><title>Backwater</title></bibl>
-                <date when="1936-02-27">	27</date>		<bibl><title>As the earth turns</title></bibl>.				    <date when="1936-03-09">March 9</date>
-                <date when="1936-03-04">Mar 4</date>		<bibl><title>Backwater</title></bibl>						    <date when="1936-03-09">March 9</date>
-                <date when="1936-03-04">	</date>		    <bibl><title>Pin to see the Peepshow</title></bibl>			    <date when="1936-03-09">March 9</date>
-                <date when="1936-03-09">	9</date>		<bibl><title>Aran Islands</title></bibl>
-                <date when="1936-03-09">	</date>		    <bibl><title>Plagued by the Nightingale</title></bibl>		    <date when="1936-03-10">March 10</date>
-                <date when="1936-03-09">	9</date>		<bibl><title>Shadows on the Rock</title></bibl>	 owes 2.50 	    <date when="1936-03-10">March 10</date>
-                <date when="1936-03-10"> 10	</date>	        <bibl><title>Lucy Gayheart</title></bibl> 1v a day - 1f Pd. 3f	<date when="1936-03-11">11</date>
-                owes .50 Pd.<date when="1936-03-10"></date> <bibl><title>Hounds of Spring</title></bibl>					<date when="1936-03-13">13</date>
-                <date when="1936-03-10"> 	</date>		    <bibl><title>Saint Ignatius</title></bibl>						<date when="1936-03-23">23</date>
-                <date when="1936-03-13"> 	13</date>		<bibl><title>Life of Francis Thompson</title></bibl> + .50 plus	<date when="1936-04-10">Ap 10.</date>
-                <date when="1936-03-13"> 	</date>		    <bibl><title>Honeycomb</title></bibl>				 + .50 1.00	Pd. <date when="1936-04-17">17</date>
-                <date when="1936-03-13"> 	</date>		    <bibl><title>Tunnel</title></bibl>					 + .50		<date when="1936-03-20">20</date>
-                <date when="1936-03-17"> 	17</date>		<bibl><title>Blood relations</title></bibl> + .50				<date when="1936-03-23">23</date>
-                Paid <date when="1936-03-17">	</date>	    <bibl><title>Interim</title></bibl>. 		+ .50				<date when="1936-03-23">23</date>
-                <date when="1936-03-23">	23.</date>		<bibl><title>Deadlock</title></bibl>.							<date when="1936-03-31">31</date>
-                <date when="1936-03-23">	</date>		    <bibl><title>Revolving Lights</title></bibl>.				    <date when="1936-04-10">Ap. 10</date>
-                <date when="1936-03-23">    </date>			<bibl><title>Trap</title></bibl>.					+ .50	    <date when="1936-04-10">Ap. 10</date>
-                <date when="1936-03-23">    </date>			<bibl><title>Root + the Flower</title></bibl>		+ .50	    <date when="1936-04-10">Ap. 10</date>
+                <date ana="#checkedOut" when="1936-02-18">Feb 19</date>		<bibl ana="#borrowedItem"><title>Pointed Roofs</title></bibl>	Wants <bibl ana="#borrowedItem"><title>Backwater</title></bibl>.    <date ana="#returned" when="1936-02-21">21.</date>
+                <date ana="#checkedOut" when="1936-02-19">	</date>		    <bibl ana="#borrowedItem"><title>Inquisitor</title></bibl>			                <date ana="#returned" when="1936-03-04">March 4</date> 
+                <date ana="#checkedOut" when="1936-02-21">	21</date>		<bibl ana="#borrowedItem"><title>Portrait of Clare</title></bibl>			  	    <date ana="#returned" when="1936-03-04">Mar 4</date>
+                <date ana="#checkedOut" when="1936-02-21">	</date>		    <bibl ana="#borrowedItem"><title>Venetian Blinds</title></bibl> is this back?	
+                			                                Keeping <bibl ana="#borrowedItem"><title>Backwater</title></bibl>
+                <date ana="#checkedOut" when="1936-02-27">	27</date>		<bibl ana="#borrowedItem"><title>As the earth turns</title></bibl>.				    <date ana="#returned" when="1936-03-09">March 9</date>
+                <date ana="#checkedOut" when="1936-03-04">Mar 4</date>		<bibl ana="#borrowedItem"><title>Backwater</title></bibl>						    <date ana="#returned" when="1936-03-09">March 9</date>
+                <date ana="#checkedOut" when="1936-03-04">	</date>		    <bibl ana="#borrowedItem"><title>Pin to see the Peepshow</title></bibl>			    <date ana="#returned" when="1936-03-09">March 9</date>
+                <date ana="#checkedOut" when="1936-03-09">	9</date>		<bibl ana="#borrowedItem"><title>Aran Islands</title></bibl>
+                <date ana="#checkedOut" when="1936-03-09">	</date>		    <bibl ana="#borrowedItem"><title>Plagued by the Nightingale</title></bibl>		    <date ana="#returned" when="1936-03-10">March 10</date>
+                <date ana="#checkedOut" when="1936-03-09">	9</date>		<bibl ana="#borrowedItem"><title>Shadows on the Rock</title></bibl>	 owes 2.50 	    <date ana="#returned" when="1936-03-10">March 10</date>
+                <date ana="#checkedOut" when="1936-03-10"> 10	</date>	        <bibl ana="#borrowedItem"><title>Lucy Gayheart</title></bibl> 1v a day - 1f Pd. 3f	<date ana="#returned" when="1936-03-11">11</date>
+                owes .50 Pd.<date ana="#checkedOut" when="1936-03-10"/> <bibl ana="#borrowedItem"><title>Hounds of Spring</title></bibl>					<date ana="#returned" when="1936-03-13">13</date>
+                <date ana="#checkedOut" when="1936-03-10"> 	</date>		    <bibl ana="#borrowedItem"><title>Saint Ignatius</title></bibl>						<date ana="#returned" when="1936-03-23">23</date>
+                <date ana="#checkedOut" when="1936-03-13"> 	13</date>		<bibl ana="#borrowedItem"><title>Life of Francis Thompson</title></bibl> + .50 plus	<date ana="#returned" when="1936-04-10">Ap 10.</date>
+                <date ana="#checkedOut" when="1936-03-13"> 	</date>		    <bibl ana="#borrowedItem"><title>Honeycomb</title></bibl>				 + .50 1.00	Pd. <date ana="#returned" when="1936-04-17">17</date>
+                <date ana="#checkedOut" when="1936-03-13"> 	</date>		    <bibl ana="#borrowedItem"><title>Tunnel</title></bibl>					 + .50		<date ana="#returned" when="1936-03-20">20</date>
+                <date ana="#checkedOut" when="1936-03-17"> 	17</date>		<bibl ana="#borrowedItem"><title>Blood relations</title></bibl> + .50				<date ana="#returned" when="1936-03-23">23</date>
+                Paid <date ana="#checkedOut" when="1936-03-17">	</date>	    <bibl ana="#borrowedItem"><title>Interim</title></bibl>. 		+ .50				<date ana="#returned" when="1936-03-23">23</date>
+                <date ana="#checkedOut" when="1936-03-23">	23.</date>		<bibl ana="#borrowedItem"><title>Deadlock</title></bibl>.							<date ana="#returned" when="1936-03-31">31</date>
+                <date ana="#checkedOut" when="1936-03-23">	</date>		    <bibl ana="#borrowedItem"><title>Revolving Lights</title></bibl>.				    <date ana="#returned" when="1936-04-10">Ap. 10</date>
+                <date ana="#checkedOut" when="1936-03-23">    </date>			<bibl ana="#borrowedItem"><title>Trap</title></bibl>.					+ .50	    <date ana="#returned" when="1936-04-10">Ap. 10</date>
+                <date ana="#checkedOut" when="1936-03-23">    </date>			<bibl ana="#borrowedItem"><title>Root + the Flower</title></bibl>		+ .50	    <date ana="#returned" when="1936-04-10">Ap. 10</date>
                 			                                 owes 32frs. fines. paid             <date when="1936-05-08">May 8</date>
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <ab>
-                <date when="1936-04-10">Ap. 10</date>		<bibl><title>Procession</title></bibl>						    <date when="1936-05-08">May 8</date>
-                <date when="1936-04-10">Ap. 10</date>		<bibl><title>Balliols</title></bibl>						    <date when="1936-05-08">May 8</date>
-                <date when="1936-05-08">May 8</date>		<bibl><title>The Wedding</title></bibl>						    <date when="1936-05-14">May 14</date>
-                <date when="1936-05-08">May 8</date>		<bibl><persName>T.E. Lawrence</persName></bibl>					    <date when="1936-05-14">"	14</date>
-                <date when="1936-05-14">	14</date>		<bibl><title>Three Lives</title></bibl>							<date when="1936-05-19">19</date>
-                 bought		<bibl><title>The Magic Mountain</title></bibl> owes 18 frs.
-                 			<bibl><title>Night and Day</title></bibl>			22 frs
-                 			<bibl><title>Voyage Out</title></bibl>.				22 frs
+                <date ana="#checkedOut" when="1936-04-10">Ap. 10</date>		<bibl ana="#borrowedItem"><title>Procession</title></bibl>						    <date ana="#returned" when="1936-05-08">May 8</date>
+                <date ana="#checkedOut" when="1936-04-10">Ap. 10</date>		<bibl ana="#borrowedItem"><title>Balliols</title></bibl>						    <date ana="#returned" when="1936-05-08">May 8</date>
+                <date ana="#checkedOut" when="1936-05-08">May 8</date>		<bibl ana="#borrowedItem"><title>The Wedding</title></bibl>						    <date ana="#returned" when="1936-05-14">May 14</date>
+                <date ana="#checkedOut" when="1936-05-08">May 8</date>		<bibl ana="#borrowedItem"><persName>T.E. Lawrence</persName></bibl>					    <date ana="#returned" when="1936-05-14">"	14</date>
+                <date ana="#checkedOut" when="1936-05-14">	14</date>		<bibl ana="#borrowedItem"><title>Three Lives</title></bibl>							<date ana="#checkedOut" when="1936-05-19">19</date>
+                 bought		<bibl ana="#borrowedItem"><title>The Magic Mountain</title></bibl> owes 18 frs.
+                 			<bibl ana="#borrowedItem"><title>Night and Day</title></bibl>			22 frs
+                 			<bibl ana="#borrowedItem"><title>Voyage Out</title></bibl>.				22 frs
                  									62 frs
                  	
-                <date when="1936-05-19"> 	19</date>		<bibl><title>Sister Teresa</title></bibl>	2 fr a day			<date when="1936-05-26">26</date>
-                <date when="1936-05-19"> 	19</date>		<bibl><title>Evelyn Innes</title></bibl>   2 frs a day		<date when="1936-05-26">26</date>
+                <date ana="#checkedOut" when="1936-05-19"> 	19</date>		<bibl ana="#borrowedItem"><title>Sister Teresa</title></bibl>	2 fr a day			<date ana="#returned" when="1936-05-26">26</date>
+                <date ana="#checkedOut" when="1936-05-19"> 	19</date>		<bibl ana="#borrowedItem"><title>Evelyn Innes</title></bibl>   2 frs a day		<date ana="#returned" when="1936-05-26">26</date>
                  									28 frs pd.
                  								deposit refunded 60frs
-                <date when="1936-11-10">Nov 10</date>		<bibl><title>Prayer for my son</title></bibl>.	2 fr a day	    <date when="1936-11-17">Nov. 17</date>
+                <date ana="#checkedOut" when="1936-11-10">Nov 10</date>		<bibl ana="#borrowedItem"><title>Prayer for my son</title></bibl>.	2 fr a day	    <date ana="#returned" when="1936-11-17">Nov. 17</date>
                  							  pd. 10v
-                <date when="1936-11-27"> 	 27	</date>	    <bibl><title>Whiteoak Harvest</title></bibl>				    <date when="1936-11-24">Nov 24</date>
-                <date when="1936-11-27"> 	 17.</date>	    <bibl><title>Exile</title></bibl>.			  pd 28v		    <date when="1936-11-24">Nov 24</date>
+                <date ana="#checkedOut" when="1936-11-27"> 	 27	</date>	    <bibl ana="#borrowedItem"><title>Whiteoak Harvest</title></bibl>				    <date ana="#returned" when="1936-11-24">Nov 24</date>
+                <date ana="#checkedOut" when="1936-11-27"> 	 17.</date>	    <bibl ana="#borrowedItem"><title>Exile</title></bibl>.			  pd 28v		    <date ana="#returned" when="1936-11-24">Nov 24</date>
                 </ab>
                 </div>
                 </div>

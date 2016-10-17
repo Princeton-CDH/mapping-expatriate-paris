@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#pore.ja">Jacques Porel</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,23 +44,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/porel/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
            <div type="card">
               <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 				<persName ref="pore.ja">POREL</persName>
                 <date when="1922">1922</date>
@@ -79,19 +70,19 @@
                 			
                 			6 mos 	1 vol				35
                 			
-                <date when="1922-12-04">Dec 4</date>		<bibl><title>Portrait of the Artist.</title></bibl>
-                <date when="1922-12-30">Dec 30</date>		<bibl><title>Trumpet Major</title></bibl>				<date when="1923-09-24">Sept. 24</date>
+                <date ana="#checkedOut" when="1922-12-04">Dec 4</date>		<bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist.</title></bibl>
+                <date ana="#checkedOut" when="1922-12-30">Dec 30</date>		<bibl ana="#borrowedItem" corresp="mep:00181f"><title>Trumpet Major</title></bibl>				<date ana="#returned" when="1923-09-24">Sept. 24</date>
                 				brought back <date when="1932-05-02">May 2 1932</date> 
                 				\ by <persName ref="cros.ca">Mrs Carerre Crosby</persName>
                 </ab>
                 </div>
                <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                </div>
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab>
                 <date when="1931">1931</date>		<persName ref="pore.ja">POREL</persName>
                 	
@@ -101,11 +92,11 @@
                 			 for The B.S. Press
                 			 
                 			 
-                <date when="1931-09-30">Sept 30</date>		<bibl><title>Torrents of Spring	</title></bibl>			<date when="1931-10-26">Oct 26</date>
-                				<bibl><edition>(1st ed.)</edition></bibl></ab>
+                <date ana="#checkedOut" when="1931-09-30">Sept 30</date>		<bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring	</title></bibl>			<date ana="#checkedOut" when="1931-10-26">Oct 26</date>
+                				<bibl ana="#borrowedItem"><edition>(1st ed.)</edition></bibl></ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 </div>

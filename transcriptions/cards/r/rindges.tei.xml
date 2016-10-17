@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rind.m">M. B. Rindges</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -54,16 +45,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rindges/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div><div>
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1927-06-02">1927	
                 June 2</date>		<persName ref="#rind.m">RINDGES</persName>						<persName ref="#rind.m">Ms. M.B. Rindges</persName>
@@ -75,13 +66,13 @@
                 				1 mois	1 vol.		25
                 					Deposit			50.</ab>
              <ab>   					
-                <date when="1927-06-02">Juin 2.</date>	<bibl><title>Here are Ladies.</title></bibl>					<date when="1927-06-03">Juin 3.</date>
-                 <date when="1927-06-03">"	 3</date>	<bibl><title>Johanna Godden</title></bibl>						<date when="1927-06-08"> -	 8</date>
-                  	 <date when="1927-06-08">8.</date>	<bibl><title>World in the Making.</title></bibl>				 <date when="1927-06-14">"	14</date>
-                  	<date when="1927-06-14">14</date>	<bibl><title>Harmer John</title></bibl> 	0.25				 <date when="1927-06-20">"	20.</date>
-                 <date when="1927-06-20">"	20</date>	<bibl><title>Spanish Journey</title></bibl>						 <date when="1927-06-25">"	25.</date>
+                <date ana="#checkedOut" when="1927-06-02">Juin 2.</date>	<bibl ana="#borrowedItem" corresp="mep:004q0f"><title>Here are Ladies.</title></bibl>					<date ana="#returned" when="1927-06-03">Juin 3.</date>
+                 <date ana="#checkedOut" when="1927-06-03">"	 3</date>	<bibl ana="#borrowedItem" corresp="mep:00nd7r"><title>Johanna Godden</title></bibl>						<date ana="#returned" when="1927-06-08"> -	 8</date>
+                  	 <date ana="#checkedOut" when="1927-06-08">8.</date>	<bibl ana="#borrowedItem" corresp="mep:00vs6x"><title>World in the Making.</title></bibl>				 <date ana="#returned" when="1927-06-14">"	14</date>
+                  	<date ana="#checkedOut" when="1927-06-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00sx57"><title>Harmer John</title></bibl> 	0.25				 <date ana="#returned" when="1927-06-20">"	20.</date>
+                 <date ana="#checkedOut" when="1927-06-20">"	20</date>	<bibl ana="#borrowedItem" corresp="mep:00jq1n"><title>Spanish Journey</title></bibl>						 <date ana="#returned" when="1927-06-25">"	25.</date>
               </ab>  </div><div>
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

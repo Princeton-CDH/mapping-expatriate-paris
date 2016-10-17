@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Publisher's Card: Rhein-Verlag</title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -54,16 +45,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rhein/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
-               <div type="recto"> <pb facs="#s1" />
+               <div type="recto"> <pb facs="#s1"/>
                 
            <head>     <date when="1930">1930</date>
                 				<orgName>RHEIN VERLAG</orgName>
@@ -74,33 +65,33 @@
                 
                 </head><ab>
                 
-                <date when="1930-03-28">Mars 28</date>		Duty &amp; tip for parcel containing
-                			<bibl><edition>2nd ed.</edition> of <title>Ulysses</title></bibl> to be signed			14.65
+                <date ana="#checkedOut" when="1930-03-28">Mars 28</date>		Duty &amp; tip for parcel containing
+                			<bibl ana="#borrowedItem"><edition>2nd ed.</edition> of <title>Ulysses</title></bibl> to be signed			14.65
                 			
-                <date when="1930-04-03">April 3.</date>	2 parcels of <bibl><title>"</title></bibl> sent back signed			12.90
+                <date ana="#checkedOut" when="1930-04-03">April 3.</date>	2 parcels of <bibl ana="#borrowedItem"><title>"</title></bibl> sent back signed			12.90
                 
-                <date when="1930-04-26">April 26</date>	3 parcels								19,35
+                <date ana="#returned" when="1930-04-26">April 26</date>	3 parcels								19,35
                 
                 
-                <date when="1930-06-20">June 20th</date>	<bibl><title>Ulysses</title></bibl> sent by reg. post				89.75
+                <date ana="#checkedOut" when="1930-06-20">June 20th</date>	<bibl ana="#borrowedItem"><title>Ulysses</title></bibl> sent by reg. post				89.75
                 
-                <date when="1930-08-06">Aug 6</date>			<bibl><title>"</title></bibl>									83.75
+                <date ana="#checkedOut" when="1930-08-06">Aug 6</date>			<bibl ana="#borrowedItem"><title>"</title></bibl>									83.75
                 
-                 <date when="1930-08-06">"	"</date>			<bibl><title>"</title>	<edition>french edition</edition></bibl>					60
+                 <date ana="#checkedOut" when="1930-08-06">"	"</date>			<bibl ana="#borrowedItem"><title>"</title>	<edition>french edition</edition></bibl>					60
                  
                  						ref. post		- - - -		 7 50
                  						
-                <date when="1930-10-07">Oct 7th</date>					Total due 	  - - - - 	   287.90
+                <date ana="#returned" when="1930-10-07">Oct 7th</date>					Total due 	  - - - - 	   287.90
                 
                 <date when="1930-11-21">Nov 21</date>		sent bill
                  <date when="1930-11-28">"	28</date>		 "	detailed bill..
                  
-                <date when="1930-12-10">Dec 10</date>	 1 copy <bibl><title>Ulysses</title></bibl> (presented)
+                <date ana="#checkedOut" when="1930-12-10">Dec 10</date>	 1 copy <bibl ana="#borrowedItem"><title>Ulysses</title></bibl> (presented)
                 													14.
-                <date when="1930-12-17">Dec 17</date>		paid duty on 2 parcels		
-                			containing 2 <bibl><edition>3rd ed</edition> <title>Ulysses</title></bibl> 2 vols each</ab>
+                <date ana="#checkedOut" when="1930-12-17">Dec 17</date>		paid duty on 2 parcels		
+                			containing 2 <bibl ana="#borrowedItem"><edition>3rd ed</edition> <title>Ulysses</title></bibl> 2 vols each</ab>
               </div>  
-             <div type="verso">   <pb facs="#s2" />
+             <div type="verso">   <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                </div> </div>

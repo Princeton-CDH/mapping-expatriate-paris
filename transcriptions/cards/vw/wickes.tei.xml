@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wick.ki">Miss Kitty Wickes</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/wickes/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1933">1933</date>		<persName ref="#wick.ki">WICKES</persName>
                     					           <address><addrLine><num type="telephone">passy 45.60</num></addrLine>
@@ -78,9 +69,9 @@
                     								dep	30
                     </ab>								
                     <ab>
-                    <date when="1933-12-05">Dec 5</date>	<bibl><title>Selected Poems</title> <author>E. Dickinson</author></bibl>	<date when="1933-12-12">Dec 12</date>
-                    <date when="1933-12-12">	12</date>	<bibl><title>Collected Poems of Elinor Wylie</title></bibl>
-                    								card <date when="1934-01-11">11.1.34</date>
+                    <date ana="#checkedOut" when="1933-12-05">Dec 5</date>	<bibl ana="#borrowedItem" corresp="mep:00470k"><title>Selected Poems</title> <author>E. Dickinson</author></bibl>	<date ana="#returned" when="1933-12-12">Dec 12</date>
+                    <date ana="#checkedOut" when="1933-12-12">	12</date>	<bibl ana="#borrowedItem" corresp="mep:00db0b"><title>Collected Poems of Elinor Wylie</title></bibl>
+                    								card <date ana="#returned" when="1934-01-11">11.1.34</date>
                     								 "	 <date when="1934-01-27">27.1.34</date>
                     								letter <date when="1934-03-02">2-3-34</date>
                     </ab>
@@ -90,13 +81,13 @@
                     </ab>
                     <ab>
                     		ordered (paid 12.50)
-                    	<bibl><title>Inland Voyage - Travels with a 
+                    	<bibl ana="#borrowedItem" corresp="mep:00bx1v"><title>Inland Voyage - Travels with a 
                     	
                     		Donkey</title>	<publisher>Tauchnitz</publisher></bibl>
                     		
                     		Volume 	 "		contains
                     		
-                    		only <bibl><title>Inland Voyage</title></bibl>
+                    		only <bibl ana="#borrowedItem" corresp="mep:00db1n"><title>Inland Voyage</title></bibl>
                     		
                     		Eng. edition contains both-
                     		
@@ -110,7 +101,7 @@
                     </ab>	
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

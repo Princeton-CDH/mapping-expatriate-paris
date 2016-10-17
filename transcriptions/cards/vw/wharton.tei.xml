@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#whar">Madame James Wharton</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -59,17 +50,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/wharton/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                             <persName ref="#whar">WHARTON</persName>
                     <date when="1927-02-28">1927	
@@ -86,13 +77,13 @@
                     		
                     </ab>
                     <ab>                        paid by <persName ref="#whar">Mrs W</persName>. Mch 26.
-                	<date when="1927-02-28">Feb 28</date>	<bibl><title>Great Abnormal</title></bibl> 0.25 = 1.75 (maid said she paid 2f to someone else here)		<date when="1927-03-07">Mch 7</date>
-                	<date when="1927-03-28">Mch 28</date>	<bibl><title>Composition</title></bibl> 	0.25 <bibl><title>H. Ellis</title> by <author>I Goldberg</author></bibl> 0.50	<date when="1927-03-28">"	28</date>
+                	<date ana="#checkedOut" when="1927-02-28">Feb 28</date>	<bibl ana="#borrowedItem"><title>Great Abnormal</title></bibl> 0.25 = 1.75 (maid said she paid 2f to someone else here)		<date ana="#returned" when="1927-03-07">Mch 7</date>
+                	<date ana="#checkedOut" when="1927-03-28">Mch 28</date>	<bibl ana="#borrowedItem"><title>Composition</title></bibl> 	0.25 <bibl ana="#borrowedItem"><title>H. Ellis</title> by <author>I Goldberg</author></bibl> 0.50	<date ana="#returned" when="1927-03-28">"	28</date>
                 												1.50 paid
                 	</ab>											
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>    

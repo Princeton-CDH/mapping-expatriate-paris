@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#spen.st">Stephen Spender</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -57,41 +48,41 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/spender/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
         <surface xml:id="s7">
-            <graphic url="00000007.jp2" />
+            <graphic url="00000007.jp2"/>
         </surface>
         <surface xml:id="s8">
-            <graphic url="00000008.jp2" />
+            <graphic url="00000008.jp2"/>
         </surface>
         <surface xml:id="s9">
-            <graphic url="00000009.jp2" />
+            <graphic url="00000009.jp2"/>
         </surface>
         <surface xml:id="s10">
-            <graphic url="00000010.jp2" />
+            <graphic url="00000010.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <ab>
                     Spender paid
                     
@@ -119,12 +110,12 @@
                     </ab>				
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>  
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <ab>
                     		<date when="1938-05-21">May 21 1938</date>
                     		
@@ -143,12 +134,12 @@
                     </ab>
                 </div> 
                 <div type="verso">
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                 </div> 
                 <div type="recto">
-                    <pb facs="#s5" />
+                    <pb facs="#s5"/>
                     <head>
                     <date when="1937">1937</date>		
                                                     <address><persName ref="#spen.st">SPENDER						
@@ -174,7 +165,7 @@
                     													                                                               	 
                     <date when="1937-05-22">May 22</date>	2 wires to Spain				                                                 37,40			 
                     <date when="1937-07-07">July 7</date>	1 wire	   "					                                                 53 65			 
-                    <date when="1937-07-26">July 26</date>	<bibl><author>Picasso </author><title>Dreams &amp; Lies Franco</title></bibl>   200
+                    <date ana="#checkedOut" when="1937-07-26">July 26</date>	<bibl ana="#borrowedItem" corresp="mep:00r225"><author>Picasso </author><title>Dreams &amp; Lies Franco</title></bibl>   200
                     		                                                                                  Tar paper						  3
                     		                                                                                  sending by Cole's postal		 14 75
                     					                                                                      "feuille"			             50
@@ -182,46 +173,46 @@
                     		                                                                                  stamp on M. Cowley letter		  1 50
                     									                                                                                    311,80
                     									   
-                    			<date when="1937-10-22">Oct 22</date> wrote to <persName ref="#spen.st">S S</persName> told him 	146,20
+                    			<date ana="#returned" when="1937-10-22">Oct 22</date> wrote to <persName ref="#spen.st">S S</persName> told him 	146,20
                     				remained to his credit
                     	<date when="1937-11-03">Nov 3 1937</date>	paid 146,20 to <persName>Mrs Spender</persName>
                     	
                 	
-                	<date when="1938-05-21">May 21 1938</date>			paid by cheque £4 at 177
+                	<date ana="#checkedOut" when="1938-05-21">May 21 1938</date>			paid by cheque £4 at 177
                 										                                  	 708
                 										                                  	 290
                 			                                         	                     418
-                                <bibl>Spanish book</bibl> 		                                    250
-                				<bibl><title>Nourritures Terr</title></bibl>.	                     15		 
-                				<bibl><title>Picasso</title><author> G. Stein</author></bibl>	     25 
+                                <bibl ana="#borrowedItem">Spanish book</bibl> 		                                    250
+                				<bibl ana="#borrowedItem" corresp="mep:00r23g"><title>Nourritures Terr</title></bibl>.	                     15		 
+                				<bibl ana="#borrowedItem" corresp="mep:00d457"><title>Picasso</title><author> G. Stein</author></bibl>	     25 
                 									                                                290	
                 										gave <persName ref="#spen.st">Spender</persName> cash
                 	</ab>									
                 </div> 
                 <div type="verso">
-                    <pb facs="#s6" />
+                    <pb facs="#s6"/>
                     
                     <!-- Verso Blank -->
                 </div> 
                 <div type="recto">
-                    <pb facs="#s7" />
+                    <pb facs="#s7"/>
                     <head>
                     			<persName ref="#spen.st">STEPHEN SPENDER</persName>
                     </head>
                     <ab>
                     <date when="1939-07">July 1939</date>
-                    		<persName ref="#beac.sy">SB</persName>	lent <persName>Thomassin</persName> <bibl><title>Listener</title></bibl> containing
+                    		<persName ref="#beac.sy">SB</persName>	lent <persName>Thomassin</persName> <bibl ana="#borrowedItem" corresp="mep:00jj0z"><title>Listener</title></bibl> containing
                     		  story by <persName ref="#spen.st">S S</persName>
                     </ab>		  
                     		  
                 </div> 
                 <div type="verso">
-                    <pb facs="#s8" />
+                    <pb facs="#s8"/>
                     
                     <!-- Blank Verso -->
                 </div>    
                 <div type="recto">
-                    <pb facs="#s9" />
+                    <pb facs="#s9"/>
                     <head>
                     <date when="1939">1939</date>		<address><persName>Thomassin		SPENDER
                     			                          Frantz</persName>
@@ -231,8 +222,8 @@
                     			(from <persName ref="#sach.ma">Maurice Sachs</persName>)
                     			
                     			
-                	<date when="1939-06-24">June 24</date>		<bibl><title>The Listener</title>22 dec 1939</bibl>		<date when="1939-08">Aug</date>
-                					containing <bibl><persName ref="#spen.st">Stephen Spender</persName>'s
+                	<date ana="#checkedOut" when="1939-06-24">June 24</date>		<bibl ana="#borrowedItem" corresp="mep:00q16w"><title>The Listener</title>22 dec 1939</bibl>		<date ana="#checkedOut" when="1939-08">Aug</date>
+                					containing <bibl ana="#borrowedItem" corresp="mep:00r24s"><persName ref="#spen.st">Stephen Spender</persName>'s
                 						<title>Deus Ex Machina</title></bibl>
                 						
                 							returned when shop
@@ -241,7 +232,7 @@
                 	</ab>						
                 </div> 
                 <div type="verso">
-                    <pb facs="#s10" />
+                    <pb facs="#s10"/>
                     
                     <!-- Verso Blank -->
                 </div>    

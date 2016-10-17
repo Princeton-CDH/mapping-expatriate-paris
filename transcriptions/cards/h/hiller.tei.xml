@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#hile.hi">Hilaire Hiler</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -64,17 +55,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/h/hiller/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                	<head>
                	<date when="1934">1934</date>	
                	        <persName ref="#hile.hi">Hilaire HILER</persName>
@@ -87,17 +78,17 @@
                								dep		30
                							refunded L.B.
                									pour <persName ref="#hile.hi">Hiler</persName>
-               	<date when="1934-03-01">March 1</date>	<bibl><title>Ways of Behaviorism</title></bibl>			<date when="1934-03-02">March 2</date>
-               	<date when="1934-03-02">March 2</date>	<bibl><title>How to be happy though Human</title></bibl> <date when="1934-03-05">March 5</date>
-               	<date when="1934-03-05">	5</date>	<bibl><title>Totem &amp; Taboo</title></bibl>				<date when="1934-03-20">March 20</date>
-               	<date when="1934-03-20">	20</date>	<bibl><title>Psychoanalysis</title>, <persName>Bradley</persName></bibl>		<date when="1934-04-16">April 16</date>
-               	<date when="1934-04-16">16 April</date> <bibl><title>Problems of Lay analysis</title></bibl>	<date when="1934-04-20">April 20</date>
-               	<date when="1934-04-20">20 April</date> <bibl><title>Psychopathology of Everyday Life</title></bibl> <date when="1934-06-28">June 28</date>
+               	<date ana="#checkedOut" when="1934-03-01">March 1</date>	<bibl ana="#borrowedItem" corresp="mep:00k74z"><title>Ways of Behaviorism</title></bibl>			<date ana="#returned" when="1934-03-02">March 2</date>
+               	<date ana="#checkedOut" when="1934-03-02">March 2</date>	<bibl ana="#borrowedItem" corresp="mep:00hp6p"><title>How to be happy though Human</title></bibl> <date ana="#returned" when="1934-03-05">March 5</date>
+               	<date ana="#checkedOut" when="1934-03-05">	5</date>	<bibl ana="#borrowedItem" corresp="mep:008g51"><title>Totem &amp; Taboo</title></bibl>				<date ana="#returned" when="1934-03-20">March 20</date>
+               	<date ana="#checkedOut" when="1934-03-20">	20</date>	<bibl ana="#borrowedItem" corresp="mep:007p8c"><title>Psychoanalysis</title>, <persName>Bradley</persName></bibl>		<date ana="#returned" when="1934-04-16">April 16</date>
+               	<date ana="#checkedOut" when="1934-04-16">16 April</date> <bibl ana="#borrowedItem" corresp="mep:00s705"><title>Problems of Lay analysis</title></bibl>	<date ana="#returned" when="1934-04-20">April 20</date>
+               	<date ana="#checkedOut" when="1934-04-20">20 April</date> <bibl ana="#borrowedItem" corresp="mep:007v64"><title>Psychopathology of Everyday Life</title></bibl> <date ana="#returned" when="1934-06-28">June 28</date>
                							card <date when="1934-06-27">27 June</date>
                	</ab>
                	</div>
                 <div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                	</div>
                 </div>

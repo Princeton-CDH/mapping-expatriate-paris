@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#summ.be">Bessie Summerell</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -62,17 +53,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/summerell/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1900-11-12">Nov 12</date>		<address><persName ref="#summ.be">Miss Bessie Summerell</persName>
                     				                            <street>14, rue Gay Lussac</street></address>
@@ -82,12 +73,12 @@
                     								Dep 		7
                     </ab>	
                     <ab>
-                    <date when="1900-11-12">Nov 12</date>	<bibl><title>Sonnets of Shakespeare</title>, <author>Butler</author></bibl>	<date when="1900-11-20">Nov 20</date>
-                    <date when="1900-11-20">Nov 20</date>	<bibl><title>The Way of all Flesh</title></bibl>				            <date when="1900-11-29">Nov 29</date>
-                    <date when="1900-11-29">Nov 29</date>	<bibl><title>The Dolls House</title></bibl>						            <date when="1900-12-02">Dec 2</date>
-                    <date when="1900-12-02">Dec 2</date>	<bibl><title>Emerson's Poems</title></bibl>					               	<date when="1900-12-06">Dec 6</date>
-                    <date when="1900-12-06">Dec 6</date>	<bibl><author>Yeats</author> <title>Plays</title></bibl>					<date when="1900-12-15">Dec 15</date>
-                    <date when="1900-12-15">Dec 15</date>	<bibl><title>Half Hours</title></bibl>							            <date when="1900-12-31">Dec 31st</date>	
+                    <date ana="#checkedOut" when="1900-11-12">Nov 12</date>	<bibl ana="#borrowedItem" corresp="mep:00q176"><title>Sonnets of Shakespeare</title>, <author>Butler</author></bibl>	<date ana="#returned" when="1900-11-20">Nov 20</date>
+                    <date ana="#checkedOut" when="1900-11-20">Nov 20</date>	<bibl ana="#borrowedItem" corresp="mep:00c74h"><title>The Way of all Flesh</title></bibl>				            <date ana="#returned" when="1900-11-29">Nov 29</date>
+                    <date ana="#checkedOut" when="1900-11-29">Nov 29</date>	<bibl ana="#borrowedItem" corresp="mep:00rj8w"><title>The Dolls House</title></bibl>						            <date ana="#returned" when="1900-12-02">Dec 2</date>
+                    <date ana="#checkedOut" when="1900-12-02">Dec 2</date>	<bibl ana="#borrowedItem" corresp="mep:00rj96"><title>Emerson's Poems</title></bibl>					               	<date ana="#returned" when="1900-12-06">Dec 6</date>
+                    <date ana="#checkedOut" when="1900-12-06">Dec 6</date>	<bibl ana="#borrowedItem" corresp="mep:000s1b"><author>Yeats</author> <title>Plays</title></bibl>					<date ana="#returned" when="1900-12-15">Dec 15</date>
+                    <date ana="#checkedOut" when="1900-12-15">Dec 15</date>	<bibl ana="#borrowedItem" corresp="mep:00rk0p"><title>Half Hours</title></bibl>							            <date ana="#returned" when="1900-12-31">Dec 31st</date>	
                     </ab>
                     <ab>
                             Ren. <date when="1901-01-25">Jan. 25th</date> Sent a p.c.
@@ -96,7 +87,7 @@
                     </ab>			
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>    

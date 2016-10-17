@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#metc.th">Thomas N. Metcalf</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,10 +48,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/metcalf/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         
        
@@ -69,23 +60,23 @@
     <text>
         <body>
           <div type="card"><div type="recto">
-                <pb facs="#s1" /><head>
+                <pb facs="#s1"/><head>
                 			<persName ref="#metc.th">METCALF</persName>
                 			<persName ref="#metc.th">Mr Thomas N. Metcalf</persName>
                 			<address><name>Le Grand Hotel</name>
                 			<settlement>Arcachon,</settlement> <region>Gironde</region></address></head>
            <ab>     
-                July 8	<bibl><title>Year before Last</title></bibl>					45,00
-                		<bibl><title>Doom of Youth</title></bibl> (can return it)		57,75
-                		<bibl><title>Ulysses</title></bibl>							   125
-                		<bibl><title>Criterion</title></bibl>							45
-                		<bibl><title>Transition</title></bibl>							35
+                July 8	<bibl ana="#borrowedItem" corresp="mep:00815f"><title>Year before Last</title></bibl>					45,00
+                		<bibl ana="#borrowedItem" corresp="mep:00cn0k"><title>Doom of Youth</title></bibl> (can return it)		57,75
+                		<bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>							   125
+                		<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title></bibl>							45
+                		<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition</title></bibl>							35
                 						post				10
                 							Pol. by check 317.75
-                	15	<bibl><title>Axel's Castle</title></bibl>						60-
+                	15	<bibl ana="#borrowedItem" corresp="mep:00142n"><title>Axel's Castle</title></bibl>						60-
                 						post				 2.25</ab>
                 </div><div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank --></div>
             </div>	
                 

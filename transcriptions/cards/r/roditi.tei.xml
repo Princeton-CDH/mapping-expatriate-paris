@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rodi.ed">Eduoard Roditi</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -63,35 +54,35 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/roditi/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-            <graphic url="00000005.jp2" />
+            <graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-            <graphic url="00000006.jp2" />
+            <graphic url="00000006.jp2"/>
         </surface>
         <surface xml:id="s7">
-            <graphic url="00000007.jp2" />
+            <graphic url="00000007.jp2"/>
         </surface>
         <surface xml:id="s8">
-            <graphic url="00000008.jp2" />
+            <graphic url="00000008.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1928-05-18">1928 May 18</date>	
                 			         <persName ref="#rodi.ed">RODITI</persName>
@@ -108,24 +99,24 @@
                 			Deposit					   100
                 			
                 				subs to <date to="1928-08-18">August 18th</date>.
-                <date when="1928-05-18">May 18</date>		<bibl><title>Enormous Room</title></bibl>	ren.				<date when="1928-06-28">June 28</date>
-                <date when="1928-05-18"> "	18</date>		<bibl><title>Contemporaneous &amp; <unclear/></title></bibl>       	<date when="1928-05-24">May 24</date>
-                <date when="1928-05-24"> "	24</date>		<bibl><title>White buildings</title></bibl>.					<date when="1928-06-04">Juin 4.</date>
-                <date when="1928-06-04">June 4</date>		<bibl><title>Pot of Earth</title></bibl>.						<date when="1928-06-06"> "	6.</date>
-                <date when="1928-06-06"> "	 6</date>		<bibl><title>Tulips &amp; Chimneys</title></bibl>				<date when="1928-06-15">"	15</date>
-                <date when="1928-06-15"> "	15</date>		<bibl><title>Great American Novel</title></bibl>.				<date when="1928-06-20"> "	20</date>
-                <date when="1928-06-20"> "	20</date>		<bibl><title>Pierglass</title></bibl>							<date when="1928-06-25"> "	25</date>
-                <date when="1928-06-25"> "	25</date>		<bibl><title>Collected Poems of HD</title></bibl>				<date when="1928-07-03">July 3</date>
-                <date when="1928-06-25"> 	</date>		    <bibl><title>Poetry &amp; Criticism</title></bibl>					<date when="1928-07-29"> "	 29</date>
-                <date when="1928-06-29"> 	29</date>		<bibl><title>Observations</title></bibl>						<date when="1928-07-12"> "	 12</date>
-                <date when="1928-07-03">July 3</date>		<bibl><title>Road to Xanadu</title></bibl>						<date when="1928-09-21">Sept 21</date>
-                <date when="1928-07-12">	12</date>		<bibl><title>Explorations</title></bibl>						<date when="1928-08-10">Aug 10</date>
+                <date ana="#checkedOut" when="1928-05-18">May 18</date>		<bibl ana="#borrowedItem" corresp="mep:00514d"><title>Enormous Room</title></bibl>	ren.				<date ana="#returned" when="1928-06-28">June 28</date>
+                <date ana="#checkedOut" when="1928-05-18"> "	18</date>		<bibl ana="#borrowedItem" corresp="mep:00t25k"><title>Contemporaneous &amp; <unclear/></title></bibl>       	<date ana="#returned" when="1928-05-24">May 24</date>
+                <date ana="#checkedOut" when="1928-05-24"> "	24</date>		<bibl ana="#borrowedItem" corresp="mep:000324"><title>White buildings</title></bibl>.					<date ana="#returned" when="1928-06-04">Juin 4.</date>
+                <date ana="#checkedOut" when="1928-06-04">June 4</date>		<bibl ana="#borrowedItem" corresp="mep:00t26w"><title>Pot of Earth</title></bibl>.						<date ana="#returned" when="1928-06-06"> "	6.</date>
+                <date ana="#checkedOut" when="1928-06-06"> "	 6</date>		<bibl ana="#borrowedItem" corresp="mep:00hc66"><title>Tulips &amp; Chimneys</title></bibl>				<date ana="#returned" when="1928-06-15">"	15</date>
+                <date ana="#checkedOut" when="1928-06-15"> "	15</date>		<bibl ana="#borrowedItem" corresp="mep:00h80h"><title>Great American Novel</title></bibl>.				<date ana="#returned" when="1928-06-20"> "	20</date>
+                <date ana="#checkedOut" when="1928-06-20"> "	20</date>		<bibl ana="#borrowedItem" corresp="mep:00t276"><title>Pierglass</title></bibl>							<date ana="#returned" when="1928-06-25"> "	25</date>
+                <date ana="#checkedOut" when="1928-06-25"> "	25</date>		<bibl ana="#borrowedItem" corresp="mep:00t28h"><title>Collected Poems of HD</title></bibl>				<date ana="#returned" when="1928-07-03">July 3</date>
+                <date ana="#checkedOut" when="1928-06-25"> 	</date>		    <bibl ana="#borrowedItem" corresp="mep:00t29t"><title>Poetry &amp; Criticism</title></bibl>					<date ana="#returned" when="1928-07-29"> "	 29</date>
+                <date ana="#checkedOut" when="1928-06-29"> 	29</date>		<bibl ana="#borrowedItem" corresp="mep:00rb2c"><title>Observations</title></bibl>						<date ana="#returned" when="1928-07-12"> "	 12</date>
+                <date ana="#checkedOut" when="1928-07-03">July 3</date>		<bibl ana="#borrowedItem" corresp="mep:002436"><title>Road to Xanadu</title></bibl>						<date ana="#returned" when="1928-09-21">Sept 21</date>
+                <date ana="#checkedOut" when="1928-07-12">	12</date>		<bibl ana="#borrowedItem" corresp="mep:00h880"><title>Explorations</title></bibl>						<date ana="#returned" when="1928-08-10">Aug 10</date>
                 <date when="1928-08-10">Aug. 10</date>		S.R. to <date to="1928-09-18">September 18th</date> = 35
-                <date when="1928-08-10">	 10</date>		<bibl><title>Happy Marriage</title></bibl>						<date when="1928-09-21">Sept 21</date>     
+                <date ana="#checkedOut" when="1928-08-10">	 10</date>		<bibl ana="#borrowedItem" corresp="mep:00t309"><title>Happy Marriage</title></bibl>						<date ana="#returned" when="1928-09-21">Sept 21</date>     
                 </ab>           		
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>
@@ -133,7 +124,7 @@
                 
                 <div type="card"> 
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <head>
                 <date when="1931-05-29">1931 May 29th</date>
                 		              <persName ref="#rodi.ge">RODITI</persName>
@@ -143,9 +134,9 @@
                 						</address>
                 </head>								
                 <ab>									
-                			<bibl><title>Selected Speeches on Foreign Policy</title></bibl>		15
-                		6 	<bibl><title>Benn's Library</title></bibl>							36
-                			<bibl><title>New Machiavelli</title></bibl>							25
+                			<bibl ana="#borrowedItem" corresp="mep:00t31m"><title>Selected Speeches on Foreign Policy</title></bibl>		15
+                		6 	<bibl ana="#borrowedItem" corresp="mep:00t32x"><title>Benn's Library</title></bibl>							36
+                			<bibl ana="#borrowedItem" corresp="mep:001z0n"><title>New Machiavelli</title></bibl>							25
                 			
                 								Total _ _	  frs:  76.
                 			sent by Colis Postal
@@ -153,7 +144,7 @@
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 </div>
@@ -161,7 +152,7 @@
                 
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s5" />
+                <pb facs="#s5"/>
                 <head>
                 <date when="1932">1932</date>			<persName ref="#rodi.ge">Roditi Mr Georges</persName>
                                                         <address>
@@ -175,15 +166,15 @@
                 							dep	  ref.	50
                 <date when="1932-11-17">Dec 14</date>	17
                 										33
-                <date when="1932-11-17">Nov 17</date>	<bibl><title>Pleasures of Poetry</title> <biblScope unit="part" from="1">1st Series</biblScope></bibl>	<date when="1932-11-22">22 Nov.</date>
-                <date when="1932-11-22">	22</date>	<bibl><title>Hogarth Essay</title><biblScope unit="volume" from="8">VIII</biblScope></bibl> due <date when="1932-12-06">6 dec.</date>
+                <date ana="#checkedOut" when="1932-11-17">Nov 17</date>	<bibl ana="#borrowedItem" corresp="mep:00j74q"><title>Pleasures of Poetry</title> <biblScope unit="part" from="1">1st Series</biblScope></bibl>	<date ana="#returned" when="1932-11-22">22 Nov.</date>
+                <date ana="#checkedOut" when="1932-11-22">	22</date>	<bibl ana="#borrowedItem" corresp="mep:00t337"><title>Hogarth Essay</title><biblScope unit="volume" from="8">VIII</biblScope></bibl> due <date ana="#returned" when="1932-12-06">6 dec.</date>
                 					card <date when="1932-12-14">14 Dec</date>  lost
                 				paid 17 frs to replace it
                 </ab>
                 </div>
             
                 <div type="verso">
-                <pb facs="#s6" />
+                <pb facs="#s6"/>
                 
                 <!-- Verso Blank -->
                 </div>
@@ -191,7 +182,7 @@
                 
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s7" />
+                <pb facs="#s7"/>
                 <head>
                 <date>1932</date>			<persName ref="#rodi.ma">RODITI</persName>
                 	
@@ -204,13 +195,13 @@
                 						1 m	  1 vol.		frs. 22.50
                 							deposit ref.	11s
                 								<persName ref="#rodi.ma">Marcel D. Roditi</persName>
-                <date when="1932-09-27">Sept. 27</date>	<bibl><title>Arnold Bennett's Journal</title></bibl>		<date when="1932-10-18">Oct 18</date>
-                <date when="1932-10-18">Oct. 18</date>	<bibl><title>Six Plays</title></bibl> card <date when="1932-07-11">7/11/32</date>		3f pd.
+                <date ana="#checkedOut" when="1932-09-27">Sept. 27</date>	<bibl ana="#borrowedItem" corresp="mep:00t34j"><title>Arnold Bennett's Journal</title></bibl>		<date ana="#returned" when="1932-10-18">Oct 18</date>
+                <date ana="#checkedOut" when="1932-10-18">Oct. 18</date>	<bibl ana="#borrowedItem" corresp="mep:004609"><title>Six Plays</title></bibl> card <date ana="#returned" when="1932-07-11">7/11/32</date>		3f pd.
                 </ab>
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s8" />
+                <pb facs="#s8"/>
                 
                 <!-- Verso Blank -->
                 </div>

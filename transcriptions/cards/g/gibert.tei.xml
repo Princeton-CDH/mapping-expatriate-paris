@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="gibe.ma">Madeleine Gibert</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,22 +50,22 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/gibert/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
+        	<graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
+        	<graphic url="00000006.jp2"/>
         </surface>
         
      
@@ -84,7 +75,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>returned everything <date when="1944-04-01">April 1944</date>
                 
                 <persName ref="gibe.ma">Madame Jean Gibert</persName>
@@ -93,37 +84,37 @@
                 </ab>
                </div> 
                <div type="verso"> 
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                </div> 
                <div type="recto"> 
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab><date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Madeleine Gibert</persName>
                 			<street>37 rue de Rivoli</street></address>
                     
-               <date when="1944-03-27"> March 27</date>	<bibl><title>Full Moon in March</title></bibl>		returned
-                			<bibl><title>Autobiographies	</title></bibl>		all
-                			<bibl><title>Dramatis Personae</title></bibl>
-                				(wants <bibl><title>Lady Gregory</title></bibl>)</ab>
+               <date ana="#checkedOut" when="1944-03-27"> March 27</date>	<bibl ana="#borrowedItem" corresp="mep:00121s"><title>Full Moon in March</title></bibl>		returned
+                			<bibl ana="#borrowedItem" corresp="mep:000w71"><title>Autobiographies	</title></bibl>		all
+                			<bibl ana="#borrowedItem" corresp="mep:000w0v"><title>Dramatis Personae</title></bibl>
+                				(wants <bibl ana="#borrowedItem" corresp="mep:00k472"><title>Lady Gregory</title></bibl>)</ab>
                </div> 
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 <!-- verso blank -->
                 </div>
                 <div type="recto">
-                <pb facs="#s5" />
+                <pb facs="#s5"/>
                     <ab>
                 <date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Gibert</persName>
                 			<street>37 rue de Rivoli</street>
                 			<settlement>Paris</settlement></address>
                 
-               <date when="1944-03-27"> March 27</date>	<bibl><title>Full Moon in March</title></bibl>	<date when="1944-04-01">April</date>
-                        <bibl><title>Autobiographies</title></bibl>		<date when="1944-04-01">"</date>
-                        <bibl><title>Dramatis Personae</title></bibl>	<date when="1944-04-01">"</date>
+               <date ana="#checkedOut" when="1944-03-27"> March 27</date>	<bibl ana="#borrowedItem" corresp="mep:00121s"><title>Full Moon in March</title></bibl>	<date ana="#checkedOut" when="1944-04-01">April</date>
+                        <bibl ana="#borrowedItem" corresp="mep:000w71"><title>Autobiographies</title></bibl>		<date ana="#checkedOut" when="1944-04-01">"</date>
+                        <bibl ana="#borrowedItem" corresp="mep:000w0v"><title>Dramatis Personae</title></bibl>	<date ana="#returned" when="1944-04-01">"</date>
                 	</ab>		
                 </div>
                 <div type="verso">
-                <pb facs="#s6" />
+                <pb facs="#s6"/>
                 <!-- verso blank -->
                 </div>
                 

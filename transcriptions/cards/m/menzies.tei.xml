@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#menz.el">Elsa Menzies</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/menzies/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         
        
@@ -74,34 +65,34 @@
         <body>
            <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                <head> <date when="1937">1937</date>			<persName ref="#menz.el">MENZIES
                 Miss. Elsa</persName>		<address><street>5 rue de l'Odéon.</street> <district>VI</district></address>
                 			</head><ab>
                 					1m. 1v.		15.00
                 						Deposit	30.00</ab><ab>
             	
-            	<date when="1937-04-09">April 9.</date> <bibl><title>Lady Chatterley's lover.</title></bibl>		<date when="1937-04-14">April 14</date>
-            		<date when="1937-04-09">9</date>	<bibl><title>Florentine Dagger</title></bibl>				<date when="1937-04-10">April 10</date>
-            		<date when="1937-04-10">10</date>	<bibl><title>Madame Fears the dart.</title></bibl>			<date when="1937-04-12">April 12</date>
-            		<date when="1937-04-12">12.</date>	<bibl><title>Seven for a secret_</title></bibl>				<date when="1937-04-14">April. 14</date>
-            		<date when="1937-04-14">14.</date>	<bibl><title>Ladies whose bright eyes.</title></bibl>		<date when="1937-04-19">April 19</date>
-            		<date when="1937-04-14">14</date>	<bibl><title>Royal Flush.</title></bibl>					<date when="1937-04-22">April 22</date>
-            		<date when="1937-04-16">16.</date>	<bibl><title>Tuesday club murders_</title></bibl>			<date when="1937-04-19">April 19</date>
-            		<date when="1937-04-19">19</date>	<bibl><title>Young Lady Dazincourt.</title></bibl>			<date when="1937-04-21">April 21.</date>
-            		<date when="1937-04-21">21.</date>	<bibl><title>Masks off at midnight</title></bibl>			<date when="1937-04-24">April 24</date>
-            		<date when="1937-04-24">24</date>	<bibl><title>Loving spirit</title></bibl>					<date when="1937-04-27">April 27.</date>
-            		<date when="1937-04-27">27</date>	<bibl><title>Morning Pride</title></bibl>					<date when="1937-05-03">May 3.</date>
+            	<date ana="#checkedOut" when="1937-04-09">April 9.</date> <bibl ana="#borrowedItem" corresp="mep:00560j"><title>Lady Chatterley's lover.</title></bibl>		<date ana="#returned" when="1937-04-14">April 14</date>
+            		<date ana="#checkedOut" when="1937-04-09">9</date>	<bibl ana="#borrowedItem" corresp="mep:009c44"><title>Florentine Dagger</title></bibl>				<date ana="#returned" when="1937-04-10">April 10</date>
+            		<date ana="#checkedOut" when="1937-04-10">10</date>	<bibl ana="#borrowedItem" corresp="mep:00855j"><title>Madame Fears the dart.</title></bibl>			<date ana="#returned" when="1937-04-12">April 12</date>
+            		<date ana="#checkedOut" when="1937-04-12">12.</date>	<bibl ana="#borrowedItem" corresp="mep:009c5f"><title>Seven for a secret_</title></bibl>				<date ana="#returned" when="1937-04-14">April. 14</date>
+            		<date ana="#checkedOut" when="1937-04-14">14.</date>	<bibl ana="#borrowedItem" corresp="mep:009c6r"><title>Ladies whose bright eyes.</title></bibl>		<date ana="#returned" when="1937-04-19">April 19</date>
+            		<date ana="#checkedOut" when="1937-04-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00288v"><title>Royal Flush.</title></bibl>					<date ana="#returned" when="1937-04-22">April 22</date>
+            		<date ana="#checkedOut" when="1937-04-16">16.</date>	<bibl ana="#borrowedItem" corresp="mep:00716h"><title>Tuesday club murders_</title></bibl>			<date ana="#returned" when="1937-04-19">April 19</date>
+            		<date ana="#checkedOut" when="1937-04-19">19</date>	<bibl ana="#borrowedItem" corresp="mep:009c72"><title>Young Lady Dazincourt.</title></bibl>			<date ana="#returned" when="1937-04-21">April 21.</date>
+            		<date ana="#checkedOut" when="1937-04-21">21.</date>	<bibl ana="#borrowedItem" corresp="mep:000n8d"><title>Masks off at midnight</title></bibl>			<date ana="#returned" when="1937-04-24">April 24</date>
+            		<date ana="#checkedOut" when="1937-04-24">24</date>	<bibl ana="#borrowedItem" corresp="mep:003q1h"><title>Loving spirit</title></bibl>					<date ana="#returned" when="1937-04-27">April 27.</date>
+            		<date ana="#checkedOut" when="1937-04-27">27</date>	<bibl ana="#borrowedItem" corresp="mep:009c8c"><title>Morning Pride</title></bibl>					<date ana="#checkedOut" when="1937-05-03">May 3.</date>
                 						                                             April
-            			<bibl><title>Murder in the Mews</title></bibl> 1v 50c a day		<date when="1937-04-28">28</date>
-            			<bibl><title>Poetry</title> <author>Shelley</author></bibl>		50c a day.	<date when="1937-04-28">April 28.</date>
-            		<date when="1937-04-28">28.</date>	<bibl><title>A.B.C. Murders</title></bibl>					<date when="1937-04-30">April 30</date>
-            			<bibl><title>My brother Jonathon</title></bibl> 50c.			<date when="1937-05-08">8</date>
-            	<date when="1937-05-03">May 3</date>	<bibl><title>Modern Tales of Horror</title></bibl>			<date when="1937-05-05">May. 5.</date>
-            		<date when="1937-05-05">5</date>	<bibl><title>Red Saint</title></bibl>							<date when="1937-05-08">8</date>
-            		<date when="1937-05-08">8.</date>	<bibl><title>Celebrated Cases of Charlie Chan</title></bibl> <date when="1937-05-12">May 12.</date></ab>
+            			<bibl ana="#borrowedItem" corresp="mep:00520f"><title>Murder in the Mews</title></bibl> 1v 50c a day		<date ana="#checkedOut" when="1937-04-28">28</date>
+            			<bibl ana="#borrowedItem" corresp="mep:000f8r"><title>Poetry</title> <author>Shelley</author></bibl>		50c a day.	<date ana="#returned" when="1937-04-28">April 28.</date>
+            		<date ana="#checkedOut" when="1937-04-28">28.</date>	<bibl ana="#borrowedItem" corresp="mep:005s91"><title>A.B.C. Murders</title></bibl>					<date ana="#checkedOut" when="1937-04-30">April 30</date>
+            			<bibl ana="#borrowedItem" corresp="mep:009c9p"><title>My brother Jonathon</title></bibl> 50c.			<date ana="#returned" when="1937-05-08">8</date>
+            	<date ana="#checkedOut" when="1937-05-03">May 3</date>	<bibl ana="#borrowedItem" corresp="mep:009d05"><title>Modern Tales of Horror</title></bibl>			<date ana="#returned" when="1937-05-05">May. 5.</date>
+            		<date ana="#checkedOut" when="1937-05-05">5</date>	<bibl ana="#borrowedItem" corresp="mep:009d1g"><title>Red Saint</title></bibl>							<date ana="#returned" when="1937-05-08">8</date>
+            		<date ana="#checkedOut" when="1937-05-08">8.</date>	<bibl ana="#borrowedItem" corresp="mep:002b2j"><title>Celebrated Cases of Charlie Chan</title></bibl> <date ana="#returned" when="1937-05-12">May 12.</date></ab>
             	</div>
-            <div type="verso">	<pb facs="#s2" />
+            <div type="verso">	<pb facs="#s2"/>
             	<!-- verso blank-->
             		</div>
             	</div>

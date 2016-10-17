@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wall.ro">Mr. Robert Waller</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -61,23 +52,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/waller/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     	</facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                   	<pb facs="#s1" />
+                   	<pb facs="#s1"/>
                     <head>  
                     <date when="1939">1939</date>		<address><persName ref="#wall.ro">WALLER
                       			                        Robert</persName>
@@ -89,34 +80,34 @@
                       		dep ret <date when="1939-05-30">5/30/</date>	50
                     </ab>
                     <ab>
-                    <date when="1939-03-24">March 24</date>	<bibl><title>Mozart</title>, <author>Kerst</author></bibl>		<date when="1939-03-25">Mar 25</date>
-                    <date when="1939-03-25"> "  25</date>	<bibl><title>Beethoven </title>(<author>Sullivan</author></bibl><date when="1939-03-28">March 28</date>
-                    <date when="1939-03-28"> "	 28</date>	<bibl><title>Stories of God</title></bibl>					    <date when="1939-03-30">Mar. 30</date>
-                    <date when="1939-03-30"> "	 30</date>	<bibl><title>Tempest</title></bibl>							    <date when="1939-04-03">Apr 3</date>
-                    <date when="1939-04-03"> Apr 3</date>	<bibl><title>Milton's Prosody</title></bibl>				    <date when="1939-04-12">April 12</date>
-                    <date when="1939-04-12"> "	 12</date>	<bibl><title>Arthur Rimbaud</title>, <author>E. Starke</author></bibl>	<date when="1939-04-14">April 14</date>
-                    <date when="1939-04-14">  	 14</date>	<bibl><title>Family Reunion</title></bibl> 2v	pd.			    <date when="1939-04-21">Apr 21</date>
-                    <date when="1939-04-21">   	 21</date>	<bibl><title>Paradise Lost</title></bibl>					    <date when="1939-04-22">Apr 22</date>
-                    <date when="1939-04-22">   	 22</date>	<bibl><title>Diary of Tolstoy's Wife</title></bibl>		        <date when="1939-05-05">May 5</date>
-                    <date when="1939-05-05">May 5</date>	<bibl><title>Clue to History</title></bibl> 2v				    <date when="1939-05-10">May 10</date>
-                    <date when="1939-05-10"> "	 10</date>	<bibl><title>Poems</title> <author>Tate</author></bibl>			<date when="1939-05-15">May 15</date>
+                    <date ana="#checkedOut" when="1939-03-24">March 24</date>	<bibl ana="#borrowedItem" corresp="mep:00cf5g"><title>Mozart</title>, <author>Kerst</author></bibl>		<date ana="#returned" when="1939-03-25">Mar 25</date>
+                    <date ana="#checkedOut" when="1939-03-25"> "  25</date>	<bibl ana="#borrowedItem" corresp="mep:00cf6s"><title>Beethoven </title>(<author>Sullivan</author></bibl><date ana="#returned" when="1939-03-28">March 28</date>
+                    <date ana="#checkedOut" when="1939-03-28"> "	 28</date>	<bibl ana="#borrowedItem" corresp="mep:00099z"><title>Stories of God</title></bibl>					    <date ana="#returned" when="1939-03-30">Mar. 30</date>
+                    <date ana="#checkedOut" when="1939-03-30"> "	 30</date>	<bibl ana="#borrowedItem" corresp="mep:00cf73"><title>Tempest</title></bibl>							    <date ana="#returned" when="1939-04-03">Apr 3</date>
+                    <date ana="#checkedOut" when="1939-04-03"> Apr 3</date>	<bibl ana="#borrowedItem" corresp="mep:00762n"><title>Milton's Prosody</title></bibl>				    <date ana="#returned" when="1939-04-12">April 12</date>
+                    <date ana="#checkedOut" when="1939-04-12"> "	 12</date>	<bibl ana="#borrowedItem" corresp="mep:00cf8d"><title>Arthur Rimbaud</title>, <author>E. Starke</author></bibl>	<date ana="#returned" when="1939-04-14">April 14</date>
+                    <date ana="#checkedOut" when="1939-04-14">  	 14</date>	<bibl ana="#borrowedItem" corresp="mep:000f92"><title>Family Reunion</title></bibl> 2v	pd.			    <date ana="#returned" when="1939-04-21">Apr 21</date>
+                    <date ana="#checkedOut" when="1939-04-21">   	 21</date>	<bibl ana="#borrowedItem" corresp="mep:00cf9q"><title>Paradise Lost</title></bibl>					    <date ana="#returned" when="1939-04-22">Apr 22</date>
+                    <date ana="#checkedOut" when="1939-04-22">   	 22</date>	<bibl ana="#borrowedItem" corresp="mep:00cg06"><title>Diary of Tolstoy's Wife</title></bibl>		        <date ana="#returned" when="1939-05-05">May 5</date>
+                    <date ana="#checkedOut" when="1939-05-05">May 5</date>	<bibl ana="#borrowedItem" corresp="mep:003c22"><title>Clue to History</title></bibl> 2v				    <date ana="#returned" when="1939-05-10">May 10</date>
+                    <date ana="#checkedOut" when="1939-05-10"> "	 10</date>	<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>Tate</author></bibl>			<date ana="#returned" when="1939-05-15">May 15</date>
                     </ab> 
                     <ab> 
                        Renewed <date from="1939-04-24" to="1939-05-24">April 24	-	May 24 1939</date>		20v
                        				(paid <date when="1939-05-05">May 5</date>)
                     </ab>  
                     <ab>
-                    <date when="1939-05-15">May 15</date>	<bibl><title>Varieties of Religious Experience</title></bibl>	<date when="1939-05-30">May 30</date>
+                    <date ana="#checkedOut" when="1939-05-15">May 15</date>	<bibl ana="#borrowedItem" corresp="mep:00780k"><title>Varieties of Religious Experience</title></bibl>	<date ana="#returned" when="1939-05-30">May 30</date>
                     </ab>  
                 </div>
                 <div type="verso">
-                      <pb facs="#s2" />
+                      <pb facs="#s2"/>
                  
                 
                       <!-- Verso Blank -->
                 </div>
                 <div type="recto">
-                      <pb facs="#s3" />
+                      <pb facs="#s3"/>
                       <head>
                       <date when="1922-08-05">1922
                       August 5</date>	<address><persName>Mr Ernest Walsh</persName>
@@ -128,15 +119,15 @@
                       						Dep			14	7
                       </ab>
                       <ab>
-                      <date when="1922-08-05">August 5</date>	<bibl><title>Dubliners</title></bibl>						BBby
-                      			                                <bibl><title>Cytherea</title></bibl>					<persName>Miss <unclear/></persName>
+                      <date ana="#checkedOut" when="1922-08-05">August 5</date>	<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>						BBby
+                      			                                <bibl ana="#borrowedItem" corresp="mep:001z3k"><title>Cytherea</title></bibl>					<persName>Miss <unclear/></persName>
                         
-                      		<persName>Miss Henry</persName> brought back <bibl><title>The Pretty Lady</title></bibl>
+                      		<persName>Miss Henry</persName> brought back <bibl ana="#borrowedItem" corresp="mep:009n9w"><title>The Pretty Lady</title></bibl>
                       			refunded to her 7c Deposit
                       </ab>
                 </div>
                 <div type="verso">
-                      <pb facs="#s4" />
+                      <pb facs="#s4"/>
                       
                       <!-- Verso Blank -->
                 </div>

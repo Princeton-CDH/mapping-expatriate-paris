@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="jame.t">T.M. James</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -59,10 +50,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/j/james/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -72,7 +63,7 @@
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                	<ab><date when="1926">1926</date>	<persName ref="jame.t">JAMES</persName>
                	<date when="1926-07-28">July 28</date>		<address><persName ref="jame.t">Mr T.M. James</persName>
                					<orgName>Hotel Montalembert</orgName>
@@ -82,21 +73,21 @@
                		1 m 2 vols			20
                		Deposit			   100
                	
-               	<date when="1926-07-28">July 28</date>	<bibl><title>Lucky Prisoner</title></bibl> 0.25				<date when="1926-07-31">July 31</date>
-               	    <date when="1926-07-28">"	"</date>	<bibl><title>Flight</title></bibl> 0.25						<date when="1926-07-31">31</date>
-               	    <date when="1926-07-31">"	31</date>	<bibl><title>Fairy Gold </title></bibl>0.25					<date when="1926-08-04">Aug 4</date>
-               	    <date when="1926-07-31">	31</date>	<bibl><title>Lives of French Chateaux</title></bibl> 0.25	<date when="1926-08-04">"	"</date>
+               	<date ana="#checkedOut" when="1926-07-28">July 28</date>	<bibl ana="#borrowedItem" corresp="mep:009p39"><title>Lucky Prisoner</title></bibl> 0.25				<date ana="#returned" when="1926-07-31">July 31</date>
+               	    <date ana="#checkedOut" when="1926-07-28">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:006983"><title>Flight</title></bibl> 0.25						<date ana="#returned" when="1926-07-31">31</date>
+               	    <date ana="#checkedOut" when="1926-07-31">"	31</date>	<bibl ana="#borrowedItem" corresp="mep:006b8c"><title>Fairy Gold </title></bibl>0.25					<date ana="#returned" when="1926-08-04">Aug 4</date>
+               	    <date ana="#checkedOut" when="1926-07-31">	31</date>	<bibl ana="#borrowedItem" corresp="mep:00kq3h"><title>Lives of French Chateaux</title></bibl> 0.25	<date ana="#returned" when="1926-08-04">"	"</date>
                	<date when="1926-08-04">Aug 4</date>	<unclear/>								<date when="1926-08-06">Aug 6</date>
-               	<date when="1926-08-04">"	"</date>	<bibl><title>Prejudice.	</title></bibl>					<date when="1926-08-06">"	"</date>
-               	<date when="1926-08-06">"	6</date>	<bibl><title>To Tell you the Truth</title></bibl>			<date when="1926-08-13">"	13</date>
+               	<date ana="#checkedOut" when="1926-08-04">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00f18k"><title>Prejudice.	</title></bibl>					<date ana="#returned" when="1926-08-06">"	"</date>
+               	<date ana="#checkedOut" when="1926-08-06">"	6</date>	<bibl ana="#borrowedItem" corresp="mep:00kq4t"><title>To Tell you the Truth</title></bibl>			<date ana="#returned" when="1926-08-13">"	13</date>
                			wrong letter						<date when="1926-08-13">13.</date>
-               	<date when="1926-08-18">	18</date>	<bibl><title>Saviours of <unclear/></title></bibl>	0.25.			<date when="1926-08-23">"	23</date>
-               	    <date when="1926-08-18">"	"</date>	<bibl><title>Pointed Roofs	</title></bibl>				<date when="1926-08-23">"	23</date>
-               <date when="1926-08-28">	"	28 </date>= 23	<bibl><title>Psycho Analysis</title></bibl>	Sept 1st. p.c.
-               	<date when="1926-08-28">"	28</date>	<bibl><title>Barren ground</title></bibl>	Sept. 22. p.c.</ab>
+               	<date ana="#checkedOut" when="1926-08-18">	18</date>	<bibl ana="#borrowedItem" corresp="mep:00kq54"><title>Saviours of <unclear/></title></bibl>	0.25.			<date ana="#returned" when="1926-08-23">"	23</date>
+               	    <date ana="#checkedOut" when="1926-08-18">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs	</title></bibl>				<date ana="#returned" when="1926-08-23">"	23</date>
+               <date ana="#checkedOut" when="1926-08-28">	"	28 </date>= 23	<bibl ana="#borrowedItem" corresp="mep:007p8c"><title>Psycho Analysis</title></bibl>	Sept 1st. p.c.
+               	<date ana="#checkedOut" when="1926-08-28">"	28</date>	<bibl ana="#borrowedItem" corresp="mep:00kq6f"><title>Barren ground</title></bibl>	Sept. 22. p.c.</ab>
                	</div>
                 <div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                </div>
                	

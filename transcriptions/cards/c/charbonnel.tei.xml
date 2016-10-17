@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#char.ma">Mary Maryse Charbonnel</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -64,10 +55,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/c/charbonnel/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
       
     </facsimile>
@@ -75,7 +66,7 @@
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
             	<head>
                 <date when="1937">1937</date>	
             	        <persName ref="#char.ma">MARYSE CHARBONNEL
@@ -87,14 +78,14 @@
             	</head>
                 <ab>
             		  By the day. 		Deposit 50 fr.
-            	<date when="1937-11-29">Nov. 29.</date>	<bibl><title>Rhodes</title> (<persName>Millin</persName>.)</bibl> 2fr day
-            					letter <date when="1938-01-19">Jan 19</date>
+            	<date ana="#checkedOut" when="1937-11-29">Nov. 29.</date>	<bibl ana="#borrowedItem" corresp="mep:00474t"><title>Rhodes</title> (<persName>Millin</persName>.)</bibl> 2fr day
+            					letter <date ana="#returned" when="1938-01-19">Jan 19</date>
             			go to address
             				hopeless
                 </ab>
             	</div>
                 <div type="verso">
-            	<pb facs="#s2" />
+            	<pb facs="#s2"/>
             	<!-- verso blank -->
             	</div>
                 </div>

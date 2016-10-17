@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#deni.el">Madame Maurice Denis</persName> </title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -71,28 +62,28 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/d/denis/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-        	<graphic url="00000003.jp2" />
+        	<graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-        	<graphic url="00000004.jp2" />
+        	<graphic url="00000004.jp2"/>
         </surface>
         <surface xml:id="s5">
-        	<graphic url="00000005.jp2" />
+        	<graphic url="00000005.jp2"/>
         </surface>
         <surface xml:id="s6">
-        	<graphic url="00000006.jp2" />
+        	<graphic url="00000006.jp2"/>
         </surface>
         <surface xml:id="s7">
-        	<graphic url="00000007.jp2" />
+        	<graphic url="00000007.jp2"/>
         </surface>
         <surface xml:id="s8">
-        	<graphic url="00000008.jp2" />
+        	<graphic url="00000008.jp2"/>
         </surface>
        
     
@@ -101,7 +92,7 @@
         <body>
             <div type="card">
             <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>  <date when="1933-09-26">1933 Sept 26</date>		<persName ref="#deni.el">DENIS Madame Maurice</persName>
                 	
                 			<address><orgName>Le Prieuré</orgName>
@@ -109,56 +100,56 @@
                 			
                 			<ab>6 mos 2 vols		90
                 
-                <date when="1933-09-26">Sept 26</date>		<bibl><title>Poems R. Browning 1844-1864</title></bibl>	<date when="1933-10-21">Oct 21</date>
-                <date when="1933-09-26">	</date>		    <bibl><title>Ring &amp; the Book</title></bibl>			<date when="1933-10-21">Oct 21</date>
-                <date when="1933-10-10">Oct 10</date>		<bibl><title>Etruscan Places</title></bibl>				<date when="1933-10-21">Oct 21</date>
-                <date when="1933-10-21">Oct 21</date>		<bibl><title>Mîllòn</title></bibl>						<date when="1933-11-07">Nov 7</date>
-                <date when="1933-11-07">Nov 7</date>		<bibl><title>Swinburne</title></bibl>					<date when="1933-12-05">Dec 5</date>
-                <date when="1933-11-07">	</date>		    <bibl><title>Bulwer</title></bibl>						<date when="1933-12-05">Dec 5</date>
-                <date when="1933-12-05">Dec 5</date>		<bibl><title>Letters of Swinburne</title> <biblScope unit="volume">vol 1</biblScope></bibl>	<date when="1934-01-06">Jan 6</date>
-                <date when="1933-12-05">	</date>		    <bibl><title>Eminent Victorians</title></bibl> <bibl><title>Flush</title></bibl> 0.50 <date>Dec 9</date>
-                <date when="1933-12-09">9</date>		    <bibl><title>Eminent Victorians</title></bibl>			<date when="1934-01-06">Jan 6</date>
-                <date when="1934-01-06">Jan 6</date>		<bibl><title>Landor</title>, <author>Colvin</author></bibl>		<date when="1934-01-30">30</date>
-                <date when="1934-01-06">	</date>		    <bibl><title>Browning's Poems</title></bibl>			<date when="1934-01-30">30</date>
-                <date when="1934-01-30">30</date>		    <bibl><title>Chaucer + his times</title> <author>(Hadow)</author></bibl>	<date when="1934-03-13">March 13</date>
-                <date when="1934-01-30">30</date>		    <bibl><title>England my England</title></bibl>			<date when="1934-03-13">March 13</date>
-                <date when="1934-03-13">M	13</date>		<bibl><title>Pictures from Italy</title></bibl>
-                <date when="1934-03-13">	</date>		    <bibl><title>Scottish queen</title></bibl>	subsc
-                	Renewed <date from="1934-03-26" to="1934-06-26">March 26 - June 26 1934</date> 50v
+                <date ana="#checkedOut" when="1933-09-26">Sept 26</date>		<bibl ana="#borrowedItem"><title>Poems R. Browning 1844-1864</title></bibl>	<date ana="#returned" when="1933-10-21">Oct 21</date>
+                <date ana="#checkedOut" when="1933-09-26">	</date>		    <bibl ana="#borrowedItem"><title>Ring &amp; the Book</title></bibl>			<date ana="#returned" when="1933-10-21">Oct 21</date>
+                <date ana="#checkedOut" when="1933-10-10">Oct 10</date>		<bibl ana="#borrowedItem"><title>Etruscan Places</title></bibl>				<date ana="#returned" when="1933-10-21">Oct 21</date>
+                <date ana="#checkedOut" when="1933-10-21">Oct 21</date>		<bibl ana="#borrowedItem"><title>Mîllòn</title></bibl>						<date ana="#returned" when="1933-11-07">Nov 7</date>
+                <date ana="#checkedOut" when="1933-11-07">Nov 7</date>		<bibl ana="#borrowedItem"><title>Swinburne</title></bibl>					<date ana="#returned" when="1933-12-05">Dec 5</date>
+                <date ana="#checkedOut" when="1933-11-07">	</date>		    <bibl ana="#borrowedItem"><title>Bulwer</title></bibl>						<date ana="#returned" when="1933-12-05">Dec 5</date>
+                <date ana="#checkedOut" when="1933-12-05">Dec 5</date>		<bibl ana="#borrowedItem"><title>Letters of Swinburne</title> <biblScope unit="volume">vol 1</biblScope></bibl>	<date ana="#returned" when="1934-01-06">Jan 6</date>
+                <date ana="#checkedOut" when="1933-12-05">	</date>		    <bibl ana="#borrowedItem"><title>Eminent Victorians</title></bibl> <bibl ana="#borrowedItem"><title>Flush</title></bibl> 0.50 <date ana="#returned">Dec 9</date>
+                <date ana="#checkedOut" when="1933-12-09">9</date>		    <bibl ana="#borrowedItem"><title>Eminent Victorians</title></bibl>			<date ana="#returned" when="1934-01-06">Jan 6</date>
+                <date ana="#checkedOut" when="1934-01-06">Jan 6</date>		<bibl ana="#borrowedItem"><title>Landor</title>, <author>Colvin</author></bibl>		<date ana="#returned" when="1934-01-30">30</date>
+                <date ana="#checkedOut" when="1934-01-06">	</date>		    <bibl ana="#borrowedItem"><title>Browning's Poems</title></bibl>			<date ana="#returned" when="1934-01-30">30</date>
+                <date ana="#checkedOut" when="1934-01-30">30</date>		    <bibl ana="#borrowedItem"><title>Chaucer + his times</title> <author>(Hadow)</author></bibl>	<date ana="#returned" when="1934-03-13">March 13</date>
+                <date ana="#checkedOut" when="1934-01-30">30</date>		    <bibl ana="#borrowedItem"><title>England my England</title></bibl>			<date ana="#returned" when="1934-03-13">March 13</date>
+                <date ana="#checkedOut" when="1934-03-13">M	13</date>		<bibl ana="#borrowedItem"><title>Pictures from Italy</title></bibl>
+                <date ana="#checkedOut" when="1934-03-13">	</date>		    <bibl ana="#borrowedItem"><title>Scottish queen</title></bibl>	subsc
+                	Renewed <date ana="#returned" from="1934-03-26" to="1934-06-26">March 26 - June 26 1934</date> 50v
                 					Renewed to <date when="1934-07-26">July 26</date> 12v
-                <date when="1934-04-20">April 20</date>	<bibl><title>Porgy</title></bibl>						<date when="1934-05-29">May 29</date>
-                <date when="1934-04-20">	</date>		<bibl><title><unclear/> of Buds</title></bibl>			<date when="1934-05-29">May 29</date>
-                <date when="1934-05-29">May 29th</date>	<bibl><title>Walter Savage Landor</title></bibl> (0.50)	<date when="1934-06-05">June 5</date>
-                <date when="1934-06-05">June 5</date>	<bibl><title>Lady Chatterley</title></bibl>				<date when="1934-06-23">June 23</date>
-                <date when="1934-06-05">	</date>		<bibl><title>Twilight in Italy</title></bibl>			<date when="1934-06-23">June 23</date>
-                <date when="1934-06-23">23</date>		<bibl><title>Discoveries (<unclear/>)</title></bibl>	<date when="1934-07-19">July 19</date>
-                <date when="1934-06-23">	</date>		<bibl><title>Son of woman</title></bibl>				<date when="1934-07-19">July 19</date>
+                <date ana="#checkedOut" when="1934-04-20">April 20</date>	<bibl ana="#borrowedItem"><title>Porgy</title></bibl>						<date ana="#returned" when="1934-05-29">May 29</date>
+                <date ana="#checkedOut" when="1934-04-20">	</date>		<bibl ana="#borrowedItem"><title><unclear/> of Buds</title></bibl>			<date ana="#returned" when="1934-05-29">May 29</date>
+                <date ana="#checkedOut" when="1934-05-29">May 29th</date>	<bibl ana="#borrowedItem"><title>Walter Savage Landor</title></bibl> (0.50)	<date ana="#returned" when="1934-06-05">June 5</date>
+                <date ana="#checkedOut" when="1934-06-05">June 5</date>	<bibl ana="#borrowedItem"><title>Lady Chatterley</title></bibl>				<date ana="#returned" when="1934-06-23">June 23</date>
+                <date ana="#checkedOut" when="1934-06-05">	</date>		<bibl ana="#borrowedItem"><title>Twilight in Italy</title></bibl>			<date ana="#returned" when="1934-06-23">June 23</date>
+                <date ana="#checkedOut" when="1934-06-23">23</date>		<bibl ana="#borrowedItem"><title>Discoveries (<unclear/>)</title></bibl>	<date ana="#returned" when="1934-07-19">July 19</date>
+                <date ana="#checkedOut" when="1934-06-23">	</date>		<bibl ana="#borrowedItem"><title>Son of woman</title></bibl>				<date ana="#returned" when="1934-07-19">July 19</date>
                </ab> </div>
                 
                 <div type="verso"><ab>
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                     add. <date when="1937">summer 1937</date>	<address><placeName>Silengio. Silencio</placeName> <settlement>Perros Guirrec</settlement><district> (Côtes du Nord)</district></address>
                 <date when="1937">1937</date>	
                     	1m.	1v.				15.00.
                 						
                 		<date from="1937-05-03" to="1937-06-03">May 3 - June 3. 1937.</date>
                 
-                <date when="1937-05-03">May 3</date>	<bibl><title>Anglo Catholic_</title></bibl>				<date when="1937-05-11">May 11</date>
-                <date when="1937-05-11">11</date>		<bibl><title>Autobiography</title> <author>Chesterton</author></bibl>		<date when="1937-05-25">25.</date>
-                <date when="1937-05-25">25</date>		<bibl><title>Household of Sir Thomas Moore.</title></bibl> <date when="1937-06-12">June 12</date>
+                <date ana="#checkedOut" when="1937-05-03">May 3</date>	<bibl ana="#borrowedItem"><title>Anglo Catholic_</title></bibl>				<date ana="#returned" when="1937-05-11">May 11</date>
+                <date ana="#checkedOut" when="1937-05-11">11</date>		<bibl ana="#borrowedItem"><title>Autobiography</title> <author>Chesterton</author></bibl>		<date ana="#returned" when="1937-05-25">25.</date>
+                <date ana="#checkedOut" when="1937-05-25">25</date>		<bibl ana="#borrowedItem"><title>Household of Sir Thomas Moore.</title></bibl> <date ana="#returned" when="1937-06-12">June 12</date>
                 <date when="1937-06-03">June 3</date>		renewed to <date when="1937-08-03">August 3</date>			25:01
-                <date when="1937-06-12">June 12</date>	<bibl><title>Sea &amp; Sardinia</title></bibl>			<date when="1937-06-29">June 29</date>
-                <date when="1937-06-12">"</date>		<bibl><title>Murder in the Cathedral</title></bibl>		<date when="1937-06-29">June 29</date>
-                <date when="1937-06-29">29</date>		<bibl><title>Years.</title></bibl>						<date when="1937-07-06">July 6</date>
-                <date when="1937-06-29">29.</date>		<bibl><title>Prince Charlie</title></bibl>				<date when="1937-07-06">6.</date>
-                <date when="1937-07-06">July 6.</date>	<bibl><title>Six Plays</title></bibl>					<date when="1937-07-13">13.</date>
-                <date when="1937-07-13">13</date>		<bibl><title>Critical + Historical Essays.</title></bibl> <date when="1937-07-27">July 27</date>
-                <date when="1937-07-13">13</date>		<bibl><title>Our Street.</title></bibl>					<date when="1937-07-27">27.</date>
+                <date ana="#checkedOut" when="1937-06-12">June 12</date>	<bibl ana="#borrowedItem"><title>Sea &amp; Sardinia</title></bibl>			<date ana="#returned" when="1937-06-29">June 29</date>
+                <date ana="#checkedOut" when="1937-06-12">"</date>		<bibl ana="#borrowedItem"><title>Murder in the Cathedral</title></bibl>		<date ana="#returned" when="1937-06-29">June 29</date>
+                <date ana="#checkedOut" when="1937-06-29">29</date>		<bibl ana="#borrowedItem"><title>Years.</title></bibl>						<date ana="#returned" when="1937-07-06">July 6</date>
+                <date ana="#checkedOut" when="1937-06-29">29.</date>		<bibl ana="#borrowedItem"><title>Prince Charlie</title></bibl>				<date ana="#returned" when="1937-07-06">6.</date>
+                <date ana="#checkedOut" when="1937-07-06">July 6.</date>	<bibl ana="#borrowedItem"><title>Six Plays</title></bibl>					<date ana="#returned" when="1937-07-13">13.</date>
+                <date ana="#checkedOut" when="1937-07-13">13</date>		<bibl ana="#borrowedItem"><title>Critical + Historical Essays.</title></bibl> <date ana="#returned" when="1937-07-27">July 27</date>
+                <date ana="#checkedOut" when="1937-07-13">13</date>		<bibl ana="#borrowedItem"><title>Our Street.</title></bibl>					<date ana="#returned" when="1937-07-27">27.</date>
                 Interrupted <date when="1937-07-27">July 27</date> 1 week left
-                <date when="1937-07-27">27</date>		<bibl><title>Reminiscences of the English Lake Poets</title></bibl> <date when="1937-09-03">Sept 3</date>
-                		owes <bibl><title>Great Expectations</title></bibl> 10.50		
+                <date ana="#checkedOut" when="1937-07-27">27</date>		<bibl ana="#borrowedItem"><title>Reminiscences of the English Lake Poets</title></bibl> <date ana="#checkedOut" when="1937-09-03">Sept 3</date>
+                		owes <bibl ana="#borrowedItem"><title>Great Expectations</title></bibl> 10.50		
                 						post	 1.80
-                					pc <date when="1937-05-11">May 11</date>	12.30	paid
+                					pc <date ana="#returned" when="1937-05-11">May 11</date>	12.30	paid
                 										<date when="1937-06-09">June 9</date>
                 </ab>
                 </div> 
@@ -166,7 +157,7 @@
                 
              <div type="card"> 
              <div type="recto">  
-             <pb facs="#s3" />
+             <pb facs="#s3"/>
                 <head><date when="1941">1941</date>		<persName ref="#deni.el">Madame Maurice Denis</persName>
                 			<address><orgName>Le Prieuré,</orgName> <settlement>St Germain en Laye</settlement>
                 			    <district>St Germain</district> </address> 771</head>
@@ -174,43 +165,43 @@
                 Renewed <date when="1941-11-06">Nov 6 1941</date> 6 mos 1 v A --
                 		<date when="1942-05-06">May 6 1942</date>
                 
-                <date when="1941-11-06">Nov 6</date>		<bibl><title>Three Lives</title></bibl>					<date when="1941-11-21">Nov 21</date>
-                <date when="1941-11-21">21</date>		    <bibl><title>Counterplot</title></bibl>					<date when="1941-12-12">Dec 12</date>
-                <date when="1941-12-12">Dec 12</date>		<bibl><title>they Were Defeated</title></bibl>			<date when="1941-12-12">Dec 12</date></ab>
+                <date ana="#checkedOut" when="1941-11-06">Nov 6</date>		<bibl ana="#borrowedItem"><title>Three Lives</title></bibl>					<date ana="#returned" when="1941-11-21">Nov 21</date>
+                <date ana="#checkedOut" when="1941-11-21">21</date>		    <bibl ana="#borrowedItem"><title>Counterplot</title></bibl>					<date ana="#returned" when="1941-12-12">Dec 12</date>
+                <date ana="#checkedOut" when="1941-12-12">Dec 12</date>		<bibl ana="#borrowedItem"><title>they Were Defeated</title></bibl>			<date ana="#returned" when="1941-12-12">Dec 12</date></ab>
                
              </div>
                  <div type="verso">
                      <ab>
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 <!-- verso blank --></ab></div>
              </div>
                 <div><div type="recto">
-                <pb facs="#s5" />
+                <pb facs="#s5"/>
                <head> <date when="1935">1935</date>			
                                 <persName ref="#deni.pi">DENIS M. Pierre</persName>
                 				4 <unclear/> Des Nouettes</head>
                <ab> 1v. 1m.									dep. 30v
                 											 15v
-                <date when="1935-11-13">13 Nov _</date>		<bibl><title>Pt. Ct. Point</title></bibl>	ref.	<date when="1935-11-18">Nov 18</date>
-                <date when="1935-11-18"> 18</date>			<bibl><title>Limbo</title></bibl>			        <date when="1935-12-13">13 Dec</date>	<date when="1935-11-20">Nov 20</date>
-                <date when="1935-11-20">20</date>			<bibl><title>William Morris</title></bibl>			<date when="1935-11-25">25</date>
-                <date when="1935-11-25">25</date>			<bibl><title>Altogether</title></bibl>				<date when="1935-11-29">29</date>
-                <date when="1935-11-29">29</date>			<bibl><title>Short Modern Plays</title></bibl>		<date when="1935-12-03">3</date>
-                <date when="1935-12-03">3 Dec</date>		<bibl><title>Martin Arrowsmith</title></bibl>		<date when="1935-12-13">13 Dec</date>
+                <date ana="#checkedOut" when="1935-11-13">13 Nov _</date>		<bibl ana="#borrowedItem"><title>Pt. Ct. Point</title></bibl>	ref.	<date ana="#returned" when="1935-11-18">Nov 18</date>
+                <date ana="#checkedOut" when="1935-11-18"> 18</date>			<bibl ana="#borrowedItem"><title>Limbo</title></bibl>			        <date ana="#returned" when="1935-12-13">13 Dec</date>	<date when="1935-11-20">Nov 20</date>
+                <date ana="#checkedOut" when="1935-11-20">20</date>			<bibl ana="#borrowedItem"><title>William Morris</title></bibl>			<date ana="#returned" when="1935-11-25">25</date>
+                <date ana="#checkedOut" when="1935-11-25">25</date>			<bibl ana="#borrowedItem"><title>Altogether</title></bibl>				<date ana="#returned" when="1935-11-29">29</date>
+                <date ana="#checkedOut" when="1935-11-29">29</date>			<bibl ana="#borrowedItem"><title>Short Modern Plays</title></bibl>		<date ana="#returned" when="1935-12-03">3</date>
+                <date ana="#checkedOut" when="1935-12-03">3 Dec</date>		<bibl ana="#borrowedItem"><title>Martin Arrowsmith</title></bibl>		<date ana="#returned" when="1935-12-13">13 Dec</date>
                </ab> </div>
                 
-                <div type="verso"> <ab><pb facs="#s6" />
+                <div type="verso"> <ab><pb facs="#s6"/>
                 <!-- verso blank -->
                 </ab></div></div>
                 
-                <div><div type="recto"><ab><pb facs="#s7" />
+                <div><div type="recto"><ab><pb facs="#s7"/>
                 										<date when="1920-06-12">June 12th 1920</date>
                 					<date when="1943-02-28">Feb 28	43</date>
                 					<persName>Francoise</persName>
-                					<bibl><title>Eliot's Collected Poems</title></bibl>
-                					<bibl><author>Emily Dickinson</author> <title>Selected Poems</title></bibl>
-                					<bibl><author>HD</author> <title>Ion</title></bibl>
-                					<bibl><author>TS Eliot</author> <title>The Sacred Wood</title></bibl>
+                					<bibl ana="#borrowedItem"><title>Eliot's Collected Poems</title></bibl>
+                					<bibl ana="#borrowedItem"><author>Emily Dickinson</author> <title>Selected Poems</title></bibl>
+                					<bibl ana="#borrowedItem"><author>HD</author> <title>Ion</title></bibl>
+                					<bibl ana="#borrowedItem"><author>TS Eliot</author> <title>The Sacred Wood</title></bibl>
                 <orgName>"Shakespeare and Company"</orgName>
                 	<persName ref="#beac.sy">-Sylvia Beach-</persName>
                 <address><street>12. RUE DE L'ODÉON</street>
@@ -218,7 +209,7 @@
                 <note>Tél. :	Littré 33.76
                 		Téléph:  Danton 09-57<!-- phone #s --></note>
               </ab>  </div>
-              <div type="verso"><ab>  <pb facs="#s8" />
+              <div type="verso"><ab>  <pb facs="#s8"/>
                 				CARTE POSTALE
                 	M</ab></div>
                 

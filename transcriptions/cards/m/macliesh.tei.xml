@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#macl.ar">Archibald MacLeish</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -61,10 +52,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/macliesh/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
 
@@ -72,7 +63,7 @@
     <text>
         <body>
             <div type="card">
-               <div type="recto"> <pb facs="#s1" />
+               <div type="recto"> <pb facs="#s1"/>
                <head> <date when="1934">1934</date>		<persName ref="#macl.ar">MACLIESH
                 			Archibald Fleming</persName>
                 			<address><street>18 Villa Seurat</street></address> 14
@@ -83,55 +74,55 @@
                 							refunded <date when="1934-05-18">18 May</date>
                 								<unclear/>
                 
-                <date when="1934-01-10">Jan 10</date>	<bibl><title>From Ritual to Romance</title></bibl>			<date when="1934-01-12">Jan 12</date>
-                	<date when="1934-01-12">12</date>	<bibl><title>Swann's Way</title><biblScope unit="volume" from="1" to="2"> 2 vols</biblScope></bibl> ren			<date when="1934-02-10">Feb 10</date>
+                <date ana="#checkedOut" when="1934-01-10">Jan 10</date>	<bibl ana="#borrowedItem" corresp="mep:006p1z"><title>From Ritual to Romance</title></bibl>			<date ana="#returned" when="1934-01-12">Jan 12</date>
+                	<date ana="#checkedOut" when="1934-01-12">12</date>	<bibl ana="#borrowedItem" corresp="mep:00663q"><title>Swann's Way</title><biblScope unit="volume" from="1" to="2"> 2 vols</biblScope></bibl> ren			<date ana="#returned" when="1934-02-10">Feb 10</date>
                 		Winding Stair 0.50 a day		<date when="1934-01-15">Jan 15</date>
-                <date when="1934-01-15">15</date>	<bibl><title><unclear/> Doctrine</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>				<date when="1934-01-26">Jan 26</date>
-                	<date when="1934-01-26">26</date>	<bibl><title>Psychology of the Unconscious</title></bibl> ren. <date when="1934-03-09">March 9</date>
-              <date when="1934-02-05">  Feb 5</date>	<bibl><title>Hound &amp; Horn</title></bibl> 1v a day owes 1v	<date when="1934-02-06">Feb 6</date>
-                	<date when="1934-02-06">6</date>	<bibl><title>Milarepa</title></bibl>						<date when="1934-02-14">Feb 14</date>
-                <date when="1934-02-10">Feb 10</date>	<bibl><title>Buddha and the gospel of Buddha</title></bibl>	<date when="1934-03-01">Mar 1</date>
+                <date ana="#checkedOut" when="1934-01-15">15</date>	<bibl ana="#borrowedItem"><title><unclear/> Doctrine</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>				<date ana="#returned" when="1934-01-26">Jan 26</date>
+                	<date ana="#checkedOut" when="1934-01-26">26</date>	<bibl ana="#borrowedItem" corresp="mep:006p3k"><title>Psychology of the Unconscious</title></bibl> ren. <date ana="#returned" when="1934-03-09">March 9</date>
+              <date ana="#checkedOut" when="1934-02-05">  Feb 5</date>	<bibl ana="#borrowedItem" corresp="mep:002h1m"><title>Hound &amp; Horn</title></bibl> 1v a day owes 1v	<date ana="#returned" when="1934-02-06">Feb 6</date>
+                	<date ana="#checkedOut" when="1934-02-06">6</date>	<bibl ana="#borrowedItem" corresp="mep:006p4w"><title>Milarepa</title></bibl>						<date ana="#returned" when="1934-02-14">Feb 14</date>
+                <date ana="#checkedOut" when="1934-02-10">Feb 10</date>	<bibl ana="#borrowedItem" corresp="mep:000b22"><title>Buddha and the gospel of Buddha</title></bibl>	<date ana="#returned" when="1934-03-01">Mar 1</date>
                 			owes Bagavad Gita 12v pd. <date when="1934-02-13">Feb 13</date>
-                <date when="1934-02-14">Feb 14</date>	<bibl><title>Letters of Blavatsky to Sinnett</title></bibl>	<date when="1934-02-17">Feb 17</date>
+                <date ana="#checkedOut" when="1934-02-14">Feb 14</date>	<bibl ana="#borrowedItem" corresp="mep:006p56"><title>Letters of Blavatsky to Sinnett</title></bibl>	<date ana="#returned" when="1934-02-17">Feb 17</date>
                 Renewed <date from="1934-02-10" to="1934-03-10">Feb 10 - March 10 1934</date>		20v
-                <date when="1934-02-14">Feb 14</date>	<bibl><title>Frescoes for Mr Rockefeller's City</title></bibl>	<date when="1934-02-19">19</date>
-                <date when="1934-02-17">Feb 17</date>	<bibl><title>Collected Poems of Yeats</title></bibl>			<date when="1934-02-24">24</date>
-                <date when="1934-02-24">Feb 24</date>	<bibl><title>Poems</title> <author>MacLeish</author></bibl> owes 3v			<date when="1934-03-09">March 9</date>
-               <date when="1934-03"> March</date>	<bibl><title>Faust</title></bibl>							<date when="1934-03-03">Mar 3</date>
+                <date ana="#checkedOut" when="1934-02-14">Feb 14</date>	<bibl ana="#borrowedItem" corresp="mep:006p6h"><title>Frescoes for Mr Rockefeller's City</title></bibl>	<date ana="#returned" when="1934-02-19">19</date>
+                <date ana="#checkedOut" when="1934-02-17">Feb 17</date>	<bibl ana="#borrowedItem" corresp="mep:006p7t"><title>Collected Poems of Yeats</title></bibl>			<date ana="#returned" when="1934-02-24">24</date>
+                <date ana="#checkedOut" when="1934-02-24">Feb 24</date>	<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>MacLeish</author></bibl> owes 3v			<date ana="#returned" when="1934-03-09">March 9</date>
+               <date ana="#checkedOut" when="1934-03"> March</date>	<bibl ana="#borrowedItem" corresp="mep:006p84"><title>Faust</title></bibl>							<date ana="#returned" when="1934-03-03">Mar 3</date>
                 		Lafcadio's Adventures			<date when="1934-03">March </date>
-                	<date when="1934-03-03">3</date>	<bibl><title>Fear of the Dead</title></bibl>				<date when="1934-04-18">April 18</date>
+                	<date ana="#checkedOut" when="1934-03-03">3</date>	<bibl ana="#borrowedItem" corresp="mep:006p9f"><title>Fear of the Dead</title></bibl>				<date ana="#checkedOut" when="1934-04-18">April 18</date>
                 			(owes 17 days overdue on
-                			 <bibl><title>Psychology of the Unconscious</title></bibl> 8,50)
-                	<date when="1934-03-23">23</date>	<bibl><title>Hound &amp; Horn (Damon's <unclear/>)</title></bibl>			<date when="1934-03-27">27</date>
-                	<date when="1934-03-24">24</date>	<bibl><title>Francois Rabelais</title></bibl>				<date when="1934-04-04">4 April</date>
+                			 <bibl ana="#borrowedItem" corresp="mep:006p3k"><title>Psychology of the Unconscious</title></bibl> 8,50)
+                	<date ana="#checkedOut" when="1934-03-23">23</date>	<bibl ana="#borrowedItem"><title>Hound &amp; Horn (Damon's <unclear/>)</title></bibl>			<date ana="#returned" when="1934-03-27">27</date>
+                	<date ana="#checkedOut" when="1934-03-24">24</date>	<bibl ana="#borrowedItem" corresp="mep:006q17"><title>Francois Rabelais</title></bibl>				<date ana="#returned" when="1934-04-04">4 April</date>
                 			<date when="1934-03-23">March 23</date>	WB loaned 100v refunded
                 				<date when="1934-03-24">  24</date>			  100v <date when="1934-03-26">March 26</date></ab>
                 </div>
-             <div type="verso">   <pb facs="#s2" />
+             <div type="verso">   <pb facs="#s2"/>
              <head>   							MACLIESH</head>
            <ab>     <date when="1934-03-28">March 28</date> Living Age						<date when="1934-03-29">March 29</date>
                 		Peter Abelard					<date when="1934-03-31">March 31</date>
-                	<date when="1934-03-29">29</date>	<bibl><title>Tertium Organum</title></bibl>					<date when="1934-05-18">18 May</date>
-                	<date when="1934-03-31">31</date>	<bibl><title>Ultramarine</title></bibl>			BB.
+                	<date ana="#checkedOut" when="1934-03-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:006q2j"><title>Tertium Organum</title></bibl>					<date ana="#returned" when="1934-05-18">18 May</date>
+                	<date ana="#checkedOut" when="1934-03-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:004z4m"><title>Ultramarine</title></bibl>			BB.
                 Renewed til they leave	20v
-                		<date from="1934-03-10" to="1934-04-10">March 10 - April 10 1934</date>
-                <date when="1934-04-04">April 4</date>	<bibl><title>Siamese Twin Mystery</title></bibl>			<date when="1934-04-05">April 5</date>
+                		<date ana="#returned" from="1934-03-10" to="1934-04-10">March 10 - April 10 1934</date>
+                <date ana="#checkedOut" when="1934-04-04">April 4</date>	<bibl ana="#borrowedItem" corresp="mep:006q3v"><title>Siamese Twin Mystery</title></bibl>			<date ana="#returned" when="1934-04-05">April 5</date>
                 		Chink in the Armour				<date when="1934-04-05">April 5</date>
-                	<date when="1934-04-02">2</date>	<bibl><title>New Republics</title></bibl>					<date when="1934-04-10">April 10</date>
-                	<date when="1934-04-05">5</date>	<bibl><title>Poems</title> <author>Tate</author>	</bibl>					<date when="1934-04-18">"	18</date>
-                	<date when="1934-04-05">5</date>	<bibl><title>Tarka the Otter</title></bibl>					<date when="1934-05-04">May 3</date>
-                	<date when="1934-04-09">9</date>	<bibl><title>After Strange Gods</title></bibl>				<date when="1934-04-11">April 11</date>
-                	<date when="1934-04-14">14</date>	<bibl><title>Aran Islands</title></bibl>					<date when="1934-04-18">"	18</date>
-                	<date when="1934-04-14">14</date>	<bibl><title>William Blake in this world</title></bibl>		<date when="1934-04-18">"	18</date>
-                	<date when="1934-04-17">17</date>	<bibl><title>Man in the Zoo</title></bibl>						<date when="1934-04-24">24</date>
-                	<date when="1934-04-17">17</date>	<bibl><title>Great God Pan</title></bibl>						<date when="1934-04-24">24</date>
+                	<date ana="#checkedOut" when="1934-04-02">2</date>	<bibl ana="#borrowedItem" corresp="mep:00141b"><title>New Republics</title></bibl>					<date ana="#returned" when="1934-04-10">April 10</date>
+                	<date ana="#checkedOut" when="1934-04-05">5</date>	<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>Tate</author>	</bibl>					<date ana="#returned" when="1934-04-18">"	18</date>
+                	<date ana="#checkedOut" when="1934-04-05">5</date>	<bibl ana="#borrowedItem" corresp="mep:006q45"><title>Tarka the Otter</title></bibl>					<date ana="#returned" when="1934-05-04">May 3</date>
+                	<date ana="#checkedOut" when="1934-04-09">9</date>	<bibl ana="#borrowedItem" corresp="mep:00164t"><title>After Strange Gods</title></bibl>				<date ana="#returned" when="1934-04-11">April 11</date>
+                	<date ana="#checkedOut" when="1934-04-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:000w43"><title>Aran Islands</title></bibl>					<date ana="#returned" when="1934-04-18">"	18</date>
+                	<date ana="#checkedOut" when="1934-04-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:006q5g"><title>William Blake in this world</title></bibl>		<date ana="#returned" when="1934-04-18">"	18</date>
+                	<date ana="#checkedOut" when="1934-04-17">17</date>	<bibl ana="#borrowedItem" corresp="mep:006q6s"><title>Man in the Zoo</title></bibl>						<date ana="#returned" when="1934-04-24">24</date>
+                	<date ana="#checkedOut" when="1934-04-17">17</date>	<bibl ana="#borrowedItem" corresp="mep:006q73"><title>Great God Pan</title></bibl>						<date ana="#returned" when="1934-04-24">24</date>
                 Renewed <date from="1934-04-10" to="1934-05-10">April 10 - May 10 1934</date>		20v
                 
-                <date when="1934-05-03">May 3</date>	<bibl><title>Winner take Nothing</title></bibl> 0.50		<date when="1934-05-05">May 5</date>
-                		<bibl><title>Poems</title> <author>MacLeish</author></bibl>		0.50			18
+                <date ana="#checkedOut" when="1934-05-03">May 3</date>	<bibl ana="#borrowedItem" corresp="mep:00227w"><title>Winner take Nothing</title></bibl> 0.50		<date ana="#checkedOut" when="1934-05-05">May 5</date>
+                		<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>MacLeish</author></bibl>		0.50			18
                 		
                 									8f.50
-                					due <date when="1934-04-18">18 April</date>     8.50
+                					due <date ana="#returned" when="1934-04-18">18 April</date>     8.50
                 									16.50
            </ab></div></div>
         </body>

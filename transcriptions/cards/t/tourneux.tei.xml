@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#tour.pi">Pierre Tourneux</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/t/tourneux/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                                     <persName ref="#tour.pi">TOURNEUX</persName>
                     <date when="1941-01-24">1941			
@@ -81,19 +72,19 @@
                     					as only using subs a week)
                     </ab>					
                     <ab>
-                    <date when="1941-01-24">Jan 24</date>	<bibl><title>George Gissing</title>, <author>Swinnerton</author></bibl>		<date when="1941-01-31">Jan 31</date>
-                    <date when="1941-01-24">	24</date>	<bibl><title>Odd Women</title></bibl>						<date when="1941-01-31">Jan 31</date>
-                    <date when="1941-01-24">	24</date>	<bibl><title>New Grub Street</title></bibl>					<date when="1941-01-31">Jan 31</date>
-                    <date when="1941-01-24">	24</date>	<bibl><title>Demos</title></bibl>							<date when="1941-01-31">Jan 31</date>
+                    <date ana="#checkedOut" when="1941-01-24">Jan 24</date>	<bibl ana="#borrowedItem" corresp="mep:00gt10"><title>George Gissing</title>, <author>Swinnerton</author></bibl>		<date ana="#returned" when="1941-01-31">Jan 31</date>
+                    <date ana="#checkedOut" when="1941-01-24">	24</date>	<bibl ana="#borrowedItem" corresp="mep:00gt29"><title>Odd Women</title></bibl>						<date ana="#returned" when="1941-01-31">Jan 31</date>
+                    <date ana="#checkedOut" when="1941-01-24">	24</date>	<bibl ana="#borrowedItem" corresp="mep:009r8d"><title>New Grub Street</title></bibl>					<date ana="#returned" when="1941-01-31">Jan 31</date>
+                    <date ana="#checkedOut" when="1941-01-24">	24</date>	<bibl ana="#borrowedItem" corresp="mep:007n83"><title>Demos</title></bibl>							<date ana="#returned" when="1941-01-31">Jan 31</date>
                     </ab>	
                     <ab>
-                    			sold <bibl><title>Demos</title></bibl>			200
+                    			sold <bibl ana="#borrowedItem" corresp="mep:007n83"><title>Demos</title></bibl>			200
                     				                            Wayfarers ed	 20
                     					                               refunded	180
                     </ab>					
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>    

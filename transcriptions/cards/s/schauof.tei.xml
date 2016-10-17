@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#schw.lu">Lucie Schwob</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/s/schauof/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     	3
                     <date when="1900-10-02">Oct 2</date>		<address><persName ref="#schw.lu">Mademoiselle Lucie Schwob</persName>
@@ -81,17 +72,17 @@
                     <date when="1900-11-17">Nov 17</date>,<date when="1900-11-19">19</date>	1 month ----- 1 vol.			<date when="1900-12-04">	4</date>
                     </ab>
                     <ab>
-                    			                                     <bibl><title>Roderick Hudson</title>, <author>James</author>, <biblScope unit="volume" from="1">1st vol</biblScope>.</bibl>	<date when="1900-11-22">Nov. 22</date>
+                    			                                     <bibl ana="#borrowedItem" corresp="mep:00gw63"><title>Roderick Hudson</title>, <author>James</author>, <biblScope unit="volume" from="1">1st vol</biblScope>.</bibl>	<date ana="#returned" when="1900-11-22">Nov. 22</date>
                     			
-                    <date when="1900-11-22">Nov. 22</date>		     <bibl><title>Rockerick Hudson</title>,<author> 	  </author><biblScope unit="volume" from="2">2 nd vol</biblScope></bibl>	<date when="1900-11-24">Nov 24</date>
+                    <date ana="#checkedOut" when="1900-11-22">Nov. 22</date>		     <bibl ana="#borrowedItem" corresp="mep:00gw63"><title>Rockerick Hudson</title>,<author> 	  </author><biblScope unit="volume" from="2">2 nd vol</biblScope></bibl>	<date ana="#returned" when="1900-11-24">Nov 24</date>
                     
-                    <date when="1900-11-24">Nov. 24</date>		     <bibl><title>"Pigs is Pigs"</title>, <author>Butler</author></bibl>		<date when="1900-12-02">Dec 2nd</date>
+                    <date ana="#checkedOut" when="1900-11-24">Nov. 24</date>		     <bibl ana="#borrowedItem" corresp="mep:00q757"><title>"Pigs is Pigs"</title>, <author>Butler</author></bibl>		<date ana="#returned" when="1900-12-02">Dec 2nd</date>
                     
                     <date when="1900-12-02">Dec. 2nd</date>.
                     </ab>
                 </div>  
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

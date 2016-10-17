@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: </title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -56,10 +47,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/manziarly/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
 
@@ -67,19 +58,19 @@
     <text>
         <body>
             <div><div>
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head><date when="1935">1935</date>		<persName ref="#manz.ma">de MANZIARLY
                 				M1le.</persName>
                 			<address><street>15 avenue de la Bourdonnais</street></address></head>
                 
               <ab>  <date when="1935-01-28">28 Jan</date> 1v 1m.							25
                 	dep						ref. <date when="1935-03-01">Mar 1</date>	50 </ab>
-           <ab>     <date when="1935-01-28">28 Jan</date> 	<bibl><title>Dr. Martino</title></bibl>					<date when="1935-02-04">Feb 4</date>
-                <date when="1935-02-04">4 Feb</date>	<bibl><title>More Pricks than Kicks</title></bibl>			<date when="1935-02-12">12</date>
-                	<date when="1935-02-12">12</date>	<bibl><title>3 Men die</title></bibl>						<date when="1935-02-25">25</date>
-                	<date when="1935-02-25">25</date>	<bibl><title>L'Affair Jons</title></bibl></ab></div>
+           <ab>     <date ana="#checkedOut" when="1935-01-28">28 Jan</date> 	<bibl ana="#borrowedItem"><title>Dr. Martino</title></bibl>					<date ana="#returned" when="1935-02-04">Feb 4</date>
+                <date ana="#checkedOut" when="1935-02-04">4 Feb</date>	<bibl ana="#borrowedItem"><title>More Pricks than Kicks</title></bibl>			<date ana="#returned" when="1935-02-12">12</date>
+                	<date ana="#checkedOut" when="1935-02-12">12</date>	<bibl ana="#borrowedItem"><title>3 Men die</title></bibl>						<date ana="#returned" when="1935-02-25">25</date>
+                	<date ana="#checkedOut" when="1935-02-25">25</date>	<bibl ana="#borrowedItem"><title>L'Affair Jons</title></bibl></ab></div>
                 <div>
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank --></div>
                 
             </div>

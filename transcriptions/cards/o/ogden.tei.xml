@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#ogde.c">CK Ogden</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -56,23 +47,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/o/ogden/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 			<persName ref="ogde.ck">C. K. OGDEN</persName>
                 			<address><orgName>Royal Societies Club</orgName>
@@ -85,11 +76,11 @@
                 			 
                 			 
                 April
-                <date when="1900-03-25">March 25</date>	2 ALP records and (1 <bibl><title>Basic English</title></bibl>)
+                <date ana="#checkedOut" when="1900-03-25">March 25</date>	2 ALP records and (1 <bibl ana="#borrowedItem" corresp="mep:00p113"><title>Basic English</title></bibl>)
                 </ab>
                </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <ab>
                 		payments
                 		
@@ -100,7 +91,7 @@
                 <date when="1900-04-10">April 10</date>	cheque					£</ab>
                 </div>
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <ab>
                 			<persName ref="ogde.c">OGDEN</persName>
                 			<address><persName ref="odge.c">C. K. Ogden</persName>
@@ -110,21 +101,21 @@
                   <date when="1931">1931</date>
                 <date when="1931-10-26">Oct 26</date>		<persName>Mr Montgomery Belgion</persName> brought 'on sale'
                 
-                			8 <bibl><title>Basic English</title></bibl> Books at 2/6
+                			8 <bibl ana="#borrowedItem" corresp="mep:00p113"><title>Basic English</title></bibl> Books at 2/6
                 			
-                			2 <bibl><title>Brighter Basic</title></bibl>
-                			 <bibl><title> Debabelization</title></bibl>
-                			  <bibl><title>Word Economy</title></bibl>
-                			  <bibl><title>Basic Traveller</title></bibl>
-                			  <bibl><title>Brighter Basic</title></bibl>
-                			  <bibl><title>Carl and Anna</title></bibl>
-                			 <bibl><title> Basic English</title></bibl> Applied (Science)
+                			2 <bibl ana="#borrowedItem" corresp="mep:00p12d"><title>Brighter Basic</title></bibl>
+                			 <bibl ana="#borrowedItem"><title> Debabelization</title></bibl>
+                			  <bibl ana="#borrowedItem" corresp="mep:00p141"><title>Word Economy</title></bibl>
+                			  <bibl ana="#borrowedItem" corresp="mep:00p15b"><title>Basic Traveller</title></bibl>
+                			  <bibl ana="#borrowedItem" corresp="mep:00p12d"><title>Brighter Basic</title></bibl>
+                			  <bibl ana="#borrowedItem" corresp="mep:00p16n"><title>Carl and Anna</title></bibl>
+                			 <bibl ana="#borrowedItem"><title> Basic English</title></bibl> Applied (Science)
                 			  
-                			2 Psyche <date when="1931-07">July 1931</date> 5/-
+                			2 Psyche <date ana="#returned" when="1931-07">July 1931</date> 5/-
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 </div>

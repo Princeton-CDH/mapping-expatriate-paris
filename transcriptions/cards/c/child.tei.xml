@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
     	<fileDesc>
     		<titleStmt>
     			<title>An Encoded Transcription of a Borrower's Card: <persName ref="#chil.be">Bertha Cushing Child</persName></title>
@@ -26,14 +24,7 @@
     					<idno>C0108</idno>
     				</msIdentifier>
     			</msDesc>
-    			<xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-    				<xi:fallback>
-    					<listperson>
-    						<head>People not available</head>
-    						<person/>
-    					</listperson>
-    				</xi:fallback>
-    			</xi:include>
+    			
     		</sourceDesc>
     	</fileDesc>
 	    <profileDesc>
@@ -70,10 +61,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/c/child/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
       
     </facsimile>
@@ -81,7 +72,7 @@
         <body>
             	<div type="card">
             	<div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
               	<head>
               	<date when="1932">1932</date>		
               				<persName ref="#chil.be">CHILD</persName>
@@ -97,58 +88,58 @@
               									 100 - 
               							dep		 30
               					paid by <persName ref="#kenn.ro">R. Kennedy</persName>	kept to
-              								replace <bibl><title>Grass Roof</title></bibl>
+              								replace <bibl ana="#borrowedItem" corresp="mep:00bw2w"><title>Grass Roof</title></bibl>
               	</ab>
               	
               	<ab>
-              	<date when="1932-01-26">Jan 26</date>	<bibl><title>Introduction to the Method of Leonardo</title></bibl>	<date when="1932-02-09">Feb 9</date>
-              	<date when="1932-02-09">Feb 9</date>	<bibl><title>Richelieu</title></bibl>								<date when="1932-02-18">Feb 18</date>
-              	<date when="1932-02-18">	18</date>	<bibl><title>Shadows on the Rock</title></bibl>						<date when="1932-02-26">Feb 26</date>
-              	<date when="1932-02-26">Feb 26</date>	<bibl><title>Sanctuary</title></bibl>								<date when="1932-03-14">March 14</date>
-              	<date when="1932-02-26">	</date>		<bibl><title>Le Morte d'Arthur</title></bibl> (extra)				<date when="1932-03-14">March 14</date>
-              	<date when="1932-03-14">March 14</date> <bibl><title>Debonnair</title></bibl>								<date when="1932-03-16">March 16</date>
-              	<date when="1932-03-16">	  16</date> <bibl><title>Apes of God</title></bibl>								<date when="1932-03-31">March 31</date>
-              	<date when="1932-03-31">March 31</date> <bibl><title>Mourning Becomes Electra</title></bibl>				<date when="1932-04-04">April 4</date>
-              	<date when="1932-04-04">April 4</date>	<bibl><title>Rabelais</title></bibl>								<date when="1932-04-21">April 21</date>
-              	<date when="1932-04-21">April 21</date> <bibl><title>I went to Russia</title></bibl>						<date when="1932-04-25">April 25</date>
-              	<date when="1932-04-25">April 25</date> <bibl><title>Henry VIII</title></bibl>								<date when="1932-05-13">May 13</date>
-              	<date when="1932-04-25">	</date>	 	<bibl><title>Apropos of Lady Chatterley</title></bibl> still owes (0.50 a day extra) <date when="1932-04-26">April 26</date>
-              	<date when="1932-05-13">May 13</date>	<bibl><title>Sword of God</title></bibl>							<date when="1932-05-26">May 26</date>
-              	<date when="1932-05-26">May 26</date>	<bibl><title>Ellen Terry and Bernard Shaw</title></bibl>				B.B.
-              	<date when="1932-06-14">June 14</date>	<bibl><title>Six Plays</title></bibl> . 							<date when="1932-07-01">July 1</date>
-              	<date when="1932-07-01">July 1</date>	<bibl><title>Best Short Stories 1831 (American)</title></bibl>			<date when="1932-07-12">July 12</date>
-              	<date when="1932-07-12">	12</date>	<bibl><title>Morning Glory</title></bibl>							<date when="1932-07-22">July 22</date>
-              	<date when="1932-07-22">	22</date>	<bibl><title>Bright Skin</title></bibl>  p.c. <date when="1932-07-06">Aug 6</date>					B.B.
-              	<date when="1932-10-31">31 Oct</date>.	<bibl><title>Song of the Lark</title></bibl> renewed 6 mo.			<date when="1932-11-14">14 Nov</date>
-              	<date when="1932-11-14">14 Nov</date>	<bibl><title>Our Mothers</title></bibl> 2f a day ]  100			<date when="1932-11-15">15 "</date>
+              	<date ana="#checkedOut" when="1932-01-26">Jan 26</date>	<bibl ana="#borrowedItem" corresp="mep:00fq7s"><title>Introduction to the Method of Leonardo</title></bibl>	<date ana="#returned" when="1932-02-09">Feb 9</date>
+              	<date ana="#checkedOut" when="1932-02-09">Feb 9</date>	<bibl ana="#borrowedItem" corresp="mep:008b0c"><title>Richelieu</title></bibl>								<date ana="#returned" when="1932-02-18">Feb 18</date>
+              	<date ana="#checkedOut" when="1932-02-18">	18</date>	<bibl ana="#borrowedItem" corresp="mep:002v2p"><title>Shadows on the Rock</title></bibl>						<date ana="#returned" when="1932-02-26">Feb 26</date>
+              	<date ana="#checkedOut" when="1932-02-26">Feb 26</date>	<bibl ana="#borrowedItem" corresp="mep:00218x"><title>Sanctuary</title></bibl>								<date ana="#returned" when="1932-03-14">March 14</date>
+              	<date ana="#checkedOut" when="1932-02-26">	</date>		<bibl ana="#borrowedItem" corresp="mep:00fq83"><title>Le Morte d'Arthur</title></bibl> (extra)				<date ana="#returned" when="1932-03-14">March 14</date>
+              	<date ana="#checkedOut" when="1932-03-14">March 14</date> <bibl ana="#borrowedItem" corresp="mep:00fq9d"><title>Debonnair</title></bibl>								<date ana="#returned" when="1932-03-16">March 16</date>
+              	<date ana="#checkedOut" when="1932-03-16">	  16</date> <bibl ana="#borrowedItem" corresp="mep:001c2k"><title>Apes of God</title></bibl>								<date ana="#returned" when="1932-03-31">March 31</date>
+              	<date ana="#checkedOut" when="1932-03-31">March 31</date> <bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning Becomes Electra</title></bibl>				<date ana="#returned" when="1932-04-04">April 4</date>
+              	<date ana="#checkedOut" when="1932-04-04">April 4</date>	<bibl ana="#borrowedItem" corresp="mep:00bq3t"><title>Rabelais</title></bibl>								<date ana="#returned" when="1932-04-21">April 21</date>
+              	<date ana="#checkedOut" when="1932-04-21">April 21</date> <bibl ana="#borrowedItem" corresp="mep:004v53"><title>I went to Russia</title></bibl>						<date ana="#returned" when="1932-04-25">April 25</date>
+              	<date ana="#checkedOut" when="1932-04-25">April 25</date> <bibl ana="#borrowedItem" corresp="mep:00fr0w"><title>Henry VIII</title></bibl>								<date ana="#returned" when="1932-05-13">May 13</date>
+              	<date ana="#checkedOut" when="1932-04-25">	</date>	 	<bibl ana="#borrowedItem" corresp="mep:00fr16"><title>Apropos of Lady Chatterley</title></bibl> still owes (0.50 a day extra) <date ana="#returned" when="1932-04-26">April 26</date>
+              	<date ana="#checkedOut" when="1932-05-13">May 13</date>	<bibl ana="#borrowedItem" corresp="mep:008369"><title>Sword of God</title></bibl>							<date ana="#returned" when="1932-05-26">May 26</date>
+              	<date ana="#checkedOut" when="1932-05-26">May 26</date>	<bibl ana="#borrowedItem" corresp="mep:00fr2h"><title>Ellen Terry and Bernard Shaw</title></bibl>				B.B.
+              	<date ana="#checkedOut" when="1932-06-14">June 14</date>	<bibl ana="#borrowedItem" corresp="mep:004609"><title>Six Plays</title></bibl> . 							<date ana="#returned" when="1932-07-01">July 1</date>
+              	<date ana="#checkedOut" when="1932-07-01">July 1</date>	<bibl ana="#borrowedItem" corresp="mep:00fr3t"><title>Best Short Stories 1831 (American)</title></bibl>			<date ana="#returned" when="1932-07-12">July 12</date>
+              	<date ana="#checkedOut" when="1932-07-12">	12</date>	<bibl ana="#borrowedItem" corresp="mep:00fr44"><title>Morning Glory</title></bibl>							<date ana="#returned" when="1932-07-22">July 22</date>
+              	<date ana="#checkedOut" when="1932-07-22">	22</date>	<bibl ana="#borrowedItem" corresp="mep:00fr5f"><title>Bright Skin</title></bibl>  p.c. <date ana="#returned" when="1932-07-06">Aug 6</date>					B.B.
+              	<date ana="#checkedOut" when="1932-10-31">31 Oct</date>.	<bibl ana="#borrowedItem" corresp="mep:003t8h"><title>Song of the Lark</title></bibl> renewed 6 mo.			<date ana="#returned" when="1932-11-14">14 Nov</date>
+              	<date ana="#checkedOut" when="1932-11-14">14 Nov</date>	<bibl ana="#borrowedItem" corresp="mep:00fr6r"><title>Our Mothers</title></bibl> 2f a day ]  100			<date ana="#returned" when="1932-11-15">15 "</date>
               								   =to <date to="1933-05-01">1 May 1933</date>
-              	<date when="1932-11-14">14 Nov.</date>  <bibl><title>Hindoo Holiday</title></bibl>							<date when="1932-11-17">17 "</date>
-              	<date when="1932-11-17">17 "</date>		<bibl><title>Magic Island</title></bibl>							<date when="1932-11-19">19 "</date>
+              	<date ana="#checkedOut" when="1932-11-14">14 Nov.</date>  <bibl ana="#borrowedItem" corresp="mep:002581"><title>Hindoo Holiday</title></bibl>							<date ana="#returned" when="1932-11-17">17 "</date>
+              	<date ana="#checkedOut" when="1932-11-17">17 "</date>		<bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island</title></bibl>							<date ana="#returned" when="1932-11-19">19 "</date>
               	
               	</ab>
               	</div>
         		
         		<div type="verso">
-              	<pb facs="#s2" />
+              	<pb facs="#s2"/>
         		<head>
               						<persName ref="#chil.be">CHILD</persName>
               	Subscription to <date to="1933-05-01">1 May 1933</date>
               	</head>
         		<ab>
-              	<date when="1933-11-19">19 Nov</date>.	<bibl><title>Jungle Ways</title></bibl>							<date when="1933-11-21">21 Nov.</date>
-              	<date when="1933-11-21">21 "</date>		<bibl><title>Midchannel</title></bibl>							<date when="1933-11-28">28 "</date>
-              	<date when="1933-11-28">28 "</date>		<bibl><title>Mr. Crump</title></bibl>							<date when="1933-12-01">1 Dec</date>
-              	<date when="1933-11-30">30 "</date> extra	<bibl><title>Island Within</title></bibl>  3f pd				BB.
-              	<date when="1933-12-30">30 Dec.</date> 1v <bibl><title>Buddenbrooks</title></bibl> 2v 30 Dec				<date when="1934-01-09">9 Jan</date>
-              	<date when="1934-01-09">9 Jan.</date> 	<bibl><title>Sons</title></bibl>									<date when="1934-01-16">16 "</date>
-              	<date when="1934-01-09">	</date>	  extra:  <bibl><title>Long Lance</title></bibl>					<date when="1934-01-12">12 "</date>
-              	<date when="1934-01-14">14 "</date>		<bibl><title>Purdah</title></bibl> extra						<date when="1934-01-16">16 "</date>
-              	<date when="1934-01-16">16 Jan.</date>	<bibl><title>East Winds</title></bibl>							<date when="1934-01-21">21 "</date>
-              	<date when="1934-01-21">21 "</date>		<bibl><title>Tom Brown</title></bibl>							<date when="1934-01-24">24</date>
-              	<date when="1934-01-21">21 "</date>		<bibl><title>Humanity uprooted</title></bibl> (extra)			<date when="1934-01-28">28 .</date>
-              	<date when="1934-01-24">24 "</date>		<bibl><title>Rutibaga Stories</title></bibl>					<date when="1934-01-25">25</date>
-              	<date when="1934-01-28">28 "</date>		<bibl><title>Magic Mountain</title></bibl>						<date when="1934-01-30">30</date>
-              	<date when="1934-01-30">30	</date>		<bibl><title>Grass Roof</title></bibl>							<date when="1934-03-15">March 15</date>			
+              	<date ana="#checkedOut" when="1933-11-19">19 Nov</date>.	<bibl ana="#borrowedItem" corresp="mep:00fr72"><title>Jungle Ways</title></bibl>							<date ana="#returned" when="1933-11-21">21 Nov.</date>
+              	<date ana="#checkedOut" when="1933-11-21">21 "</date>		<bibl ana="#borrowedItem" corresp="mep:00fr8c"><title>Midchannel</title></bibl>							<date ana="#returned" when="1933-11-28">28 "</date>
+              	<date ana="#checkedOut" when="1933-11-28">28 "</date>		<bibl ana="#borrowedItem" corresp="mep:00fr9p"><title>Mr. Crump</title></bibl>							<date ana="#returned" when="1933-12-01">1 Dec</date>
+              	<date ana="#checkedOut" when="1933-11-30">30 "</date> extra	<bibl ana="#borrowedItem" corresp="mep:00102j"><title>Island Within</title></bibl>  3f pd				BB.
+              	<date ana="#checkedOut" when="1933-12-30">30 Dec.</date> 1v <bibl ana="#borrowedItem" corresp="mep:00688t"><title>Buddenbrooks</title></bibl> 2v 30 Dec				<date ana="#returned" when="1934-01-09">9 Jan</date>
+              	<date ana="#checkedOut" when="1934-01-09">9 Jan.</date> 	<bibl ana="#borrowedItem" corresp="mep:008s18"><title>Sons</title></bibl>									<date ana="#returned" when="1934-01-16">16 "</date>
+              	<date ana="#checkedOut" when="1934-01-09">	</date>	  extra:  <bibl ana="#borrowedItem" corresp="mep:00438z"><title>Long Lance</title></bibl>					<date ana="#returned" when="1934-01-12">12 "</date>
+              	<date ana="#checkedOut" when="1934-01-14">14 "</date>		<bibl ana="#borrowedItem" corresp="mep:00191q"><title>Purdah</title></bibl> extra						<date ana="#returned" when="1934-01-16">16 "</date>
+              	<date ana="#checkedOut" when="1934-01-16">16 Jan.</date>	<bibl ana="#borrowedItem" corresp="mep:00fs05"><title>East Winds</title></bibl>							<date ana="#returned" when="1934-01-21">21 "</date>
+              	<date ana="#checkedOut" when="1934-01-21">21 "</date>		<bibl ana="#borrowedItem" corresp="mep:00fs1g"><title>Tom Brown</title></bibl>							<date ana="#returned" when="1934-01-24">24</date>
+              	<date ana="#checkedOut" when="1934-01-21">21 "</date>		<bibl ana="#borrowedItem" corresp="mep:00fs2s"><title>Humanity uprooted</title></bibl> (extra)			<date ana="#returned" when="1934-01-28">28 .</date>
+              	<date ana="#checkedOut" when="1934-01-24">24 "</date>		<bibl ana="#borrowedItem" corresp="mep:00fs33"><title>Rutibaga Stories</title></bibl>					<date ana="#returned" when="1934-01-25">25</date>
+              	<date ana="#checkedOut" when="1934-01-28">28 "</date>		<bibl ana="#borrowedItem" corresp="mep:00fs4d"><title>Magic Mountain</title></bibl>						<date ana="#returned" when="1934-01-30">30</date>
+              	<date ana="#checkedOut" when="1934-01-30">30	</date>		<bibl ana="#borrowedItem" corresp="mep:00bw2w"><title>Grass Roof</title></bibl>							<date ana="#returned" when="1934-03-15">March 15</date>			
               	</ab>
         		<ab>
               						N.Y. Herald

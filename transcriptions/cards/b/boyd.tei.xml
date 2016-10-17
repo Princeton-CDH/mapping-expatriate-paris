@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#boyd.ja">James Boyd</persName> and <persName ref="#boyd.ma">Madeleine Boyd</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
@@ -55,23 +46,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/b/boyd/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 			<persName ref="#boyd.ja">BOYD</persName>
                 <date when="1931">1931</date>		<persName ref="#boyd.ja">James Boyd</persName>			in book
@@ -86,7 +77,7 @@
                 				        <addrLine>to Harrison of Paris</addrLine>
                 				  		<street>32 rue Vaugirard</street>
                 				        </address>
-                <date when="1931-04-21">April 21</date>	<bibl><title>And Even Now</title></bibl>		<date when="1931-12-21">Dec 21</date>
+                <date ana="#checkedOut" when="1931-04-21">April 21</date>	<bibl ana="#borrowedItem" corresp="mep:002x27"><title>And Even Now</title></bibl>		<date ana="#returned" when="1931-12-21">Dec 21</date>
                 				<date when="1931-05-19">May 19</date> p.c.				
                 				req. letter <date when="1931-09-29">Sept 29</date>
                 					to Scribners
@@ -97,7 +88,7 @@
                 </ab>
                 </div>
                 <div type="recto">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>
@@ -105,7 +96,7 @@
                 
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s3" />
+                <pb facs="#s3"/>
                 <head>
                 <date when="1938">1938</date>		<persName ref="#boyd.ma">BOYD, Madeleine</persName>
                 			                        <address>
@@ -118,12 +109,12 @@
                 			dep.						50
                 </ab>
                 <ab>
-                <date when="1938-10-13">Oct. 13</date>		<bibl><title>Journeys Between Wars</title></bibl>		<date when="1938-10-17">Oct 17</date>
-                <date when="1938-10-17">Oct 17</date>		<bibl><title>Daughter</title></bibl>					<date when="1938-10-20">Oct 20</date>
-                <date when="1938-10-20">Oct 20</date>		<bibl><title>Yearling</title></bibl>					<date when="1938-11-20">Nov 10</date>
-                <date when="1938-10-20">	20</date>		<bibl><title>Desire under the Elms</title></bibl> 2v	
-                <date when="1938-11-10">Nov 10</date>		<bibl><title>Those were the Days</title></bibl>
-                						sent card	<date when="1938-12-22">12/22/</date>
+                <date ana="#checkedOut" when="1938-10-13">Oct. 13</date>		<bibl ana="#borrowedItem" corresp="mep:002x3j"><title>Journeys Between Wars</title></bibl>		<date ana="#returned" when="1938-10-17">Oct 17</date>
+                <date ana="#checkedOut" when="1938-10-17">Oct 17</date>		<bibl ana="#borrowedItem" corresp="mep:002x4v"><title>Daughter</title></bibl>					<date ana="#returned" when="1938-10-20">Oct 20</date>
+                <date ana="#checkedOut" when="1938-10-20">Oct 20</date>		<bibl ana="#borrowedItem" corresp="mep:001626"><title>Yearling</title></bibl>					<date ana="#returned" when="1938-11-20">Nov 10</date>
+                <date ana="#checkedOut" when="1938-10-20">	20</date>		<bibl ana="#borrowedItem" corresp="mep:002x55"><title>Desire under the Elms</title></bibl> 2v	
+                <date ana="#checkedOut" when="1938-11-10">Nov 10</date>		<bibl ana="#borrowedItem" corresp="mep:002x6g"><title>Those were the Days</title></bibl>
+                						sent card	<date ana="#returned" when="1938-12-22">12/22/</date>
                 </ab>
                 <ab>
                 					Kept deposit		50v
@@ -133,7 +124,7 @@
                 </div>
                 
                 <div type="verso">
-                <pb facs="#s4" />
+                <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
                 </div>

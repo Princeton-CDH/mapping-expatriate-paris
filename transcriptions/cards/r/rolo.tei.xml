@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#rolo">A. Rolo</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -60,17 +51,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/rolo/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
                 <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <head>
                 <date when="1927">1927</date>	
                         <persName ref="#rolo">ROLO</persName>	
@@ -84,29 +75,29 @@
                 		                                                          Deposit						100
                 </ab>
                 <ab>
-            	<date when="1927-05-07"> "	7</date>	<bibl><title>Legend</title></bibl>.								<date when="1927-05-10">May 10</date>
-            	<date when="1927-05-07"> "	7</date>	<bibl><title>Collected Poems</title> <persName>Robinson</persName></bibl>			<date when="1927-05-09">May 9</date>
-            	<date when="1927-05-09">May 9</date>	<bibl><title>Great Gatsby</title></bibl>						<date when="1927-05-11"> "	11</date>
-            	<date when="1927-05-09"> "	"</date>	<bibl><title>Selected Poems</title> <persName>Dickinson</persName></bibl>			<date when="1927-05-10">May 10</date>
-            	<date when="1927-05-10"> "	10</date>	<bibl><title>Mr &amp; Mrs Haddock in Paris</title></bibl>		<date when="1927-05-13"> "	13</date>
-            	<date when="1927-05-11"> "	11</date>	<bibl><title>Wooden Pegasus</title></bibl>						<date when="1927-05-15"> "	15</date>
-            	<date when="1927-05-13"> "	13</date>	<bibl><title>Young India</title></bibl>							<date when="1927-05-21"> " Ap. 21</date>
-            	<date when="1927-05-13"> "	13</date>	<bibl><title>Awkward Age</title></bibl>							<date when="1927-05-17"> "	17</date>
-            	<date when="1927-05-17"> "	17</date>	<bibl><title>Weary Blues</title></bibl>							<date when="1927-05-19"> "	19</date>
-            	<date when="1927-05-19"> "	19</date>	<bibl><title>Buccolic Comedies</title></bibl>					<date when="1927-05-21">May 21</date>
-            	<date when="1927-05-21"> "	21</date>	<bibl><title>Decadence</title></bibl>							<date when="1927-05-21"> "	"</date>
-            	<date when="1927-05-21"> "	21</date>	<bibl><title>Streets of Night</title></bibl>					<date when="1927-05-23"> "	23</date>
-            	<date when="1927-05-23"> "	23</date>	<bibl><title>Poems of E. Dowson</title></bibl>					<date when="1927-05-27">May 27</date>
-            	<date when="1927-05-25"> "	25</date>	<bibl><title>Ethics of Dust</title></bibl>						<date when="1927-05-27"> "	"</date>
-            	<date when="1927-05-27"> "	27</date>	<bibl><title>Beyond Life</title></bibl>							<date when="1927-06-02">June 2</date>
-            	<date when="1927-05-27"> 	</date>	    <bibl><title>Dark Mother</title></bibl>						    <date when="1927-06-02">	 </date>
-            	<date when="1927-06-02">Juin 2.</date>	<bibl><title>Latest poems</title> <persName>Yeats</persName></bibl>					<date when="1927-06-05">June 5</date>
-            	<date when="1927-06-04"> "	4</date>	<bibl><title>Swinburne Collected Poems</title><biblScope unit="volume" from="2"> vol II</biblScope></bibl>	<date when="1927-06-07">June 7</date>
+            	<date ana="#checkedOut" when="1927-05-07"> "	7</date>	<bibl ana="#borrowedItem" corresp="mep:00812h"><title>Legend</title></bibl>.								<date ana="#returned" when="1927-05-10">May 10</date>
+            	<date ana="#checkedOut" when="1927-05-07"> "	7</date>	<bibl ana="#borrowedItem" corresp="mep:002h8s"><title>Collected Poems</title> <persName>Robinson</persName></bibl>			<date ana="#returned" when="1927-05-09">May 9</date>
+            	<date ana="#checkedOut" when="1927-05-09">May 9</date>	<bibl ana="#borrowedItem" corresp="mep:00h065"><title>Great Gatsby</title></bibl>						<date ana="#returned" when="1927-05-11"> "	11</date>
+            	<date ana="#checkedOut" when="1927-05-09"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00470k"><title>Selected Poems</title> <persName>Dickinson</persName></bibl>			<date ana="#returned" when="1927-05-10">May 10</date>
+            	<date ana="#checkedOut" when="1927-05-10"> "	10</date>	<bibl ana="#borrowedItem" corresp="mep:00sk45"><title>Mr &amp; Mrs Haddock in Paris</title></bibl>		<date ana="#returned" when="1927-05-13"> "	13</date>
+            	<date ana="#checkedOut" when="1927-05-11"> "	11</date>	<bibl ana="#borrowedItem" corresp="mep:00kt7k"><title>Wooden Pegasus</title></bibl>						<date ana="#returned" when="1927-05-15"> "	15</date>
+            	<date ana="#checkedOut" when="1927-05-13"> "	13</date>	<bibl ana="#borrowedItem" corresp="mep:00sk5g"><title>Young India</title></bibl>							<date ana="#returned" when="1927-05-21"> " Ap. 21</date>
+            	<date ana="#checkedOut" when="1927-05-13"> "	13</date>	<bibl ana="#borrowedItem" corresp="mep:00kn2n"><title>Awkward Age</title></bibl>							<date ana="#returned" when="1927-05-17"> "	17</date>
+            	<date ana="#checkedOut" when="1927-05-17"> "	17</date>	<bibl ana="#borrowedItem" corresp="mep:00fk3f"><title>Weary Blues</title></bibl>							<date ana="#returned" when="1927-05-19"> "	19</date>
+            	<date ana="#checkedOut" when="1927-05-19"> "	19</date>	<bibl ana="#borrowedItem" corresp="mep:00sk6s"><title>Buccolic Comedies</title></bibl>					<date ana="#returned" when="1927-05-21">May 21</date>
+            	<date ana="#checkedOut" when="1927-05-21"> "	21</date>	<bibl ana="#borrowedItem" corresp="mep:00sk73"><title>Decadence</title></bibl>							<date ana="#returned" when="1927-05-21"> "	"</date>
+            	<date ana="#checkedOut" when="1927-05-21"> "	21</date>	<bibl ana="#borrowedItem" corresp="mep:00nt0w"><title>Streets of Night</title></bibl>					<date ana="#returned" when="1927-05-23"> "	23</date>
+            	<date ana="#checkedOut" when="1927-05-23"> "	23</date>	<bibl ana="#borrowedItem" corresp="mep:00sk8d"><title>Poems of E. Dowson</title></bibl>					<date ana="#returned" when="1927-05-27">May 27</date>
+            	<date ana="#checkedOut" when="1927-05-25"> "	25</date>	<bibl ana="#borrowedItem" corresp="mep:00sk9q"><title>Ethics of Dust</title></bibl>						<date ana="#returned" when="1927-05-27"> "	"</date>
+            	<date ana="#checkedOut" when="1927-05-27"> "	27</date>	<bibl ana="#borrowedItem" corresp="mep:00nx9h"><title>Beyond Life</title></bibl>							<date ana="#returned" when="1927-06-02">June 2</date>
+            	<date ana="#checkedOut" when="1927-05-27"> 	</date>	    <bibl ana="#borrowedItem" corresp="mep:001h8j"><title>Dark Mother</title></bibl>						    <date ana="#returned" when="1927-06-02">	 </date>
+            	<date ana="#checkedOut" when="1927-06-02">Juin 2.</date>	<bibl ana="#borrowedItem" corresp="mep:00sm06"><title>Latest poems</title> <persName>Yeats</persName></bibl>					<date ana="#returned" when="1927-06-05">June 5</date>
+            	<date ana="#checkedOut" when="1927-06-04"> "	4</date>	<bibl ana="#borrowedItem" corresp="mep:00sm1h"><title>Swinburne Collected Poems</title><biblScope unit="volume" from="2"> vol II</biblScope></bibl>	<date ana="#returned" when="1927-06-07">June 7</date>
             	<date when="1927-06-07"> "	7 </date>           	 	
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <head>
                 <date when="1926-09-10">1926 Sept 10</date>	 <persName ref="#rolo">ROLO</persName>
                 
@@ -126,25 +117,25 @@
                 			Deposit					100 refunded
                 </ab>
                 <ab>
-                <date when="1926-09-10">Sept 10</date>		<bibl><title>William Blake</title> (<persName>Swinburne</persName>)</bibl>		<date when="1926-09-14">Sept 14</date>
-                <date when="1926-09-10">	</date>		    <bibl><title>Manhattan Transfer</title></bibl>				<date when="1926-09-15">Sept 15</date>
-                <date when="1926-09-14">Sept 14</date>		<bibl><title>Donne's Poetical Works</title> <biblScope unit="volume" from="1">I</biblScope></bibl>		<date when="1926-09-15">Sept 15</date>
-                <date when="1926-09-15">	 15</date>		<bibl><title>Man Traps</title></bibl>						<date when="1926-09-20">Sept 20</date>
-                <date when="1926-09-15"> "	 "</date>		<bibl><title>Those Barren Leaves</title></bibl>				<date when="1926-09-20"> "	 20</date>
-                <date when="1926-09-20"> "	 20</date>		<bibl><title>Poems W. Dela Mare</title> <biblScope from="1" to="2">2 vols.</biblScope></bibl>		<date when="1926-09-22">Sept 22</date>
-                <date when="1926-09-20"> "	 20</date>		<bibl><title>Hey Rub a Dub Dub</title></bibl>
-                <date when="1926-09-22"> "	 22</date>		<bibl><title>Collected Poems A E</title></bibl>			<date when="1926-09-24">Sept 24</date>
-                <date when="1926-09-22">	</date>		    <bibl><title>Varieties of Religious Experience</title></bibl> <date when="1926-10-08">Oct 8</date>
-                <date when="1926-09-22"> "	 24</date>		<bibl><title>New Poetry</title></bibl>						<date when="1926-09-29">Sept 29</date>
-                <date when="1926-09-29"> "	 29</date>		<bibl><title>Esther Waters.</title></bibl>					<date when="1926-10-08">Oct 8.</date>
+                <date ana="#checkedOut" when="1926-09-10">Sept 10</date>		<bibl ana="#borrowedItem" corresp="mep:007915"><title>William Blake</title> (<persName>Swinburne</persName>)</bibl>		<date ana="#returned" when="1926-09-14">Sept 14</date>
+                <date ana="#checkedOut" when="1926-09-10">	</date>		    <bibl ana="#borrowedItem" corresp="mep:001t81"><title>Manhattan Transfer</title></bibl>				<date ana="#returned" when="1926-09-15">Sept 15</date>
+                <date ana="#checkedOut" when="1926-09-14">Sept 14</date>		<bibl ana="#borrowedItem" corresp="mep:00g461"><title>Donne's Poetical Works</title> <biblScope unit="volume" from="1">I</biblScope></bibl>		<date ana="#returned" when="1926-09-15">Sept 15</date>
+                <date ana="#checkedOut" when="1926-09-15">	 15</date>		<bibl ana="#borrowedItem" corresp="mep:001h49"><title>Man Traps</title></bibl>						<date ana="#returned" when="1926-09-20">Sept 20</date>
+                <date ana="#checkedOut" when="1926-09-15"> "	 "</date>		<bibl ana="#borrowedItem" corresp="mep:000872"><title>Those Barren Leaves</title></bibl>				<date ana="#returned" when="1926-09-20"> "	 20</date>
+                <date ana="#checkedOut" when="1926-09-20"> "	 20</date>		<bibl ana="#borrowedItem" corresp="mep:00sm2t"><title>Poems W. Dela Mare</title> <biblScope from="1" to="2">2 vols.</biblScope></bibl>		<date ana="#returned" when="1926-09-22">Sept 22</date>
+                <date ana="#checkedOut" when="1926-09-20"> "	 20</date>		<bibl ana="#borrowedItem" corresp="mep:005p1q"><title>Hey Rub a Dub Dub</title></bibl>
+                <date ana="#checkedOut" when="1926-09-22"> "	 22</date>		<bibl ana="#borrowedItem" corresp="mep:001565"><title>Collected Poems A E</title></bibl>			<date ana="#returned" when="1926-09-24">Sept 24</date>
+                <date ana="#checkedOut" when="1926-09-22">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00780k"><title>Varieties of Religious Experience</title></bibl> <date ana="#returned" when="1926-10-08">Oct 8</date>
+                <date ana="#checkedOut" when="1926-09-22"> "	 24</date>		<bibl ana="#borrowedItem" corresp="mep:00hb2p"><title>New Poetry</title></bibl>						<date ana="#returned" when="1926-09-29">Sept 29</date>
+                <date ana="#checkedOut" when="1926-09-29"> "	 29</date>		<bibl ana="#borrowedItem" corresp="mep:009h19"><title>Esther Waters.</title></bibl>					<date ana="#returned" when="1926-10-08">Oct 8.</date>
                  					<persName>Monsieur Jacques Rolo.</persName>
                 <date when="1926-10-08">Oct 8</date>		S to <date to="1926-11-08">Nov. 8th. 1926</date> . 1 m 1 vol 25
                 								Deposit		50 refunded
-                <date when="1926-10-08"> "	 "	</date>	    <bibl><title>Complete Prose.</title></bibl>					<date when="1926-10-18">Oct 18</date>
-                <date when="1926-10-18"> "	 18</date>		<bibl><title>Green Mansions.</title></bibl>					<date when="1926-10-22"> "	22</date>
-                <date when="1926-10-22"> "	 22</date>		<bibl><title>Analysis of the Mind</title></bibl>			<date when="1926-10-27"> "	27</date>
-                <date when="1926-10-27"> "	 27</date>		<bibl><title>Selected Poems of Carl Sandburg</title></bibl>	<date when="1926-11-02">Nov 2.</date>
-                <date when="1926-11-02">Nov 2.</date>		<bibl><title>Autumn</title></bibl>							<date when="1926-11-08">Nov 8</date>
+                <date ana="#checkedOut" when="1926-10-08"> "	 "	</date>	    <bibl ana="#borrowedItem" corresp="mep:00hc0b"><title>Complete Prose.</title></bibl>					<date ana="#returned" when="1926-10-18">Oct 18</date>
+                <date ana="#checkedOut" when="1926-10-18"> "	 18</date>		<bibl ana="#borrowedItem" corresp="mep:001p22"><title>Green Mansions.</title></bibl>					<date ana="#returned" when="1926-10-22"> "	22</date>
+                <date ana="#checkedOut" when="1926-10-22"> "	 22</date>		<bibl ana="#borrowedItem" corresp="mep:006580"><title>Analysis of the Mind</title></bibl>			<date ana="#returned" when="1926-10-27"> "	27</date>
+                <date ana="#checkedOut" when="1926-10-27"> "	 27</date>		<bibl ana="#borrowedItem" corresp="mep:00sm34"><title>Selected Poems of Carl Sandburg</title></bibl>	<date ana="#returned" when="1926-11-02">Nov 2.</date>
+                <date ana="#checkedOut" when="1926-11-02">Nov 2.</date>		<bibl ana="#borrowedItem" corresp="mep:00sm4f"><title>Autumn</title></bibl>							<date ana="#returned" when="1926-11-08">Nov 8</date>
                 </ab>
                 </div>
                 </div>

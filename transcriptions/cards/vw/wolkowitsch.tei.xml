@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wolk.j">J.L. Wolkowitsch</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/wolkowitsch/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1940">1940</date>		<address><persName ref="#wolk.j">WOLKOWITSCH
                     				                    J.L.</persName>
@@ -80,14 +71,14 @@
                     						ref dep <date when="1941-01-30">Jan 30</date> 100
                     </ab>
                     <ab>
-                    <date when="1940-10-05">Oct 5</date>	<bibl><title>Men without Woman</title></bibl>		<date when="1940-10-18">Oct 18</date>
-                    <date when="1940-10-18">Oct 18</date>	<bibl><title>Light in August</title></bibl>			<date when="1940-11-05">Nov 5</date>
-                    <date when="1940-11-05">Nov 5</date>	<bibl><title>As I Lay Dying</title></bibl>			<date when="1941-01-30">Jan 30</date>
+                    <date ana="#checkedOut" when="1940-10-05">Oct 5</date>	<bibl ana="#borrowedItem" corresp="mep:002300"><title>Men without Woman</title></bibl>		<date ana="#returned" when="1940-10-18">Oct 18</date>
+                    <date ana="#checkedOut" when="1940-10-18">Oct 18</date>	<bibl ana="#borrowedItem" corresp="mep:00217m"><title>Light in August</title></bibl>			<date ana="#returned" when="1940-11-05">Nov 5</date>
+                    <date ana="#checkedOut" when="1940-11-05">Nov 5</date>	<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I Lay Dying</title></bibl>			<date ana="#returned" when="1941-01-30">Jan 30</date>
                     	Pd 1 month sub. 20, to sub. had expired.
                     </ab>	
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

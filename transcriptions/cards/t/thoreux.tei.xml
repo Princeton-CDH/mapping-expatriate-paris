@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#thor.an">Mlle Andrée Thoreux</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/t/thoreux/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     <date when="1940">1940</date>
                     				<address><persName ref="#thor.an">THOREUX
@@ -79,20 +70,20 @@
                     </ab>									
                     									
                     <ab>									
-                    <date when="1940-11-04">Nov 4</date>	<bibl><title>Proud Servant</title></bibl>					<date when="1940-11-14">Nov 14</date>
-                    <date when="1940-11-14">Nov 14</date>	<bibl><title>Rob roy</title></bibl>							<date when="1940-11-28">Nov 28</date>
-                    		                                <bibl><title>Frost Frost's selected poems</title>, intro by Auden etc.</bibl>
-                    <date when="1940-11-28">Nov 28</date>	<bibl><title>Louder + funnier</title></bibl>	            <date when="1940-12-02">Dec 2</date>
-                    <date when="1940-12-02">Dec 2</date>	<bibl><title>Louder and Funnier</title></bibl>				<date when="1940-12-12">Dec 12</date>
-                    <date when="1940-12-12">Dec 12</date>	<bibl><title>Saint Joan</title></bibl>						<date when="1940-12-24">Dec 24</date>
-                    <date when="1940-12-24">	24</date>	<bibl><title>None so Pretty</title></bibl> (ren <date when="1941-01-06">Jan 6</date> 2 wks) <date when="1941-01-09">Jan 9</date>
-                    <date when="1941-01-09">Jan 9</date>	<bibl><title>J. Webster + Eliz Drama</title> (<author>R. Brooke</author>)</bibl>	<date when="1941-01-16">Jan. 16</date>
-                    <date when="1941-01-16">	16</date>	<bibl><title>Testament of Beauty</title></bibl>				<date when="1941-01-28">Jan 28</date>
+                    <date ana="#checkedOut" when="1940-11-04">Nov 4</date>	<bibl ana="#borrowedItem" corresp="mep:00328f"><title>Proud Servant</title></bibl>					<date ana="#returned" when="1940-11-14">Nov 14</date>
+                    <date ana="#checkedOut" when="1940-11-14">Nov 14</date>	<bibl ana="#borrowedItem" corresp="mep:00c127"><title>Rob roy</title></bibl>							<date ana="#checkedOut" when="1940-11-28">Nov 28</date>
+                    		                                <bibl ana="#borrowedItem" corresp="mep:00gs96"><title>Frost Frost's selected poems</title>, intro by Auden etc.</bibl>
+                    <date ana="#checkedOut" when="1940-11-28">Nov 28</date>	<bibl ana="#borrowedItem" corresp="mep:00fm0s"><title>Louder + funnier</title></bibl>	            <date ana="#returned" when="1940-12-02">Dec 2</date>
+                    <date ana="#checkedOut" when="1940-12-02">Dec 2</date>	<bibl ana="#borrowedItem" corresp="mep:00fm0s"><title>Louder and Funnier</title></bibl>				<date ana="#returned" when="1940-12-12">Dec 12</date>
+                    <date ana="#checkedOut" when="1940-12-12">Dec 12</date>	<bibl ana="#borrowedItem" corresp="mep:00256d"><title>Saint Joan</title></bibl>						<date ana="#returned" when="1940-12-24">Dec 24</date>
+                    <date ana="#checkedOut" when="1940-12-24">	24</date>	<bibl ana="#borrowedItem" corresp="mep:009877"><title>None so Pretty</title></bibl> (ren <date ana="#returned" when="1941-01-06">Jan 6</date> 2 wks) <date when="1941-01-09">Jan 9</date>
+                    <date ana="#checkedOut" when="1941-01-09">Jan 9</date>	<bibl ana="#borrowedItem" corresp="mep:00gt0p"><title>J. Webster + Eliz Drama</title> (<author>R. Brooke</author>)</bibl>	<date ana="#returned" when="1941-01-16">Jan. 16</date>
+                    <date ana="#checkedOut" when="1941-01-16">	16</date>	<bibl ana="#borrowedItem" corresp="mep:002j7r"><title>Testament of Beauty</title></bibl>				<date ana="#returned" when="1941-01-28">Jan 28</date>
                     					subsc due <date when="1941-02-04">Feb 4</date>
                     </ab>					
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

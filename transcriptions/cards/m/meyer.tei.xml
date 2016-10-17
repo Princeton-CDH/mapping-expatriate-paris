@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#meye.fl">Florence Meyer</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc> 
 	<profileDesc>
@@ -54,16 +45,16 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/m/meyer/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
-               <div type="recto"> <pb facs="#s1" />
+               <div type="recto"> <pb facs="#s1"/>
                 
               <head>  <date when="1933-10-05">1933 Oct 5</date>			<persName ref="#meye.fl">MEYER</persName>
                 	290		Chez <address><persName>Mme Odier</persName>
@@ -77,40 +68,40 @@
                 					see account card
                 						made a mistake
                 						she owes 45v more</ab>
-             <ab>   <date when="1933-10-05">Oct 5</date>	<bibl><title>As I lay Dying</title></bibl>					<date when="1933-10-07">Oct 7</date>
-                	<date when="1933-10-07">7</date>	<bibl><title>Sound &amp; The Fury</title></bibl>				<date when="1933-10-12">Oct 12</date>
-                	<date when="1933-10-12">12</date>	<bibl><title>History of Russian Revolution</title> <biblScope unit="volume" from="1" to="1">v1</biblScope></bibl> <date when="1933-10-27">Oct 27</date>
-                							ren to <date when="1933-10-28">28 Oct</date>
-                		<bibl><title>Broome Stages</title></bibl>	ren				<date when="1933-10-27">Oct 27</date>
-                	<date when="1933-10-31">31</date>	<bibl><title>Devil in the Flesh</title></bibl>				<date when="1933-11-04">Nov 4</date>
-                		<bibl><title>Life of the Bee</title></bibl>					<date when="1933-11-04">Nov 4</date>
-                <date when="1933-11-04">Nov 4</date>	<bibl><title>In the American Grain</title></bibl>	ren		<date when="1933-11-20">Nov 20</date>
-                		<bibl><title>Golden Bough</title></bibl> ren				<date when="1933-11-20">Nov 20</date>
+             <ab>   <date ana="#checkedOut" when="1933-10-05">Oct 5</date>	<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I lay Dying</title></bibl>					<date ana="#returned" when="1933-10-07">Oct 7</date>
+                	<date ana="#checkedOut" when="1933-10-07">7</date>	<bibl ana="#borrowedItem" corresp="mep:001b6j"><title>Sound &amp; The Fury</title></bibl>				<date ana="#returned" when="1933-10-12">Oct 12</date>
+                	<date ana="#checkedOut" when="1933-10-12">12</date>	<bibl ana="#borrowedItem" corresp="mep:00fs61"><title>History of Russian Revolution</title> <biblScope unit="volume" from="1" to="1">v1</biblScope></bibl> <date ana="#returned" when="1933-10-27">Oct 27</date>
+                							ren to <date ana="#checkedOut" when="1933-10-28">28 Oct</date>
+                		<bibl ana="#borrowedItem" corresp="mep:004d5h"><title>Broome Stages</title></bibl>	ren				<date ana="#returned" when="1933-10-27">Oct 27</date>
+                	<date ana="#checkedOut" when="1933-10-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00g60q"><title>Devil in the Flesh</title></bibl>				<date ana="#checkedOut" when="1933-11-04">Nov 4</date>
+                		<bibl ana="#borrowedItem" corresp="mep:00g611"><title>Life of the Bee</title></bibl>					<date ana="#returned" when="1933-11-04">Nov 4</date>
+                <date ana="#checkedOut" when="1933-11-04">Nov 4</date>	<bibl ana="#borrowedItem" corresp="mep:00824d"><title>In the American Grain</title></bibl>	ren		<date ana="#checkedOut" when="1933-11-20">Nov 20</date>
+                		<bibl ana="#borrowedItem" corresp="mep:001134"><title>Golden Bough</title></bibl> ren				<date ana="#returned" when="1933-11-20">Nov 20</date>
                 					paid 45f balanc
                 					due on subsc.
-                <date when="1933-11-22">Nov 22</date>	<bibl><title>Counterfeiters</title></bibl> ren.				BB
-                		<bibl><title>Napoleon</title>, <author>Mereszkorvsky</author></bibl>			<date when="1933-11-28">Nov 28</date>
-                <date when="1933-12-04">Dec 4</date>	<bibl><title>Winner take Nothing</title></bibl> (2nd copy)	BB
-                	<date when="1933-12-19">19</date>	<bibl><title>Possessed</title></bibl>						<date when="1933-12-23">Dec 23</date>
-                	<date when="1933-12-19">19</date>	<bibl><title>Stavrogin's Confession</title></bibl> extra	<date when="1933-12-23">Dec 23</date>
-                		owes <bibl><title>Art of Pantomime</title></bibl>	15/
-                <date when="1933-12-27">Dec 27</date>	<bibl><title>Etruscan Places.</title></bibl>				<date when="1934-01-03">Jan 3</date>
-                		<bibl><title>Napoleon</title>, <author>Ludwig</author></bibl> ren Jan 3		<date when="1934-01-30">30 Jan</date>
-                <date when="1934-01-03">Jan 3</date>	<bibl><title>Divine Comedy</title></bibl>					<date when="1934-01-29">29 Jan</date>
-                	<date when="1934-01-29">29</date>	<bibl><title>Musical Chronicles</title></bibl>				<date when="1934-02-08">Feb 8</date>
-                	<date when="1934-01-29">29</date>	<bibl><title>Musical Portraits</title></bibl>				<date when="1934-02-08">Feb 8</date>
-                <date when="1934-02-08">Feb 8</date>	<bibl><title>Books &amp; Theatres</title>, <author>Craig</author></bibl>				<date when="1934-02-26">26</date>
-                <date when="1934-02-08">Feb 8</date>	<bibl><title>Development of the Theatre</title>, <author>Allardyce Nicole</author></bibl> <date when="1934-02-26">26</date>
+                <date ana="#checkedOut" when="1933-11-22">Nov 22</date>	<bibl ana="#borrowedItem" corresp="mep:00dj2m"><title>Counterfeiters</title></bibl> ren.				BB
+                		<bibl ana="#borrowedItem" corresp="mep:009357"><title>Napoleon</title>, <author>Mereszkorvsky</author></bibl>			<date ana="#returned" when="1933-11-28">Nov 28</date>
+                <date ana="#checkedOut" when="1933-12-04">Dec 4</date>	<bibl ana="#borrowedItem" corresp="mep:00227w"><title>Winner take Nothing</title></bibl> (2nd copy)	BB
+                	<date ana="#checkedOut" when="1933-12-19">19</date>	<bibl ana="#borrowedItem" corresp="mep:00f73p"><title>Possessed</title></bibl>						<date ana="#returned" when="1933-12-23">Dec 23</date>
+                	<date ana="#checkedOut" when="1933-12-19">19</date>	<bibl ana="#borrowedItem" corresp="mep:00g62b"><title>Stavrogin's Confession</title></bibl> extra	<date ana="#checkedOut" when="1933-12-23">Dec 23</date>
+                		owes <bibl ana="#borrowedItem" corresp="mep:00g63n"><title>Art of Pantomime</title></bibl>	15/
+                <date ana="#checkedOut" when="1933-12-27">Dec 27</date>	<bibl ana="#borrowedItem" corresp="mep:00442c"><title>Etruscan Places.</title></bibl>				<date ana="#checkedOut" when="1934-01-03">Jan 3</date>
+                		<bibl ana="#borrowedItem" corresp="mep:009357"><title>Napoleon</title>, <author>Ludwig</author></bibl> ren Jan 3		<date ana="#returned" when="1934-01-30">30 Jan</date>
+                <date ana="#checkedOut" when="1934-01-03">Jan 3</date>	<bibl ana="#borrowedItem" corresp="mep:00g64z"><title>Divine Comedy</title></bibl>					<date ana="#returned" when="1934-01-29">29 Jan</date>
+                	<date ana="#checkedOut" when="1934-01-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:00g658"><title>Musical Chronicles</title></bibl>				<date ana="#returned" when="1934-02-08">Feb 8</date>
+                	<date ana="#checkedOut" when="1934-01-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:00bs7m"><title>Musical Portraits</title></bibl>				<date ana="#returned" when="1934-02-08">Feb 8</date>
+                <date ana="#checkedOut" when="1934-02-08">Feb 8</date>	<bibl ana="#borrowedItem" corresp="mep:009f69"><title>Books &amp; Theatres</title>, <author>Craig</author></bibl>				<date ana="#returned" when="1934-02-26">26</date>
+                <date ana="#checkedOut" when="1934-02-08">Feb 8</date>	<bibl ana="#borrowedItem" corresp="mep:00g66k"><title>Development of the Theatre</title>, <author>Allardyce Nicole</author></bibl> <date ana="#returned" when="1934-02-26">26</date>
                 									</ab>
                 </div>
-            <div type="verso">    <pb facs="#s2" />
+            <div type="verso">    <pb facs="#s2"/>
                 
               <ab>  renewed <date when="1934-10-05">Jan 5th</date> 2 mos <date when="1934-03-05">March 5 1934</date>	80f
                 			can keep books overtime
                 			
-                <date when="1934-02-26">Feb 26</date>	<bibl><title>Symbolism</title></bibl>				4/6
-                		<bibl><title>Self &amp; Superman</title></bibl>			7/6
-                					p.c. <date when="1934-04-20">Ap 20</date></ab>
+                <date ana="#checkedOut" when="1934-02-26">Feb 26</date>	<bibl ana="#borrowedItem" corresp="mep:00g67w"><title>Symbolism</title></bibl>				4/6
+                		<bibl ana="#borrowedItem" corresp="mep:00g686"><title>Self &amp; Superman</title></bibl>			7/6
+                					p.c. <date ana="#returned" when="1934-04-20">Ap 20</date></ab>
               </div>  </div>
             
         </body>

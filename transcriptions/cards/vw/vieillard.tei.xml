@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#viei.gi">Monsieur Gilbert Vieillard</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -65,23 +56,23 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/vw/vieillard/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
         <surface xml:id="s3">
-            <graphic url="00000003.jp2" />
+            <graphic url="00000003.jp2"/>
         </surface>
         <surface xml:id="s4">
-            <graphic url="00000004.jp2" />
+            <graphic url="00000004.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                     	<address><name>"SHAKESPEARE AND COMPANY"</name>
                     		<persName ref="#beac.sy">SYLVIA BEACH</persName>
@@ -103,7 +94,7 @@
                     </ab>
                 </div>    
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     <ab>
                     Renewed to <date when="1934-06-11">11 June 1934</date>
                     						30f
@@ -112,7 +103,7 @@
                     </ab>								
                 </div> 
                 <div type="recto">
-                    <pb facs="#s3" />
+                    <pb facs="#s3"/>
                     <head>
                     <date from="1933" to="1934-03-28">1933			
                       to			 
@@ -129,7 +120,7 @@
                     							refunded
                     </ab>	
                     <ab>
-                    <date when="1933-12-11">Dec 11</date>	    <bibl><title>Brave New World</title></bibl>		<date when="1933-12-19">Dec 19</date>
+                    <date ana="#checkedOut" when="1933-12-11">Dec 11</date>	    <bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>		<date ana="#returned" when="1933-12-19">Dec 19</date>
                     </ab>
                     <ab>
                     						<persName ref="#viei.gi">Vieillard</persName>
@@ -137,30 +128,30 @@
                                                                 deposit 30f
                     </ab>
                     <ab>
-                    <date when="1933-12-30">Dec. 30</date>		<bibl><title>Brave New World</title></bibl>		<date when="1934-01-04">Jan 4</date>
-                    <date when="1934-01-04">Jan 4</date>		<bibl><title>Light that Failed</title></bibl>	<date when="1934-02-19">Feb. 19</date>
-                    <date when="1934-02-19">Feb. 19</date>		<bibl><title>Pt. Counter point</title></bibl>	<date when="1934-03-14">March 14</date>
-                    <date when="1934-03-14">March 14</date>	    <bibl><title>Music at Night.</title></bibl>		<date when="1934-04-14">April 14</date>
+                    <date ana="#checkedOut" when="1933-12-30">Dec. 30</date>		<bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>		<date ana="#returned" when="1934-01-04">Jan 4</date>
+                    <date ana="#checkedOut" when="1934-01-04">Jan 4</date>		<bibl ana="#borrowedItem" corresp="mep:002464"><title>Light that Failed</title></bibl>	<date ana="#returned" when="1934-02-19">Feb. 19</date>
+                    <date ana="#checkedOut" when="1934-02-19">Feb. 19</date>		<bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Pt. Counter point</title></bibl>	<date ana="#returned" when="1934-03-14">March 14</date>
+                    <date ana="#checkedOut" when="1934-03-14">March 14</date>	    <bibl ana="#borrowedItem" corresp="mep:000n3v"><title>Music at Night.</title></bibl>		<date ana="#returned" when="1934-04-14">April 14</date>
                     </ab>
                     <ab>
                      Renewed 	<date from="1934-03-11" to="1934-06-11">March 11 - June 11	1934</date>	30f
                     </ab>
                     <ab>
-                    <date when="1934-04-14">April 14</date>	    <bibl><title>Green Mansions</title></bibl>		<date when="1934-04-26">April 26</date>
-                    <date when="1934-04-26">April 26</date>	    <bibl><title>Good Earth</title></bibl>			<date when="1934-05-08">May 8</date>
-                    <date when="1934-05-08">May 8</date>		<bibl><title>Brief Candles</title></bibl>		<date when="1934-05-16">	16</date>
-                    <date when="1934-05-16">	16</date>		<bibl><title>Moby Dick</title></bibl> card <date when="1934-06-07">7 June</date>	<date when="1934-06-09">9 June</date>
+                    <date ana="#checkedOut" when="1934-04-14">April 14</date>	    <bibl ana="#borrowedItem" corresp="mep:001p22"><title>Green Mansions</title></bibl>		<date ana="#returned" when="1934-04-26">April 26</date>
+                    <date ana="#checkedOut" when="1934-04-26">April 26</date>	    <bibl ana="#borrowedItem" corresp="mep:001q0q"><title>Good Earth</title></bibl>			<date ana="#returned" when="1934-05-08">May 8</date>
+                    <date ana="#checkedOut" when="1934-05-08">May 8</date>		<bibl ana="#borrowedItem" corresp="mep:00034r"><title>Brief Candles</title></bibl>		<date ana="#returned" when="1934-05-16">	16</date>
+                    <date ana="#checkedOut" when="1934-05-16">	16</date>		<bibl ana="#borrowedItem" corresp="mep:001715"><title>Moby Dick</title></bibl> card <date ana="#returned" when="1934-06-07">7 June</date>	<date when="1934-06-09">9 June</date>
                     </ab>	
                     <ab>
                     Renewed <date from="1934-06-11" to="1934-09-11">11 June - 11 September 1934</date>		30f
                     </ab>
                     <ab>
-                    <date when="1934-06-09">9 June</date>		<bibl><title>Africa Crew</title></bibl>			<date when="1934-06-22">June 22</date>
+                    <date ana="#checkedOut" when="1934-06-09">9 June</date>		<bibl ana="#borrowedItem" corresp="mep:00bx3g"><title>Africa Crew</title></bibl>			<date ana="#returned" when="1934-06-22">June 22</date>
                     						ref. dep. 30f <date when="1934-06-22">June 22</date>
                     			(suspended)
                     </ab>			
                  </div>   
-                    <pb facs="#s4" />
+                    <pb facs="#s4"/>
                     
                     <!-- Verso Blank -->
                     

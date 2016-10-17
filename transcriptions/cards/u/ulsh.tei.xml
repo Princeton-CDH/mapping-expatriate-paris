@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#ulsh.do">Miss D. Ulsh</persName></title>
@@ -26,14 +24,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
@@ -55,17 +46,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/u/ulsh/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                 <div type="recto">
-                    <pb facs="#s1" />
+                    <pb facs="#s1"/>
                     <head>
                             <persName ref="#ulsh.do">ULSH</persName>
                     <date when="1928-05-30">1928	
@@ -83,22 +74,22 @@
                     						<persName ref="#ulsh.do">Dorielha Ulsh</persName>
                     </ab>						
                     <ab>
-                    <date when="1928-05-30">May 30</date>	<bibl><title>Mozart Operas</title></bibl>.						<date when="1928-06-15">June 15</date>
-                    <date when="1928-06-15">June 15</date>	<bibl><title>"	"</title></bibl>	ren.					    <date when="1928-06-27">	 27</date>
-                    <date when="1928-06-27">"	 27</date>	<bibl><title>Notre Dame de Paris</title></bibl>		ren.		<date when="1928-09-11">Sept 11</date>
-                     		wants <bibl><title>Tale of Two Cities</title></bibl> when <persName>N.D.</persName> sent back
-                    <date when="1928-09-11">Sept 11</date>	<bibl><title>Ariel</title></bibl>								<date when="1928-09-15">Sept 15</date>
-                    <date when="1928-09-15">	 15</date>	<bibl><title>Bridge of San Luis Rey</title></bibl>				<date when="1928-09-21">"	 21</date>
-                    <date when="1928-09-21">	 21</date>	<bibl><title>Candide</title></bibl>								<date when="1928-10-01">Oct 1st</date>
-                    <date when="1928-10-01">Oct 1st</date>	<bibl><title>Articls de Paris</title></bibl>		0.25		<date when="1928-10-09">Oct 9</date>
+                    <date ana="#checkedOut" when="1928-05-30">May 30</date>	<bibl ana="#borrowedItem"><title>Mozart Operas</title></bibl>.						<date ana="#returned" when="1928-06-15">June 15</date>
+                    <date ana="#checkedOut" when="1928-06-15">June 15</date>	<bibl ana="#borrowedItem"><title>"	"</title></bibl>	ren.					    <date ana="#returned" when="1928-06-27">	 27</date>
+                    <date ana="#checkedOut" when="1928-06-27">"	 27</date>	<bibl ana="#borrowedItem"><title>Notre Dame de Paris</title></bibl>		ren.		<date ana="#checkedOut" when="1928-09-11">Sept 11</date>
+                     		wants <bibl ana="#borrowedItem"><title>Tale of Two Cities</title></bibl> when <persName>N.D.</persName> sent back
+                    <date ana="#checkedOut" when="1928-09-11">Sept 11</date>	<bibl ana="#borrowedItem"><title>Ariel</title></bibl>								<date ana="#returned" when="1928-09-15">Sept 15</date>
+                    <date ana="#checkedOut" when="1928-09-15">	 15</date>	<bibl ana="#borrowedItem"><title>Bridge of San Luis Rey</title></bibl>				<date ana="#returned" when="1928-09-21">"	 21</date>
+                    <date ana="#checkedOut" when="1928-09-21">	 21</date>	<bibl ana="#borrowedItem"><title>Candide</title></bibl>								<date ana="#returned" when="1928-10-01">Oct 1st</date>
+                    <date ana="#checkedOut" when="1928-10-01">Oct 1st</date>	<bibl ana="#borrowedItem"><title>Articls de Paris</title></bibl>		0.25		<date ana="#returned" when="1928-10-09">Oct 9</date>
                     <date when="1928-10-09"> "	9</date>	(took nothing) interrupted 3 weeks
                     
-                    <date when="1928-10-30">Oct 30</date>	<bibl><title>Tale of 2 Cities</title></bibl>					<date when="1929-01-15">Jan 15</date>.
+                    <date ana="#checkedOut" when="1928-10-30">Oct 30</date>	<bibl ana="#borrowedItem"><title>Tale of 2 Cities</title></bibl>					<date ana="#returned" when="1929-01-15">Jan 15</date>.
                     					<date when="1928-12-18">Dec 18</date> p.c.
                     </ab>					
                 </div> 
                 <div type="verso">
-                    <pb facs="#s2" />
+                    <pb facs="#s2"/>
                     
                     <!-- Verso Blank -->
                 </div>

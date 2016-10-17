@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="guil.lo">Louis Guilloux</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -57,10 +48,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/g/guillouy/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -72,23 +63,23 @@
         <body>
             <div type="card">
                 <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                	<ab><date when="1937">1937</date>		<persName ref="guil.lo">GUILLOUY
                				Louis</persName>
                					<address><street>20 rue le Verrier.</street>
                							<settlement>Paris</settlement> <district>VI</district></address>
                	
-               	<date when="1937-02-15">Feb 15</date>	<bibl><title>Croquet Player</title></bibl>
-               			<bibl><title>Tramp <unclear/></title></bibl>
+               	<date ana="#checkedOut" when="1937-02-15">Feb 15</date>	<bibl ana="#borrowedItem" corresp="mep:00kh2j"><title>Croquet Player</title></bibl>
+               			<bibl ana="#borrowedItem" corresp="mep:00kh3v"><title>Tramp <unclear/></title></bibl>
                			
-               			<date when="1937-06-09">June 9</date> sent <persName ref="guil.lo">Guillouy</persName> cheque Bryher
-               		<bibl><title>Life 2 Letters To day</title></bibl>	Frs 650
+               			<date ana="#returned" when="1937-06-09">June 9</date> sent <persName ref="guil.lo">Guillouy</persName> cheque Bryher
+               		<bibl ana="#borrowedItem" corresp="mep:001h30"><title>Life 2 Letters To day</title></bibl>	Frs 650
                		
                						no hope
                	</ab>
                 </div>
                	<div type="verso">
-               	<pb facs="#s2" />
+               	<pb facs="#s2"/>
                	<!-- verso blank -->
                	</div>
                	

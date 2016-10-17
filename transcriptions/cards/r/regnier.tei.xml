@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="regn.he">Henri Regnier</persName></title>
@@ -22,14 +20,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml"> 
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -50,17 +41,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/r/regnier/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
            <div type="card">
               <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 			<persName ref="regn.he">M. Regnier, Henri</persName>
                 			  <address><street>9 rue de la Gare</street>
@@ -70,14 +61,14 @@
                 
                 				Deposit
                 										5 60
-                <date when="1900-11-18">Nov. 18</date>, <date when="1900-11-19">19</date>	<bibl><title>Trumpet Major</title></bibl>     <date when="1900-11-22">Nov. 22</date>
-                					<bibl><author>Hardy</author></bibl>
+                <date when="1900-11-18">Nov. 18</date>, <date ana="#checkedOut" when="1900-11-19">19</date>	<bibl ana="#borrowedItem" corresp="mep:00181f"><title>Trumpet Major</title></bibl>     <date ana="#checkedOut" when="1900-11-22">Nov. 22</date>
+                					<bibl ana="#borrowedItem"><author>Hardy</author></bibl>
                 					
-                <date when="1900-11-22">Nov. 22.</date>	<bibl><title>Passionate Friends</title></bibl>, <bibl><author>Wells</author></bibl>
+                <date ana="#checkedOut" when="1900-11-22">Nov. 22.</date>	<bibl ana="#borrowedItem" corresp="mep:00p38t"><title>Passionate Friends</title></bibl>, <bibl ana="#borrowedItem"><author>Wells</author></bibl>
                 </ab>
               </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>

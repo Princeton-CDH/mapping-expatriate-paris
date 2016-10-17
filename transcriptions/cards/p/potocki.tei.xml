@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="#poto.ge">Geoffrey Potocki de Montalk</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -53,17 +44,17 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/p/potocki/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-            <graphic url="00000002.jp2" />
+            <graphic url="00000002.jp2"/>
         </surface>
     </facsimile>
     <text>
         <body>
             <div type="card">
                <div type="recto"> 
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                 <ab>
                 <date when="1928">1928.</date>	<persName ref="poto.ge">POTOCKI de Montalk</persName>
                 					<persName ref="poto.ge">Count Geoffrey Potocki de Montalk</persName>
@@ -78,42 +69,42 @@
                 	  								(
                 	  								
                 		J. Joyce H. Gorman.					June 18
-                <date when="1928-06-18">June 18</date>	<bibl><title>Death of a Nobody</title></bibl>					<date when="1928-06-21">June 21</date>
-                    <date when="1928-06-22">	 22</date>	<bibl><title>Exiled.	</title></bibl>							<date when="1928-06-22"> "	22</date>	
-                    <date when="1928-06-22"> "	22</date>	<bibl><title>Great God Brown.	</title></bibl>				 <date when="1928-06-26"> "	26</date>
-                <date when="1928-06-26"> "	26</date>	<bibl><title>Elmer Gantry.</title></bibl> 	B B?				B B
+                <date ana="#checkedOut" when="1928-06-18">June 18</date>	<bibl ana="#borrowedItem" corresp="mep:00mt1z"><title>Death of a Nobody</title></bibl>					<date ana="#returned" when="1928-06-21">June 21</date>
+                    <date ana="#checkedOut" when="1928-06-22">	 22</date>	<bibl ana="#borrowedItem" corresp="mep:00pv96"><title>Exiled.	</title></bibl>							<date ana="#returned" when="1928-06-22"> "	22</date>	
+                    <date ana="#checkedOut" when="1928-06-22"> "	22</date>	<bibl ana="#borrowedItem" corresp="mep:004n72"><title>Great God Brown.	</title></bibl>				 <date ana="#returned" when="1928-06-26"> "	26</date>
+                <date ana="#checkedOut" when="1928-06-26"> "	26</date>	<bibl ana="#borrowedItem" corresp="mep:001v70"><title>Elmer Gantry.</title></bibl> 	B B?				B B
                  
-                <date when="1928-12-04">Dec 4</date>	<bibl><title>Life of J. E. Flecker	</title></bibl>			<date when="1928-12-14">Dec 14</date>
-                    <date when="1928-12-14"> "	14	</date><bibl><title>Don Juan	</title></bibl>						 <date when="1928-12-15">"	15</date>	
-                    <date when="1928-12-15">"	15</date>	<bibl><title>On the Eve	</title></bibl>						<date when="1928-12-17"> "	17</date>
-                <date when="1928-12-17"> "	17</date>	<bibl><title>Brother Karamazov</title></bibl>					 <date when="1928-12-26">"	26</date>
-                    <date when="1928-12-26">26</date>	<bibl><title>Tess</title></bibl>								<date when="1929-01-02">Jan 2</date>
-                    <date when="1929-01-02">Jan 2</date>	<bibl><title>Forsyte Saga.</title></bibl>						<date when="1929-01-21">"	21</date>
-                 <date when="1929-01-21">"	21</date>	<bibl><title>Silver Spoon</title></bibl>						<date when="1929-01-28"> "	28</date>
-                    <date when="1929-01-28">_	28</date>	<bibl><title>Dove's Nest	</title></bibl>						<date when="1929-02-04">Feb 4</date>
-                    <date when="1929-02-04">Feb 4</date>	<bibl><title>Swan Song	</title></bibl>						<date when="1929-02-08">Feb 8</date>
-                    <date when="1929-02-08">Feb 8</date>	<bibl><title>Confessions of a Young Man</title></bibl>			<date when="1929-02-12">Fev. 12	</date>
-                <date when="1929-02-12">Fev. 12	</date><bibl><title>Rough Justice</title></bibl>						<date when="1929-02-15">Feb. 15</date>
-                    <date when="1929-02-15">Fev. 15</date>	<bibl><title>In a German pension.</title></bibl>				<date when="1929-02-26"> Fev. 26</date>
-                    <date when="1929-02-26"> Fev. 26</date>	<bibl><title>A Yankee at the court of King Arthur</title></bibl> <date when="1929-03-19"> Mch 19</date>
-                    <date when="1929-03-19"> Mch 19</date>	<bibl><title>Men Without Women.	</title></bibl>				 <date when="1929-03-25">"	25</date>
-                 <date when="1929-03-25">"	25</date>	<bibl><title>Women in Love.	</title></bibl>					<date when="1929-04-15">Ap. 15</date>
+                <date ana="#checkedOut" when="1928-12-04">Dec 4</date>	<bibl ana="#borrowedItem" corresp="mep:00h154"><title>Life of J. E. Flecker	</title></bibl>			<date ana="#returned" when="1928-12-14">Dec 14</date>
+                    <date ana="#checkedOut" when="1928-12-14"> "	14	</date><bibl ana="#borrowedItem" corresp="mep:00ns27"><title>Don Juan	</title></bibl>						 <date ana="#returned" when="1928-12-15">"	15</date>	
+                    <date ana="#checkedOut" when="1928-12-15">"	15</date>	<bibl ana="#borrowedItem" corresp="mep:00555t"><title>On the Eve	</title></bibl>						<date ana="#returned" when="1928-12-17"> "	17</date>
+                <date ana="#checkedOut" when="1928-12-17"> "	17</date>	<bibl ana="#borrowedItem" corresp="mep:00nw50"><title>Brother Karamazov</title></bibl>					 <date ana="#returned" when="1928-12-26">"	26</date>
+                    <date ana="#checkedOut" when="1928-12-26">26</date>	<bibl ana="#borrowedItem" corresp="mep:00fh6t"><title>Tess</title></bibl>								<date ana="#returned" when="1929-01-02">Jan 2</date>
+                    <date ana="#checkedOut" when="1929-01-02">Jan 2</date>	<bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte Saga.</title></bibl>						<date ana="#returned" when="1929-01-21">"	21</date>
+                 <date ana="#checkedOut" when="1929-01-21">"	21</date>	<bibl ana="#borrowedItem" corresp="mep:005b4w"><title>Silver Spoon</title></bibl>						<date ana="#returned" when="1929-01-28"> "	28</date>
+                    <date ana="#checkedOut" when="1929-01-28">_	28</date>	<bibl ana="#borrowedItem" corresp="mep:003q8p"><title>Dove's Nest	</title></bibl>						<date ana="#returned" when="1929-02-04">Feb 4</date>
+                    <date ana="#checkedOut" when="1929-02-04">Feb 4</date>	<bibl ana="#borrowedItem" corresp="mep:001n05"><title>Swan Song	</title></bibl>						<date ana="#returned" when="1929-02-08">Feb 8</date>
+                    <date ana="#checkedOut" when="1929-02-08">Feb 8</date>	<bibl ana="#borrowedItem" corresp="mep:00cb78"><title>Confessions of a Young Man</title></bibl>			<date ana="#returned" when="1929-02-12">Fev. 12	</date>
+                <date ana="#checkedOut" when="1929-02-12">Fev. 12	</date><bibl ana="#borrowedItem" corresp="mep:00694v"><title>Rough Justice</title></bibl>						<date ana="#returned" when="1929-02-15">Feb. 15</date>
+                    <date ana="#checkedOut" when="1929-02-15">Fev. 15</date>	<bibl ana="#borrowedItem" corresp="mep:006s3d"><title>In a German pension.</title></bibl>				<date ana="#returned" when="1929-02-26"> Fev. 26</date>
+                    <date ana="#checkedOut" when="1929-02-26"> Fev. 26</date>	<bibl ana="#borrowedItem" corresp="mep:00pw0p"><title>A Yankee at the court of King Arthur</title></bibl> <date ana="#returned" when="1929-03-19"> Mch 19</date>
+                    <date ana="#checkedOut" when="1929-03-19"> Mch 19</date>	<bibl ana="#borrowedItem" corresp="mep:002300"><title>Men Without Women.	</title></bibl>				 <date ana="#returned" when="1929-03-25">"	25</date>
+                 <date ana="#checkedOut" when="1929-03-25">"	25</date>	<bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love.	</title></bibl>					<date ana="#returned" when="1929-04-15">Ap. 15</date>
                 </ab>
                 </div>
                 <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <ab>
                 <date when="1929">1929</date>		<persName ref="poto.ge">POTOCKI</persName>
                 
-                    <date when="1929-04-15">Ap 15</date>	<bibl><title>Aaron's Rod	</title></bibl>					<date when="1929-05-27">May 27</date>
-                    <date when="1929-05-27">May 27</date>	<bibl><title>Transition. vol I.	</title></bibl>			<date when="1929-05-29"> "	29</date>
-                    <date when="1929-05-29"> "	29</date>	<bibl><title>Bliss.</title></bibl>									<date when="1929-05-31">31</date>
-                 	<date when="1929-05-31">31</date>	<bibl><title>Transition vol II</title></bibl>				<date when="1929-06-07">June 7</date>
-               <date when="1929-06-06"> June 6	</date><bibl><title>Our Examination	</title></bibl>				<date when="1929-06-12">June 12</date>
-                	<date when="1929-06-07"> 7</date>	<bibl><title>Transition No 11	</title></bibl>			<date when="1929-06-08"> "	 8</date>
-                	 <date when="1929-06-08">8</date>	<bibl><title>Isles of Illusion</title>.</bibl>				<date when="1929-06-12">June 12</date>
-                    <date when="1929-06-08">8</date>	<bibl><title>Transition no 15	</title></bibl>			<date when="1929-06-12">June 12</date>
-                    <date when="1929-06-08">8</date><bibl><title>Transition " 12	</title></bibl>				<date when="1929-06-12">June 12</date>
+                    <date ana="#checkedOut" when="1929-04-15">Ap 15</date>	<bibl ana="#borrowedItem" corresp="mep:000q4q"><title>Aaron's Rod	</title></bibl>					<date ana="#returned" when="1929-05-27">May 27</date>
+                    <date ana="#checkedOut" when="1929-05-27">May 27</date>	<bibl ana="#borrowedItem" corresp="mep:00pw10"><title>Transition. vol I.	</title></bibl>			<date ana="#returned" when="1929-05-29"> "	29</date>
+                    <date ana="#checkedOut" when="1929-05-29"> "	29</date>	<bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss.</title></bibl>									<date ana="#returned" when="1929-05-31">31</date>
+                 	<date ana="#checkedOut" when="1929-05-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00pw10"><title>Transition vol II</title></bibl>				<date ana="#returned" when="1929-06-07">June 7</date>
+               <date ana="#checkedOut" when="1929-06-06"> June 6	</date><bibl ana="#borrowedItem" corresp="mep:005p0d"><title>Our Examination	</title></bibl>				<date ana="#returned" when="1929-06-12">June 12</date>
+                	<date ana="#checkedOut" when="1929-06-07"> 7</date>	<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition No 11	</title></bibl>			<date ana="#returned" when="1929-06-08"> "	 8</date>
+                	 <date ana="#checkedOut" when="1929-06-08">8</date>	<bibl ana="#borrowedItem" corresp="mep:00df1g"><title>Isles of Illusion</title>.</bibl>				<date ana="#returned" when="1929-06-12">June 12</date>
+                    <date ana="#checkedOut" when="1929-06-08">8</date>	<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition no 15	</title></bibl>			<date ana="#returned" when="1929-06-12">June 12</date>
+                    <date ana="#checkedOut" when="1929-06-08">8</date><bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition " 12	</title></bibl>				<date ana="#returned" when="1929-06-12">June 12</date>
                 </ab>
 </div>
             </div>

@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader type="text">
         <fileDesc>
             <titleStmt>
                 <title>An Encoded Transcription of a Borrower's Card: <persName ref="flan.ja">Janet Flanner</persName></title>
@@ -25,14 +23,7 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                <xi:include href="../../personography.xml" xpointer="expats" parse="xml">
-                    <xi:fallback>
-                        <listperson>
-                            <head>People not available</head>
-                            <person/>
-                        </listperson>
-                    </xi:fallback>
-                </xi:include>
+                
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -56,10 +47,10 @@
     </teiHeader>
     <facsimile xml:base="pudl0123/825298/f/flanner/">
         <surface xml:id="s1">
-            <graphic url="00000001.jp2" />
+            <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2" />
+        	<graphic url="00000002.jp2"/>
         </surface>
         
         
@@ -71,7 +62,7 @@
         <body>
             <div type="card">
                <div type="recto">
-                <pb facs="#s1" />
+                <pb facs="#s1"/>
                    
                <head> <date when="1925">1925</date>	<persName ref="flan.ja">FLANNER</persName>
                 <date when="1925-12-08">Dec 8</date>		<address><persName ref="flan.ja">Miss Janet Flanner</persName>
@@ -79,23 +70,23 @@
                 
                 <ab>
                 
-                <date when="1925-12-08">Dec 8</date>		<bibl><title>Wuthering Heights</title></bibl>			<date when="1926-01-28">Jan 28</date>
-                    <date when="1925-12-08"> "	"</date>		<bibl><title>Old Wives Tale</title></bibl> <bibl><title>Wings of the Dove</title></bibl>	<date when="1926-01-28">"" ""</date>
-                    <date when="1925-12-08"> "	"</date>		<bibl><title>Life of Ch. Bronte</title></bibl><bibl><title> Gaskell</title></bibl>	<date when="1926-01-28">"" ""</date>
+                <date ana="#checkedOut" when="1925-12-08">Dec 8</date>		<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>			<date ana="#returned" when="1926-01-28">Jan 28</date>
+                    <date ana="#checkedOut" when="1925-12-08"> "	"</date>		<bibl ana="#borrowedItem" corresp="mep:004084"><title>Old Wives Tale</title></bibl> <bibl ana="#borrowedItem" corresp="mep:00946t"><title>Wings of the Dove</title></bibl>	<date ana="#returned" when="1926-01-28">"" ""</date>
+                    <date ana="#checkedOut" when="1925-12-08"> "	"</date>		<bibl ana="#borrowedItem" corresp="mep:00jw7w"><title>Life of Ch. Bronte</title></bibl><bibl ana="#borrowedItem"><title> Gaskell</title></bibl>	<date ana="#returned" when="1926-01-28">"" ""</date>
                 
                 <date when="1930">1930</date>
-                <date when="1930-01-16">Jan 16</date>		<bibl><title>Les Rues du Vieux Paris</title></bibl>		<date when="1930-03-13">March 13</date>
+                <date ana="#checkedOut" when="1930-01-16">Jan 16</date>		<bibl ana="#borrowedItem" corresp="mep:00jw9h"><title>Les Rues du Vieux Paris</title></bibl>		<date ana="#returned" when="1930-03-13">March 13</date>
                 
-                <date when="1930-08-26">Aug 26</date>		<bibl><title>Henry the VIII	</title></bibl>			<date when="1930-09-06">Sept 6</date>
-                    <date when="1930-08-26">"" ""</date>	<bibl><title>Elizabeth + Essex.</title></bibl>		<date when="1930-09-06">Sept 6</date>
-                    <date when="1930-09-06">Sept 6</date>		<bibl><title>Seventeenth Century, Boulenger</title></bibl> <date when="1930-10-13">Oct 13</date>
+                <date ana="#checkedOut" when="1930-08-26">Aug 26</date>		<bibl ana="#borrowedItem" corresp="mep:00jx00"><title>Henry the VIII	</title></bibl>			<date ana="#returned" when="1930-09-06">Sept 6</date>
+                    <date ana="#checkedOut" when="1930-08-26">"" ""</date>	<bibl ana="#borrowedItem" corresp="mep:000t7g"><title>Elizabeth + Essex.</title></bibl>		<date ana="#returned" when="1930-09-06">Sept 6</date>
+                    <date ana="#checkedOut" when="1930-09-06">Sept 6</date>		<bibl ana="#borrowedItem" corresp="mep:00jx19"><title>Seventeenth Century, Boulenger</title></bibl> <date ana="#returned" when="1930-10-13">Oct 13</date>
                 			                                         "					           Clark	"	"
-                    <date when="1930-09-06">Sept 6</date>		<bibl><title>Mme de Maintenon</title></bibl>
+                    <date ana="#checkedOut" when="1930-09-06">Sept 6</date>		<bibl ana="#borrowedItem" corresp="mep:00jx2m"><title>Mme de Maintenon</title></bibl>
                 </ab>
                 </div>
                 
                <div type="verso">
-                <pb facs="#s2" />
+                <pb facs="#s2"/>
                 <!-- verso blank -->
                 </div>
                 
