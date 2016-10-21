@@ -1,121 +1,192 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#savi.lu">Ludmila Savitski</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	  <particDesc>
-	        <person role="cardholder" ana="#savi.lu"><persName>Ludmila Savitski</persName></person>
-	  </particDesc>
-	</profileDesc>
-        <revisionDesc>
-            <change who="elspeth" when="2016-02-01">
-                <p> First level encoding </p>
-                <ab>
-                    s2:  Year is not clear.  Assumed "1931" for purposes of recording dates, but may be later.
-                </ab>
-            </change>
-            <change who="#carlca">
-                <ab>
-                    <!-- Enter transcription notes and queries here -->
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/s/savitski/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-        <surface xml:id="s3">
-            <graphic url="00000003.jp2"/>
-        </surface>
-        <surface xml:id="s4">
-            <graphic url="00000004.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-                <div type="recto">
-                    <pb facs="#s1"/>
-                    <head>
-                                <persName ref="#savi.lu">STAVITSKI</persName>
-                    <date when="1930-12-12">1930				
-                    Dec 12</date>		 x	<address><persName ref="#savi.lu">Madame Ludmila Bloch Stavitsky</persName>
-                    					       <street>51 rue Geoffrey</street> <settlement>St Hilaire</settlement></address>
-                    </head>
-                    
-                    
-                    
-                    
-                    <ab>
-                    <date ana="#checkedOut" when="1930-12-12">Dec 12</date>		<bibl ana="#borrowedItem" corresp="mep:003s12"><title>Forty Second Parallel</title></bibl>			<date ana="#returned" when="1930-12-15">Dec 15</date>
-                    <date ana="#checkedOut" when="1930-12-12"> "	"</date>		<bibl ana="#borrowedItem" corresp="mep:002061"><title>Three Soldiers</title></bibl> p.c. <date ana="#returned" when="1931-09-02">Sept 2 1931</date>	<date when="1931-09">Sept 1931</date>
-                    <date ana="#checkedOut" when="1930-12-12"> "  "</date>		<bibl ana="#borrowedItem"><bibl ana="#borrowedItem">American Caravan</bibl> (1st)</bibl>			<date ana="#returned" when="1930-12-22">Dec 22</date>
-                    <date ana="#checkedOut" when="1930-12-12"> "  "</date>		<bibl ana="#borrowedItem" corresp="mep:00q70p"><title>The Garbage Man</title></bibl>					<date ana="#returned" when="1930-12-22">Dec 22</date>    
-                    </ab>
-                </div> 
-                <div type="verso">
-                    <pb facs="#s2"/>
-                    
-                    <!-- Verso Blank -->
-                </div>  
-                <div type="recto">
-                    <pb facs="#s3"/>
-                    <head>
-                    A d L                                                                   X
-                    <date when="1931-03-16">March 16</date>	<address><persName ref="#savi.lu">Madame Ludmila Savitsky</persName>			
-                    				                        <street>22 rue de Boulainvilliers</street></address>
-                    				                        <address><street>14 rue Denis Gogue</street>
-                    					                       <settlement>Clamant</settlement></address>
-                    </head>	
-                    <ab>
-                    			Subsc. 1 year - 2 vols.
-                    </ab>			
-                    <ab>			
-                    <date ana="#checkedOut" when="1931-03-16">March 16</date>	    <bibl ana="#borrowedItem" corresp="mep:00gx4r"><title>Georgian Poetry</title></bibl>					    <date ana="#checkedOut" when="1931-07-29">July 29</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:006s1s"><title>Selections from Swinburne</title></bibl>
-                    			
-                    <date ana="#checkedOut" when="1931-07-29">July 29</date>		<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>						    <date ana="#checkedOut" when="1931-02-21"> Feb 21</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:004z1p"><title>Chamber Music</title></bibl>
-                    </ab>			
-                </div> 
-                <div type="verso">
-                    <pb facs="#s4"/>
-                    
-                    <!-- Verso Blank -->
-                </div>
-            </div>
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card:
+	<persName ref="#savi.lu">Ludmila Savitski</persName>
+	</title>
+        <respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special
+            Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode>
+        <!-- library cards -->
+      </textClass>
+      <particDesc>
+        <person role="cardholder" ana="#savi.lu">
+          <persName>Ludmila Savitski</persName>
+        </person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="cwulfman" when="2016-10-21">
+	<p>Encoded borrowing events</p>
+      </change>
+      <change who="elspeth" when="2016-02-01">
+	<list>
+	  <item>First level encoding</item>
+	  <item> s2: Year is not clear. Assumed "1931" for purposes of
+	  recording dates, but may be later.</item>
+	</list>
+      </change>
+      <change who="#carlca">
+        <ab>
+          <!-- Enter transcription notes and queries here -->
+        </ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/s/savitski/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+    <surface xml:id="s3">
+      <graphic url="00000003.jp2"/>
+    </surface>
+    <surface xml:id="s4">
+      <graphic url="00000004.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s1"/>
+          <head>
+            <persName ref="#savi.lu">S<del>T</del>AVITSKI</persName>
+            <date when="1930-12-12">1930 Dec 12</date>
+	    <address>
+              <persName ref="#savi.lu">Madame Ludmila Bloch S<del>t</del>avitsky</persName>
+              <street>51 rue Geoffrey</street>
+              <settlement>St Hilaire</settlement>
+            </address>
+          </head>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1930-12-12">Dec 12</date>
+            <bibl ana="#borrowedItem" corresp="mep:003s12">
+              <title>Forty Second Parallel</title>
+            </bibl>
+            <date ana="#returned" when="1930-12-15">Dec 15</date>
+          </ab>
+
+
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1930-12-12"> " "</date>
+            <bibl ana="#borrowedItem" corresp="mep:002061">
+	      <title>Three Soldiers</title></bibl>
+              <note>p.c. <date when="1931-09-02">Sept 2 1931</date></note>
+              <date ana="#returned" when="1931-09">Sept 1931</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1930-12-12"> " "</date>
+            <bibl ana="#borrowedItem" corresp="mep:00636t">
+	      <title>American Caravan (1st)</title>
+            </bibl>
+            <date ana="#returned" when="1930-12-22">Dec 22</date>
+          </ab>
+
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1930-12-12"> " "</date>
+            <bibl ana="#borrowedItem" corresp="mep:00q70p">
+	      <title>The Garbage Man</title>
+	    </bibl>
+            <date ana="#returned" when="1930-12-22">Dec 22</date>
+          </ab>
+        </div>
+
+
+        <div type="verso">
+          <pb facs="#s2"/>
+
+          <!-- Verso Blank -->
+        </div>
+      </div>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s3"/>
+          <head>
+            <note>A d L</note> X <date when="1931-03-16">March 16</date>
+            <address>
+              <persName ref="#savi.lu">Madame Ludmila Savitsky</persName>
+              <street>22 rue de Boulainvilliers</street>
+            </address>
+            <address>
+              <street>14 rue Denis Gogue</street>
+              <settlement>Clamant</settlement>
+            </address>
+          </head>
+          <note>Subsc. 1 year - 2 vols.</note>
+
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1931-03-16">March 16</date>
+            <bibl ana="#borrowedItem" corresp="mep:00gx4r">
+	      <title>Georgian Poetry</title>
+	    </bibl>
+            <date ana="#returned" when="1931-07-29">July 29</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1931-03-16"/>
+            <bibl ana="#borrowedItem" corresp="mep:006s1s">
+	      <title>Selections from Swinburne</title>
+	    </bibl>
+            <date ana="#returned" when="1931-07-29"/>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1931-07-29">July 29</date>
+            <bibl ana="#borrowedItem" corresp="mep:001p1r">
+	      <title>Dubliners</title>
+	    </bibl>
+            <date ana="#returned" when="1931-02-21"> Feb 21</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1931-07-29"/>
+            <bibl ana="#borrowedItem" corresp="mep:004z1p">
+	      <title>Chamber Music</title>
+	    </bibl>
+            <date ana="#returned" when="1931-02-21"/>
+          </ab>
+        </div>
+
+        <div type="verso">
+          <pb facs="#s4"/>
+          <!-- Verso Blank -->
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>
