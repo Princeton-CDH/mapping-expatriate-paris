@@ -1,95 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#roge">Roger-Levy</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#roge"><persName>Roger-Levy</persName></person>
-            </particDesc>
-        </profileDesc>
-        <revisionDesc>
-            <change who="#carlca" when="2016-03-24">
-                <ab>
-                    Encoded Cards - First Pass
-                    
-                </ab>
-            </change>
-            <change who="#carlca">
-                <ab>
-                    Transcribed Cards
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/r/roger_levy/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-                <div type="verso">
-                <div type="recto">
-                <pb facs="#s1"/>
-                <head>
-                <date when="1940">1940</date>		
-                            <persName ref="#roge">ROGER - LEVY Mme</persName>
-                			<address>
-                			<name>L'Oasis</name>
-                			<settlement>Courteilles</settlement>	<region>Eure</region>
-                			<street>112 Bd de Courcelles</street><settlement>Paris</settlement>
-                			</address>
-                	</head>		
-                			
-                <ab>			
-                			 2 mos	1 v	  A				45
-                			 				dep			50
-                </ab>		 				
-                
-                <ab ana="#borrowingEvent"><date ana="#checkedOut" when="1940-04-26">April 26</date>	
-                    <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl>				
-                    <date ana="#returned" when="1940-05-20">May 20</date></ab>
-                    <note><date when="1940-05-22">May 22</date> wrote to ask if another book to be sent</note>
-                
-                </div>
-                
-                <div type="verso">
-                <pb facs="#s2"/>
-                
-                <!-- Verso Blank -->
-                </div>
-                </div>
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+	<title>An Encoded Transcription of a Borrower's Card: <persName ref="#roge">Roger-Levy</persName></title>
+	<respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>transcriber</resp>
+	</respStmt>
+	<respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>encoder</resp>
+	</respStmt>
+      </titleStmt>
+      <publicationStmt>
+	<publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+	<msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+	</msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+	<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+	<person role="cardholder" ana="#roge"><persName>Roger-Levy</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#carlca" when="2016-03-24">
+	<ab>
+          Encoded Cards - First Pass
+
+	</ab>
+      </change>
+      <change who="#carlca">
+	<ab>
+          Transcribed Cards
+	</ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/r/roger_levy/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+	<div type="recto">
+          <pb facs="#s1"/>
+          <head>
+            <date when="1940">1940</date>
+            <persName ref="#roge">ROGER - LEVY Mme</persName>
+            <address>
+              <name>L'Oasis</name>
+              <settlement>Courteilles</settlement>
+	      <region>Eure</region>
+              <street>112 Bd de Courcelles</street>
+	      <settlement>Paris</settlement>
+            </address>
+          </head>
+
+          <note>
+            2 mos 1 v A 45
+            <lb/>dep 50
+          </note>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1940-04-26">April 26</date>
+            <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun Also Rises</title></bibl>
+            <date ana="#returned" when="1940-05-20">May 20</date>
+	       </ab>
+
+          <note><date when="1940-05-22">May 22</date> wrote to ask if
+          another book to be sent</note>
+
+	</div>
+
+	<div type="verso">
+          <pb facs="#s2"/>
+          <!-- Verso Blank -->
+	</div>
+      </div>
+    </body>
+  </text>
 </TEI>
