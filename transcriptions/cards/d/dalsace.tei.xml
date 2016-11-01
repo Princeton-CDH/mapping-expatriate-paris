@@ -1,133 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dals">Mme. Dalsace</persName></title>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#i-davis">
-                    <persName>Davis, Ian</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#dals"><persName>Mme. Dalsace</persName></person>
-            </particDesc>
-        </profileDesc>
-        <revisionDesc>
-            <change who="elspeth" when="2015-06-03">
-                <ab>
-                    Transcribed cards.
-                    
-                    	
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/d/dalsace/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-        	<graphic url="00000002.jp2"/>
-        </surface>
-    
-    </facsimile>
-    <text>
-        <body>
-            <div type="card"> 
-                <div type="recto">
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dals">Mme. Dalsace</persName></title>
+      <respStmt ana="#elspeth">
+        <persName>Green, Elspeth</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#i-davis">
+        <persName>Davis, Ian</persName>
+        <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#dals"><persName>Mme. Dalsace</persName></person>
+    </particDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change who="elspeth" when="2015-06-03">
+      <ab>Transcribed cards.</ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298/d/dalsace/">
+  <surface xml:id="s1">
+    <graphic url="00000001.jp2"/>
+  </surface>
+  <surface xml:id="s2">
+    <graphic url="00000002.jp2"/>
+  </surface>
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s1"/>
+        <head>
+          <date from="1932" to="1933">1932 to <del rend="strikethrough">17 March</del> 1933</date>
+          <persName ref="#dals">Mme. DALSACE</persName>           <note>aut 41-78</note>
+          <address><addrLine>5 avenue Alphonse XIII</addrLine></address>
+          <note>died <date when="1939">summer 1939</date></note>
+	</head>
 
-                <pb facs="#s1"/>
-                   <head>
-                <date when="1932">1932</date>		<persName ref="#dals">Mme. DALSACE</persName>		aut 41-78
-                 to
-                <date when="1933-03-17">17 March 1933</date>	<address><addrLine>5 avenue Alphonse XIII</addrLine></address>
-                						died <date when="1939">summer 1939</date></head>
-                    
-                
-                 <ab><date when="1932-12-17">17 Dec.</date>		<note>dep. 60		3m. 2v.  paid by	50f</note></ab>
-                 
-                		<ab ana="#borrowingEvent">
-                		    <date ana="#checkedOut" when="1932-12-17">17 Dec.</date>
-                		    <bibl ana="#borrowedItem" corresp="mep:000r2c"><title>Backwater</title></bibl>
-                		    <date ana="#returned" when="1933-01-17">17 Jan-</date>
-                		</ab>
-                    
-                        <ab ana="#borrowingEvent">
-                            <date ana="#checkedOut" when="1932-12-17">17 Dec.</date>
-                            <bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs</title></bibl>
-                            <date ana="#returned" when="1932-12-31">31 Dec.</date>
-                        </ab>
-                    
-                        <ab ana="#borrowingEvent">
-                            <date ana="#checkedOut" when="1932-12-17">17 Dec.</date>
-                            <bibl ana="#borrowedItem" corresp="mep:003v65"><title>D.M. Richardson</title></bibl>
-                            <note><date when="1933-06-22">22 June</date></note>
-                            <date ana="#returned" when="1932-12-30">30 Dec.</date><note>?</note>
-                        </ab>
-                    
-                         <ab ana="#borrowingEvent">
-                            <date ana="#checkedOut" when="1932-12-30">30 Dec.</date>
-                            <bibl ana="#borrowedItem" corresp="mep:000r3p"><title>Honeycomb</title></bibl>
-                            <date ana="#returned" when="1933-04-07">7  April</date>
-                         </ab>
-                    
-                         <ab ana="#borrowingEvent">
-                             <date ana="#checkedOut" when="1933-01-17">17 Jan</date>
-                             <bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roof</title></bibl>
-                             <note><date when="1933-06-22">22 June</date></note>
-                         </ab>
-                    
-                <ab><date when="1933-03-29">29 March</date> letter
-                renewed <date when="1933-04-07">7 April</date> 1v 6mo 50f to <date when="1933-09-01">1 Sept. 1933</date></ab>
-                    
-                    <ab ana="#borrowingEvent">
-                        <date ana="#checkedOut" when="1933-04-07">7 April</date>
-                        <bibl ana="#borrowedItem" corresp="mep:003t6w"><title>Dawns Left Hand</title></bibl>
-                        <date ana="#returned" when="1933-05-08">8 May</date>
-                    </ab>
-                    
-                			<note>extra book from
-                				<date when="1933-03-17">17 March</date> - to <date when="1933-05-08">8 May</date>
-                				
-                			too late to attend to now; move
-                			to la rentrée</note>
-                    
-                    <ab ana="#borrowingEvent">
-                        <date ana="#checkedOut" when="1924-04-25">April 25</date>
-                        <bibl ana="#borrowedItem" corresp="mep:001312"><title>Dorothy Richardson</title> <author>(Powys)</author></bibl>
-                        Adelphi <date when="1924-04">April 1924</date>
-                    </ab>
-                    
-                </div>
-                <div type="verso">
-                <pb facs="#s2"/>
-                <!-- verso blank -->
-                
-               
-                </div>
-            </div>
-        </body>
-    </text>
+
+        <note><date when="1932-12-17">17 Dec.</date> dep. 60  3m. 2v.  paid by check  50f</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1932-12-17">17 Dec.</date>
+          <bibl ana="#borrowedItem" corresp="mep:000r2c"><title>Backwater</title></bibl>
+          <date ana="#returned" when="1933-01-17">17 Jan-</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1932-12-17">17 Dec.</date>
+          <bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs</title></bibl>
+          <date ana="#returned" when="1932-12-31">31 Dec.</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1932-12-17">17 Dec.</date>
+          <bibl ana="#borrowedItem" corresp="mep:003v65"><title>D.M. Richardson</title></bibl>
+          <note><date when="1933-06-22">22 June</date></note>
+          <date ana="#returned" when="1932-12-30">30 Dec.</date><note>?</note>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1932-12-30">30 Dec.</date>
+          <bibl ana="#borrowedItem" corresp="mep:000r3p"><title>Honeycomb</title></bibl>
+          <date ana="#returned" when="1933-04-07">7  April</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-01-17">17 Jan</date>
+          <bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roof</title></bibl>
+          <note><date when="1933-06-22">22 June</date></note>
+          <date ana="#returned" when="1933-04-07"/>
+        </ab>
+
+        <note><date when="1933-03-29">29 March</date> letter</note>
+        <note>renewed <date from="1933-04-07" to="1933-09-01">7 April</date> 1v 6mo 50f to 1 Sept. 1933</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-04-07">7 April</date>
+          <bibl ana="#borrowedItem" corresp="mep:003t6w"><title>Dawns Left Hand</title></bibl>
+          <date ana="#returned" when="1933-05-08">8 May</date>
+        </ab>
+
+        <note>extra book from <date from="1933-03-17" to="1933-05-08">17 March - to 8 May</date></note>
+
+        <note>too late to attend to now; move to la rentrée</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1924-04-25">April 25</date>
+          <bibl ana="#borrowedItem" corresp="mep:001312"><title>Dorothy Richardson</title> <author>(Powys)</author></bibl>
+	</ab>
+	<ab ana="#borrowingEvent">
+	  <date ana="#checkedOut" when="1924-04-25"/>
+	  <bibl ana="#borrowedItem" corresp="mep:002h4j"><title>Adelphi</title>  <date when="1924-04">April 1924</date></bibl>
+        </ab>
+
+      </div>
+      <div type="verso">
+        <pb facs="#s2"/>
+        <!-- verso blank -->
+
+
+      </div>
+    </div>
+  </body>
+</text>
 </TEI>
