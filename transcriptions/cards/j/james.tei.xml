@@ -1,159 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="jame.t">T.M. James</persName></title>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#jame.t"><persName>T.M.James</persName></person>
-            </particDesc>
-        </profileDesc>
-        <revisionDesc>
-            <change who="elspeth" when="2015-07-28">
-                <ab>
-                    Transcribed cards
-                    s1:
-                    	<unclear/> Aug 4 = "Immel Shine"?	
-                    	<unclear/> Aug 18 = "Pouchy"?	
-                   
-                    
-                    	
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/j/james/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-        	<graphic url="00000002.jp2"/>
-        </surface>
-        
-        
-        
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-               <div type="recto"> 
-                <pb facs="#s1"/>
-               	<ab><date when="1926">1926</date>	<persName ref="jame.t">JAMES</persName>
-               	<date when="1926-07-28">July 28</date>		<address><persName ref="jame.t">Mr T.M. James</persName>
-               					<orgName>Hotel Montalembert</orgName>
-               					<street>3 rue de Montalembert</street></address>
-               									6.
-               		
-               		1 m 2 vols			20
-               		Deposit			   100
-               	</ab>
-                   
-               	    <ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-07-28">July 28</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:009p39"><title>Lucky Prisoner</title></bibl> <note>0.25</note>
-               	        <date ana="#returned" when="1926-07-31">July 31</date>
-               	    </ab>
-               	    
-               	    <ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-07-28">"	"</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:006983"><title>Flight</title></bibl> <note>0.25</note>
-               	        <date ana="#returned" when="1926-07-31">31</date>
-               	    </ab>
-               	    
-               	    <ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-07-31">"	31</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:006b8c"><title>Fairy Gold </title></bibl><note>0.25</note>
-               	        <date ana="#returned" when="1926-08-04">Aug 4</date>
-               	    </ab>
-               	    
-               	    <ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-07-31">	31</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:00kq3h"><title>Lives of French Chateaux</title></bibl> <note>0.25</note>
-               	        <date ana="#returned" when="1926-08-04">"	"</date>
-               	    </ab>
-                   
-                    <ab ana="#borrowingEvent">
-                        <date ana="#checkedOut" when="1926-08-04">Aug 4</date>	
-                        <bibl ana="#borrowedItem" corresp="mep:00t543"><title>Inner Shrine</title></bibl>
-                        <date ana="#returned" when="1926-08-06">Aug 6</date>
-                    </ab>
-                   
-               	   <ab ana="#borrowingEvent">
-               	       <date ana="#checkedOut" when="1926-08-04">"	"</date>
-               	       <bibl ana="#borrowedItem" corresp="mep:00f18k"><title>Prejudice.	</title></bibl>
-               	       <date ana="#returned" when="1926-08-06">"	"</date>
-               	   </ab>
-                   
-               	   <ab ana="#borrowingEvent">
-               	       <date ana="#checkedOut" when="1926-08-06">"	6</date>
-               	       <bibl ana="#borrowedItem" corresp="mep:00kq4t"><title>To Tell you the Truth</title></bibl>
-               	       <date ana="#returned" when="1926-08-13">"	13</date>
-               	   </ab>
-                   
-               		<ab ana="#borrowingEvent">
-               		    <date ana="#checkedOut" when="1926-08-06">  </date>
-               		    <bibl ana="#borrowedItem" corresp="mep:00vb6b"><title>wrong letter</title></bibl>
-               		    <date ana="#returned" when="1926-08-13">13.</date>
-               		</ab>
-                   
-                	<ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-08-18">	18</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:00kq54"><title>Saviours of <unclear/></title></bibl>	<note>0.25.</note>
-               	        <date ana="#returned" when="1926-08-23">"	23</date>
-               	    </ab>
-                   
-               	    <ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-08-18">"	"</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs	</title></bibl>
-               	        <date ana="#returned" when="1926-08-23">"	23</date>
-               	    </ab>
-                   
-                   <ab ana="#borrowingEvent">
-                       <date ana="#checkedOut" when="1926-08-28">	"	28 </date>= 23
-                       <bibl ana="#borrowedItem" corresp="mep:007p8c"><title>Psycho Analysis</title></bibl>
-                       <note><date when="1926-09-01">Sept 1st.</date> p.c.</note>
-                   </ab>
-                   
-                	<ab ana="#borrowingEvent">
-               	        <date ana="#checkedOut" when="1926-08-28">"	28</date>
-               	        <bibl ana="#borrowedItem" corresp="mep:00kq6f"><title>Barren ground</title></bibl>
-                	    <note><date when="1926-09-22">Sept. 22.</date> p.c.</note>
-               	    </ab>
-                   
-               </div>
-                <div type="verso">
-               	<pb facs="#s2"/>
-               	<!-- verso blank -->
-               </div>
-               	
-               	
-            </div>
-        </body>
-    </text>
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of a Borrower's Card: <persName ref="jame.t">T.M. James</persName></title>
+      <respStmt ana="#elspeth">
+        <persName>Green, Elspeth</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName>
+      <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
+
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#jame.t"><persName>T.M.James</persName></person>
+    </particDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change who="elspeth" when="2015-07-28">
+      <ab>
+        Transcribed cards
+        s1:
+        <unclear/> Aug 4 = "Immel Shine"?
+        <unclear/> Aug 18 = "Pouchy"?
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298/j/james/">
+  <surface xml:id="s1">
+    <graphic url="00000001.jp2"/>
+  </surface>
+  <surface xml:id="s2">
+    <graphic url="00000002.jp2"/>
+  </surface>
+
+
+
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s1"/>
+        <head>
+          <date when="1926">1926</date>
+          <persName ref="jame.t">JAMES</persName>
+          <date when="1926-07-28">July 28</date>
+          <address>
+            <persName ref="jame.t">Mr T.M. James</persName>
+            <orgName>Hotel Montalembert</orgName>
+            <street>3 rue de Montalembert</street>
+          </address>
+        </head>
+        <ab>
+          6.
+
+          1 m 2 vols                      20
+          Deposit                    100
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-07-28">July 28</date>
+          <bibl ana="#borrowedItem" corresp="mep:009p39"><title>Lucky Prisoner</title></bibl> <note>0.25</note>
+          <date ana="#returned" when="1926-07-31">July 31</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-07-28">"     "</date>
+          <bibl ana="#borrowedItem" corresp="mep:006983"><title>Flight</title></bibl> <note>0.25</note>
+          <date ana="#returned" when="1926-07-31">31</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-07-31">"     31</date>
+          <bibl ana="#borrowedItem" corresp="mep:006b8c"><title>Fairy Gold </title></bibl><note>0.25</note>
+          <date ana="#returned" when="1926-08-04">Aug 4</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-07-31">      31</date>
+          <bibl ana="#borrowedItem" corresp="mep:00kq3h"><title>Lives of French Chateaux</title></bibl> <note>0.25</note>
+          <date ana="#returned" when="1926-08-04">"       "</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-04">Aug 4</date>
+          <bibl ana="#borrowedItem" corresp="mep:00t543"><title>Inner Shrine</title></bibl>
+          <date ana="#returned" when="1926-08-06">Aug 6</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-04">"      "</date>
+          <bibl ana="#borrowedItem" corresp="mep:00f18k"><title>Prejudice. </title></bibl>
+          <date ana="#returned" when="1926-08-06">"        "</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-06">"      6</date>
+          <bibl ana="#borrowedItem" corresp="mep:00kq4t"><title>To Tell you the Truth</title></bibl>
+          <date ana="#returned" when="1926-08-13">"        13</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-06">  </date>
+          <bibl ana="#borrowedItem" corresp="mep:00vb6b"><title>wrong letter</title></bibl>
+          <date ana="#returned" when="1926-08-13">13.</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-18">      18</date>
+          <bibl ana="#borrowedItem" corresp="mep:00kq54"><title>Saviours of Society</title></bibl>     <note>0.25.</note>
+          <date ana="#returned" when="1926-08-23">"       23</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-18">"     "</date>
+          <bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs</title></bibl>
+          <date ana="#returned" when="1926-08-23">"       23</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-28">       "       28 </date>= 23
+          <bibl ana="#borrowedItem" corresp="mep:007p8c"><title>Psycho Analysis</title></bibl>
+          <note><date when="1926-09-01">Sept 1st.</date> p.c.</note>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1926-08-28">"     28</date>
+          <bibl ana="#borrowedItem" corresp="mep:00kq6f"><title>Barren ground</title></bibl>
+          <note><date when="1926-09-22">Sept. 22.</date> p.c.</note>
+        </ab>
+
+      </div>
+      <div type="verso">
+        <pb facs="#s2"/>
+        <!-- verso blank -->
+      </div>
+
+
+    </div>
+  </body>
+</text>
 </TEI>
