@@ -1,364 +1,360 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-    	<fileDesc>
-    		<titleStmt>
-    			<title>An Encoded Transcription of a Borrower's Card: <persName ref="#clai.pi">Clairin</persName></title>
-    			<respStmt ana="#elspeth">
-    				<persName>Green, Elspeth</persName>
-    				<resp>transcriber</resp>
-    			</respStmt>
-    			<respStmt ana="#carlca">
-    				<persName>Adair, Carl</persName>
-    				<resp>encoder</resp>
-    			</respStmt>
-    		</titleStmt>
-    		<publicationStmt>
-    			<publisher>Princeton University</publisher>
-    		</publicationStmt>
-    		<sourceDesc>
-    			<msDesc>
-    				<msIdentifier>
-    					<settlement>Princeton</settlement>
-    					<repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-    					<collection>Sylvia Beach Papers</collection>
-    					<idno>C0108</idno>
-    				</msIdentifier>
-    			</msDesc>
-    			
-    		</sourceDesc>
-    	</fileDesc>
-	    <profileDesc>
-      <textClass>          
-        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-      </textClass>
-    	<particDesc>
-    		<person role="cardholder" ana="#clai.pi"><persName>Clairin</persName></person>
-    	</particDesc>
-    </profileDesc>
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of a Borrower's Card: <persName ref="#clai.pi">Clairin</persName></title>
+      <respStmt ana="#elspeth">
+        <persName>Green, Elspeth</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#carlca">
+        <persName>Adair, Carl</persName>
+        <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
 
-        <revisionDesc>
-            <change who="elspeth" when="2015-05-24">
-                <ab>
-                transcribed cards
-                s1:
-                	<unclear/> = "bis"? ==&gt; BIS
-                s3:
-                	<unclear/> = "Honettis"?
-                
-                  
-                    	
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/c/clairin/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-        	<graphic url="00000002.jp2"/>
-        </surface>
-        <surface xml:id="s3">
-        	<graphic url="00000003.jp2"/>
-        </surface>
-        <surface xml:id="s4">
-        	<graphic url="00000004.jp2"/>
-        </surface>
-       
-      
-      
-    </facsimile>
-    <text>
-        <body>
-            	<div type="card">
-            	<div type="recto">
-                <pb facs="#s1"/>
-             	<head>
-            	<date when="1933">1933</date>		
-             	<date when="1933-11-21">Nov 21</date>			
-             				<persName ref="#clai.pi">CLAIRIN</persName>
-             				<persName ref="#clai.pi">Madame Clairin</persName>
-             				<address>
-             				<street>6 bis rue de l'Abbaye</street>
-             				<district>6e</district>
-             				</address>
-             			<note>	1 m 2 v					20</note>
-             	</head>
-            	
-            <ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-11-21">Nov 21</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:001x7j"><title>Gone to Earth</title></bibl>		
-            		<date ana="#returned" when="1933-12-05">Dec 5</date>
-            	</ab>	
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-11-21">	</date>		
-            		<bibl ana="#borrowedItem" corresp="mep:004k1n"><title>Daphne Adeane</title></bibl>
-            		<date ana="#returned" when="1933-12-05">Dec 5</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-05">Dec 5</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00hr95"><title>Fortunate Youth</title></bibl>		
-            		<date ana="#returned" when="1933-12-21">Dec 21</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-05">	</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:009c5f"><title>Seven for a Secret</title></bibl>			
-            		<date ana="#returned" when="1933-12-21">	</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-05">	</date>		
-            		<bibl ana="#borrowedItem" corresp="mep:001k0m"><title>Dusty Answer</title></bibl>		
-            		<date ana="#returned" when="1933-12-21">Dec 21</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-21">Dec 21</date>
-            		<bibl ana="#borrowedItem" corresp="mep:001n33"><title>Golden Arrow</title></bibl>				
-            		<date ana="#returned" when="1933-01-05">Jan 5</date>
-            		</ab>
-             	<note>Ren. <date from="1933-12-21" to="1934-01-21">Dec 21 1933 - Jan 21 1934</date>		20v</note>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-21">Dec 21</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00hs0n"><title>Darkened Rooms</title></bibl>		
-            		<date ana="#returned" when="1934-01-05">Jan 5</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-05">Jan 5</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>		
-            		<date ana="#returned" when="1934-01-16">	16</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-01-15">	</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00hs1z"><title>Gone to Ear.</title></bibl>			
-            		<date ana="#returned" when="1934-01-16">	</date>
-            	</ab>	
-            		<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-01-15">	</date>		
-            		<bibl ana="#borrowedItem" corresp="mep:00406h"><title>House in Dormer Forest</title></bibl>	
-            		<date ana="#returned" when="1934-01-16">	16</date>
-            	</ab>	
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-16">	16</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>		
-            		<date ana="#returned" when="1934-01-18">Jan 18</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-16">	16</date>
-            		<bibl ana="#borrowedItem" corresp="mep:00hs28"><title>Gentleman in the parlour</title></bibl> 
-            		<date ana="#returned" when="1934-01-18">Jan 18</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-18">Jan 18</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00061n"><title>Painted Veil</title></bibl>		
-            		<date ana="#returned" when="1934-01-22">Jan 22</date>
-            		</ab>
-           <note>  	Renewed <date ana="#returned" from="1934-01-21" to="1934-04-21">Jan 21. - April 21 1934</date> 2v	50v</note>
-            		<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-01-18">Jan 18</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00hs3k"><title>Life of Mary Webb</title></bibl>		
-            		<date ana="#returned" when="1934-01-22">Jan 22</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-22">Jan 22</date>
-            		<bibl ana="#borrowedItem" corresp="mep:002n5z"><title>Mamba's Daughter</title></bibl>		
-            		<date ana="#returned" when="1934-01-27">Jan 27</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-22">Jan 22</date>
-            		<bibl ana="#borrowedItem" corresp="mep:00409f"><title>Diary of a Provincial Lady</title></bibl>
-            		<date ana="#returned" when="1934-01-27">Jan 27</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-27">"	27</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00433d"><title>Cakes &amp; Ale</title></bibl>	
-            		<date ana="#returned" when="1934-01-20">Jan 30</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-27">	</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00452n"><title>Porgy</title></bibl>		
-            		<date ana="#returned" when="1934-01-30">Jan 30</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-01-30">Jan 30</date>
-            		<bibl ana="#borrowedItem" corresp="mep:00456w"><title>Twilight in Italy</title></bibl>
-            		<date ana="#returned" when="1934-02-01">Feb 1</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-01-30">	</date>		
-            		<bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>		
-            		<date ana="#returned" when="1934-02-01">Feb 1</date>
-            	</ab>	
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-01">Feb 1</date>
-            		<bibl ana="#borrowedItem" corresp="mep:001n5q"><title>Water gipsies</title></bibl>		
-            		<date ana="#returned" when="1934-02-07">Feb 7</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-01">	</date>		
-            		<bibl ana="#borrowedItem" corresp="mep:00gr1f"><title>glimpses of the Moon</title></bibl>	
-            		<date ana="#returned" when="1934-02-02">Feb 2</date>
-            		</ab>
-            		<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-02-02">Feb 2</date>	
-            		<bibl ana="#borrowedItem" corresp="mep:00hs4w"><title>genghis Khan</title></bibl>			
-            		<date ana="#returned" when="1934-02-07">Feb 7</date>
-            	</ab>	
-            		<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-02-02">	</date>		
-            		<bibl ana="#borrowedItem" corresp="mep:00fw19"><title>Narrow Corner</title></bibl>			
-            		<date ana="#returned" when="1934-02-07">Feb 7</date>
-            	</ab>	
-             	
-            	</div>
-        		
-        		<div type="verso">
-             	<pb facs="#s2"/>
-             	<head>
-             				<persName ref="#clai.pi">CLAIRIN</persName>
-             	</head>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-08">Feb 8</date>
-             		<bibl ana="#borrowedItem" corresp="mep:003h9b"><title>Jalna</title></bibl>		
-             		<date ana="#returned" when="1934-02-10">	10</date>
-             	</ab>	
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-08">Feb 8</date>
-             		<bibl ana="#borrowedItem" corresp="mep:004d5h"><title>Broome stages</title></bibl>		
-             		<date ana="#returned" when="1934-02-10">	10</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-10">	10</date>
-             		<bibl ana="#borrowedItem" corresp="mep:003j0t"><title>Whiteoaks</title></bibl>	
-             		<date ana="#returned" when="1934-02-19">	19</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-10">	10</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00hs56"><title>Bess of the Woods</title></bibl>	
-             		<date ana="#returned" when="1934-02-26">	26</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-19">	19</date>
-             		<bibl ana="#borrowedItem" corresp="mep:003j3r"><title>Finch's Fortune</title></bibl>			
-             		<date ana="#returned" when="1934-03-02">March 2</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-02-26">	26</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:001n7b"><title>gods arrive</title></bibl>	
-             		<date ana="#returned" when="1934-03-06">March 6</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-03-02">March 2</date>
-             		<bibl ana="#borrowedItem" corresp="mep:00hs6h"><title>Dop Doctor</title></bibl>	
-             		<date ana="#returned" when="1934-03-15">March 15</date>
-             	</ab>	
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-03-02">	</date>		
-             		<bibl ana="#borrowedItem" corresp="mep:00hs7t"><title>Big tremaine</title></bibl>	
-             		<date ana="#returned" when="1934-03-06">March 6</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-03-06">March 6</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00hs84"><title>Beautiful White Devil</title></bibl>		
-             		<date ana="#returned" when="1934-03-13">March 13</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-03-15">	15</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00hs9f"><title>Dark Lantern</title></bibl>
-             		<date ana="#returned" when="1934-03-26">March 26</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-03-15">	15</date>
-             		<bibl ana="#borrowedItem" corresp="mep:00ht0x"><title>First Violin</title></bibl>			
-             		<date ana="#returned" when="1934-03-26">March 26</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-03-26">	26</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00ht17"><title>gentleman from Indiana</title></bibl>	
-             		<date ana="#returned" when="1934-04-03">April 3</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-03-26">	26</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00ht2j"><title>December Love</title></bibl>		
-             		<date ana="#returned" when="1934-04-03">April 3</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-04-03">April 3</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00ht3v"><title>Light Heart</title></bibl>				
-             		<date ana="#returned" when="1934-04-10">April 10</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-04-03">	</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:00ht45"><title>Perella</title></bibl>			
-             		<date ana="#returned" when="1934-04-10">April 10</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">	
-             	<date ana="#checkedOut" when="1934-04-10">April 10</date>
-             		<bibl ana="#borrowedItem" corresp="mep:008b20"><title>My Journey to Llassa</title></bibl>		
-             		<date ana="#returned" when="1934-04-21">	21</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1934-04-10">	</date>		
-             		<bibl ana="#borrowedItem" corresp="mep:009x7g"><title>Kim</title></bibl>			
-             		<date ana="#returned" when="1934-04-21">	21</date>
-             		</ab>
-             						<note>	<date when="1934-04-21">April 21</date></note>
-             	
-             	</div>
-        		</div>
-        		
-        		<div type="card">
-        		<div type="recto">
-             	<pb facs="#s3"/>
-             	<head>
-             	<date when="1933">1933</date>			
-             					<persName ref="#clai.pi">CLAIRIN M. Pierre-Eugène</persName>
-             					<address>
-             					<street>4 bis square Des Nouettes</street>
-             					<district>XV</district>
-             					</address>
-             	</head>
-             	
-             	<note><date when="1933-11-13">13 Nov.</date>		dep. 30+  3mo. 1 vol		30 </note>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-11-13">	</date>		
-             		<bibl ana="#borrowedItem" corresp="mep:009x2x"><title>Imaginary Portraits</title></bibl>		
-             		<date ana="#returned" when="1933-11-16">Nov 16</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-11-16">Nov 16</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl>	
-             		<date ana="#returned" when="1933-12-04">Dec 4</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-04">Dec 4</date>
-             		<bibl ana="#borrowedItem" corresp="mep:00ht5g"><title>Opening Day</title></bibl>		
-             		<date ana="#returned" when="1933-12-18">	18</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-18">18 "</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs. Dalloway</title></bibl>		
-             		<date ana="#returned" when="1933-12-30">Dec 30</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-18">	</date>	
-             		<bibl ana="#borrowedItem" corresp="mep:008055"><title>Coriolanus</title></bibl>				
-             		<date ana="#returned" when="1933-12-19">	19</date>
-             		</ab>
-        			<ab ana="#borrowingEvent">
-             	<date ana="#checkedOut" when="1933-12-30">Dec 30</date>
-             		<bibl ana="#borrowedItem" corresp="mep:001p97"><title>Constant Nymph</title></bibl>		
-             	<note>	5 weeks left </note>
-             		<date ana="#returned" when="1934-01-08">8 Jan.</date>
-             		</ab>
-             	
-             	</div>
-        		<div type="verso">
-             	<pb facs="#s4"/>
-             	<!-- verso blank -->
-             	</div>
-             	</div>
-            
-            	
-            
-        </body>
-    </text>
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#clai.pi"><persName>Clairin</persName></person>
+    </particDesc>
+  </profileDesc>
+
+  <revisionDesc>
+    <change who="elspeth" when="2015-05-24">
+      <ab>
+        transcribed cards
+        s1:
+        <unclear/> = "bis"? ==&gt; BIS
+        s3:
+        <unclear/> = "Honettis"?
+
+
+
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298/c/clairin/">
+  <surface xml:id="s1">
+    <graphic url="00000001.jp2"/>
+  </surface>
+  <surface xml:id="s2">
+    <graphic url="00000002.jp2"/>
+  </surface>
+  <surface xml:id="s3">
+    <graphic url="00000003.jp2"/>
+  </surface>
+  <surface xml:id="s4">
+    <graphic url="00000004.jp2"/>
+  </surface>
+
+
+
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s1"/>
+        <head>
+          <date when="1933">1933</date>
+          <date when="1933-11-21">Nov 21</date>
+          <persName ref="#clai.pi">CLAIRIN</persName>
+          <persName ref="#clai.pi">Madame Clairin</persName>
+          <address>
+            <street>6 bis rue de l'Abbaye</street>
+            <district>6e</district>
+          </address>
+          <note>  1 m 2 v                                 20</note>
+        </head>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-11-21">Nov 21</date>
+          <bibl ana="#borrowedItem" corresp="mep:001x7j"><title>Gone to Earth</title></bibl>
+          <date ana="#returned" when="1933-12-05">Dec 5</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-11-21">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:004k1n"><title>Daphne Adeane</title></bibl>
+          <date ana="#returned" when="1933-12-05">Dec 5</date>
+        </ab>
+
+        <bibl corresp="mep:00hr95"><title><del rend="strikethrough">Fortunate Youth</del></title></bibl>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-05">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:009c5f"><title>Seven for a Secret</title></bibl>
+          <date ana="#returned" when="1933-12-21">	</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-05">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:001k0m"><title>Dusty Answer</title></bibl>
+          <date ana="#returned" when="1933-12-21">Dec 21</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-21">Dec 21</date>
+          <bibl ana="#borrowedItem" corresp="mep:001n33"><title>Golden Arrow</title></bibl>
+          <date ana="#returned" when="1933-01-05">Jan 5</date>
+        </ab>
+        <note>Ren. <date from="1933-12-21" to="1934-01-21">Dec 21 1933 - Jan 21 1934</date>		20v</note>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-21">Dec 21</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs0n"><title>Darkened Rooms</title></bibl>
+          <date ana="#returned" when="1934-01-05">Jan 5</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-05">Jan 5</date>
+          <bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>
+          <date ana="#returned" when="1934-01-16">	16</date>
+        </ab>
+
+        <bibl corresp="mep:001x7j"><title><del rend="strikethrough">Gone to Ear.</del></title></bibl>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-15">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:00406h"><title>House in Dormer Forest</title></bibl>
+          <date ana="#returned" when="1934-01-16">	16</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-16">	16</date>
+          <bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>
+          <date ana="#returned" when="1934-01-18">Jan 18</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-16">	16</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs28"><title>Gentleman in the parlour</title></bibl>
+          <date ana="#returned" when="1934-01-18">Jan 18</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-18">Jan 18</date>
+          <bibl ana="#borrowedItem" corresp="mep:00061n"><title>Painted Veil</title></bibl>
+          <date ana="#returned" when="1934-01-22">Jan 22</date>
+        </ab>
+        <note>  	Renewed <date ana="#returned" from="1934-01-21" to="1934-04-21">Jan 21. - April 21 1934</date> 2v	50v</note>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-18">Jan 18</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs3k"><title>Life of Mary Webb</title></bibl>
+          <date ana="#returned" when="1934-01-22">Jan 22</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-22">Jan 22</date>
+          <bibl ana="#borrowedItem" corresp="mep:002n5z"><title>Mamba's Daughter</title></bibl>
+          <date ana="#returned" when="1934-01-27">Jan 27</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-22">Jan 22</date>
+          <bibl ana="#borrowedItem" corresp="mep:00409f"><title>Diary of a Provincial Lady</title></bibl>
+          <date ana="#returned" when="1934-01-27">Jan 27</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-27">"	27</date>
+          <bibl ana="#borrowedItem" corresp="mep:00433d"><title>Cakes &amp; Ale</title></bibl>
+          <date ana="#returned" when="1934-01-20">Jan 30</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-27">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:00452n"><title>Porgy</title></bibl>
+          <date ana="#returned" when="1934-01-30">Jan 30</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-30">Jan 30</date>
+          <bibl ana="#borrowedItem" corresp="mep:00456w"><title>Twilight in Italy</title></bibl>
+          <date ana="#returned" when="1934-02-01">Feb 1</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-01-30">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>
+          <date ana="#returned" when="1934-02-01">Feb 1</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-01">Feb 1</date>
+          <bibl ana="#borrowedItem" corresp="mep:001n5q"><title>Water gipsies</title></bibl>
+          <date ana="#returned" when="1934-02-07">Feb 7</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-01">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:00gr1f"><title>glimpses of the Moon</title></bibl>
+          <date ana="#returned" when="1934-02-02">Feb 2</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-02">Feb 2</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs4w"><title>genghis Khan</title></bibl>
+          <date ana="#returned" when="1934-02-07">Feb 7</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-02">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:00fw19"><title>Narrow Corner</title></bibl>
+          <date ana="#returned" when="1934-02-07">Feb 7</date>
+        </ab>
+
+      </div>
+
+      <div type="verso">
+        <pb facs="#s2"/>
+        <head>
+          <persName ref="#clai.pi">CLAIRIN</persName>
+        </head>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-08">Feb 8</date>
+          <bibl ana="#borrowedItem" corresp="mep:003h9b"><title>Jalna</title></bibl>
+          <date ana="#returned" when="1934-02-10">	10</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-08">Feb 8</date>
+          <bibl ana="#borrowedItem" corresp="mep:004d5h"><title>Broome stages</title></bibl>
+          <date ana="#returned" when="1934-02-10">	10</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-10">	10</date>
+          <bibl ana="#borrowedItem" corresp="mep:003j0t"><title>Whiteoaks</title></bibl>
+          <date ana="#returned" when="1934-02-19">	19</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-10">	10</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs56"><title>Bess of the Woods</title></bibl>
+          <date ana="#returned" when="1934-02-26">	26</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-19">	19</date>
+          <bibl ana="#borrowedItem" corresp="mep:003j3r"><title>Finch's Fortune</title></bibl>
+          <date ana="#returned" when="1934-03-02">March 2</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-02-26">	26</date>
+          <bibl ana="#borrowedItem" corresp="mep:001n7b"><title>gods arrive</title></bibl>
+          <date ana="#returned" when="1934-03-06">March 6</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-02">March 2</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs6h"><title>Dop Doctor</title></bibl>
+          <date ana="#returned" when="1934-03-15">March 15</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-02">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs7t"><title>Big tremaine</title></bibl>
+          <date ana="#returned" when="1934-03-06">March 6</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-06">March 6</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs84"><title>Beautiful White Devil</title></bibl>
+          <date ana="#returned" when="1934-03-13">March 13</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-15">	15</date>
+          <bibl ana="#borrowedItem" corresp="mep:00hs9f"><title>Dark Lantern</title></bibl>
+          <date ana="#returned" when="1934-03-26">March 26</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-15">	15</date>
+          <bibl ana="#borrowedItem" corresp="mep:00ht0x"><title>First Violin</title></bibl>
+          <date ana="#returned" when="1934-03-26">March 26</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-26">	26</date>
+          <bibl ana="#borrowedItem" corresp="mep:00ht17"><title>gentleman from Indiana</title></bibl>
+          <date ana="#returned" when="1934-04-03">April 3</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-03-26">	26</date>
+          <bibl ana="#borrowedItem" corresp="mep:00ht2j"><title>December Love</title></bibl>
+          <date ana="#returned" when="1934-04-03">April 3</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-04-03">April 3</date>
+          <bibl ana="#borrowedItem" corresp="mep:00ht3v"><title>Light Heart</title></bibl>
+          <date ana="#returned" when="1934-04-10">April 10</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-04-03">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:00ht45"><title>Perella</title></bibl>
+          <date ana="#returned" when="1934-04-10">April 10</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-04-10">April 10</date>
+          <bibl ana="#borrowedItem" corresp="mep:008b20"><title>My Journey to Llassa</title></bibl>
+          <date ana="#returned" when="1934-04-21">	21</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1934-04-10">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:009x7g"><title>Kim</title></bibl>
+          <date ana="#returned" when="1934-04-21">	21</date>
+        </ab>
+        <note>	<date when="1934-04-21">April 21</date></note>
+
+      </div>
+    </div>
+
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s3"/>
+        <head>
+          <date when="1933">1933</date>
+          <persName ref="#clai.pi">CLAIRIN M. Pierre-Eugène</persName>
+          <address>
+            <street>4 bis square Des Nouettes</street>
+            <district>XV</district>
+          </address>
+        </head>
+
+        <note><date when="1933-11-13">13 Nov.</date>		dep. 30+  3mo. 1 vol		30 </note>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-11-13">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:009x2x"><title>Imaginary Portraits</title></bibl>
+          <date ana="#returned" when="1933-11-16">Nov 16</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-11-16">Nov 16</date>
+          <bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl>
+          <date ana="#returned" when="1933-12-04">Dec 4</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-04">Dec 4</date>
+          <bibl ana="#borrowedItem" corresp="mep:00ht5g"><title>Opening Day</title></bibl>
+          <date ana="#returned" when="1933-12-18">	18</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-18">18 "</date>
+          <bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs. Dalloway</title></bibl>
+          <date ana="#returned" when="1933-12-30">Dec 30</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-18">	</date>
+          <bibl ana="#borrowedItem" corresp="mep:008055"><title>Coriolanus</title></bibl>
+          <date ana="#returned" when="1933-12-19">	19</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1933-12-30">Dec 30</date>
+          <bibl ana="#borrowedItem" corresp="mep:001p97"><title>Constant Nymph</title></bibl>
+          <note>	5 weeks left </note>
+          <date ana="#returned" when="1934-01-08">8 Jan.</date>
+        </ab>
+
+      </div>
+      <div type="verso">
+        <pb facs="#s4"/>
+        <!-- verso blank -->
+      </div>
+    </div>
+
+
+
+  </body>
+</text>
 </TEI>
