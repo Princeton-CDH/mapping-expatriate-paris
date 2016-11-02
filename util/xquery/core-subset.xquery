@@ -15,7 +15,7 @@ return
             }
         </core-borrowers>
         
-        <core-titles count="{count(distinct-values($borrowed-books))}">
+        <core-titles count="{count($borrowed-books)}">
             { for $b in distinct-values($borrowed-books) order by $b return <book>{$b}</book> }
         </core-titles>
     </core-data>
