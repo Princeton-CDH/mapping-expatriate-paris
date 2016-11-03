@@ -4,6 +4,7 @@ let $cardpath       := '/db/mep-data/transcriptions/cards'
 let $core-titles    := ('mep:001p1r', 'mep:004j77', 'mep:002m04', 'mep:000r12', 'mep:002z2h')
 let $core-cards:= collection($cardpath)//tei:TEI[.//tei:bibl[@corresp = $core-titles]]
 
+let $records :=
 for $card in $core-cards
 let $person := $card//tei:person[@role='cardholder']
 let $borrowed-items := $card//tei:bibl[@ana='#borrowedItem']
@@ -16,3 +17,10 @@ return
         <borrowed-items>{ count($borrowed-items) }</borrowed-items>
         <borrowing-events>{ count($borrowing-events) }</borrowing-events>
     </record>
+
+return
+(string-join(('name', 'id', 'borrowed-items', 'borrowing-events'), ','),
+for $r in $records
+return 
+string-join(($r/name, $r/id, $r/borrowed-items, $r/borrowing-events), ',')
+)
