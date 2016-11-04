@@ -20,6 +20,10 @@
         </xd:desc>
     </xd:doc>
     
+    <xsl:param name="borrowed-titles" select="document('../../borrowed-titles.xml')"></xsl:param>
+    
+    <xsl:key name="regtitle" match="row" use="titleid" />
+    
     <xsl:template match="/">
         <html>
             <head>
@@ -32,6 +36,15 @@
             </head>
             <body>
                 <table>
+                    <tr>
+                        <th>checkout as written</th>
+                        <th>checkout machine date</th>
+                        <th>borrowed item id</th>
+                        <th>borrowed item as written</th>
+                        <th>borrowed item regularized</th>
+                        <th>returned as written</th>
+                        <th>returned machine date</th>                        
+                    </tr>
                 <xsl:apply-templates select="//tei:ab[@ana='#borrowingEvent']" />
                 </table>
             </body>
@@ -43,20 +56,24 @@
             <tr>
                 <td>
                     <xsl:if test="tei:date[@ana='#checkedOut']">
-                        <xsl:value-of select="tei:date[@ana='#checkedOut']/@when"/>
-                    </xsl:if>
-                </td>
-                <td>
-                    <xsl:if test="tei:date[@ana='#checkedOut']">
                         <xsl:value-of select="tei:date[@ana='#checkedOut']"/>
                     </xsl:if>
                 </td>
+                
+                <td>
+                    <xsl:if test="tei:date[@ana='#checkedOut']">
+                        <xsl:value-of select="tei:date[@ana='#checkedOut']/@when"/>
+                    </xsl:if>
+                </td>
+
                 
                 <td>
                     <xsl:if test="tei:bibl[@ana='#borrowedItem']/@corresp">
                         <xsl:value-of select="tei:bibl[@ana='#borrowedItem']/@corresp"/>
                     </xsl:if>
                 </td>
+                
+                
                 
                 <td>
                     <xsl:if test="tei:bibl[@ana='#borrowedItem']">
@@ -68,20 +85,28 @@
  
                 <td>
                     <xsl:if test="tei:date[@ana='#returned']">
-                        <xsl:value-of select="tei:date[@ana='#returned']/@when"/>
-                    </xsl:if>
-                </td>
-                <td>
-                    <xsl:if test="tei:date[@ana='#returned']">
                         <xsl:value-of select="tei:date[@ana='#returned']"/>
                     </xsl:if>
                 </td>
+                
+                <td>
+                    <xsl:if test="tei:date[@ana='#returned']">
+                        <xsl:value-of select="tei:date[@ana='#returned']/@when"/>
+                    </xsl:if>
+                </td>
+                
                 
             </tr>
        
         
     </xsl:template>
     
+    <xsl:template match="tei:bibl">
+        <xsl:variable name="id">
+            <xsl:value-of select="xs:string(current()/@corresp)"/>
+        </xsl:variable>
+        <xsl:value-of select="$borrowed-titles//row[titleid = $id][1]/regularized_title"/>
+    </xsl:template>
    
     
     <xsl:template match="tei:teiHeader"></xsl:template>
