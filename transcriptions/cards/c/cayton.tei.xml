@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of Borrower's Card:
+      <persName ref="cayt.ho">Horace Cayton</persName>
+      </title>
+      <respStmt ana="#carlca">
+        <persName>Adair, Carl</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#i-davis">
+        <persName>Davis, Ian</persName>
+        <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
+
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#cayt.ho"><persName>Horace Cayton</persName></person>
+    </particDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change who="#yournetid">
+      <ab>
+        <!-- Enter transcription notes and queries here -->
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298/r/richards_orpen/">
+  <surface xml:id="s1">
+    <graphic url="00000001.jp2"/>
+  </surface>
+  <surface xml:id="s2">
+    <graphic url="00000002.jp2"/>
+  </surface>
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s1"/>
+	<!-- Recto is card of Richards-Orpen; encoded in another file -->
+      </div>
+
+      <div type="verso">
+        <pb facs="#s2"/>
+        <head>
+          <date when="1935">1935</date>
+          <persName ref="#cayt.ho">CAYTON
+          Horace</persName>
+          <address><street>rue Laplau</street>
+          <name>Hôtel Central</name></address>
+	</head>
+
+        <note>1v - by day                                                                       dep. 50v</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-09-03">3 Sept.</date>
+          <bibl ana="#borrowedItem" corresp="mep:00vs1c"><title>Lit. Life in Paris</title></bibl> <note>pd 21      2                 </note>
+          <date ana="#returned" when="1935-09-05">5 - </date>
+        </ab>
+
+        <ab>
+          <date ana="#checkedOut" when="1935-09-05">5 -</date>
+          <bibl ana="#borrowedItem" corresp="mep:00142n"><title>Axel's Castle</title></bibl><note> - 1v a day      9               </note>
+          <date ana="#returned" when="1935-09-14">Sept 14</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-09-11">Sept 11</date>
+          <bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I lay Dying</title></bibl>              <note>          3               </note>
+          <date ana="#returned" when="1935-09-14">Sept 14</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-09-14">Sept 14</date>
+          <bibl ana="#borrowedItem" corresp="mep:00q354"><title>Innocents Abroad</title></bibl>           <note>  3               </note>
+          <date ana="#returned" when="1935-09-14">Sept 14</date>
+        </ab>
+        <note> 17
+        50
+        17</note>
+
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>
