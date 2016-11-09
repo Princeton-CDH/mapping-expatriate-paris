@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of a Borrower's Card: <persName ref="reid.ma">Marjorie Reid</persName></title>
+      <respStmt ana="#carlca">
+        <persName>Adair, Carl</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+      <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
+      
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>          
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#reid.ma"><persName>Marjorie Reid</persName></person>
+    </particDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change who="#yournetid">
+      <ab>
+        <!-- Enter transcription notes and queries here -->
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298/r/reid/">
+  <surface xml:id="s3">
+    <graphic url="00000003.jp2"/>
+  </surface>
+  <surface xml:id="s4">
+    <graphic url="00000004.jp2"/>
+  </surface>
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s3"/>
+	<head>
+	  <date when="1900-12-17">Dec 17</date>
+	  <persName>Miss Marjorie Reid</persName>
+	  <address>
+	    <addrLine>80 Rue Lauriston</addrLine>
+	  </address>
+	  after <date when="1900-01-20">Jan 20</date>
+	  <address>
+	    <addrLine>41 rue M. Le Prince</addrLine>
+	  </address>
+	</head>
+	<note>3 mos. 1 vol. 20</note>
+
+	<ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1900-12-17">Dec 17</date>
+	  <bibl ana="#borrowedItem" corresp="mep:008w13">
+	    <title>Heartbreak House</title>
+	  </bibl>
+	</ab>
+
+	<ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1900-11-14">Nov 14</date>
+	  <bibl ana="#borrowedItem" corresp="mep:000b4p">
+	    <title>Portrait of the Artist</title>
+	  </bibl>
+	  <note>B B</note>
+	</ab>
+
+
+
+
+      </div>
+      <div type="verso">
+        <pb facs="#s4"/>
+        <!-- Verso Blank -->
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>
