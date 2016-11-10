@@ -1,306 +1,309 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#whit.ta">Miss Tania Whitman</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	  <particDesc>
-	        <person role="cardholder" ana="#whit.ta"><persName>Miss Tania Whitman</persName></person>
-	  </particDesc>
-	</profileDesc>
-        <revisionDesc>
-            <change who="#elspeth" when="2016-01-06">
-                <p> First level encoding </p>
-                <ab>
-                s1:  Corrected "SVI to "XVI"
-                s4:  All dates have no year
-                s5:  Corrected "how" to "now"
-                </ab>
-                <ab>
-                    <!-- Enter transcription notes and queries here -->
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/vw/whitman/">
-         <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-         <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-         <surface xml:id="s3">
-            <graphic url="00000003.jp2"/>
-        </surface>
-         <surface xml:id="s4">
-            <graphic url="00000004.jp2"/>
-        </surface>
-         <surface xml:id="s5">
-            <graphic url="00000005.jp2"/>
-        </surface>
-         <surface xml:id="s6">
-            <graphic url="00000006.jp2"/>
-        </surface>
-         <surface xml:id="s7">
-            <graphic url="00000007.jp2"/>
-        </surface>
-         <surface xml:id="s8">
-            <graphic url="00000008.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-                <div type="recto">
-                    <pb facs="#s1"/>
-                    <head>
-                    <date when="1938">1938</date>
-                    					<address><persName ref="#whit.ta">Whitman
-                        				Miss Tania</persName>
-                    				<street>10 Avenue Alphonse XIII</street>
-                    					<settlement>Paris</settlement> <district>XVI</district>
-                    									<addrLine><num type="telephone">Jasmin 45.55</num></addrLine></address>
-                    </head>	
-                    
-                   <ab ana="#borrowingEvent">						
-                    <date ana="#checkedOut" when="1938-12-22">Dec 22</date>	
-                    <bibl ana="#borrowedItem" corresp="mep:00d260"><title>Cuculain</title> <biblScope unit="volume" from="1" to="3">3 vols</biblScope></bibl>
-                    <date ana="#returned" when="1938-12-30">Dec 30</date>
-                    </ab>
-                    <ab ana="#borrowingEvent">
-                    <date ana="#checkedOut" when="1939-01-24">Jan 24</date>	
-                    <bibl ana="#borrowedItem" corresp="mep:00d279"><title>How to Write</title></bibl>			
-                    <date ana="#returned" when="1939-01-26">Jan 26</date>
-                    </ab>
-                    <ab ana="#borrowingEvent">
-                    <date ana="#checkedOut" when="1939-01-24"></date>	
-                    <bibl ana="#borrowedItem" corresp="mep:00d28m"><title>Lucy Church Amiably</title></bibl>		
-                    <date ana="#returned" when="1939-01-26">Jan 26</date>
-                    </ab>		
-               <note>
-                    		<date when="1939-01-30">Jan 30</date> <persName ref="#whit.ta">T.W.</persName> gave <persName ref="#beac.sy">SB</persName> 1000v for Spanish
-                    			<persName>Dr Stuhl</persName>
-                    			5 o'clock Tues
-                    		</note>	
-                </div> 
-                <div type="verso">
-                    <pb facs="#s2"/>
-                    
-                    <!-- Verso Blank -->
-                </div> 
-                <div type="recto">
-                    <pb facs="#s3"/>
-                    <head>
-                    		<persName ref="#whit.ta">Whitman
-                    		Miss Tania</persName>
-                    </head>		
-                   
-                    		<note>	credit			70 frs
-                    		
-                    		(returned <bibl  corresp="mep:00d29x"><title>Mime</title></bibl> ord.ed
-                    		to be exchanged for signed copy)
-                    	</note>	
-                </div> 
-                <div type="verso">
-                    <pb facs="#s4"/>
-                    <head>
-                    <date>Oct 13</date>		<address><persName>Mrs Lucas</persName>
-                    			            <street>8 bis rue Campagne Première</street></address>
-                    </head>			
-                   			
-                    			<note>
-                    			    1 mo.	1 vol.			8
-                    						Dep			7
-                    </note>
-                   <ab ana="#borrowingEvent">
-                    <date ana="#checkedOut" when="1900-10-13">Oct 13</date>		
-                    <bibl ana="#borrowedItem" corresp="mep:00d30d"><title>Greenapple Harvest</title></bibl>		
-                    <date ana="#returned" when="1900-10-31">Oct 31</date>
-                    </ab>
-                    <ab ana="#borrowingEvent">
-                    <date ana="#checkedOut" when="1900-10-31">Oct 31</date>	
-                    <bibl ana="#borrowedItem" corresp="mep:00d31q"><title>Coquette</title></bibl>				
-                    <date ana="#returned" when="1900-11-17">Nov 17</date>
-                    </ab>
-                </div> 
-                <div type="recto">
-                    <pb facs="#s5"/>
-                    <head>
-                    <date when="1938">1938</date>
-                    			<address><persName ref="#whit.ta">Miss Tania Whitman</persName>
-                    			<street>10 Avenue Alphonse</street> <district>XIIIe</district>
-                    			<settlement>Paris</settlement> <district>XVIe</district>
-                    			<addrLine><num type="telephone">Jasmin 45-55</num></addrLine></address>
-                    			
-                    			<address><settlement>Burlingame</settlement> <region>California</region></address>
-                    			 or 70 Guaranty Trust Paris)
-                    			
-                    	(call before 10 a.m. or after 7 p.m.)
-                    	
-                    <address><street>17 rue Berton</street> <district>XVIe</district></address>
-                    
-                    <date when="1939-05">May 1939</date>	<address><name>Hotel de la Tamise</name>
-                    			                            <street>4 rue d'Alger</street>	<settlement>Paris</settlement> <district>1er</district> <addrLine>Opéra</addrLine>
-                    											<addrLine><num type="telephone">56-29</num></addrLine></address>
-                    </head>		
-                    <note>
-                    <date  when="1939-05-07">May 7</date>
-                    <bibl corresp="mep:00d321"><title>Finnegan's Wake</title> <edition>ltd ed.</edition></bibl> 
-                   No			1050,
-                     paid 
-                    <date  when="1939-05-07">May 7</date></note>
-                   <note> 									
-                  <date when="1939-05-07">May 7 1939</date> 
-                    cheque Frs	1500
-                    								                                	1050
-                    						                              credit		 450
-                  	</note>
-                    <note>
-                    <date when="1939-05-13">May 13</date>	
-                    <bibl  corresp="mep:00d321"><title>Finnegans Wake</title> <edition>ordinary edn.</edition></bibl>	
-                   <note> 250,00</note>
-                    <note>
-                    <date  when="1939-05-13">May 13</date>	
-                    
-                    on a/c					 200
-                    						                              credit		 650
-                    						                                  			 250
-                    						                               "			 400
-                    						                               
-                    			Zodiac: <bibl  corresp="mep:00242w"><title>Shakespeare</title></bibl>, 
-                    <bibl  corresp="mep:002g76"><title>Keats</title></bibl>, 
-                    <bibl  corresp="mep:00bf29"><title>Donne</title></bibl>,
-                    <bibl  corresp="mep:00d33b"><title>Lear</title></bibl>,
-                    	<bibl corresp="mep:000v26"><title>Blake</title></bibl>. = 12x5	= 	60v
-                    			says <persName ref="#whit.ta">she</persName> paid 200v more for <bibl corresp="mep:00d34n"><title>F.W.</title></bibl>
-                    so as
-                    			I gather account now stands
-                    <date  when="1939-05-19">May 19</date>		46			450			400				60
-                    						                                200		 	 60
-                    						                                650	credit	340
-                    					                                 -	250
-                    						                                400
-                    					                                 -	 60
-                    					                                   	340
-                   		</note>
-               </note>
-                </div>
-                <div type="verso">
-                    <pb facs="#s6"/>
-                    
-                    <!-- Verso Blank -->
-                </div>
-                <div type="recto">
-                    <pb facs="#s7"/>
-                    <head>
-                    <date when="1939">1939</date>			<persName ref="#whit.ta">Miss Tania Whitman</persName>
-                    </head>
-                   <note>
-                    <date when="1939-01-14">Jan 14</date>		<bibl corresp="mep:000v26"><title>Blake</title></bibl>, <bibl corresp="mep:00d33b"><title>Lear</title></bibl>, <bibl  corresp="mep:00242w"><title>Shakespeare</title></bibl>
-                    			 3 Zodiac books, at 12.		<date  when="1939-01-14">Jan 14</date>	36
-                    			 					paid cash
-                    			 					
-                    			 					
-                    			 <bibl  corresp="mep:00d35z"><title>Look Stranger</title></bibl>					55.
-                    			 								              pd. cash <date when="1939-01-24">Jan 24</date>
-                    			 								
-                    			 <bibl corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>					          22
-                    			 3 Zodiacs: <bibl  corresp="mep:008z8t"><title>Herrick</title></bibl>, 
-                                 <bibl  corresp="mep:00d368"><author>Marsh</author> <title>Book of Ballads</title></bibl>       36
-                    			 <bibl  corresp="mep:00d37k"><title>Nine One-Act Plays</title></bibl>					          35
-                    			 <bibl  corresp="mep:00d38w"><title>Tales of D.H. Lawrence</title></bibl>				          85
-                    									       pd. <date when="1939-02-13">Feb 13</date> 178
-                    		
-                    		<bibl  corresp="mep:00d396"><title>Collected Poems of W.B. Yeats</title></bibl>		105
-                    		<bibl  corresp="mep:00560j"><title>Lady Chatterley's Lover</title></bibl>				 75.
-                    		<bibl corresp="mep:00d40p"><title>Nonsense</title></bibl>							 28.
-                    		<bibl  corresp="mep:00d410"><title>Book of Nonsense</title></bibl>					 28.
-                    		<bibl corresp="mep:007d7v"><title>More Nonsense</title></bibl>						 28.
-                    						pd by check <date  when="1939-02-13">2/13</date>	259.
-                    		
-                    		<bibl  corresp="mep:00d429"><title>Tale of a tub</title></bibl> 	  E				 	 20
-                    		<bibl  corresp="mep:00d43m"><title>Mabinogeon</title></bibl>		  E					 20
-                    		<bibl  corresp="mep:008c3k"><title>Gullivers travels</title></bibl>				     45
-                    		<bibl  corresp="mep:00d44x"><title>Oxford 18th cent. Poetry</title></bibl>			 85
-                    		<bibl  corresp="mep:00d457"><title>Picasso</title></bibl>						   	     75.
-                    		<bibl  corresp="mep:00128z"><author>Yeats</author><title>Autobiography</title></bibl>	200.
-                    											   445. pd.
-                    											   		<date  when="1939-02-27">Feb 27</date>
-                    					</note>						   		
-                </div>
-                <div type="verso">
-                    <pb facs="#s8"/>
-                    <head>
-                    <date when="1938">1938</date>
-                    			<persName ref="#whit.ta">Whitman</persName>
-                        
-                    			<address><persName ref="#whit.ta">Miss Tania</persName>
-                    			<street>10 Ave Alphonse XIII</street>	<settlement>Paris</settlement> <district>XVI</district></address>
-                    </head>
-                 <note>
-                    <date when="1938-11-26">Nov 26</date>
-                        <bibl corresp="mep:00209z"><author>Beddoes</author> <title>Poems</title></bibl>	
-                        275.
-                    <date  when="1938-11-26"> "	</date>		
-                        <bibl  corresp="mep:004k8t"><title>Last Poems</title></bibl>				
-                        20.
-                    <date  when="1938-11-26"> "	</date>		
-                        <bibl  corresp="mep:004k7h"><title>Shropshire Lad</title></bibl>		
-                        20.
-                     			                            <bibl corresp="mep:00d46j"><title>Record</title></bibl>							    450.
-                     						                             paid <date  when="1938-12-13">Decembre 13</date>	765.
-                     							                                by cheque
-                    
-                    <date  when="1938-12-28">Dec 28</date>	<bibl corresp="mep:00d47v"><title>Its Perfectly True</title></bibl>				     75.
-                    			                            <bibl corresp="mep:000b3c"><title>Exiles</title></bibl>							     35.
-                    			                            <bibl corresp="mep:00d485"><title>Golden Book of Coleridge</title></bibl> - E	     20.
-                    			                            <bibl  corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl>			     35.
-                    							                                                             pd. by cheque	165.
-                    							
-                    			                            <bibl  corresp="mep:00164t"><title>After Strange Gods</title></bibl>				     35.
-                    			                            <bibl  corresp="mep:00d49g"><title>Poems + Tales of Oscar Wilde</title></bibl> A-extra 30
-                    			                            <bibl  corresp="mep:00d50z"><title>Irish Fairy &amp; Folk Tales</title></bibl> ML		 45.
-                    											                                                            110.
-                    			                            <bibl  corresp="mep:001p1r"><title>Dubliners</title></bibl>						     45.
-                    											                                                            155
-                    			                            <bibl  corresp="mep:009071"><title>Ossian</title></bibl>							     75
-                    			                            <bibl  corresp="mep:00d35z"><title>Look Stranger</title></bibl>
-                    			                            <bibl  corresp="mep:001d4g"><title>Eliot's Collected Poems</title></bibl>			     75
-                    			                            <bibl  corresp="mep:00208n"><title>Murder in the Cathedral</title></bibl>			     50
-                    			                            <bibl corresp="mep:00d518"><title>Hamlet. P</title></bibl>						      7.
-                    			                            <bibl  corresp="mep:00d52k"><title>Wheels + Butterflies</title></bibl>			     60.
-                    					                           pd. by cheque <date  when="1939-01-13">Jan 13th</date>	422.
-                    					
-                			</note>
-                </div>
-            </div>
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+	<title>An Encoded Transcription of a Borrower's Card: <persName ref="#whit.ta">Miss Tania Whitman</persName></title>
+	<respStmt ana="#carlca">
+	  <persName>Adair, Carl</persName>
+	  <resp>transcriber</resp>
+	</respStmt>
+	<respStmt ana="#elspeth">
+	  <persName>Green, Elspeth</persName>
+	  <resp>encoder</resp>
+	</respStmt>
+      </titleStmt>
+      <publicationStmt>
+	<publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+	<msDesc>
+	  <msIdentifier>
+	    <settlement>Princeton</settlement>
+	    <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+	    <collection>Sylvia Beach Papers</collection>
+	    <idno>C0108</idno>
+	  </msIdentifier>
+	</msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+	<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+	<person role="cardholder" ana="#whit.ta"><persName>Miss Tania Whitman</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#elspeth" when="2016-01-06">
+	<p> First level encoding </p>
+	<ab>
+	  s1: Corrected "SVI to "XVI"
+	  s4: All dates have no year
+	  s5: Corrected "how" to "now"
+	</ab>
+	<ab>
+	  <!-- Enter transcription notes and queries here -->
+	</ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/vw/whitman/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+    <surface xml:id="s3">
+      <graphic url="00000003.jp2"/>
+    </surface>
+    <surface xml:id="s4">
+      <graphic url="00000004.jp2"/>
+    </surface>
+    <surface xml:id="s5">
+      <graphic url="00000005.jp2"/>
+    </surface>
+    <surface xml:id="s6">
+      <graphic url="00000006.jp2"/>
+    </surface>
+    <surface xml:id="s7">
+      <graphic url="00000007.jp2"/>
+    </surface>
+    <surface xml:id="s8">
+      <graphic url="00000008.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+	<div type="recto">
+	  <pb facs="#s1"/>
+	  <head>
+	    <date when="1938">1938</date>
+	    <address><persName ref="#whit.ta">Whitman
+	    Miss Tania</persName>
+	    <street>10 Avenue Alphonse XIII</street>
+	    <settlement>Paris</settlement> <district>XVI</district>
+	    <addrLine><num type="telephone">Jasmin 45.55</num></addrLine></address>
+	  </head>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1938-12-22">Dec 22</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00d260"><title>Cuculain</title> <biblScope unit="volume" from="1" to="3">3 vols</biblScope></bibl>
+	    <date ana="#returned" when="1938-12-30">Dec 30</date>
+	  </ab>
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1939-01-24">Jan 24</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00d279"><title>How to Write</title></bibl>
+	    <date ana="#returned" when="1939-01-26">Jan 26</date>
+	  </ab>
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1939-01-24"></date>
+	    <bibl ana="#borrowedItem" corresp="mep:00d28m"><title>Lucy Church Amiably</title></bibl>
+	    <date ana="#returned" when="1939-01-26">Jan 26</date>
+	  </ab>
+	  <note>
+	    <date when="1939-01-30">Jan 30</date> <persName ref="#whit.ta">T.W.</persName> gave <persName ref="#beac.sy">SB</persName> 1000v for Spanish
+	    <persName>Dr Stuhl</persName>
+	    5 o'clock Tues
+	  </note>
+	</div>
+	<div type="verso">
+	  <pb facs="#s2"/>
+
+	  <!-- Verso Blank -->
+	</div>
+	<div type="recto">
+	  <pb facs="#s3"/>
+	  <head>
+	    <persName ref="#whit.ta">Whitman
+	    Miss Tania</persName>
+	  </head>
+
+	  <note> credit 70 frs
+
+	  (returned <bibl corresp="mep:00d29x"><title>Mime</title></bibl> ord.ed
+	  to be exchanged for signed copy)
+	  </note>
+	</div>
+	<div type="verso">
+	  <pb facs="#s4"/>
+	  <head>
+	    <date>Oct 13</date> <address><persName>Mrs Lucas</persName>
+	    <street>8 bis rue Campagne Première</street></address>
+	  </head>
+
+	  <note>
+	    1 mo. 1 vol. 8
+	    Dep 7
+	  </note>
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1900-10-13">Oct 13</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00d30d"><title>Greenapple Harvest</title></bibl>
+	    <date ana="#returned" when="1900-10-31">Oct 31</date>
+	  </ab>
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1900-10-31">Oct 31</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00d31q"><title>Coquette</title></bibl>
+	    <date ana="#returned" when="1900-11-17">Nov 17</date>
+	  </ab>
+	</div>
+	<div type="recto">
+	  <pb facs="#s5"/>
+	  <head>
+	    <date when="1938">1938</date>
+	    <address><persName ref="#whit.ta">Miss Tania Whitman</persName>
+	    <street>10 Avenue Alphonse</street> <district>XIIIe</district>
+	    <settlement>Paris</settlement> <district>XVIe</district>
+	    <addrLine><num type="telephone">Jasmin 45-55</num></addrLine></address>
+
+	    <address><settlement>Burlingame</settlement> <region>California</region></address>
+	    or 70 Guaranty Trust Paris)
+
+	    (call before 10 a.m. or after 7 p.m.)
+
+	    <address><street>17 rue Berton</street> <district>XVIe</district></address>
+
+	    <date when="1939-05">May 1939</date> <address><name>Hotel de la Tamise</name>
+	    <street>4 rue d'Alger</street> <settlement>Paris</settlement> <district>1er</district> <addrLine>Opéra</addrLine>
+	    <addrLine><num type="telephone">56-29</num></addrLine></address>
+	  </head>
+	  <note>
+	    <date when="1939-05-07">May 7</date>
+	    <bibl corresp="mep:00d321"><title>Finnegan's Wake</title> <edition>ltd ed.</edition></bibl>
+	    No 1050,
+	    paid
+	  <date when="1939-05-07">May 7</date></note>
+	  <note>
+	    <date when="1939-05-07">May 7 1939</date>
+	    cheque Frs 1500
+	    1050
+	    credit 450
+	  </note>
+	  <note>
+	    <date when="1939-05-13">May 13</date>
+	    <bibl corresp="mep:00d321"><title>Finnegans Wake</title> <edition>ordinary edn.</edition></bibl>
+	    <note> 250,00</note>
+	    <note>
+	      <date when="1939-05-13">May 13</date>
+
+	      on a/c 200
+	      credit 650
+	      250
+	      " 400
+
+	      Zodiac: <bibl corresp="mep:00242w"><title>Shakespeare</title></bibl>,
+	      <bibl corresp="mep:002g76"><title>Keats</title></bibl>,
+	      <bibl corresp="mep:00bf29"><title>Donne</title></bibl>,
+	      <bibl corresp="mep:00d33b"><title>Lear</title></bibl>,
+	      <bibl corresp="mep:000v26"><title>Blake</title></bibl>. = 12x5 = 60v
+	      says <persName ref="#whit.ta">she</persName> paid 200v more for <bibl corresp="mep:00d34n"><title>F.W.</title></bibl>
+	      so as
+	      I gather account now stands
+	      <date when="1939-05-19">May 19</date> 46 450 400 60
+	      200 60
+	      650 credit 340
+	      - 250
+	      400
+	      - 60
+	      340
+	    </note>
+	  </note>
+	</div>
+	<div type="verso">
+	  <pb facs="#s6"/>
+
+	  <!-- Verso Blank -->
+	</div>
+	<div type="recto">
+	  <pb facs="#s7"/>
+	  <head>
+	    <date when="1939">1939</date> <persName ref="#whit.ta">Miss Tania Whitman</persName>
+	  </head>
+	  <note>
+	    <date when="1939-01-14">Jan 14</date> <bibl corresp="mep:000v26"><title>Blake</title></bibl>, <bibl corresp="mep:00d33b"><title>Lear</title></bibl>, <bibl corresp="mep:00242w"><title>Shakespeare</title></bibl>
+	    3 Zodiac books, at 12. <date when="1939-01-14">Jan 14</date> 36
+	    paid cash
+
+
+	    <bibl corresp="mep:00d35z"><title>Look Stranger</title></bibl> 55.
+	    pd. cash <date when="1939-01-24">Jan 24</date>
+
+	    <bibl corresp="mep:003m7j"><title>Wuthering Heights</title></bibl> 22
+	    3 Zodiacs: <bibl corresp="mep:008z8t"><title>Herrick</title></bibl>,
+	    <bibl corresp="mep:00d368"><author>Marsh</author> <title>Book of Ballads</title></bibl> 36
+	    <bibl corresp="mep:00d37k"><title>Nine One-Act Plays</title></bibl> 35
+	    <bibl corresp="mep:00d38w"><title>Tales of D.H. Lawrence</title></bibl> 85
+	    pd. <date when="1939-02-13">Feb 13</date> 178
+
+	    <bibl corresp="mep:00d396"><title>Collected Poems of W.B. Yeats</title></bibl> 105
+	    <bibl corresp="mep:00560j"><title>Lady Chatterley's Lover</title></bibl> 75.
+	    <bibl corresp="mep:00d40p"><title>Nonsense</title></bibl> 28.
+	    <bibl corresp="mep:00d410"><title>Book of Nonsense</title></bibl> 28.
+	    <bibl corresp="mep:007d7v"><title>More Nonsense</title></bibl> 28.
+	    pd by check <date when="1939-02-13">2/13</date> 259.
+
+	    <bibl corresp="mep:00d429"><title>Tale of a tub</title></bibl> E 20
+	    <bibl corresp="mep:00d43m"><title>Mabinogeon</title></bibl> E 20
+	    <bibl corresp="mep:008c3k"><title>Gullivers travels</title></bibl> 45
+	    <bibl corresp="mep:00d44x"><title>Oxford 18th cent. Poetry</title></bibl> 85
+	    <bibl corresp="mep:00d457"><title>Picasso</title></bibl> 75.
+	    <bibl corresp="mep:00128z"><author>Yeats</author><title>Autobiography</title></bibl> 200.
+	    445. pd.
+	    <date when="1939-02-27">Feb 27</date>
+	  </note>
+	</div>
+	<div type="verso">
+	  <pb facs="#s8"/>
+	  <head>
+	    <date when="1938">1938</date>
+	    <persName ref="#whit.ta">Whitman</persName>
+
+	    <address><persName ref="#whit.ta">Miss Tania</persName>
+	    <street>10 Ave Alphonse XIII</street> <settlement>Paris</settlement> <district>XVI</district></address>
+	  </head>
+	  <note>
+	    <date when="1938-11-26">Nov 26</date>
+	    <bibl corresp="mep:00209z"><author>Beddoes</author> <title>Poems</title></bibl>
+	    275.
+	    <date when="1938-11-26"> " </date>
+	    <bibl corresp="mep:004k8t"><title>Last Poems</title></bibl>
+	    20.
+	    <date when="1938-11-26"> " </date>
+	    <bibl corresp="mep:004k7h"><title>Shropshire Lad</title></bibl>
+	    20.
+	    <bibl corresp="mep:00d46j"><title>Record</title></bibl> 450.
+	    paid <date when="1938-12-13">Decembre 13</date> 765.
+	    by cheque
+
+	    <date when="1938-12-28">Dec 28</date> <bibl corresp="mep:00d47v"><title>Its Perfectly True</title></bibl> 75.
+	    <bibl corresp="mep:000b3c"><title>Exiles</title></bibl> 35.
+	    <bibl corresp="mep:00d485"><title>Golden Book of Coleridge</title></bibl> - E 20.
+	    <bibl corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl> 35.
+	    pd. by cheque 165.
+
+	    <bibl corresp="mep:00164t"><title>After Strange Gods</title></bibl> 35.
+	    <bibl corresp="mep:00d49g"><title>Poems + Tales of Oscar Wilde</title></bibl> A-extra 30
+	    <bibl corresp="mep:00d50z"><title>Irish Fairy &amp; Folk Tales</title></bibl> ML 45.
+	    110.
+	    <bibl corresp="mep:001p1r"><title>Dubliners</title></bibl> 45.
+	    155
+	    <bibl corresp="mep:009071"><title>Ossian</title></bibl> 75
+	    <bibl corresp="mep:00d35z"><title>Look Stranger</title></bibl>
+	    <bibl corresp="mep:001d4g"><title>Eliot's Collected Poems</title></bibl> 75
+	    <bibl corresp="mep:00208n"><title>Murder in the Cathedral</title></bibl> 50
+	    <bibl corresp="mep:00d518"><title>Hamlet. P</title></bibl> 7.
+	    <bibl corresp="mep:00d52k"><title>Wheels + Butterflies</title></bibl> 60.
+	    pd. by cheque <date when="1939-01-13">Jan 13th</date> 422.
+
+	  </note>
+	</div>
+      </div>
+    </body>
+  </text>
 </TEI>
