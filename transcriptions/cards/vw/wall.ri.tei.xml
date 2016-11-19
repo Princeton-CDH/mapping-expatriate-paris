@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wall.ri">Mr. Richard Wallace</persName></title>
+        <respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+	<person role="cardholder" ana="#wall.ri"><persName>Mr. Richard Wallace</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#elspeth" when="2016-01-04">
+        <p> First level encoding </p>
+        <ab>
+          s3 dates have no year
+          Unclear whether the people listed next to magazines are editors, authors, etc.
+          s5 dates have no year
+        </ab>
+        <ab>
+          <!-- Enter transcription notes and queries here -->
+        </ab>
+      </change>
+      <change who="#cwulfman" when="2016-11-01">
+	<p>Cards of Mr. and Mrs. Wallace are mingled in the digital archive. Richard
+	Wallace's card is the second (images 3 and 4).
+	</p>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/vw/wallace/">
+    <surface xml:id="s3">
+      <graphic url="00000003.jp2"/>
+    </surface>
+    <surface xml:id="s4">
+      <graphic url="00000004.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s3"/>
+          <head>
+            <address><persName ref="#wall.ri">Mr Richard Wallace</persName>
+            <street>9 bis rue d'Aguesseau</street></address>
+          </head>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23">Sept 23</date>
+            <bibl ana="#borrowedItem" corresp="mep:00cd6h">
+              <title>Evening Sun</title>,
+            <author>Wilson</author></bibl>
+          </ab>
+
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cd7t">
+              <title>Dublin Rev</title>
+            </bibl>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cd84">
+              <title>Freeman</title>
+              <author>Mary Colum</author>
+            </bibl>
+            <date ana="#returned" when="1923-10-13">Oct 13</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cd9f">
+              <title>Witness</title>
+              <author>Maillard</author>
+            </bibl>
+            <date ana="#returned" when="1923-10-13"></date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cf0x">
+              <title>Republic</title>
+              <author>Wilson</author>
+            </bibl>
+            <date ana="#returned" when="1923-10-13"></date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cf17">
+              <title>Express</title>
+              <author>Douglass</author>
+            </bibl>
+            <date ana="#returned" when="1923-10-13"></date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-09-23"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cf2j">
+              <title>Broom</title>
+              <author>Josephson</author>
+            </bibl>
+            <date ana="#returned" when="1923-10-13"></date>
+          </ab>
+        </div>
+        <div type="verso">
+          <pb facs="#s4"/>
+          <!-- Verso Blank -->
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
