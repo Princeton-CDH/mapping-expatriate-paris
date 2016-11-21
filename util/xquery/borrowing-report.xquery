@@ -14,13 +14,13 @@ return
     <record>
         <name>{ $person[1]/tei:persName/text() }</name>
         <id>{ xs:string($person[1]/@ana) }</id>
-        <borrowed-items>{ count($borrowed-items) }</borrowed-items>
-        <borrowing-events>{ count($borrowing-events) }</borrowing-events>
+        <uncoded>{ count($borrowed-items) - count($borrowing-events) }</uncoded>
+        <coded>{ count($borrowing-events) }</coded>
     </record>
 
 return
-(string-join(('name', 'id', 'borrowed-items', 'borrowing-events'), ','),
+(string-join(('name', 'id', 'coded', 'uncoded'), ','),
 for $r in $records
 return 
-string-join(($r/name, $r/id, $r/borrowed-items, $r/borrowing-events), ',')
+string-join(($r/name, $r/id, $r/coded, $r/uncoded), ',')
 )
