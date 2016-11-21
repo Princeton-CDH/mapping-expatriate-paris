@@ -1,171 +1,524 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#viel.ma">Mrs. H.K. Vielé</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#viel.ma"><persName>Mrs. H.K. Vielé</persName></person>
-            </particDesc>
-        </profileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	</profileDesc>
-        <revisionDesc>
-            <change who="#elspeth" when="2015-12-10">
-            <p> First level encoding </p>
-            <ab>
-            s1:
-                Corrected "D. 3" to "D. 31"
-            s2:
-                Cleaned up dates at top of card
-                Corrected "1923 May 23" to "1924 May 23," but the date looks more like 1921.  I believe
-                    that the cross of the "4" is missing based on context
-            </ab>
-                <ab>
-                    June 27: Count <unclear/> (Benya? Benga?)
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/vw/viele/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-                <div type="recto">
-                    <pb facs="#s1"/>
-                    <head>
-                    <date when="1923-12-05">1923	
-                    Dec 5</date>	 
-                             <persName ref="#viel.ma">VEILE</persName>
-                             <address><persName ref="#viel.ma">Mrs H.K. Vielé</persName>
-                    		 <name>Cayres Hotel</name>
-                    		 <street>4 Bd Raspail</street></address>
-                    </head>		 
-                    		 
-                    <ab>		 
-                    		 1 mo.		1 vol			12
-                    		 				Dep			20
-                    		 				not refunded
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1923-12-05">Dec 5</date>	<bibl ana="#borrowedItem" corresp="mep:00bx4s"><title>The Grand Tour</title></bibl>					B.B.
-                    <date ana="#checkedOut" when="1923-12-14">Dec 14</date>	<bibl ana="#borrowedItem" corresp="mep:00b640"><title>Manny Marriages</title></bibl> 0.15			<date ana="#returned" when="1923-12-19">Dec 19</date>
-                    <date ana="#checkedOut" when="1923-12-14"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00b63p"><title>Bewilderment</title></bibl>	"  " extra
-                    <date ana="#checkedOut" when="1923-12-14"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00bx53"><title>1001 Afternoons in Chicago</title></bibl> extra
-                    <date ana="#checkedOut" when="1923-12-14"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00bx6d"><title>The House of the Ennemy</title></bibl> 0.15	<date ana="#returned" when="1923-12-27">Dec 27</date>
-                    <date ana="#checkedOut" when="1923-12-14"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00bx7q"><title>A Triangle</title></bibl> 0.15 + extra			<date ana="#checkedOut" when="1923-12-31">D. 31</date>
-                     		                                <bibl ana="#borrowedItem" corresp="mep:00bx81"><title>The Mercury</title></bibl> 0.25				<date ana="#checkedOut" when="1923-12-22">Dec 22</date>
-                     		                                <bibl ana="#borrowedItem" corresp="mep:00bx9b"><title>English	Review</title></bibl>	0.25				
-                    <date ana="#checkedOut" when="1923-12-27">Dec 27</date>	<bibl ana="#borrowedItem" corresp="mep:009q9f"><title>Flower Beneath the Foot</title></bibl>			<date ana="#returned" when="1923-12-31">D. 31</date>
-                    <date ana="#checkedOut" when="1923-12-31">D. 31</date>	<bibl ana="#borrowedItem" corresp="mep:00bz0t"><title>Happy Traveller</title></bibl>					<date ana="#checkedOut" when="1924-01-03">Jan 3</date>
-                    		                                <bibl ana="#borrowedItem" corresp="mep:00167r"><title>Night + Day</title></bibl>						<date ana="#returned" when="1924-01-03"> "	"</date>
-                    <date ana="#checkedOut" when="1924-01-03">Jan 3</date>	<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>						<date ana="#returned" when="1924-01-05">Jan 5th</date>
-                    <date ana="#checkedOut" when="1924-01-05">Jan 5</date>	<bibl ana="#borrowedItem" corresp="mep:007m4k"><title>Escapade</title></bibl>						<date ana="#returned" when="1924-01-07"> "	7</date>
-                    </ab>
-                    <ab>
-                        Ren to <date when="1924-02-05">Feb. 5th</date> 1m 1vol 12f
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1924-01-07"> "	7</date>	<bibl ana="#borrowedItem" corresp="mep:002v9v"><title>Revolving Lights</title></bibl>				<date ana="#checkedOut" when="1924-01-11">Jan 11</date>	
-                     		                                <bibl ana="#borrowedItem" corresp="mep:00bz14"><title>Adam &amp; Caroline</title></bibl> (Extra)					
-                    <date ana="#checkedOut" when="1924-01-11">Jan 11</date>	<bibl ana="#borrowedItem" corresp="mep:001k83"><title>Told by an Idiot</title></bibl>				<date ana="#returned" when="1924-01-19">Jan 19</date>
-                    <date ana="#checkedOut" when="1924-01-19">Jan 19</date>	<bibl ana="#borrowedItem" corresp="mep:00bz2f"><title>The Lady Bird</title></bibl> (0.15)			<date ana="#returned" when="1924-01-28">Jan 28</date>
-                    <date ana="#checkedOut" when="1924-01-28">Jan 28</date>	<bibl ana="#borrowedItem" corresp="mep:00b79t"><title>Riceyman Steps</title></bibl> (0.15)			<date ana="#returned" when="1924-02-01">Feb 1</date>	
-                    </ab>
-                    <ab>
-                        Ren. <date from="1924-02-05" to="1924-02-20">Feb 5 Feb 20 1924</date>
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1924-02-01">Feb 1</date>	<bibl ana="#borrowedItem" corresp="mep:00bz3r"><title>Annette &amp; Bennett</title></bibl>			<date ana="#returned" when="1924-02-05">Feb. 5</date>	
-                    <date ana="#checkedOut" when="1924-02-05">Feb. 5</date>	<bibl ana="#borrowedItem" corresp="mep:003f5j"><title>England my England</title></bibl> 0.15			<date ana="#returned" when="1924-02-09">Feb 9</date>	
-                    <date ana="#checkedOut" when="1924-02-09">Feb 9</date>	<bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>					<date ana="#returned" when="1924-02-16">Feb. 16	</date>
-                    <date ana="#checkedOut" when="1924-02-16">Feb 16</date>	<bibl ana="#borrowedItem" corresp="mep:00bz42"><title>End of the House of Allard</title></bibl>      <date ana="#returned" when="1924-02-20">Feb 20</date>
-                    </ab>
-                </div> 
-                <div type="verso">
-                    <pb facs="#s2"/>
-                    <ab>
-                    <date ana="#checkedOut" when="1924-03-11">March 11</date>	<bibl ana="#borrowedItem" corresp="mep:00bz5c"><title>Essays of a Biologist</title></bibl>           <date ana="#returned" when="1924-03-02">March 3</date>	
-                    </ab>
-                    <ab>
-                        <date when="1924-03-11">March 11</date> Ren to <date when="1924-04-11">April 11</date> 2 vols 16f
-                    </ab>
-                    <ab>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00bz6p"><title>The Eyes of Max Carradoer</title></bibl>       <date ana="#returned" when="1924-03-18">March 18</date>
-                    <date ana="#checkedOut" when="1924-03-13">March 13</date>	<bibl ana="#borrowedItem" corresp="mep:00480v"><title>Oscar Wilde</title> <biblScope unit="volume" from="1">vols I</biblScope></bibl> <date ana="#checkedOut" when="1924-03-18">March 18</date>		
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00bz70"><title>Tales of the Uneasy</title></bibl>				
-                    <date ana="#checkedOut" when="1924-03-18">March 18</date>	<bibl ana="#borrowedItem" corresp="mep:00480v"><title>Oscar Wilde</title> <biblScope unit="volume" from="2">vol II</biblScope></bibl> <date ana="#checkedOut" when="1924-03-24">March 24</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00bz89"><title>The Nuptial Flight</title></bibl>
-                    <date ana="#checkedOut" when="1924-03-24">March 24</date>	<bibl ana="#borrowedItem" corresp="mep:00bz9m"><title>Romance of the Paris Streets</title></bibl> (0.15)
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00c00b"><title>Open all Night</title></bibl>	(0.15)			<date ana="#returned" when="1924-03-25">March 25</date>
-                    <date ana="#checkedOut" when="1924-03-26">Mch 26</date>	<bibl ana="#borrowedItem" corresp="mep:00b79t"><title>Riceyman Steps</title></bibl> (0.15)			<date ana="#returned" when="1924-03-29">Mch 29</date>
-                    <date ana="#checkedOut" when="1924-03-29"> "	29</date>	<bibl ana="#borrowedItem" corresp="mep:00c01n"><title>The Yellow Ticket</title></bibl>				<date ana="#returned" when="1924-03-31">Mch 31</date>
-                    <date ana="#checkedOut" when="1924-03-29"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:00c02z"><title>Cane</title></bibl> 0.15						<date ana="#returned" when="1924-04-05">April 5</date>
-                    <date ana="#checkedOut" when="1924-04-05">April 5</date>	<bibl ana="#borrowedItem" corresp="mep:001v2f"><title>Free Air</title></bibl> (0.15)
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00c038"><title>The Bazaar</title></bibl> <bibl ana="#borrowedItem" corresp="mep:00b82x"><title>The Dream</title></bibl> (0.15)		<date ana="#checkedOut" when="1924-05-01">Mai 1</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00c04k"><title>The Swedish Woman</title></bibl> (0.15)
-                    </ab>
-                    <ab>
-                    <date when="1923-05-23">1924
-                    May 23</date>		S.R. to <date when="1924-06-23">June 23d</date>	=	25f
-                    			                                 Deposit					50
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1924-05-23"> "	23</date>	<bibl ana="#borrowedItem" corresp="mep:001t7q"><title>Three Lives</title></bibl>						<date ana="#returned" when="1924-05-28">May 28</date>
-                    <date ana="#checkedOut" when="1924-05-28"> 	28</date>	<bibl ana="#borrowedItem" corresp="mep:00c05w"><title>Roman Summer</title></bibl>.					<date ana="#returned" when="1924-05-30"> "	30</date>
-                    <date ana="#checkedOut" when="1924-05-30"> 	30</date>	<bibl ana="#borrowedItem" corresp="mep:00c066"><title>Neighbor's Wife</title></bibl>					<date ana="#returned" when="1924-06-04">June 4</date>
-                    <date ana="#checkedOut" when="1924-06-04"> "	4</date>	<bibl ana="#borrowedItem" corresp="mep:001n1g"><title>To the Lighthouse</title></bibl> 0.25			<date ana="#returned" when="1924-06-13">June 13</date>
-                    <date ana="#checkedOut" when="1924-06-13"> 	13</date>	<bibl ana="#borrowedItem" corresp="mep:001v70"><title>Elmer Gantry</title></bibl> 0.15				<date ana="#returned" when="1924-06-20"> _	 20</date>
-                    <date ana="#checkedOut" when="1924-06-20"> 	20.</date>	<bibl ana="#borrowedItem" corresp="mep:00c07h"><title>Pleasure lover</title></bibl> .				<date ana="#returned" when="1924-06-27"> "	 27</date>
-                    </ab> 	
-                    <ab>
-                    <date when="1924-06-27">June 27</date>	S. R. a fortnight to <date when="1924-07-08">July 8th</date> = 12.50
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1924-06-27"> "	27</date>	<bibl ana="#borrowedItem" corresp="mep:00c08t"><title>Count <unclear/></title></bibl>				<date ana="#returned" when="1924-06-29">"	 29</date>
-                    <date ana="#checkedOut" when="1924-06-29"> "	29</date>	<bibl ana="#borrowedItem" corresp="mep:00c094"><title>Polyglots</title></bibl>						<date ana="#returned" when="1924-07-05">July 5</date>
-                    <date ana="#checkedOut" when="1924-06-29"> "	29</date>	<bibl ana="#borrowedItem" corresp="mep:00c10m"><title>What not</title></bibl>.						<date ana="#returned" when="1924-07-05">"	 5</date>
-                    <date ana="#checkedOut" when="1924-07-05">July 5</date>	<bibl ana="#borrowedItem" corresp="mep:00c11x"><title>Jew Süss</title></bibl>						<date ana="#returned" when="1924-07-09"> "	 9</date>
-                    </ab>
-                </div>    
-            </div>
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+	<title>An Encoded Transcription of a Borrower's Card: <persName ref="#viel.ma">Mrs. H.K. Vielé</persName></title>
+	<respStmt ana="#carlca">
+	  <persName>Adair, Carl</persName>
+	  <resp>transcriber</resp>
+	</respStmt>
+	<respStmt ana="#elspeth">
+	  <persName>Green, Elspeth</persName>
+	  <resp>encoder</resp>
+	</respStmt>
+      </titleStmt>
+      <publicationStmt>
+	<publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+	<msDesc>
+	  <msIdentifier>
+	    <settlement>Princeton</settlement>
+	    <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+	    <collection>Sylvia Beach Papers</collection>
+	    <idno>C0108</idno>
+	  </msIdentifier>
+	</msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+	<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+	<person role="cardholder" ana="#viel.ma"><persName>Mrs. H.K. Vielé</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#elspeth" when="2015-12-10">
+	<p> First level encoding </p>
+	<ab>
+	  s1:
+	  Corrected "D. 3" to "D. 31"
+	  s2:
+	  Cleaned up dates at top of card
+	  Corrected "1923 May 23" to "1924 May 23," but the date looks more like 1921. I believe
+	  that the cross of the "4" is missing based on context
+	</ab>
+	<ab>
+	  June 27: Count <unclear/> (Benya? Benga?)
+	</ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/vw/viele/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+	<div type="recto">
+	  <pb facs="#s1"/>
+	  <head>
+	    <date when="1923-12-05">1923
+	    Dec 5</date>
+	    <persName ref="#viel.ma">VEILE</persName>
+	    <address><persName ref="#viel.ma">Mrs H.K. Vielé</persName>
+	    <name>Cayres Hotel</name>
+	    <street>4 Bd Raspail</street></address>
+	  </head>
+
+	  <ab>
+	    1 mo. 1 vol 12
+	    Dep 20
+	    not refunded
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-05">Dec 5</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bx4s">
+	    <title>The Grand Tour</title></bibl>
+	    <note> B.B.</note>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-14">Dec 14</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00b640">
+	    <title>Manny Marriages</title></bibl>
+	    <note> 0.15 </note>
+	    <date ana="#returned" when="1923-12-19">Dec 19</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-14"> " "</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00b63p">
+	    <title>Bewilderment</title></bibl>
+	    <note>" " extra</note>
+	    <date ana="#returned" when="1923-12-19"></date>
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-14"> " "</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bx53">
+	    <title>1001 Afternoons in Chicago</title></bibl>
+	    <note> extra</note>
+	    <date ana="#returned" when="1923-12-19"></date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-14"> " 20 </date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bx6d">
+	    <title>The House of the Ennemy</title></bibl>
+	    <note>0.15</note>
+	    <date ana="#returned" when="1923-12-27">Dec 27</date>
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-14"> " "</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bx7q">
+	    <title>A Triangle</title></bibl>
+	    <note>0.15 + extra</note>
+	    <date ana="#returned" when="1923-12-31">D. 31</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" notAfter="1923-12-22"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00bx81">
+	    <title>The Mercury</title></bibl>
+	    <note> 0.25</note>
+	    <date ana="#returned" when="1923-12-22">Dec 22</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" notAfter="1923-12-22"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00bx9b">
+	    <title>English Review</title></bibl>
+	    <note>0.25</note>
+	    <date ana="#returned" when="1923-12-22"></date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-27">Dec 27</date>
+	    <bibl ana="#borrowedItem" corresp="mep:009q9f">
+	    <title>Flower Beneath the Foot</title></bibl>
+	    <date ana="#returned" when="1923-12-31">D. 31</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-31">D. 31</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz0t">
+	    <title>Happy Traveller</title></bibl>
+	    <date ana="#returned" when="1924-01-03">Jan 3</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1923-12-31"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00167r">
+	    <title>Night + Day</title></bibl>
+	    <date ana="#returned" when="1924-01-03"> " "</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-03">Jan 3</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001p1r">
+	    <title>Dubliners</title></bibl>
+	    <date ana="#returned" when="1924-01-05">Jan 5th</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-05">Jan 5</date>
+	    <bibl ana="#borrowedItem" corresp="mep:007m4k">
+	    <title>Escapade</title></bibl>
+	    <date ana="#returned" when="1924-01-07"> " 7</date>
+	  </ab>
+
+
+	  <note>
+	    Ren to <date when="1924-02-05">Feb. 5th</date> 1m 1vol 12f
+	  </note>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-07"> " 7</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002v9v">
+	    <title>Revolving Lights</title></bibl>
+	    <date ana="#returned" when="1924-01-11">Jan 11</date>
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-07"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz14">
+	    <title>Adam &amp; Caroline</title></bibl>
+	    <note>(Extra) </note>
+	    <date ana="#returned" when="1924-01-11"></date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-11">Jan 11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001k83">
+	    <title>Told by an Idiot</title></bibl>
+	    <date ana="#returned" when="1924-01-19">Jan 19</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-19">Jan 19</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz2f">
+	    <title>The Lady Bird</title></bibl>
+	    <note>(0.15)</note>
+	    <date ana="#returned" when="1924-01-28">Jan 28</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-01-28">Jan 28</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00b79t">
+	    <title>Riceyman Steps</title></bibl>
+	    <note>(0.15)</note>
+	    <date ana="#returned" when="1924-02-01">Feb 1</date>
+	  </ab>
+
+
+
+	  <note>
+	    Ren. <date from="1924-02-05" to="1924-02-20">Feb 5 Feb 20 1924</date>
+	  </note>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-02-01">Feb 1</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz3r">
+	    <title>Annette &amp; Bennett</title></bibl>
+	    <date ana="#returned" when="1924-02-05">Feb. 5</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-02-05">Feb. 5</date>
+	    <bibl ana="#borrowedItem" corresp="mep:003f5j">
+	    <title>England my England</title></bibl>
+	    <note>0.15</note>
+	    <date ana="#returned" when="1924-02-09">Feb 9</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-02-09">Feb 9</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001p3c">
+	    <title>Women in Love</title></bibl>
+	    <date ana="#returned" when="1924-02-16">Feb. 16 </date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-02-16">Feb 16</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz42">
+	    <title>End of the House of Allard</title></bibl>
+	    <date ana="#returned" when="1924-02-20">Feb 20</date>
+	  </ab>
+
+
+	</div>
+	<div type="verso">
+	  <pb facs="#s2"/>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-11">March 11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz5c">
+	    <title>Essays of a Biologist</title></bibl>
+	    <date ana="#returned" when="1924-03-02">March 3</date>
+	  </ab>
+
+
+
+	  <note>
+	    <date when="1924-03-11" to="1924-04-11">March 11 Ren to April 11</date> 2 vols 16f
+	  </note>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-11"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz6p">
+	    <title>The Eyes of Max Carradoer</title></bibl>
+	    <date ana="#returned" when="1924-03-18">March 18</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-13">March 13</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00480v">
+	    <title>Oscar Wilde</title> <biblScope unit="volume" from="1">vols I</biblScope></bibl>
+	    <date ana="#returned" when="1924-03-18">March 18</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-13"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz70"><title>Tales of the Uneasy</title></bibl>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-18">March 18</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00480v">
+	    <title>Oscar Wilde</title> <biblScope unit="volume" from="2">vol II</biblScope></bibl>
+	    <date ana="#returned" when="1924-03-24">March 24</date>
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-18">March 18</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz89">
+	      <title>The Nuptial Flight</title>
+	    </bibl>
+	    <date ana="#returned" when="1924-03-24"></date>
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-24">March 24</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00bz9m">
+	    <title>Romance of the Paris Streets</title></bibl>
+	    <date ana="#returned" when="1924-03-25"/>
+	    <note>(0.15)</note>
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <bibl ana="#borrowedItem" corresp="mep:00c00b">
+	    <title>Open all Night</title></bibl>
+	    <note>(0.15)</note>
+	    <date ana="#returned" when="1924-03-25">March 25</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-26">Mch 26</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00b79t">
+	    <title>Riceyman Steps</title></bibl>
+	    <note>(0.15)</note>
+	    <date ana="#returned" when="1924-03-29">Mch 29</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-29"> " 29</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c01n">
+	    <title>The Yellow Ticket</title></bibl>
+	    <date ana="#returned" when="1924-03-31">Mch 31</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-03-29"> " "</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c02z">
+	    <title>Cane</title></bibl>
+	    <note>0.15</note>
+	    <date ana="#returned" when="1924-04-05">April 5</date>
+	  </ab>
+
+
+
+	  <note>
+	    <date when="1924-04-05">April 5</date>
+	    <del>
+	      <bibl corresp="mep:001v2f">
+	      <title>Free Air</title></bibl>
+	    </del>
+	  (0.15)
+	  </note>
+
+
+	  <note><bibl corresp="mep:00c038"><title><del>The Bazaar</del></title></bibl> </note>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-04-05"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00b82x">
+	    <title>The Dream</title></bibl>
+	    <note>(0.15)</note>
+	    <date ana="#returned" when="1924-05-01"/>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-05-01"/>
+	    <bibl ana="#borrowedItem" corresp="mep:00c04k">
+	    <title>The Swedish Woman</title></bibl>
+	    <note>(0.15)</note>
+	    <date ana="#returned" when="1924-05-01"/>
+	  </ab>
+
+	  <note>
+	    <date when="1923-05-23" to="1924-06-23">1924
+	    May 23 S.R. to June 23d </date> = 25f
+	    Deposit 50
+	  </note>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-05-23"> " 23</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001t7q">
+	    <title>Three Lives</title></bibl>
+	    <date ana="#returned" when="1924-05-28">May 28</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-05-28"> 28</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c05w">
+	      <title>Roman Summer</title></bibl>.
+	      <date ana="#returned" when="1924-05-30"> " 30</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-05-30"> 30</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c066">
+	    <title>Neighbor's Wife</title></bibl>
+	    <date ana="#returned" when="1924-06-04">June 4</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-06-04"> " 4</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001n1g">
+	    <title>To the Lighthouse</title></bibl>
+	    <note> 0.25</note>
+	    <date ana="#returned" when="1924-06-13">June 13</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-06-13"> 13</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001v70">
+	    <title>Elmer Gantry</title></bibl>
+	    <note>0.15</note>
+	    <date ana="#returned" when="1924-06-20"> _ 20</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-06-20"> 20.</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c07h">
+	      <title>Pleasure lover</title></bibl> .
+	      <date ana="#returned" when="1924-06-27"> " 27</date>
+	  </ab>
+
+
+	  <ab>
+	    <date when="1924-06-27" to="1924-07-08">June 27 S. R. a fortnight to July 8th</date> = 12.50
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-06-27"> " 27</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c08t">
+	    <title>Count <unclear/></title></bibl>
+	    <date ana="#returned" when="1924-06-29">" 29</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-06-29"> " 29</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c094">
+	    <title>Polyglots</title></bibl>
+	    <date ana="#returned" when="1924-07-05">July 5</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-06-29"> " 29</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c10m">
+	      <title>What not</title></bibl>.
+	      <date ana="#returned" when="1924-07-05">" 5</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1924-07-05">July 5</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00c11x">
+	    <title>Jew Süss</title></bibl>
+	    <date ana="#returned" when="1924-07-09"> " 9</date>
+	  </ab>
+
+	</div>
+      </div>
+    </body>
+  </text>
 </TEI>
