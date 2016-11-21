@@ -22,7 +22,7 @@
     
     <xsl:param name="borrowed-titles" select="document('../../borrowed-titles.xml')"></xsl:param>
     
-    <xsl:key name="regtitle" match="row" use="titleid" />
+    <xsl:key name="regtitle" match="/root/row" use="titleid" />
     
     <xsl:template match="/">
         <html>
@@ -62,7 +62,7 @@
                 
                 <td>
                     <xsl:if test="tei:date[@ana='#checkedOut']">
-                        <xsl:value-of select="tei:date[@ana='#checkedOut']/@when"/>
+                        <xsl:apply-templates select="tei:date[@ana='#checkedOut']" mode="machine" />
                     </xsl:if>
                 </td>
 
@@ -72,8 +72,6 @@
                         <xsl:value-of select="tei:bibl[@ana='#borrowedItem']/@corresp"/>
                     </xsl:if>
                 </td>
-                
-                
                 
                 <td>
                     <xsl:if test="tei:bibl[@ana='#borrowedItem']">
@@ -91,7 +89,7 @@
                 
                 <td>
                     <xsl:if test="tei:date[@ana='#returned']">
-                        <xsl:value-of select="tei:date[@ana='#returned']/@when"/>
+                        <xsl:apply-templates select="tei:date[@ana='#returned']" mode="machine"></xsl:apply-templates>
                     </xsl:if>
                 </td>
                 
@@ -101,11 +99,28 @@
         
     </xsl:template>
     
+    <xsl:template match="tei:date" mode="machine">
+        <xsl:choose>
+            <xsl:when test="@when">
+                <xsl:value-of select="@when"/>
+            </xsl:when>
+            <xsl:when test="@notBefore">
+                <xsl:value-of select="concat('not before ', @notBefore)"/>
+            </xsl:when>
+            <xsl:when test="@notAfter">
+                <xsl:value-of select="concat('not after ', @notAfter)"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template match="tei:bibl">
         <xsl:variable name="id">
             <xsl:value-of select="xs:string(current()/@corresp)"/>
         </xsl:variable>
-        <xsl:value-of select="$borrowed-titles//row[titleid = $id][1]/regularized_title"/>
+        <!--<xsl:value-of select="$borrowed-titles//row[titleid = $id][1]/regularized_title"/>-->
+        <xsl:for-each select="$borrowed-titles">
+        <xsl:value-of select="key('regtitle',$id)[1]/regularized_title"/>
+        </xsl:for-each>
     </xsl:template>
    
     
