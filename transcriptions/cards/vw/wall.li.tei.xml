@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#wall.li">Lillian Wallace</persName></title>
+        <respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+        <person role="cardholder" ana="#wall.li"><persName>Lillian Wallace</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#elspeth" when="2016-01-04">
+        <p> First level encoding </p>
+        <ab>
+          s3 dates have no year
+          Unclear whether the people listed next to magazines are editors, authors, etc.
+          s5 dates have no year
+        </ab>
+      </change>
+      <change who="#cwulfman" when="2016-11-01">
+        <p>Cards of Mr. and Mrs. Wallace mingled in digital archive.  Lillian Wallace's
+        cards are the first and the third; the third card, undated, is for 1920 (1920 logbook shows
+        she subscribed then).</p>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/vw/wallace/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+    <surface xml:id="s5">
+      <graphic url="00000005.jp2"/>
+    </surface>
+    <surface xml:id="s6">
+      <graphic url="00000006.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s1"/>
+          <head>
+            <date when="1923-03-03">1923
+            March 3</date>              <address><persName ref="#wall.li">Mrs Richard Wallace</persName>
+            <street>52, rue Vaneau</street></address>
+          </head>
+
+          <ab>
+            1 mo            2 vols                  12
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-03-03">March 3</date>
+            <bibl ana="#borrowedItem" corresp="mep:002f59">
+              <title>Main Street</title>
+            </bibl>
+            <note>not BB</note>
+            <date ana="#returned" when="1923-03-25">March 25</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-03-03"></date>
+            <bibl ana="#borrowedItem" corresp="mep:00cd56">
+              <title>Diary of a Drug Fiend</title>
+            </bibl>
+            <date ana="#returned" when="1923-03-25"></date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-03-15">March 15</date>
+            <bibl ana="#borrowedItem" corresp="mep:000s6w">
+              <title>Lady into Fox</title>
+            </bibl>
+            <date ana="#returned" when="1923-03-22">March 22</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-03-22">March 22</date>
+            <bibl ana="#borrowedItem" corresp="mep:000r12">
+              <title>Pointed Roofs</title>
+            </bibl>
+            <date ana="#returned" when="1923-03-29">March 29</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1923-03-22"></date>
+            <bibl ana="#borrowedItem" corresp="mep:001q58">
+              <title>Anne Severn &amp; The Fieldings</title>
+            </bibl>
+            <date ana="#returned" when="1923-03-29"></date>
+          </ab>
+
+
+        </div>
+        <div type="verso">
+          <pb facs="#s2"/>
+
+          <!-- Verso Blank -->
+        </div>
+        <!-- deleted Mr. Wallace's card from original transcription. -->
+        <div type="recto">
+          <pb facs="#s5"/>
+          <head>
+            <date when="1920-06-24">June 24</date>
+            <address><persName ref="#wall.li">Mrs Richard Wallace</persName>
+            <street>12 rue des Beaux Arts</street>
+            </address>
+          </head>
+
+          <ab>
+            subsc. 1 mo. 1 vol.                                     5
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1920-06-24">June 24</date>
+            <bibl ana="#borrowedItem" corresp="mep:00167r">
+              <title>Night and Day</title>
+            </bibl>
+            <date ana="#returned" when="1920-07">July</date>
+          </ab>
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1920-07">July</date>
+            <bibl ana="#borrowedItem" corresp="mep:00cf3v">
+              <title>The Filigree Ball</title>
+            </bibl>
+            <date ana="#returned" when="1920-07">July</date>
+          </ab>
+
+
+
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1920-07">July</date>
+            <bibl ana="#borrowedItem" corresp="mep:00cf45">
+              <title>The Hundreth Chance</title>
+            </bibl>
+            <date ana="#returned" when="1920-07-26">July 26</date>
+          </ab>
+
+
+        </div>
+        <div type="verso">
+          <pb facs="#s6"/>
+
+          <!-- Verso Blank -->
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
