@@ -1,95 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of Two Borrowers' Cards: <persName ref="#rich">Richards-Orpen</persName> and <persName ref="cayt.ho">Horace Cayton</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#i-davis">
-                    <persName>Davis, Ian</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	    <particDesc>
-	        <person role="cardholder" ana="#rich"><persName>Richards-Orpen</persName></person>
-	    </particDesc>
-	    <particDesc>
-	        <person role="cardholder" ana="#cayt.ho"><persName>Horace Cayton</persName></person>
-	    </particDesc>
-	</profileDesc>
-        <revisionDesc>
-            <change who="#yournetid">
-                <ab>
-                    <!-- Enter transcription notes and queries here -->
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/r/richards_orpen/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-               <div type="recto"> <pb facs="#s1"/>
-              <head>  
-                <date when="1935">1935</date>			<persName ref="#rich">RICHARDS-ORPEN
-                					Miss</persName>
-                				93 Bd. St. Michel</head><ab>
-                				
-                1 v - 1 m.									dep. 30f
-                												 15v</ab><ab>
-                <date ana="#checkedOut" when="1935-10-21">21 Oct.</date> 	<bibl ana="#borrowedItem" corresp="mep:003f5j"><title>England My England</title></bibl> ref. 23		<date ana="#returned" when="1935-10-23">23</date>
-                <date ana="#checkedOut" when="1935-10-23">23 -</date> 		<bibl ana="#borrowedItem" corresp="mep:00505f"><title>Sons + Lovers</title></bibl>					<date ana="#returned" when="1935-10-25">25</date>
-                <date ana="#checkedOut" when="1935-10-25">25 -</date>		<bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs. Dalloway</title></bibl>					<date ana="#returned" when="1935-11-05">Nov 5</date>
-                <date ana="#checkedOut" when="1935-11-05">Nov 5</date>		<bibl ana="#borrowedItem" corresp="mep:000j9w"><title>Room of Ones Own</title></bibl>				<date ana="#returned" when="1935-11-23">23 Nov</date></ab>
-            </div>    
-           <div type="verso">     <pb facs="#s2"/>
-                <head>
-                <date when="1935">1935</date>				<persName ref="#cayt.ho">CAYTON
-                					Horace</persName>
-                					
-                					<address><street>rue Laplau</street>
-                					<name>Hôtel Central</name></address></head>
-             <ab>   					
-                1v - by day									dep. 50v</ab><ab>
-                
-                <date ana="#checkedOut" when="1935-09-03">3 Sept.</date> 	<bibl ana="#borrowedItem" corresp="mep:00vs1c"><title>Lit. Life in Paris</title></bibl> pd 21	2		  <date ana="#returned" when="1935-09-05">5 - </date>
-                <date ana="#checkedOut" when="1935-09-05">5 -</date> 		<bibl ana="#borrowedItem" corresp="mep:00142n"><title>Axel's Castle</title></bibl> - 1v a day 	9	  	<date ana="#returned" when="1935-09-14">Sept 14</date>
-                
-                <date ana="#checkedOut" when="1935-09-11">Sept 11</date>		<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I lay Dying</title></bibl>				3		<date ana="#checkedOut" when="1935-09-14">Sept 14</date>
-                			<bibl ana="#borrowedItem" corresp="mep:00q354"><title>Innocents Abroad</title></bibl>			3		<date ana="#returned" when="1935-09-14">Sept 14</date>
-                									   17
-                								50
-                								17</ab>
-                
-          </div>  </div>
-        </body>
-    </text>
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of Borrower's card:
+      <persName ref="#rich">Richards-Orpen</persName>
+      </title>
+      <respStmt ana="#carlca">
+        <persName>Adair, Carl</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#i-davis">
+        <persName>Davis, Ian</persName>
+        <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
+
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#rich"><persName>Richards-Orpen</persName></person>
+    </particDesc>
+  </profileDesc>
+  <revisionDesc>
+    <change who="#yournetid">
+      <ab>
+        <!-- Enter transcription notes and queries here -->
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298/r/richards_orpen/">
+  <surface xml:id="s1">
+    <graphic url="00000001.jp2"/>
+  </surface>
+  <surface xml:id="s2">
+    <graphic url="00000002.jp2"/>
+  </surface>
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s1"/>
+        <head>
+          <date when="1935">1935</date>
+	  <persName ref="#rich">RICHARDS-ORPEN
+          Miss</persName>
+	  <address>
+	    <addrLine>93 Bd. St. Michel</addrLine>
+	  </address>
+	</head>
+
+        <note>1 v - 1 m.                                                                        dep. 30f
+        15v</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-10-21">21 Oct.</date>
+          <bibl ana="#borrowedItem" corresp="mep:003f5j"><title>England My England</title></bibl> <note>ref. 23           </note>
+          <date ana="#returned" when="1935-10-23">23</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-10-23">23 -</date>
+          <bibl ana="#borrowedItem" corresp="mep:00505f"><title>Sons + Lovers</title></bibl>
+          <date ana="#returned" when="1935-10-25">25</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-10-25">25 -</date>
+          <bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs. Dalloway</title></bibl>
+          <date ana="#returned" when="1935-11-05">Nov 5</date>
+        </ab>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1935-11-05">Nov 5</date>
+          <bibl ana="#borrowedItem" corresp="mep:000j9w"><title>Room of Ones Own</title></bibl>
+          <date ana="#returned" when="1935-11-23">23 Nov</date>
+        </ab>
+
+      </div>
+
+      <div type="verso">
+        <pb facs="#s2"/>
+	<!-- verso is borrowing card for Horace Cayton; encoded in another file -->
+      </div>
+    </div>
+  </body>
+</text>
 </TEI>
