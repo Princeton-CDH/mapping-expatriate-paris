@@ -1,84 +1,98 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#torr.ri">Mr. Ridgely Torrence</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	  <particDesc>
-	        <person role="cardholder" ana="#torr.ri"><persName>Mr. Ridgely Torrence</persName></person>
-	  </particDesc>
-	</profileDesc>
-        <revisionDesc>
-            <change who="#elspeth" when="2016-01-24">
-                <p> First level encoding </p>
-                <ab>
-                    <!-- Enter transcription notes and queries here -->
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/t/torrence/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-                <div type="recto">
-                    <pb facs="#s1"/>
-                    <head>
-                    				<persName ref="#torr.ri">TORRENCE</persName>
-                    <date when="1925-07-09">July 9					
-                    1925</date>			<address><persName ref="#torr.ri">Mr Ridgely Torrence_</persName>	
-                                            <street>14 rue des Ursulines</street></address>
-                    </head>
-                    <ab>
-                    					1 vol_  1 m					12 frs
-                    					
-                    						deposit_ 20
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1925-07-09">July 9</date>	<bibl ana="#borrowedItem" corresp="mep:001p1r"><title>Dubliners</title></bibl>					<date ana="#returned" when="1925-07-21">July 21</date>
-                    <date ana="#checkedOut" when="1925-07-23">July 23</date>	<bibl ana="#borrowedItem" corresp="mep:00094d"><title>Crock of Gold</title></bibl>				<date ana="#returned" when="1925-08-04">Aug. 4</date>
-                    </ab>
-                </div> 
-                <div type="verso">
-                    <pb facs="#s2"/>
-                    
-                    <!-- Verso Blank -->
-                </div>
-            </div>
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card: <persName ref="#torr.ri">Mr. Ridgely Torrence</persName></title>
+        <respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+        <person role="cardholder" ana="#torr.ri"><persName>Mr. Ridgely Torrence</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#elspeth" when="2016-01-24">
+        <p> First level encoding </p>
+        <ab>
+          <!-- Enter transcription notes and queries here -->
+        </ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/t/torrence/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s1"/>
+          <head>
+            <persName ref="#torr.ri">TORRENCE</persName>
+            <date when="1925-07-09">July 9
+            1925</date> <address><persName ref="#torr.ri">Mr Ridgely Torrence_</persName>
+            <street>14 rue des Ursulines</street></address>
+          </head>
+          <note>
+            1 vol_ 1 m 12 frs
+
+            deposit_ 20
+          </note>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1925-07-09">July 9</date>
+            <bibl ana="#borrowedItem" corresp="mep:001p1r">
+            <title>Dubliners</title></bibl>
+            <date ana="#returned" when="1925-07-21">July 21</date>
+          </ab>
+
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1925-07-23">July 23</date>
+            <bibl ana="#borrowedItem" corresp="mep:00094d">
+              <title>Crock of Gold</title>
+              </bibl> <date ana="#returned" when="1925-08-04">Aug. 4</date>
+          </ab>
+
+        </div>
+        <div type="verso">
+          <pb facs="#s2"/>
+
+          <!-- Verso Blank -->
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>
