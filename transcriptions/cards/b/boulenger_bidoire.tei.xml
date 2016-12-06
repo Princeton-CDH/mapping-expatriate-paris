@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -121,7 +124,7 @@
                 					<address><street>26 rue Lisbonne</street><district>8e</district></address>
                 </head>
                 <ab>
-                to <note><date to="1933-02-10">10 Feb 1933</date><!-- crossed out--></note>
+                to <del><date when="1933-02-10">10 Feb 1933</date></del>
                 	<date when="1932-07-28">28 July</date>
                 				3 mos	1 v			65
                 					dep				50
@@ -129,26 +132,42 @@
                 <ab>
                 <persName ref="#boul">Boulenger</persName> owes
                 
-                50¢ a day, <bibl ana="#borrowedItem" corresp="mep:002s0h"><title>Gold Falcon</title></bibl>				6.50
+                50¢ a day, <bibl corresp="mep:002s0h"><title>Gold Falcon</title></bibl>				6.50
                  2f a day	 	" 	" 6 extra days 12.-
                  1 post card						 .40
                  								   18.90
                  								   22
                  								   40.80
                  						to deduct from deposit
-                <date ana="#checkedOut" when="1932-05-18">May 18</date> brought <bibl ana="#borrowedItem">Buell</bibl>
-                	<bibl ana="#borrowedItem" corresp="mep:002s1t"><title>Red Hills</title></bibl> when shop closed
-                <date ana="#returned" when="1932-07-18">July 18</date>		"	 "		"
-                				On the Edge ------------
-                </ab>				
+                 	</ab>					
+                    <ab ana="#borrowingEvent">
+                        <date ana="#returned" when="1932-05-18">May 18</date> brought 
+                        <bibl ana="#borrowedItem" corresp="mep:002s1t">
+                            <author>Buell</author>
+                            <title>Red Hills</title>
+                        </bibl> 
+                        <note>when shop closed</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#returned" when="1932-07-18">July 18</date>		
+                        <note>"	 "		"</note>
+                        <bibl ana="#borrowedItem" corresp="mep:002s7p">
+                            <title>On the Edge</title>
+                        </bibl> 
+                        ------------
+                    </ab>
+                    
                 				
-               <note> 
-                   <date ana="#checkedOut" when="1932-07-18">18</date>
-                    <bibl ana="#borrowedItem" corresp="mep:00145k">
-                        <title>Howards End</title>
-                    </bibl> 
-                    (extra)			B.B.
-               </note>
+                
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1932-07-18">18</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00145k">
+                          <title>Howards End</title>
+                      </bibl> 
+                      (extra)			B.B.
+                  </ab>
+                    
                     
                 <ab ana="#borrowingEvent">
                     <date ana="#checkedOut" when="1932-07-18">7</date>		        
@@ -238,10 +257,10 @@
                     <date  ana="#returned" when="1933-09-13">Sept 13</date>
                 </ab>
                     
-                <ab>
+                <note>
                 owes subsc and 18.90 plus fine '<bibl corresp="mep:001h8j"><title>Dark Mother</title></bibl>'
-                expired <date ana="#returned" when="1933-07-28">July 28</date>	44 days overdue	  22 frs
-                </ab>						   	
+                expired <date when="1933-07-28">July 28</date>	44 days overdue	  22 frs
+                </note>						   	
                 </div>
             
                 <div type="verso">
@@ -274,13 +293,17 @@
                         <date ana="#returned" when="1934-12-17">Dec 17</date>
                     </ab>
                     
+                    <note>
+                        <del>
+                        <bibl corresp="mep:002q9r">
+                            <title>In our time</title>
+                        </bibl>
+                        </del>
+                    </note> 
+                    
                     <ab ana="#borrowingEvent">
                         <date ana="#checkedOut" when="1934-12-17">Dec 17</date>	
-                        <note>
-                            <bibl corresp="mep:002q9r">
-                                <note><title>In our time</title><!--crossed out--></note>
-                            </bibl>
-                        </note> 
+                        
                         <bibl ana="#borrowedItem" corresp="mep:002300">
                             <title>Men without Women</title>
                         </bibl>	
