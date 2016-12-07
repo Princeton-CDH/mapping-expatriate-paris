@@ -1,133 +1,247 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#vien">Mlle Mathieu de Vienne</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#vien"><persName>Mlle Mathieu de Vienne</persName></person>
-            </particDesc>
-        </profileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	</profileDesc>
-        <revisionDesc>
-            <change who="#elspeth" when="2015-12-11">
-            <p> First level encoding </p>
-            <ab>
-            s1:
-                Changed "7th" to "7e"
-                Left "Maubrrurg" as is -- it really does look like that!  But probably is "Maubourg"
-            </ab>
-                <ab>
-                    <!-- Enter transcription notes and queries here -->
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/vw/vienne/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            <div type="card">
-                <div type="recto">
-                    <pb facs="#s1"/>
-                    <head>
-                    <date when="1937">1937</date>			<persName ref="#vien">de Vienna VIENNE</persName>
-                    
-                            <address><persName ref="#vien">Mlle. Mathieu</persName>
-                    				<street>3. Boulevard de la Tour Maubrruurg</street> <!-- Maubourg -->
-                    												<district>7e.</district></address>
-                    </head>
-                    <ab>
-                    				1v. 3m.					40.00.
-                    						Deposit.		30.00.
-                    							refunded <date when="1937-06-11">June 11</date>:
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1937-03-09">March 9</date>		<bibl ana="#borrowedItem"><title>Tennyson</title>. <author>Stopford Brooke</author>.</bibl>		<date ana="#returned" when="1937-03-23">Mar. 23</date>
-                    <date ana="#checkedOut" when="1937-03-23">	  23</date>	    <bibl ana="#borrowedItem"><title>Sparkenbroke</title></bibl> _					    <date ana="#returned" when="1937-03-25">Mar. 25</date>
-                    <date ana="#checkedOut" when="1937-03-25">	  25</date>	    <bibl ana="#borrowedItem"><title>Public Faces</title></bibl> renewed <date ana="#returned" when="1937-04-08">April 8th</date>.	<date when="1937-04-12">April 12</date>.
-                    <date ana="#checkedOut" when="1937-04-12">April 12</date>.	<bibl ana="#borrowedItem"><title>Short History of the English People</title></bibl>	<date ana="#returned" when="1937-04-28">April 28</date>
-                    <date ana="#checkedOut" when="1937-04-28"> "	  28</date>	    <bibl ana="#borrowedItem"><title>Vanity Fair</title></bibl>						    <date ana="#returned" when="1937-05-12">May 12</date>
-                    <date ana="#checkedOut" when="1937-05-12"> 	  12</date>	    <bibl ana="#borrowedItem"><title>Rob Roy</title></bibl>							    <date ana="#returned" when="1937-05-28">May 28</date>
-                    <date ana="#checkedOut" when="1937-05-28"> 	  28</date>.	<bibl ana="#borrowedItem"><title>Dodsworth</title></bibl>.						    <date ana="#returned" when="1937-06-04">June 4</date>
-                    <date ana="#checkedOut" when="1937-06-04">June 4</date>		<bibl ana="#borrowedItem"><title>Night &amp; Day</title></bibl>						<date ana="#returned" when="1937-06-11">June 11</date>
-                    </ab>
-                    <ab>
-                    					returned deposit 30fr <date when="1937-06-11">June 11</date>
-                    				going to country will return winter
-                    
-                    <date when="1938-01-08">Jan 8th		
-                    1938</date>		50fr. Sub. for 3 mos Paid
-                                    30fr.	Deposit		 Paid ref. <date when="1938-06-29">June 29 1938</date>
-                    								<persName ref="#vien">Ade Vienne</persName>
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1938-01-08">Jan. 8th</date>	    <bibl ana="#borrowedItem"><title>The Final Struggle</title></bibl>				    <date ana="#returned" when="1938-01-18">Jan. 18</date>
-                    <date ana="#checkedOut" when="1938-01-18">Jan. 18</date>		<bibl ana="#borrowedItem"><title>Mrs. Dalloway</title></bibl>					    <date ana="#returned" when="1938-01-22">Jan 22</date>
-                    <date ana="#checkedOut" when="1938-01-22">Jan 22</date>		<bibl ana="#borrowedItem"><title>An Unsocial Socialist</title></bibl> x			    <date ana="#returned" when="1938-02-01">Febr. 1</date>
-                    <date ana="#checkedOut" when="1938-02-01">Febr. 1</date>		<bibl ana="#borrowedItem"><title>Point counter Point</title></bibl> (2 copy)	    <date ana="#returned" when="1938-02-15">Febr. 15.</date>
-                    <date ana="#checkedOut" when="1938-02-14">Febr. 14</date>	    <bibl ana="#borrowedItem"><title>Thoreau. poet. Works.</title></bibl>
-                    <date ana="#checkedOut" when="1938-02-15">Febr. 15</date>	    <bibl ana="#borrowedItem"><title>Of Human Bondage</title></bibl>				    <date ana="#returned" when="1938-03-01">March 1</date>
-                    <date ana="#checkedOut" when="1938-03-01">March 1</date>		<bibl ana="#borrowedItem"><title>Jesting Pilate</title></bibl>					    <date ana="#returned" when="1938-03-15">Mar. 15</date>
-                    <date ana="#checkedOut" when="1938-03-15">	  15</date>	    <bibl ana="#borrowedItem"><title>Chains</title></bibl>							    <date ana="#returned" when="1938-03-29">Mar. 29</date>
-                    <date ana="#checkedOut" when="1938-03-29">	  29</date>	    <bibl ana="#borrowedItem"><title>Beauchamps Career</title></bibl> _				    <date ana="#returned" when="1938-04-14">April 14</date> 
-                    </ab>	  
-                </div> 
-                <div type="verso">
-                    <pb facs="#s2"/>
-                    <ab>
-                    <date ana="#checkedOut" when="1938-04-14">April 14</date>	    <bibl ana="#borrowedItem"><title>Punch and Judy</title></bibl>					    <date ana="#returned" when="1938-04-26">Apr 26</date>
-                    <date ana="#checkedOut" when="1938-04-26"> "	  26</date>	    <bibl ana="#borrowedItem"><title>Painted Veil</title></bibl>					    <date ana="#returned" when="1938-05-03">May 3</date>
-                    <date ana="#checkedOut" when="1938-05-03">May 3</date>		<bibl ana="#borrowedItem"><title>Egoist</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>	<date ana="#returned" when="1938-06-07">June 7</date>
-                    </ab>
-                    <ab>
-                    				will renew next time
-                    				(expired <date when="1938-04-08">April 8th</date>
-                    	Renewed <date from="1938-04-08" to="1938-07-08">Apr 8 - July 8</date>			65 francs
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1938-06-07">June 7</date>		<bibl ana="#borrowedItem"><title>Cakes and Ale</title></bibl>					    <date ana="#returned" when="1938-06-15">June 15</date>
-                    <date ana="#checkedOut" when="1938-06-15">June 15</date>		<bibl ana="#borrowedItem"><title>Pleasant Plays</title></bibl>					    <date ana="#returned" when="1938-06-29">June 29</date>
-                    </ab>
-                </div>    
-            </div>
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card: <persName ref="#vien">Mlle Mathieu de Vienne</persName></title>
+        <respStmt ana="#carlca">
+          <persName>Adair, Carl</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+        <person role="cardholder" ana="#vien"><persName>Mlle Mathieu de Vienne</persName></person>
+      </particDesc>
+    </profileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change who="#elspeth" when="2015-12-11">
+        <p> First level encoding </p>
+        <ab>
+          s1:
+          Changed "7th" to "7e"
+          Left "Maubrrurg" as is -- it really does look like that! But probably is "Maubourg"
+        </ab>
+        <ab>
+          <!-- Enter transcription notes and queries here -->
+        </ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/vw/vienne/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s1"/>
+          <head>
+            <date when="1937">1937</date> <persName ref="#vien">de Vienna VIENNE</persName>
+
+            <address><persName ref="#vien">Mlle. Mathieu</persName>
+            <street>3. Boulevard de la Tour Maubrruurg</street> <!-- Maubourg -->
+            <district>7e.</district></address>
+          </head>
+          <ab>
+            1v. 3m. 40.00.
+            Deposit. 30.00.
+            refunded <date when="1937-06-11">June 11</date>:
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-03-09">March 9</date>
+            <bibl ana="#borrowedItem" corresp="mep:002p29"><title>Tennyson</title>. <author>Stopford Brooke</author>.</bibl>
+            <date ana="#returned" when="1937-03-23">Mar. 23</date>\
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-03-23"> 23</date>
+            <bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>
+            <date ana="#returned" when="1937-03-25">Mar. 25</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-03-25"> 25</date>
+            <bibl ana="#borrowedItem" corresp="mep:00427c"><title>Public Faces</title></bibl> renewed
+            <date when="1937-04-08">April 8th</date>.
+            <date ana="#returned" when="1937-04-12">April 12</date>.
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-04-12">April 12</date>.
+            <bibl ana="#borrowedItem" corresp="mep:00253g"><title>Short History of the English People</title></bibl>
+            <date ana="#returned" when="1937-04-28">April 28</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-04-28"> " 28</date>
+            <bibl ana="#borrowedItem" corresp="mep:00b99c"><title>Vanity Fair</title></bibl>
+            <date ana="#returned" when="1937-05-12">May 12</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-05-12"> 12</date>
+            <bibl ana="#borrowedItem" corresp="mep:00c127"><title>Rob Roy</title></bibl>
+            <date ana="#returned" when="1937-05-28">May 28</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-05-28"> 28</date>.
+            <bibl ana="#borrowedItem" corresp="mep:001j2z"><title>Dodsworth</title></bibl>.
+            <date ana="#returned" when="1937-06-04">June 4</date>
+
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1937-06-04">June 4</date>
+            <bibl ana="#borrowedItem" corresp="mep:00167r"><title>Night &amp; Day</title></bibl>
+            <date ana="#returned" when="1937-06-11">June 11</date>
+          </ab>
+
+
+          <note>returned deposit 30fr <date when="1937-06-11">June 11</date>
+          going to country will return winter</note>
+
+          <note> <date when="1938-01-08">Jan 8th
+          1938</date> 50fr. Sub. for 3 mos Paid
+          30fr. Deposit Paid ref. <date when="1938-06-29">June 29 1938</date>
+          <persName ref="#vien">Ade Vienne</persName></note>
+
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-01-08">Jan. 8th</date>
+            <bibl ana="#borrowedItem" corresp="mep:00c13j"><title>The Final Struggle</title></bibl>
+            <date ana="#returned" when="1938-01-18">Jan. 18</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-01-18">Jan. 18</date>
+            <bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs. Dalloway</title></bibl>
+            <date ana="#returned" when="1938-01-22">Jan 22</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-01-22">Jan 22</date>
+            <bibl ana="#borrowedItem" corresp="mep:00c14v"><title>An Unsocial Socialist</title></bibl> <note>x</note>
+            <date ana="#returned" when="1938-02-01">Febr. 1</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-02-01">Febr. 1</date>
+            <bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point counter Point</title></bibl> <note>(2 copy)</note>
+            <date ana="#returned" when="1938-02-15">Febr. 15.</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-02-14">Febr. 14</date>
+            <bibl ana="#borrowedItem" corresp="mep:00c155"><title>Thoreau. poet. Works.</title></bibl>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-02-15">Febr. 15</date>
+            <bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage</title></bibl>
+            <date ana="#returned" when="1938-03-01">March 1</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-03-01">March 1</date>
+            <bibl ana="#borrowedItem" corresp="mep:00407t"><title>Jesting Pilate</title></bibl>
+            <date ana="#returned" when="1938-03-15">Mar. 15</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-03-15"> 15</date>
+            <bibl ana="#borrowedItem" corresp="mep:006j3g"><title>Chains</title></bibl>
+            <date ana="#returned" when="1938-03-29">Mar. 29</date>
+          </ab>
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-03-29"> 29</date>
+            <bibl ana="#borrowedItem" corresp="mep:008q3b"><title>Beauchamps Career</title></bibl> _
+            <date ana="#returned" when="1938-04-14">April 14</date>
+          </ab>
+
+
+        </div>
+        <div type="verso">
+          <pb facs="#s2"/>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-04-14">April 14</date>
+            <bibl ana="#borrowedItem" corresp="mep:00c16g"><title>Punch and Judy</title></bibl>
+            <date ana="#returned" when="1938-04-26">Apr 26</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-04-26"> " 26</date>
+            <bibl ana="#borrowedItem" corresp="mep:00061n"><title>Painted Veil</title></bibl>
+            <date ana="#returned" when="1938-05-03">May 3</date>
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-05-03">May 3</date>
+            <bibl ana="#borrowedItem" corresp="mep:001x95"><title>Egoist</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>
+            <date ana="#returned" when="1938-06-07">June 7</date>
+          </ab>
+
+
+          <ab>
+            will renew next time
+            (expired <date when="1938-04-08">April 8th</date>
+            Renewed <date from="1938-04-08" to="1938-07-08">Apr 8 - July 8</date> 65 francs
+          </ab>
+
+
+          <ab ana= "#borrowingEvent">
+          <date ana="#checkedOut" when="1938-06-07">June 7</date>
+          <bibl ana="#borrowedItem" corresp="mep:00433d"><title>Cakes and Ale</title></bibl>
+          <date ana="#returned" when="1938-06-15">June 15</date>
+
+          </ab>
+
+          <ab ana= "#borrowingEvent">
+            <date ana="#checkedOut" when="1938-06-15">June 15</date>
+            <bibl ana="#borrowedItem" corresp="mep:001p7m"><title>Pleasant Plays</title></bibl>
+            <date ana="#returned" when="1938-06-29">June 29</date>
+          </ab>
+
+
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>
