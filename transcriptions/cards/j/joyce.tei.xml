@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -191,7 +193,15 @@
         				sent unregistered to <persName ref="gill.lo">Louis Gillet</persName>
         				<orgName>Hotel Savoy</orgName> <settlement>London</settlement>.
         				Curtis Bonn. pd by Leon. <date when="1935-09-11">Sept 11</date> p. 6.60
-        				<date when="1935-10-05">	Oct 5.</date>	<bibl corresp="mep:00kr9n"><title>Dierdre Synge.</title></bibl>				<date when="1935-11-02">Nov 2.</date>
+        			</ab>
+        			
+        				<ab ana="#borrowingEvent">
+        					<date ana="#checkedOut" when="1935-10-05">	Oct 5.</date>	
+        					<bibl ana="#borrowedItem" corresp="mep:00kr9n"><title>Dierdre Synge.</title></bibl>	
+        					<date ana="#returned" when="1935-11-02">Nov 2.</date>
+        				</ab>
+        			
+        			<ab>	
         				<date when="1935-11-09">Nov. 9.</date>	<bibl corresp="mep:00ks04"><title>Synge's Works.</title></bibl>				57.75
         				postage.					 2.40
         				<date when="1935-11-26">Nov 26.</date> paid 60v by cheque 60.15
@@ -251,8 +261,8 @@
                			<bibl corresp="mep:00g49z"><title>Story of San Michele.</title></bibl> A.	21.00
                			<bibl corresp="mep:00ks5p"><title>American Review. Summer.</title></bibl>	15.00
                			<bibl corresp="mep:000f7f"><title>New Verse.</title></bibl>	May				 7.00
-               			Poetry. July.				 7
-               			Wales.						10
+               			<bibl corresp="mep:000f8r"><title>Poetry.</title></bibl> July.				 7
+               			<bibl><title>Wales.</title></bibl>						10
                						postage.		 3.20
                			(1 transition to
                			 <persName> Mr Louis Huot.</persName>
@@ -269,10 +279,16 @@
               <ab ana="#borrowingEvent">
               	<date ana="#checkedOut" when="1938-05-07"> May 7</date>	
               	<bibl ana="#borrowedItem" corresp="mep:00ks60"><title>Southern Review</title></bibl>(Mrs Massey's) 
-              	<note>} returned</note><date when="1938-05" ana="#returned">May</date>
+              	<note>} returned</note><date ana="#returned" when="1938-05">May</date>
               </ab>
 
-               			<note>Life (childbirth No) Shakespeare &amp; Co's</note>
+        		<ab ana="#borrowingEvent">
+        			<date ana="#checkedOut" when="1938-05-07">   </date>
+        			<bibl ana="#borrowedItem" corresp="mep:00cq4c"><title>Life</title></bibl> 
+        			<note>(childbirth No) Shakespeare &amp; Co's</note>
+        			<note>} returned</note><date ana="#returned" when="1938-05">May</date>
+        		</ab>
+        			
         		<ab>
         			<date when="1938-06-01">June 1</date> 
         			<bibl corresp="mep:hudibras"><title>Hudibras</title>
@@ -310,8 +326,8 @@
                				<address><persName ref="jola.ma">Mrs Eugene Jolas</persName>
                				<street>40 bis rue de Sevigné</street>
                					<settlement>Paris</settlement> <district>4</district></address>
-               	<date when="1932-03-09">March 9</date> <bibl>Montessori vol I</bibl>				30
-               				<bibl>"	   vol II</bibl>				45
+               		<date when="1932-03-09">March 9</date> <bibl corresp="mep:montessori">Montessori<biblScope unit="volume" from="1" to="1">vol I</biblScope></bibl>				30
+               		<bibl corresp="mep:montessori">  "  <biblScope unit="volume" from="2" to="2">vol II</biblScope></bibl>				45
                							paid
                				<address><street>9 rue Borthèse Neuilly</street></address>
                	<date when="1932-03-24">March 24</date>							   207,50
