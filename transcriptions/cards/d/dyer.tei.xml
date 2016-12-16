@@ -1,100 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dyer.lo">Mrs. James Dyer</persName></title>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#i-davis">
-                    <persName>Davis, Ian</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-        <profileDesc>
-            <textClass>          
-                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-            </textClass>
-            <particDesc>
-                <person role="cardholder" ana="#dyer.lo"><persName>Mrs. James Dyer</persName></person>
-            </particDesc>
-        </profileDesc>
-        <revisionDesc>
-            <change who="elspeth" when="2015-06-18">
-                <ab>
-                    Transcribed cards.
-                    s1:
-                    	<unclear/> (April 9) = "hand"?
-                    	<unclear/> (May 13) = "J"?
-                    	<unclear/> (May 13) = "interligned"?
-                   
-                    
-                    
-                    	
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/d/dyer/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-        	<graphic url="00000002.jp2"/>
-        </surface>
-        
-        
-        
-    </facsimile>
-    <text>
-        <body>
-            <div type="card"><div type="recto">
-                <pb facs="#s1"/>
-                <head><date when="1929-12-20">1929 Dec 20</date>	<persName ref="#dyer.lo">DYER</persName>
-                
-                				<persName ref="#dyer.lo">Mrs James Dyer</persName>.
-                					<address><street>17 rue Franklin</street></address>
-                		</head>
-                		<ab>
-                		1 year 1 vol a.o.c.		240
-                		Deposit					 50
-                
-                <date ana="#checkedOut" when="1929-12-20">Dec 20</date>		<bibl ana="#borrowedItem"><title>Mrs Dalloway</title></bibl>				<date ana="#returned" when="1929-12-24">Dec 24</date>
-                <date ana="#checkedOut" when="1929-12-24">"	24</date>		<bibl ana="#borrowedItem"><title>Farewell to Arms</title></bibl>			<date ana="#returned" when="1929-12-27">"	27</date>
-                <date ana="#checkedOut" when="1929-12-27">"	27</date>		<bibl ana="#borrowedItem"><title>Magic Island</title></bibl>				<date ana="#returned" when="1930-01-08">Jan 8</date>
-                <date ana="#checkedOut" when="1930-01-08">Jan 8</date>		<bibl ana="#borrowedItem"><title>Jacob's Room</title></bibl>				<date ana="#returned" when="1930-01-21">"	21</date>
-                <date ana="#checkedOut" when="1930-01-21">"	21</date>		<bibl ana="#borrowedItem"><title>High Wind in Jamaica</title></bibl>		<date ana="#returned" when="1930-04-09">April 9</date>
-                				<date when="1930-04-05">April 5th.</date> p.c.  due 32f see below
-                
-                <date ana="#checkedOut" when="1930-04-09">April 9</date>		<bibl ana="#borrowedItem"><title>Best Short Stories of <date when="1929">1929</date> Am.</title></bibl>  <date ana="#returned" when="1930-05-15">May 15</date>
-                									due <note>58<!-- crossed out --></note> <unclear/>
-                <date ana="#checkedOut" when="1930-05-13">May 13</date>	sent p.c. + bill for 32f fine due on <bibl ana="#borrowedItem"><title>H.W.in. J.</title></bibl>
-                		and prospectus under <unclear/>
-                		
-                <date when="1930-10-17">Oct 17</date>	sent bill for 32 fr. Due since <date when="1930-01-21">Jan 21st</date>  paid
-                <date ana="#checkedOut" when="1930-10-30">Oct 30</date>	<bibl ana="#borrowedItem"><title>Dumb Animals</title></bibl> = 85 = 16f					<date ana="#returned" when="1930-11-14">Nov 14</date></ab>
-                </div><div type="verso">
-                <pb facs="#s2"/>
-                <!-- verso blank --></div>
-                </div>
-           		            
-            
-        </body>
-    </text>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+        <title>An Encoded Transcription of a Borrower's Card: <persName ref="#dyer.lo">Mrs. James Dyer</persName></title>
+        <respStmt ana="#elspeth">
+          <persName>Green, Elspeth</persName>
+          <resp>transcriber</resp>
+        </respStmt>
+        <respStmt ana="#i-davis">
+          <persName>Davis, Ian</persName>
+          <resp>encoder</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Princeton</settlement>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <collection>Sylvia Beach Papers</collection>
+            <idno>C0108</idno>
+          </msIdentifier>
+        </msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+        <person role="cardholder" ana="#dyer.lo"><persName>Mrs. James Dyer</persName></person>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change who="elspeth" when="2015-06-18">
+        <ab>
+          Transcribed cards.
+          s1:
+          <unclear/> (April 9) = "hand"?
+          <unclear/> (May 13) = "J"?
+          <unclear/> (May 13) = "interligned"?
+
+
+
+
+        </ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/d/dyer/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+
+
+
+  </facsimile>
+  <text>
+    <body>
+      <div type="card"><div type="recto">
+        <pb facs="#s1"/>
+        <head><date when="1929-12-20">1929 Dec 20</date> <persName ref="#dyer.lo">DYER</persName>
+
+        <persName ref="#dyer.lo">Mrs James Dyer</persName>.
+        <address><street>17 rue Franklin</street></address>
+        </head>
+        <note>
+          1 year 1 vol a.o.c. 240
+          Deposit 50
+        </note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1929-12-20">Dec 20</date>
+          <bibl ana="#borrowedItem" corresp="mep:004j77"><title>Mrs Dalloway</title></bibl>
+          <date ana="#returned" when="1929-12-24">Dec 24</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1929-12-24">" 24</date>
+          <bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl>
+          <date ana="#returned" when="1929-12-27">" 27</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1929-12-27">" 27</date>
+          <bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island</title></bibl>
+          <date ana="#returned" when="1930-01-08">Jan 8</date>
+
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1930-01-08">Jan 8</date>
+          <bibl ana="#borrowedItem" corresp="mep:00161w"><title>Jacob's Room</title></bibl>
+          <date ana="#returned" when="1930-01-21">" 21</date>
+        </ab>
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1930-01-21">" 21</date>
+          <bibl ana="#borrowedItem" corresp="mep:001j66"><title>High Wind in Jamaica</title></bibl>
+          <date ana="#returned" when="1930-04-09">April 9</date>
+        </ab>
+        <note><date when="1930-04-05">April 5th.</date> p.c. due 32f see below</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1930-04-09">April 9</date>
+          <bibl ana="#borrowedItem" corresp="mep:005222"><title>Best Short Stories of <date when="1929">1929</date> Am.</title></bibl>
+          <date ana="#returned" when="1930-05-15">May 15</date>
+        </ab>
+        <note>due 58<!-- crossed out --> <unclear/></note>
+        <note>
+          <date when="1930-05-13">May 13</date>
+          sent p.c. + bill for 32f fine due on <bibl><title>H.W.in. J.</title></bibl>
+          and prospectus under <unclear/>
+        </note>
+
+        <note> <date when="1930-10-17">Oct 17</date> sent bill for 32 fr. Due since <date when="1930-01-21">Jan 21st</date> paid</note>
+
+        <ab ana="#borrowingEvent">
+          <date ana="#checkedOut" when="1930-10-30">Oct 30</date>
+          <bibl ana="#borrowedItem" corresp="mep:00524p"><title>Dumb Animals</title></bibl> <note>= 85 = 16f </note>
+          <date ana="#returned" when="1930-11-14">Nov 14</date>
+        </ab>
+
+      </div>
+
+      <div type="verso">
+        <pb facs="#s2"/>
+      <!-- verso blank --></div>
+      </div>
+
+
+    </body>
+  </text>
 </TEI>
