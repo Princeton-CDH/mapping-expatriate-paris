@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of a Borrower's Card: <persName ref="#cros.ca">Caresse Crosby</persName></title>
+      <respStmt ana="#elspeth">
+	<persName>Green, Elspeth</persName>
+	<resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#carlca">
+	<persName>Adair, Carl</persName>
+	<resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+	<msIdentifier>
+	  <settlement>Princeton</settlement>
+	  <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+	  <collection>Sylvia Beach Papers</collection>
+	  <idno>C0108</idno>
+	</msIdentifier>
+      </msDesc>
+
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#cros.ca"><persName>Caresse Crosby</persName></person>
+    </particDesc>
+  </profileDesc>
+
+  <revisionDesc>
+    <change who="#carlca" when="2016-03-02">
+      <ab>
+	Encoded cards.
+	Corrected "unclear's" to "Copies"
+      </ab>
+    </change>
+    <change who="elspeth" when="2015-06-02">
+      <ab>
+	Transcribed cards.
+	s1:
+	<unclear/> (line below Dec 27) = "copis"?
+	<unclear/> (note below D.H. Lawrence line) = "cofos"? (same as above?)
+
+
+
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298//c/crosby/">
+  <surface xml:id="s3">
+    <graphic url="00000003.jp2"/>
+  </surface>
+  <surface xml:id="s4">
+    <graphic url="00000004.jp2"/>
+  </surface>
+
+</facsimile>
+<text>
+  <body>
+
+    <div type="card">
+      <div type="recto">
+	<pb facs="#s3"/>
+	<head>
+	  <date when="1931">1931</date>
+	  <persName ref="#cros.ca">CROSBY</persName>
+	  <persName ref="#cros.ca">Mrs Caresse Crosby</persName>
+	  <address>
+	    <name>Hotel Lancaster</name>
+	    <street>7 rue de Berri Elyseé</street>
+	  </address>
+	</head>
+
+
+	<ab>
+	  <date ana="#checkedOut" when="1931-11-25">Nov 25</date>
+	  <bibl ana="#borrowedItem" corresp="mep:004s2m"><title>Etched in Moonlight</title></bibl> <date ana="#returned" when="1931-12-22">Dec 22</date>
+	</ab>
+      </div>
+
+      <div type="verso">
+	<pb facs="#s4"/>
+	<!-- verso blank -->
+      </div>
+    </div>
+
+  </body>
+</text>
+</TEI>
