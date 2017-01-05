@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<teiHeader type="text">
+  <fileDesc>
+    <titleStmt>
+      <title>An Encoded Transcription of a Card: <persName ref="#cros.ha">Harry Crosby</persName></title>
+      <respStmt ana="#elspeth">
+        <persName>Green, Elspeth</persName>
+        <resp>transcriber</resp>
+      </respStmt>
+      <respStmt ana="#carlca">
+        <persName>Adair, Carl</persName>
+        <resp>encoder</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Princeton University</publisher>
+    </publicationStmt>
+    <sourceDesc>
+      <msDesc>
+        <msIdentifier>
+          <settlement>Princeton</settlement>
+          <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+          <collection>Sylvia Beach Papers</collection>
+          <idno>C0108</idno>
+        </msIdentifier>
+      </msDesc>
+      
+    </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+    <textClass>          
+      <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+    </textClass>
+    <particDesc>
+      <person role="cardholder" ana="#cros.ha"><persName>Harry Crosby</persName></person>
+    </particDesc>
+  </profileDesc>
+
+  <revisionDesc>
+    <change who="#carlca" when="2016-03-02">
+      <ab>
+        Encoded cards.             
+        Corrected "unclear's" to "Copies"
+      </ab>
+    </change>
+    <change who="elspeth" when="2015-06-02">
+      <ab>
+        Transcribed cards.
+        s1:
+        <unclear/> (line below Dec 27) = "copis"?
+        <unclear/> (note below D.H. Lawrence line) = "cofos"? (same as above?)
+        
+        
+        
+      </ab>
+    </change>
+  </revisionDesc>
+</teiHeader>
+<facsimile xml:base="pudl0123/825298//c/crosby/">
+  <surface xml:id="s1">
+    <graphic url="00000001.jp2"/>
+  </surface>
+  <surface xml:id="s2">
+    <graphic url="00000002.jp2"/>
+  </surface>
+</facsimile>
+<text>
+  <body>
+    <div type="card">
+      <div type="recto">
+        <pb facs="#s1"/>
+        <head>		
+          <persName ref="#cros.ha">CROSBY</persName>
+          <date when="1929">1929</date>
+        </head>
+        <ab>
+          <date when="1929-12-27">Dec 27</date>		<bibl corresp="mep:00jr27"><persName>H. Crosby.</persName> <title>Sleeping Together</title></bibl> 100f
+          1 5 copies on date  Nos 33.34.50.59.32
+          
+          <date when="1929-12-27">"	"</date>		<bibl corresp="mep:00jr3j"><persName>D.H. Lawrence.</persName> <title>The Escaped Cock</title></bibl>		H.C.
+          2 copies	{	1 copy <bibl corresp="mep:00h07g"><title>Japon</title></bibl> on sale		   		$20
+          1 	"  <bibl corresp="mep:00jr4v"><title>Holland</title></bibl>	"	"				$10
+          
+          <date when="1930">1930</date>
+          <date when="1930-01-10">Jan 10</date> sold	<bibl corresp="mep:00jr55"><title>Escaped Cock</title></bibl> $10					250
+          <date when="1930-01-16">Jan 16</date>	"	<bibl corresp="mep:00jr27"><title>Sleeping Together</title></bibl>					150
+          <date when="1930-02-01">Feb 1</date>		<bibl corresp="mep:00jr27"><title>"		"</title></bibl>							150
+          short stories						100
+          <date when="1932">1932</date>
+          <date when="1932-02-17">Feb 17</date>		<bibl corresp="mep:00218x"><title>Sanctuary</title></bibl> paid by cheque <date when="1932-03-04">March 4</date>	 70
+        </ab>
+      </div>
+      
+      <div type="verso">
+        <pb facs="#s2"/>
+        <!-- verso blank -->
+      </div>
+    </div>
+    
+  </body>
+</text>
+</TEI>

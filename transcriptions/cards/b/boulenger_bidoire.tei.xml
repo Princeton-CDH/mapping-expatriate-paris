@@ -1,203 +1,554 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <teiHeader type="text">
-        <fileDesc>
-            <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#boul">Boulenger Bidoire</persName></title>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#carlca">
-                    <persName>Adair, Carl</persName>
-                    <resp>encoder</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <publisher>Princeton University</publisher>
-            </publicationStmt>
-            <sourceDesc>
-                <msDesc>
-                    <msIdentifier>
-                        <settlement>Princeton</settlement>
-                        <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
-                        <collection>Sylvia Beach Papers</collection>
-                        <idno>C0108</idno>
-                    </msIdentifier>
-                </msDesc>
-                
-            </sourceDesc>
-        </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-    	  <particDesc>
-    	    <person role="cardholder" ana="#boul"><persName>Boulenger Bidoire</persName></person>
-    	  </particDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader type="text">
+    <fileDesc>
+      <titleStmt>
+	<title>An Encoded Transcription of a Borrower's Card: <persName ref="#boul">Boulenger Bidoire</persName></title>
+	<respStmt ana="#carlca">
+	  <persName>Adair, Carl</persName>
+	  <resp>transcriber</resp>
+	</respStmt>
+	<respStmt ana="#carlca">
+	  <persName>Adair, Carl</persName>
+	  <resp>encoder</resp>
+	</respStmt>
+      </titleStmt>
+      <publicationStmt>
+	<publisher>Princeton University</publisher>
+      </publicationStmt>
+      <sourceDesc>
+	<msDesc>
+	  <msIdentifier>
+	    <settlement>Princeton</settlement>
+	    <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+	    <collection>Sylvia Beach Papers</collection>
+	    <idno>C0108</idno>
+	  </msIdentifier>
+	</msDesc>
+
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <textClass>
+	<classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      </textClass>
+      <particDesc>
+	<person role="cardholder" ana="#boul"><persName>Boulenger Bidoire</persName></person>
+      </particDesc>
     </profileDesc>
 
-        <revisionDesc>
-            <change who="#yournetid">
-                <ab>
-                    Revisions?
-                    
-                </ab>
-            </change>
-        </revisionDesc>
-    </teiHeader>
-    <facsimile xml:base="pudl0123/825298/b/boulenger_bidoire/">
-        <surface xml:id="s1">
-            <graphic url="00000001.jp2"/>
-        </surface>
-        <surface xml:id="s2">
-            <graphic url="00000002.jp2"/>
-        </surface>
-        <surface xml:id="s3">
-            <graphic url="00000003.jp2"/>
-        </surface>
-        <surface xml:id="s4">
-            <graphic url="00000004.jp2"/>
-        </surface>
-    </facsimile>
-    <text>
-        <body>
-            
-                <div type="recto">
-                <pb facs="#s1"/>
-                <head>
-                <persName ref="#boul">BIDOIRE</persName>
-                </head>
-                <ab>
-                owes: fines:
-                
-                28 April - 11 May			18.90
-                July
-                44 days fine 50¢			22. -
-                
-                subscription
-                  28 July - 	13 Sept. 	37 -
-                  	
-                  							77.90
-                  				deposit		50
-                  				owes		27.90	
-                </ab>
-                </div>
-                
-                <div type="verso">
-                <pb facs="#s2"/>
-                
-                <!-- Verso of #s1 -->
-                <ab>
-                					ASSOCIATION INTERNAT
-                								CONTRE L
-                		   LA SECTION FRANCAISE PRESENTE
-                							   MAISON DE
-                				          24, Rue Saint-
-                				
-                									 LIL
-                								 de Roma
-                						  REPRESENTE PAR
-                Illustre par Masereel - chants d'Honegge
-                						   mise en scene
-                					
-                								 UN FRAN
-                								  NO MAN
-                				  film de Victor Trivas,
-                					
-                									LA P
-                							premier dess
-                							
-                					 Prix des places: 50
-                Location: Maison de la Mutualite, 24, rue
-                </ab>                					
-                </div>
-            
-                <div type="card">
-                <div type="recto">
-                <pb facs="#s3"/>
-                <head>
-                <date when="1932-09-13">1932 Sept 13</date>			 
-                                    <persName ref="#boul">BOULENGER (Madame Bidoire)</persName> has got married
-                					<address><street>26 rue Lisbonne</street><district>8e</district></address>
-                </head>
-                <ab>
-                to <date to="1933-02-10">10 Feb 1933</date>
-                	<date when="1932-07-28">28 July</date>
-                				3 mos	1 v			65
-                					dep				50
-                </ab>
-                <ab>
-                <persName ref="#boul">Boulenger</persName> owes
-                
-                50¢ a day, <bibl ana="#borrowedItem" corresp="mep:002s0h"><title>Gold Falcon</title></bibl>				6.50
-                 2f a day	 	" 	" 6 extra days 12.-
-                 1 post card						 .40
-                 								   18.90
-                 								   22
-                 								   40.80
-                 						to deduct from deposit
-                <date ana="#checkedOut" when="1932-05-18">May 18</date> brought <bibl ana="#borrowedItem">Buell</bibl>
-                	<bibl ana="#borrowedItem" corresp="mep:002s1t"><title>Red Hills</title></bibl> when shop closed
-                <date ana="#returned" when="1932-07-18">July 18</date>		"	 "		"
-                				On the Edge ------------
-                <date ana="#checkedOut" when="1932-07-18">18	</date>		    <bibl ana="#borrowedItem" corresp="mep:00145k"><title>Howards End</title></bibl> (extra)			B.B.
-                <date ana="#checkedOut" when="1932-07-18"> 7	</date>		        <bibl ana="#borrowedItem" corresp="mep:002s24"><title>Invitation to the Waltz</title></bibl>		to <date ana="#returned" when="1932-07-28">28 July</date>	<date when="1933-02-01">1 Feb</date>
-                <date ana="#checkedOut" when="1933-04-28">28 April</date>	    <bibl ana="#borrowedItem" corresp="mep:002s0h"><title>Gold Falcon</title></bibl>	50f p.j. card <date ana="#returned" when="1933-05-08">8 May</date>	<date when="1933-05-11">May 11</date>
-                <date when="1933-04-28">"	"</date>		3 mo 1v.						30f
-                <date ana="#checkedOut" when="1933-05-11">May 11</date>		<bibl ana="#borrowedItem" corresp="mep:002s3f"><title>Lovely Lady</title></bibl>   owes 1890			<date ana="#returned" when="1933-05-13">13</date>
-                <date ana="#checkedOut" when="1933-05-13"> "	13</date>		<bibl ana="#borrowedItem" corresp="mep:002s1t"><title>Red Hills</title></bibl> 50f p.j.	owes 8f pd.	<date ana="#returned" when="1933-05-18">18</date>
-                <date ana="#checkedOut" when="1933-05-13"> 	13</date>		<bibl ana="#borrowedItem" corresp="mep:002s4r"><title>Sylvia's Marriage</title></bibl> (extra) 2f p.j. <date ana="#returned" when="1933-05-29">29</date>
-                <date ana="#checkedOut" when="1933-06-01">1 June</date>		<bibl ana="#borrowedItem" corresp="mep:002s52"><title>To make my bread</title></bibl> (new!) p.d. 6 extra <date ana="#returned" when="1933-06-06">6 June</date>
-                <date ana="#checkedOut" when="1933-06-01">	</date>		    <bibl ana="#borrowedItem" corresp="mep:002s6c"><title>Companionate Marriage</title></bibl> 2f a day	<date ana="#returned" when="1933-06-10">10.</date>
-                <date ana="#checkedOut" when="1933-06-10">10.</date>			<bibl ana="#borrowedItem" corresp="mep:002s7p"><title>On the Edge</title></bibl> card <date ana="#returned" when="1933-07-15">15 July</date> owes. 5.40	<date when="1933-06-18">18 July</date>
-                <date ana="#checkedOut" when="1933-07-18">18 July</date>		<bibl ana="#borrowedItem" corresp="mep:001h8j"><title>Dark Mother</title></bibl> card <date ana="#returned" when="1933-08-09">9 Aug</date>			<date when="1933-09-13">Sept 13</date>
-                </ab>
-                <ab>
-                owes subsc and 18.90 plus fine '<bibl ana="#borrowedItem" corresp="mep:001h8j"><title>Dark Mother</title></bibl>'
-                expired <date ana="#returned" when="1933-07-28">July 28</date>	44 days overdue	  22 frs
-                </ab>						   	
-                </div>
-            
-                <div type="verso">
-                <pb facs="#s4"/>
-                <head>
-                <date when="1934">1934</date>			<persName ref="#boul">BIDOIRE</persName>
-                				                        <address><street>26 rue de Lisbonne</street>
-                						                <addrLine>BAL: 05-77</addrLine></address>
-                </head>
-                <ab>
-                1v. 3m.										58.50
-                dep.							new			50
-                </ab>
-                <ab>
-                <date ana="#checkedOut" when="1934-11-15">15 Nov</date> -	<bibl ana="#borrowedItem" corresp="mep:002s80"><title>Breakfast in bed</title></bibl> 5,50			<date ana="#returned" when="1934-12-03">Dec 3</date>
-                <date ana="#checkedOut" when="1934-12-03">Dec 3</date>	<bibl ana="#borrowedItem" corresp="mep:002s99"><title>Altogether</title></bibl>						<date ana="#returned" when="1934-12-17">Dec 17</date>
-                <date ana="#checkedOut" when="1934-12-17">Dec 17</date>	<bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In our time</title></bibl> <bibl ana="#borrowedItem" corresp="mep:002300"><title>Men without Women</title></bibl>	<date ana="#returned" when="1934-12-19">Dec 19</date>
-                <date ana="#checkedOut" when="1934-12-17">	</date>		<bibl ana="#borrowedItem" corresp="mep:002t0s"><title>After such</title></bibl>						<date ana="#returned" when="1934-12-19">Dec 19</date>
-                <date ana="#checkedOut" when="1934-12-19">	19</date>	<bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage</title></bibl>				<date ana="#returned" when="1934-12-28">Dec 28</date>
-                <date ana="#checkedOut" when="1934-12-28">	28</date>	<bibl ana="#borrowedItem"><time>Moon &amp; Sixpence</time></bibl>				<date ana="#returned" when="1935-01-15">15 Jan</date>
-                <date ana="#checkedOut" when="1934-12-29">	28</date>	<bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In our Time</title></bibl> owes 3.50			<date ana="#returned" when="1935-01-04">Jan 4</date>
-                <date ana="#checkedOut" when="1935-01-15">15 Jan</date>	<bibl ana="#borrowedItem" corresp="mep:001f24"><title>South wind</title></bibl>						<date ana="#returned" when="1935-01-25">25</date>
-                <date ana="#checkedOut" when="1935-01-15">15 - </date>	<bibl ana="#borrowedItem" corresp="mep:002t13"><title>So Red the Rose</title></bibl> 10 x p.50 = 5f	<date ana="#returned" when="1935-01-25">25</date>
-                <date ana="#checkedOut" when="1935-01-25">25 -</date>		<bibl ana="#borrowedItem" corresp="mep:002t2d"><title>God's Little acre</title></bibl>				<date ana="#returned" when="1935-02-04">Feb 4</date>
-                <date ana="#checkedOut" when="1935-02-04">Feb 4</date>	<bibl ana="#borrowedItem" corresp="mep:002t3q"><title>Dark Island</title></bibl>						<date ana="#returned" when="1935-02-11">11</date>
-                <date ana="#checkedOut" when="1935-02-04">	</date>		<bibl ana="#borrowedItem" corresp="mep:002t41"><title>Appointment in Samarra</title></bibl> 3.50		<date ana="#returned" when="1935-02-11">11</date>
-                <date ana="#checkedOut" when="1935-02-11">	11</date>	<bibl ana="#borrowedItem" corresp="mep:002t5b"><title>Aspern papers</title></bibl>					<date ana="#returned" when="1935-02-25">25</date>
-                <date ana="#checkedOut" when="1935-02-11">	11</date>	<bibl ana="#borrowedItem" corresp="mep:002t6n"><title>Spoils of Poynton</title></bibl> 0.50			<date ana="#returned" when="1935-02-25">25</date>
-                <date ana="#checkedOut" when="1935-02-25">	25</date>	<bibl ana="#borrowedItem" corresp="mep:002t7z"><title>Portrait of a Lady</title></bibl>				<date ana="#returned" when="1935-03-18">Mar 18</date>
-                </ab>
-                <ab>
-                						Fines f17.50
-                						
-                Renewed <date from="1935-02-15" to="1935-05-15">Feb 15 - May 15 1935</date> 65v
-                </ab>
-                <ab>
-                <date ana="#checkedOut" when="1935-03-18"> 	</date>		<bibl ana="#borrowedItem" corresp="mep:000r12"><title>Pointed Roofs</title></bibl>					<date ana="#returned" when="1935-03-22">March 22</date>
-                <date ana="#checkedOut" when="1935-03-18">March 18</date>	<bibl ana="#borrowedItem" corresp="mep:002t88"><title>House Divided </title></bibl>                  <date ana="#returned" when="1935-03-22">   </date> 
-                <date ana="#checkedOut" when="1935-03-18">	</date>		<bibl ana="#borrowedItem" corresp="mep:00074v"><title>Eminent Victorians</title></bibl> card         <date ana="#returned" when="1935-03-22">   </date>
-                </ab>             	
-                </div>
-                </div>
-        </body>
-    </text>
+    <revisionDesc>
+      <change who="#yournetid">
+	<ab>
+	  Revisions?
+
+	</ab>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile xml:base="pudl0123/825298/b/boulenger_bidoire/">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+    <surface xml:id="s3">
+      <graphic url="00000003.jp2"/>
+    </surface>
+    <surface xml:id="s4">
+      <graphic url="00000004.jp2"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+
+      <div type="recto">
+	<pb facs="#s1"/>
+	<head>
+	  <persName ref="#boul">BIDOIRE</persName>
+	</head>
+	<ab>
+	  owes: fines:
+
+	  28 April - 11 May 18.90
+	  July
+	  44 days fine 50¢ 22. -
+
+	  subscription
+	  28 July - 13 Sept. 37 -
+
+	  77.90
+	  deposit 50
+	  owes 27.90
+	</ab>
+      </div>
+
+      <div type="verso">
+	<pb facs="#s2"/>
+
+	<!-- Verso of #s1 -->
+	<ab>
+	  ASSOCIATION INTERNAT
+	  CONTRE L
+	  LA SECTION FRANCAISE PRESENTE
+	  MAISON DE
+	  24, Rue Saint-
+
+	  LIL
+	  de Roma
+	  REPRESENTE PAR
+	  Illustre par Masereel - chants d'Honegge
+	  mise en scene
+
+	  UN FRAN
+	  NO MAN
+	  film de Victor Trivas,
+
+	  LA P
+	  premier dess
+
+	  Prix des places: 50
+	  Location: Maison de la Mutualite, 24, rue
+	</ab>
+      </div>
+
+      <div type="card">
+	<div type="recto">
+	  <pb facs="#s3"/>
+	  <head>
+	    <date when="1932-09-13">1932 Sept 13</date>
+	    <persName ref="#boul">BOULENGER (Madame Bidoire)</persName> has got married
+	    <address><street>26 rue Lisbonne</street><district>8e</district></address>
+	  </head>
+	  <ab>
+	    to <del><date when="1933-02-10">10 Feb 1933</date></del>
+	    <date when="1932-07-28">28 July</date>
+	    3 mos 1 v 65
+	    dep 50
+	  </ab>
+	  <ab>
+	    <persName ref="#boul">Boulenger</persName> owes
+
+	    50¢ a day, <bibl corresp="mep:002s0h"><title>Gold Falcon</title></bibl> 6.50
+	    2f a day " " 6 extra days 12.-
+	    1 post card .40
+	    18.90
+	    22
+	    40.80
+	    to deduct from deposit
+	  </ab>
+	  <ab ana="#borrowingEvent">
+	    <date ana="#returned" when="1932-05-18">May 18</date> brought
+	    <bibl ana="#borrowedItem" corresp="mep:002s1t">
+	      <author>Buell</author>
+	      <title>Red Hills</title>
+	    </bibl>
+	    <note>when shop closed</note>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#returned" when="1932-07-18">July 18</date>
+	    <note>" " "</note>
+	    <bibl ana="#borrowedItem" corresp="mep:002s7p">
+	      <title>On the Edge</title>
+	    </bibl>
+	    ------------
+	  </ab>
+
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-09-13">Sept 13</date>
+	    <del>
+	      <bibl>
+		<title>Mary's Neck</title>
+	      </bibl>
+	    </del>
+	    <bibl ana="#borrowedItem" corresp="mep:001n8n">
+	      <title>Brave New World</title>
+	    </bibl>
+	    <date ana="#returned" when="1932-09-20">Sept 20</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-09-20">20</date>
+	    <bibl ana="#borrowedItem" corresp="mep:009680">
+	      <title>Magnolia Street</title>
+	    </bibl>
+	    <date ana="#returned" when="1932-10-03">Oct 3.</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-10-03">Oct 3</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002n1q">
+	      <title>Angel Pavement</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-10-22">Oct 22</date>
+	  </ab>
+
+	  <note>(interrupted) 67 days left</note>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-12-06">6 Dec</date>
+	    <del>
+	      <bibl corresp="mep:001x0c">
+		<title>Fountain</title>
+	      </bibl>
+	    </del>
+	    <bibl ana="#borrowedItem" corresp="mep:006t59">
+	      <title>Inheritance</title>
+	    </bibl>
+	    <date ana="#returned" when="1932-12-25">Dec 25</date>
+	  </ab>
+
+	  <note>card <date when="1932-12-20">20 Dec</date></note>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-12-28">28 "</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00381x">
+	      <title>Peking Picnic</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-01-05">Jan 5</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-12-28"></date>
+	    <bibl ana="#borrowedItem" corresp="mep:00218x">
+	      <title>Sanctuary</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-01-05">Jan 5</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1932-12-28"></date>
+	    <bibl ana="#borrowedItem" corresp="mep:008h7x">
+	      <title>Black Girl</title>
+	    </bibl>
+	    <note>extra</note>
+	    <date ana="#returned" when="1933-01-05">Jan 5</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-01-05">Jan 5</date>
+	    <bibl ana="#borrowedItem" corresp="mep:004145">
+	      <title>Flowering Wilderness</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-01-11">11 "</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-01-11">" 11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001x0c">
+	      <title>Fountain</title>
+	    </bibl>
+	    <note>(extra)</note>
+	    <date ana="#returned" when="1933-01-18">18 "</date>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-01-11">" 11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001f24">
+	      <title>South Wind</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-01-18">18 "</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-01-18">" 18</date>
+	    <bibl ana="#borrowedItem" corresp="mep:008r4x">
+	      <title>Lorenzo</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-01-26">26 "</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-01-18">18</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00145k">
+	      <title>Howards End</title>
+	    </bibl>
+	    <note>(extra)</note> <note>B.B.</note>
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-01-26">26</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s24">
+	      <title>Invitation to the Waltz</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-02-01">1 Feb</date>
+	  </ab>
+
+	  <note>to <date when="1932-07-28">28 July</date> </note>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-04-28">28 April</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s0h">
+	      <title>Gold Falcon</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-05-11">May 11</date>
+	  </ab>
+
+	  <note> 50f p.j. card
+	  <date when="1933-05-08">8 May</date></note>
+
+
+	  <note><date when="1933-04-28">" "</date> 3 mo 1v. 30f
+	  owes 1890
+	  </note>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-05-11">May 11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s3f">
+	      <title>Lovely Lady</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-05-13">13</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-05-13">" 13</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s1t">
+	      <title>Red Hills</title>
+	    </bibl>
+	    <note>50f p.j. owes 8f pd.</note>
+	    <date ana="#returned" when="1933-05-18">18</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-05-13">13</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s4r">
+	      <title>Sylvia's Marriage</title>
+	    </bibl>
+	    <note>(extra) 2f p.j.</note>
+	    <date ana="#returned" when="1933-05-29">29</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-06-01">1 June</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s52">
+	      <title>To make my bread</title>
+	    </bibl>
+	    <note>(new!) p.d. 6 extra</note>
+	    <date ana="#returned" when="1933-06-06">6 June</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-06-01"></date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s6c">
+	      <title>Companionate Marriage</title>
+	    </bibl>
+	    <note>2f a day</note>
+	    <date ana="#returned" when="1933-06-10">10.</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-06-10">10.</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s7p">
+	      <title>On the Edge</title>
+	    </bibl>
+	    <note>card <date when="1933-07-15">15 July</date>
+	    owes. 5.40</note>
+	    <date ana="#returned" when="1933-06-18">18 July</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1933-07-18">18 July</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001h8j">
+	      <title>Dark Mother</title>
+	    </bibl>
+	    <date ana="#returned" when="1933-09-13">Sept 13</date>
+	  </ab>
+
+	  <note>
+	    owes subsc and 18.90 plus fine '<bibl corresp="mep:001h8j"><title>Dark Mother</title></bibl>'
+	    expired <date when="1933-07-28">July 28</date> 44 days overdue 22 frs
+	  </note>
+	</div>
+
+	<div type="verso">
+	  <pb facs="#s4"/>
+	  <head>
+	    <date when="1934">1934</date> <persName ref="#boul">BIDOIRE</persName>
+	    <address><street>26 rue de Lisbonne</street>
+	    <addrLine>BAL: 05-77</addrLine></address>
+	  </head>
+	  <ab>
+	    1v. 3m. 58.50
+	    dep. new 50
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-11-15">15 Nov</date> -
+	    <bibl ana="#borrowedItem" corresp="mep:002s80">
+	      <title>Breakfast in bed</title>
+	    </bibl>
+	    5,50
+	    <date ana="#returned" when="1934-12-03">Dec 3</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-12-03">Dec 3</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002s99">
+	      <title>Altogether</title>
+	    </bibl>
+	    <date ana="#returned" when="1934-12-17">Dec 17</date>
+	  </ab>
+
+	  <note>
+	    <del>
+	      <bibl corresp="mep:002q9r">
+		<title>In our time</title>
+	      </bibl>
+	    </del>
+	  </note>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-12-17">Dec 17</date>
+
+	    <bibl ana="#borrowedItem" corresp="mep:002300">
+	      <title>Men without Women</title>
+	    </bibl>
+	    <date ana="#returned" when="1934-12-19">Dec 19</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-12-17"> </date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t0s">
+	      <title>After such</title>
+	    </bibl>
+	    <date ana="#returned" when="1934-12-19">Dec 19</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-12-19"> 19</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001v3r">
+	      <title>Of Human Bondage</title>
+	    </bibl>
+	    <date ana="#returned" when="1934-12-28">Dec 28</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-12-28"> 28</date>
+	    <bibl ana="#borrowedItem" corresp="mep:004323">
+	      <time>Moon &amp; Sixpence</time>
+	    </bibl>
+	    <date ana="#returned" when="1935-01-15">15 Jan</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1934-12-29"> 28</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002q9r">
+	      <title>In our Time</title>
+	    </bibl>
+	    <note>owes 3.50</note>
+	    <date ana="#returned" when="1935-01-04">Jan 4</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-01-15">15 Jan</date>
+	    <bibl ana="#borrowedItem" corresp="mep:001f24">
+	      <title>South wind</title>
+	    </bibl>
+	    <date ana="#returned" when="1935-01-25">25</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-01-15">15 - </date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t13">
+	      <title>So Red the Rose</title>
+	    </bibl>
+	    <note>10 x p.50 = 5f</note>
+	    <date ana="#returned" when="1935-01-25">25</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-01-25">25 -</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t2d">
+	      <title>God's Little acre</title>
+	    </bibl>
+	    <date ana="#returned" when="1935-02-04">Feb 4</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-02-04">Feb 4</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t3q">
+	      <title>Dark Island</title>
+	    </bibl>
+	    <date ana="#returned" when="1935-02-11">11</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-02-04"> </date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t41">
+	      <title>Appointment in Samarra</title>
+	    </bibl>
+	    <note>3.50</note>
+	    <date ana="#returned" when="1935-02-11">11</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-02-11">11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t5b">
+	      <title>Aspern papers</title>
+	    </bibl>
+	    <date ana="#returned" when="1935-02-25">25</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-02-11">11</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t6n">
+	      <title>Spoils of Poynton</title>
+	    </bibl>
+	    <note>0.50</note>
+	    <date ana="#returned" when="1935-02-25">25</date>
+	  </ab>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-02-25">25</date>
+	    <bibl ana="#borrowedItem" corresp="mep:002t7z">
+	      <title>Portrait of a Lady</title>
+	    </bibl>
+	    <date ana="#returned" when="1935-03-18">Mar 18</date>
+	  </ab>
+
+	  <ab>
+	    Fines f17.50
+
+	    Renewed <date from="1935-02-15" to="1935-05-15">Feb 15 - May 15 1935</date> 65v
+	  </ab>
+
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-03-18"></date>
+	    <bibl ana="#borrowedItem" corresp="mep:000r12">
+	      <title>Pointed Roofs</title>
+	    </bibl>
+	    <date ana="#returned" when="1935-03-22">March 22</date>
+	  </ab>
+
+	  <note>
+	    <del>
+	      <bibl corresp="mep:002t88">
+		<title>House Divided</title>
+	      </bibl>
+	    </del>
+	  </note>
+
+	  <ab ana="#borrowingEvent">
+	    <date ana="#checkedOut" when="1935-03-18">March 18</date>
+	    <bibl ana="#borrowedItem" corresp="mep:00074v">
+	      <title>Eminent Victorians</title>
+	    </bibl>
+	    card
+	    <date ana="#returned" when="1935-03-22"></date>
+	  </ab>
+
+	</div>
+      </div>
+    </body>
+  </text>
 </TEI>
