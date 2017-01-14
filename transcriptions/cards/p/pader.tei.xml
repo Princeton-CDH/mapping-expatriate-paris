@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,19 +58,21 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
-                <date when="1940">1940</date>			<persName ref="pade">PADER
+                
+                <head><date when="1940">1940</date>			<persName ref="pade">PADER
                 				Madame</persName>
-                				<address><street>19 rue de l'Odeón</street></address>
+                				<address><street>19 rue de l'Odeón</street></address></head>
                 				
-                				
+
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1940-03-16"> March 16</date>
+                   <bibl corresp="mep:00mm5j"><title><del>Lothair</del></title></bibl>
+                   <bibl ana="#borrowedItem" corresp="mep:00gg0x"><title>Sybil</title></bibl>
+                   <date ana="#returned" when="1940-10-19">Oct 19</date>
+               </ab>
+                   
+                   <note>return photographic revue.</note>
                 
-                
-                
-               <date ana="#checkedOut" when="1940-03-16"> March 16</date>	<bibl ana="#borrowedItem" corresp="mep:00mm5j"><title>Lothair</title></bibl>
-                			<bibl ana="#borrowedItem" corresp="mep:00gg0x"><title>Sybil</title></bibl>							<date ana="#returned" when="1940-10-19">Oct 19</date>
-                	return photographic revue.
-                </ab>
                </div>
                <div type="verso"> 
                 <pb facs="#s2"/>
