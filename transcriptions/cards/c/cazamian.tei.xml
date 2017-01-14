@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -70,8 +72,12 @@
             			<settlement>Paris</settlement><district>14</district>
             			</address>
             	</head>
-            	<ab>
-            	<date ana="#checkedOut" when="1944-03-23">March 23</date>	<bibl ana="#borrowedItem"><title><persName>John Donne</persName></title>, <persName>Jessop</persName></bibl>		returned <date ana="#returned" when="1944-06">June</date>
+                    
+            	<ab ana="#borrowingEvent">
+            	<date ana="#checkedOut" when="1944-03-23">March 23</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:001w8k"><title><persName>John Donne</persName></title>, <persName>Jessop</persName></bibl>	
+                    <note>returned </note>
+                    <date ana="#returned" when="1944-06">June</date>
             	</ab>
             	</div>
                 <div type="verso">
