@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,13 +66,23 @@
                     
                     				                            Mme. Irene Massenet</persName>
                     </head>	
-                    <ab>
-                    <date when="1933-02-13">13 Feb</date>. 1m.	1v.		dep. 30f					12f
+                   
+                    <note><date when="1933-02-13">13 Feb</date>. 1m.	1v.		dep. 30f					12f</note>
+                    
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-02-13">13 Feb</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:009h6v"><title>Indian Monk</title></bibl> <note>(extra)</note>
+                    <date ana="#returned" when="1933-02-25">	25</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1933-02-13">13 Feb</date>		<bibl ana="#borrowedItem" corresp="mep:009h6v"><title>Indian Monk</title></bibl> (extra)			<date ana="#returned" when="1933-02-25">	25</date>
-                    <date ana="#checkedOut" when="1933-02-25">25	</date>		    <bibl ana="#borrowedItem" corresp="mep:000r2c"><title>Backwater</title></bibl>					<date ana="#returned" when="1933-02-27">	27</date>
-                    <date ana="#checkedOut" when="1933-02-27">27	</date>		    <bibl ana="#borrowedItem" corresp="mep:002c4f"><title>Lonely plough</title></bibl>				<date ana="#returned" when="1933-03-13">	13</date>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-02-25">25	</date>		  
+                    <bibl ana="#borrowedItem" corresp="mep:000r2c"><title>Backwater</title></bibl>	
+                    <date ana="#returned" when="1933-02-27">	27</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-02-27">27	</date>		 
+                    <bibl ana="#borrowedItem" corresp="mep:002c4f"><title>Lonely plough</title></bibl>	
+                    <date ana="#returned" when="1933-03-13">	13</date>
                     </ab>
                 </div> 
                 <div type="verso">
