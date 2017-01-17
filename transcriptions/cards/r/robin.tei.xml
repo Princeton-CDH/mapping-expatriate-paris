@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -75,16 +78,31 @@
                 
                 
                 
-                <ab>
-                <date ana="#checkedOut" when="1940-12-30">Dec 30</date>	<bibl ana="#borrowedItem" corresp="mep:00db5w"><title>Letters of Emily Dickinson</title></bibl>			<date ana="#returned" when="1941-10-18">Oct 18</date>
-                <date ana="#checkedOut" when="1940-12-30">	</date>	    <bibl ana="#borrowedItem" corresp="mep:00t248"><title>Poems of Emily Dickinson</title></bibl>           <date ana="#returned" when="1941-10-18">Oct 18</date>
-                <date ana="#checkedOut" when="1940-12-30">	</date>		<bibl ana="#borrowedItem" corresp="mep:00rb12"><title>Life &amp; Letters of Emily Dickinson</title></bibl> <date ana="#returned" when="1941-10-18">Oct 18</date>
-                			<persName ref="#beac.sy">SB</persName> sent pren <date when="1941-01-22">Jan 22nd</date>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-12-30">Dec 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00db5w"><title>Letters of Emily Dickinson</title></bibl>		
+                    <date ana="#returned" when="1941-10-18">Oct 18</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-12-30">	</date>	    
+                    <bibl ana="#borrowedItem" corresp="mep:00t248"><title>Poems of Emily Dickinson</title></bibl> 
+                    <date ana="#returned" when="1941-10-18">    </date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-12-30">	</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00rb12"><title>Life &amp; Letters of Emily Dickinson</title></bibl> 
+                    <date ana="#returned" when="1941-10-18">    </date>
+                </ab>
+                    
+                			<note><persName ref="#beac.sy">SB</persName> sent pren <date when="1941-01-22">Jan 22nd</date>
                 			with particulars re: Picard
                 <date when="1941-10-08">Oct 8</date>	asked <persName ref="#robi.ar">M Robin</persName> to return books now.
-                				all returned to AdL in a.m. <date when="1941-10-18">Oct 18 1941</date>
+                				all returned to AdL in a.m. <date when="1941-10-18">Oct 18 1941</date></note>
                 											
-                </ab>
+                
                 </div>
                 
                 <div type="verso">
