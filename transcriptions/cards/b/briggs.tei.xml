@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -451,30 +454,70 @@
                 		        <settlement>Bourrée</settlement><region>Loire et Cher</region>
                 		        </address>
                 </head>
-                <ab>
+                <note>
                 		  			1 yr					175
-                </ab>		  			
-                <ab>
-                <date when="1935-11-17">Nov 17</date>	I change Worlds					B.B. <date when="1936-02-03">Feb.3.</date>
-                <date when="1935-11-27">Nov 27</date>	Crock of gold						<date when="1935-11-28">28 Nov.</date>
-                <date when="1936">1936</date>
-                <date when="1936-06-30">June 30</date>	Oil for The Lamps of China		<date when="1936-07-30">July 30</date>
-                <date when="1936-06-30"> "	 30</date>	Asia Refoun							 ?
-                <date when="1936-06-30"> "	 30</date>	My Fight for Birth Control _ _	<date when="1936-07-08">July 8</date>
-                 		  (loaned to Mrs Keene)
-                 		  	<address>
-                 		  	   <street>8 ave Emile Acollas</street>
-                 		  	</address>
-                 		sent p.c. for Oil for the Lamps of China
-                 			<date when="1936-07-29">July 29</date>.
+                </note>		  			
                 
-                <date when="1937">1937</date>
-                
-                <date when="1937-07-27">July.27.</date>	Goodman of Paris.			<date when="1937-10-04">Oct 4</date>
-                <date when="1937-07-27">	</date>		Medieval People				<date when="1937-10-04">Oct 4</date>
-                <date when="1938-01-31">Jan 31</date>	Tail of a Comet 	<date when="1940-08">Aug 1940</date>
-                						<note>SB found in apartment <address><street>Bd Suchet</street></address></note>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-11-17">Nov 17</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bv6v"><title>I change Worlds</title></bibl>					
+                    <note>B.B.<date when="1936-02-03">Feb.3.</date></note>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-11-27">Nov 27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00094d"><title>Crock of gold</title></bibl>						
+                    <date ana="#returned" when="1935-11-28">28 Nov.</date>
+                </ab>
+                    
+                <note><date when="1936">1936</date></note>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-06-30">June 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002984"><title>Oil for The Lamps of China</title></bibl>		
+                    <date ana="#returned" when="1936-07-30">July 30</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-06-30"> "	 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:005w77"><title>Asia Reborn</title></bibl>			
+                    <note>?</note>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-06-30"> "	 30</date>	
+                    <bibl ana="#borrowedItem" corresp=""><title>My Fight for Birth Control</title></bibl> _ _	
+                    <date when="1936-07-08">July 8</date>
+                    <note>(loaned to Mrs Keene)
+                        <address>
+                            <street>8 ave Emile Acollas</street>
+                        </address></note>
+                </ab>
+                    
+                    <note>sent p.c. for <bibl corresp="mep:002984"><title>Oil for the Lamps of China</title></bibl>
+                 			<date when="1936-07-29">July 29</date>.</note>
+                
+                <note><date when="1937">1937</date></note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-07-27">July.27.</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:004c4x"><title>Goodman of Paris.</title></bibl>			
+                    <date ana="#returned" when="1937-10-04">Oct 4</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-07-27">	</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00r000"><title>Medieval People</title></bibl>				
+                    <date ana="#returned" when="1937-10-04">Oct 4</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-01-31">Jan 31</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00cv2v"><title>Tail of a Comet</title></bibl> 	
+                    <date ana="#returned" when="1940-08">Aug 1940</date>
+                    <note>SB found in apartment <address><street>Bd Suchet</street></address></note>
+                </ab>
+                    
                 </div>
             
                 <div type="verso">
