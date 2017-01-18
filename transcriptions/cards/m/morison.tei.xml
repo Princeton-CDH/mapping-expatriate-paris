@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -62,18 +65,32 @@
                 			<street>rue de la Sorbonne</street></address></head>
                 			
                 			
-                	<ab>			6 mos	1 v				50</ab>
+                	<note>			6 mos	1 v				50</note>
                 				
                 				
-       <ab>         				
-                <date ana="#checkedOut" when="1934-09-19">Sept 19</date>		<bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>					<date ana="#returned" when="1934-10-01">1 Oct</date>
+                				
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-09-19">Sept 19</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>
+                    <date ana="#returned" when="1934-10-01">1 Oct</date>
+                </ab>
                 
-                			<date ana="#checkedOut" when="1934-09-26">26</date> <bibl ana="#borrowedItem" corresp="mep:00np88"><title>Poverty in Cambridgeshire</title></bibl>			61.50
-                			<date ana="#checkedOut" when="1934-09-27">27</date> (arr.) <bibl ana="#borrowedItem" corresp="mep:00np9k"><title>National Stories and National
-                					Minorities</title>, <author>C.A. Macartney</author></bibl>		78
-                												   139.50
-                						paid by cheque <date ana="#returned" when="1934-10-02">Oct 2</date>
-               </ab> </div>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-09-26">26</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:00np88"><title>Poverty in Cambridgeshire</title></bibl>	
+                    <note>61.50</note>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-09-27">27</date> 
+                    (arr.) <bibl ana="#borrowedItem" corresp="mep:00np9k"><title>National Stories and National Minorities</title>, 
+                        <author>C.A. Macartney</author></bibl>		
+                    <note>78</note>
+                </ab>
+                
+                <note>paid by cheque <date when="1934-10-02">Oct 2</date> 139.50</note>
+                
+                </div>
            <div type="verso">     <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
