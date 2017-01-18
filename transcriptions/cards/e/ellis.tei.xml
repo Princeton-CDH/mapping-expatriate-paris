@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -223,7 +225,7 @@
                
                
               "		"
-                                        <date when="1928-03-13">March 13 </date> M. Gauthier		 	 44,00
+                                        <date when="1928-03-13">March 13 </date> <persName>M. Gauthier	</persName>	 	 44,00
                                         <date when="1928-04-18">April 18 </date> Librairie Française	  9,60
                 			brought 3 v 1
                 					6	3
@@ -256,7 +258,7 @@
                 	    							- 40% -			$	1688
                 	    	
                 	    	
-                	    	M. Gauthier, Librairie Française
+                	    	<persName>M. Gauthier</persName>, Librairie Française
                 	    	bought
                 	    3   vol	I
                 	    6	vol III
@@ -284,12 +286,12 @@
                                     <date when="1926-07-10">July 10</date> (Eisendrath) vol 3			120
                 						 vol 6 ($3.00)	105
                 						 
-                						 paid Davis
+                						 paid <persName>Davis</persName>
                 						 
-                                    <date when="1927">1927</date>
-                                    <date ana="#checkedOut" when="1927-02-14">Feb 14</date><bibl ana="#borrowedItem" corresp="mep:00jr9d"><title>Les Editions de France <unclear/></title></bibl>
+                                    <note><date when="1927">1927</date>
+                                    <date when="1927-02-14">Feb 14</date><bibl corresp="mep:00jr9d"><title>Les Editions de France <unclear/></title></bibl><!-- crossed out --></note>
                                   
-                                    <date ana="#returned" when="1927-06-25">June 25</date>1 vol I 3	80
+                                    <date  when="1927-06-25">June 25</date>1 vol I 3	80
                 		-	1 vol. II	3			80
                                     <date when="1927-06-28">June 28</date>1 vol. VI.	4		   108
                                     <date when="1927-07-11">July 11</date>1 vol. VI.  4		   108.
@@ -332,7 +334,7 @@
                            <date when="1900-02-24">Feb 24</date>vol 6	108 25% (Editions de France) 81
                            <date when="1900-03-17">March 17</date> 1 set (Brentano's)					381
                            <date when="1900-03-07">March 07</date>1 vol II (Le Saudier)				 60  paid
-                												 Davis
+                												 <persName>Davis</persName>
                            <date when="1900-04-21">April 21</date> 1 set Brentano's					381
             
             	
@@ -388,13 +390,13 @@
             	    
             	        <ab>
             	    
-            								Paid_	owe Davis
+            								Paid_	owe <persName>Davis</persName>
             								by customers
             	
             	            <date when="1900">1900</date>
-            	            <date ana="#checkedOut" when="1900-10-19">Oct 19</date><bibl ana="#borrowedItem" corresp="mep:00js0w"><title>Le Soldier</title></bibl> v III	Frs 60 $ 1,80
+            	            <date  when="1900-10-19">Oct 19</date><bibl  corresp="mep:00js0w"><title>Le Soldier</title></bibl> v III	Frs 60 $ 1,80
             			"	"		 IV			60_  1 80
-            	            <date ana="#returned" when="1900-11-14">Nov 14</date>"	"	  vo VI			81_	 2.40
+            	            <date  when="1900-11-14">Nov 14</date>"	"	  vo VI			81_	 2.40
             
             	            <date when="1928">1928</date>
             	            <date when="1928-01-18">Jan 18</date>	Brentano 1set		   381- 11 40
@@ -510,7 +512,7 @@
             		<pb facs="#s27"/>
             	   
             	        <ab>
-            	Full Price					Pay Davis
+            	Full Price					Pay <persName>Davis</persName>
             	per set		$19		40%			$11.40
             	per vol		$ 3					$ 1.80
             	(except vol VI)
