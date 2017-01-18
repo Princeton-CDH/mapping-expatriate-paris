@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -76,17 +78,29 @@
                 			<street>25 quai l'Anjou</street>
                 			</address>
                 </head>
-                <ab>
-                			3 mos 1 v			50
-                					dep			50
-                </ab>
-                <ab>
-                <date ana="#checkedOut" when="1941-07-16">July 16</date>		<bibl ana="#borrowedItem" corresp="mep:001m2h"><title>Bridge of San Luis Rey</title></bibl>			<date ana="#returned" when="1941-07-25">July 25</date>
-                <date ana="#checkedOut" when="1941-07-25">July 25</date>		<bibl ana="#borrowedItem" corresp="mep:00cc8v"><title>Life of Charlotte Bronte</title>, <persName>gaskell</persName></bibl> <date ana="#returned" when="1941-10-09">Oct 9</date>
-                	still has to <date when="1941-11-16">Nov. 16. 1941</date>, as it was <unclear/> in <date when="1941-08">Aug</date> 
-                <date ana="#checkedOut" when="1941-10-09">Oct 9</date>		<bibl ana="#borrowedItem" corresp="mep:00j28k"><title>Common people</title></bibl>					<date ana="#returned" when="1941-12-10">Dec. 10</date>
-                		left dep. will renew later
-                </ab>
+                
+                			<note>3 mos 1 v			50
+                					dep			50</note>
+                
+             <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-07-16">July 16</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:001m2h"><title>Bridge of San Luis Rey</title></bibl>		
+                    <date ana="#returned" when="1941-07-25">July 25</date>
+                  </ab>  
+                    <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-07-25">July 25</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00cc8v"><title>Life of Charlotte Bronte</title>, <persName>gaskell</persName></bibl> 
+                    <date ana="#returned" when="1941-10-09">Oct 9</date>
+                	</ab>
+                	<note>still has to <date when="1941-11-16">Nov. 16. 1941</date>, as it was <unclear/> in <date when="1941-08">Aug</date> </note>
+               <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-10-09">Oct 9</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00j28k"><title>Common people</title></bibl>				
+                    <date ana="#returned" when="1941-12-10">Dec. 10</date>
+                	
+               </ab> 	
+                    <note>left dep. will renew later
+                </note>
                 </div>
                 
                 <div type="verso">
