@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -69,10 +72,21 @@
                 <head><date when="1932">1932</date>		<persName ref="#meli">MELIK</persName>
                 			<persName ref="#meli">Monsieur Melik</persName></head>
                 			
-                			<ab>	free subscription </ab>
+                			<note>	free subscription </note>
                 
-          <ab>     <date ana="#checkedOut" when="1932-03-22"> March 22</date> <bibl ana="#borrowedItem" corresp="mep:001d7d"><title>Sacred Wood</title></bibl>		returned
-                		<bibl ana="#borrowedItem" corresp="mep:009b83"><title>Dante</title></bibl>				to <persName>MlF</persName></ab>
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1932-03-22"> March 22</date> 
+                   <bibl ana="#borrowedItem" corresp="mep:001d7d"><title>Sacred Wood</title></bibl>
+                   <date ana="#returned" notBefore="1932-03-22">  </date>
+                   <note>returned to <persName>MlF</persName></note>
+               </ab>
+                   
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1932-03-22">   </date>
+                   <bibl ana="#borrowedItem" corresp="mep:009b83"><title>Dante</title></bibl>	
+                   <date ana="#returned" notBefore="1932-03-22">  </date>
+               </ab>
+                   
               </div>  <div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank -->
