@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -71,17 +74,38 @@
                 			<street>6. Rue de Verneuil</street><district>VIe</district>
                 			</address>
                 </head>
-                <ab>
-                		2 mos.	2 vols					19 20
-                		
-                <date ana="#checkedOut" when="1900-05-28">May 28</date>		<bibl ana="#borrowedItem" corresp="mep:00bk0s"><title>Shelley</title> (<publisher>Oxford</publisher>)</bibl>		BB
-                 <date ana="#checkedOut" when="1900-05-28">	</date>		    <bibl ana="#borrowedItem" corresp="mep:000v26"><title>Blake</title>(<publisher> "  </publisher>)</bibl> 	     <date ana="#returned" when="1900-06-25">Jun 25th</date>
-                											                                 
-                <date ana="#checkedOut" when="1900-06-29">June 29</date>		<bibl ana="#borrowedItem" corresp="mep:00gw4g"><title>Some Contemporary Poets</title></bibl>			Sent a p.c.
                 
-                <date ana="#checkedOut" when="1900-09-09">Sept 9th</date>	    <bibl ana="#borrowedItem" corresp="mep:009p95"><title>The Portrait of the Artist as a Young Man</title></bibl>.  given to <persName>Joyce</persName>
-                											  
+                		<note>2 mos.	2 vols					19 20</note>
+                		
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-05-28">May 28</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00bk0s"><title>Shelley</title>
+                        (<publisher>Oxford</publisher>)</bibl>		
+                    <note>BB</note>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-05-28">	</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000v26"><title>Blake</title>
+                        (<publisher> "  </publisher>)</bibl>
+                    <note>BB</note>
+                </ab>
+                    
+                    <note><date when="1900-06-25">Jun 25th</date>Sent a p.c.</note>
+                											                                 
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-06-29">June 29</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00gw4g"><title>Some Contemporary Poets</title></bibl>	
+                    <note>BB</note>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-09-09">Sept 9th</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:009p95"><title>The Portrait of the Artist as a Young Man</title></bibl>.
+                    <note>given to <persName>Joyce</persName></note>
+                </ab>
+                    
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
