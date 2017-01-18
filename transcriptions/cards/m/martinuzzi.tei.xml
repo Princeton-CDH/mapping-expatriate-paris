@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,14 +71,36 @@
                 				<address><street>108 Bd Berthier</street> <district>17e</district></address></head>
                 			
                 			
-              <ab>  			3 m 1 vol			100
-                			Deposit				 50
+                	   <note>3 m 1 vol			100
+                			Deposit				 50</note>
                 
-                <date ana="#checkedOut" when="1930-11-03">Nov 3</date>	<bibl ana="#borrowedItem" corresp="mep:007t47"><title>First Plays A Milne</title></bibl>			<date ana="#returned" when="1930-11-07">Nov 7</date>
-                <date ana="#checkedOut" when="1930-11-07">"	7</date>	<bibl ana="#borrowedItem" corresp="mep:00433d"><title>Cake and Ale</title></bibl>				<date ana="#returned" when="1930-11-19">Nov. 19.</date>
-                <date ana="#checkedOut" when="1930-11-19">"	19</date>	<bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage</title></bibl> .6 = 2.50	<date ana="#returned" when="1930-12-08">Dec 8_</date>
-                <date ana="#checkedOut" when="1930-12-08">Dec 8</date>	<bibl ana="#borrowedItem" corresp="mep:005m9n"><title>Books + Characters lost.</title></bibl> 87.50
-                		interrupted 	ask 70</ab></div>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1930-11-03">Nov 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:007t47"><title>First Plays A Milne</title></bibl>	
+                    <date ana="#returned" when="1930-11-07">Nov 7</date>
+                </ab>
+                   
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1930-11-07">"	7</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00433d"><title>Cake and Ale</title></bibl>
+                    <date ana="#returned" when="1930-11-19">Nov. 19.</date>
+                </ab>
+                   
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1930-11-19">"	19</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage</title></bibl> 
+                    <note>.6 = 2.50</note>	
+                    <date ana="#returned" when="1930-12-08">Dec 8_</date>
+                </ab>
+                   
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1930-12-08">Dec 8</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:005m9n"><title>Books + Characters</title></bibl> 
+                    <note>lost. 87.50</note>
+                </ab>
+                   
+                		<note>interrupted 	ask 70</note>
+               </div>
                 
               <div type="verso">  <pb facs="#s2"/>
                 <!-- verso blank --></div></div>
