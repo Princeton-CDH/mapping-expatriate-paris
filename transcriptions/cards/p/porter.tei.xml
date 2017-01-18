@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,20 +58,36 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
-                <date when="1932">1932</date>	
+                
+                <head><date when="1932">1932</date>	
                 			<persName ref="port.ka">Mrs Katherine Anne Porter</persName>
-                			<address><orgName>Hotel Malherbe</orgName></address>
+                			<address><orgName>Hotel Malherbe</orgName></address></head>
                 			
                 			
                 				
-                				no charge
+                				<note>no charge</note>
                 				
-                <date ana="#checkedOut" when="1932-01-03">Jan 3</date>		<bibl ana="#borrowedItem" corresp="mep:00pv7k"><title>Mrs Piozzi &amp; Dr Johnson</title></bibl>		<date ana="#checkedOut" when="1932-01-04">4 Jan.</date>
-                			<bibl ana="#borrowedItem" corresp="mep:00pv8w"><title>Mary Wllstonecraft	</title></bibl>		<date ana="#returned" when="1932-01-14">14 "</date>
-               <date ana="#checkedOut" when="1932-02-08"> 8 Feb</date> 	not paid 18f <bibl ana="#borrowedItem" corresp="mep:004k5w"><title>Garden Party</title></bibl>
-            	<date ana="#checkedOut" when="1932-03-03">3 March	</date>	<bibl ana="#borrowedItem" corresp="mep:00169c"><title>Laurence Letters	</title></bibl>		<date ana="#returned" when="1932-03-08">8 March</date>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-01-03">Jan 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00pv7k"><title>Mrs Piozzi &amp; Dr Johnson</title></bibl>	
+                    <date ana="#returned" when="1932-01-04">4 Jan.</date>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-01-03">   </date>
+                    <bibl ana="#borrowedItem" corresp="mep:00pv8w"><title>Mary Wollstonecraft	</title></bibl>
+                    <date ana="#returned" when="1932-01-14">14 "</date>
+                </ab>
+                    
+               <note><date when="1932-02-08"> 8 Feb</date> 	
+                   <del>not paid 18f</del> <bibl corresp="mep:004k5w"><title><del>Garden Party</del></title></bibl></note>
+                    
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1932-03-03">3 March	</date>
+            	    <bibl ana="#borrowedItem" corresp="mep:00169c"><title>Laurence Letters	</title></bibl>	
+            	    <date ana="#returned" when="1932-03-08">8 March</date>
+            	</ab>
+                    
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
