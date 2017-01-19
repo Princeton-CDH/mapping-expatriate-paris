@@ -155,16 +155,17 @@ facility. Ant can also be installed via [homebrew](http://brew.sh) with the comm
 After cloning this repository, you must edit the build.xml file to match your
 system before running ant on it. See below for what needs changing.
 
-Next, launch the eXist server by double-clicking on (on a Mac) eXist-db.app
+Next, launch the eXist server. On a Mac, you do this by double-clicking on the eXist-db.app
 where you installed it. A splash screen will appear. 
 
-Now, in the terminal, change to the db directory in this repository (where the edited build.xml file is), and run
+Finally, in the terminal, change to the db/ directory in this repository (where the edited build.xml file is), and run
 
 `ant install`
 
-Now you can point your browser to `localhost:8080` (assuming defaults), where
-you can login with the admin username and password. Under the “Collections”
-button, a collection called “mep-data” should appear. That holds this data.
+The database is now installed, which means that you can point your browser to
+`localhost:8080` (assuming defaults), where you can login with the admin
+username and password. Under the “Collections” button, a collection called
+“mep-data” should appear. That holds this data.
 
 Known Issues/Customization Points
 =================================
@@ -174,5 +175,5 @@ You *must* customize build.xml before using ant to import MEP data into eXist.
 -   change the property `eXist_home` to the location of your
     exist installation, which was set when running the setup.jar above. On a Mac, this could be /Applications/eXist-db.
 -   change the xmldb.\* properties to match your installation. `xmldb.passwd` will certainly have to be changed to whatever you set the admin password to while running the setup.jar.
--   change the `approot` property to match your installation. This is the root directory of this repository, so /something/something/mapping-expatriate-paris, most likely. If you do not know the full path, run `pwd` at the command line.
+-   change the `approot` property to match your installation. This is the root directory of this repository, so /some/path/to/mapping-expatriate-paris, most likely. If you do not know the full path, run `pwd` at the command line.
 
