@@ -64,13 +64,25 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                   <ab><date when="1958">1958</date><address>	<persName ref="greg.pa">Gregory, Patrick</persName>
-               			<street>12 Villa Guibert</street> <district>XVI</district></address>
-                
-                <date ana="#checkedOut" when="1958-06-30">June 30</date>	<bibl ana="#borrowedItem"><time>The Doors of Perception</time></bibl>, <bibl ana="#borrowedItem"><author>Huxley</author></bibl>
-                		<bibl ana="#borrowedItem" corresp="mep:00kf4m"><title>Les Paradis artificials</title></bibl>, <bibl ana="#borrowedItem"><author>Dr Louis Lewis Payot 1928</author></bibl>
-                		<bibl ana="#borrowedItem" corresp="mep:007q05"><title>Tarr</title></bibl></ab>
-                </div>
+                   <head><date when="1958">1958</date><address>	<persName ref="greg.pa">Gregory, Patrick</persName>
+               			<street>12 Villa Guibert</street> <district>XVI</district></address></head>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1958-06-30">June 30</date>	
+                       <bibl ana="#borrowedItem"><title>The Doors of Perception</title>, 
+                  <author>Huxley</author></bibl>
+                   </ab>    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1958-06-30"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:00kf4m"><title>Les Paradis artificials</title>, 
+                       <author>Dr Louis Lewis Payot 1928</author></bibl>
+                       
+                   </ab>    
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1958-06-30">June 30</date>
+                		<bibl ana="#borrowedItem" corresp="mep:007q05"><title>Tarr</title></bibl>
+                </ab>
+               
+               </div>
                 <div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank -->
