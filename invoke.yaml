@@ -1,0 +1,20 @@
+debug: true
+xml_validation:
+  cards:
+    files:
+      - transcriptions/cards/*/*.tei.xml
+    xsd: schemas/libcards.xsd
+  cards-schematron:
+    files:
+      - transcriptions/cards/*/*.tei.xml
+    schematron: schemas/libcards.sch
+  logbooks:
+    files:
+      - transcriptions/logbooks/*.xml
+    xsd: schemas/beachLogs.xsd
+  # FIXME: the build can't handle the personography schema due to
+  # this bug https://bugzilla.gnome.org/show_bug.cgi?id=573483
+  # personography:
+  #   files:
+  #     - transcriptions/personography.xml
+  #   xsd: schemas/personography.xsd
