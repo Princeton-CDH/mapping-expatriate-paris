@@ -1,5 +1,6 @@
-Description of Project
-======================
+# Description of Project
+
+[![Build Status](https://travis-ci.org/Princeton-CDH/mapping-expatriate-paris.svg?branch=feature/data-build)](https://travis-ci.org/Princeton-CDH/mapping-expatriate-paris)
 
 [Mapping Expatriate Paris](http://mep.princeton.edu/) (MEP) is a digital
 humanities project, sponsored by the [Center for Digital Humanities at
@@ -25,46 +26,42 @@ image files are not available for download; see the
 [finding aid](http://findingaids.princeton.edu/collections/C0108/) for
 more information about access to the primary materials.
 
-Repository Organization
-=======================
+# Repository Organization
 
-transcriptions/
----------------
+## transcriptions/
 
 The primary assets in this repository are the TEI-encoded transcriptions
 of the lending-library cards and the subscription logs, and the
 personography file. They can all be found in the `transcriptions/`
 directory.
 
-### cards/
+## cards/
 
 The encodings of the cards were made by members of the MEP project from
 diplomatic transcriptions of the original documents (see `raw/` below).
 The encoded files are arranged alphabetically in sub-directories,
 corresponding with the diplomatic transcriptions in `raw/`.
 
-### logbooks/
+## logbooks/
 
 Contains encodings of Beach's subscription logbooks from 1919 through
 1941. Each logbook is encoded in a single file whose name indicates
 the year of the source document. (*NB* Some of the logbook files are
 empty stubs; we have not encoded all of them yet.)
 
-### other transcriptions
+## other transcriptions
 
-#### personography.xml
+### personography.xml
 
 A TEI-encoded file that captures full names, addresses, and other
 information about library subscribers using the &lt;person&gt; element.
 
-#### notebook.xml
+### notebook.xml
 
 Beach kept subscription information in several forms. This file is a
 simplified, tabular capture of data found in an address book: [Addresses, Subscribers before 1936 Summer (Box 69, folder 4)](http://findingaids.princeton.edu/collections/C0108/c02210)
 
-
-raw/
-----
+## raw/
 
 The raw transcriptions of the cards were made by members of the MEP
 project from the original documents and from high-resolution images
@@ -72,8 +69,7 @@ produced by Princeton University Library. They are arranged
 alphabetically in sub-directories, corresponding with the arrangement of
 the digital images.
 
-schemas
--------
+## schemas
 
 The encoding follows the guidelines of the [Text Encoding
 Initiative](http://www.tei-c.org). As advocated by the TEI, we have
@@ -86,7 +82,7 @@ The ODD files formally defining the schema, the schemas themselves
 HTML files describing the schema in human-readable form, are included in
 the `schemas/` directory at the top of this repository.
 
-### Library Cards
+## Library Cards
 
 The schema file is libcards.rnc.
 
@@ -97,7 +93,7 @@ The major encoded elements are as follows:
 -   addresses
 -   bibliographic titles
 
-### Log Books
+## Log Books
 
 The schema file is beachLogs.rnc.
 
@@ -108,38 +104,28 @@ The major encoded elements are as follows:
 -  events
 -  measures (duration, frequency, price, deposit)
 
-### Personography
+## Personography
 
 The schema file is personography.rnc
 
 The major encoded elements are *persons*, arranged in two *listPerson* elements, one for subscribers, and one for other persons of interest (especially those mentioned on cards).
 
-db/
----
+## db/
 
 Contains files to support the loading of MEP data into an eXist XML
 database.
 
-### collection.xconf
-
-Standard file declaring indexes to be defined on the MEP collection.
-
-### build.xml
-
-An [ant](http://ant.apache.org/) file that may be used to load MEP data into an eXist database. It
+- **collection.xconf** - Standard file declaring indexes to be defined on the MEP collection.
+- **build.xml** - An [ant](http://ant.apache.org/) file that may be used to load MEP data into an eXist database. It
 will require customization before it may be used (see below).
 
-Installation and Dependency Information
-=======================================
+# Installation and Dependency Information
 
-
-Importing data into eXist using ant tasks
------------------------------------------
+## Importing data into eXist using ant tasks
 
 You may use a variety of methods to import MEP data into eXist.  The
 easiest method is to use Apache Ant and the build.xml file included in
 the db/ directory.
-
 
 You must have [Apache Ant](http://ant.apache.org/) 1.9.7 or greater installed to use this
 facility. (It is known to work on [Mac OS X 10.11](http://www.apple.com/osx/) with [eXist 3.0RC](https://bintray.com/existdb/releases/exist/3.0.RC1/view/files#files/))
@@ -149,8 +135,7 @@ Customize build.xml as outlined below.  Then, from the command line, run
 `ant install`
 
 
-Known Issues/Customization Points
-=================================
+## Known Issues/Customization Points
 
 You *must* customize build.xml before using ant to import MEP data into eXist.
 
