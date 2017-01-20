@@ -144,3 +144,22 @@ You *must* customize build.xml before using ant to import MEP data into eXist.
 -   change the xmldb.\* properties to match your installation
 -   change the approot property to match your installation
 
+
+## Python data build
+
+This project includes a Python data that uses [invoke](http://pyinvoke.org)
+to run xml validation.
+
+Install python dependencies:
+
+  `pip install -r requirements.txt`
+
+The files to be validated, along with and schemas and schematron files for
+each set of files, are configured in `invoke.yaml`.
+
+To run, use the invoke `validate_xml` task.  To see validation details,
+run with the verbose flag `-v`:
+
+  `invoke validate_xml`
+
+
