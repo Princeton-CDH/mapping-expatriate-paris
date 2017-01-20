@@ -8,7 +8,7 @@
     TEI Edition: Version 2.8.0. Last updated on
     	6th April 2015, revision 13197
     TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
-    
+
   -->
   <!-- TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the TEI Consortium (info@tei-c.org). -->
   <xs:complexType name="macro.paraContent" mixed="true">
@@ -199,8 +199,13 @@
   </xs:simpleType>
   <xs:group name="macro.anyXML">
     <xs:choice>
+      <!-- adjusted to work around a validation bug in libxml2:
+        https://bugzilla.gnome.org/show_bug.cgi?id=573483 -->
+      <xs:any namespace="##any"/> <!-- processContents="skip"/> needed? -->
+      <!--
       <xs:any namespace="##other" processContents="skip"/>
       <xs:any namespace="##local" processContents="skip"/>
+      -->
     </xs:choice>
   </xs:group>
   <xs:group name="macro.schemaPattern">
