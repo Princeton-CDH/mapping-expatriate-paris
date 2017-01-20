@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -60,20 +62,41 @@
                 
                 Mr. Jean</persName>	<address><street>13 rue de La Cerisaie</street>	<district>-	4e.</district></address>
                 </head>
-                <ab>
-                			1m.	1v.					15.00.
-                						Deposit		30
-                					refunded <date when="1937-03-13">Mar 13</date></ab><ab>
-                <date ana="#checkedOut" when="1937-02-13">Feb 13</date>	<bibl ana="#borrowedItem" corresp="mep:00jd15"><title>Poets and Their Art</title></bibl>			<date ana="#returned" when="1937-02-16">Feb 16</date>
-                	<date ana="#checkedOut" when="1937-02-16">16</date>	<bibl ana="#borrowedItem" corresp="mep:00470k"><title>Selected Poems.</title> <author>Sandburg</author>.</bibl>	<date ana="#returned" when="1937-03-06">Mar. 6</date>
-                	<date ana="#checkedOut" when="1937-03-06">6.</date>	<bibl ana="#borrowedItem" corresp="mep:00hd55"><title>Thurso's Landing.</title></bibl>			<date ana="#returned" when="1937-03-10">Mar. 10</date>
-                	<date ana="#checkedOut" when="1937-03-10">10.</date>	<bibl ana="#borrowedItem" corresp="mep:00c93r"><title>Enjoyment of Poetry.</title></bibl>		<date ana="#returned" when="1937-03-13">March 13</date>
-                	
-                			sent p.c. <date ana="#checkedOut" when="1937-03-30">March 30th.</date> to say
-                	<bibl ana="#borrowedItem" corresp="mep:00mx51">autobiography of Edgar Lee Masters
+               
+                			<note>1m.	1v.					15.00.
+                						Deposit		30</note>
+                
+                					<note>refunded <date when="1937-03-13">Mar 13</date></note>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-02-13">Feb 13</date>
+                <bibl ana="#borrowedItem" corresp="mep:00jd15"><title>Poets and Their Art</title></bibl>
+                <date ana="#returned" when="1937-02-16">Feb 16</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-02-16">16</date>
+                <bibl ana="#borrowedItem" corresp="mep:00470k"><title>Selected Poems.</title> <author>Sandburg</author>.</bibl>
+                <date ana="#returned" when="1937-03-06">Mar. 6</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-03-06">6.</date>	
+                <bibl ana="#borrowedItem" corresp="mep:00hd55"><title>Thurso's Landing.</title></bibl>		
+                <date ana="#returned" when="1937-03-10">Mar. 10</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-03-10">10.</date>	
+                <bibl ana="#borrowedItem" corresp="mep:00c93r"><title>Enjoyment of Poetry.</title></bibl>		
+                <date ana="#returned" when="1937-03-13">March 13</date>
+                </ab>	
+                
+                			<note>sent p.c.
+                <date when="1937-03-30">March 30th.</date> to say
+                
+                <bibl corresp="mep:00mx51">autobiography of Edgar Lee Masters
                   <title>"	Across Spoon River "</title></bibl> is arrived.
-                  To keep aside one week.</ab>
-                </div>
+                
+                To keep aside one week.
+                </note>
+            </div>
                <div type="verso"> <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
