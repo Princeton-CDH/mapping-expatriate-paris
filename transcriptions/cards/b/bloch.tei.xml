@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -32,7 +35,7 @@
         <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
       </textClass>
       <particDesc>
-	<persName role="cardholder" ana="#bloc.ma">Marguerite Bloch</persName>
+	<person role="cardholder" ana="#bloc.ma"><persName>Marguerite Bloch</persName></person>
       </particDesc>
     </profileDesc>
         <revisionDesc>
@@ -71,19 +74,49 @@
                 to <date when="1933-02-05">5 Feb. '33</date>	 
                                                            <address><street>73 quai d'Orsay</street></address>
                 </head>
-                <ab>
+                <note>
                 			3 mo. 1 vol. 		dep 50		65 -
+                </note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-11-05">5 Nov.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001j38"><title>American Tragedy</title></bibl>	
+                    <date ana="#returned" when="1932-11-14">14 Nov.</date>
                 </ab>
-                <ab>
-                <date ana="#checkedOut" when="1932-11-05">5 Nov.</date> 		<bibl ana="#borrowedItem"><title>American Tragedy</title></bibl>			<date ana="#returned" when="1932-11-14">14 Nov.</date>
-                <date ana="#checkedOut" when="1932-11-14">14 Nov.</date>		<bibl ana="#borrowedItem"><title>Waves</title></bibl>						<date ana="#returned" when="1932-11-25">25  "</date>
-                <date ana="#checkedOut" when="1932-11-25">25	"</date>		<bibl ana="#borrowedItem"><title>Death Comes for the Archbishop</title></bibl>	<date ana="#returned" when="1932-12-03">3 Dec</date>
-                <date ana="#checkedOut" when="1932-12-03">3 Dec</date>		<bibl ana="#borrowedItem"><title>Aaron's Rod</title></bibl>					<date ana="#returned" when="1932-12-22">22 "</date>
-                <date ana="#checkedOut" when="1932-12-23">23	</date>		    <bibl ana="#borrowedItem"><title>Mainstreet</title></bibl>	owes <unclear/> 2.50 card <date when="1933-02-02">2 Feb</date> <date when="1933-02-07">7 Feb</date>
-                <date ana="#checkedOut" when="1933-02-07">7 Feb</date>		<bibl ana="#borrowedItem"><title>Return I dare not</title></bibl> owes 15f + 2.50 <unclear/>
-                							card <date when="1933-03-02">2 March</date> = 17f overdue
-                											                                         nobooks!
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-11-14">14 Nov.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002c8p"><title>Waves</title></bibl>	
+                    <date ana="#returned" when="1932-11-25">25  "</date>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-11-25">25	"</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002f40"><title>Death Comes for the Archbishop</title></bibl>
+                    <date ana="#returned" when="1932-12-03">3 Dec</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-12-03">3 Dec</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000q4q"><title>Aaron's Rod</title></bibl>	
+                    <date ana="#returned" when="1932-12-22">22 "</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-12-23">23	</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002f59"><title>Mainstreet</title></bibl>	
+                    <note>owes <unclear/> 2.50 card <date when="1933-02-02">2 Feb</date></note>
+                    <date ana="#returned" when="1933-02-07">7 Feb</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-02-07">7 Feb</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002f6m"><title>Return I dare not</title></bibl> 
+                    <note>owes 15f + 2.50 <unclear/></note>
+                    <note>card <date when="1933-03-02">2 March</date> = 17f overdue nobooks!</note>
+                </ab>
+                    
+                
                 </div>
                 
                 <div type="verso">
