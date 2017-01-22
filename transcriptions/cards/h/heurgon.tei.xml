@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -81,11 +84,26 @@
                				</address>
                					3 m						40,00
                	</head>
-               	<ab>
-               	<date ana="#checkedOut" when="1935-06-17">June 17</date>	<bibl ana="#borrowedItem" corresp="mep:004815"><title>Characters &amp; Commentaries</title></bibl>	   <date ana="#returned" when="1935-07-03">3</date>
-               	<date ana="#checkedOut" when="1935-07-03">3 July</date>	<bibl ana="#borrowedItem" corresp="mep:008n15"><title>Hist. of England.</title> <persName>Trevelyan</persName></bibl>		   <date ana="#returned" when="1935-09-03">3 Sept.</date>
-               	<date ana="#checkedOut" when="1935-09-03">3 Sept.</date>	<bibl ana="#borrowedItem" corresp="mep:00s68c"><persName>Curzon</persName> <title>Last phase</title></bibl>				   <date ana="#returned" when="1935-09-27">27	"</date>
+               	
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1935-06-17">June 17</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:004815"><title>Characters &amp; Commentaries</title></bibl>
+               	    <date ana="#returned" when="1935-07-03">3</date>
                	</ab>
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1935-07-03">3 July</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:008n15"><title>Hist. of England.</title> 
+               	        <persName>Trevelyan</persName></bibl>	
+               	    <date ana="#returned" when="1935-09-03">3 Sept.</date>
+               	</ab>
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1935-09-03">3 Sept.</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:00s68c"><persName>Curzon</persName> <title>Last phase</title></bibl>	
+               	    <date ana="#returned" when="1935-09-27">27	"</date>
+               	</ab>
+                    
                	</div>
                 <div type="verso">
                	<pb facs="#s2"/>
@@ -109,14 +127,25 @@
                				<district>8e</district>
                				</address>
                	</head>
-                <ab>
-               				1 m		1 v					25
+                
+               				<note>1 m		1 v					25</note>
                	
-               	<date ana="#checkedOut" when="1940-08-29">Aug 29</date>	<bibl ana="#borrowedItem" corresp="mep:00030h"><title>Alexander Pope</title>, <persName>Sitwell</persName></bibl>			<date ana="#returned" when="1940-09-09">Sept 9</date>
-               				(<persName ref="#beac.sy">SB</persName> forgot to give change on 50v)
-               							pd 25 frs <date when="1940-09-09">Sept 9</date>
-               	<date ana="#checkedOut" when="1940-09-09">Sept 9</date>	<bibl ana="#borrowedItem" corresp="mep:00s69p"><title>Moment of Time</title></bibl>					<date ana="#returned" when="1940-10-01">Oct 1</date>
-                </ab>
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1940-08-29">Aug 29</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:00030h"><title>Alexander Pope</title>,
+               	        <persName>Sitwell</persName></bibl>			
+               	    <date ana="#returned" when="1940-09-09">Sept 9</date>
+               	</ab>
+                    
+               			<note>(<persName ref="#beac.sy">SB</persName> forgot to give change on 50v)
+               							pd 25 frs <date when="1940-09-09">Sept 9</date></note>
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1940-09-09">Sept 9</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:00s69p"><title>Moment of Time</title></bibl>	
+               	    <date ana="#returned" when="1940-10-01">Oct 1</date>
+               	</ab>
+                    
                	</div>
                 <div type="verso">
                	<pb facs="#s4"/>
