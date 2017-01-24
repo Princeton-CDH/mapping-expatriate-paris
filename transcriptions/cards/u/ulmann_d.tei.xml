@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,19 +67,39 @@
                     <date when="1900-11-18">Nov. 18</date>		<address><persName ref="#ulma.d">Mademoiselle Denise Ulmann</persName>
                     				            <street>28 Place St Ferdinand</street></address>
                     </head>	
-                    <ab>
-                    <date when="1900-11-18">Nov. 18</date>		1 month 	-	2 vols.			6 40
+                    
+                    <note><date when="1900-11-18">Nov. 18</date>		1 month 	-	2 vols.			6 40
                     			                 		------ Deposit		   12 20
+                    	</note>
+                  <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-11-18">Nov. 18</date>
+                    <date when="1900-11-19">19</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00482g"><title>De Profundis</title>, <author>Wilde</author></bibl>	
+                    <date ana="#returned" when="1900-11-28">Nov. 28</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-11-18"></date>
+                  <bibl ana="#borrowedItem" corresp="mep:001v0t"><title>Dianna of the Crossways</title><author>Meredith</author></bibl>
+                    <date ana="#returned" when="1900-11-28"></date>	
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkdOut" when="1900-11-28">Nov. 28</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00f698"><title>Picture of Dorian Grey</title></bibl>
+                    <date ana="#returned" when="1900-12-03">Dec. 3rd</date>
+                        </ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkdOut" when="1900-11-28"></date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00gw1j"><title>Intentions</title></bibl>
+                        <date ana="#returned" when="1900-12-03"></date>
                     </ab>	
-                    <ab>
-                    <date when="1900-11-18">Nov. 18</date>, <date ana="#checkedOut">19</date>	<bibl ana="#borrowedItem" corresp="mep:00482g"><title>De Profundis</title>, <author>Wilde</author></bibl>			<date ana="#checkedOut" when="1900-11-28">Nov. 28</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:001v0t"><title>Dianna of the Crossways</title><author>Meredith</author></bibl>
-                    <date ana="#checkedOut" when="1900-11-28">Nov. 28</date>		            <bibl ana="#borrowedItem" corresp="mep:00f698"><title>Picture of Dorian Grey</title></bibl>.		                    <date ana="#checkedOut" when="1900-12-03">Dec. 3rd</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00gw1j"><title>Intentions</title></bibl>
-                    			
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00h07g"><title>Japan</title>, <author>Lafcadio Hearne</author></bibl>
-                    <date ana="#checkedOut" when="1900-12-03">Dec. 3rd</date>.	                <bibl ana="#borrowedItem" corresp="mep:00gp0k"><title>Idyls of the Foothills</title>, <author>Harte</author></bibl>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00h08s"><title>Wilde</title>, <author>Arthur Rasome</author></bibl>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-03">Dec. 3rd</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00h07g"><title>Japan</title>, <author>Lafcadio Hearne</author></bibl>
+                    <note><bibl  corresp="mep:00gp0k"><title>Idyls of the Foothills</title>, <author>Harte</author></bibl><!-- crossed out --></note>
+                    </ab>    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-03">Dec. 3rd</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00h08s"><title>Wilde</title>, <author>Arthur Rasome</author></bibl>
                     </ab>			
                 </div> 
                 <div type="verso">
