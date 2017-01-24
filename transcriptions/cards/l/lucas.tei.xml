@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,18 +68,44 @@
                 				<address><persName ref="#luca.b">Mr B. Lucas</persName>
                 					<name>Hotel Metropolitan</name>
                 						<street>rue Cambon.</street></address></head>
-                		<ab>
-                		(till to morrow left £2 (in drawer)
+                		
+                		<note>(till to morrow left £2 (in drawer)
                 			1/2 m 2 vols			80
-                		Deposit					   100</ab><ab>
-            	
-            	<date ana="#checkedOut" when="1931-04-23">Ap. 23.</date>	<bibl ana="#borrowedItem" corresp="mep:00jm7p"><title>Stricken Deer</title></bibl>					<date ana="#returned" when="1931-04-29">April 29</date>
-            	<date ana="#checkedOut" when="1931-04-23">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:006t40"><title>Father + Son</title></bibl>					<date ana="#returned" when="1931-04-29">April 29</date>
-            	<date ana="#checkedOut" when="1931-04-29">"	29</date>	<bibl ana="#borrowedItem" corresp="mep:00hs28"><title>Gentleman in the Parlour</title></bibl>		<date ana="#checkedOut" when="1931-05-04">May 4</date>
-            			<bibl ana="#borrowedItem" corresp="mep:005q10"><title>Certain People</title></bibl>					<date ana="#returned" when="1931-05-04">"	4</date>
-            	<date ana="#checkedOut" when="1931-05-04">May 4</date>	<bibl ana="#borrowedItem" corresp="mep:00n439"><title>Europe in Zigzags</title></bibl> 	8=16		<date ana="#checkedOut" when="1931-05-19">May 19</date>
-            			<bibl ana="#borrowedItem" corresp="mep:00n44m"><title>Life of Leonore Duse</title></bibl>  16		<date ana="#returned" when="1931-05-19">May 19</date></ab>
-            	</div><div type="verso">
+                		Deposit					   100</note>
+               
+            	<ab ana="#borrowingEvent">
+            	<date ana="#checkedOut" when="1931-04-23">Ap. 23.</date>	
+               <bibl ana="#borrowedItem" corresp="mep:00jm7p"><title>Stricken Deer</title></bibl>	
+               <date ana="#returned" when="1931-04-29">April 29</date>
+            	</ab>
+               <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1931-04-23">"	"</date>	
+               <bibl ana="#borrowedItem" corresp="mep:006t40"><title>Father + Son</title></bibl>	
+               <date ana="#returned" when="1931-04-29">April 29</date>
+            	</ab>
+               <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1931-04-29">"	29</date>	
+               <bibl ana="#borrowedItem" corresp="mep:00hs28"><title>Gentleman in the Parlour</title></bibl>	
+               <date ana="#returned" when="1931-05-04">May 4</date>
+            	</ab>
+               <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1931-04-29"></date>
+               <bibl ana="#borrowedItem" corresp="mep:005q10"><title>Certain People</title></bibl>		
+               <date ana="#returned" when="1931-05-04">"	4</date>
+            	</ab>
+               <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1931-05-04">May 4</date>	
+               <bibl ana="#borrowedItem" corresp="mep:00n439"><title>Europe in Zigzags</title></bibl> 	
+              <note> 8=16		</note>
+               <date ana="#returned" when="1931-05-19">May 19</date>
+            	</ab>
+               <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1931-05-04"></date>	
+               <bibl ana="#borrowedItem" corresp="mep:00n44m"><title>Life of Leonore Duse</title></bibl>  
+               <note>16		</note>
+               <date ana="#returned" when="1931-05-19">May 19</date>
+            	</ab>
+           </div><div type="verso">
             	<pb facs="#s2"/>
             	<!-- verso blank --></div>
             
