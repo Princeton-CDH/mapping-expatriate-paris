@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -76,13 +79,32 @@
                		<street>12 rue de l'Odeon</street>
                		</address>
                	</head>
-                <ab>
-               		<bibl ana="#borrowedItem" corresp="mep:00027d"><title>Pomes Penyeach</title></bibl>
-               		<bibl ana="#borrowedItem" corresp="mep:00n97x"><title>City of Dreadful Night</title></bibl>		returned
-               		<bibl ana="#borrowedItem" corresp="mep:00142n"><title>Axel's Castle</title></bibl>
-               		<bibl ana="#borrowedItem" corresp="mep:00hc4k"><title>Exiles Return</title></bibl>
-               		<bibl ana="#borrowedItem" corresp="mep:00s72s"><title>Heine's Poems</title></bibl>
-                </ab>
+                
+               		<ab ana="#borrowingEvent">
+               		    <bibl ana="#borrowedItem" corresp="mep:00027d"><title>Pomes Penyeach</title></bibl>
+               		    <note>returned</note>
+               		</ab>
+                    
+               		<ab ana="#borrowingEvent">
+               		    <bibl ana="#borrowedItem" corresp="mep:00n97x"><title>City of Dreadful Night</title></bibl>
+               		    <note>returned</note>
+               		</ab>
+                    
+               		<ab ana="#borrowingEvent">
+               		    <bibl ana="#borrowedItem" corresp="mep:00142n"><title>Axel's Castle</title></bibl>
+               		    <note>returned</note>
+               		</ab>
+                    
+               		<ab ana="#borrowingEvent">
+               		    <bibl ana="#borrowedItem" corresp="mep:00hc4k"><title>Exiles Return</title></bibl>
+               		    <note>returned</note>
+               		</ab>
+                    
+               		<ab ana="#borrowingEvent">
+               		    <bibl ana="#borrowedItem" corresp="mep:00s72s"><title>Heine's Poems</title></bibl>
+               		    <note>returned</note>
+               		</ab>
+                    
                	</div>
                 <div type="verso">
                	<pb facs="#s2"/>
@@ -93,11 +115,25 @@
                 <div type="card">
                 <div type="recto">
                	<pb facs="#s3"/>
-               	<ab>
-               	<date when="1900-05-07">May 7</date>	Vital Peace						<date when="1900-05-23">May 23</date>
-               	<date when="1900-05-07">	</date>	    MS (copies of)					<date when="1900-05">May</date>
-               	<date when="1900-05-14">May 14</date>	Juan in America					<date when="1900-05-23">May 23</date>
+               	
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1900-05-07">May 7</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:00j06d"><title>Vital Peace</title></bibl>				
+               	    <date ana="#returned" when="1900-05-23">May 23</date>
                	</ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-05-07">	</date>	
+                    <bibl ana="#borrowedItem"><title>MS (copies of)</title></bibl>	
+                    <date ana="#returned" when="1900-05">May</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-05-14">May 14</date>
+                    <bibl ana="#borrowedItem" corresp="mep:000m3k"><title>Juan in America</title></bibl>			
+                    <date ana="#returned" when="1900-05-23">May 23</date>
+                </ab>
+                    
                	</div>
                 <div type="verso">
                	<pb facs="#s4"/>
