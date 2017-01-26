@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -71,21 +74,27 @@
                 			<street>Rue St. Benoit</street>
                 			</address>
                 </head>
-                <ab>
-                		      loaned to <persName>Glenway Wescott</persName>
-                				        <address>
-                				        <addrLine>to Harrison of Paris</addrLine>
-                				  		<street>32 rue Vaugirard</street>
-                				        </address>
-                <date ana="#checkedOut" when="1931-04-21">April 21</date>	<bibl ana="#borrowedItem" corresp="mep:002x27"><title>And Even Now</title></bibl>		<date ana="#returned" when="1931-12-21">Dec 21</date>
-                				<date when="1931-05-19">May 19</date> p.c.				
-                				req. letter <date when="1931-09-29">Sept 29</date>
-                					to Scribners
-                			<date when="1931-10-21">Oct 21</date> got letter saying had given
-                			book to <persName>Glenway Wescott</persName>
-                		
-                		letter <date when="1931-12-16">Dec. 16</date>
+                
+                <ab ana="#borrowingEvent">
+                    <note>loaned to <persName>Glenway Wescott</persName>
+                        <address>
+                            <addrLine>to Harrison of Paris</addrLine>
+                            <street>32 rue Vaugirard</street>
+                        </address></note>
+                    
+                    <date ana="#checkedOut" when="1931-04-21">April 21</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002x27"><title>And Even Now</title></bibl>
+                    <date ana="#returned" when="1931-12-21">Dec 21</date>
+                    
+                    <note><date when="1931-05-19">May 19</date> p.c.</note>				
+                    <note>req. letter <date when="1931-09-29">Sept 29</date>
+                        to Scribners</note>
+                    <note><date when="1931-10-21">Oct 21</date> got letter saying had given
+                        book to <persName>Glenway Wescott</persName></note>
+                    <note>letter <date when="1931-12-16">Dec. 16</date></note>
                 </ab>
+                    
+                
                 </div>
                 <div type="recto">
                 <pb facs="#s2"/>
@@ -104,23 +113,48 @@
                 			                        <street>50 Rue Jacob</street>
                 			                        </address>
                 </head>			
-                <ab>			
+                <note>			
                 			1 m 1 vol 	B  	10%			45fr.
                 			dep.						50
+                </note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-10-13">Oct. 13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002x3j"><title>Journeys Between Wars</title></bibl>	
+                    <date ana="#returned" when="1938-10-17">Oct 17</date>
                 </ab>
-                <ab>
-                <date ana="#checkedOut" when="1938-10-13">Oct. 13</date>		<bibl ana="#borrowedItem" corresp="mep:002x3j"><title>Journeys Between Wars</title></bibl>		<date ana="#returned" when="1938-10-17">Oct 17</date>
-                <date ana="#checkedOut" when="1938-10-17">Oct 17</date>		<bibl ana="#borrowedItem" corresp="mep:002x4v"><title>Daughter</title></bibl>					<date ana="#returned" when="1938-10-20">Oct 20</date>
-                <date ana="#checkedOut" when="1938-10-20">Oct 20</date>		<bibl ana="#borrowedItem" corresp="mep:001626"><title>Yearling</title></bibl>					<date ana="#returned" when="1938-11-20">Nov 10</date>
-                <date ana="#checkedOut" when="1938-10-20">	20</date>		<bibl ana="#borrowedItem" corresp="mep:002x55"><title>Desire under the Elms</title></bibl> 2v	
-                <date ana="#checkedOut" when="1938-11-10">Nov 10</date>		<bibl ana="#borrowedItem" corresp="mep:002x6g"><title>Those were the Days</title></bibl>
-                						sent card	<date ana="#returned" when="1938-12-22">12/22/</date>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-10-17">Oct 17</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002x4v"><title>Daughter</title></bibl>	
+                    <date ana="#returned" when="1938-10-20">Oct 20</date>
                 </ab>
-                <ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-10-20">Oct 20</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001626"><title>Yearling</title></bibl>	
+                    <date ana="#returned" when="1938-11-20">Nov 10</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-10-20">	20</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002x55"><title>Desire under the Elms</title></bibl>
+                    <note>2v</note>	
+                    <date ana="#returned" notBefore="1938-10-20">   </date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-11-10">Nov 10</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002x6g"><title>Those were the Days</title></bibl>
+                    <date ana="#returned" notBefore="1938-11-10">  </date>
+                    <note>sent card	<date when="1938-12-22">12/22/</date></note>
+                </ab>
+                    
+                <note>
                 					Kept deposit		50v
                 					to pay overdues
                 					<date when="1938-12-28">12/28/38</date>
-                </ab>
+                </note>
                 </div>
                 
                 <div type="verso">
