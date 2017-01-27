@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,14 +63,27 @@
             
                <div type="card"><div type="recto"> <pb facs="#s1"/>
                 <head><date when="1944">1944</date>		<persName ref="#duha.ma">Duhamel, Marcel</persName></head>
-                <ab>
-                <date ana="#checkedOut" when="1944-04">April</date>	<bibl ana="#borrowedItem" corresp="mep:00160k"><title>Heavens My Destination</title></bibl>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1944-04">April</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00160k"><title>Heavens My Destination</title></bibl>
+                  </ab> 
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1944-04"></date>
                 		<bibl ana="#borrowedItem" corresp="mep:001804"><title>Jonah's Gourd Vine</title></bibl>
-                		<bibl ana="#borrowedItem" corresp="mep:004z95"><title>Young Man with a Horn</title></bibl>
-                		<bibl ana="#borrowedItem" corresp="mep:00213c"><title>Big Money</title></bibl>
-                		(wants <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title></bibl>
-                				<bibl ana="#borrowedItem" corresp="mep:002t41"><title>Appointment in Samarra</title></bibl>)
-                </ab></div><div type="verso">
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1944-04"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:004z95"><title>Young Man with a Horn</title></bibl>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1944-04"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:00213c"><title>Big Money</title></bibl>
+                	</ab>
+                	
+                	<note>(wants <bibl corresp="mep:00500w"><title>Torrents of Spring</title></bibl>
+                   
+                	<bibl ana="#borrowedItem" corresp="mep:002t41"><title>Appointment in Samarra</title></bibl>)</note>
+                </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank -->
              </div>   </div>
