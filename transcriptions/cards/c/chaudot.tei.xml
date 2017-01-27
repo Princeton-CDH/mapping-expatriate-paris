@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -71,19 +73,42 @@
                 			</address>                
                 			                   
                 </head>
-                <ab>
-                			1 m 1 v				25
-                					dep			50
-                <date ana="#checkedOut" when="1941-05-14">May 14</date>	<bibl ana="#borrowedItem" corresp="mep:00284m"><title>Innocence of Father Brown</title></bibl>	<date ana="#returned" when="1941-05-23">May 23</date>
-                <date ana="#checkedOut" when="1941-05-23">	23</date>	<bibl ana="#borrowedItem" corresp="mep:00285x"><title>Scandal of Father Brown</title></bibl>		<date ana="#returned" when="1941-06-03">June 3</date>
-                <date ana="#checkedOut" when="1941-06-03">June 3</date>	<bibl ana="#borrowedItem" corresp="mep:004351"><title>Secret of Father Brown</title></bibl>		<date ana="#returned" when="1941-06-16">June 16</date>
-                <date ana="#checkedOut" when="1941-06-16">June 16</date>	<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>			<date ana="#returned" when="1941-06-24">June 24</date>
-                Renewed <date from="1941-06-14" to="1941-07-14">June 14-July 14 1941</date> 1v		25
-                <date ana="#checkedOut" when="1941-06-24">June 24</date>	<bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title></bibl>					<date ana="#returned" when="1941-07-17">July 17</date>
-                <date ana="#checkedOut" when="1941-06-27">	27</date>	<bibl ana="#borrowedItem" corresp="mep:00924n"><title>Agnes Gray</title></bibl>					<date ana="#returned" when="1941-07-17">" "  17</date>
-                	
-                				left dep
+               
+                			<note>1 m 1 v				25
+                					dep			50</note>
+                    <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-05-14">May 14</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00284m"><title>Innocence of Father Brown</title></bibl>
+                    <date ana="#returned" when="1941-05-23">May 23</date>
+               </ab>
+                    <ab ana="#borrowinngEvent">
+                    <date ana="#checkedOut" when="1941-05-23">	23</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00285x"><title>Scandal of Father Brown</title></bibl>		
+                    <date ana="#returned" when="1941-06-03">June 3</date>
                 </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-03">June 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:004351"><title>Secret of Father Brown</title></bibl>	
+                    <date ana="#returned" when="1941-06-16">June 16</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-16">June 16</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>	
+                    <date ana="#returned" when="1941-06-24">June 24</date>
+                </ab>
+               <note> Renewed <date from="1941-06-14" to="1941-07-14">June 14-July 14 1941</date> 1v		25</note>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-24">June 24</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title></bibl>		
+                    <date ana="#returned" when="1941-07-17">July 17</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-27">	27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00924n"><title>Agnes Gray</title></bibl>	
+                    <date ana="#returned" when="1941-07-17">" "  17</date>
+                	</ab>
+                				<note>left dep</note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
