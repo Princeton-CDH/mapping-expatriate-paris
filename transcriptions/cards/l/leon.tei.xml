@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,26 +70,58 @@
                 			Paul</persName>
                 			<address><street>27 rue Casimir Perier</street> <district>- VIIe</district></address>
                 </head>
-                
-           <ab>     <date ana="#checkedOut" when="1941-01-29">Jan 29</date>	<bibl ana="#borrowedItem" corresp="mep:007184"><title>James Joyce</title>, <author>Herbert Gorman</author></bibl>		<date ana="#returned" when="1941-02-10">Feb. 10</date></ab>
-                </div><div type="verso">
+                <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1941-01-29">Jan 29</date>
+                <bibl ana="#borrowedItem" corresp="mep:007184"><title>James Joyce</title>, <author>Herbert Gorman</author></bibl>
+                <date ana="#returned" when="1941-02-10">Feb. 10</date>
+                </ab>
+            </div>
+                <div type="verso">
                 <pb facs="#s2"/>
              <head>   <date when="1935">1935</date>		<persName ref="#lesc.yv">LESCURE
                 			Yvonne</persName>
                 				<address><street>27 rue Cassette</street></address></head>
-              <ab>  <date when="1935-07-22">22 July</date>					1m. 1m ref. dep.	30
-                							<date when="1935-09-23">Sept 23</date>			15</ab>
-                			
-         <ab>       		<bibl ana="#borrowedItem" corresp="mep:002t7z"><title>Portrait of a lady</title></bibl>				20
-                		<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title>	<author>Robinson</author></bibl>				20
-                <date ana="#returned" when="1935-08-20">20 Aug-</date>	Renewed <date from="1935-08-22" to="1935-09-22">22 Aug - 22 Sept-</date>			15v
+             
+                <note> <date when="1935-07-22">22 July</date>				
+                    1m. 1m ref. dep.	30
+                	<date when="1935-09-23">Sept 23</date>			15</note>
+                		
+                		<ab ana="#borrowingEvent">
+                    <date when="1935-07-22"></date>	
+         		<bibl ana="#borrowedItem" corresp="mep:002t7z"><title>Portrait of a lady</title></bibl>			
+                    <date ana="#returned" when="1935-08-20">20</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date when="1935-07-22"></date>	
+                		<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title>	<author>Robinson</author></bibl>	
+                    <date ana="#returned" when="1935-08-20">20</date>
+                    </ab>
+               <note> <date when="1935-08-20">20 Aug-</date>
+                    Renewed <date from="1935-08-22" to="1935-09-22">22 Aug - 22 Sept-</date>			15v</note>
                 
-                <date ana="#checkedOut" when="1935-08-20">20 Aug-</date>	<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I lay dying</title></bibl>					<date ana="#returned" when="1935-08-31">31</date>
-                <date ana="#checkedOut" when="1935-08-31">31-</date>		<bibl ana="#borrowedItem" corresp="mep:003h81"><title>Judith Paris</title></bibl>					<date ana="#returned" when="1935-09-10">Sept 10</date>
-                <date ana="#checkedOut" when="1935-09-10">Sept 10</date>	<bibl ana="#borrowedItem" corresp="mep:00gq43"><title>Fortress</title></bibl>						<date ana="#returned" when="1935-09-20">Sept 20</date>
-                <date ana="#checkedOut" when="1935-09-20">Sept 20</date>	<bibl ana="#borrowedItem" corresp="mep:00308w"><title>Vanessa</title></bibl>							<date ana="#returned" when="1953-09-23">Sept 23</date>
-                <date when="1935-09-23">Sept 23</date>	</ab>
-                							</div>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1935-08-20">20 Aug-</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I lay dying</title></bibl>			
+                    <date ana="#returned" when="1935-08-31">31</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-08-31">31-</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003h81"><title>Judith Paris</title></bibl>	
+                    <date ana="#returned" when="1935-09-10">Sept 10</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-09-10">Sept 10</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00gq43"><title>Fortress</title></bibl>	
+                    <date ana="#returned" when="1935-09-20">Sept 20</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-09-20">Sept 20</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00308w"><title>Vanessa</title></bibl>	
+                    <date ana="#returned" when="1953-09-23">Sept 23</date>
+               </ab>
+                   <note> <date when="1935-09-23">Sept 23</date>	</note>
+                	
+                </div>
                 
             </div>
         </body>
