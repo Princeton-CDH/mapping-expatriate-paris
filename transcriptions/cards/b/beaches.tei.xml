@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,15 +66,16 @@
                     <date when="1930-12-25">Xmas 1930</date>
                 
                 </head>
-                	<ab>
-                	   sent	<bibl ana="#borrowedItem" corresp="mep:000j9w"><title>Room of Ones Own</title></bibl>
-                			<bibl ana="#borrowedItem" corresp="mep:000k0c"><title>Marina</title></bibl>
-                			<bibl ana="#borrowedItem" corresp="mep:000k1p"><title>Phantasmagoria</title></bibl>
-                			<bibl ana="#borrowedItem"><author>Giraudoux</author></bibl>
-                			<bibl ana="#borrowedItem"><author>Severine</author></bibl> 
-                			<bibl ana="#borrowedItem" corresp="mep:000k20"><title>Rue Sans Nom</title></bibl>
-                			<bibl ana="#borrowedItem" corresp="mep:000k39"><title>Vie de Proust</title></bibl>
-                	</ab>
+                	
+                	   <note>
+                	       sent	<bibl  corresp="mep:000j9w"><title>Room of Ones Own</title></bibl>
+                			<bibl corresp="mep:000k0c"><title>Marina</title></bibl>
+                			<bibl  corresp="mep:000k1p"><title>Phantasmagoria</title></bibl>
+                			<bibl ><author>Giraudoux</author></bibl>
+                			<bibl ><author>Severine</author></bibl> 
+                			<bibl corresp="mep:000k20"><title>Rue Sans Nom</title></bibl>
+                			<bibl corresp="mep:000k39"><title>Vie de Proust</title></bibl>
+                	</note>
                 </div>
                 
                 <div type="verso">
