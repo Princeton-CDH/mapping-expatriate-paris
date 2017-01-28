@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,25 +66,48 @@
                 			<settlement>Versailles</settlement>
                 			</address>
                 </head>		
-                <ab> 
-                			1m 1v. S				20
-                					Dep				50
-                </ab>
-                <ab>
-                <date ana="#checkedOut" when="1941-05-26">May 26</date>		<bibl ana="#borrowedItem" corresp="mep:002z0w"><title>Country house</title></bibl>					<date ana="#returned" when="1941-06-04">June 4</date>
-                <date ana="#checkedOut" when="1941-06-04">June 4</date>		<bibl ana="#borrowedItem" corresp="mep:000r9j"><title>Ordeal of Richard Feveral</title></bibl>		<date ana="#returned" when="1941-06-18">June 18</date>
-                <date ana="#checkedOut" when="1941-06-18">June 18</date>		<bibl ana="#borrowedItem" corresp="mep:002z16"><title>Under the greenwood tree</title></bibl>		<date ana="#returned" when="1941-07-07">July 7</date>
-                Ren. <date from="1941-06-26" to="1941-07-26">June 26. July 26</date>. 1m 1v S			20
                 
-                <date ana="#checkedOut" when="1941-07-07">July 7</date>		<bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>					<date ana="#returned" when="1941-09-20">Sept 20</date>
-                				(wrote to <persName ref="#brul.od">Mlle Brull</persName> <date ana="#checkedOut" when="1941-09-20">Sept 20</date>)
-                				 would reserve <bibl ana="#borrowedItem" corresp="mep:000q1s"><title>Precious Bane</title></bibl>
-                <date ana="#checkedOut" when="1941-10-09">Oct. 9</date>	    <bibl ana="#borrowedItem" corresp="mep:000q1s"><title>Precious bane</title></bibl>					<date ana="#returned" when="1941-11-04">Nov 4</date>
-                  	Renewed <date when="1941-07-26" to="1941-10-26">July 26 - October 26 1941</date>		50
-                <date ana="#checkedOut" when="1941-11-04">Nov 4</date>		<bibl ana="#borrowedItem" corresp="mep:00211r"><title>Babbitt</title></bibl>
-                				<persName ref="#brul.od">Mlle Brull</persName> a écrit qu'elle a rendu
-                				  le volume
+                			<note>1m 1v. S				20
+                					Dep				50</note>
+                
+               
+               <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-05-26">May 26</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002z0w"><title>Country house</title></bibl>	
+                    <date ana="#returned" when="1941-06-04">June 4</date>
                 </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-04">June 4</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000r9j"><title>Ordeal of Richard Feveral</title></bibl>	
+                    <date ana="#returned" when="1941-06-18">June 18</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-18">June 18</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002z16"><title>Under the greenwood tree</title></bibl>	
+                    <date ana="#returned" when="1941-07-07">July 7</date>
+                </ab>
+             <note>   Ren. <date from="1941-06-26" to="1941-07-26">June 26. July 26</date>. 1m 1v S			20</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-07-07">July 7</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>			
+                    <date ana="#returned" when="1941-09-20">Sept 20</date>
+                	</ab>
+                	<note>(wrote to <persName ref="#brul.od">Mlle Brull</persName> <date when="1941-09-20">Sept 20</date>)
+                				 would reserve <bibl corresp="mep:000q1s"><title>Precious Bane</title></bibl><!-- crossed out --></note>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-10-09">Oct. 9</date>	   
+                    <bibl ana="#borrowedItem" corresp="mep:000q1s"><title>Precious bane</title></bibl>		
+                    <date ana="#returned" when="1941-11-04">Nov 4</date>
+                  	</ab>
+                  	<note>Renewed <date when="1941-07-26" to="1941-10-26">July 26 - October 26 1941</date>		50</note>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-04">Nov 4</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00211r"><title>Babbitt</title></bibl>
+                	</ab>
+                    <note><persName ref="#brul.od">Mlle Brull</persName> a écrit qu'elle a rendu
+                				  le volume</note>
+                
                 </div>
                 
                 <div type="verso">
