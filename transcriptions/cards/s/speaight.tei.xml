@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -27,14 +34,14 @@
                 
             </sourceDesc>
         </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	  <particDesc>
-	        <person role="cardholder" ana="#spea.r"><persName>R.L. Speaight</persName></person>
-	  </particDesc>
-	</profileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#spea.r"><persName>R.L. Speaight</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
             <change who="#elspeth" when="2016-02-23">
                 <p> First level encoding </p>
@@ -60,25 +67,79 @@
                 <div type="recto">
                     <pb facs="#s1"/>
                     <head>
-                    <date when="1929">1929</date>		<address><persName ref="#spea.r">SPEAIGHT
-                    			                          R.L. Speaight</persName>
-                    			                         <street>78 rue d'Assas</street></address>
+                        <date when="1929">1929</date>		<address><persName ref="#spea.r">SPEAIGHT
+                            R.L. Speaight</persName>
+                            <street>78 rue d'Assas</street></address>
                     </head>			
-                    			
-                    <ab>			
-                    				3 m		1 vols			60
-                    								dep		50
-                    </ab>								
-                    <ab>
-                    <date ana="#checkedOut" when="1929-01-10">Jan 10</date>	<bibl ana="#borrowedItem" corresp="mep:001m2h"><title>Bridge of San Luis Rey</title></bibl>				    <date ana="#returned" when="1929-01-18">Jan 18</date>
-                    <date ana="#checkedOut" when="1929-01-18">	18</date>	<bibl ana="#borrowedItem" corresp="mep:00r20j"><title>Case of Sergeant Grischa</title></bibl> 0.25 = 2.75    <date ana="#returned" when="1929-01-31">"	31</date>
-                    										                                                          = 3.50
-                    <date ana="#checkedOut" when="1929-01-31"> "	31</date>	<bibl ana="#borrowedItem" corresp="mep:005n4c"><title>Letters of K. Mansfield</title> <biblScope unit="volume" from="1">vol I</biblScope></bibl> 0.25	<date ana="#returned" when="1929-02-14">Feb 14</date>
-                    <date ana="#checkedOut" when="1929-02-14">Feb 14</date>	<bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>								    <date ana="#returned" when="1929-03-01">Mars. 1st</date>
-                    <date ana="#checkedOut" when="1929-03-01">Mars. 2</date> 1er = <bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counterpoint</title></bibl> 0.50		    <date ana="#returned" when="1929-03-12">-	 12</date>
-                    <date ana="#checkedOut" when="1929-03-12">Mars 12</date>.	<bibl ana="#borrowedItem" corresp="mep:005n8m"><title>Contemporary Portraits</title></bibl>			        <date ana="#returned" when="1929-03-20">Mch. 20</date>
-                    <date ana="#checkedOut" when="1929-03-20">Mch. 20</date>	<bibl ana="#borrowedItem" corresp="mep:00r21v"><title>Connoisseur and other Stories</title></bibl>	        <date ana="#returned" when="1929-04-03">April 3</date>
+                    
+                    		
+                       <note> 3 m		1 vols			60
+                        dep		50
+                    	</note>							
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-01-10">Jan 10</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:001m2h">
+                            <title>Bridge of San Luis Rey</title>
+                        </bibl>				    
+                        <date ana="#returned" when="1929-01-18">Jan 18</date>
                     </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-01-18">18</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00r20j">
+                            <title>Case of Sergeant Grischa</title>
+                        </bibl> 
+                        <note>0.25 = 2.75</note>    
+                        <date ana="#returned" when="1929-01-31">"	31</date>
+                        <note> = 3.50</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-01-31">"	31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:005n4c">
+                            <title>Letters of K. Mansfield</title> 
+                            <biblScope unit="volume" from="1">vol I</biblScope>
+                        </bibl> 
+                        <note>0.25</note>	
+                        <date ana="#returned" when="1929-02-14">Feb 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-02-14">Feb 14</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:001m16">
+                            <title>Bliss</title>
+                        </bibl>								    
+                        <date ana="#returned" when="1929-03-01">Mars. 1st</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-03-01">Mars. 2</date> 
+                        <note>1er = </note>
+                        <bibl ana="#borrowedItem" corresp="mep:000k7j">
+                            <title>Point Counterpoint</title>
+                        </bibl> 
+                        <note>0.50</note>		   
+                        <date ana="#returned" when="1929-03-12">-	 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-03-12">Mars 12</date>.	
+                        <bibl ana="#borrowedItem" corresp="mep:005n8m">
+                            <title>Contemporary Portraits</title>
+                        </bibl>			       
+                        <note>\</note><date ana="#returned" when="1929-03-20">Mch. 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1929-03-20">Mch. 20</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00r21v">
+                            <title>Connoisseur and other Stories</title>
+                        </bibl>	        
+                        <date ana="#returned" when="1929-04-03">April 3</date>
+                    </ab>
+                    
                 </div>    
                 <div type="verso">
                     <pb facs="#s2"/>
