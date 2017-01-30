@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -65,21 +72,73 @@
                     <address><persName ref="#sore">Mademoiselle</persName>
                     			<street>134 Boulevard St Germain.</street></address>
                     </head>			
-                    <ab>			
+                    <note>			
                     			6m. 1v.						70.00
                     						Deposit			30.00
-                    </ab>	
+                    </note>	
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-12">Feb 12</date>.
+                        <bibl ana="#borrowedItem" corresp="mep:004j8j">
+                            <title>Pride and Prejudice</title>
+                        </bibl>.		
+                        <date ana="#returned" when="1937-02-26">Feb. 26</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-26">26</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:004323">
+                            <title>Moon and Sixpence</title>
+                        </bibl>			
+                        <date ana="#returned" when="1937-03-26">Mar. 26</date>.
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-26">March 10</date> 	
+                        <bibl ana="#borrowedItem" corresp="mep:00mt9f">
+                            <title>Macbeth</title>, 
+                            <editor>Rolfe ed</editor>.
+                        </bibl>	
+                        <date ana="#returned" when="1937-04-23">April 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-26">26</date>.	    
+                        <bibl ana="#borrowedItem" corresp="mep:006h1k">
+                            <title>Casuarina Tree</title>
+                        </bibl>.				
+                        <date ana="#returned" when="1937-02-23">23</date>.
+                    </ab>
+                    
                     <ab>
-                    <date ana="#checkedOut" when="1937-02-12">Feb 12</date>.		<bibl ana="#borrowedItem" corresp="mep:004j8j"><title>Pride and Prejudice</title></bibl>.		<date ana="#returned" when="1937-02-26">Feb. 26</date>
-                    <date ana="#checkedOut" when="1937-02-26">	26</date>.		<bibl ana="#borrowedItem" corresp="mep:004323"><title>Moon and Sixpence</title></bibl>			<date ana="#returned" when="1937-03-26">Mar. 26</date>.
-                    <date ana="#checkedOut" when="1937-03-26">March 10</date> 	<bibl ana="#borrowedItem" corresp="mep:00mt9f"><title>Macbeth</title>, <editor>Rolfe ed</editor>.</bibl>	<date ana="#returned" when="1937-04-23">April 23</date>
-                    <date ana="#checkedOut" when="1937-03-26">	 26</date>.	    <bibl ana="#borrowedItem" corresp="mep:006h1k"><title>Casuarina Tree</title></bibl>.				<date ana="#returned" when="1937-02-23">	  23</date>.
-                    <date ana="#checkedOut" when="1937-03-23">	 23</date>.	    <bibl ana="#borrowedItem" corresp="mep:00pz07"><title>Put yourself in his place</title></bibl>
-                    <date ana="#checkedOut" when="1937-04-23">Apr. 23</date>		<bibl ana="#borrowedItem" corresp="mep:00fr6r"><title>Our Mothers</title></bibl> --				<date ana="#returned" when="1937-05-24">May 24</date>.
-                    <date ana="#checkedOut" when="1937-05-24">May 24</date>		<bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte Saga</title></bibl>.				<date ana="#returned" when="1937-06-10">June 10</date>
-                    <date when="1937-06-10">June 10</date>		
-                    				suspended
-                    </ab>				
+                        <del>
+                            <date when="1937-03-23">23</date>.	    
+                            <bibl corresp="mep:00pz07">
+                              <title>Put yourself in his place</title>
+                            </bibl>
+                        </del>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-04-23">Apr. 23</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00fr6r">
+                            <title>Our Mothers</title>
+                        </bibl> --				
+                        <date ana="#returned" when="1937-05-24">May 24</date>.
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-05-24">May 24</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:001k1x">
+                            <title>Forsyte Saga</title>
+                        </bibl>.				
+                        <date ana="#returned" when="1937-06-10">June 10</date>
+                    </ab>
+                    
+                    <note><date when="1937-06-10">June 10</date>		
+                    				suspended</note>
+                    				
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
