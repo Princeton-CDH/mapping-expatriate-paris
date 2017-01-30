@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +13,10 @@
                 <respStmt ana="#i-davis">
                     <persName>Davis, Ian</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -27,14 +34,14 @@
                 
             </sourceDesc>
         </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	    <particDesc>
-	        <person role="cardholder" ana="#rivi.je"><persName>Jean Riviere</persName></person>
-	    </particDesc>
-	</profileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#rivi.je"><persName>Jean Riviere</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
             <change who="#yournetid">
                 <ab>
@@ -55,31 +62,82 @@
         <body>
             <div type="card">
                 <div type="recto"><pb facs="#s1"/>
-              <head>  
-                <date when="1900-05-10">May 10</date>		<persName ref="#rivi.je">Monsieur 	Jean Riviere</persName>
-                				<address><street>16 rue de l'Université</street></address>
-                				</head>
-                				
-                		
-                		<ab>subsc 	6	mos.	1  vol.			20
-                							1</ab>
-                											<ab><date when="1900-05-26">May 26</date>
-                <date ana="#checkedOut" when="1900-05-10">May 10</date>		<bibl ana="#borrowedItem"><title>Erewhon</title></bibl>
-                
-            	<date ana="#checkedOut" when="1900-05-26">May 26</date>			<bibl ana="#borrowedItem"><title>"	</title></bibl>						<date ana="#returned" when="1900-07-15">July 15</date>
-            	
-            	<date ana="#checkedOut" when="1900-07-15">July 15</date>		<bibl ana="#borrowedItem"><title>Dansany's Plays</title></bibl>					<date ana="#checkedOut" when="1900-09-29">Sept 29</date>
-            				<bibl ana="#borrowedItem"><title>Buried Alive</title></bibl>
-            				<bibl ana="#borrowedItem"><title>Huckleberry Finn</title></bibl>
-            				
-            	<date ana="#returned" when="1900-09-29">Sept 29</date>
-            	<date ana="#checkedOut" when="1900-09-25">Sept 25</date>		<bibl ana="#borrowedItem"><title>Waley's Chinese Poems</title></bibl>			<date ana="#checkedOut" when="1900-10-18">Oct 18</date>
-            				<bibl ana="#borrowedItem"><title>Egoist</title></bibl></ab>
-            </div>    
-            <div type="verso">    <pb facs="#s2"/>
-                
-                <!-- Verso Blank -->
-             </div>   
+                    <head>  
+                        <date when="1900-05-10">May 10</date>		<persName ref="#rivi.je">Monsieur 	Jean Riviere</persName>
+                        <address><street>16 rue de l'Université</street></address>
+                    </head>
+                    
+                    
+                    <note>subsc 	6	mos.	1  vol.			20
+                        1</note>
+                    
+                  
+                    
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-05-10">May 10</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:000n45">
+                            <title>Erewhon</title>
+                        </bibl>
+                        <date ana="returned" when="1900-05-26">May 26</date>                        
+                    </ab>    
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-05-26">May 26</date>			
+                        <bibl ana="#borrowedItem" corresp="mep:000n45">
+                            <title>"</title>
+                        </bibl>						
+                        <date ana="#returned" when="1900-07-15">July 15</date>
+                    </ab>
+                    
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-15">July 15</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00sj6h">
+                            <title>Dansany's Plays</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-09-29">Sept 29</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1900-07-15"></date>
+                       <bibl ana="#borrowedItem" corresp="mep:006m4b">
+                           <title>Buried Alive</title>
+                       </bibl>
+                       <date ana="#returned" when="1900-09-29"></date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-15"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00902g">
+                            <title>Huckleberry Finn</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-09-29"></date>
+                    </ab>
+                    
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-29">Sept 29</date>    
+                        <del><date when="1900-09-25">Sept 25</date></del>		
+                        <bibl ana="#borrowedItem" corresp="mep:00vv27">
+                            <title>Waley's Chinese Poems</title>
+                        </bibl>			
+                        <date ana="#returned" when="1900-10-18">Oct 18</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-29"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:001x95">
+                            <title>Egoist</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-10-18"></date>
+                    </ab>
+                    
+                </div>    
+                <div type="verso">    <pb facs="#s2"/>
+                    
+                    <!-- Verso Blank -->
+                </div>   
             </div>
         </body>
     </text>
