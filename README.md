@@ -1,6 +1,13 @@
 Description of Project
 ======================
 
+[![Ready](https://badge.waffle.io/Princeton-CDH/mapping-expatriate-paris.svg?label=ready&title=Ready)](http://waffle.io/Princeton-CDH/mapping-expatriate-paris)
+[![In Progress](https://badge.waffle.io/Princeton-CDH/mapping-expatriate-paris.svg?label=in+progress&title=In+Progress)](http://waffle.io/Princeton-CDH/mapping-expatriate-paris)
+![Open Pull Requests](https://img.shields.io/github/issues-pr/Princeton-CDH/mapping-expatriate-paris.svg)
+![Closed Issues](https://img.shields.io/github/issues-closed-raw/Princeton-CDH/mapping-expatriate-paris.svg)
+[![Contributors](https://img.shields.io/github/contributors/Princeton-CDH/mapping-expatriate-paris.svg)](https://github.com/Princeton-CDH/mapping-expatriate-paris/graphs/contributors)
+
+
 [Mapping Expatriate Paris](http://mep.princeton.edu/) (MEP) is a digital
 humanities project, sponsored by the [Center for Digital Humanities at
 Princeton University](http://digitalhumanities.princeton.edu/), that
