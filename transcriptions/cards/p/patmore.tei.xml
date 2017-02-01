@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,36 +57,90 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
+               <head> 
                <date when="1929"> 1929.</date>							<persName ref="patm.br">Mme. B. Patmore</persName>
                 			<persName ref="patm.br">PATMORE.</persName>				<address><name>Select hotel</name>
                 									<street>1 Pl. de Po. Sorbonne</street></address>
+                </head>									
                 									
-                									
-                				1 m. 2 vol	25 + 10 	Ap. 20.
+                				<note>1 m. 2 vol	25 + 10 	Ap. 20.
                 				Deposit		50 +  30.	 Refunded.
-                						ref. 50f <date when="1929-05-01">May 1</date>
+                						ref. 50f <date when="1929-05-01">May 1</date></note>
                 						
                 						
-                <date when="1929-03-06">Mars. 6.</date>	Ryder.			extra.		<date when="1929-03-18">Mars 18</date>
-                    Godd bye Wisconsin.			  <date when="1929-03-08">8</date>
-                    <date ana="#checkedOut" when="1929-03-08">8</date>		<bibl ana="#borrowedItem" corresp="mep:001k3j"><title>Home to Harlem</title></bibl> .	0.50	 -	<date ana="#checkedOut" when="1929-04-14">14</date>
-                	  		<bibl ana="#borrowedItem" corresp="mep:00d06f"><title>Best short stories </title></bibl>28. 0.25	 -	 14.
-                    <date ana="#checkedOut" when="1929-04-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:006580"><title>Analysis of mind</title></bibl>		<date ana="#returned" when="1929-04-20">Ap. 20</date>  <date when="1929-04-28">28</date>
-                    <date ana="#checkedOut" when="1929-04-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00pk7c"><title>Invasion of Europe</title></bibl>				  <date ana="#returned" when="1929-04-28">28</date>
-                    <date ana="#checkedOut" when="1929-04-28">28</date>	<bibl ana="#borrowedItem" corresp="mep:006x9c"><title>Armed with Madness	</title></bibl>		  <date ana="#returned" when="1929-04-29">29</date>
-                	  <date ana="#checkedOut" when="1929-04-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:00pk8p"><title>Tiger in the House	</title></bibl>		<date ana="#returned" when="1929-04-20">Ap. 20</date>
-                	  	sub expired since <date when="1929-04-06">Ap. 6th 1929</date>
-                	  					<date when="1929-04-10">Ap. 10th</date> p.c.
-                    <date ana="#checkedOut" when="1929-04-20"> Ap. 20	</date>	<bibl ana="#borrowedItem" corresp="mep:00pk90"><title>Show Girl</title></bibl>					<date ana="#returned" when="1929-04-24"> April 24</date>
-                 <date when="1929-04-20">"	20</date>		S.R. 1 m	1 vol. to <date when="1929-05-06">May 6th 1929</date> = 25
+            <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-03-06">Mars. 6.</date>	
+                   <bibl ana="#borrowedItem"><title>Ryder.	</title>	</bibl>	
+                  <note> extra.	</note>	
+                   <date ana="#returned" when="1929-03-08">Mars 8</date>
+                   </ab>
+                   
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-03-06"></date>	
+                  <bibl ana="#borrowedItem"><title> Good bye Wisconsin.	</title></bibl>		 
+                   <date ana="#returned" when="1929-03-08">8</date>
+                   </ab>
+                   
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-03-08">8</date>
+                   <bibl ana="#borrowedItem" corresp="mep:001k3j"><title>Home to Harlem</title></bibl>
+                 <note>  .	0.50	 -	</note>
+                   <date ana="#returned" when="1929-04-14">14</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-03-08"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:00d06f"><title>Best short stories </title></bibl>
+                   <note>28. 0.25	 -	 14.</note>
+                   <date ana="#returned" when="1929-04-14"></date>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-04-14">14</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:006580"><title>Analysis of mind</title></bibl>		
+                   <date ana="#returned" when="1929-04-20">Ap. 20</date> 
+                   </ab>
+                <note>  <del> <date when="1929-04-28">28</date></del></note>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-04-14">14</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00pk7c"><title>Invasion of Europe</title></bibl>	
+                   <date ana="#returned" when="1929-04-28">28</date>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-04-28">28</date>
+                   <bibl ana="#borrowedItem" corresp="mep:006x9c"><title>Armed with Madness	</title></bibl>	
+                   <date ana="#returned" when="1929-04-29">29</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-04-29">29</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00pk8p"><title>Tiger in the House	</title></bibl>	
+                   <date ana="#returned" when="1929-04-20">Ap. 20</date>
+                	</ab>
+                	<note>sub expired since <date when="1929-04-06">Ap. 6th 1929</date></note>
+                	
+                  <note> <date when="1929-04-10">Ap. 10th</date> p.c.</note>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-04-20"> Ap. 20	</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00pk90"><title>Show Girl</title></bibl>		
+                   <date ana="#returned" when="1929-04-24"> April 24</date>
+                 </ab>
                  
-                    <date ana="#checkedOut" when="1929-04-24"> April 24</date>	<bibl ana="#borrowedItem" corresp="mep:00pm0g"><title>Eight European Plays</title></bibl>		  <date ana="#returned" when="1929-04-29"> "	 29	</date>
-                								  42 days
-                <date ana="#checkedOut" when="1929-04-29"> "	 29	</date>	<bibl ana="#borrowedItem" corresp="mep:00df61"><title>Costumes by Eros</title></bibl> 0.25 =  =	10.50 <date ana="#returned" when="1929-06-10">June 10</date>
-                 			owes 1 m 1 vol 25 + week 6.50 = 31.50
-                 									  paid 42.00
-                </ab>
+                 <note>  <date when="1929-04-20">"	20</date>		S.R. 1 m	1 vol. to <date when="1929-05-06">May 6th 1929</date> = 25</note>
+                 
+                 <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1929-04-24"> April 24</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00pm0g"><title>Eight European Plays</title></bibl>	
+                   <date ana="#returned" when="1929-04-29"> "	 29	</date>
+                	</ab>							  
+                								<note>  42 days</note>
+                
+                <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1929-04-29"> "	 29	</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00df61"><title>Costumes by Eros</title></bibl> 
+                  <note> 0.25 =  =	10.50 </note>
+                   <date ana="#returned" when="1929-06-10">June 10</date>
+                </ab> 		
+                <note> 		owes 1 m 1 vol 25 + week 6.50 = 31.50
+                 									  paid 42.00</note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
