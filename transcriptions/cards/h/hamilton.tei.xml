@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -77,23 +80,79 @@
                	</head>
                	<ab>
                						1 m 1 v			25
-               							dep			50
-               	<date ana="#checkedOut" when="1900-04-28">April 28</date> <bibl ana="#borrowedItem" corresp="mep:001j2z"><title>Dodsworth</title></bibl>					<date ana="#returned" when="1900-05-14">May 14</date>
-               	<date ana="#checkedOut" when="1900-05-14">May 14-</date>	<bibl ana="#borrowedItem" corresp="mep:008261"><title>Flock of Birds</title></bibl>				<date ana="#returned" when="1900-05-26">May 26</date>
-               	<date ana="#checkedOut" when="1900-05-26">	26</date>	<bibl ana="#borrowedItem" corresp="mep:002v1c"><title>Plagued by the nightingale</title></bibl>	<date ana="#returned" when="1900-06-01">June 1st</date>
-               		
-               					1m 1v a				25v
-               	<date from="1939-01-11" to="1939-02-11">1939 Jan 11 - Feb 11</date>	dep			50v
-               	
-               	<date ana="#checkedOut" when="1939-01-11">Jan 11</date>	<bibl ana="#borrowedItem" corresp="mep:001r8g"><title>Dawn O'Hara</title></bibl>					<date ana="#returned" when="1939-01-18">Jan 18</date>
-               	<date ana="#checkedOut" when="1939-01-18">Jan 18</date>	<bibl ana="#borrowedItem" corresp="mep:000029"><title>Listen the Wind</title></bibl> 1v extra a day <date ana="#returned" when="1939-01-19">Jan 19</date>
-               				look up whether old dep refunded
-               	<date ana="#checkedOut" when="1939-01-19">	19</date>	<bibl ana="#borrowedItem" corresp="mep:00dz65"><title>Claverings</title></bibl>					<date ana="#returned" when="1939-01-31">Jan 31</date>
-               	<date ana="#checkedOut" when="1939-01-31">	31</date>	<bibl ana="#borrowedItem" corresp="mep:003g92"><title>Gerald</title></bibl>						<date ana="#returned" when="1939-02-14">Feb 14</date>
-               				1 m 1 v a
-               			<date from="1939-02-11" to="1939-03-11">Feb 11 - March 11</date>
-               	<date ana="#checkedOut" when="1939-02-24">Feb 24</date>	<bibl ana="#borrowedItem" corresp="mep:004c9g"><title>Dr. Martino</title></bibl>					<date ana="#returned" when="1939-03-10">Mar 10</date>
+               							dep			50 </ab>
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1900-04-28">April 28</date> 
+               	    <bibl ana="#borrowedItem" corresp="mep:001j2z">
+               	        <title>Dodsworth</title></bibl>					
+               	    <date ana="#returned" when="1900-05-14">May 14</date>
                	</ab>
+                    
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1900-05-14">May 14-</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:008261">
+               	        <title>Flock of Birds</title></bibl>				
+               	    <date ana="#returned" when="1900-05-26">May 26</date>
+               	</ab>
+                    
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1900-05-26">	26</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:002v1c">
+               	        <title>Plagued by the nightingale</title></bibl>	
+               	    <date ana="#returned" when="1900-06-01">June 1st</date>
+               	</ab>
+                    
+               					<ab>1m 1v a				25v</ab>
+                    
+               <ab>	<date from="1939-01-11" to="1939-02-11">1939 Jan 11 - Feb 11</date>	<note>dep			50v</note></ab>
+               	
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1939-01-11">Jan 11</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:001r8g">
+               	        <title>Dawn O'Hara</title></bibl>					
+               	    <date ana="#returned" when="1939-01-18">Jan 18</date>
+               	</ab>
+                    
+                    
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1939-01-18">Jan 18</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:000029">
+                       <title>Listen the Wind</title></bibl> 
+                   <note> 2v extra a day </note>
+                   <date ana="#returned" when="1939-01-19">Jan 19</date>
+               </ab>
+                    
+               				<ab>look up whether old dep refunded</ab>
+               				
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1939-01-19">	19</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:00dz65">
+               	        <title>Claverings</title></bibl>					
+               	    <date ana="#returned" when="1939-01-31">Jan 31</date>
+               	</ab>
+                    
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1939-01-31">	31</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:003g92">
+               	        <title>Gerald</title></bibl>						
+               	    <date ana="#returned" when="1939-02-14">Feb 14</date>
+               	</ab>
+                    
+               				<ab>1 m 1 v a
+               				
+               			<date from="1939-02-11" to="1939-03-11">Feb 11 - March 11</date></ab>
+                    
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1939-02-24">Feb 24</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:004c9g">
+               	        <title>Dr. Martino</title></bibl>					
+               	    <date ana="#returned" when="1939-03-10">Mar 10</date>
+               	</ab>
+                    
                	</div>
                	<div type="verso">
                 <pb facs="#s2"/>
