@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -7,8 +10,13 @@
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#cmahoney">
+                    <persName>Mahoney, Cate</persName> 
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName> 
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -55,25 +63,80 @@
            <div type="card">
                <div type="recto">
                 <pb facs="#s1"/>
-              <ab>  
-               <date when="1939"> 1939</date>			<persName ref="putz.ho">PUTZEL, Howard.	</persName>		III
+                
+               <head>
+                   <date when="1939"> 1939</date>			<persName ref="putz.ho">PUTZEL, Howard.	</persName>		III
                 			 <address><street> 27, rue jacob </street></address>_
+               </head>
                 			  
-            	<date ana="#checkedOut" when="1939-07-05">july 5</date>	<bibl ana="#borrowedItem" corresp="mep:004z95"><title>Young man with a horn.	</title></bibl>		<date ana="#returned" when="1939-07-06">july 6</date>
-            		<date ana="#checkedOut" when="1939-07-06">6</date>	<bibl ana="#borrowedItem" corresp="mep:00639r"><title>Ellery Queen</title></bibl>
-            		<date ana="#checkedOut" when="1939-07-06">6</date>	<bibl ana="#borrowedItem" corresp="mep:000010"><title>Being Geniuses together	</title></bibl>		<date ana="#returned" when="1939-07-07">July 7</date>
-            		<date ana="#checkedOut" when="1939-07-07">7</date>	<bibl ana="#borrowedItem" corresp="mep:00173s"><title>Day of the Locust	</title></bibl>			<date ana="#returned" when="1939-07-18">July 18</date>
-            		<date ana="#checkedOut" when="1937-07-18">18</date><bibl ana="#borrowedItem"><title>	Wait until Spring	</title></bibl>			<date ana="#returned" when="1939-07-24">July 24</date>
-            		<date ana="#checkedOut" when="1937-07-24">24</date>	<bibl ana="#borrowedItem" corresp="mep:00601f"><title>Bigger they come</title></bibl>				<date ana="#checkedOut" when="1939-07-29">July 29</date>
-            		[<bibl ana="#borrowedItem" corresp="mep:00d321"><title>Finnegans Wake</title></bibl> has been kept for
-            		 the <date ana="#returned" when="1939-07-29">29th of july </date>- doesn't want so]
-            		 		must send <persName ref="putz.ho">Mr Putzel</persName> word
+            	
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-07-05">july 5</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:004z95">
+                           <title>Young man with a horn.</title>
+                       </bibl>		
+                       <date ana="#returned" when="1939-07-06">july 6</date>
+                   </ab>
+                   
+                   
+                       <ab>
+                           <del>
+                           <date when="1939-07-06">6</date>	
+                            <bibl corresp="mep:00639r">
+                                <title>Ellery Queen</title>
+                            </bibl>
+                           </del>
+                       </ab>
+                                      
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-07-06">6</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:000010">
+                           <title>Being Geniuses together</title>
+                       </bibl>		
+                       <date ana="#returned" when="1939-07-07">July 7</date>
+                   </ab>
+                   
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-07-07">7</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:00173s">
+                           <title>Day of the Locust	</title>
+                       </bibl>			
+                       <date ana="#returned" when="1939-07-18">July 18</date>
+                   </ab>
+                   
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-07-18">18</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00ct3w">
+                           <title>Wait until Spring</title>
+                       </bibl>		
+                       <date ana="#returned" when="1939-07-24">July 24</date>
+                   </ab>
+                   
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-07-24">24</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:00601f">
+                           <title>Bigger they come</title>
+                       </bibl>				
+                       <date ana="#returned" when="1939-07-29">July 29</date>
+                   </ab>
+                   
+            		<note>
+            		    [<bibl corresp="mep:00d321"><title>Finnegans Wake</title></bibl> has been kept for
+            		      the <date when="1939-07-29">29th of july </date>- doesn't want so]
+            		</note>
+                   
+            		 		<note>
+            		 		    must send <persName ref="putz.ho">Mr Putzel</persName> word
             		 			library closing
-            		 	can sell to other customer)
+            		 		</note>
+            		 	
+            		 	<note>
+            		 	    can sell to other customer)
             		 		dep. ref <date when="1939-07-29">July 29</date>			50f
+            		 	</note>
             		 		
-            		 					paid 3f for 4 days subsc
-              </ab>
+            		 					<note>paid 3f for 4 days subsc</note>
+              
                 </div>
                <div type="verso">
                 <pb facs="#s2"/>
