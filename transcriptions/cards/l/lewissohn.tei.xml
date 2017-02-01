@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,9 +69,14 @@
                 		<persName ref="#lewi.lu">Mr Ludwig Lewissohn</persName>
                 			<address><street>14 rue Campagne</street> <district>1ère</district></address></head>
                 			
-                	<ab>	for borrowing one book 5</ab>
+                	<note>	for borrowing one book 5</note>
                 
-           <ab>     <date ana="#checkedOut" when="1932-01-05">Jan 5</date>	<bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning Becomes Electra</title></bibl>	<date ana="#returned" when="1932-01-11">Jan. 11</date></ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1932-01-05">Jan 5</date>
+                    <bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning Becomes Electra</title></bibl>
+                    <date ana="#returned" when="1932-01-11">Jan. 11</date>
+                </ab>
+                
                 </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank --></div>
