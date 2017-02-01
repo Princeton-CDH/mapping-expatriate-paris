@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,46 +67,83 @@
                     				                    <street>15 rue Boissonade</street></address>
                     				                    <address><street>1 rue Nicolas Houel 5e</street></address>
                     </head>	
-                    <ab>
-                	<date when="1933-04-10">April (10)</date>	1v. 1m. deposit not paid 50f		25-
+                   
+                	<note><date when="1933-04-10">April (10)</date>	1v. 1m. deposit not paid 50f		25-</note>
+                	
+                   <ab ana="#borrowingEvent">
+                	<date ana="#checkedOut" when="1933-04-12">12	</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00169c"><title>Lawrence Letters</title></bibl>	
+                    <date ana="#returned" when="1933-04-21">	21</date>
                 	</ab>
-                    <ab>
-                	<date ana="#checkedOut" when="1933-04-12">12	</date>		<bibl ana="#borrowedItem" corresp="mep:00169c"><title>Lawrence Letters</title></bibl>				<date ana="#returned" when="1933-04-21">	21</date>
-                	<date ana="#checkedOut" when="1933-04-21">21	</date>	    <bibl ana="#borrowedItem" corresp="mep:00505f"><title>Sons + Lovers</title></bibl>					<date ana="#returned" when="1933-04-26">	26</date>
-                	<date ana="#checkedOut" when="1933-04-29">29	</date>	    <bibl ana="#borrowedItem" corresp="mep:00401z"><title>Plumed Serpent</title></bibl>					<date ana="#returned" when="1933-05-10">	10</date>
-                	<date ana="#checkedOut" when="1933-05-10">10	</date>	    <bibl ana="#borrowedItem" corresp="mep:00fw19"><title>Narrow Corner</title></bibl>					<date ana="#returned" when="1933-05-15">	15</date>
-                    </ab>
-                    <ab>
-                	<date when="1933-05-15">15 	  </date> renewed to <date when="1933-06-06">12 June</date>	25f
-                    </ab>
-                    <ab>
-                	<date ana="#checkedOut" when="1933-05-15">15	</date>	    <bibl ana="#borrowedItem" corresp="mep:00kg28"><title>Daughter of the Samurai</title></bibl>			<date ana="#returned" when="1933-05-19">	19</date>
-                	<date ana="#checkedOut" when="1933-05-19">19	</date>	    <bibl ana="#borrowedItem" corresp="mep:00kw3w"><title>Romantic Exiles</title></bibl>					<date ana="#returned" when="1933-05-24">	24</date>
-                	<date ana="#checkedOut" when="1933-05-24">24	</date>	    <bibl ana="#borrowedItem" corresp="mep:00564s"><title>Idiot</title></bibl>							<date ana="#returned" when="1933-05-30">	30</date>
-                	<date ana="#checkedOut" when="1933-05-30">30 May</date>	<bibl ana="#borrowedItem" corresp="mep:00qj5q"><title>Human Merchandize</title></bibl>	card <date ana="#returned" when="1933-06-30">30 June</date>	6f	<date when="1933-07-07">7 July</date>
-                								due <date when="1933-06-13">13 June</date>   pd
-                	<date ana="#checkedOut" when="1933-07-07">7 July</date>	<bibl ana="#borrowedItem" corresp="mep:00bp27"><title>Prostitution in Europe</title></bibl> card <date ana="#returned" when="1933-08-09">9 Aug</date>		<date when="1934-03-01">March 1</date>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-04-21">21	</date>	  
+                    <bibl ana="#borrowedItem" corresp="mep:00505f"><title>Sons + Lovers</title></bibl>
+                    <date ana="#returned" when="1933-04-26">	26</date>
                 	</ab>
-                    <ab>
-                		renewed to <date when="1933-09-12">12 Sept</date>.		letter <date when="1933-09-22">Sept 22</date>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-04-29">29	</date>	  
+                    <bibl ana="#borrowedItem" corresp="mep:00401z"><title>Plumed Serpent</title></bibl>	
+                    <date ana="#returned" when="1933-05-10">	10</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-05-10">10	</date>	   
+                    <bibl ana="#borrowedItem" corresp="mep:00fw19"><title>Narrow Corner</title></bibl>			
+                    <date ana="#returned" when="1933-05-15">	15</date>
+                    </ab>
+                  
+                	<note><date when="1933-05-15">15 	  </date> renewed to <date when="1933-06-06">12 June</date>	25f</note>
+                    
+                  <ab ana="#borrowingEvent">
+                	<date ana="#checkedOut" when="1933-05-15">15	</date>	  
+                    <bibl ana="#borrowedItem" corresp="mep:00kg28"><title>Daughter of the Samurai</title></bibl>	
+                    <date ana="#returned" when="1933-05-19">	19</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-05-19">19	</date>	  
+                    <bibl ana="#borrowedItem" corresp="mep:00kw3w"><title>Romantic Exiles</title></bibl>		
+                    <date ana="#returned" when="1933-05-24">	24</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-05-24">24	</date>	  
+                    <bibl ana="#borrowedItem" corresp="mep:00564s"><title>Idiot</title></bibl>		
+                    <date ana="#returned" when="1933-05-30">	30</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-05-30">30 May</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00qj5q"><title>Human Merchandize</title></bibl>	
+                    <note>card <date when="1933-06-30">30 June</date>	6f	</note>
+                    <date ana="#returned" when="1933-07-07">7 July</date>
+                	</ab>
+                    
+                	<note>due <date when="1933-06-13">13 June</date>   pd</note>
+                	<ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-07-07">7 July</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00bp27"><title>Prostitution in Europe</title></bibl> 
+                   <note> card 
+                    <date when="1933-08-09">9 Aug</date>	</note>
+                    <date ana="#returned" when="1934-03-01">March 1</date>
+                	
+                   </ab>
+                		<note>renewed to <date when="1933-09-12">12 Sept</date>.		letter <date when="1933-09-22">Sept 22</date>
                 						will call Tuesday a m 6th
                 						to find out what she owes
                 						and what we owe
-                						
-                	owes subscription
+                		</note>				
+                	
+                	<note>owes subscription
                 		<date from="1933-06-12" to="1934-03-01">12 June - 1 March</date> (8mos + 20 days) 80f
                 	postage
                 		card + letter								0.90
                 														f
                 												   80.90
                 		deposit 50f kept to cover bill
-                		
+                	</note>	
                 			
-                			
+                			<note>
                 			<address><street>40 rue P. Nicole</street></address>
                 					~
                 			  <address><street>42 Denfert - Rochereau</street></address>
-                	</ab>		  
+                			</note>  
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>
