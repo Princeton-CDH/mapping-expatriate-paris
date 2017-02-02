@@ -57,7 +57,7 @@ def validate_xml(ctx, verbose=False):
 
 
     # summarize any failures
-    if any(errors.items()):
+    if any(errors.values()):
         print('')   # newline to distinguish from any error output
         for section, err_count in errors.items():
             if err_count:
@@ -66,6 +66,7 @@ def validate_xml(ctx, verbose=False):
 
         # if any file was invalid, exit with an error code to indicate
         # the build failed
-        exit(-1)
+        exit(1)
+
 
 
