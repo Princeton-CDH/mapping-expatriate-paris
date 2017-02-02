@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
@@ -65,29 +66,79 @@
                     			                        <street>6 rue l'école Polytecqnique</street>
                     			                        <settlement>Paris</settlement> <district>Ve</district></address>
                     </head>	
-                    <ab>
+                    <note>
                     			1 vol 1 month a 25
                     			deposit		50
-                    </ab>			
-                    <ab>
-                    <date ana="#checkedOut" when="1938-09-23">Sept 23</date>		<bibl ana="#borrowedItem" corresp="mep:00cc7j"><title>Early Life of George Eliot</title></bibl>		<date ana="#returned" when="1938-09-27">Sept 27</date>
-                    <date ana="#checkedOut" when="1938-09-24">Sept 24</date>		<bibl ana="#borrowedItem" corresp="mep:007r97"><title>Byron</title></bibl>							<date ana="#returned" when="1938-10-03">Oct 3</date>
-                    <date ana="#checkedOut" when="1938-10-03">Oct 3</date>		<bibl ana="#borrowedItem" corresp="mep:00cc8v"><title>Life of Charlotte Brontë</title>, <author>Gaskill</author></bibl>	<date ana="#returned" when="1938-10-07">Oct 7</date>
-                    <date ana="#checkedOut" when="1938-10-07">Oct 7</date>		<bibl ana="#borrowedItem" corresp="mep:00cc95"><title>Life of Charles Dickens</title></bibl>			<date ana="#returned" when="1938-10-10">Oct 10</date>
-                    <date ana="#checkedOut" when="1938-10-10">Oct 10</date>		<bibl ana="#borrowedItem" corresp="mep:00cd0n"><title>Balzac in Slippers</title></bibl>				<date ana="#returned" when="1938-10-14">Oct 14</date>
-                    <date ana="#checkedOut" when="1938-10-14">Oct 14</date>		<bibl ana="#borrowedItem" corresp="mep:00cd1z"><title>Marcel Proust</title></bibl>					<date ana="#returned" when="1938-10-18">Oct 18</date>
-                    <date ana="#checkedOut" when="1938-10-18"> "	18</date>		<bibl ana="#borrowedItem" corresp="mep:00cd28"><title>Eugénie Grandet</title></bibl>					<date ana="#returned" when="1938-10-21">Oct 21</date>
-                    <date ana="#checkedOut" when="1938-10-18"> 	18</date>		<bibl ana="#borrowedItem" corresp="mep:00cd3k"><title>Tales of Poe</title> <biblScope unit="volume" from="1">Vol I</biblScope></bibl> 1f extra per day	<date ana="#returned" when="1938-10-21">Oct 21</date>
-                    <date ana="#checkedOut" when="1938-10-21"> 	21</date>		<bibl ana="#borrowedItem" corresp="mep:00cd4w"><title>Life of Alexander Dumas</title></bibl>			<date ana="#returned" when="1938-11-08">Nov 8</date>
-                    </ab>  	
-                    <ab>
-                     				give <persName ref="#walk.na">Miss Walker</persName> 2v Change
-                     				
-                     	sub ren <date from="1938-10-23" to="1938-11-23">Oct 23 - Nov. 23</date>	25f
-                    </ab> 
-                    <ab>
-                    <date ana="#checkedOut" when="1938-11-08">Nov 8</date>		<bibl ana="#borrowedItem" corresp="mep:00cd0n"><title>Balzac In Slippers</title></bibl>				<date ana="#returned" when="1938-11-23">Nov 23</date>
+                    </note>			
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-09-23">Sept 23</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cc7j"><title>Early Life of George Eliot</title></bibl>	
+                        <date ana="#returned" when="1938-09-27">Sept 27</date>
                     </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-09-24">Sept 24</date>
+                        <bibl ana="#borrowedItem" corresp="mep:007r97"><title>Byron</title></bibl>
+                        <date ana="#returned" when="1938-10-03">Oct 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-03">Oct 3</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cc8v"><title>Life of Charlotte Brontë</title>,
+                            <author>Gaskill</author></bibl>	
+                        <date ana="#returned" when="1938-10-07">Oct 7</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-07">Oct 7</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cc95"><title>Life of Charles Dickens</title></bibl>	
+                        <date ana="#returned" when="1938-10-10">Oct 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-10">Oct 10</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cd0n"><title>Balzac in Slippers</title></bibl>	
+                        <date ana="#returned" when="1938-10-14">Oct 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-14">Oct 14</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cd1z"><title>Marcel Proust</title></bibl>	
+                        <date ana="#returned" when="1938-10-18">Oct 18</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-18"> "	18</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cd28"><title>Eugénie Grandet</title></bibl>	
+                        <date ana="#returned" when="1938-10-21">Oct 21</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-18"> 	18</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cd3k"><title>Tales of Poe</title> 
+                            <biblScope unit="volume" from="1">Vol I</biblScope></bibl> 
+                        <note>1f extra per day</note>	
+                        <date ana="#returned" when="1938-10-21">Oct 21</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-21"> 	21</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cd4w"><title>Life of Alexander Dumas</title></bibl>
+                        <date ana="#returned" when="1938-11-08">Nov 8</date>
+                    </ab>
+                    
+                    
+                     				<note><del>give <persName ref="#walk.na">Miss Walker</persName> 2v Change</del></note>
+                     				
+                     	<note>sub ren <date from="1938-10-23" to="1938-11-23">Oct 23 - Nov. 23</date>	25f</note>
+                     
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-08">Nov 8</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cd0n"><title>Balzac In Slippers</title></bibl>		
+                        <date ana="#returned" when="1938-11-23">Nov 23</date>
+                    </ab>
+                    
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
