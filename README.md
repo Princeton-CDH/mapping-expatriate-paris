@@ -1,6 +1,6 @@
 # Description of Project
 
-[![Build Status](https://travis-ci.org/Princeton-CDH/mapping-expatriate-paris.svg?branch=feature/data-build)](https://travis-ci.org/Princeton-CDH/mapping-expatriate-paris)
+[![Build Status](https://travis-ci.org/Princeton-CDH/mapping-expatriate-paris.svg?branch=develop)](https://travis-ci.org/Princeton-CDH/mapping-expatriate-paris)
 
 [![Ready](https://badge.waffle.io/Princeton-CDH/mapping-expatriate-paris.svg?label=ready&title=Ready)](http://waffle.io/Princeton-CDH/mapping-expatriate-paris)
 [![In Progress](https://badge.waffle.io/Princeton-CDH/mapping-expatriate-paris.svg?label=in+progress&title=In+Progress)](http://waffle.io/Princeton-CDH/mapping-expatriate-paris)
