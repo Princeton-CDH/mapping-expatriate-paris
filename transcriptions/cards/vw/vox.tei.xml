@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card:  <persName ref="#vox.ma">Maximilien Vox</persName></title>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="#vox.ma">Maximilien Vox</persName></title>
                 <respStmt ana="#carlca">
                     <persName>Adair, Carl</persName>
                     <resp>transcriber</resp>
@@ -12,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -74,30 +79,50 @@
                     			                 <street>13 rue Nicolas Fortin</street>
                     				             <settlement>Paris</settlement> <district>13e</district> <addrLine><num type="telephone">Gob. 39.61</num></addrLine></address>
                     </head>				
-                    <ab>
+                    <note>
                     						pd <date when="1937-01-25">Jan 25th 1937</date>	85v.
                     					                              6 mos	1v		70.00
                     							                         dep		30
                     						(left over)
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1937-01-04">Jan 4</date>	<bibl ana="#borrowedItem" corresp="mep:00218x"><title>Sanctuary</title></bibl>			<date ana="#returned" when="1937-01-25">Jan 25</date>
+                    </note>	
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-01-04">Jan 4</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00218x">
+                            <title>Sanctuary</title>
+                        </bibl>			
+                        <date ana="#returned" when="1937-01-25">Jan 25</date>
                     </ab>
-                    <ab>
+                    
+                    <note>
                     					                                       			70
-                    			        bought <bibl ana="#borrowedItem" corresp="mep:00cc20"><title>Pickwick</title></bibl>		15v.
-                    <date ana="#returned" when="1937-01-25">Jan 25</date> ch for subsc &amp; book		85
+                    			        bought <bibl corresp="mep:00cc20"><title>Pickwick</title></bibl>		15v.
+                    <date when="1937-01-25">Jan 25</date> ch for subsc &amp; book		85
                     
                     				has about 5 months subsc left
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1937-01-28">Jan 28</date>	<bibl ana="#borrowedItem" corresp="mep:009v59"><title>Pepys Diary</title> (<edition>Globe</edition>)</bibl>	<date ana="#returned" when="1937-02-17">Feb. 17</date>
-                    <date ana="#checkedOut" when="1937-02-17">Feb 17</date>	<bibl ana="#borrowedItem" corresp="mep:004k1n"><title>Daphne Adeane</title></bibl>	
-                                                                            copy is in library so was perhaps returned when shop closed
-                    			                 p.c. <date ana="#returned" when="1937-05-11">May 11</date>	
-                    			                 p.c. <date when="1937-11-12">Nov 12</date>	
+                    </note>	
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-01-28">Jan 28</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:009v59">
+                            <title>Pepys Diary</title> 
+                            (<edition>Globe</edition>)
+                        </bibl>	
+                        <date ana="#returned" when="1937-02-17">Feb. 17</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-17">Feb 17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004k1n">
+                            <title>Daphne Adeane</title>
+                        </bibl>	
+                        <note>copy is in library so was perhaps returned when shop closed</note>
+                        p.c. <date ana="#returned" when="1937-05-11">May 11</date>	
+                        p.c. <date when="1937-11-12">Nov 12</date>	
+                    </ab>
+                    
                     						
-                    </ab>						
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>
@@ -112,30 +137,91 @@
                     				                    <street>15 rue Nicolas Fortin -</street> <district>13e</district>
                     							         <addrLine><num type="telephone">gob. 40.46</num></addrLine></address>
                     </head>							
-                    <ab>							
+                    <note>							
                     				1 m		1 v				12
                     							dep			30
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1934-09-24">Sept 24</date>	<bibl ana="#borrowedItem" corresp="mep:001v70"><title>Elmer Gantry</title></bibl>	<date ana="#returned" when="1934-11-05">5 Nov.</date>
-                    <date ana="#checkedOut" when="1934-11-05">5 Nov.</date>	<bibl ana="#borrowedItem" corresp="mep:005m0v"><title>Man who knew Coolidge</title></bibl>	<date ana="#returned" when="1934-12-04">4 Dec</date>
-                    							p.c. <date when="1934-11-29">Nov 29</date>
-                    </ab>	
-                    <ab>
-                    Renewed <date from="1934-10-24" to="1935-04-24">Oct 24 1934 - April Janurary 24 1935</date>		70v
+                    </note>	
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-09-24">Sept 24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:001v70">
+                            <title>Elmer Gantry</title>
+                        </bibl>	
+                        <date ana="#returned" when="1934-11-05">5 Nov.</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1934-12-17">Dec 17</date>	<bibl ana="#borrowedItem" corresp="mep:00cc39"><title>Four Million</title></bibl>	<date ana="#returned" when="1935-01-04">Jan 4</date>
-                    <date ana="#checkedOut" when="1935-01-14">Jan 14</date>	<bibl ana="#borrowedItem" corresp="mep:00cc4m"><title>Roads of Destiny</title></bibl><date ana="#checkedOut" when="1935-06-24">24 June</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:006q3v"><title>Siamese Twin Mystery</title></bibl>	<date ana="#returned" when="1935-06-24">24 June</date>
-                    			
-                    					?
-                    <date ana="#checkedOut" when="1935-07-19">19 July _</date><bibl ana="#borrowedItem" corresp="mep:00cc5x"><title>Autobio. Wells. I &amp; II</title></bibl>	not paid <date ana="#returned" when="1935-08-13">13 Aug.</date>
-                    <date when="1935-12-30">1935
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1934-11-05">5 Nov.</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:005m0v">
+                           <title>Man who knew Coolidge</title>
+                       </bibl>	
+                       <date ana="#returned" when="1934-12-04">4 Dec</date>
+                       p.c. <date when="1934-11-29">Nov 29</date>
+                   </ab>
+                    
+                    <note>
+                    Renewed <date from="1934-10-24" to="1935-04-24">Oct 24 1934 - April Janurary 24 1935</date>		70v
+                    </note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-12-17">Dec 17</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cc39">
+                            <title>Four Million</title>
+                        </bibl>	
+                        <date ana="#returned" when="1935-01-04">Jan 4</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-01-14">Jan 14</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cc4m">
+                            <title>Roads of Destiny</title>
+                        </bibl>
+                        <date ana="#returned" when="1935-06-24">24 June</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-01-14"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:006q3v">
+                            <title>Siamese Twin Mystery</title>
+                        </bibl>	
+                        <date ana="#returned" when="1935-06-24">24 June</date>
+                    </ab>
+                    
+                    					<note>?</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-07-19">19 July _</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cc5x">
+                            <title>Autobio. Wells. I &amp; II</title>
+                        </bibl>	
+                        not paid 
+                        <date ana="#returned" when="1935-08-13">13 Aug.</date>
+                    </ab>
+                    
+                    <note>  
+                        <date when="1935-12-30">1935
                     	Dec 30</date>	by cheque 70v. will pay	20 vols	70
-                    <date ana="#checkedOut" when="1935-09-25">Sept 25</date>	<bibl ana="#borrowedItem" corresp="mep:00cc67"><title>White Monk of Timbuctoo</title></bibl>	<date ana="#checkedOut" when="1935-12-30">30 Dec</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00750r"><title>Slow Death of Geneva</title></bibl> card	<date ana="#returned" when="1935-12-30">30 Dec</date>
-                    </ab>			
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-09-25">Sept 25</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00cc67">
+                            <title>White Monk of Timbuctoo</title>
+                        </bibl>	
+                        <date ana="#returned" when="1935-12-30">30 Dec</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-09-25"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00750r">
+                            <title>Slow Death of Geneva</title>
+                        </bibl> 
+                        <note>card</note>	
+                        <date ana="#returned" when="1935-12-30">30 Dec</date>
+                    </ab>
+                    
                 </div> 
                 <div type="verso">
                     <pb facs="#s4"/>
