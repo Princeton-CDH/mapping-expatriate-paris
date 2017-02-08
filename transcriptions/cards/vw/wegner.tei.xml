@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -65,10 +66,13 @@
                     			<street>37 rue Boulard</street></address>
                     </head>			
                     			
-                    			
-                    <ab>
-                    <date ana="#checkedOut" when="1932-08-23">Aug 23</date>	<bibl ana="#borrowedItem"><title>Ulysses</title></bibl>			<date ana="#returned" when="1932-09-02">Sept 2</date>
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-08-23">Aug 23</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>			
+                        <date ana="#returned" when="1932-09-02">Sept 2</date>
                     </ab>
+                    
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>

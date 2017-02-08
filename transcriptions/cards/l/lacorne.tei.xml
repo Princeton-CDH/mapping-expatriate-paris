@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -71,8 +72,19 @@
                			<ab>	1m 1vS			20
                					Dep.		50</ab>
                	
-             <ab>  	<date ana="#checkedOut" when="1941-12-05">Dec. 5</date>	<bibl ana="#borrowedItem" corresp="mep:002q0z"><title>Rosalynde</title> (<publisher>Routledge</publisher>)</bibl>					<date ana="#returned" when="1941-12-12">Dec. 12</date>
-               	<date ana="#checkedOut" when="1941-12-12">Dec 12</date>	<bibl ana="#borrowedItem" corresp="mep:004084"><title>Old Wive's Tales</title></bibl>	wrote <date ana="#returned" when="1942-04-16">April 16</date></ab>
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1941-12-05">Dec. 5</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:002q0z"><title>Rosalynde</title> 
+               	        (<publisher>Routledge</publisher>)</bibl>					
+               	    <date ana="#returned" when="1941-12-12">Dec. 12</date>
+               	</ab>
+                
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1941-12-12">Dec 12</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:004084"><title>Old Wive's Tales</title></bibl>	
+               	    <note>wrote <date when="1942-04-16">April 16</date></note>
+               	</ab>
+                
                	</div><div type="verso">
                	<pb facs="#s2"/>
                	<!-- verso blank --></div>

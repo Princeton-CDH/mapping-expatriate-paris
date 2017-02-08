@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -72,13 +73,29 @@
                 				<street>rue de Vaugirard</street>
                 				</address>
                 </head>
-                <ab>
-                1 v.  1 m.							dep. 50f
-                			                            <bibl ana="#borrowedItem"><title>T.E. Lawrence</title></bibl>				refunded
-                <date ana="#checkedOut" when="1935-11-14">14 Nov.</date>	<bibl ana="#borrowedItem"><title>In Arabia + after - yo</title></bibl>			<date ana="#returned" when="1935-11-18">18 -</date>
-                <date ana="#checkedOut" when="1935-11-18">18 -</date>		<bibl ana="#borrowedItem"><title>Young Lonigan</title></bibl>					<date ana="#returned" when="1935-11-21">21</date>
-                <date ana="#checkedOut" when="1935-11-21">21	</date>		<bibl ana="#borrowedItem"><title>To Make my Bread</title></bibl>				<date ana="#returned" when="1935-11-23">23</date>
+                
+                <note><del>1 v.  1 m.</del>				 <del>dep. 50f</del>
+                                                            refunded</note>
+                			                            	
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-11-14">14 Nov.</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:008q5z"><title>T.E. Lawrence In Arabia + after - </title></bibl> <del>yo</del>
+                    <date ana="#returned" when="1935-11-18">18 -</date>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-11-18">18 -</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00fs5q"><title>Young Lonigan</title></bibl>	
+                    <date ana="#returned" when="1935-11-21">21</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-11-21">21	</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002s52"><title>To Make my Bread</title></bibl>	
+                    <date ana="#returned" when="1935-11-23">23</date>
+                </ab>
+                    
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>

@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -67,24 +68,34 @@
                     		                        <street>23 rue Gubernatis</street>
                     		                        <settlement>Nice</settlement></address>
                     </head>		
-                    <ab>								
-                    										<date when="1962">1962</date>
-                    <date ana="#checkedOut" when="1961-10-04">Oct 4</date>	<bibl ana="#borrowedItem" corresp="mep:00q293"><title>North America</title></bibl>				<date ana="#checkedOut" when="1962-03-21">March 21</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00q30k"><title>Indefinite Huntress</title></bibl>			<date ana="#checkedOut" when="1962-03-21">March 21</date>
+                    								
+                    										<note><date when="1962">1962</date></note>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1961-10-04">Oct 4</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00q293"><title>North America</title></bibl>		
+                        <date ana="#returned" when="1962-03-21">March 21</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1961-10-04">  </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00q30k"><title>Indefinite Huntress</title></bibl>	
+                        <date ana="#returned" when="1962-03-21">March 21</date>
+                    </ab>
+                    
+                <note>received <bibl corresp="mep:00q31w"><title>fruits confits</title></bibl>
+                    <date when="1961-10-19">Oct 19</date></note>
                     			
-                    			                   received <bibl ana="#borrowedItem" corresp="mep:00q31w"><title>fruits confits</title></bibl>	            <date ana="#returned" when="1961-10-19">Oct 19</date>
-                    			
-                    			wrote <date when="1962-03-13">March 13th 1962</date> asking
+                    			<note>wrote <date when="1962-03-13">March 13th 1962</date> asking
                     			to return books
                       <date when="1962-03">March?</date>	received letter saying would return books
                       <date when="1962-03-21">March 21</date>	books arrived reg. post
                       			acknowledged letter to <persName ref="#samy.an">Mlle Samyn</persName>
-                      			<date ana="#checkedOut" when="1962-03-21">March 21</date>, wd not be in Paris
+                      			<date when="1962-03-21">March 21</date>, wd not be in Paris
                       			in April - whole coll of 20s no
                       			longer available so problem of
-                      			<bibl ana="#borrowedItem" corresp="mep:009474"><title>Distinguished Air</title></bibl> (she wants to copy)
-                      			"difficult to solve"
-                     </ab> 			
+                      			<bibl corresp="mep:009474"><title>Distinguished Air</title></bibl> (she wants to copy)
+                      			"difficult to solve"</note>
+                      			
                </div>   
                 <div type="verso">
                     <pb facs="#s2"/>

@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -63,14 +64,24 @@
                                  <address><street> 24 du Renard.</street>
                                                  <settlement>Paris</settlement></address>
                                                  </head>
-          <ab>                        1 m 1 v A     25
-                                       Dep      50
+                                    <note> 1 m 1 v A     25
+                                       Dep      50</note>
                                        
-                 <date ana="#checkedOut" when="1941-11-28">Nov 28</date>       <bibl ana="#borrowedItem" corresp="mep:003h0j"><title>Ember Lane</title></bibl>                    <date ana="#returned" when="1941-12-08">Dec. 8</date>
-                 <date ana="#checkedOut" when="1941-12-08">Dec  8</date>       <bibl ana="#borrowedItem" corresp="mep:000z21"><title>Yang + Yin</title></bibl>                    <date ana="#returned" when="1941-12-24">Dec. 24</date>
-                                      left dep
+                 <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1941-11-28">Nov 28</date> 
+                     <bibl ana="#borrowedItem" corresp="mep:003h0j"><title>Ember Lane</title></bibl>      
+                     <date ana="#returned" when="1941-12-08">Dec. 8</date>
+                 </ab>
+              
+                 <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1941-12-08">Dec  8</date> 
+                     <bibl ana="#borrowedItem" corresp="mep:000z21"><title>Yang + Yin</title></bibl>        
+                     <date ana="#returned" when="1941-12-24">Dec. 24</date>
+                 </ab>
+              
+                                      <note>left dep</note>
                
-               </ab>
+               
              </div>
             <div type="verso">    <pb facs="#s2"/>
                 
