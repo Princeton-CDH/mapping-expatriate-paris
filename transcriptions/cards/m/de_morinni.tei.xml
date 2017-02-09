@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
@@ -12,6 +13,10 @@
                 <respStmt ana="#i-davis">
                     <persName>Davis, Ian</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -68,41 +73,131 @@
                 <div type="recto"><pb facs="#s1"/>
                 <head><date when="1935">1935</date>		<persName ref="#mori.cl">de MORINNI
                 			Madame Jacques</persName>
-                			<address><street>16 avenue Sainte-Foy</street><settlement> à Neuilly</settlement></address></head>
-                					<ab>subsc. <date ana="#checkedOut" from="1935-04-28" to="1935-05-25">28 April - May 25</date>v
-                1v. 1m..				<bibl ana="#borrowedItem"><title>Time + Tide</title></bibl>		   3.65
-                	dep.				deduct			  28.65	  25
+                			<address><street>16 avenue Sainte-Foy</street><settlement> à Neuilly</settlement></address>
+                </head>
+                					
+                    <note>
+                        subsc. <date from="1935-04-28" to="1935-05-25">28 April - May 25</date>v
+                        <bibl corresp="mep:003z04"><title>Time + Tide</title></bibl>		   3.65
+                					deduct			  28.65	  25
                 												  50
-                <date ana="#checkedOut" when="1935-02-20">Feb. 20</date>	<bibl ana="#borrowedItem"><title>Alice James</title></bibl>			refund 21.35		  27
-               <date ana="#checkedOut" when="1935-02-27"> 27</date>		<bibl ana="#borrowedItem"><title>America as A. see it</title></bibl>				<date ana="#returned" when="1935-03-21">21 March</date>
-            	<date ana="#checkedOut" when="1935-03">March</date>.	<bibl ana="#borrowedItem"><title>Memoirs of Cte de Tilly</title></bibl>
-            	Renewed <date ana="#returned" when="1935-03-20" to="1935-04-20">20 March - 20 April 1935</date>				50v
+                												  refund 21.35
+                    </note>
+               
+               <note>
+                   1v. 1m..
+                   dep.
+               </note>
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-02-20">Feb. 20</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:005r2k">
+                            <title>Alice James</title>
+                        </bibl>			
+                        <date ana="#returned" when="1935-02-27"> 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-02-27"> 27</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:004726">
+                            <title>America as A. see it</title>
+                        </bibl>				
+                        <date ana="#returned" when="1935-03-21">21 March</date>
+                    </ab>
+                    
+                    <ab>
+                        <del>
+                            <date ana="#checkedOut" when="1935-03">March</date>.	
+                            <bibl ana="#borrowedItem">
+                                <title>Memoirs of Cte de Tilly</title>
+                            </bibl>
+                        </del>
+                    </ab>
             	
-            	renew <date ana="#checkedOut" from="1935-03-28" to="1935-04-28">28 March - 28 April</date>						25v  
-            	p.	2.60 pd <bibl ana="#borrowedItem"><title>Memoirs of Cte. de Tilly</title></bibl>		<date ana="#returned" when="1935-04-08">8 April</date>
-            	<date ana="#checkedOut" when="1935-04-08">8 April</date>- <bibl ana="#borrowedItem"><title>Barnum</title></bibl>.							<date ana="#checkedOut" when="1935-04-10">10</date>
-            			<bibl ana="#borrowedItem"><title>English Diaries Ponsonby</title></bibl>			<date ana="#checkedOut" when="1935-04-10">10</date>
-            			<bibl ana="#borrowedItem"><title>Scottish &amp; Irish Diaries</title></bibl>			<date ana="#returned" when="1935-05-10">10 May</date>
-            	Renewed
-            		<date ana="#checkedOut" when="1935-04-27">27-April</date> - <bibl ana="#borrowedItem"><title>Time + Tide</title></bibl> - owes 3v
-            	Renewed <date ana="#returned" when="1935-04-28" to="1935-05-28">28 April - 28 May 1935</date>				25v
+            	<note>
+            	    <del>Renewed <date when="1935-03-20" to="1935-04-20">20 March - 20 April 1935</date>				50v</del>
+            	</note>
             	
-            	<date ana="#checkedOut" when="1935-08-07">7 Aug.</date> p. 2.60 <bibl ana="#borrowedItem"><title>Barnum's own story</title></bibl> 1v a day	<date ana="#returned" when="1935-09-11">Sept 11</date>
-            						card <date when="1935-09-04">4 Sept</date>
-            	<persName ref="#mori.cl">Mme de M.</persName>	called up <date when="1935-09-10">10th</date> returned by post
+            	<note>
+            	    <del>renew <date from="1935-03-28" to="1935-04-28">28 March - 28 April</date>		25v</del>
+            	</note>
+            	
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1935-03-28"></date>
+            	    p.	2.60 pd 
+            	    <bibl ana="#borrowedItem" corresp="mep:005r3w">
+            	        <title>Memoirs of Cte. de Tilly</title>
+            	    </bibl>		
+            	    <date ana="#returned" when="1935-04-08">8 April</date>
+            	</ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-04-08">8 April</date>- 
+                        <bibl ana="#borrowedItem" corresp="mep:005r46">
+                            <title>Barnum</title>
+                        </bibl>.							
+                        <date ana="#returned" when="1935-04-10">10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-04-08"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:005r5h">
+                            <title>English Diaries Ponsonby</title>
+                        </bibl>			
+                        <date ana="#returned" when="1935-04-10">10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-04-08"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:005r6t">
+                            <title>Scottish &amp; Irish Diaries</title>
+                        </bibl>			
+                        <date ana="#returned" when="1935-05-10">10 May</date>
+                    </ab>
+                    
+            	<note>
+            	    <del>Renewed</del>
+            	</note>
+            	
+                    <note>
+                        <date when="1935-04-27">27-April</date> - <bibl corresp="mep:003z04"><title>Time + Tide</title></bibl> - owes 3v
+                    </note>
+            	
+            	<note>
+            	    Renewed <date when="1935-04-28" to="1935-05-28">28 April - 28 May 1935</date>				25v
+            	</note>
+            	
+            	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-08-07">7 Aug.</date> 
+                        p. 2.60 
+                        <bibl ana="#borrowedItem" corresp="mep:005r74">
+                            <title>Barnum's own story</title>
+                        </bibl> 
+                        1v a day	
+                        <date ana="#returned" when="1935-09-11">Sept 11</date>
+                    </ab>
+                    
+            		<note>
+            		    card <date when="1935-09-04">4 Sept</date>
+            	       <persName ref="#mori.cl">Mme de M.</persName>	called up <date when="1935-09-10">10th</date> returned by post
             	
             				deduct from deposit 8		50v
             				
             				subsc: <date from="1935-04-28" to="1935-05-28">28 April - 28 May</date> 	25v
             						<date from="1935-08-07" to="1935-09-17">7 Aug -   17 Sept.</date>	20v
-            					<date ana="#checkedOut" when="1935-04-27">27 April</date> <bibl ana="#borrowedItem"><title>Time + Tide</title></bibl>	 3v
+            		    <date when="1935-04-27">27 April</date> <bibl corresp="mep:003z04"><title>Time + Tide</title></bibl>	 3v
             						post				 2.60
             											50.60
-            							owes 0.60</ab>
-            	</div><div type="verso">
-            	<pb facs="#s2"/>
-            	<!-- verso blank --></div>
-            </div>
+            							owes 0.60
+            		</note>
+            	</div>
+                
+                <div type="verso">
+            	   <pb facs="#s2"/>
+            	   <!-- verso blank -->
+                </div>
+               </div>
                 			
             
         </body>
