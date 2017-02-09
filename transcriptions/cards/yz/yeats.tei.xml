@@ -69,11 +69,15 @@
                              			<address><addrLine>Hotel Montpensier</addrLine>
                              			<street>12 rue Richelieu</street></address>
                         </head>
-                        <ab>   
+                           
                              
                              
-                             <date ana="#checkedOut" when="1939-06-09">June 9</date>		<bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>						<date ana="#returned" when="1939-06-19">June 19</date>
-                        </ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1939-06-09">June 9</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>
+                        <date ana="#returned" when="1939-06-19">June 19</date>
+                    </ab>
+                    
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
@@ -86,22 +90,44 @@
                             <date when="1947">1947</date>		<persName ref="#yeat.an">Miss Anne Yeats</persName>
                             			<address><street>12 rue de l'Odeon</street></address>
                         </head> 			
-                        <ab>
+                        
                             
-                            <date ana="#checkedOut" when="1947-05">May</date>			
-                                        <bibl ana="#borrowedItem" corresp="mep:00f95v"><title>Plume</title></bibl> (gave <persName ref="#yeat.an">her</persName>)
-                            			<bibl ana="#borrowedItem" corresp="mep:009m0t"><title>Black Boy</title></bibl>
-                            			<bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I Lay Dying</title></bibl>
-                            			<bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl>				returned
-                            			<bibl ana="#borrowedItem" corresp="mep:00f965"><title>Cassell's French-Eng-Eng-Fr. Dicty</title></bibl>
+                            <ab ana="#borrowingEvent">
+                                <date ana="#checkedOut" when="1947-05">May</date>			
+                                <bibl ana="#borrowedItem" corresp="mep:00f95v"><title>Plume</title></bibl>
+                                <note>(gave <persName ref="#yeat.an">her</persName>)</note>
+                            </ab>
+                    
+                            <ab ana="#borrowingEvent">
+                                <date ana="#checkedOut" when="1947-05">   </date>
+                                <bibl ana="#borrowedItem" corresp="mep:009m0t"><title>Black Boy</title></bibl>
+                            </ab>
+                    
+                            <ab ana="#borrowingEvent">
+                                <date ana="#checkedOut" when="1947-05">  </date>
+                                <bibl ana="#borrowedItem" corresp="mep:00224z"><title>As I Lay Dying</title></bibl>
+                                <note>returned</note>
+                            </ab>
+                    
+                            <ab ana="#borrowingEvent">
+                                <date ana="#checkedOut" when="1947-05">  </date>
+                                <bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl>
+                                <note>returned</note>
+                            </ab>
+                    
+                            <ab ana="#borrowingEvent">
+                                <date ana="#checkedOut" when="1947-05">  </date>
+                                <bibl ana="#borrowedItem" corresp="mep:00f965"><title>Cassell's French-Eng-Eng-Fr. Dicty</title></bibl>
+                                <note>returned</note>
+                            </ab>
+                    
                             			
                             			
-                            			
-                            			<persName ref="#beac.sy">S B</persName> took back the bicycle she borrowed
+                            		<note><persName ref="#beac.sy">S B</persName> took back the bicycle she borrowed
                             			  from <persName>Mme Jean de Berchem
                             			  		(Alliète Audra)</persName>
-                            			  	see <persName>M. Jean Bonnerot</persName>
-                        </ab>
+                            			  	see <persName>M. Jean Bonnerot</persName></note>
+                        
                 </div>
                 <div type="verso">
                      <pb facs="#s4"/>
