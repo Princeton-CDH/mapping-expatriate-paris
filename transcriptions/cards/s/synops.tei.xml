@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,39 +67,54 @@
                     					
                     						<street>25 rue D'Astorg.</street></address>
                     </head>		
-                    <ab>
+                   <note>
                     <date when="1936-12-04">April. 3rd</date>.			1 mth. 1 vol.			15.
                     
                     
                     									Dep. 30.
                     									
     											renewed again <date when="1936-05-18">May 18th</date>
-    				</ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1936-04-03">April 3</date>.		<bibl ana="#borrowedItem"><title>Mannequin</title></bibl>.					<date ana="#returned" when="1936-06-23">June 23</date>
-                    <date ana="#checkedOut" when="1936-04-03">	  3</date>		<bibl ana="#borrowedItem"><title>Strange Case of Annie Spragg</title></bibl>.
-                    </ab>	
-                    <ab>
-                    	  		(overdue)		sent p.c. <date when="1936-05-12">May 12</date>.
+    					
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-03">April 3</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:00nx7w">
+                            <title>Mannequin</title></bibl>.					
+                        <date ana="#returned" when="1936-06-23">June 23</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-03">	  3</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00rm5h">
+                            <title>Strange Case of Annie Spragg</title></bibl>.
+                        (overdue)		sent p.c. <date when="1936-05-12">May 12</date>.
+                    </ab>
+                    
+                  
+                    	<note>  		
                     	Renewed. <date from="1936-05-03" to="1936-06-03">May 3	-	June 3rd</date>.					15 frs
-                    	telephone. Will return Sharpe Case of Annie Spragg.
-                    <date when="1936-05-29">May 29</date>	<unclear/> ordered 2 copies of <bibl ana="#borrowedItem"><title>Mannequin</title></bibl> from America.
+                        <date when="1936-05-29">May 29</date>
+                    telephoned. Will return <bibl corresp="mep:00rm5h"><title>Strange Case of Annie Spragg</title></bibl>.
+                        <unclear/> ordered 2 copies of <bibl corresp="mep:00nx7w" ><title>Mannequin</title></bibl> from America.
                     		May keep library copy until copies come.
-                    			<bibl ana="#borrowedItem"><title>Mannequin</title></bibl> O.P.
+                        <bibl corresp="mep:00nx7w" ><title>Mannequin</title></bibl> O.P.
                     			
                     			wrote <orgName>Synops</orgName> to return
                     			
                     			lib. copy 	-	arr by post
-                    </ab>	
-                    <ab>
-                    	Renewed. <date from="1936-12-04" to="1937-01-04">Dec. 4th 1936	-	Jan 4th 1936</date>.		15v
+                    	</note>
+                    
+                   
+                    	<note>Renewed. <date from="1936-12-04" to="1937-01-04">Dec. 4th 1936	-	Jan 4th 1936</date>.		15v
                     									                                               Extra deposit	20v.
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1936-12-04">Dec 4</date>.	.	<bibl ana="#borrowedItem"><title>Mannequin</title></bibl> .. wrote p.c. <date ana="#returned" when="1937-03-17">March 17</date>. asking for book back.
+                    	</note>
+                    <note>
+                        <date when="1936-12-04">Dec 4</date>.	.	<bibl corresp="mep:00nx7w" ><title>Mannequin</title></bibl> .. wrote p.c. <date when="1937-03-17">March 17</date>. asking for book back.
                     		wrote <date when="1937-04-13">13 April</date> - no answer.
-                    		wrote <date when="1937-06-15">15 june</date>	26 still no answer
-                    </ab>		
+                    		wrote <date when="1937-06-15">15 june</date>	<date when="1937-06-26">26</date> still no answer
+                    	</note>	
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
