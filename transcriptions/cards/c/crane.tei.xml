@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 <teiHeader type="text">
   <fileDesc>
     <titleStmt>
@@ -142,7 +144,7 @@
           <bibl ana="#borrowedItem" corresp="mep:00jq0b"><title>In Morocco</title> (<persName>Wharton</persName>)</bibl> <note>0.50       </note>
           <date ana="#returned" when="1935-12-28">28</date>
         </ab>
-        <ab  ana="#borrowingEvent">
+        <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1935-12-26">      </date>
           <bibl ana="#borrowedItem" corresp="mep:00gq0v"><title>Virgin Spain</title></bibl><note> 0.50    </note>
           <date ana="#returned" when="1935-12-28">28</date>
@@ -250,7 +252,7 @@
         </ab>
         <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1937-07-16">      16</date>
-          <bibl ana="#borrowedItem" corresp="mep:000f8r"><title>Poetry</title> <biblScope unit="issue" ><date when="1937-07">July 1937</date></biblScope></bibl>
+          <bibl ana="#borrowedItem" corresp="mep:000f8r"><title>Poetry</title> <biblScope unit="issue"><date when="1937-07">July 1937</date></biblScope></bibl>
           <date ana="#returned" when="1937-07-17">        17</date>
         </ab>
         <ab ana="#borrowingEvent">
@@ -314,7 +316,7 @@
           <date ana="#returned" when="1937-10-12">Oct 12</date>
         </ab>
 
-        <note>(<persName>Miss Bishop</persName> owes.  b2.50 for book <bibl ana="#borrowedItem" corresp="mep:00jq94"><title>The Trial</title></bibl>)<!--crossed out-->
+        <note>(<persName>Miss Bishop</persName> owes.  b2.50 for book <bibl corresp="mep:00jq94"><title>The Trial</title></bibl>)<!--crossed out-->
         see <persName ref="#beac.sy">SB</persName>              50v</note>
 
         <note>  Renewed <date from="1937-08-02" to="1937-10-02">Aug. 2 - October 2</date> _ 2m. 1v.             25v</note>
@@ -407,7 +409,7 @@
           <note> sold     29.75</note>
         </ab>
         <ab ana="#borrowingEvent">
-          <date ana="#checkedOut" when="1937-11-10"></date>
+          <date ana="#checkedOut" when="1937-11-10"/>
           <bibl ana="#borrowedItem" corresp="mep:000s48"><title>Piers Plowman</title></bibl>
           <note> sold     17.00</note>
         </ab>
