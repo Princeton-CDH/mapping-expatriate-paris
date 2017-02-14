@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -67,18 +68,28 @@
                     </head>								
                     			
                     			
-                    <ab>			
+                    <note>			
                     			1 m		2 vols			70.
                     									91.50
                     								   111.50
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1928-10-16">Oct 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:007z6z"><title>C.</title></bibl>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1928-10-16">Oct 16</date>	<bibl ana="#borrowedItem" corresp="mep:007z6z"><title>C.</title></bibl>
-                    <date ana="#checkedOut" when="1928-10-16">"	16</date>	<bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl>
-                     		                                <bibl ana="#borrowedItem" corresp="mep:00h04j"><title>Jolly Days</title></bibl>	6.50
-                     		                                <bibl ana="#borrowedItem" corresp="mep:00h05v"><title>Pan Pipes</title></bibl>  35		paid
-                     				                                                               41.50
-                    </ab> 				   
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1928-10-16">"	16</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl>
+                    </ab>
+                    
+                   <note>
+                    <bibl corresp="mep:00h04j"><title>Jolly Days</title></bibl>	6.50
+                    <bibl corresp="mep:00h05v"><title>Pan Pipes</title></bibl>  35		paid
+                     				                                           41.50
+                    </note>
+                     				   
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>

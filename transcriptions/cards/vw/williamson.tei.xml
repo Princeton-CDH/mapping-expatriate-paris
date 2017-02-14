@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -69,9 +70,13 @@
                     				<name>Armée du Salut</name>
                     				<street>rue des Cordelières</street>	<district>XIVe</district></address>
                     </head>				
-                    <ab>
-                    <date ana="#checkedOut">Sept 24</date>	<bibl ana="#borrowedItem" corresp="mep:00455k"><title>Lady Chatterley</title></bibl>			<date ana="#returned">Sept 26</date>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1924-09-24">Sept 24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00455k"><title>Lady Chatterley</title></bibl>	
+                        <date ana="#returned" when="1924-09-26">Sept 26</date>
                     </ab>
+                    
                 </div>   
                 <div type="verso">
                     <pb facs="#s2"/>

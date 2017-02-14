@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
@@ -12,6 +13,10 @@
                 <respStmt ana="#i-davis">
                     <persName>Davis, Ian</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -71,30 +76,120 @@
            (Hte Garonne)</addrLine></address>
    </head>
                 			   						
-                			   					<ab>
+                			   					<note>
                 			   					    sent mandat. (17.50
                 			   	1m. 1v. prov:			  16.50
-                			   					Deposit	  30</ab>
-               <ab>
-                   <date ana="#checkedOut" when="1937-02-03">Feb 3.</date>		<bibl ana="#borrowedItem"><title>Song of the Lark</title></bibl>.		post. 2.40		<date ana="#returned" when="1937-02-17">Feb. 17-</date>
-                	<date ana="#checkedOut" when="1937-02-16">16</date>		<bibl ana="#borrowedItem"><title>Lucy Gayheart</title></bibl>			post 2.00		<date ana="#returned" when="1937-02-23">Feb 23</date>
-                	<date ana="#checkedOut" when="1937-02-23">23</date>		<bibl ana="#borrowedItem"><title>Obscure Obituaries</title></bibl>		post. 2.00		<date ana="#returned" when="1937-03-01">March 1</date>
-                   <date ana="#checkedOut" when="1937-03-01">March 1.</date>	<bibl ana="#borrowedItem"><title>Study of the Modern Novel</title></bibl> post 2.20		<date ana="#returned" when="1937-03-08">March 8</date>
-                	<date ana="#checkedOut" when="1937-03-06">6.</date>		<bibl ana="#borrowedItem"><title>American Fictions</title></bibl>		post 3.60		<date ana="#returned" when="1937-03-11">March 11</date>
-                	Renewed <date from="1937-03-03" to="1937-04-03">Mar. 3 - April 3rd.</date> paid <date when="1937-03-08">Mar. 8</date> mandat 6.50
-                <date ana="#checkedOut" when="1937-03-11">March 11</date>	<bibl ana="#borrowedItem"><title>Not under Fourty</title></bibl> 		p.	 1.80		<date ana="#returned" when="1937-03-17">Mar. 17</date>
-                <date when="1937-03-17">March 17.</date>	sent letter about books on <persName>Cather</persName>______
-                   <date ana="#checkedOut" when="1937-03-17">17.</date>	<bibl ana="#borrowedItem"><title>Youth and the Bright Medusa</title></bibl> p. 1.80		<date ana="#returned" when="1937-03-25">March 25</date>
-                   <date when="1937-03-17">17.</date>	credited one week for book not send.
-                	  sub still <date when="1937-04-10">April 10th</date> wrote letter apologizing.
-                <date ana="#checkedOut" when="1937-04-02">April 2.</date>	<bibl ana="#borrowedItem"><title>New American Literature.</title></bibl>				<date ana="#checkedOut" when="1937-04-27">April 27</date>
-                			<bibl ana="#borrowedItem"><title>Shadows on the Rocks</title></bibl>	post 3.80		<date ana="#returned" when="1937-04-27">April 27</date>
-                					<date when="1937-04-02">April 2.</date>	sent bill for postage 19.60
-                <date ana="#checkedOut" when="1937-04-05">April 5</date>		<bibl ana="#borrowedItem"><title>Willa Cather (pamphlet)</title></bibl> p.	 1.00
-                				<persName ref="#beac.sy">SB</persName> wrote <date when="1937-04-02">April 5</date>		  <date when="1937-05-06">May 6</date>
-                				<persName ref="#beac.sy">SB</persName> wrote <date ana="#checkedOut" when="1937-05-06">May 6</date> would send <bibl ana="#borrowedItem"><title>One of Ours</title></bibl>
-                   and <bibl ana="#borrowedItem"><title>O Pioneers</title></bibl> if could find copies in Paris</ab>
-   
+                			   					Deposit	  30
+               </note>
+                   
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-03">Feb 3.</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:003t8h">
+                            <title>Song of the Lark</title>
+                        </bibl>.		
+                        <note>post. 2.40</note>		
+                        <date ana="#returned" when="1937-02-17">Feb. 17-</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-16">16</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:000t5v">
+                            <title>Lucy Gayheart</title>
+                        </bibl>			
+                        <note>post 2.00</note>		
+                        <date ana="#returned" when="1937-02-23">Feb 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-23">23</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:003t9t">
+                            <title>Obscure Obituaries</title>
+                        </bibl>		
+                        <note>post. 2.00	</note>	
+                        <date ana="#returned" when="1937-03-01">March 1</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-01">March 1.</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:003v09">
+                            <title>Study of the Modern Novel</title>
+                        </bibl> 
+                       <note> post 2.20	</note>	
+                        <date ana="#returned" when="1937-03-08">March 8</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-06">6.</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:003v1m">
+                            <title>American Fictions</title>
+                        </bibl>		
+                        <note>post 3.60</note>		
+                        <date ana="#returned" when="1937-03-11">March 11</date>
+                    </ab>
+                    
+                	<note>Renewed <date from="1937-03-03" to="1937-04-03">Mar. 3 - April 3rd.</date> paid <date when="1937-03-08">Mar. 8</date> mandat 6.50</note>
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-11">March 11</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00356n">
+                            <title>Not under Fourty</title>
+                        </bibl> 		
+                       <note> p.	 1.80</note>		
+                        <date ana="#returned" when="1937-03-17">Mar. 17</date>
+                    </ab>
+                    
+                    <note>
+                        <date when="1937-03-17">March 17.</date>	sent letter about books on <persName>Cather</persName>______
+                    </note>
+                   
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-17">17.</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00294w">
+                            <title>Youth and the Bright Medusa</title>
+                        </bibl> 
+                       <note> p. 1.80	</note>	
+                        <date ana="#returned" when="1937-03-25">March 25</date>
+                    </ab>
+                    
+                    <note>
+                        <date when="1937-03-17">17.</date>	credited one week for book not send.
+                        sub still <date when="1937-04-10">April 10th</date> wrote letter apologizing.
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-04-02">April 2.</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:003v2x">
+                            <title>New American Literature.</title>
+                        </bibl>				
+                        <date ana="#returned" when="1937-04-27">April 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-04-02">April 2.</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002v2p">
+                            <title>Shadows on the Rocks</title>
+                        </bibl>	
+                        <note>post 3.80</note>		
+                        <date ana="#returned" when="1937-04-27">April 27</date>
+                    </ab>
+                    
+                    <note><date when="1937-04-02">April 2.</date>	sent bill for postage 19.60</note>
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-04-05">April 5</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:003v37">
+                            <title>Willa Cather (pamphlet)</title>
+                        </bibl> 
+                       <note> p.	 1.00</note>
+                        <date ana="#returned" when="1937-05-06">May 6</date>
+                    </ab>
+                    
+                    <note>
+                        <persName ref="#beac.sy">SB</persName> wrote <date when="1937-04-02">April 5</date>		  <date when="1937-05-06">May 6</date>
+                        <persName ref="#beac.sy">SB</persName> wrote <date when="1937-05-06">May 6</date> would send <bibl corresp="mep:003v4j"><title>One of Ours</title></bibl>
+                        and <bibl corresp="mep:003v5v"><title>O Pioneers</title></bibl> if could find copies in Paris
+                    </note>
+                    
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>

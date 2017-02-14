@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -65,21 +66,35 @@
                     						<address><name>10 American Express Co.</name>
                     								<street>11 rue Scribe,</street> <settlement>Paris</settlement></address>
                     </head>
-                    <ab>
-                    					1 m 1 v				25
+                    
+                    				<note>1 m 1 v				25
                     					  dp.				50
                     					  		returned
-                    					  				<date when="1932-09-30">30/9/32</date>
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1932-08-16">Aug 16</date>	<bibl ana="#borrowedItem" corresp="mep:00gq0v"><title>Virgin Spain</title></bibl>					<date ana="#returned" when="1932-08-30">Aug 30</date>
-                    <date ana="#checkedOut" when="1932-08-30">Aug 30</date>	<bibl ana="#borrowedItem" corresp="mep:005447"><title>Flurried Years</title></bibl>					<date ana="#returned" when="1932-09-13">Sept 13</date>
-                    <date ana="#checkedOut" when="1932-09-13">Sept 13</date>	<bibl ana="#borrowedItem" corresp="mep:00514d"><title>Enormous Room</title></bibl>					<date ana="#returned" when="1932-09-30">Sept 30</date>
+                    					  				<date when="1932-09-30">30/9/32</date></note>
+                    	
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-08-16">Aug 16</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00gq0v"><title>Virgin Spain</title></bibl>	
+                        <date ana="#returned" when="1932-08-30">Aug 30</date>
                     </ab>
-                    <ab>
-                    				owes 15v
-                    				balance on bill in Florence
-                    </ab>				
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-08-30">Aug 30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:005447"><title>Flurried Years</title></bibl>		
+                        <date ana="#returned" when="1932-09-13">Sept 13</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-13">Sept 13</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00514d"><title>Enormous Room</title></bibl>	
+                        <date ana="#returned" when="1932-09-30">Sept 30</date>
+                    </ab>
+                    
+                    
+                    				<note>owes 15v
+                    				balance on bill in Florence</note>
+                    				
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>

@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -66,10 +67,15 @@
                 </head>
                 
                 
-                <ab>
-                    <date ana="#checkedOut" when="1958-10-17">Oct 17</date>	<bibl ana="#borrowedItem" corresp="mep:000k4m"><author>Scott Fitzgerald</author> <title>Stories</title></bibl>	returned <date ana="#returned" when="1958-10">Nov 1958</date>
-                    (by Mme <persName ref="#balt.he"><surname>Baltrusaitis</surname></persName>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1958-10-17">Oct 17</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000k4m"><author>Scott Fitzgerald</author>
+                        <title>Stories</title></bibl>	
+                    returned <date ana="#returned" when="1958-11">Nov 1958</date> 
+                    <note>(by Mme <persName ref="#balt.he"><surname>Baltrusaitis</surname></persName></note>
                 </ab>
+                        
                 </div>
                 							
                 <div type="verso">

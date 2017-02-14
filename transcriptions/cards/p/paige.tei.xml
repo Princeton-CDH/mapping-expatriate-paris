@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -58,21 +59,31 @@
                <div type="recto"> 
                 <pb facs="#s1"/>
                 
-                   <ab> <date when="1941">1941</date>			<persName ref="paig.an">PAIGE
+                    <head><date when="1941">1941</date>			<persName ref="paig.an">PAIGE
                 				Miss Antoinette</persName>
                 				<address><name>L'Auxiliare Social,</name><street> 39 rue du Colisée</street>
                 				<street>46 Avenue Montaigne</street>
                 				<orgName> Clos du Poussin</orgName>
                 				<settlement>(Morainvilliers (Seine et Oise)</settlement>
-                					<settlement>par Orgeval</settlement></address>
+                					<settlement>par Orgeval</settlement></address></head>
                 					
                 					
-                						6 mos 1 v			115
-                							refunded dep	 50
-                								<date when="1944-10">Oct 1944</date>
-                <date ana="#checkedOut" when="1941-11-27">Nov 27</date>	<bibl ana="#borrowedItem" corresp="mep:001m2h"><title>Bridge of San Luis Rey	</title></bibl>			<date ana="#returned" when="1944-10-08">Oct 8 1944</date>
-                       <date ana="#checkedOut" when="1941-11-27">27</date>	<bibl ana="#borrowedItem" corresp="mep:00hx87"><title>Redder than the Rose</title></bibl>				<date ana="#returned" when="1944-10-08">Oct 8 1944</date>
-                   </ab>
+                						<note>6 mos 1 v			115
+                						refunded <date when="1944-10">Oct 1944</date> dep	 50</note>
+                   
+                								
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-27">Nov 27</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001m2h"><title>Bridge of San Luis Rey	</title></bibl>	
+                    <date ana="#returned" when="1944-10-08">Oct 8 1944</date>
+                </ab>
+                   
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-27">27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00hx87"><title>Redder than the Rose</title></bibl>
+                    <date ana="#returned" when="1944-10-08">Oct 8 1944</date>
+                </ab>
+                   
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
