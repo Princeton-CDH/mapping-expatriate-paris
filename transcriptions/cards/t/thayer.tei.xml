@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,16 +68,36 @@
                     								<street>rue Balzac</street></address>
                     </head>								
                     								
-                    <ab>
+                    <note>
                     		1 m 2 vols.				 20
                     		Deposit		refunded	100
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-05-21">May 21</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00gq15"><title>Isle of Dead Sheep</title></bibl>		
+                        <date ana="#returned" when="1926-05-25">May 25</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1926-05-21">May 21</date>	<bibl ana="#borrowedItem" corresp="mep:00gq15"><title>Isle of Dead Sheep</title></bibl>		      <date ana="#returned" when="1926-05-25">May 25</date>
-                    <date ana="#checkedOut" when="1926-05-21"> "	"</date>	<bibl ana="#borrowedItem" corresp="mep:006d1r"><title>Jericho Sand</title></bibl>			      <date ana="#returned" when="1926-05-25">"	 "</date>
-                    <date ana="#checkedOut" when="1926-05-25"> "	25</date>	<bibl ana="#borrowedItem" corresp="mep:00663q"><title>Swann's Way</title> in <biblScope unit="volume" from="1" to="2">2 vols</biblScope>.</bibl>	 <date ana="#returned" when="1926-05-29">"	29</date>
-                    <date ana="#checkedOut" when="1926-05-29"> "	29</date>	<bibl ana="#borrowedItem" corresp="mep:00gq2g"><title>Private Life of Helen of Troy</title></bibl> <date ana="#returned" when="1926-05-31">"	31</date>	
-                    </ab> 
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-05-21"> "	"</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:006d1r"><title>Jericho Sand</title></bibl>		
+                        <date ana="#returned" when="1926-05-25">"	 "</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-05-25"> "	25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00663q"><title>Swann's Way</title>
+                            in <biblScope unit="volume" from="1" to="2">2 vols</biblScope>.</bibl>	
+                        <date ana="#returned" when="1926-05-29">"	29</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-05-29"> "	29</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00gq2g"><title>Private Life of Helen of Troy</title></bibl>
+                        <date ana="#returned" when="1926-05-31">"	31</date>
+                    </ab>	
+                     
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
