@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,14 +68,22 @@
                 			Léon</persName>
                 			<address><street>123 Bd Bessière</street>		<settlement>Paris</settlement> <district>17</district></address></head>
                 			
-                	<ab>		
-                			6 mos 1 v					160
-                		can Keep books 10 days 		dep	 40</ab>
-        <ab>        
-                <date ana="#checkedOut" when="1937-09-25">Sept 25</date>	<bibl ana="#borrowedItem" corresp="mep:00390w"><title>Robinson of England</title></bibl>					<date ana="#returned" when="1937-10-02">Oct 2</date>
-                <date ana="#checkedOut" when="1937-10-09">Oct 9</date>	<bibl ana="#borrowedItem" corresp="mep:003738"><title>John Cornelius</title></bibl> (may keep it 2 wks)	<date ana="#returned" when="1937-10-23">Oct 23</date>
-                
-                			Has 5 months left</ab>
+                		
+                			<note>6 mos 1 v					160
+                		can Keep books 10 days 		dep	 40</note>
+               
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-09-25">Sept 25</date>
+                <bibl ana="#borrowedItem" corresp="mep:00390w"><title>Robinson of England</title></bibl>		
+                <date ana="#returned" when="1937-10-02">Oct 2</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-10-09">Oct 9</date>	
+                <bibl ana="#borrowedItem" corresp="mep:003738"><title>John Cornelius</title></bibl>
+                <note>(may keep it 2 wks)</note>
+                <date ana="#returned" when="1937-10-23">Oct 23</date>
+                </ab>
+                			<note>Has 5 months left</note>
                 </div>
              <div type="verso">   <pb facs="#s2"/>
                 <!-- verso blank -->
