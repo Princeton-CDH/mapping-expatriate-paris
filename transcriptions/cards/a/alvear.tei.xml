@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<teiHeader type="text">
@@ -140,8 +141,9 @@
 					
 					</head>						
 					
-					<ab>						
-						1 year
+											
+						<note>
+							1 year
 						
 						
 						<date when="1928-07-06">July 6th</date>         <del> sent 2 parcelles (books left here to be sent)
@@ -149,8 +151,8 @@
 							1 pound = 10,20              registered postage
 							1 p     =  9,30                  "         "
 							19,50</del>
-						
-					</ab>
+						</note>
+					
 				</div>
 				<div type="verso">
 					<pb facs="#s8"/>
@@ -170,26 +172,52 @@
 								</address>
 					
 					</head>
-					<ab>
 					
-								6 mois 1 vol.		100
-								
-								subs to:
-								
-					<date ana="#checkedOut" when="1929">1929</date>		<bibl ana="#borrowedItem"><title>Later Poems</title>, <author>Yeats</author></bibl>					<date ana="#returned" when="1929-03-13">Mars 13</date>
 					
-					<date ana="#checkedOut" when="1929-03-13">March 13</date>	<bibl ana="#borrowedItem"><title>Poems</title>, <author>Yeats</author></bibl>					<date ana="#returned" when="1929-08-01">Aug 1st</date>
-								Celtic O
+								<note>
+									6 mois 1 vol.		100
 								
-					<date ana="#checkedOut" when="1929-03-13">"	"</date>		owes 12.50 for <bibl ana="#borrowedItem"><title>The Happy Prince</title></bibl>		12.50
-										paid <date ana="#returned" when="1930-03-18">Mch 18th 1930</date>
-					<date when="1930">1930</date>			Account
-					<date ana="#checkedOut" when="1930-03-19">March 19</date>	<bibl ana="#borrowedItem"><title>Room of Ones Own</title></bibl>					35.00
-															<bibl ana="#borrowedItem"><title>JJ record</title></bibl>						   400
-																													Frs	   435
-													sent bill <date ana="#returned" when="1930-04-24">April 24</date>
+									subs to:
+								</note>
+								
 					
+					<ab ana="#borrowingEvent">
+						<date ana="#checkedOut" when="1929">1929</date>		
+						<bibl ana="#borrowedItem" corresp="mep:00662d">
+							<title>Later Poems</title>, 
+							<author>Yeats</author>
+						</bibl>					
+						<date ana="#returned" when="1929-03-13">Mars 13</date>
 					</ab>
+					
+					<ab ana="#borrowingEvent">
+						<date ana="#checkedOut" when="1929-03-13">March 13</date>	
+						<bibl ana="#borrowedItem" corresp="mep:00kb81">
+							<title>Poems</title>, 
+							<author>Yeats</author>
+						</bibl>					
+						<date ana="#returned" when="1929-08-01">Aug 1st</date>
+					</ab>
+					
+								<note>
+									<del>Celtic O</del>
+								</note>
+						
+					<note>		
+					
+						<date when="1929-03-13">"	"</date>		owes 12.50 for <bibl corresp="mep:00sq1b"><title>The Happy Prince</title></bibl>		12.50
+										paid <date when="1930-03-18">Mch 18th 1930</date>
+					</note>
+					
+					<note>
+						<date when="1930">1930</date>			Account
+						<date when="1930-03-19">March 19</date>	<bibl corresp="mep:000j9w"><title>Room of Ones Own</title></bibl>					35.00
+															<bibl><title>JJ record</title></bibl>						   400
+																													Frs	   435
+													sent bill <date when="1930-04-24">April 24</date>
+				</note>
+					
+					
 				</div>
 				<div type="verso">
 					<pb facs="#s6"/>
@@ -212,29 +240,29 @@
 								<addrLine><num type="telephone">Passy 21-11</num></addrLine>
 								</address>
 					</head>
-					<ab>
+				<note>
 					<date when="1930-11-19">Nov 19th</date>	Sent bill: to <unclear/>		1420 fr.
 															paid
 					
 					
-					<date ana="#checkedOut" when="1930-12-12">Dec 12</date>	<bibl ana="#borrowedItem"><title>ALP</title></bibl>								9.00
+						<date when="1930-12-12">Dec 12</date>	<bibl corresp="mep:004v0j"><title>ALP</title></bibl>								9.00
 					
-					<date ana="#returned" when="1931">1931</date>
-					<date ana="#checkedOut" when="1931-05-28">May 28</date>	1 set <bibl ana="#borrowedItem"><title>Works of Henry James</title></bibl>					1000.
-					<date ana="#checkedOut" when="1931-05-28"> "	28</date>	1 set <bibl ana="#borrowedItem"><title>Mermaid Series</title></bibl>						 850.
-					<date ana="#checkedOut" when="1931-05-28"> "	28</date>	1 set <bibl ana="#borrowedItem"><title>Muses Library</title></bibl>							 800
+					<date when="1931">1931</date>
+					<date when="1931-05-28">May 28</date>	1 set <bibl><title>Works of Henry James</title></bibl>					1000.
+					<date when="1931-05-28"> "	28</date>	1 set <bibl corresp="mep:00j517"><title>Mermaid Series</title></bibl>						 850.
+					<date when="1931-05-28"> "	28</date>	1 set <bibl><title>Muses Library</title></bibl>							 800
 					 																						Total .... 2.650 frs.
-					<date ana="#checkedOut" when="1931-05-28"> 	</date>		<bibl ana="#borrowedItem"><author>Theodore Dreiser</author>: <title>The Color of a lreat city</title></bibl>	  80
-					<date ana="#checkedOut" when="1931-05-28"> 	</date>		<bibl ana="#borrowedItem"><title>The American Tragedy</title></bibl>							  80
+						<date when="1931-05-28"></date>		<bibl corresp="mep:003n4w"><author>Theodore Dreiser</author>: <title>The Color of a Great city</title></bibl>	  80
+						<date when="1931-05-28"></date>		<bibl corresp="mep:001j38"><title>The American Tragedy</title></bibl>							  80
 					 			
-					<date ana="#checkedOut" when="1931-05-28"> 	</date>		12 <bibl ana="#borrowedItem"><title>D.H. Lawrence at 30</title></bibl>						 360
-					<date ana="#checkedOut" when="1931-05-28"> 	</date>		<bibl ana="#borrowedItem"><title>Pornography &amp; Obscenity</title></bibl>					   9.
+					<date when="1931-05-28"></date>		12 <bibl><title>D.H. Lawrence at 30</title></bibl>						 360
+						<date when="1931-05-28"></date>		<bibl corresp="mep:00jz8r"><title>Pornography &amp; Obscenity</title></bibl>					   9.
 					 			
-					<date ana="#returned" when="1931-06-08">June 8</date>		Taken to <persName ref="#alve.el">Mlle E. de A.</persName> with bill .. .	   3,179
+					<date when="1931-06-08">June 8</date>		Taken to <persName ref="#alve.el">Mlle E. de A.</persName> with bill .. .	   3,179
 					
 					
-								<persName ref="#beac.sy">SB</persName> worte letter again Jan 13 1932.
-					</ab>
+								<persName ref="#beac.sy">SB</persName> worte letter again <date when="1932-01-13">Jan 13 1932</date>.
+					</note>
 				</div>
 				<div type="verso">
 					<pb facs="#s4"/>
@@ -258,7 +286,7 @@
 				<!-- 1 letter-head sheet -->
 				<div type="recto">
 					<pb facs="#s11"/>
-<head>
+	<head>
 
 	<address>					
 						<orgName>"SHAKESPEARE AND COMPANY"</orgName>
@@ -267,38 +295,120 @@
 						<settlement>PARIS</settlement> <district>(VIe)</district>
 						<addrLine>Tel. Littre 33-76              R.C. Seine No284-402</addrLine>
 						
-</address>
-<address>						
+	</address>
+	<address>						
 						<persName ref="#alve.el">Mademoiselle Elvira de Alvear</persName>
 						<street>40 rue Spontini</street>                        
 						<settlement>Paris</settlement> <district>16</district>
 						
-</address>						
+	</address>						
 					<date when="1930-08-08">8 Aout 1930</date>
 					
-</head>					
+	</head>					
 								
-<table>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00025s"><title>Disc from work in Progress</title>      <author>J. Joyce</author></bibl></cell> <cell role="data" rows="1" cols="1">375</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000263"><title>Haveth Childers Everywhere</title> <author>〃</author> <note>signed no38</note></bibl></cell> <cell role="data" rows="1" cols="1">850</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00027d"><title>Pomes Penyeach</title>                  <author>J. Joyce</author></bibl></cell> <cell role="data" rows="1" cols="1">12</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00028q"><title>Anabasis</title>       <note>limited &amp; signed no99</note></bibl></cell> <cell role="data" rows="1" cols="1">300</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000291"><title>Song for Simeon</title>       <unclear>"</unclear> <author>T.S. Eliot</author> no192</bibl></cell> <cell role="data" rows="1" cols="1">100</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00030h"><title>Alexander Pope</title>             by <author>E. Sitwell</author></bibl></cell> <cell role="data" rows="1" cols="1">105</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00031t"><title>The Bridge</title>                 by <author>Hart Crane</author></bibl></cell> <cell role="data" rows="1" cols="1">70</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000324"><title>White Buildings</title>                <author>"    "</author></bibl></cell> <cell role="data" rows="1" cols="1">56</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00033f"><title>James Joyce's Ulysses</title>  by <author>Stuart Gilbert</author></bibl></cell> <cell role="data" rows="1" cols="1">150</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00034r"><title>Brief Candles</title>   by <author>A. Huxley</author> <note>1st edition</note></bibl></cell> <cell role="data" rows="1" cols="1">110</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000352"><title>The One who is Legion</title> by <author>N.Barney</author> <note>limited</note></bibl></cell> <cell role="data" rows="1" cols="1">160</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00036c"><title>Transition Stories</title></bibl></cell> <cell role="data" rows="1" cols="1">70</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00037p"><title>Pansies</title>                by <author>D.H. Lawrence</author></bibl></cell> <cell role="data" rows="1" cols="1">25</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000380"><title>American Mercury</title></bibl></cell> <cell role="data" rows="1" cols="1">18</cell></row>
-<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition no19</title></bibl></cell> <cell role="data" rows="1" cols="1">30</cell></row>
-	<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1">total  frs:</cell>                 <cell role="data" rows="1" cols="1">2486</cell></row>
-	<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1">check given for Mlle Monnier</cell><cell role="data" rows="1" cols="1">1050</cell></row>
-	<row role="data" rows="1" cols="1"><cell role="data" rows="1" cols="1"/>                                  <cell role="data" rows="1" cols="1">3530</cell></row>
-</table>						
 
+
+				<note>
+						<bibl corresp="mep:00025s">
+							<title>Disc from work in Progress</title>      
+							<author>J. Joyce</author>
+						</bibl>
+						375
+					
+
+					<bibl corresp="mep:000263">
+						<title>Haveth Childers Everywhere</title>
+						<author>〃</author> 
+					</bibl>
+						<note>signed no38</note>
+						850
+
+					<bibl corresp="mep:00027d">
+						<title>Pomes Penyeach</title>                 
+						<author>J. Joyce</author>
+					</bibl>
+						12
+
+					<bibl corresp="mep:00028q">
+						<title>Anabasis</title>      
+						</bibl>
+						<note>limited &amp; signed no99</note>
+						300
+
+					<bibl corresp="mep:000291">
+						<title>Song for Simeon</title>   
+						<unclear>"</unclear> 
+						<author>T.S. Eliot</author> 
+						no192</bibl>
+						100
+
+					<bibl corresp="mep:00030h">
+						<title>Alexander Pope</title>           
+						by <author>E. Sitwell</author></bibl>
+						105
+
+					<bibl corresp="mep:00031t">
+						<title>The Bridge</title>                 
+						by <author>Hart Crane</author>
+					</bibl>
+						70
+
+					<bibl corresp="mep:000324">
+						<title>White Buildings</title>                
+						<author>"    "</author>
+					</bibl>
+						56
+
+					<bibl corresp="mep:00033f">
+						<title>James Joyce's Ulysses</title>  
+						by <author>Stuart Gilbert</author>
+					</bibl>
+						150
+
+					<bibl corresp="mep:00034r">
+						<title>Brief Candles</title>   
+						by <author>A. Huxley</author> 
+						<edition>1st edition</edition>
+					</bibl>
+						110
+
+					<bibl corresp="mep:000352">
+						<title>The One who is Legion</title> 
+						by <author>N.Barney</author> 
+						<note>limited</note>
+					</bibl>
+						160
+
+					<bibl corresp="mep:00036c">
+						<title>Transition Stories</title>
+					</bibl>
+						70
+
+					<bibl corresp="mep:00037p">
+						<title>Pansies</title>             
+						by <author>D.H. Lawrence</author>
+					</bibl> 
+						25
+
+					<bibl corresp="mep:000380">
+						<title>American Mercury</title>
+					</bibl> 
+						18
+
+					
+					<bibl corresp="mep:000399">
+						<title>Transition </title>
+						<biblScope unit="issue" from="19">no19</biblScope>
+					</bibl>
+						30
+					</note>
+	<note>
+		total  frs:                 	2486
+		check given for <persName corresp="monn">Mlle Monnier </persName>	1050
+	                                  	3530
+	</note>
+						
+					
 				</div>
 				<div type="verso">
 					<pb facs="#s12"/>
