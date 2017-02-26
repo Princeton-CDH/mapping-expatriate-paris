@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -80,27 +82,77 @@
                				<street>44 rue du Bac</street>
                				</address>
                	</head>
-               	<ab>
+               <note>
                				3 mos 1 vol				65
                					dep					50
                				by cheque <date when="1940-01-22">Jan 22</date> <unclear/>45 (sidery)
-               			(2 subscriptions <bibl ana="#borrowedItem" corresp="mep:002f7x"><title>Horizon</title></bibl> included)
+               			(2 subscriptions <bibl corresp="mep:002f7x"><title>Horizon</title></bibl> included)
+               	</note>
+                <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1940-01-22">Jan. 22</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000f92"><title>Family Reunion</title></bibl>		
+                    <date ana="#returned" when="1940-01-26">Jan. 26</date>
                	</ab>
-                <ab>
-               	<date ana="#checkedOut" when="1940-01-22">Jan. 22</date>		<bibl ana="#borrowedItem" corresp="mep:000f92"><title>Family Reunion</title></bibl>				<date ana="#returned" when="1940-01-26">Jan. 26</date>
-               	<date ana="#checkedOut" when="1940-01-22">	22</date>		<bibl ana="#borrowedItem" corresp="mep:001t81"><title>Manhattan Transfer</title></bibl> 1f		<date ana="#returned" when="1940-01-23">Jan 23</date>
-               	<date ana="#checkedOut" when="1940-01-23">Jan 23</date>		<bibl ana="#borrowedItem" corresp="mep:003s12"><title>Forty-second Parallel</title></bibl> 1v pd	<date ana="#returned" when="1940-01-26">Jan. 26</date>
-               	<date ana="#checkedOut" when="1940-01-26">	26</date>		<bibl ana="#borrowedItem" corresp="mep:004h2d"><title>Something wrong</title></bibl>			<date ana="#returned" when="1940-02-05">Feb. 5</date>
-               	<date ana="#checkedOut" when="1940-02-05">	5</date>		<bibl ana="#borrowedItem" corresp="mep:00rn91"><title>Mutiny</title></bibl>						<date ana="#returned" when="1940-02-06">Feb. 6</date>
-               	<date ana="#checkedOut" when="1940-02-05">	5</date>		<bibl ana="#borrowedItem" corresp="mep:00rp0h"><title>Sheridan</title></bibl> 1v.				<date ana="#returned" when="1940-02-06">Feb. 6</date>
-               	<date ana="#checkedOut" when="1940-02-06">Feb. 6</date>		<bibl ana="#borrowedItem" corresp="mep:00rp1t"><title>May the Twelfth</title></bibl>.			<date ana="#returned" when="1940-02-15">Feb 15</date>
-               	<date ana="#checkedOut" when="1940-02-15">	15</date>		<bibl ana="#borrowedItem" corresp="mep:00rp24"><title>History of Europe</title></bibl>			<date ana="#returned" when="1940-02-20">Feb 20</date>
-               	<date ana="#checkedOut" when="1940-02-20">	20</date>		<bibl ana="#borrowedItem" corresp="mep:00609x"><title>Peacemaking 1919</title></bibl>			<date ana="#returned" when="1940-02-23">Feb 23</date>
-               	<date ana="#checkedOut" when="1940-02-23">	23</date>		<bibl ana="#borrowedItem" corresp="mep:002s99"><title>Altogether</title></bibl>					<date ana="#returned" when="1940-03-29">March 29</date>
-               	<date ana="#checkedOut" when="1940-03-29">March 29</date>	    <bibl ana="#borrowedItem" corresp="mep:000m0n"><title>Cosmopolitans</title></bibl>				<date ana="#returned" when="1940-03-30">March 30</date>
-               	<date ana="#checkedOut" when="1940-03-30">	30</date>		<bibl ana="#borrowedItem" corresp="mep:00rp3f"><title>Union Now</title></bibl>
-               					p.c. <date ana="#returned" when="1940-04-24">April 24th</date>
-                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-22">	22</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:001t81"><title>Manhattan Transfer</title></bibl> 
+                  <note>  1f</note>
+                    <date ana="#returned" when="1940-01-23">Jan 23</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-23">Jan 23</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003s12"><title>Forty-second Parallel</title></bibl>
+                   <note> 1v pd	</note>
+                    <date ana="#returned" when="1940-01-26">Jan. 26</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-26">	26</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:004h2d"><title>Something wrong</title></bibl>
+                    <date ana="#returned" when="1940-02-05">Feb. 5</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-05">	5</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00rn91"><title>Mutiny</title></bibl>		
+                    <date ana="#returned" when="1940-02-06">Feb. 6</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-05">	5</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00rp0h"><title>Sheridan</title></bibl>
+                    <note>1v.</note>
+                    <date ana="#returned" when="1940-02-06">Feb. 6</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-06">Feb. 6</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00rp1t"><title>May the Twelfth</title></bibl>
+                    <date ana="#returned" when="1940-02-15">Feb 15</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-15">	15</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00rp24"><title>History of Europe</title></bibl>		
+                    <date ana="#returned" when="1940-02-20">Feb 20</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-20">	20</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00609x"><title>Peacemaking 1919</title></bibl>	
+                    <date ana="#returned" when="1940-02-23">Feb 23</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-23">	23</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002s99"><title>Altogether</title></bibl>				
+                    <date ana="#returned" when="1940-03-29">March 29</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-29">March 29</date>	   
+                    <bibl ana="#borrowedItem" corresp="mep:000m0n"><title>Cosmopolitans</title></bibl>		
+                    <date ana="#returned" when="1940-03-30">March 30</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-30">	30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00rp3f"><title>Union Now</title></bibl>
+               		</ab>
+               		<note>p.c.
+                    <date  when="1940-04-24">April 24th</date></note>
+                
                	</div>
                 <div type="verso">
                	<pb facs="#s2"/>
