@@ -39,4 +39,10 @@
         </sch:rule>
     </sch:pattern>
 
+    <sch:pattern>
+        <sch:rule context="tei:bibl">
+            <sch:assert test="count(tei:persName) = 0">bibl should not contain persname</sch:assert>
+        </sch:rule>
+    </sch:pattern>
+
 </sch:schema>
