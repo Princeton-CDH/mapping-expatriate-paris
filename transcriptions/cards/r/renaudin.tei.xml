@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,30 +57,89 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
+                <head>
                 <date when="1940">1940</date>		<persName ref="rena.pa">RENAUDIN</persName>
                 			<persName ref="rena.pa">Paul Renaudin</persName>
-                		<address><street>55 rue de Varenne</street> <district>- VII</district></address>
+                		<address><street>55 rue de Varenne</street> <district>- VII</district></address></head>
                 			
                 			
                 			
-                				3 m		1 v			65
+                			<note>3 m		1 v			65
                 							dep		50
                 					refunded <date when="1941-02-19">Feb 19 1941</date>
-                								P.R.
-                <date ana="#checkedOut" when="1940-11-18">Nov 18</date>	<bibl ana="#borrowedItem"><author>G.M. Hopkins</author></bibl>, <bibl ana="#borrowedItem" corresp="mep:00sr7g"><title>Lahay	</title></bibl>					<date ana="#returned" when="1940-11-22">Nov 22</date>
-                    <date ana="#checkedOut" when="1940-11-22">22</date>	<bibl ana="#borrowedItem" corresp="mep:00sr8s"><title>Contemporary British Philosophy</title></bibl> <bibl ana="#borrowedItem"><biblScope>v1</biblScope></bibl> 		<date ana="#returned" when="1940-12-06">Dec 6</date>
-                <date ana="#checkedOut" when="1940-12-06">Dec 6</date>	<bibl ana="#borrowedItem" corresp="mep:007067"><title>	"			"		"	</title></bibl>  <bibl ana="#borrowedItem"><biblScope>vol 2</biblScope></bibl>		<date ana="#returned" when="1940-12-12">Dec 12</date>
-                	<date ana="#checkedOut" when="1940-12-12">12	</date><bibl ana="#borrowedItem" corresp="mep:004815"><title>Characters + Commentaries</title></bibl> (<bibl ana="#borrowedItem"><author>L. Strachey</author></bibl>)<date ana="#returned" when="1940-12-27">Dec 27</date>
-                    <date ana="#checkedOut" when="1940-12-27">27</date>	<bibl ana="#borrowedItem" corresp="mep:008h0r"><title>Portraits</title></bibl> <bibl ana="#borrowedItem"><biblScope>vol 1</biblScope></bibl><bibl ana="#borrowedItem"><author> Mac Carthey	</author></bibl>	 <date ana="#returned" when="1941-01-14">Jan 14	</date>
-                <date ana="#checkedOut" when="1941-01-14">Jan 14	</date><bibl ana="#borrowedItem" corresp="mep:007k2p"><title>Criticism</title></bibl>	<bibl ana="#borrowedItem"><author>Mac Carthy	</author></bibl>				<date ana="#returned" when="1941-01-23">Jan 23</date>
-                    <date ana="#checkedOut" when="1941-01-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:000n0x"><title>Weather in the Streets	</title></bibl>				 <date ana="#returned" when="1941-02-03">Feb 3</date>
-                <date ana="#checkedOut" when="1941-02-03">Feb 3</date>	<bibl ana="#borrowedItem" corresp="mep:002g01"><title>20th Century Novel	</title></bibl>					<date ana="#returned" when="1941-02-05">Feb 5</date>
-                	<date ana="#checkedOut" when="1941-02-05">5</date>	<bibl ana="#borrowedItem" corresp="mep:006j4s"><title>Red Sky at Morning</title></bibl>					<date ana="#returned" when="1941-02-14">Feb 14</date>
-                	<date ana="#checkedOut" when="1941-02-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00c764"><title>Margot Asquith	</title></bibl>						<date ana="#returned" when="1941-02-19">Feb 19</date>
-                	<date ana="#checkedOut" when="1941-02-19">19</date>		owes subsc	<bibl ana="#borrowedItem" corresp="mep:00310p"><title>More Memories</title></bibl>
-                 Renewed <date ana="#returned" when="1941-02">Feb</date>
+                								P.R.</note>
+                								
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-11-18">Nov 18</date>
+                    <bibl ana="#borrowedItem" corresp="mep:008b5x"><title>G.M. Hopkins</title>, 
+                        <author>Lahey</author></bibl>	
+                    <date ana="#returned" when="1940-11-22">Nov 22</date>
                 </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1940-11-22">22</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00sr8s"><title>Contemporary British Philosophy</title>
+                            <biblScope unit="volume" from="1">v1</biblScope></bibl> 	
+                        <date ana="#returned" when="1940-12-06">Dec 6</date>
+                    </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-12-06">Dec 6</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sr8s"><title>	"			"		"	</title>
+                        <biblScope unit="volume" from="2">vol 2</biblScope></bibl>	
+                    <date ana="#returned" when="1940-12-12">Dec 12</date>
+                </ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1940-12-12">12	</date>
+                	    <bibl ana="#borrowedItem" corresp="mep:004815"><title>Characters + Commentaries</title>
+                	        (<author>L. Strachey</author>)</bibl>
+                	    <date ana="#returned" when="1940-12-27">Dec 27</date>
+                	</ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1940-12-27">27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:008h0r"><title>Portraits</title> 
+                            <biblScope unit="volume" from="1">vol 1</biblScope>
+                            <author> Mac Carthey	</author></bibl>	
+                        <date ana="#returned" when="1941-01-14">Jan 14	</date>
+                    </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-01-14">Jan 14	</date>
+                    <bibl ana="#borrowedItem" corresp="mep:007k2p"><title>Criticism</title>
+                        <author>Mac Carthy	</author></bibl>
+                    <date ana="#returned" when="1941-01-23">Jan 23</date>
+                </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-01-23">23</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:000n0x"><title>Weather in the Streets	</title></bibl>
+                        <date ana="#returned" when="1941-02-03">Feb 3</date>
+                    </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-02-03">Feb 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002g01"><title>20th Century Novel	</title></bibl>	
+                    <date ana="#returned" when="1941-02-05">Feb 5</date>
+                </ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1941-02-05">5</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:006j4s"><title>Red Sky at Morning</title></bibl>	
+                	    <date ana="#returned" when="1941-02-14">Feb 14</date>
+                	</ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1941-02-14">14</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:00c764"><title>Margot Asquith	</title></bibl>
+                	    <date ana="#returned" when="1941-02-19">Feb 19</date>
+                	</ab>
+                    
+                <note><date when="1941-02-19">19</date>		
+                      <del>owes subsc</del>	<bibl corresp="mep:00310p"><title><del>More Memories</del></title></bibl>
+                      <del>Renewed <date when="1941-02">Feb</date></del></note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
