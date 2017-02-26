@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,12 +66,20 @@
                	<head><date when="1937">1937</date>		<persName ref="#kidd.ma">KIDDER
                			Miss Margaret</persName>
                			<address><street>7 Impasse Rouet</street></address></head>
-               		<ab>	
-               			1 m 1 v					15
-               						dep.		30
-               	</ab><ab>
-               	<date ana="#checkedOut" when="1937-06-07">June 7</date>	<bibl ana="#borrowedItem" corresp="mep:002t2d"><title>God's Little Achre</title></bibl>				<date ana="#returned" when="1937-06-29">June 29</date>
-               		<date ana="#checkedOut" when="1937-06-29">29</date>	<bibl ana="#borrowedItem" corresp="mep:004q8x"><title>Three Plays</title> <author>Dos Passos</author></bibl> p. 1.50	<date ana="#returned" when="1937-07-10">July 10</date>.</ab>
+               			
+               			<note>1 m 1 v					15
+               						dep.		30</note>
+              <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1937-06-07">June 7</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:002t2d"><title>God's Little Achre</title></bibl>		
+               	    <date ana="#returned" when="1937-06-29">June 29</date>
+               	    </ab>
+               <ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1937-06-29">29</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:004q8x"><title>Three Plays</title> <author>Dos Passos</author></bibl> 
+               	   <note> p. 1.50</note>
+               	    <date ana="#returned" when="1937-07-10">July 10</date>
+               </ab>
                	</div><div type="verso">
                	<pb facs="#s2"/>
                	<!-- verso blank --></div>
