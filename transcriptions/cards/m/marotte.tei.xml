@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,15 +69,39 @@
                 			<address><street>5 rue de Bellchasse</street></address></head>
                 		
                 		
-                <ab>		3 mths. 1 vol.					65 frs
-                							Deposit		30 frs.
+               		<note>3 mths. 1 vol.					65 frs
+                							Deposit		30 frs.</note>
                 
-                April 27th <bibl ana="#borrowedItem"><title>Charwoman's Daughter	</title></bibl>			May 8
-                		<bibl ana="#borrowedItem"><title>Here are Ladies.</title></bibl>					May 8
-                May 8	<bibl ana="#borrowedItem"><title>Queen of Scots.</title></bibl>							25
-                	25	<bibl ana="#borrowedItem"><title>National Velvet</title></bibl>						June 3
-                June 3	<bibl ana="#borrowedItem"><title>Good Earth</title></bibl>								13
-                	13	<bibl ana="#borrowedItem"><title>Use of Poetry</title></bibl> + <bibl ana="#borrowedItem"><title>Criticism</title> <author>Eliot</author></bibl>			20</ab>
+                <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1900-04-27">  April 27th</date>
+                   <bibl ana="#borrowedItem" corresp="mep:002286"><title>Charwoman's Daughter	</title></bibl>		
+                   <date ana="#returned" when="1900-05-08">May 8</date>
+                </ab>	
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-04-27"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:004q0f"><title>Here are Ladies.</title></bibl>		
+                   <date ana="#returned" when="1900-05-08">May 8</date>
+              </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-05-08">May 8</date>
+                   <bibl ana="#borrowedItem" corresp="mep:007k1c"><title>Queen of Scots.</title></bibl>		
+                  <date ana="#returned" when="1900-05-25"> 25</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-05-25"> 25</date>
+                   <bibl ana="#borrowedItem" corresp="mep:000q8z"><title>National Velvet</title></bibl>		
+                  <date ana="#returned" when="1900-06-03"> June 3</date>
+                </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-06-03"> June 3</date>
+                   <bibl ana="#borrowedItem" corresp="mep:001q0q"><title>Good Earth</title></bibl>	
+                  <date ana="#returned" when="1900-06-13"> 13</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-06-13"> 13</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00319g"><title>Use of Poetry + Criticism</title><author>Eliot</author></bibl>	
+                  <date ana="#returned" when="1900-06-20"> 20</date>
+                   </ab>
                 </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank --></div>
