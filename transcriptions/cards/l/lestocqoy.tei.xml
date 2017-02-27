@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,9 +70,14 @@
                 <date when="1941">1941</date>		<persName ref="#lest.be">D?	LESTOCQUOY</persName>
                 			<address><street>80 rue Lauriston</street>
                 								<district>XVI</district></address></head>
-                		<ab>	1m 1v A			25
-                				Dep			50</ab>
-         <ab>       <date ana="#checkedOut" when="1941-11-28">Nov 28</date>	<bibl ana="#borrowedItem" corresp="mep:00mz40"><title>Adventures of Sherlock Holmes</title></bibl></ab>
+                			<note>1m 1v A			25
+                				Dep			50</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-28">Nov 28</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00mz40"><title>Adventures of Sherlock Holmes</title></bibl>
+                </ab>
+                
                 </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank --></div>
