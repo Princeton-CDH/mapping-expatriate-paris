@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,10 +68,17 @@
                 			<address><street>40 rue du Marechal Joffre</street>
                 			<settlement>Bougival</settlement> <district>S &amp; O</district></address></head>
                 			
-                		<ab>	1	m	1v					12
-                						dep				20
+                			<note>1	m	1v					12
+                						dep				20 </note>
                 
-                <date ana="#checkedOut" when="1934-04-11">April 11</date>	<bibl ana="#borrowedItem" corresp="mep:00515q"><title>White Face</title></bibl>				<persName>BB</persName></ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-04-11">April 11</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00515q">
+                        <title>White Face</title></bibl>				
+                    <note>BB</note>
+                    
+                </ab>
+                    
                 </div>
                 <div type="verso"><pb facs="#s2"/>
                 <!-- verso blank --></div>
