@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -73,22 +75,96 @@
                 				<district>XIVe</district>
                 				</address>
                 </head>	
-                <ab>
-                <date ana="#checkedOut" when="1936-04-23">April 23</date> 	<bibl ana="#borrowedItem" corresp="mep:00ff68"><title>Wedding Day and Other Stories</title></bibl>	<date ana="#returned" when="1936-05-15">May 15th</date>
-                <date ana="#checkedOut" when="1936-04-23">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00b15x"><title>First Lover</title></bibl>						<date ana="#returned" when="1936-05-15">May 15th</date>
-                <date ana="#checkedOut" when="1936-04-23">	</date>			<bibl ana="#borrowedItem" corresp="mep:00h44n"><title>Thomas Dekken</title></bibl>					<date ana="#returned" when="1936-05-15">May 15th</date>
-                <date ana="#checkedOut" when="1936-08-24">Aug 24</date>		<bibl ana="#borrowedItem" corresp="mep:00ff68"><title>Wedding Day and Other Stories</title></bibl>		<date ana="#returned" when="1936-09-16">Sept 16.</date>
-                <date ana="#checkedOut" when="1936-09-10">Sept 10</date>	    <bibl ana="#borrowedItem" corresp="mep:00b15x"><title>First Lover</title></bibl> renewed <date ana="#returned" when="1936-09-20">Sept 20</date>		<date when="1936-12-01">Dec 1</date>
-                					sent p.c.		BB
-                <date ana="#checkedOut" when="1936-12-01">Dec 1</date>		<bibl ana="#borrowedItem" corresp="mep:003v09"><title>Study of the Modern Novel</title></bibl>		<date ana="#returned" when="1936-12-05">Dec 5</date>
-                <date ana="#checkedOut" when="1936-12-01">	</date>		    <bibl ana="#borrowedItem" corresp="mep:002g01"><title>Twentieth Century Novel</title></bibl>			<date ana="#returned" when="1936-12-05">	5</date>
                 
-                <date when="1937">1937</date>
-                <date ana="#checkedOut" when="1937-08-03">Aug 3</date>		<bibl ana="#borrowedItem" corresp="mep:00bp0m"><title>Return of the Soldier</title></bibl>.			<date ana="#returned" when="1938-01-06">Jan 6</date>
-                <date ana="#checkedOut" when="1937-08-03">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00828n"><title>Harsh voice</title></bibl>						<date ana="#returned" when="1938-01-06">Jan 6</date>
-                <date when="1938">1938</date>
-                <date ana="#checkedOut" when="1938-06-30">June 30</date>		<bibl ana="#borrowedItem" corresp="mep:00h45z"><title>Roman Américain d'Aujourd'hui</title></bibl>	Returned
+                
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-04-23">April 23</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00ff68">
+                        <title>Wedding Day and Other Stories</title>
+                    </bibl>	
+                    <date ana="#returned" when="1936-05-15">May 15th</date>
                 </ab>
+                    
+              <ab ana= "#borrowingEvent">
+                  <date ana="#checkedOut" when="1936-04-23">	</date>		
+                  <bibl ana="#borrowedItem" corresp="mep:00b15x">
+                      <title>First Lover</title>
+                  </bibl>					
+                  <date ana="#returned" when="1936-05-15">May 15th</date>
+              </ab>
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-04-23">	</date>			
+                    <bibl ana="#borrowedItem" corresp="mep:00h44n">
+                        <title>Thomas Dekken</title>
+                    </bibl>				
+                    <date ana="#returned" when="1936-05-15">May 15th</date>
+                </ab>
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-08-24">Aug 24</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00ff68">
+                        <title>Wedding Day and Other Stories</title>
+                    </bibl>		
+                    <date ana="#returned" when="1936-09-16">Sept 16.</date>
+                </ab>
+                    
+                <ab> 
+                    <date ana="#checkedOut" when="1936-09-10">Sept 10</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00b15x">
+                        <title>First Lover</title>
+                    </bibl>
+                    renewed <date when="1936-09-20">Sept 20</date>	
+                        <date when="1936-12-01">Dec 1</date>
+                        sent p.c.		BB 
+                </ab>
+                					
+                					
+              <ab ana= "#borrowingEvent">
+                  <date ana="#checkedOut" when="1936-12-01">Dec 1</date>	
+                  <bibl ana="#borrowedItem" corresp="mep:003v09">
+                      <title>Study of the Modern Novel</title>
+                  </bibl>		
+                  <date ana="#returned" when="1936-12-05">Dec 5</date>
+              </ab>
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-12-01">	</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002g01">
+                        <title>Twentieth Century Novel</title>
+                    </bibl>			
+                    <date ana="#returned" when="1936-12-05">	5</date>
+                </ab>
+                    
+            <ab>    <date when="1937">1937</date> </ab>
+                  
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-08-03">Aug 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00bp0m">
+                        <title>Return of the Soldier</title>
+                    </bibl>
+                    <date ana="#returned" when="1938-01-06">Jan 6</date>
+                </ab>
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-08-03">	</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00828n">
+                        <title>Harsh voice</title>
+                    </bibl>				
+                    <date ana="#returned" when="1938-01-06">Jan 6</date>
+                </ab>
+                    
+                    <ab><date when="1938">1938</date></ab>
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-06-30">June 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00h45z">
+                        <title>Roman Américain d'Aujourd'hui</title>
+                    </bibl>	<note>Returned</note>
+                </ab>
+                    
+               
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
