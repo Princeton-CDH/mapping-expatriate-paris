@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,14 +63,21 @@
                     			<persName ref="#saby.be">SABY, Bernard</persName>
                     </head>			
                     
-                    <ab>
-                    <date when="1949">1949</date>													<date when="1950">1950</date>
                     
-                    <date ana="#checkedOut" when="1949-11-24">November 24 .49</date>	<bibl ana="#borrowedItem" corresp="mep:00q12n"><title>The English Mail Coach etc.</title> (<edition>Everyman ed.</edition>)</bibl> <date ana="#checkedOut" when="1950-02-01">Feb 1</date>
-                    					                            <bibl ana="#borrowedItem" corresp="mep:00q13z"><title>English Opium Eater &amp; Rosicrucians etc</title></bibl>
-                    						                        (<bibl ana="#borrowedItem"><edition>Camelot ed.</edition> <author>W Scott</author></bibl>)
-                    							returned both
-                    </ab>							
+                  <note>  <date when="1949">1949</date>													<date when="1950">1950</date></note>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1949-11-24">November 24 .49</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00q12n"><title>The English Mail Coach etc.</title> (<edition>Everyman ed.</edition>)</bibl> 
+                    <date ana="#returned" when="1950-02-01">Feb 1</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1949-11-24"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00q13z"><title>English Opium Eater &amp; Rosicrucians etc</title><edition>Camelot ed.</edition> <author>W Scott</author></bibl>
+                    <date ana="#returned" when="1950-02-01">Feb 1</date>
+                    </ab>						
+                    <note>returned both</note>
+                    							
+                    							
                 </div>   
             </div>
         </body>
