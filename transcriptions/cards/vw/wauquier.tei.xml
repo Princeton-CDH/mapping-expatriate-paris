@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -64,11 +71,25 @@
                     			                     <settlement>Montagne st Seine</settlement>	<region>Vendée</region></address>
                     </head>			
                     
-                    <ab>
-                    <date ana="#checkedOut" when="1941-09-24">Sept 24</date>		<bibl ana="#borrowedItem" corresp="mep:00br2s"><title>Frost's Collected Poems</title></bibl>			<date ana="#checkedOut" when="1941-12-12">Dec 12</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00bd3b"><title>Novels of Fielding</title>, <author>Digeon</author></bibl>		<date ana="#returned" when="1941-12-12">Dec 12</date>
-                    					(transferred from Labeyrie)
-                    </ab>					
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-09-24">Sept 24</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00br2s">
+                            <title>Frost's Collected Poems</title>
+                        </bibl>			
+                        <date ana="#returned" when="1941-12-12">Dec 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-09-24"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bd3b">
+                            <title>Novels of Fielding</title>, 
+                            <author>Digeon</author>
+                        </bibl>		
+                        <date ana="#returned" when="1941-12-12">Dec 12</date>
+                        <note>(transferred from Labeyrie)</note>
+                    </ab>
+                    
                 </div>    
                 <div type="verso">
                     <pb facs="#s2"/>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -58,36 +60,105 @@
           <head>      
                 <date when="1938">1938</date>			<persName ref="#mill">MILLET
                 				Madame Pierre</persName>
-                				<address><street>22 Co rue Cortot</street> <district>- 18</district></address>
+                				<address><street>22 <del> co </del>rue Cortot</street> <district>- 18</district></address>
                 				
                 				
                 				</head>
                 				
-                			<ab>	
+                			
                 				
-                				3 	mos		1  v	new		135
-                									dep		 50</ab>
+                				<note>3 	mos		1  v	new		135
+                									dep		 50</note>
                 									
-            <ab>    
-                <date ana="#checkedOut" when="1938-02-08">Feb 8.</date>		<bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>			<date ana="#returned" when="1938-02-22">Febr. 22.</date>
-                	<date ana="#checkedOut" when="1938-02-22">22</date>		<bibl ana="#borrowedItem" corresp="mep:00370b"><title>Langer at Large</title></bibl>					<date ana="#returned" when="1938-03-02">March 2</date>
-                <date ana="#checkedOut" when="1938-03-02">March 2</date>		<bibl ana="#borrowedItem" corresp="mep:002q6t"><title>Pie in the Sky</title></bibl>					<date ana="#returned" when="1938-03-17">Mar. 17</date>
-                <date ana="#checkedOut" when="1938-03-17">Mar 17.</date>		<bibl ana="#borrowedItem" corresp="mep:00gf6h"><title>Escape</title></bibl>							<date ana="#returned" when="1938-04-15">April 15</date>
-                <date ana="#checkedOut" when="1938-04-15">April 15</date>	<bibl ana="#borrowedItem" corresp="mep:005s07"><title>Helen's Tower</title></bibl>					<date ana="#returned" when="1938-05-03">May 3</date>
-                <date ana="#checkedOut" when="1938-05-03">May 3</date>		<bibl ana="#borrowedItem" corresp="mep:00393t"><title>Head In Green Bronze</title></bibl>			<date ana="#returned" when="1938-05-12">May 12</date>
-               <date ana="#checkedOut" when="1938-05-03"> May 3</date>		<bibl ana="#borrowedItem" corresp="mep:00f89t"><title>Farewell Freedom</title></bibl>				<date ana="#returned" when="1938-05-25">May 25</date>
-                	<date ana="#checkedOut" when="1938-05-12">12</date>		<bibl ana="#borrowedItem" corresp="mep:00398c"><title>Seven Pillars of Wisdom</title></bibl>			<date ana="#returned" when="1938-05-25">May 25</date>
-                <date ana="#checkedOut" when="1938-05-25">May 25</date>		<bibl ana="#borrowedItem" corresp="mep:004b68"><title>Warrant for X.</title></bibl>					<date ana="#returned" when="1938-05-31">May 31</date>
-                
-                		35f credit towards renewal
+              
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-02-08">Feb 8.</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002z2h">
+                        <title>Sparkenbroke</title>
+                    </bibl>			
+                    <date ana="#returned" when="1938-02-22">Febr. 22.</date>
+                </ab>
+                  
+                	<ab ana= "#borrowingEvent">
+                	    <date ana="#checkedOut" when="1938-02-22">22</date>
+                	    <bibl ana="#borrowedItem" corresp="mep:00370b">
+                	        <title>Langer at Large</title>
+                	    </bibl>					
+                	    <date ana="#returned" when="1938-03-02">March 2</date>
+                	</ab>
+                  
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-03-02">March 2</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002q6t">
+                        <title>Pie in the Sky</title>
+                    </bibl>				
+                    <date ana="#returned" when="1938-03-17">Mar. 17</date>
+                </ab>
+                  
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-03-17">Mar 17.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00gf6h">
+                        <title>Escape</title>
+                    </bibl>						
+                    <date ana="#returned" when="1938-04-15">April 15</date>
+                </ab>
+                  
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-04-15">April 15</date>
+                    <bibl ana="#borrowedItem" corresp="mep:005s07">
+                        <title>Helen's Tower</title>
+                    </bibl>			
+                    <date ana="#returned" when="1938-05-03">May 3</date>
+                </ab>
+                  
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-05-03">May 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00393t">
+                        <title>Head In Green Bronze</title>
+                    </bibl>		
+                    <date ana="#returned" when="1938-05-12">May 12</date>
+                </ab>
+                  
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1938-05-03"> May 3</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00f89t">
+                       <title>Farewell Freedom</title>
+                   </bibl>				
+                   <date ana="#returned" when="1938-05-25">May 25</date>
+               </ab>
+                  
+                	<ab ana= "#borrowingEvent">
+                	    <date ana="#checkedOut" when="1938-05-12">12</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:00398c">
+                	        <title>Seven Pillars of Wisdom</title>
+                	    </bibl>			
+                	    <date ana="#returned" when="1938-05-25">May 25</date>
+                	</ab>
+                  
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-05-25">May 25</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:004b68">
+                        <title>Warrant for X.</title>
+                    </bibl>				
+                    <date ana="#returned" when="1938-05-31">May 31</date>
+                </ab>
+                  
+                		<note>35f credit towards renewal
                 Renewed till <date when="1938-06-08">June 8</date>		50 francs
-                	Difference of 15 francs
+                		    Difference of 15 francs</note>
                 
-                <date ana="#checkedOut" when="1938-05-31">May 31</date>		<bibl ana="#borrowedItem" corresp="mep:00gf7t"><title>Sleep In Peace</title></bibl>					<date ana="#returned" when="1938-06-16">June 16</date>
-                				Fine paid in full 16 francs
-                		will send check for 16f			<date when="1938-06-10">June 10</date>
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-05-31">May 31</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00gf7t">
+                        <title>Sleep In Peace</title>
+                    </bibl>				
+                    <date ana="#returned" when="1938-06-16">June 16</date>
+                </ab>
+                  
+                 <note> Fine <del>paid in full</del> 16 francs
+                     will send check for 16f			<del><date when="1938-06-10">June 10</date></del>
                 					paid by moneyorder		<date when="1938-06-17">June 17</date>
-                									16 frs</ab>
+                     16 frs</note>
               </div>  
            <div type="verso">     <pb facs="#s2"/>
                 

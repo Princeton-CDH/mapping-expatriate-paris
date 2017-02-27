@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,25 +55,55 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-               <ab> 
+                <head>
                 <date when="1933">1933</date>			<persName ref="pica.pi">PICARD</persName>
                 
                 				<persName ref="pica.pi">Pierre Picard</persName>
-                				<address><street>9 rue Coutuneau </street>
+                				<address><street>9 rue Coutuneau </street> <note>parents</note>
                 					<settlement>St Cloud</settlement>
-                			  <street>24 rue Tournefort,</street> <orgName>Home de l'Etudiant</orgName></address>
-                			                                                 parents
-                			  	1 m		1 v				12
-                			  					dep		30
+                			  <street>24 rue Tournefort,</street> <orgName>Home de l'Etudiant</orgName></address></head>
+                			                                                 
+                			  <note>1 m		1 v				12
+                			  					dep		30</note>
                 			  					
-                <date ana="#checkedOut" when="1933-09-13">Sept 13</date>		<bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>							<date ana="#returned" when="1933-09-14">Sept 14</date>
-                   <date ana="#checkedOut" when="1933-09-14">14	</date>	<bibl ana="#borrowedItem" corresp="mep:001k0m"><title>Dusty Answer</title></bibl>					<date ana="#returned" when="1933-10-03">Oct 3</date>
-                <date ana="#checkedOut" when="1933-10-03">Oct 3</date>		<bibl ana="#borrowedItem" corresp="mep:00146w"><title>Gitanjali</title></bibl>						<date ana="#returned" when="1933-10-10">Oct 10</date>
-                   <date ana="#checkedOut" when="1933-10-10">10</date>		<bibl ana="#borrowedItem" corresp="mep:00ps2g"><title>Gardener</title></bibl>						 <date ana="#returned" when="1933-10-19">Oct 19	</date>
-                <date ana="#checkedOut" when="1933-10-19">Oct 19	</date>	<bibl ana="#borrowedItem" corresp="mep:00ps3s"><title>Sadhana</title></bibl>							<date ana="#returned" when="1933-10-30">Oct 30</date>
-                  Renewed <date when="1933-10-13">Oct 13</date> .	<date when="1933-11-13">November 13  1933</date>	12v
-                <date ana="#checkedOut" when="1933-10-30">Oct 30</date>		<bibl ana="#borrowedItem" corresp="mep:00ps43"><title>King of the Dark Chamber</title></bibl>		<date ana="#returned" when="1933-11-13">13 Nov.</date>
-               </ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-09-13">Sept 13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>		
+                    <date ana="#returned" when="1933-09-14">Sept 14</date>
+                </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-09-14">14	</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:001k0m"><title>Dusty Answer</title></bibl>	
+                       <date ana="#returned" when="1933-10-03">Oct 3</date>
+                   </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-10-03">Oct 3</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00146w"><title>Gitanjali</title></bibl>	
+                    <date ana="#returned" when="1933-10-10">Oct 10</date>
+                </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-10-10">10</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:00ps2g"><title>Gardener</title></bibl>		
+                       <date ana="#returned" when="1933-10-19">Oct 19	</date>
+                   </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-10-19">Oct 19	
+                    </date>	<bibl ana="#borrowedItem" corresp="mep:00ps3s"><title>Sadhana</title></bibl>	
+                    <date ana="#returned" when="1933-10-30">Oct 30</date>
+                </ab>
+                    
+                  <note>Renewed <date when="1933-10-13">Oct 13</date> .	<date when="1933-11-13">November 13  1933</date>	12v</note>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-10-30">Oct 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00ps43"><title>King of the Dark Chamber</title></bibl>	
+                    <date ana="#returned" when="1933-11-13">13 Nov.</date>
+                </ab>
+                    
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
