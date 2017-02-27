@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -7,8 +10,13 @@
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#cmahoney">
+                    <persName>Mahoney, Cate</persName> 
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName> 
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -40,7 +48,7 @@
                     Transcribed cards.
                     
                     
-                    	
+                    
                 </ab>
             </change>
         </revisionDesc>
@@ -50,37 +58,41 @@
             <graphic url="00000001.jp2"/>
         </surface>
         <surface xml:id="s2">
-        	<graphic url="00000002.jp2"/>
+            <graphic url="00000002.jp2"/>
         </surface>
         
         
         
-    
+        
         
     </facsimile>
     <text>
         <body>
             <div type="card">
-               <div type="recto">
-                <pb facs="#s1"/>
-                <head><date when="1935">1935</date>		<persName ref="folt.ch">FOLTZ</persName>
-                			<address><persName ref="folt.ch">Charles Foltz</persName>
-                			<orgName>31 quai d l'Horloge</orgName>
-                			<street>(12 ave de l'Observatoire)</street></address></head>
-                			<ab>
-                			1	m	1	v			15
-                							dep		35
-                
-               <date ana="#checkedOut" when="1935-09-30"> Sept 30	</date>	<bibl ana="#borrowedItem" corresp="mep:00bt58"><title>European Caravan</title></bibl> card		<date ana="#returned" when="1935-11-14">14 Nov</date>.
-                							<date when="1935-11-02"> 2 Nov</date>
-                							 
-                						
-                						2 weeks busc. due
-                										?</ab>
+                <div type="recto">
+                    <pb facs="#s1"/>
+                    <head><date when="1935">1935</date>		<persName ref="folt.ch">FOLTZ</persName>
+                        <address><persName ref="folt.ch">Charles Foltz</persName>
+                            <orgName>31 quai d l'Horloge</orgName>
+                            <street>(12 ave de l'Observatoire)</street></address></head>
+                   
+                       <note> 1	m	1	v			15
+                        dep		35</note>
+                        
+                        <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-09-30"> Sept 30	</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bt58"><title>European Caravan</title></bibl> 
+                   <note> card <date when="1935-11-02"> 2 Nov</date></note>
+                    <date ana="#returned" when="1935-11-14">14 Nov</date>
+                       </ab>
+                        
+                        
+                       <note> 2 weeks busc. due
+                        ?</note>
                 </div>
                 <div type="verso">
-                <pb facs="#s2"/>
-                <!-- verso blank -->
+                    <pb facs="#s2"/>
+                    <!-- verso blank -->
                 </div>
                 
                 

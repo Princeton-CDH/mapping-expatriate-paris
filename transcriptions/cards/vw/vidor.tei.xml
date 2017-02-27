@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -70,11 +72,18 @@
                     		 <addrLine>49 1301</addrLine>	<street>Inkerman</street>
                     		          <settlement>Neuilly</settlement></address>
                     </head>
-                    <ab>
-                    												                                <date when="1928-06-22">June 22.</date>
-                    <date ana="#checkedOut" when="1928-06-13">June 13</date>		<bibl ana="#borrowedItem" corresp="mep:00bx1v"><title>Inland Voyage - Travels with a Donkey</title></bibl>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00bx25"><title>True</title></bibl>
-                    </ab>			
+                    
+                    			
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1928-06-13">June 13</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00bx1v">
+                            <title>Inland Voyage - Travels with a Donkey</title></bibl>
+                        <date ana="#returned" when="1928-06-22">June 22.</date>
+                    </ab>
+                    
+                    
+                    			                                <ab><bibl  corresp="mep:00bx25"><title><del>True</del></title></bibl></ab>
+                    			
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
