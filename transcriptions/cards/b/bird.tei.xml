@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,12 +70,15 @@
                 			</address>
                </head>
                 
-               <ab>  
                 
-                <date ana="#checkedOut" when="1933-03-29">1933 March 29</date>	
-                <bibl ana="#borrowedItem" corresp="mep:00232m"><title>40 French Wines</title></bibl> on sale
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-03-29">1933 March 29</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00232m"><title>40 French Wines</title></bibl> 
+                    <note>on sale</note>
+                </ab>
+                    
                
-               </ab>
                 </div>
                 
                 <div type="verso">
