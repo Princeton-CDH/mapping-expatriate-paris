@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -70,59 +72,190 @@
                 			<address><street>11 rue Pierre Nicole</street> <district>- Ve</district>
                 		<orgName>(on aux bons soins Libraire Le François)</orgName></address>
                 		</head>
-                			<ab>	1 v, 1 m.			25
+                				<note>1 v, 1 m.			25
                 							  dep.	50
                 							ref. <date when="1940-10-31">Oct 31 1940</date>
-                							<unclear/>
-                	<date ana="#checkedOut" when="1940-09-16">Sept 16</date>	<bibl ana="#borrowedItem" corresp="mep:003v7g"><title>Ace of Knaves</title></bibl>				<date ana="#returned" when="1940-09-21">Sept 21</date>
-                <date ana="#checkedOut" when="1940-09-21">Sept 21</date>		<bibl ana="#borrowedItem" corresp="mep:003v8s"><title>Mr Zero</title></bibl>						<date ana="#returned" when="1940-09-25">Sept 25</date>
-                	<date when="1940-09-25">25</date>		<unclear/>
-                	<date ana="#checkedOut" when="1940-09-25">25</date>		<bibl ana="#borrowedItem" corresp="mep:003v93"><title>Three Men In the Bummel</title></bibl>		<date ana="#returned" when="1940-10-16">Oct 16</date>
-                								  fr75
-                					overdue pd 3. fr50 amand
-                <date ana="#checkedOut" when="1940-10-16">Oct 16</date>		<bibl ana="#borrowedItem" corresp="mep:003w0k"><title>Knock-out</title></bibl>					<date ana="#returned" when="1940-10-31">Oct 31</date>
-                Renewed <date from="1940-10-16" to="1940-11-16">October 16 - November 16</date>, 1v, 1m, A 25
-                <date when="1940-10-31">Oct 31</date>
-                	sub 1m 1vol. A <date from="1941-01-28" to="1941-02-28">jan 28- Feb. 28</date>		25
-                			Dep  Extra Dep.				50
-                <date ana="#checkedOut" when="1941-01-28">Jan 28</date>		<bibl ana="#borrowedItem" corresp="mep:003w1w"><title>Spymaster</title></bibl>					<date ana="#returned" when="1940-02-03">Feb. 3</date>
-                <date when="1941-02-03">Feb 3</date>		<unclear/> alibi  <bibl ana="#borrowedItem" corresp="mep:003f00"><title>5 red Herrings</title></bibl>	<date ana="#returned" when="1941-02-10">Feb 10</date>
-                	<date ana="#checkedOut" when="1941-02-10">10</date>		<bibl ana="#borrowedItem" corresp="mep:002d1s"><title>Nine Taylors</title></bibl>				<date ana="#returned" when="1941-02-20">Feb 20</date>
-                	<date ana="#checkedOut" when="1941-02-20">20</date>		<bibl ana="#borrowedItem" corresp="mep:003w26"><title>Action for Slander</title></bibl>			<date ana="#returned" when="1941-02-28">Feb 28</date>
-                Renewed <date from="1941-02-28" to="1941-03-28">Feb 28 - March 28	1941</date> 1vA 25v
-                <date ana="#checkedOut" when="1941-02-28">Feb 28</date>		<bibl ana="#borrowedItem" corresp="mep:00314x"><title>Holy Deadlock</title></bibl>				<date ana="#returned" when="1941-03-12">March 12</date>
-                <date ana="#checkedOut" when="1941-03-12">March 12</date>	<bibl ana="#borrowedItem" corresp="mep:003h9b"><title>Jalna</title></bibl>						<date ana="#returned" when="1941-04-25">Apr 25</date>
-                	<date ana="#checkedOut" when="1941-03-18">18</date>		<bibl ana="#borrowedItem" corresp="mep:001j4k"><title>Death of a hero</title></bibl>, 0.50 per day pd <date ana="#returned" when="1941-04-26">April 26</date>
-                	<date ana="#checkedOut" when="1941-03-25">25</date>		<bibl ana="#borrowedItem" corresp="mep:003j3r"><title>Finch's Fortune</title></bibl>				<date ana="#returned" when="1941-04-26">April 26</date>
-                				<date when="1941-04-22">ap 22</date>	left card at house
-            </ab>
+                							<unclear/></note>
+                    
+                    <ab ana="#borrowingEvent">
+                	<date ana="#checkedOut" when="1940-09-16">Sept 16</date>
+                    <bibl ana="#borrowedItem" corresp="mep:003v7g">
+                        <title>Ace of Knaves</title></bibl>		
+                    <date ana="#returned" when="1940-09-21">Sept 21</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-09-21">Sept 21</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003v8s">
+                        <title>Mr Zero</title></bibl>		
+                    <date ana="#returned" when="1940-09-25">Sept 25</date>
+                	</ab>
+                    
+                   <note><del> <date when="1940-09-25">25</date>		<unclear/></del></note>
+                	
+                	<ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-09-25">25</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:003v93"><title>Three Men In the Bummel</title></bibl>
+                    <date ana="#returned" when="1940-10-16">Oct 16</date>
+                	</ab>
+                    
+                	<note>fr75
+                	overdue pd 3. fr50 amand</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-10-16">Oct 16</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003w0k">
+                        <title>Knock-out</title></bibl>			
+                    <date ana="#returned" when="1940-10-31">Oct 31</date>
+                </ab>
+                    
+               <note> Renewed <date from="1940-10-16" to="1940-11-16">October 16 - November 16</date>, 1v, 1m, A 25</note>
+               
+                    <note><del><date when="1940-10-31">Oct 31</date></del></note>
+               
+              <note> sub 1m 1vol. A <date from="1941-01-28" to="1941-02-28">jan 28- Feb. 28</date>		25
+                			Dep  Extra Dep.				50</note>
+               
+               <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-01-28">Jan 28</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003w1w">
+                        <title>Spymaster</title></bibl>		
+                    <date ana="#returned" when="1940-02-03">Feb. 3</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date when="1941-02-03">Feb 3</date>		
+                  <note> <del> <unclear/> alibi</del></note>
+                    <bibl ana="#borrowedItem" corresp="mep:003f00">
+                        <title>5 red Herrings</title></bibl>
+                    <date ana="#returned" when="1941-02-10">Feb 10</date>
+                	</ab>
+                    <ab  ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-02-10">10</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002d1s">
+                        <title>Nine Taylors</title></bibl>	
+                    <date ana="#returned" when="1941-02-20">Feb 20</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-02-20">20</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:003w26">
+                        <title>Action for Slander</title></bibl>		
+                    <date ana="#returned" when="1941-02-28">Feb 28</date>
+                </ab>
+             <note>   Renewed <date from="1941-02-28" to="1941-03-28">Feb 28 - March 28	1941</date> 1vA 25v</note>
+                
+                <ab  ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-02-28">Feb 28</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00314x">
+                        <title>Holy Deadlock</title></bibl>		
+                    <date ana="#returned" when="1941-03-12">March 12</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-03-12">March 12</date>
+                    <bibl ana="#borrowedItem" corresp="mep:003h9b">
+                        <title>Jalna</title></bibl>			
+                    <date ana="#returned" when="1941-04-25">Apr 25</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-03-18">18</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:001j4k">
+                        <title>Death of a hero</title></bibl>
+                    <note>, 0.50 per day pd </note>
+                    <date ana="#returned" when="1941-04-26">April 26</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-03-25">25</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003j3r">
+                        <title>Finch's Fortune</title></bibl>			
+                    <date ana="#returned" when="1941-04-26">April 26</date>
+                	</ab>
+                    
+                   <note> <date when="1941-04-22">ap 22</date>	left card at house</note>
+            
                 
                 </div>
                 <div type="verso">
                     
                 <pb facs="#s2"/>
-               <head>     <persName ref="#dava.fr">DAVAINE</persName></head><ab>
-                Sub ren 1m 2vols. <date from="1941-03-28" to="1941-04-28">March 28. April. 28</date>		40
+               <head>     <persName ref="#dava.fr">DAVAINE</persName></head>
+                    
+                <note>Sub ren 1m 2vols. <date from="1941-03-28" to="1941-04-28">March 28. April. 28</date>		40
                 S. ren <date from="1941-04-28" to="1941-05-28">April 28. May 28 1941</date> 1v 25v
-                		(extra dep ref. 50v)
+                		(extra dep ref. 50v)</note>
                 
-                <date ana="#checkedOut" when="1941-04-26">April 26</date>	<bibl ana="#borrowedItem" corresp="mep:003d6k"><title>Ten Little Niggers</title></bibl>			<date ana="#returned" when="1941-05-29">May 29</date>
-                S ren <date from="1941-05-29" to="1941-06-29">May 29 - June 29 1941.</date> 1m1v. 25
-                <date ana="#checkedOut" when="1941-05-29">May 29</date>		<bibl ana="#borrowedItem" corresp="mep:003w3h"><title>Thieve's Picnic</title></bibl>				<date ana="#returned" when="1941-06-07">June 7</date>
-                <date ana="#checkedOut" when="1941-06-07">June 7</date>		<bibl ana="#borrowedItem" corresp="mep:003w4t"><title>Boathouse Riddle</title></bibl>			<date ana="#returned" when="1941-06-13">June 13</date>
-                	<date ana="#checkedOut" when="1941-06-13">13</date>		<bibl ana="#borrowedItem" corresp="mep:001f3f"><title>Gone with the Wind</title></bibl> pc <date ana="#returned" from="1941-07-26" to="1941-08-02">July 26 Aug 2</date>
-                Renewed <date from="1941-06-29" to="1941-09-29">June 29 - September 29th 1941</date> 65 frs
-                <date ana="#checkedOut" when="1941-08-02">Aug 2</date>		<bibl ana="#borrowedItem" corresp="mep:003j5c"><title>Young Renny</title></bibl>					<date ana="#returned" when="1941-09-08">Sept 8</date>
-                	<date ana="#checkedOut" when="1941-08-02">2</date>		<bibl ana="#borrowedItem" corresp="mep:003j3r"><title>Finch's Fortune</title></bibl>				<date ana="#returned" when="1941-09-08">Sept. 8</date>
-                <date ana="#checkedOut" when="1941-09-08">Sept. 8</date>		<bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counterpoint</title></bibl> ren. <date ana="#returned" when="1941-10-24">Oct 24th</date> <date when="1941-10-22">Oct 22</date>
-                Renewed <date from="1941-09-29" to="1941-12-29">Sept 29 - dec. 29th 1941</date>		65 frs
+                <ab  ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-04-26">April 26</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003d6k">
+                        <title>Ten Little Niggers</title></bibl>		
+                    <date ana="#returned" when="1941-05-29">May 29</date>
+                </ab>
+                    
+                <note>S ren <date from="1941-05-29" to="1941-06-29">May 29 - June 29 1941.</date> 1m1v. 25</note>
                 
-                <date ana="#checkedOut" when="1941-10-22">Oct 22</date>		<bibl ana="#borrowedItem" corresp="mep:000n2j"><title>Eyeless in Gaza</title></bibl> pc <date ana="#returned" when="1941-11-25">Nov 25</date>	<date when="1941-11-27">Nov 27</date>
-                	<date ana="#checkedOut" when="1941-10-27">27</date>		<bibl ana="#borrowedItem" corresp="mep:003w1w"><title>Spymaster</title></bibl>					<date ana="#returned" when="1942-04-21">21 avril</date>
-                        <date ana="#checkedOut" when="1942-04-21">21 avril</date>	<bibl ana="#borrowedItem" corresp="mep:003w54"><title>Stars Look South</title></bibl>
-                    (this volume ? transfered from Depondt)
-                			
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-05-29">May 29</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003w3h">
+                        <title>Thieve's Picnic</title></bibl>		
+                    <date ana="#returned" when="1941-06-07">June 7</date>
                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-07">June 7</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003w4t">
+                        <title>Boathouse Riddle</title></bibl>
+                    <date ana="#returned" when="1941-06-13">June 13</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-06-13">13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001f3f">
+                        <title>Gone with the Wind</title></bibl> 
+                   <note> pc <date when="1941-07-26">July 26</date></note>
+                    <date ana="#returned" when="1941-08-02"> Aug 2</date>
+                </ab>
+                <note>Renewed <date from="1941-06-29" to="1941-09-29">June 29 - September 29th 1941</date> 65 frs</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-08-02">Aug 2</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:003j5c">
+                        <title>Young Renny</title></bibl>				
+                    <date ana="#returned" when="1941-09-08">Sept 8</date>
+                </ab>	
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-08-02">2</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:003j3r">
+                        <title>Finch's Fortune</title></bibl>	
+                    <date ana="#returned" when="1941-09-08">Sept. 8</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-09-08">Sept. 8</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:000k7j">
+                        <title>Point Counterpoint</title></bibl>
+                    <note>ren. 
+                    <date when="1941-10-24">Oct 24th</date></note>
+                    <date ana="#returned" when="1941-10-22">Oct 22</date>
+                </ab>
+                    
+               <note> Renewed <date from="1941-09-29" to="1941-12-29">Sept 29 - dec. 29th 1941</date>		65 frs</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-10-22">Oct 22</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000n2j">
+                        <title>Eyeless in Gaza</title></bibl> 
+                   <note> pc 
+                    <date when="1941-11-25">Nov 25</date></note>	
+                    <date ana="#returned" when="1941-11-27">Nov 27</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-10-27">27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003w1w">
+                        <title>Spymaster</title></bibl>
+                    <date ana="#returned" when="1942-04-21">21 avril</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1942-04-21">21 avril</date>
+                    <bibl ana="#borrowedItem" corresp="mep:003w54">
+                        <title>Stars Look South</title></bibl>
+                    </ab>
+                    <note>(this volume ? transfered from Depondt)</note>
+                			
+              
                 </div>
             </div>
             

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,65 +69,164 @@
                      							             les Moulineaus (?</settlement>
                      							                 <district>Seine (?)</district></address>
                      </head> 
-                     <ab>
-                     				1 m	1 va		         	25
-                     					dep						50
+                     
+                     				<note>1 m	1 va		         	25
+                     					dep						50</note>
+                     
+                   <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1939-05-04">May 4</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bq72">
+                        <title>Wilfred Owen's Poems</title></bibl>	
+                    <date ana="#returned" when="1939-05-11">May 11</date>
+                   </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-05-11">	11</date>
+                    <bibl ana="#borrowedItem" corresp="mep:004w6p">
+                        <title>Hamlet</title> - <editor>B. Wilson</editor></bibl>
+                    <date ana="#returned" when="1939-05-19">May 19</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-05-19">	19</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bq8c">
+                        <title>Bratler's Shakespeare</title></bibl>	
+                    <date ana="#returned" when="1939-06-14">June 14</date>
+                    </ab> 
+                    
+                     <note>Sub. renewed 1m	1va	<date from="1939-06-04" to="1939-07-04">June 4 - July 4</date>	25f</note>
+                     
+                    <ab ana="borrowingEvent">
+                     <date ana="#checkedOut" when="1939-06-14">June 14</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000k7j">
+                        <title>Point Counter Point</title></bibl>		
+                    <date ana="#returned" when="1939-06-26">June 26</date>
                      </ab>
-                     <ab>
-                     <date ana="#checkedOut" when="1939-05-04">May 4</date>	<bibl ana="#borrowedItem" corresp="mep:00bq72"><title>Wilfred Owen's Poems</title></bibl>		<date ana="#returned" when="1939-05-11">May 11</date>
-                     <date ana="#checkedOut" when="1939-05-11">	11</date>	<bibl ana="#borrowedItem" corresp="mep:004w6p"><title>Hamlet</title> - <author>B. Wilson</author></bibl>	<date ana="#returned" when="1939-05-19">May 19</date>
-                     <date ana="#checkedOut" when="1939-05-19">	19</date>	<bibl ana="#borrowedItem" corresp="mep:00bq8c"><title>Bratler's Shakespeare</title></bibl>		<date ana="#returned" when="1939-06-14">June 14</date>
-                     </ab>
-                     <ab>
-                     Sub. renewed 1m	1va	<date from="1939-06-04" to="1939-07-04">June 4 - July 4</date>	25f
-                     </ab>
-                     <ab>
-                     <date ana="#checkedOut" when="1939-06-14">June 14</date>	<bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counter Point</title></bibl>			<date ana="#returned" when="1939-06-26">June 26</date>
-                     <date ana="#checkedOut" when="1939-06-26">	26</date>	<bibl ana="#borrowedItem" corresp="mep:005105"><title>Ends and Means</title></bibl>				<date ana="#returned" when="1939-07-10">July 10</date>
-                     </ab>
-                     <ab>
-                     <date from="1939-11-20" to="1939-01-20">Nov 20 1939	
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-26">	26</date>
+                    <bibl ana="#borrowedItem" corresp="mep:005105">
+                        <title>Ends and Means</title></bibl>			
+                    <date ana="#returned" when="1939-07-10">July 10</date>
+                    </ab> 
+                    
+                    <note> <date from="1939-11-20" to="1939-01-20">Nov 20 1939	
                      to Jan 20 1940</date>
                                     ren. 2 m. 1 vol.		45
-                                    Dep.				    50
-                     </ab>
-                     <ab>
-                     <date ana="#checkedOut" when="1939-11-20">Nov. 20</date>	<bibl ana="#borrowedItem" corresp="mep:00bq9p"><title>Taming of the Shrew.</title></bibl>		<date ana="#returned" when="1939-11-28">Nov 28</date>
-                     <date ana="#checkedOut" when="1939-11-28">Nov 28</date>	<bibl ana="#borrowedItem" corresp="mep:00br05"><title>Lectures on the Lit. of the Eliz.</title> <author>Hazlitt</author></bibl> <date ana="#returned" when="1939-12-05">Dec 5</date>
-                     <date ana="#checkedOut" when="1939-12-05">Dec. 5</date>	<bibl ana="#borrowedItem" corresp="mep:00br1g"><title>Grace Abounding &amp; Mr. Badman</title></bibl> <date ana="#returned" when="1939-12-28">Dec 28</date>
-                     <date ana="#checkedOut" when="1939-12-12">Dec 12</date>	<bibl ana="#borrowedItem" corresp="mep:00bg3w"><title>Green's History of England</title></bibl>	<date ana="#returned" when="1939-12-28">Dec 28</date>
-                     				(no extra charge for 2nd book)
-                     <date ana="#checkedOut" when="1939-12-28">Dec 28</date>	<bibl ana="#borrowedItem" corresp="mep:00bb15"><title>Bunyan</title>, <author>Froude</author>, <series>Eng. Men of Letters</series></bibl>	<date ana="#returned" when="1940-01-08">Jan. 8</date>
-                     <date ana="#checkedOut" when="1940-01-08">Jan 8</date>	<bibl ana="#borrowedItem" corresp="mep:00bf3m"><title>Fielding</title> (<series>Eng. Men of letters</series>)</bibl>	<date ana="#returned" when="1940-01-15">Jan. 15</date>
-                     <date ana="#checkedOut" when="1940-01-15">	15</date>	<bibl ana="#borrowedItem" corresp="mep:00bd3b"><title>Novels of Fielding</title> (<author>Digeon</author>)</bibl> (renewed)	<date ana="#returned" when="1940-02-21">Feb 21</date>
-                     </ab>
-                     <ab>
-                     <date from="1940-01-20" to="1940-03-20">Jan. 20 - March 20.</date>	2 m. 1 vol.			45
-                     p.c. <date when="1940-02-19">Feb 19</date> -	-	is the address the same? yes
-                     </ab>
-                     <ab>
-                     <date ana="#checkedOut" when="1940-02-21">Feb 21</date>	<bibl ana="#borrowedItem" corresp="mep:002p29"><title>Tennyson</title> <author>Stopford Brooke</author></bibl> <date ana="#returned" when="1940-03-05">March 5</date>
-                     <date ana="#checkedOut" when="1940-03-05">March 5</date>	<bibl ana="#borrowedItem" corresp="mep:00bf10"><title>Idylls of the King</title>, <editor>Fowler ed</editor></bibl>	<date ana="#returned" when="1940-03-18">March 18</date>
-                     <date ana="#checkedOut" when="1940-03-18">	18</date>	<bibl ana="#borrowedItem" corresp="mep:00br2s"><title>Frost's Collected Poems</title></bibl>		<date ana="#returned" when="1940-03-27">March 27</date>
-                     <date ana="#checkedOut" when="1940-03-27">	27</date>	<bibl ana="#borrowedItem" corresp="mep:002p29"><title>Tennysson</title>. <author>Fausset</author></bibl>	<date ana="#returned" when="1940-04-16">April 16</date>
-                     <date ana="#checkedOut" when="1940-03-27">	27</date>	<bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title> - <biblScope unit="issue"><date when="1940-03-22">March 22nd</date></biblScope></bibl> 0.50 pd	<date ana="#returned" when="1940-03-29">March 29</date>
-                     </ab>
+                                    Dep.				    50</note>
+                     
+                    <ab ana="borrowingEvent">
+                     <date ana="#checkedOut" when="1939-11-20">Nov. 20</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bq9p">
+                        <title>Taming of the Shrew.</title></bibl>	
+                    <date ana="#returned" when="1939-11-28">Nov 28</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-11-28">Nov 28</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00br05">
+                        <title>Lectures on the Lit. of the Eliz.</title> <author>Hazlitt</author></bibl> 
+                    <date ana="#returned" when="1939-12-05">Dec 5</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-12-05">Dec. 5</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00br1g">
+                        <title>Grace Abounding &amp; Mr. Badman</title></bibl> 
+                    <date ana="#returned" when="1939-12-28">Dec 28</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-12-12">Dec 12</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bg3w">
+                        <title>Green's History of England</title></bibl>
+                    <date ana="#returned" when="1939-12-28">Dec 28</date>
+                    </ab>
+                   <note> (no extra charge for 2nd book)</note>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1939-12-28">Dec 28</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bb15">
+                        <title>Bunyan</title>, <author>Froude</author>, <series>Eng. Men of Letters</series></bibl>
+                    <date ana="#returned" when="1940-01-08">Jan. 8</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-08">Jan 8</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00bf3m">
+                        <title>Fielding</title> (<series>Eng. Men of letters</series>)</bibl>	
+                    <date ana="#returned" when="1940-01-15">Jan. 15</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-15">	15</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bd3b">
+                        <title>Novels of Fielding</title> (<author>Digeon</author>)</bibl>
+                  <note>  (renewed)</note>
+                    <date ana="#returned" when="1940-02-21">Feb 21</date>
+                    </ab> 
+                     
+                     <note><date from="1940-01-20" to="1940-03-20">Jan. 20 - March 20.</date>	2 m. 1 vol.			45
+                     p.c. <date when="1940-02-19">Feb 19</date> -	-	is the address the same? yes</note>
+                     
+                    <ab ana="borrowingEvent">
+                     <date ana="#checkedOut" when="1940-02-21">Feb 21</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002p29">
+                        <title>Tennyson</title> <author>Stopford Brooke</author></bibl>
+                    <date ana="#returned" when="1940-03-05">March 5</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-05">March 5</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00bf10">
+                        <title>Idylls of the King</title>, <editor>Fowler ed</editor></bibl>
+                    <date ana="#returned" when="1940-03-18">March 18</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-18">	18</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00br2s">
+                        <title>Frost's Collected Poems</title></bibl>	
+                    <date ana="#returned" when="1940-03-27">March 27</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-27">	27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002p29">
+                        <title>Tennysson</title>. <author>Fausset</author></bibl>
+                    <date ana="#returned" when="1940-04-16">April 16</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-27">	27</date>
+                    <bibl ana="#borrowedItem" corresp="mep:000b69">
+                        <title>Spectator</title> - <biblScope unit="issue"><date when="1940-03-22">March 22nd</date></biblScope></bibl> 
+                   <note> 0.50 pd	</note>
+                    <date ana="#returned" when="1940-03-29">March 29</date>
+                    </ab> 
                 </div>
                 <div type="verso">
                      <pb facs="#s2"/>
-                     <ab>
-                     <date ana="#checkedOut" when="1940-04-15">April 15</date><bibl ana="#borrowedItem" corresp="mep:00br33"><title>Victorian Age in Litterature</title></bibl> <date ana="#returned" when="1940-04-25">April 25</date>
-                     <date ana="#checkedOut" when="1940-04-25">	25</date>	<bibl ana="#borrowedItem" corresp="mep:00br4d"><title>Charles the First</title></bibl>			 <date ana="#returned" when="1940-05-15">May 15</date>
-                     </ab>
-                     <ab>
-                     	<date from="1940-03-20" to="1940-06-20">March 20	-	May June- 20</date>  45f
-                     								(student terms)
-                     </ab>	
-                     <ab>
-                     <date ana="#checkedOut" when="1940-04-25">April 25</date><bibl ana="#borrowedItem" corresp="mep:000b69"><title>Spectator</title> - <biblScope unit="issue"><date when="1940-04-19">April 19th</date></biblScope></bibl> <date ana="#returned" when="1940-04-27">Ap 27</date>
-                     <date ana="#checkedOut" when="1940-05-15">May 15</date>	<bibl ana="#borrowedItem" corresp="mep:002p29"><title>Tennysson</title>. (<author>Stopford Brooke</author>)</bibl> <date ana="#returned" when="1940-06-07">June 7</date>
-                     <date ana="#checkedOut" when="1940-06-07">June 7</date>  <bibl ana="#borrowedItem" corresp="mep:00404w"><title>Rainbow</title></bibl>
-                     </ab>
+                    <ab ana="borrowingEvent">
+                     <date ana="#checkedOut" when="1940-04-15">April 15</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00br33">
+                        <title>Victorian Age in Litterature</title></bibl> 
+                    <date ana="#returned" when="1940-04-25">April 25</date>
+                   </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-25">	25</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00br4d">
+                        <title>Charles the First</title></bibl>			 
+                    <date ana="#returned" when="1940-05-15">May 15</date>
+                    </ab> 
+                    
+                     	<note><date from="1940-03-20" to="1940-06-20">March 20	-	May June- 20</date>  45f
+                     								(student terms)</note>
+                     	
+                    <ab ana="borrowingEvent">
+                     <date ana="#checkedOut" when="1940-04-25">April 25</date>
+                    <bibl ana="#borrowedItem" corresp="mep:000b69">
+                        <title>Spectator</title> - <biblScope unit="issue"><date when="1940-04-19">April 19th</date></biblScope></bibl> 
+                    <date ana="#returned" when="1940-04-27">Ap 27</date>
+                  </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-05-15">May 15</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002p29">
+                        <title>Tennysson</title>. (<author>Stopford Brooke</author>)</bibl>
+                    <date ana="#returned" when="1940-06-07">June 7</date>
+                    </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1940-06-07">June 7</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:00404w">
+                        <title>Rainbow</title></bibl>
+                    </ab> 
                 </div>
             </div>
         </body>
