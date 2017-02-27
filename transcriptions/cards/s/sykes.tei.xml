@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -27,20 +34,20 @@
                 
             </sourceDesc>
         </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	  <particDesc>
-	        <person role="cardholder" ana="#syke.ch"><persName>Christopher Sykes</persName></person>
-	  </particDesc>
-	</profileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#syke.ch"><persName>Christopher Sykes</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
             <change who="#elspeth" when="2016-03-01">
                 <p> First level encoding </p>
                 <ab>
                     s1:
-                        Changed "Dict" to "That"
+                    Changed "Dict" to "That"
                 </ab>
             </change>
             <change who="#carlca">
@@ -64,66 +71,159 @@
                 <div type="recto">
                     <pb facs="#s1"/>
                     <head>
-                    <date when="1935">1935</date>			<persName ref="#syke.ch">SYKES</persName>
-                    
-                    				<address><persName ref="#syke.ch">Mr. Christopher</persName>
-                    				<name>Hôtel des Saints - Père</name></address>
-                    1v. by day		deposit								30f
+                        <date when="1935">1935</date>			<persName ref="#syke.ch">SYKES</persName>
+                        
+                        <address><persName ref="#syke.ch">Mr. Christopher</persName>
+                            <name>Hôtel des Saints - Père</name></address>
+                        1v. by day		deposit								30f
                     </head>
-                    <ab>
-                    <date ana="#checkedOut" when="1935-02-25">25. Feb</date>.	    <bibl ana="#borrowedItem" corresp="mep:00j98h"><title>Frank Harris</title> (<author>Kingsmill</author>)</bibl> 1f
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-02-25">25. Feb</date>.	  
+                        <bibl ana="#borrowedItem" corresp="mep:00j98h">
+                            <title>Frank Harris</title> 
+                            (<author>Kingsmill</author>)
+                        </bibl>
+                        <note>1f   </note>                   
                     </ab>
-                    <ab>
-                    									30f refunded <date when="1935-02-26">26 Feb</date>.
-                    									
-                    											<persName ref="#syke.ch">CHSykes</persName>.
-                    </ab>											
-                    <ab>
-                    <date when="1935-03-20">20 March</date>	by day 1f			dep. 30f
+                    <note>
+                        30f refunded <date when="1935-02-26">26 Feb</date>.
+                        
+                        <persName ref="#syke.ch">CHSykes</persName>.
+                    </note>											
+                    <note>
+                        <date when="1935-03-20">20 March</date>	by day 1f			dep. 30f
+                    </note>
+                    
+                       
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-03-20"></date>		   
+                        <bibl ana="#borrowedItem" corresp="mep:00016t">
+                            <title>Views + Reviews</title>
+                        </bibl>						
+                        <date ana="#returned" when="1935-03-25">25 Mar</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1935-03-20">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00016t"><title>Views + Reviews</title></bibl>						 <date ana="#returned" when="1935-03-25">25 Mar</date>
-                    <date ana="#checkedOut" when="1935-03-25">25	</date>		    <bibl ana="#borrowedItem" corresp="mep:00rk9g"><title>Further Extracts Butler's Notebooks</title></bibl>	 <date ana="#returned" when="1935-03-26">26 - </date>
-                    <date ana="#checkedOut" when="1935-03-26">26 - </date>		<bibl ana="#borrowedItem" corresp="mep:00rm0z"><title>Sonnets</title> (<author>Butler</author>)</bibl>	 <date ana="#returned" when="1935-03-27">27 -</date> 
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-03-25">25	</date>		   
+                        <bibl ana="#borrowedItem" corresp="mep:00rk9g">
+                            <title>Further Extracts Butler's Notebooks</title>
+                        </bibl>	 
+                        <date ana="#returned" when="1935-03-26">26 - </date>
                     </ab>
-                    <ab>
-                    								30f refunded <date when="1935-03-27">27 Mar</date>.
-                    										<persName ref="#syke.ch">CHSykes</persName>.
-                    </ab>	
-                    <ab>
-                    1v. 1m.											15f
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-03-26">26 - </date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00rm0z">
+                            <title>Sonnets</title> 
+                            (<author>Butler</author>)
+                        </bibl>	
+                        <date ana="#returned" when="1935-03-27">27 -</date> 
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1935-04-15">15 April</date>	    <bibl ana="#borrowedItem" corresp="mep:00rm18"><title>O. Wilde</title><biblScope unit="volume" from="1"> I </biblScope>(<author>Harris</author>)</bibl> <date ana="#returned" when="1935-04-19">April 19</date>	dep. 30f
-                    <date ana="#checkedOut" when="1935-04-19">19  "</date>		<bibl ana="#borrowedItem" corresp="mep:005q4x"><title>	"</title><biblScope unit="volume" from="2">	II</biblScope></bibl>	<date ana="#returned" when="1935-04-30">30 April</date>
-                    <date ana="#checkedOut" when="1935-04-27">27 	-</date>		<bibl ana="#borrowedItem" corresp="mep:005k4t"><title>Charles Dickens</title>. <author>G. Couch</author> </bibl> (extra) 3f	<date ana="#returned" when="1935-05-06">6 May</date>
-                    <date ana="#checkedOut" when="1935-05-06">6	</date>		    <bibl ana="#borrowedItem" corresp="mep:007w81"><title>Things That have interested me</title> (<author>AB</author>)</bibl> 	<date ana="#returned" when="1935-05-09">	9</date>
-                    <date ana="#checkedOut" when="1935-05-06">6	</date>		    <bibl ana="#borrowedItem" corresp="mep:00cn7r"><title>Talks with Mussolini</title></bibl>				                    <date ana="#returned" when="1935-05-09"> 	9</date>
+                    
+                    <note>
+                        30f refunded <date when="1935-03-27">27 Mar</date>.
+                        <persName ref="#syke.ch">CHSykes</persName>.
+                    </note>	
+                    <note>
+                        1v. 1m.											
+                        15f 
+                        dep. 30f
+                    </note>
+                    
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-04-15">15 April</date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:00rm18">
+                            <title>O. Wilde</title>
+                            <biblScope unit="volume" from="1">I</biblScope>
+                            (<author>Harris</author>)
+                        </bibl> 
+                        <date ana="#returned" when="1935-04-19">April 19</date>	                       
                     </ab>
-                    <ab>
-                    								refunded <date when="1935-05-09">9 May</date>
-                    								CHSykes.
-                    </ab>								
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-04-19">19  "</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00rm18">
+                            <title>	"</title>
+                            <biblScope unit="volume" from="2">II</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1935-04-30">30 April</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-04-27">27 	-</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:005k4t">
+                            <title>Charles Dickens</title>. 
+                            <author>G. Couch</author> 
+                        </bibl>
+                        <note>(extra) 3f</note>	
+                        <date ana="#returned" when="1935-05-06">6 May</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-05-06">6</date>		 
+                        <bibl ana="#borrowedItem" corresp="mep:007w81">
+                            <title>Things That have interested me</title> 
+                            (<author>AB</author>)
+                        </bibl> 	
+                        <date ana="#returned" when="1935-05-09">9</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-05-06">6	</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00cn7r">
+                            <title>Talks with Mussolini</title>
+                        </bibl>				                    
+                        <date ana="#returned" when="1935-05-09">9</date>
+                    </ab>
+                    
+                    <note>
+                        refunded <date when="1935-05-09">9 May</date>
+                        <persName ref="syke.ch">CHSykes.</persName>
+                    </note>								
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>
                     <head>
-                    <date when="1935">1935</date>				<persName ref="#syke.ch">SYKES</persName>
+                        <date when="1935">1935</date>				<persName ref="#syke.ch">SYKES</persName>
                     </head>
-                    <ab>
-                    									dep. 50f
-                    							refunded <date when="1935-07-01">1 July</date>
+                    <note>
+                        dep. 50f
+                        refunded <date when="1935-07-01">1 July</date>
+                    </note>
+                    
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-05-24">24 May</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:00m14j">
+                            <title>Miss Lonelihearts</title>
+                        </bibl>					
+                        <date ana="#returned" when="1935-05-29">May 29</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1935-05-24">24 May</date>.		<bibl ana="#borrowedItem" corresp="mep:00m14j"><title>Miss Lonelihearts</title></bibl>					<date ana="#returned" when="1935-05-29">May 29</date>
-                    <date ana="#checkedOut" when="1935-05-29">29	</date>	        <bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl> (owes 3v)
-                    <date ana="#checkedOut" when="1935-06-03">3 June</date> - 	<bibl ana="#borrowedItem" corresp="mep:004w5c"><title>Art of The Novel</title></bibl>					<date ana="#returned" when="1935-07-01">1 July</date>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-05-29">29</date>	        
+                        <bibl ana="#borrowedItem" corresp="mep:002j4t">
+                            <title>New Statesman</title>
+                        </bibl> 
+                        <note>(owes 3v)</note>
+                        <date ana="#returned" when="1935-06-03"></date>
                     </ab>
-                    <ab>
-                    	Renewed <date from="1935-05-24" to="1935-06-24">24 May 	-	24 June</date>	-		25v
-                    						<date when="1935-06-24" to="1935-07-01">24 June - 1 July</date> 7f
-                    </ab>						
-               </div> 
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-06-03">3 June</date> - 	
+                        <bibl ana="#borrowedItem" corresp="mep:004w5c">
+                            <title>Art of The Novel</title>
+                        </bibl>					
+                        <date ana="#returned" when="1935-07-01">1 July</date>
+                    </ab>
+                    
+                    <note>
+                        Renewed <date from="1935-05-24" to="1935-06-24">24 May 	-	24 June</date>	-		25v
+                        <date when="1935-06-24" to="1935-07-01">24 June - 1 July</date> 7f
+                    </note>						
+                </div> 
             </div>
         </body>
     </text>
