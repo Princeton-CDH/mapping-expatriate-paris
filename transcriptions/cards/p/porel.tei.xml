@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,20 +64,29 @@
            <div type="card">
               <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
-                				<persName ref="pore.ja">POREL</persName>
+                
+                				<head><persName ref="pore.ja">POREL</persName>
                 <date when="1922">1922</date>
                 <date when="1922-12-04">Dec 4</date>		<persName ref="pore.ja">M. Jacques Porel</persName>
-                			<address><street>8 bis rue Laurent Pichat</street></address>
+                			<address><street>8 bis rue Laurent Pichat</street></address></head>
                 			
                 			
-                			6 mos 	1 vol				35
+                			<note>6 mos 	1 vol				35</note>
                 			
-                <date ana="#checkedOut" when="1922-12-04">Dec 4</date>		<bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist.</title></bibl>
-                <date ana="#checkedOut" when="1922-12-30">Dec 30</date>		<bibl ana="#borrowedItem" corresp="mep:00181f"><title>Trumpet Major</title></bibl>				<date ana="#returned" when="1923-09-24">Sept. 24</date>
-                				brought back <date when="1932-05-02">May 2 1932</date> 
-                				\ by <persName ref="cros.ca">Mrs Carerre Crosby</persName>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1922-12-04">Dec 4</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist.</title></bibl>
                 </ab>
+                  
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1922-12-30">Dec 30</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00181f"><title>Trumpet Major</title></bibl>
+                    <note><date when="1923-09-24">Sept. 24</date><unclear/></note>
+                    <note>brought back</note> 
+                    <date ana="#returned" when="1932-05-02">May 2 1932</date> 
+                				<note>\ by </note><persName ref="cros.ca">Mrs Carerre Crosby</persName>
+                </ab>
+                  
                 </div>
                <div type="verso">
                 <pb facs="#s2"/>
@@ -83,17 +95,22 @@
                </div>
                 <div type="recto">
                 <pb facs="#s3"/>
-                <ab>
-                <date when="1931">1931</date>		<persName ref="pore.ja">POREL</persName>
+                
+                <head><date when="1931">1931</date>		<persName ref="pore.ja">POREL</persName>
                 	
                 			 <persName ref="pore.ja">Porel</persName>
-                			<address><street> 8.10 rue Laurent Pichat</street></address>
+                			<address><street> 8.10 rue Laurent Pichat</street></address></head>
                 			 
-                			 for The B.S. Press
+                			 <note>for The B.S. Press</note>
                 			 
                 			 
-                <date ana="#checkedOut" when="1931-09-30">Sept 30</date>		<bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring	</title></bibl>			<date ana="#checkedOut" when="1931-10-26">Oct 26</date>
-                				<bibl ana="#borrowedItem"><edition>(1st ed.)</edition></bibl></ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1931-09-30">Sept 30</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00500w"><title>Torrents of Spring</title>
+                        <edition>(1st ed.)</edition></bibl>	
+                    <date ana="#returned" when="1931-10-26">Oct 26</date>
+                </ab>
+                    
                 </div>
                 <div type="verso">
                 <pb facs="#s4"/>
