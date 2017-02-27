@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -71,16 +73,31 @@
                     		
                     		
                     		
-                    <ab>		
-                    		1 m.	1 vol					25
-                    		Deposit							50
+                   		
+                    		<note>1 m.	1 vol					25
+                    		Deposit							50</note>
                     		
-                    </ab>
-                    <ab>                        paid by <persName ref="#whar">Mrs W</persName>. Mch 26.
-                	<date ana="#checkedOut" when="1927-02-28">Feb 28</date>	<bibl ana="#borrowedItem" corresp="mep:00d18b"><title>Great Abnormal</title></bibl> 0.25 = 1.75 (maid said she paid 2f to someone else here)		<date ana="#returned" when="1927-03-07">Mch 7</date>
-                	<date ana="#checkedOut" when="1927-03-28">Mch 28</date>	<bibl ana="#borrowedItem" corresp="mep:00d19n"><title>Composition</title></bibl> 	0.25 <bibl ana="#borrowedItem" corresp="mep:00d204"><title>H. Ellis</title> by <author>I Goldberg</author></bibl> 0.50	<date ana="#returned" when="1927-03-28">"	28</date>
-                												1.50 paid
-                	</ab>											
+                    
+                                           <note>paid by <persName ref="#whar">Mrs W</persName>.<date when="1927-03-26"> Mch 26.</date></note>
+                    <ab ana="#borrowingEvent">
+                	<date ana="#checkedOut" when="1927-02-28">Feb 28</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00d18b"><title>Great Abnormal</title></bibl>
+                      <note>  0.25 = 1.75 (maid said she paid 2f to someone else here)	</note>
+                        <date ana="#returned" when="1927-03-07">Mch 7</date>
+                        </ab>
+                    
+                	<note><date when="1927-03-28">Mch 28</date>	
+                        <note><del><bibl corresp="mep:00d19n"><title>Composition</title></bibl></del> </note>
+                        0.25 </note>
+                    
+                  <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-03-28">Mch 28</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00d204"><title>H. Ellis</title> by <author>I Goldberg</author></bibl>
+                      <note>  0.50</note>	
+                        <date ana="#returned" when="1927-03-28">"	28</date>
+                		</ab>
+                    <note>1.50 paid</note>
+                												
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
