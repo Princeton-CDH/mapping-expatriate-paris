@@ -1,0 +1,18 @@
+debug: true
+xml_validation:
+  cards:
+    files:
+      - transcriptions/cards/*/*.tei.xml
+    xsd: schemas/libcards.xsd
+  cards-schematron:
+    files:
+      - transcriptions/cards/*/*.tei.xml
+    schematron: schemas/libcards.sch
+  logbooks:
+    files:
+      - transcriptions/logbooks/*.xml
+    xsd: schemas/beachLogs.xsd
+  personography:
+    files:
+      - transcriptions/personography.xml
+    xsd: schemas/personography.xsd
