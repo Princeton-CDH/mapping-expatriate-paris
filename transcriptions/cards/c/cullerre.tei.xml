@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -72,23 +75,46 @@
                 			<street>199 rue de Vaugirard</street>
                 			</address>
                 </head>
-                <ab>
+                    
+                <note>
                 <date to="1940-08-28">to Aug (Sept)
                 28	1940</date>	
                                 6 mos	1	v	A		115 
-                									dep 50
+                									dep 50</note>
+                
+                												                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-28">Feb 28</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001f3f"><title>Gone with the Wind</title></bibl>
+                    <note>ren. <date from="1940-03-12" to="1940-03-27">March 12 to March 27</date></note>						
+                    <date when="1940-03-12"><del>March 12</del></date>
+                    <date ana="#returned" when="1940-03-26">March 26</date>
                 </ab>
-                <ab>
-                												                <date when="1940-03-26">March 26</date>
-                <date ana="#checkedOut" when="1940-02-28">Feb 28</date>	<bibl ana="#borrowedItem" corresp="mep:001f3f"><title>Gone with the Wind</title></bibl> ren. <date ana="#returned" when="1940-03-12">March 12</date>	<date when="1940-03-12">March 12</date>
-                								to <date when="1940-03-27">March 27</date>
-                <date when="1940-03-12">March 12</date>
-                <date ana="#checkedOut" when="1940-03-26">March 26</date>	<bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte saga.</title></bibl> can keep more			<date ana="#returned" when="1940-04-23">April 23</date>
-                							than 15 days
-                <date ana="#checkedOut" when="1940-04-23">April 23</date>	<bibl ana="#borrowedItem" corresp="mep:00jr83"><title>Modern Comedy</title></bibl> (can keep a month)	<date ana="#returned" when="1940-05-30">May 30</date>
-                <date ana="#checkedOut" when="1940-05-30">May 30</date>	<bibl ana="#borrowedItem" corresp="mep:009h19"><title>Esther Waters</title></bibl>						<date ana="#returned" when="1940-10-18">Oct 18</date>
-                					left deposit
+                    
+                <note><date when="1940-03-12"><del>March 12</del></date></note>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-26">March 26</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte saga.</title></bibl> 
+                    <note>can keep more than 15 days</note>			
+                    <date ana="#returned" when="1940-04-23">April 23</date>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-23">April 23</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00jr83"><title>Modern Comedy</title></bibl>
+                    <note>(can keep a month)</note>	
+                    <date ana="#returned" when="1940-05-30">May 30</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-05-30">May 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:009h19"><title>Esther Waters</title></bibl>
+                    <date ana="#returned" when="1940-10-18">Oct 18</date>
+                </ab>
+                    
+                    <note>left deposit</note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>

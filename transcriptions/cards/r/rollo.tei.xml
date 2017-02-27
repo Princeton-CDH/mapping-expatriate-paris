@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -73,32 +75,89 @@
                 </head>											
                 				
                 				
-                <ab>				
-                				1 mois	2 vols		 35.
+               				
+                				<note>1 mois	2 vols		 35.
                 					Deposit			100.
                 									 50		- Ref.
-                									  S.B.
-                </ab>
-                <ab>
-                <date ana="#checkedOut" when="1927-09-10">Sept. 10.</date>	<bibl ana="#borrowedItem" corresp="mep:00rb2c"><title>Observations.</title></bibl>					<date ana="#returned" when="1927-09-12">Sept. 12</date>
-                <date ana="#checkedOut" when="1927-09-10">	</date>		    <bibl ana="#borrowedItem" corresp="mep:006h4h"><title>Sun in Splendour.</title></bibl>				B. B.
-                <date ana="#checkedOut" when="1927-09-12">Sept. 12</date>	    <bibl ana="#borrowedItem"><title><unclear/> Symphony</title></bibl>	0.25		<date ana="#returned" when="1927-09-13">Sept 13</date>
-                <date ana="#checkedOut" when="1927-09-12">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00fs4d"><title>Magic Mountain</title></bibl> 0.25  5.50		<date ana="#returned" when="1927-09-23"> - 23.</date>
-                <date ana="#checkedOut" when="1927-09-13">Sept 13</date>		<bibl ana="#borrowedItem" corresp="mep:00672p"><title>Chalk Fare</title></bibl>						<date ana="#returned" when="1927-09-17">Sept 17</date>
-                <date ana="#checkedOut" when="1927-09-17">	 17</date>		<bibl ana="#borrowedItem" corresp="mep:003r4q"><title>Ladies of Lyndon.</title></bibl>				<date ana="#returned" when="1927-09-20"> -  20</date>
-                <date ana="#checkedOut" when="1927-09-20">	 20</date>		<bibl ana="#borrowedItem" corresp="mep:00sk2j"><title>Short History of Italian Painting</title></bibl> <date ana="#returned" when="1927-09-26">- 26</date>
-                <date ana="#checkedOut" when="1927-09-23">	 23</date>		<bibl ana="#borrowedItem" corresp="mep:001h6x"><title>Sister Carrie</title></bibl>					<date ana="#returned" when="1927-09-29"> - 	29</date>
-                <date ana="#checkedOut" when="1927-09-25">	 25.</date>	    <bibl ana="#borrowedItem" corresp="mep:00fk4r"><title><unclear/> <unclear/> <unclear/>, Color</title></bibl>				<date ana="#returned" when="1927-10-13">Oct 13</date>
-                <date when="1927-10-13">Oct 13</date>
+                									 <persName ref="beac.sy"> S.B.</persName></note>
                 
-                Ren <date from="1927-10-08" to="1927-11-01">October 8	-	November 1</date> v		25f
-                
-                <date ana="#checkedOut" when="1927-10-18">Oct 18</date>	<bibl ana="#borrowedItem" corresp="mep:00p37h"><title>When the King Loses his head</title></bibl>		<date ana="#returned" when="1927-10-20">Oct. 20</date>
-                <date ana="#checkedOut" when="1927-10-20">	20</date>	<bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte Saga.</title></bibl>						<date ana="#returned" when="1927-11-02">Nov 2</date>
-                <date ana="#checkedOut" when="1927-11-02">Nov. 2</date>	<bibl ana="#borrowedItem" corresp="mep:005b56"><title>White Monkey</title></bibl>						<date ana="#returned" when="1927-11-04">Nov 4</date>
-                <date ana="#checkedOut" when="1927-11-04"> "	 4</date>	<bibl ana="#borrowedItem" corresp="mep:00sk3v"><title>Theatre in Life</title></bibl>	0.25	=	0.75	<date ana="#returned" when="1927-11-07">Nov 7</date>
-                <date ana="#checkedOut" when="1927-11-29">	 29.</date>	<bibl ana="#borrowedItem" corresp="mep:00k697"><title>Book of marriage</title></bibl>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1927-09-10">Sept. 10.</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00rb2c"><title>Observations.</title></bibl>		
+                    <date ana="#returned" when="1927-09-12">Sept. 12</date>
                 </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-10">	</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:006h4h"><title>Sun in Splendour.</title></bibl>	
+                  <note>  B. B.</note>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-12">Sept. 12</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00sk17"><title><unclear/> Symphony</title></bibl>	
+                   <note> 0.25</note>		
+                    <date ana="#returned" when="1927-09-13">Sept 13</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-12">	</date>		  
+                    <bibl ana="#borrowedItem" corresp="mep:00fs4d"><title>Magic Mountain</title></bibl>
+                   <note> 0.25  5.50	</note>
+                    <date ana="#returned" when="1927-09-23"> - 23.</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-13">Sept 13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00672p"><title>Chalk Fare</title></bibl>	
+                    <date ana="#returned" when="1927-09-17">Sept 17</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-17">	 17</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003r4q"><title>Ladies of Lyndon.</title></bibl>		
+                    <date ana="#returned" when="1927-09-20"> -  20</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-20">	 20</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00sk2j"><title>Short History of Italian Painting</title></bibl> 
+                    <date ana="#returned" when="1927-09-26">- 26</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-23">	 23</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001h6x"><title>Sister Carrie</title></bibl>			
+                    <date ana="#returned" when="1927-09-29"> - 	29</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-25">	 25.</date>	  
+                    <bibl ana="#borrowedItem" corresp="mep:00fk4r"><title><unclear/> <unclear/> <unclear/>, Color</title></bibl>		
+                    <date ana="#returned" when="1927-10-13">Oct 13</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-09-29">	 29.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00k697"><title>Book of marriage</title></bibl>
+                </ab>
+                    <note><del><date when="1927-10-13">Oct 13</date></del></note>
+                
+                <note>Ren <date from="1927-10-08" to="1927-11-01">October 8	-	November 1</date> v		25f</note>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1927-10-18">Oct 18</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00p37h"><title>When the King Loses his head</title></bibl>	
+                    <date ana="#returned" when="1927-10-20">Oct. 20</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-10-20">	20</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte Saga.</title></bibl>				
+                    <date ana="#returned" when="1927-11-02">Nov 2</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-11-02">Nov. 2</date>
+                    <bibl ana="#borrowedItem" corresp="mep:005b56"><title>White Monkey</title></bibl>		
+                    <date ana="#returned" when="1927-11-04">Nov 4</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-11-04"> "	 4</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sk3v"><title>Theatre in Life</title></bibl>
+                   <note> 0.25	=	0.75	</note>
+                    <date ana="#returned" when="1927-11-07">Nov 7</date>
+                </ab>
+                    
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>

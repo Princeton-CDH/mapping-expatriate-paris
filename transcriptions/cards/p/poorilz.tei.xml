@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,8 +58,8 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
-                <date when="1941">1941</date>		<persName ref="poor.mi">Poorilz
+                
+                <head><date when="1941">1941</date>		<persName ref="poor.mi">Poorilz
                 				Michael</persName>
                 			<address><street>43 bis Ave de Versaille</street></address>
                 			
@@ -66,16 +69,26 @@
                 			 	
                 			TÉlÉPHONE : <address><addrLine><num type="telephone">NO. 7 MESNIL ST DENIS
                 			    PAR VERSAILLES</num></addrLine>
-                			<orgName>GARE: LA VERRIÈRE (ETAT)</orgName></address>
+                			<orgName>GARE: LA VERRIÈRE (ETAT)</orgName></address></head>
                     
-                <date ana="#checkedOut" when="1941-03-13">March 13</date>	<bibl ana="#borrowedItem" corresp="mep:00mn2w"><title>Forerunner	</title></bibl>					<date ana="#checkedOut" when="1941-04-03">April 3</date>
-                			<bibl ana="#borrowedItem" corresp="mep:00pp76"><title>Death of the Gods</title></bibl>				<date ana="#returned" when="1941-04-03">April 3</date>
-               <date when="1941-04-03"> April 3</date>
-                
-                <date when="1941-07-17">July 17	</date>	lent <persName ref="poor.mi">M.P.</persName>				50
-                				pd 1 soap			13
-                					returned 50v
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-03-13">March 13</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00mn2w"><title>Forerunner	</title></bibl>
+                    <date ana="#returned" when="1941-04-03">April 3</date>
                 </ab>
+                
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1941-03-13">    </date>
+                   <bibl ana="#borrowedItem" corresp="mep:00pp76"><title>Death of the Gods</title></bibl>
+                   <date ana="#returned" when="1941-04-03">April 3</date>
+               </ab>
+                    
+               <note><date when="1941-04-03"> April 3</date></note>
+                
+                <note><date when="1941-07-17">July 17	</date>	lent <persName ref="poor.mi">M.P.</persName>		50
+                				pd 1 soap			13
+                					returned 50v</note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
