@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,26 +65,62 @@
                 <div type="recto">
                     <pb facs="#s1"/>
                     <head>
-                    <date when="1900-11-12">Nov 12</date>		<address><persName ref="#summ.be">Miss Bessie Summerell</persName>
+                    <date when="1921-11-12">Nov 12</date>		<address><persName ref="#summ.be">Miss Bessie Summerell</persName>
                     				                            <street>14, rue Gay Lussac</street></address>
                     </head>				
-                    <ab>				
+                    <note>				
                     		1	mo.		1 vol.					8
                     								Dep 		7
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1900-11-12">Nov 12</date>	<bibl ana="#borrowedItem" corresp="mep:00q176"><title>Sonnets of Shakespeare</title>, <author>Butler</author></bibl>	<date ana="#returned" when="1900-11-20">Nov 20</date>
-                    <date ana="#checkedOut" when="1900-11-20">Nov 20</date>	<bibl ana="#borrowedItem" corresp="mep:00c74h"><title>The Way of all Flesh</title></bibl>				            <date ana="#returned" when="1900-11-29">Nov 29</date>
-                    <date ana="#checkedOut" when="1900-11-29">Nov 29</date>	<bibl ana="#borrowedItem" corresp="mep:00rj8w"><title>The Dolls House</title></bibl>						            <date ana="#returned" when="1900-12-02">Dec 2</date>
-                    <date ana="#checkedOut" when="1900-12-02">Dec 2</date>	<bibl ana="#borrowedItem" corresp="mep:00rj96"><title>Emerson's Poems</title></bibl>					               	<date ana="#returned" when="1900-12-06">Dec 6</date>
-                    <date ana="#checkedOut" when="1900-12-06">Dec 6</date>	<bibl ana="#borrowedItem" corresp="mep:000s1b"><author>Yeats</author> <title>Plays</title></bibl>					<date ana="#returned" when="1900-12-15">Dec 15</date>
-                    <date ana="#checkedOut" when="1900-12-15">Dec 15</date>	<bibl ana="#borrowedItem" corresp="mep:00rk0p"><title>Half Hours</title></bibl>							            <date ana="#returned" when="1900-12-31">Dec 31st</date>	
+                    </note>	
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1921-11-12">Nov 12</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00q176"><title>Sonnets of Shakespeare</title>, 
+                            <author>Butler</author></bibl>	
+                        <date ana="#returned" when="1921-11-20">Nov 20</date>
                     </ab>
-                    <ab>
-                            Ren. <date when="1901-01-25">Jan. 25th</date> Sent a p.c.
-                    Ren <date when="1901-01-26">Jan 26</date> "	"							<date when="1901-02-21">Feb 21</date>		
-                    			(subsc up)									
-                    </ab>			
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1921-11-20">Nov 20</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00c74h"><title>The Way of all Flesh</title></bibl>
+                        <date ana="#returned" when="1921-11-29">Nov 29</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1921-11-29">Nov 29</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00rj8w"><title>The Dolls House</title></bibl>
+                        <date ana="#returned" when="1921-12-02">Dec 2</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1921-12-02">Dec 2</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00rj96"><title>Emerson's Poems</title></bibl>
+                        <date ana="#returned" when="1921-12-06">Dec 6</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1921-12-06">Dec 6</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00dv4q"><author>Yeats</author> 
+                            <title>Plays</title></bibl>					
+                        <date ana="#returned" when="1921-12-15">Dec 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1921-12-15">Dec 15</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00rk0p"><title>Half Hours</title></bibl>	
+                        <date ana="#returned" when="1921-12-31">Dec 31st</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <note>Ren <date when="1922-01-26">Jan 26</date></note> 
+                        <bibl ana="#borrowedItem" corresp="mep:00rk0p">"	"</bibl>
+                        <date ana="#returned" when="1922-02-21">Feb 21</date>
+                    </ab>
+                    
+                    		<note>Ren (subsc up)
+                    		<date when="1922-01-25">Jan. 25th</date> Sent a p.c.</note>									
+                    			
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>
