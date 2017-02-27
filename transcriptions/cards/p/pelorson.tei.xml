@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,18 +57,24 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
+               <head>
                 <date when="1932">1932</date>			<persName ref="pelo.an">PELORSON</persName>
                 			<persName ref="pelo.an">Madame Pelorson</persName>
                 			<address><street>11 rue Bellier Dedouvre</street>
                 							<district>13 ème</district></address>
-                							
-                				book by the Day
+                </head>							
+                				<note>book by the Day
                 						deposit			21 - 
                 							deposit returned
-                									<date when="1932-05-12">May 12</date>
-                    <date ana="#checkedOut" when="1932-05-11">May 11</date>	<bibl ana="#borrowedItem" corresp="mep:00pn12"><title>Rubiyat of Omar K.</title></bibl>				<date ana="#returned" when="1932-05-12">May 12</date>
-                </ab>
+                									<date when="1932-05-12">May 12</date> </note>
+                   
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-05-11">May 11</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:00pn12">
+                           <title>Rubiyat of Omar K.</title></bibl>				
+                       <date ana="#returned" when="1932-05-12">May 12</date>
+                   </ab>
+                   
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
