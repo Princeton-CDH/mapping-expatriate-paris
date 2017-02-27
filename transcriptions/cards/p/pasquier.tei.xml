@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,28 +55,58 @@
             <div type="card">
               <div type="recto">  
                 <pb facs="#s1"/>
-                <ab>
+               <head> 
                <date when="1937"> 1937</date>			<persName ref="pasq.je">PASQUIER.
                 
-                Monsieur. Jean.</persName>	<address><street>25 rue de Vaugirard.</street></address>
+                Monsieur. Jean.</persName>	<address><street>25 rue de Vaugirard.</street></address></head>
                 				
                 				
                 				
-                								refunded
-                					1m. 1v.			<date when="1937-07-06">July 6.</date>		15.00
-                									deposit.	30.00	
-                <date ana="#checkedOut" when="1937-04-08">April 8th</date>	<bibl ana="#borrowedItem" corresp="mep:002300"><title>Men without Women</title></bibl>.				<date ana="#returned" when="1937-04-12">April 12.</date>
-                	 <date ana="#checkedOut" when="1937-04-12">12.</date>	<bibl ana="#borrowedItem" corresp="mep:00d930"><title>Jude the Obscure.</title></bibl>				<date ana="#returned" when="1937-04-26">April 26.</date>
-                	 <date ana="#checkedOut" when="1937-04-26">26.</date>	<bibl ana="#borrowedItem" corresp="mep:002169"><title>Death in the Afternoon</title></bibl>			<date ana="#returned" when="1937-05-08">May 8.</date>
-                <date when="1937-05-10">May 10</date>	Renewed to <date when="1937-06-10">June 10 1937</date>					15v.
-                
-               <date ana="#checkedOut" when="1937-05-10"> May. 10	</date>	<bibl ana="#borrowedItem" corresp="mep:00pk62"><title>Captains Courageous.</title></bibl>			<date ana="#returned" when="1937-05-29">May 29</date>
-                	 <date ana="#checkedOut" when="1937-05-10">20</date>		<bibl ana="#borrowedItem" corresp="mep:00ct9r"><title>March of Democracy. vol I</title></bibl> ren. <date ana="#returned" when="1937-06-07">	June 7</date>
-                	 					will come back before 10th
-                <date when="1937-06-11">June 11</date>.	Renewed to <date when="1937-07-10">July 10 1937.</date>		15frs.
-                
-               <date ana="#checkedOut" when="1937-07-19"> Jul 19</date>		<bibl ana="#borrowedItem" corresp="mep:00ct9r"><title>March of Democracy II</title></bibl>			<date ana="#returned" when="1937-07-06">July 6.</date>
+                					<note>refunded <date when="1937-07-06">July 6.</date></note>
+                					<note>1m. 1v.					15.00
+                									deposit.	30.00</note>	
+                  
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-04-08">April 8th</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002300"><title>Men without Women</title></bibl>.
+                    <date ana="#returned" when="1937-04-12">April 12.</date>
                 </ab>
+                  
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1937-04-12">12.</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00d930"><title>Jude the Obscure.</title></bibl>
+                       <date ana="#returned" when="1937-04-26">April 26.</date>
+                   </ab>
+                  
+                	 <ab ana="#borrowingEvent">
+                	     <date ana="#checkedOut" when="1937-04-26">26.</date>	
+                	     <bibl ana="#borrowedItem" corresp="mep:002169"><title>Death in the Afternoon</title></bibl>	
+                	     <date ana="#returned" when="1937-05-08">May 8.</date>
+                	 </ab>
+                  
+                <note><date when="1937-05-10">May 10</date>	Renewed to <date when="1937-06-10">June 10 1937</date>					15v.</note>
+                
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1937-05-10"> May. 10	</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00pk62"><title>Captains Courageous.</title></bibl>	
+                       <date ana="#returned" when="1937-05-29">May 29</date>
+                   </ab>
+                  
+                	 <ab ana="#borrowingEvent">
+                	     <date ana="#checkedOut" when="1937-05-10">20</date>	
+                	     <bibl ana="#borrowedItem" corresp="mep:00ct9r"><title>March of Democracy. vol I</title></bibl> 
+                	     <date when="1937-06-07"><del>	June 7</del></date>
+                	     <note>ren. will come back before 10th</note>
+                	 </ab>
+                  
+                <note><date when="1937-06-11">June 11</date>.	Renewed to <date when="1937-07-10">July 10 1937.</date>		15frs.</note>
+                
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1937-07-19"> Jul 19</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00ct9r"><title>March of Democracy II</title></bibl>		
+                   <date ana="#returned" when="1937-07-06">July 6.</date>
+               </ab>
+                  
               </div>
                 <div type="verso">
                 <pb facs="#s2"/>
