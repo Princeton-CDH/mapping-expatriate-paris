@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +10,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -68,20 +72,67 @@
                     </head>					  
                     					  
                     					
-                    <ab>					
+                  <note>  					
                     					1 m		1 v					22,50
                     								dep (special)	25
                     									refunded <date when="1932-02-29">Feb 29</date>
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-06">Feb 6</date>	   
+                        <bibl ana="#borrowedItem" corresp="mep:001p4p">
+                            <title>Apple Cart</title>
+                        </bibl>							
+                        <date ana="#returned" when="1932-02-08">Feb 8</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1932-02-06">Feb 6</date>	   <bibl ana="#borrowedItem" corresp="mep:001p4p"><title>Apple Cart</title></bibl>							<date ana="#returned" when="1932-02-08">Feb 8</date>
-                    <date ana="#checkedOut" when="1932-02-08">	8</date>	   <bibl ana="#borrowedItem" corresp="mep:00fx4h"><title>Slaves of the Gods</title></bibl>					<date ana="#returned" when="1932-02-10">Feb 10</date>
-                    <date ana="#checkedOut" when="1932-02-10">	10</date>	   <bibl ana="#borrowedItem" corresp="mep:00sd53"><title>Marlowe's Works</title></bibl>						<date ana="#returned" when="1932-02-15">Feb 15</date>
-                    <date ana="#checkedOut" when="1932-02-15">	15</date>	   <bibl ana="#borrowedItem" corresp="mep:001n05"><title>Swan Song</title></bibl>							<date ana="#returned" when="1932-02-22">Feb 22</date>
-                    <date ana="#checkedOut" when="1932-02-22">	22</date>	   <bibl ana="#borrowedItem" corresp="mep:00c80j"><title>King Midas</title></bibl>	<bibl ana="#borrowedItem" corresp="mep:00202s"><title>Three Plays for Puritans</title></bibl> <date ana="#returned" when="1932-02-26">Feb 26</date>
-                    <date ana="#checkedOut" when="1932-02-26">	26</date>	   <bibl ana="#borrowedItem" corresp="mep:00sd6d"><title>Moneychangers</title></bibl>						<date ana="#returned" when="1932-02-29">Feb 29</date>
-                    <date when="1932-02-29">	29</date>
-                    </ab>	
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-08">8</date>	   
+                        <bibl ana="#borrowedItem" corresp="mep:00fx4h">
+                            <title>Slaves of the Gods</title>
+                        </bibl>					
+                        <date ana="#returned" when="1932-02-10">Feb 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-10">10</date>	   
+                        <bibl ana="#borrowedItem" corresp="mep:00sd53">
+                            <title>Marlowe's Works</title>
+                        </bibl>						
+                        <date ana="#returned" when="1932-02-15">Feb 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-15">15</date>	  
+                        <bibl ana="#borrowedItem" corresp="mep:001n05">
+                            <title>Swan Song</title>
+                        </bibl>							
+                        <date ana="#returned" when="1932-02-22">Feb 22</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-22">22</date>	   
+                        <bibl corresp="mep:00c80j">
+                            <del><title>King Midas</title></del>
+                        </bibl>	
+                        <bibl ana="#borrowedItem" corresp="mep:00202s">
+                            <title>Three Plays for Puritans</title>
+                        </bibl> 
+                        <date ana="#returned" when="1932-02-26">Feb 26</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-26">26</date>	   
+                        <bibl ana="#borrowedItem" corresp="mep:00sd6d">
+                            <title>Moneychangers</title>
+                        </bibl>						
+                        <date ana="#returned" when="1932-02-29">Feb 29</date>
+                    </ab>
+                    
+                    <note>
+                        <date when="1932-02-29">29</date>
+                    </note>
+                    	
                </div> 
                 <div type="verso">
                     <pb facs="#s2"/>

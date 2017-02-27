@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,32 +67,92 @@
                     Aut. 28-14	</num></addrLine>		<street>15 Bd. Beau Sejour</street>
                     										<district>XVIe</district></address>
                     </head>										
-                    <ab>					
-                    					6 m 1 v student			70
+                   					
+                    					<note>6 m 1 v student			70
                     								dep			50
                     				<date from="1939-01-26" to="1939-07-26">Jan 26 - July 26th</date>
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1939-01-26">Jan 26</date>		<bibl ana="#borrowedItem" corresp="mep:001q0q"><title>Good Earth</title></bibl>					<date ana="#returned" when="1939-02-07">Feb 7</date>
-                    <date ana="#checkedOut" when="1939-02-07">Feb 7</date>		<bibl ana="#borrowedItem" corresp="mep:000q23"><title>Note in Music</title></bibl>				<date ana="#returned" when="1939-02-20">"	20</date>
-                    <date ana="#checkedOut" when="1939-02-20">	20</date>		<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>Byron</author> (<publisher>Oxford Ed.</publisher>)</bibl>	<date ana="#returned" when="1939-03-08">March 8</date>
-                    			(Brought back <date ana="#checkedOut" when="1939-03-08">8/III/39</date>. Paid 50c + took <bibl ana="#borrowedItem"><author>Byron</author></bibl> out again)
-                    <date ana="#checkedOut" when="1939-03-08">March 8</date>		<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>Byron</author></bibl><date ana="#returned" when="1939-03-13">Mar 13</date>
-                    <date ana="#checkedOut" when="1939-03-13">	 13</date>		<bibl ana="#borrowedItem" corresp="mep:002g3z"><title>My Antonia</title></bibl>					<date ana="#returned" when="1939-03-27">Mar 27</date>
-                    <date ana="#checkedOut" when="1939-03-27">	 27</date>		<bibl ana="#borrowedItem" corresp="mep:00074v"><title>Eminent Victorians</title></bibl>		ren <date ana="#returned" when="1939-04-18">Apr 18</date>	<date when="1939-05-01">May 1</date>
-                    <date ana="#checkedOut" when="1939-05-01">May 1</date>		<bibl ana="#borrowedItem" corresp="mep:00r30t"><title>Play of Wilde</title></bibl>				<date ana="#returned" when="1939-05-16">May 16</date>
-                    <date ana="#checkedOut" when="1939-05-16">	 16</date>		<bibl ana="#borrowedItem" corresp="mep:00r314"><title>Modern English Literature</title></bibl> (owes 1v) Pd.
-                    <date ana="#checkedOut" when="1939-06-05">June 5</date>		<bibl ana="#borrowedItem" corresp="mep:001p97"><title>Constant Nymph</title></bibl>				<date ana="#returned" when="1939-06-19">June 19</date>
-                    <date ana="#checkedOut" when="1939-06-19">June 19</date>		<bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>				<date ana="#returned" when="1939-06-30">    30</date>
-                    <date ana="#checkedOut" when="1939-06-30">	 30</date>		<bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>				<date ana="#returned" when="1939-07-11">july 11</date>
-                    	 	dep refunded: <date when="1939-07-11">July 11, 1939</date>. Still, as she
+                    	</note>
+                    
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-26">Jan 26</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001q0q"><title>Good Earth</title></bibl>			
+                    <date ana="#returned" when="1939-02-07">Feb 7</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-02-07">Feb 7</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:000q23"><title>Note in Music</title></bibl>	
+                    <date ana="#returned" when="1939-02-20">"	20</date>
+                    </ab>
+                    <ab  ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-02-20">	20</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>Byron</author> (<publisher>Oxford Ed.</publisher>)</bibl>	
+                    <date ana="#returned" when="1939-03-08">March 8</date>
+                    </ab>
+                    
+                    <note>
+                    (Brought back <date  when="1939-03-08">8/III/39</date>. 
+                    Paid 50c + took <bibl corresp="mep:00209z"><author>Byron</author></bibl> out again)
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-03-08">March 8</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>Byron</author></bibl>
+                    <date ana="#returned" when="1939-03-13">Mar 13</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-03-13">	 13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002g3z"><title>My Antonia</title></bibl>				
+                    <date ana="#returned" when="1939-03-27">Mar 27</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-03-27">	 27</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00074v"><title>Eminent Victorians</title></bibl>		
+                    <note>ren 
+                    <date when="1939-04-18">Apr 18</date>	</note>
+                    <date ana="#returned" when="1939-05-01">May 1</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-05-01">May 1</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00r30t"><title>Play of Wilde</title></bibl>				
+                    <date ana="#returned" when="1939-05-16">May 16</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-05-16">	 16</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00r314"><title>Modern English Literature</title></bibl>
+                    <note>(owes 1v) Pd.</note>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-05">June 5</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001p97"><title>Constant Nymph</title></bibl>			
+                    <date ana="#returned" when="1939-06-19">June 19</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-19">June 19</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>			
+                    <date ana="#returned" when="1939-06-30">    30</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-30">	 30</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>			
+                    <date ana="#returned" when="1939-07-11">july 11</date>
+                    </ab>
+                    
+                    
+                    <note>dep refunded: <date when="1939-07-11">July 11, 1939</date>. Still, as she
                     	  had to go before the end of her subscription,
                     	has a right will take a book in Sept. or Oct.
                     		will bring deposit - says she returned and paid dep.
                     								<date when="1939-10-31">Oct 31</date>						50
-                    <date ana="#checkedOut" when="1939-10-31">Oct 31</date>		<bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>				<date ana="#returned" when="1939-11-14">Nov 14</date>
-                    				<date when="1939-11-14">Nov 14</date>			<persName ref="#beac.sy">S B</persName> refunded 50v dep.
-                    </ab>				
+                    </note>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-10-31">Oct 31</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002z2h"><title>Sparkenbroke</title></bibl>	
+                    <date ana="#returned" when="1939-11-14">Nov 14</date>
+                    </ab>
+                    
+                   <note> <date when="1939-11-14">Nov 14</date>			
+                    <persName ref="#beac.sy">S B</persName> refunded 50v dep.</note>
+                    				
                 </div> 
                 <div type="recto">
                     <pb facs="#s2"/>
