@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,22 +57,27 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
+                <head>
                 <date when="1938">1938</date>
                 				<persName ref="parm.do">PARMEE
                 				Douglas</persName>
                 				<address><street>15 rue Jacob</street></address>
+                	</head>			
                 				
-                				
-                					by the day 2v
-                						dep				50
+                				<note>	by the day 2v
+                						dep				50 </note>
                 						
                 
-                <date ana="#checkedOut" when="1938-03-02">March 2</date>	<bibl ana="#borrowedItem" corresp="mep:00md4k"><title>Thompson's Poetical Works</title></bibl> OSA
-                
-                			Book rever returned
-                			kept deposit to pay overdues
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1938-03-02">March 2</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00md4k">
+                        <title>Thompson's Poetical Works</title></bibl> 
+                    <note>OSA</note>
+                    
+                    <note><del>Book never returned
+                        kept deposit to pay overdues</del></note>
                 </ab>
+                    
                 </div>
                 
                 <div type="verso">

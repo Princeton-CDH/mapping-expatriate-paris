@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,28 +65,147 @@
                     </head>
                     
                     
-                    <ab>
-                    <date ana="#checkedOut" when="1950-12-31">Dec 31 1950</date>		<bibl ana="#borrowedItem" corresp="mep:000399"><title>transition</title><biblScope unit="issue" from="18">No 18</biblScope></bibl>	returned
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1950-12-31">Dec 31 1950</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:000399">
+                            <title>transition</title>
+                            <biblScope unit="issue" from="18">No 18</biblScope>
+                        </bibl>	
+                        <note>returned</note>
                     </ab>
                     
-                    <ab>
-                    <date ana="#checkedOut" when="1952-12-22">Dec 22 1952</date>		<bibl ana="#borrowedItem" corresp="mep:00g35f"><title>Boy</title> (inscribed To <persName ref="#beac.sy">S B</persName>)</bibl>	<date ana="#checkedOut" when="1953-11-25">Nov 25.53</date>
-                    				                                <bibl ana="#borrowedItem" corresp="mep:007b32"><title>Uncle Arthur</title></bibl>			<date ana="#checkedOut" when="1953-11-26">Nov 26.53</date>
-                    				                                <bibl ana="#borrowedItem" corresp="mep:00q28s"><title>The Map of Love</title></bibl>			<date ana="#checkedOut" when="1953-11-26">Nov 26.53</date>
-                    				                                <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life &amp; Letters</title></bibl>
-                    			                                    x	<date ana="#returned" when="1947-04">Ap 1947</date>
-                    			  	                                    <date when="1937">Spring 1937</date>
-                    			  	                                    <date when="1936">Spring 1936</date>
-                    			  	                                    <date when="1947">"		47</date>
-                    			                                    x	<date when="1949-06">Jun 	49</date>
-                    			  	                                    <date when="1938-10">Oct 	38</date>	 
-                    			  	                                    <date when="1940-05">May		40</date>
-                    			                                    x	<date when="1939-12">Dec Xmas 39</date>
-                    			                                    x	<date ana="#checkedOut" when="1940-05">May		40</date> (Hanley)
-                                                                        <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life &amp; Letters</title> containing <title>Jessie's Eggs</title> by <author>John Pudney</author></bibl> <date ana="#checkedOut" when="1953-11-26">Nov 26.53</date>
-                    			  	                                x
-                    			                                    x	<bibl ana="#borrowedItem" corresp="mep:00k650"><title>Poetry &amp; Prose</title> containing <title>Burning Baby</title> by <author>Dylan Thomas</author></bibl>     returned
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22">Dec 22 1952</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00g35f">
+                            <title>Boy</title>                         
+                        </bibl>	
+                        <note>(inscribed To <persName ref="#beac.sy">S B</persName>)</note>
+                        <date ana="#returned" when="1953-11-25">Nov 25.53</date>
                     </ab>
+                    
+                    				                                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:007b32">
+                            <title>Uncle Arthur</title>
+                        </bibl>			
+                        <date ana="#returned" when="1953-11-26">Nov 26.53</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:00q28s">
+                            <title>The Map of Love</title>
+                        </bibl>			
+                        <date ana="#returned" when="1953-11-26">Nov 26.53</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1952-12-22"/>
+                       <bibl ana="#borrowedItem" corresp="mep:003x71">
+                           <title>Life &amp; Letters</title>
+                       </bibl>
+                       <date ana="#returned" when="1953-11-26"/>
+                   </ab>
+                    
+                    			                              
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1952-12-22"/>
+                      <bibl ana="#borrowedItem" corresp="mep:003x71">
+                      <biblScope unit="issue">x	Ap 1947</biblScope>
+                      </bibl>
+                      <date ana="#returned" when="1953-11-26"/>
+                  </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <biblScope unit="issue">Spring 1937</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1953-11-26"/>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <biblScope unit="issue">Spring 1936</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1953-11-26"/>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <biblScope unit="issue">" 47</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1953-11-26"/>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <biblScope unit="issue">x Jun 49</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1953-11-26"/>
+                    </ab>
+                    
+                     <ab ana="#borrowingEvent">
+                         <date ana="#checkedOut" when="1952-12-22"/>
+                         <bibl ana="#borrowedItem" corresp="mep:003x71">
+                             <biblScope unit="issue">Oct 38</biblScope>
+                         </bibl>
+                         <date ana="#returned" when="1953-11-26"/>
+                     </ab>	 
+                  
+                     <ab ana="#borrowingEvent">
+                         <date ana="#checkedOut" when="1952-12-22"/>
+                         <bibl ana="#borrowedItem" corresp="mep:003x71">
+                             <biblScope unit="issue">May 40</biblScope>
+                         </bibl>
+                         <date ana="#returned" when="1953-11-26"/>
+                     </ab>
+                    
+                     <ab ana="#borrowingEvent">
+                         <date ana="#checkedOut" when="1952-12-22"/>
+                         <bibl ana="#borrowedItem" corresp="mep:003x71">
+                             <biblScope unit="issue">x Dec Xmas 39</biblScope>
+                         </bibl>
+                         <date ana="#returned" when="1953-11-26"/>
+                     </ab>
+                    
+                     <ab ana="#borrowingEvent">
+                         <date ana="#checkedOut" when="1952-12-22"/>
+                         <bibl ana="#borrowedItem" corresp="mep:003x71">
+                             <biblScope unit="issue">x May 40 (Hanley)</biblScope>
+                         </bibl>
+                         <date ana="#returned" when="1953-11-26"/>
+                     </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1952-12-22"/>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <title>Life &amp; Letters</title> 
+                            containing <title>Jessie's Eggs</title> 
+                            by <author>John Pudney</author></bibl> 
+                        <date ana="#returned" when="1953-11-26">Nov 26.53</date>
+                        x
+                    </ab>
+                    
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1952-12-22"/>
+                      x	<bibl ana="#borrowedItem" corresp="mep:00k650">
+                          <title>Poetry &amp; Prose</title> 
+                          containing <title>Burning Baby</title> 
+                          by <author>Dylan Thomas</author>
+                      </bibl>    
+                      returned <date ana="#returned" when="1953-11-26"/>
+                  </ab>
+                    
+                                                             
                  </div>   
                     <pb facs="#s2"/>
                     
