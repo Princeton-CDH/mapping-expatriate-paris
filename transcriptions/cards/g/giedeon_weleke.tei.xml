@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,18 +66,38 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                			<ab><persName ref="#gied.ca">Giedeon-Weleke</persName>
+                			<head><persName ref="#gied.ca">Giedeon-Weleke</persName>
                 <date when="1928">1928</date>	<persName ref="#gied.ca">Mme Welke-Giedeon</persName>
                 <date when="1928-09-13">Sept 13</date>	<address><orgName>University Hotel</orgName>	<street>Dolderthal 7</street>
-                		<street>rue St Jacques</street>		<settlement>Zurich VII</settlement></address>
+                		<street>rue St Jacques</street>		<settlement>Zurich VII</settlement></address></head>
                 		
-                
-                <date ana="#checkedOut" when="1928-09-13">Sept 13</date>	<bibl ana="#borrowedItem" corresp="mep:00k561"><title>Future of <unclear/></title></bibl>			<date ana="#checkedOut" when="1928-09-15">Sept 15</date>
-                			    <bibl ana="#borrowedItem" corresp="mep:00k57b"><title>Younge's Poetical Works</title></bibl>	<date ana="#returned" when="1928-09-15">Sept 15</date>
-                			    <date ana="#checkedOut" when="1928-09-14">14</date>	<bibl ana="#borrowedItem" corresp="mep:00k58n"><title>Lars Porsena</title></bibl>			<date ana="#checkedOut" when="1928-09-15">Sept 15</date>
-                			    <bibl ana="#borrowedItem" corresp="mep:00k59z"><title>Lucullus</title></bibl>				<date ana="#checkedOut" when="1928-09-15">Sept 15</date>
-                			    <bibl ana="#borrowedItem" corresp="mep:00k60f"><title>Brea Future, Low</title></bibl>		<date ana="#returned" when="1928-09-15">Sept 15</date>
-                			</ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1928-09-13">Sept 13</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00k561"><title>Future of <unclear/></title></bibl>		
+                   <date ana="#returned" when="1928-09-15">Sept 15</date>
+                	</ab>	
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1928-09-13"/>
+                   <bibl ana="#borrowedItem" corresp="mep:00k57b"><title>Younge's Poetical Works</title></bibl>	
+                   <date ana="#returned" when="1928-09-15">Sept 15</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1928-09-14">14</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00k58n"><title>Lars Porsena</title></bibl>		
+                   <date ana="#returned" when="1928-09-15">Sept 15</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1928-09-14"/>	
+                   <bibl ana="#borrowedItem" corresp="mep:00k59z"><title>Lucullus</title></bibl>		
+                   <date ana="#returned" when="1928-09-15">Sept 15</date>
+                	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1928-09-14"/>	
+                   <note>Brea <!-- crossed out --></note>
+                   <bibl ana="#borrowedItem" corresp="mep:00k60f"><title>Future, Low</title></bibl>	
+                   <date ana="#returned" when="1928-09-15">Sept 15</date>
+                	</ab>
+               
                </div> 
                 <div type="verso">
                 <pb facs="#s2"/>
