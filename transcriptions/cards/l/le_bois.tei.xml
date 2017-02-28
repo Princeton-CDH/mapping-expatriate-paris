@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,11 +71,17 @@
                 		<name>(Hotel Terminus</name>
                 		<placeName>Place de Rennes</placeName>
                 			<settlement>Paris)</settlement></address>
-                </head><ab>
-                <date when="1958-03-31">Mars 31</date>					returned <date ana="#checkedOut" when="1958-04-01">April 1 1958</date>
-                		<bibl ana="#borrowedItem" corresp="mep:004z1p"><title>Chamber Music</title> <editor>William York Tindall</editor>				
+                </head>
+               <ab ana="#borrrowingEvent">
+                <date ana="#checkedOut" when="1958-03-31">Mars 31</date>					
+                		<bibl ana="#borrowedItem" corresp="mep:004z1p"><title>Chamber Music</title>
+                		    <editor>William York Tindall</editor>				
                 		<publisher>Columbia University Press</publisher> <date when="1954">1954</date></bibl>
-                			inscribed copy</ab>
+                			<note>inscribed copy</note>
+             <note>  returned </note>
+               <date ana="#returned" when="1958-04-01">April 1 1958</date>
+               </ab>
+               
                 </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank -->
