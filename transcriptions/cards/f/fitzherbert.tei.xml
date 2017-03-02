@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,14 +68,19 @@
                <head> <date when="1934">1934</date>		<persName ref="fitz.p">FITZHERBERT, Mr. P</persName>
                 
                 <address><street>95 Bld St Michel</street></address></head>
-                   <ab>
-                		1m. 1v.				15.00.
-                				Deposit		30.00
                 
-                <date ana="#checkedOut" when="1934-01-29">Jan 29.	</date>	<bibl ana="#borrowedItem" corresp="mep:00jw4z"><title>More translations from the Chinese</title></bibl><date ana="#returned" when="1934-02-16"> Feb 16</date>
-                       <date ana="#checkedOut" when="1934-02-16"> Feb 16</date>	<bibl ana="#borrowedItem" corresp="mep:009x65"><title>170 chinese poems</title></bibl>
+                		<note>1m. 1v.				15.00.
+                				Deposit		30.00</note>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1934-01-29">Jan 29.	</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00jw4z"><title>More translations from the Chinese</title></bibl>
+                   <date ana="#returned" when="1934-02-16"> Feb 16</date>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1934-02-16"> Feb 16</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:009x65"><title>170 chinese poems</title></bibl>
                 				
-                							?
+                							<note>?</note>
                </ab>
                </div> 
                

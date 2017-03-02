@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,12 +66,20 @@
                 			<street>3 rue Emile-Allez</street><district>XVIIe</district>
                 			</address>
                 </head>	
-                <ab>
-                			  1m 1vol a				25
-                			  		dep mel	<date when="1900-02-14">Feb 14</date>	50v
+               
+                			  <note>1m 1vol a				25
+                			  		dep mel	<date when="1900-02-14">Feb 14</date>	50v</note>
                 
-                <date ana="#checkedOut" when="1900-01-13">Jan 13</date>	<bibl ana="#borrowedItem" corresp="mep:003m67"><title>Black Mischief</title></bibl>					<date ana="#returned" when="1900-01-23">Jan 23</date>
-                <date ana="#checkedOut" when="1900-01-23">Jan 23</date>	<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>				<date ana="#returned" when="1900-02-14">Feb 14</date>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1900-01-13">Jan 13</date>
+                    <bibl ana="#borrowedItem" corresp="mep:003m67"><title>Black Mischief</title></bibl>		
+                    <date ana="#returned" when="1900-01-23">Jan 23</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-01-23">Jan 23</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>		
+                    <date ana="#returned" when="1900-02-14">Feb 14</date>
                 </ab>
                 </div>
                 <div type="verso">

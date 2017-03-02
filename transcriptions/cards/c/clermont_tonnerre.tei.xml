@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -74,16 +76,24 @@
             					<street>69 rue Renoir.</street>
             					</address>
             	</head>
-            	<ab>
-            					1m. 1v.					26.00
-            									Deposit 25.00
-            	<date ana="#checkedOut" when="1937-07-20">July 20</date>		<bibl ana="#borrowedItem" corresp="mep:00j170"><title>American Civil War</title></bibl>		  } <date ana="#returned" when="1937-10-08">Oct 8</date>
-            	<date ana="#checkedOut" when="1937-07-20">  </date>     		<bibl ana="#borrowedItem" corresp="mep:00ct9r"><title>March of Democracy</title></bibl>.         <date ana="#returned" when="1937-10-08">    </date>   
-            				away for one month
+            
+            					<note>1m. 1v.					26.00
+            									Deposit 25.00</note>
+                   <ab ana="#borrowingEvent"> 
+            	<date ana="#checkedOut" when="1937-07-20">July 20</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00j170"><title>American Civil War</title></bibl>
+                     <date ana="#returned" when="1937-10-08">Oct 8</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+            	<date ana="#checkedOut" when="1937-07-20">  </date>     
+                    <bibl ana="#borrowedItem" corresp="mep:00ct9r"><title>March of Democracy</title></bibl>
+                    <date ana="#returned" when="1937-10-08">    </date>   
+                    </ab>
+            				<note>away for one month
             							p.c. <date when="1937-09-29">Sept 29</date>
-            	Renewed to <date when="1937-10-09">Oct 9 1937</date> (kept deposit) S.B.)
-            		1m 1v 25 frs		To pay dues
-            	</ab>
+            	Renewed to <date when="1937-10-09">Oct 9 1937</date> (kept deposit)<persName ref="beac.sy"> S.B.</persName>)
+            		1m 1v 25 frs		To pay dues</note>
+            	
             	</div>
                 
                 <div type="verso">

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,12 +66,19 @@
                             <address><street>37 Bd de' Belgique</street>
                         	<settlement>Le Vesinet</settlement> <district>Seine et Oise</district></address>
                 </head>
-                <ab>
-                <date ana="#checkedOut" when="1961-02-03">Feb 3</date>	<bibl ana="#borrowedItem" corresp="mep:00fb26"><title>Shakesp &amp; Comp.</title></bibl> <note>(Harcourt ed. copy marked for
+               <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1961-02-03">Feb 3</date>	
+              <bibl ana="#borrowedItem" corresp="mep:00fb26"><title>Shakesp &amp; Comp.</title></bibl>
+              <note>(Harcourt ed. copy marked for
                 											Verve</note>
-                <date ana="#checkedOut" when="1961-02">Feb</date>		<bibl ana="#borrowedItem" corresp="mep:00fb3h"><author>Michaud</author> <title>the American Novel Today</title></bibl>
-                							both vols	returned <date ana="#returned" when="1961-06-24">June 24
-                													1961</date>
+              <date ana="#returned" when="1961-06-24"></date>
+              </ab>
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1961-02">Feb</date>		
+              <bibl ana="#borrowedItem" corresp="mep:00fb3h"><author>Michaud</author> <title>the American Novel Today</title></bibl>
+                							<note>both vols	returned </note>
+              <date ana="#returned" when="1961-06-24">June 24 1961 </date>
+              </ab>
                 		<note>
                 		wrote the <date when="1961-01-28">28th Jan 1961</date> asking if could
                 		come to see me
@@ -80,15 +89,15 @@
                 		/coming back next Wed at 2 <date when="1961-02-08">8th Feb</date> /
                 		</note>
                 	<note>
-                	came back <date ana="#checkedOut" when="1961-06-24">June 24 1961</date> returned 2 books
+                	came back <date when="1961-06-24">June 24 1961</date> returned 2 books
                 		she borrowed would like to read
-                			<bibl ana="#borrowedItem" corresp="mep:00b612"><title>Windy McPherson's Son</title></bibl>
+                			<bibl corresp="mep:00b612"><title>Windy McPherson's Son</title></bibl>
                 	</note>
                             <note>
                 			told her next autumn: but if book
                 			put away with collection (?)
                             </note>
-               </ab>
+               
             </div>
             <div type="verso">
                 <pb facs="#s2"/>

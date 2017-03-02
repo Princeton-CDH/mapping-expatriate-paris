@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,31 +69,35 @@
                     				        <street>206 Bd St Germain</street>
                     				        <addrLine><num type="telephone">Littre 56.50</num></addrLine></address>
                     </head>				
-                    <ab>				
-                    				by the day 2v
-                    						dep		ref <date>Nov 20</date>	100
+                    			
+                    				<note>by the day 2v
+                    						dep		ref <date when="1900-11-20">Nov 20</date>	100</note>
                     						
-                    </ab>		
-                    <ab>
-                    <date ana="#checkedOut">Nov 18</date>		<bibl ana="#borrowedItem" corresp="mep:001j38"><title>American Tragedy</title></bibl>		<date ana="#returned">Nov 20</date>
+                    		
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-11-18">Nov 18</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:001j38"><title>American Tragedy</title></bibl>	
+                    <date ana="#returned" when="1900-11-20">Nov 20</date>
                     </ab>
-                    <ab>
-                    		record is coming
+                    
+                    		<note>record is coming</note>
                     		
                     
-                    	<date>Nov 20</date> Mrs Visser bought 1 &gt;&gt; record 125
+                    <note>	<date when="1900-11-20">Nov 20</date><persName ref="#viss"> Mrs Visser </persName> bought 1 &gt;&gt; record 125
                     		returned to exchanged for another 
                     		record warped
-                    	record carried <date>Dec 2</date>
+                    	record carried <date when="1900-12-02">Dec 2</date>
                     	had to pay so much duty that cant sell
                     	 for less than 200fr - if <persName ref="#viss">Mrs Visser</persName>
                     	 doesn't wish to pay as much <persName ref="#beac.sy">SB</persName> will 
-                    	 give her back the 125 fr that she paid
-                    </ab>
-                    <ab>
-                	<date ana="#checkedOut">March 30</date>	<bibl ana="#borrowedItem" corresp="mep:002d0g"><title>Martin Arrowsmith</title></bibl> <date ana="#returned">April 6</date>
-                					PD
-                	</ab>				
+                    	 give her back the 125 fr that she paid</note>
+                    
+                   <ab ana="#borrowingEvent">
+                	<date ana="#checkedOut" when="1900-03-30">March 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002d0g"><title>Martin Arrowsmith</title></bibl>
+                    <date ana="#returned" when="1900-04-06">April 6</date>
+                					<note>PD</note>
+                		</ab>			
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>

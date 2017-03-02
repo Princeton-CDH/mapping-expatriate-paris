@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -62,17 +64,30 @@
            <div type="card">
               <div type="recto">
                 <pb facs="#s1"/>
-                  <ab>
-                		<address><persName ref="guir.pi">De GUIRINGAUD</persName>
-                		<street>80 Avenue de Breteuil</street></address>
-                		
-                		1m. 1 vol.				75
-                				dep.			30
                 
-                <date ana="#checkedOut" when="1900-12-03">Dec. 3</date>	<bibl ana="#borrowedItem" corresp="mep:001g41"><title>Some people	</title></bibl>				<date ana="#returned" when="1900-12-10">Dec 10</date>
-                  <date ana="#checkedOut" when="1900-12-10">10</date>	<bibl ana="#borrowedItem" corresp="mep:009q4w"><title>Two or Three Graces</title></bibl>	pd 3.75	    <date ana="#returned" when="1900-01-12">Jan 12</date>.
-                  <date ana="#checkedOut" when="1900-01-12">Jan 12</date>.	<bibl ana="#borrowedItem" corresp="mep:000c3n"><title>Queen Victoria.</title></bibl>
-                	to be sent to when	to be kept aside.</ab>
+                		<head><address><persName ref="guir.pi">De GUIRINGAUD</persName>
+                		<street>80 Avenue de Breteuil</street></address></head>
+                		
+                		<note>1m. 1 vol.				75
+                				dep.			30</note>
+                  
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1900-12-03">Dec. 3</date>	
+                  <bibl ana="#borrowedItem" corresp="mep:001g41"><title>Some people	</title></bibl>		
+                  <date ana="#returned" when="1900-12-10">Dec 10</date>
+                 </ab>
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1900-12-10">10</date>
+                  <bibl ana="#borrowedItem" corresp="mep:009q4w"><title>Two or Three Graces</title></bibl>
+                  <note>pd 3.75	</note>    
+                  <date ana="#returned" when="1900-01-12">Jan 12</date>
+                 </ab>
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1900-01-10"></date>
+                  <bibl ana="#borrowedItem" corresp="mep:000c3n"><title>Queen Victoria.</title></bibl>
+                </ab>	
+                  
+                  <note><del>to be sent to when	</del>to be kept aside.</note>
               </div> 
                
               <div type="verso"> 
