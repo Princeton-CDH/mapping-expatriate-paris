@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,72 +69,180 @@
             <div type="card">
                <div type="recto"> <pb facs="#s1"/>
               <head>  <persName ref="#duff.do">D. Duff</persName>
-            <date when="1930">1930</date>    <address><street><note>33 rue Linné<!-- crossed out --></note></street><district> (5e)</district></address>
-                <address><street><note>8 Bd Arago<!-- crossed out --></note> </street></address> <address><street><note>39 rue de l'Arbalète<!-- crossed out --></note></street></address>
-                <address><note>263 rue Lecourbe<!-- crossed out --></note> <district>(15e)</district></address>
+            <date when="1930">1930</date>    <address><street><note><del>33 rue Linné</del> </note></street><district> (5e)</district></address>
+                <address><street><note><del>8 Bd Arago</del> </note> </street></address> <address><street><note><del>39 rue de l'Arbalète</del></note></street></address>
+                <address><note><del>263 rue Lecourbe</del></note> <district>(15e)</district></address>
                  <address><street>4 rue Domat 5e</street></address></head>
-           <ab>  <date when="1930-12-05">Dec 5</date> credit Frs 100
+                   
+                   
+           <ab>  <date when="1930-12-05">Dec 5</date> credit Frs 100 </ab>
              
-                        Debit
-             <date ana="#checkedOut" when="1930-12-05">Dec 5</date>      <bibl ana="#borrowedItem" corresp="mep:004x78"><title>Principia Ethica</title></bibl>         108
-                        <bibl ana="#borrowedItem" corresp="mep:004x8k"><title>Christopher Robin</title></bibl>        35
-                                            108
+                        <note>Debit</note>
+                   
+             <ab>
+                 <date when="1930-12-05">Dec 5</date>                  
+                 <bibl corresp="mep:004x78">
+                     <title>Principia Ethica</title></bibl>         
+                 <note>108</note>
+             </ab>
+                   
+                  <ab>
+                      <date when="1930-12-05"></date> 
+                      <bibl corresp="mep:004x8k">
+                          <title>Christopher Robin</title></bibl>       
+                      <note>35</note>
+                  </ab>
+                  <ab> 108
                                             65
                                             ---
                        ----------------------43---
                                         paid balance
-                                            <date ana="#returned" when="1930-12-24">Dec 24</date>
-             <date when="1931">1931</date>
-             <date ana="#checkedOut" when="1931-01-08">Jan 8</date>  <bibl ana="#borrowedItem" corresp="mep:004x9w"><title>The Enormous Room</title></bibl>               53.00
-                                    paid <date ana="#returned" when="1931-02-13">Feb. 13</date>
-             <date ana="#checkedOut" when="1931-04-02">April 2.</date> <bibl ana="#borrowedItem" corresp="mep:004z0c"><title>Lectures on Ethics</title> by <author>I. Kant</author></bibl>    73.00               
-             <date ana="#returned" when="1931-06-02">June 2</date>     bargains                        7.65
-                                                        -----
-                                                        81.15
-               <date when="1931-06-26">~26</date>      paid                25 -  
-               <date when="1931-07-30">July 30th</date>                   25 -    50
-                            "       Total Due --    31.15
-                                paid <date when="1931-11-25">Nov 25</date>
-                            ------------------------------
-               <date ana="#checkedOut" when="1931-12-24">Dec 24</date>   <bibl ana="#borrowedItem" corresp="mep:004z1p"><title>Chamber Music</title></bibl>               21.00
-                                    Pd. <date ana="#returned" when="1932-03-23">March 23</date>
-                              -------------------
-               <date ana="#checkedOut" when="1932-05-11">5/11/32</date> <bibl ana="#borrowedItem" corresp="mep:004z20"><title>Farwandering Then</title>.</bibl>   owes 12.50
-                                    paid by Mr Weinman
-                                            <date ana="#returned" when="1932-03-24">March 24</date>
-                                ------------------------
-              <note> <date ana="#checkedOut" when="1932-06-02">2 June</date>   <bibl ana="#borrowedItem" corresp="mep:001j66"><title>High Wind in Jamaica</title></bibl>    20 <!-- crossed out --></note>                
-                </ab>
+                                            <date when="1930-12-24">Dec 24</date></ab>
+                   
+             <note><date when="1931">1931</date></note>
+                   
+             <ab>
+                 <date when="1931-01-08">Jan 8</date>  
+                 <bibl corresp="mep:004x9w">
+                     <title>The Enormous Room</title></bibl>              
+                 <note>53.00</note>
+                 paid <date when="1931-02-13">Feb. 13</date>
+             </ab>
+                   
+             <ab>
+                 <date when="1931-04-02">April 2.</date> 
+                 <bibl corresp="mep:004z0c">
+                     <title>Lectures on Ethics</title> by <author>I. Kant</author></bibl>    
+                 <note>73.00 </note>
+             </ab>
+                   
+             <ab>
+                 <date when="1931-06-02">June 2</date>     
+                 <bibl>
+                     <title>bargains</title> </bibl>                       7.65
+                 -----
+                 81.15
+             </ab>
+                   
+               <ab><date when="1931-06-26">~26</date>      paid                25 -  </ab>
+                   
+               <ab>
+                   <date when="1931-07-30">July 30th</date>                   25 -    50
+                   "       Total Due --    31.15
+               </ab>
+                   
+                               <ab> paid <date when="1931-11-25">Nov 25</date>
+                            ------------------------------</ab>
+                   
+               <ab>
+                   <date when="1931-12-24">Dec 24</date>   
+                   <bibl corresp="mep:004z1p">
+                       <title>Chamber Music</title></bibl>              <note> 21.00</note>
+                   Pd. <date when="1932-03-23">March 23</date>
+                   -------------------
+               </ab>
+                   
+               <ab>
+                   <date when="1932-05-11">5/11/32</date> 
+                   <bibl corresp="mep:004z20">
+                       <title>Farwandering Then</title>.</bibl>   <note>owes 12.50</note>
+                    paid by Mr Weinman
+                       <date when="1932-03-24">March 24</date>
+                   ------------------------
+               </ab>
+                   
+              <note> <del><date when="1932-06-02">2 June</date>   
+                  <bibl corresp="mep:001j66">
+                      <title>High Wind in Jamaica</title></bibl></del>    20 </note>                
+                
+                
+                
                 </div>
                <div type="verso"> 
                 <pb facs="#s2"/>
          <head>  <date when="1933">1933 </date>                                        <persName ref="#duff.do">DUFF</persName></head>
-         <ab>  <date ana="#checkedOut" when="1933-04-15">April 15</date>     <bibl ana="#borrowedItem" corresp="mep:00401z"><title>Plumed Serpent</title></bibl>      paid <date ana="#returned" when="1933-05-16">May 16</date>    18,00
+                   
+           <ab>
+               <date when="1933-04-15">April 15</date>     
+               <bibl corresp="mep:00401z">
+                   <title>Plumed Serpent</title></bibl>      
+               paid <date when="1933-05-16">May 16</date>    <note>18,00</note>
+           </ab>
+                   
+          <ab>
+              <date when="1933-06-22">22 June</date>      
+              <bibl corresp="mep:001j66">
+                  <title>High Wind in Jamaica</title></bibl>               
+              20 -
+          </ab>
+                   
+             <ab>
+                 <date when="1933-06-30">30   "</date>      
+                 <bibl corresp="mep:004z39">
+                     <title>Laws regarding practice of medecine in USA + abroad </title></bibl>       
+                 26
+                 ---------------
+             
+                   
+                   <date when="1933-07-25">25 July</date> paid        46 </ab>
            
-           <date ana="#checkedOut" when="1933-06-22">22 June</date>      <bibl ana="#borrowedItem" corresp="mep:001j66"><title>High Wind in Jamaica</title></bibl>                20 -
-             <date ana="#checkedOut" when="1933-06-30">30   "</date>       <bibl ana="#borrowedItem" corresp="mep:004z39"><title>Laws regarding practice of medecine in USA + abroad </title></bibl>        26
-                         ---------------
-                                        <date ana="#returned" when="1933-07-25">25 July</date> paid        46
-           
-           <date ana="#checkedOut" when="1933-04-25">April 25</date>     <bibl ana="#borrowedItem" corresp="mep:004z4m"><title>Ultramarine</title></bibl> (borrowed)              <date ana="#returned" when="1933-04-26">April 26</date>
-           <date ana="#checkedOut" when="1933-06-03">June 3</date>       <bibl ana="#borrowedItem" corresp="mep:004z5x"><title>Adventures of Ideas</title></bibl>                 <date ana="#returned" when="1933-06-19">19 June</date>
-           </ab> 	</div>
+           <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1933-04-25">April 25</date>     
+               <bibl ana="#borrowedItem" corresp="mep:004z4m">
+                   <title>Ultramarine</title></bibl> 
+               <note>(borrowed)</note>              
+               <date ana="#returned" when="1933-04-26">April 26</date>
+           </ab>
+                   
+           <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1933-06-03">June 3</date>      
+               <bibl ana="#borrowedItem" corresp="mep:004z5x">
+                   <title>Adventures of Ideas</title></bibl>                 
+               <date ana="#returned" when="1933-06-19">19 June</date>
+           </ab>
+                   
+            	</div>
             	</div>
             	
       <div type="card">      	<div type="recto"><pb facs="#s3"/>
          <head>  <date when="1933">1933</date>         <persName ref="#duff.do">DUFF
                           Donald</persName>
-                        <address><street><note>265 Lecourbe<!-- crossed out --></note></street></address> <address><street>4 rue Domat</street> <district>5e</district></address></head>
-        <ab>   		          
-           <date ana="#checkedOut" when="1933-03-28">28 March</date>     <bibl ana="#borrowedItem" corresp="mep:002581"><title>Hindoo Holiday</title></bibl>          <date ana="#returned" when="1933-03-31">31</date>
-           <date ana="#checkedOut" when="1933-03-31">31</date>           <bibl ana="#borrowedItem" corresp="mep:004z67"><title>Pocahontas</title></bibl>              <date ana="#returned" when="1933-04-03">3</date>
-           <date ana="#checkedOut" when="1933-04-03">3 April</date>     <bibl ana="#borrowedItem"><title> Earth Horizon</title></bibl>           <date ana="#returned" when="1933-04-07">7</date>
-           -----------------------------------------------
-           <date ana="#checkedOut" when="1933-08-02">2 Aug.</date>       <bibl ana="#borrowedItem" corresp="mep:004z8v"><title>Pragmatism</title></bibl>              BB
-           		          </ab></div>
-           		<div type="verso"><pb facs="#s4"/>   
-                   <!-- verso blank --></div>
-           		            </div>
+                        <address><street><note><del>265 Lecourbe</del></note></street></address> <address><street>4 rue Domat</street> <district>5e</district></address></head>
+           		          
+           <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1933-03-28">28 March</date>    
+               <bibl ana="#borrowedItem" corresp="mep:002581">
+                   <title>Hindoo Holiday</title></bibl>          
+               <date ana="#returned" when="1933-03-31">31</date>
+           </ab>
+          
+          <ab ana="#borrowingEvent">
+              <date ana="#checkedOut" when="1933-03-31">31</date>           
+              <bibl ana="#borrowedItem" corresp="mep:004z67">
+                  <title>Pocahontas</title></bibl>              
+              <date ana="#returned" when="1933-04-03">3</date>
+          </ab>
+          
+           <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1933-04-03">3 April</date>    
+               <bibl ana="#borrowedItem" corresp="mep:004z7j">
+                   <title> Earth Horizon</title></bibl>           
+               <date ana="#returned" when="1933-04-07">7</date>
+               -----------------------------------------------
+           </ab>
+          
+           <ab>
+               <date when="1933-08-02">2 Aug.</date>       
+               <bibl corresp="mep:004z8v">
+                   <title>Pragmatism</title></bibl>             
+               <note> BB</note>
+           </ab>
+      </div>
+           		<div type="verso">
+                    <pb facs="#s4"/>   
+                   <!-- verso blank -->
+          </div>           		            
+            </div>
             
         </body>
     </text>

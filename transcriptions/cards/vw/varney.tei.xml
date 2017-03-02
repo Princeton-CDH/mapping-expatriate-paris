@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -71,49 +73,203 @@
                     			            <street>11 rue Scribe</street>
                     					   <persName>(Mr Downer)</persName></address>
                     </head>	
-                    <ab>
+                    <note>
                     			1 mo.	2 vols			12
                     					  Dep.			14
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut">August 8</date>	<bibl ana="#borrowedItem" corresp="mep:00br5q"><title>Turns &amp; Movies</title></bibl>		<date ana="#checkedOut">August 22</date>
-                    			            <bibl ana="#borrowedItem" corresp="mep:00br61"><title>Little Essays</title>, <author>Santayana</author></bibl>
+                    </note>
                     
-                    <date ana="#checkedOut">August 22</date>	<bibl ana="#borrowedItem" corresp="mep:00br7b"><title>Married Love</title></bibl>	.		<date ana="#returned">August 26</date>
-                    <date ana="#checkedOut">	"</date>		<bibl ana="#borrowedItem" corresp="mep:009p95"><title>A Portrait of the Artist as a young man.</title></bibl> 	<date ana="#returned">August 30</date>
-                    <date ana="#checkedOut">August 26</date>	<bibl ana="#borrowedItem" corresp="mep:00br8n"><title>1914 other Poems by R. Brooke.</title></bibl>	<date ana="#returned">August 30</date>
                     
-                    <date ana="#checkedOut">August 30</date>	<bibl ana="#borrowedItem" corresp="mep:007w7q"><title>Java Head</title></bibl>				<date ana="#checkedOut">Sept 8th</date>
-                    			            <bibl ana="#borrowedItem" corresp="mep:00b51s"><title>Fine Plays</title></bibl>				<date ana="#returned">Sept 8th</date>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-08">August 8</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00br5q">
+                            <title>Turns &amp; Movies</title></bibl>		
+                        <date ana="#returned" when="1900-08-22">August 22</date>
+                    </ab>
                     
-                    <date ana="#checkedOut">Sept 8th.</date>	<bibl ana="#borrowedItem" corresp="mep:006s1s"><title>Selections from Swinburne</title></bibl>
-                    			            <bibl ana="#borrowedItem" corresp="mep:00br9z"><title>Miscellany of American <unclear/></title></bibl>	<date ana="#checkedOut">Sept 14</date>
-                    			            <bibl ana="#borrowedItem" corresp="mep:00bs0f"><title>Letters of the Impressionist</title></bibl>	<date ana="#returned">Sept 22</date>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-08"> </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00br61">
+                            <title>Little Essays</title>, 
+                            <author>Santayana</author></bibl>
+                        <date ana="#returned" when="1900-08-22"> </date>
                     </ab>
-                    <ab>
-                    			Renewed <date>Sept 8</date> 1 mo		2 vols	12		Renewed
-                    													1 mo 2 vols
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-22">August 22</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00br7b">
+                            <title>Married Love</title></bibl>	.		
+                        <date ana="#returned" when="1900-08-26">August 26</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut">Sept 14</date>	<bibl ana="#borrowedItem" corresp="mep:00bs1r"><title>Twelve Men</title></bibl> (ask if left 15f in <bibl ana="#borrowedItem"><title><unclear>Dumany</unclear> Plays</title></bibl>	<date ana="#returned">Sept 26</date>	<date>Oct 8</date>
-                    <date ana="#checkedOut">Sept 22</date>	<bibl ana="#borrowedItem" corresp="mep:00bs3c"><title>Butler</title>, <biblScope unit="volume" from="2">vol 2</biblScope></bibl>		Ren. <date ana="#checkedOut">Nov 8</date>
-                    			            <bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>			<date ana="#returned">Oct 6</date>	1 mo 2 vols
-                    <date ana="#checkedOut">Sept 26</date>	<bibl ana="#borrowedItem" corresp="mep:00bs4p"><title>Cornhuskers</title></bibl>				<date ana="#returned">Oct 6</date> 	12f
-                    <date ana="#checkedOut">Oct 6</date>		<bibl ana="#borrowedItem" corresp="mep:007r1r"><title>Outline of History</title></bibl>		<date ana="#returned">Oct 28</date>
-                    <date ana="#checkedOut">Oct 6</date>		<bibl ana="#borrowedItem" corresp="mep:00bs50"><title>Memoir of Butler</title> <biblScope unit="volume" from="2">vol 2</biblScope></bibl>	<date ana="#returned">Oct 18</date>
-                    <date ana="#checkedOut">Oct 18</date>		<bibl ana="#borrowedItem" corresp="mep:00bs69"><title>Pater's Life</title> <biblScope unit="volume" from="2">vol. II</biblScope></bibl>		<date ana="#returned">Oct 28</date>
-                    <date ana="#checkedOut">Oct 28</date>		<bibl ana="#borrowedItem" corresp="mep:00bc60"><author>Hammerton</author>'s <title>Meredith</title></bibl>  <date ana="#returned">Nov 11</date>
-                    <date ana="#checkedOut">Nov 11</date>		<bibl ana="#borrowedItem" corresp="mep:002f9j"><title>Our America</title></bibl>				<date ana="#checkedOut">Nov 25</date>
-                    			            <bibl ana="#borrowedItem" corresp="mep:00bs7m"><title>Musical Portraits</title></bibl>
-                    </ab>			
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-22">	"</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:009p95">
+                            <title>A Portrait of the Artist as a young man.</title></bibl> 	
+                        <date ana="#returned" when="1900-08-30">August 30</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-26">August 26</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00br8n">
+                            <title>1914 other Poems </title>by <author>R. Brooke.</author></bibl>	
+                        <date ana="#returned" when="1900-08-30">August 30</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-30">August 30</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:007w7q">
+                            <title>Java Head</title></bibl>				
+                        <date ana="#returned" when="1900-09-08">Sept 8th</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-08-30"></date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00b51s">
+                            <title>Fine Plays</title></bibl>				
+                        <date ana="#returned" when="1900-09-08">Sept 8th</date>
+                    </ab>
+                    
+                   
+                       <note><del> <date  when="1900-09-08">Sept 8th.</date>	
+                        <bibl  corresp="mep:006s1s">
+                            <title>Selections from Swinburne</title></bibl></del></note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-08"> </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00br9z">
+                            <title>Miscellany of American <unclear/></title></bibl>	
+                        <date ana="#returned" when="1900-09-14">Sept 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-08"> </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bs0f">
+                            <title>Letters of the Impressionist</title></bibl>	
+                        <date ana="#returned" when="1900-09-22" >Sept 22</date>
+                    </ab>
+                    
+                    
+                    			<note>Renewed <date when="1900-09-08">Sept 8</date> 1 mo		2 vols	12		Renewed
+                    													1 mo 2 vols</note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-14">Sept 14</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bs1r">
+                            <title>Twelve Men</title></bibl> 
+                        
+                        <note>(<del>ask if left 15f in</del> 
+                            
+                            <bibl corresp="mep:00bs22" ><title><unclear><del>Dumany</del></unclear> <del>Plays</del></title></bibl>	</note>
+                            
+                            <date ana="#returned" when="1900-09-26">Sept 26</date>	
+                    </ab>
+                    
+                    <note><date when="1900-10-08">Oct 8</date></note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-22">Sept 22</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bs3c">
+                            <title><del>Butler</del></title>, 
+                            <biblScope unit="volume" from="2"><del>vol 2</del></biblScope></bibl>	
+                    </ab>	
+                    
+                   <note> Ren. <date when="1900-11-08">Nov 8</date></note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-22"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:001p3c">
+                            <title>Women in Love</title></bibl>			
+                        <date ana="#returned" when="1900-10-06">Oct 6</date>	
+                    </ab>
+                    
+                    <note>1 mo 2 vols</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-09-26">Sept 26</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bs4p">
+                            <title>Cornhuskers</title></bibl>				
+                        <date ana="#returned" when="1900-10-06">Oct 6</date> 
+                    </ab>	
+                    
+                    <note>12f</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-06">Oct 6</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:007r1r">
+                            <title>Outline of History</title></bibl>		
+                        <date ana="#returned" when="1900-10-28">Oct 28</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-06">Oct 6</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00bs50">
+                            <title>Memoir of Butler</title> 
+                            <biblScope unit="volume" from="2">vol 2</biblScope></bibl>	
+                        <date ana="#returned" when="1900-10-18">Oct 18</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-18">Oct 18</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00bs69">
+                            <title>Pater's Life</title> 
+                            <biblScope unit="volume" from="2">vol. II</biblScope></bibl>		
+                        <date ana="#returned" when="1900-10-28">Oct 28</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-28">Oct 28</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00bc60">
+                            <author>Hammerton</author>'s 
+                            <title>Meredith</title></bibl> 
+                        <date ana="#returned" when="1900-11-11">Nov 11</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-11">Nov 11</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:002f9j">
+                            <title>Our America</title></bibl>				
+                        <date ana="#returned" when="1900-11-25">Nov 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-11"></date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bs7m"><title>Musical Portraits</title></bibl>
+                        <date ana="#returned" when="1900-11-25"></date>
+                    </ab>
+                    
                </div> 
                <div type="verso">
                     <pb facs="#s2"/>
-                    <ab>
-                    <date ana="#checkedOut">Nov 25</date>		<bibl ana="#borrowedItem" corresp="mep:00128z"><title>Autobiography</title> <author>Whitman</author></bibl>	<date ana="#checkedOut">Dec 21th</date>
-                    			            <bibl ana="#borrowedItem" corresp="mep:00bs8x"><title>Character &amp; Opinion in the U.S.A.</title></bibl>   <date ana="#returned">Dec 21th</date>
-                    <date>Dec 21th</date> X
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-25">Nov 25</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00128z">
+                            <title>Autobiography</title> 
+                            <author>Whitman</author></bibl>	
+                        <date ana="#returned" when="1900-12-21">Dec 21th</date>
                     </ab>
+                   
+                   
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1900-11-25"></date>
+                      <bibl ana="#borrowedItem" corresp="mep:00bs8x">
+                          <title>Character &amp; Opinion in the U.S.A.</title></bibl>  
+                      <date ana="#returned" when="1900-12-21">Dec 21th</date>
+                  </ab>
+                   
+                   
+                    <note><date when="1900-12-21">Dec 21th</date> X</note>
+                    
                 </div>
                 <div type="recto">
                     <pb facs="#s3"/>
@@ -125,24 +281,101 @@
                     			<name>American Express Co</name></address>
                     </head>			
                     			
-                    <ab>			
+                  			<note>
                     			3	mo	2	vols		30
                     						Dep			14
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-12-22">Dec 22</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00b63p">
+                            <title>Bewilderment</title></bibl>		                 
+                        <date ana="#returned" when="1923-01-10">Jan 10</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1922-12-22">Dec 22</date>		<bibl ana="#borrowedItem" corresp="mep:00b63p"><title>Bewilderment</title></bibl>		                 <date ana="#checkedOut" when="1923-01-10">Jan 10</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00bs97"><title>The Spirit of American Literature</title></bibl>	 <date ana="#returned" when="1923-01-10">"  "</date>
-                    <date ana="#checkedOut" when="1923-01-10">Jan 10</date>		<bibl ana="#borrowedItem" corresp="mep:000s1b"><title>Plays</title> (<author>Symons</author>)</bibl>		 <date ana="#checkedOut" when="1923-01-24">Jan 24</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00bt0q"><title>Hunger</title></bibl>
-                    <date ana="#checkedOut" when="1923-01-24">Jan 24</date>		<bibl ana="#borrowedItem" corresp="mep:006w93"><author>Tchehov</author>'s <title>Letters</title></bibl> (0.15)	<date ana="#checkedOut" when="1923-01-27">Jan 27</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00663q"><title>Swann's Way</title> <biblScope unit="volume" from="2">vol II</biblScope></bibl> (0.15	<date ana="#checkedOut" when="1923-02-12">Feb 12</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:007m0b"><title>Nietzche - Wagner Correspondence</title></bibl> (0.25) <date ana="#returned" when="1923-02-08">Feb 8</date>
-                    <date ana="#checkedOut" when="1923-02-12">Feb 12</date>		<bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>						 <date ana="#checkedOut" when="1923-03-02">March 2</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00bt11"><title>Letters of Mark Twain</title></bibl>
-                    <date ana="#checkedOut" when="1923-03-02">March 2</date>		<bibl ana="#borrowedItem" corresp="mep:00bt2b"><title>Letters of Dostoevsky</title></bibl>				 <date ana="#checkedOut" when="1923-03-09">March 9</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:000c3n"><title>Queen Victoria</title></bibl>						 <date ana="#checkedOut" when="1923-03-31">March 31</date>
-                    			                                <bibl ana="#borrowedItem" corresp="mep:00bt3n"><title>Civilization in the U.S.</title></bibl>
-                    </ab>			
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-12-22"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bs97">
+                            <title>The Spirit of American Literature</title></bibl>	 
+                        <date ana="#returned" when="1923-01-10">"  "</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-01-10">Jan 10</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:000s1b">
+                            <title>Plays</title> (<author>Symons</author>)</bibl>		 
+                        <date ana="#returned" when="1923-01-24">Jan 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-01-10"></date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bt0q"><title>Hunger</title></bibl>
+                        <date ana="#returned" when="1923-01-24"></date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-01-24">Jan 24</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:006w93">
+                            <author>Tchehov</author>'s <title>Letters</title></bibl> 
+                        <note><del>(0.15)</del></note>	
+                        <date ana="#returned" when="1923-01-27">Jan 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-01-24"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00663q">
+                            <title>Swann's Way</title> 
+                            <biblScope unit="volume" from="2">vol II</biblScope></bibl> 
+                        <note>(0.15</note>	
+                        <date ana="#returned" when="1923-02-12">Feb 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-01-24"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:007m0b">
+                            <title>Nietzche - Wagner Correspondence</title></bibl> 
+                        <note>(0.25)</note>
+                        <date ana="#returned" when="1923-02-08">Feb 8</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-02-12">Feb 12</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:001p3c">
+                            <title>Women in Love</title></bibl>						
+                        <date ana="#returned" when="1923-03-02">March 2</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-02-12"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bt11">
+                            <title>Letters of Mark Twain</title></bibl>
+                        <date ana="#returned" when="1923-03-02"></date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-03-02">March 2</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00bt2b">
+                            <title>Letters of Dostoevsky</title></bibl>				 
+                        <date ana="#returned" when="1923-03-09">March 9</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-03-02"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:000c3n">
+                            <title>Queen Victoria</title></bibl>						
+                        <date ana="#returned" when="1923-03-31">March 31</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-03-02"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bt3n">
+                            <title>Civilization in the U.S.</title></bibl>
+                        <date ana="#returned" notBefore="1923-03-02"></date>
+                    </ab>
+                    
                 </div> 
                 <div type="verso">
                     <pb facs="#s4"/>
