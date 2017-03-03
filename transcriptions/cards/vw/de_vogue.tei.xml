@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -75,7 +77,7 @@
             <div type="card">
                 <div type="recto">
                     <pb facs="#s1"/>
-                        <ab>   
+                      <head>   
                         			CARTE POSTALE
                         __________________________________________
                         
@@ -83,17 +85,17 @@
                         <persName ref="#vogu">La Ctesse de Vogüé</persName>
                         	<address><street>24 - Rue de Franqueville</street>
                         			<settlement>Paris</settlement> <district>XVI</district></address>
-                        </ab>			                
-                    
+                        			                
+                    </head>
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
-                        <ab>
+                       <note> 
                             <!-- Illustration of Shakespeare PULLING OUT HIS HAIR! -->
                             
                             PLEASE RETURN:
                             
-                            <bibl ana="#borrowedItem" corresp="mep:002q18"><title>American Doctor's
+                            <bibl corresp="mep:002q18"><title>American Doctor's
                             	Odyssey</title></bibl> - 
                             	
                         	
@@ -102,7 +104,7 @@
                         			<address><name>SHAKESPEARE AND COMPANY</name>
                         			
                         		<street>12, RUE DE L'ODEON,</street> <settlement>PARIS,</settlement> <district>VIe</district></address>
-                        </ab>
+                    </note>
                 </div>
                 <div type="recto">
                     <pb facs="#s3"/>
@@ -110,16 +112,42 @@
                         <date when="1933">1933</date>	<persName ref="#vogu">de VOGUE
                         					                           Comtesse</persName>
                         </head>
-                        <ab>
+                    
+                        <note>
                         renewed <date from="1933-04-15" to="1933-05-15">15 April to 15 May</date> 2 V. 1 m			40f
+                        </note>
+                    
+                        
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-04-19">19 April</date>
+                            <bibl ana="#borrowedItem" corresp="mep:002v30"><title>Hounds of spring</title></bibl>
+                            <date ana="#returned" when="1933-04-20">	20</date>
                         </ab>
-                        <ab>
-                        <date ana="#checkedOut" when="1933-04-19">19 April</date> 	<bibl ana="#borrowedItem" corresp="mep:002v30"><title>Hounds of spring</title></bibl>			<date ana="#returned" when="1933-04-20">	20</date>
-                        <date ana="#checkedOut" when="1933-04-19">	"</date>		<bibl ana="#borrowedItem" corresp="mep:009w2n"><title>Mustard Seed</title></bibl>				<date ana="#returned" when="1933-04-27">	27</date>
-                        <date ana="#checkedOut" when="1933-04-27">27	</date>		    <bibl ana="#borrowedItem" corresp="mep:009w3z"><title>Mr. Tasker's gods</title></bibl>			<date ana="#checkedOut" when="1933-05-05">5 May</date>
-                        			                                <bibl ana="#borrowedItem" corresp="mep:006f7w"><title>Can Such things Be</title></bibl>			<date ana="#returned" when="1933-05-15">	15</date>
-                        <date ana="#checkedOut" when="1933-05-05">5 May</date>		<bibl ana="#borrowedItem" corresp="mep:004t7f"><title>Spring Sowing</title></bibl>				<date ana="#returned" when="1933-05-15">	15</date>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-04-19">	"</date>
+                            <bibl ana="#borrowedItem" corresp="mep:009w2n"><title>Mustard Seed</title></bibl>	
+                            <date ana="#returned" when="1933-04-27">	27</date>
                         </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-04-27">27	</date>
+                            <bibl ana="#borrowedItem" corresp="mep:009w3z"><title>Mr. Tasker's gods</title></bibl>	
+                            <date ana="#returned" when="1933-05-05">5 May</date>
+                        </ab>
+                        
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-04-27">	</date>
+                            <bibl ana="#borrowedItem" corresp="mep:006f7w"><title>Can Such things Be</title></bibl>
+                            <date ana="#returned" when="1933-05-15">	15</date>
+                        </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-05-05">5 May</date>
+                            <bibl ana="#borrowedItem" corresp="mep:004t7f"><title>Spring Sowing</title></bibl>
+                            <date ana="#returned" when="1933-05-15">	15</date>
+                        </ab>
+                    
                 </div>
                 <div type="verso">
                     <pb facs="#s4"/>
@@ -130,52 +158,111 @@
                         			             <address><persName ref="#vogu">Countess de Vogué</persName>
                         			             <street>47 Ave Georges V</street></address>
                         </head>			
-                        <ab>
+                        <note>
                         									dep. 50f
                         					1 m	 	2 vols		 40
                         								dep		100
                         							ref. 50f <date when="1933-02-11">11 Feb. 1933</date>
+                        </note>
+                        
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-04-15">April 15</date>
+                            <bibl ana="#borrowedItem" corresp="mep:009w48"><title>Herman Melville</title></bibl>
+                            <note><unclear>detroyul</unclear></note> 
+                            <date ana="#returned" when="1932-06-28">June 28</date>
                         </ab>
-                        <ab>
-                        <date ana="#checkedOut" when="1932-04-15">April 15</date>	    <bibl ana="#borrowedItem" corresp="mep:009w48"><title>Herman Melville</title></bibl>  <note><unclear>detroyul</unclear></note> <date ana="#checkedOut" when="1932-06-28">June 28</date>
-                        			                                <bibl ana="#borrowedItem" corresp="mep:009k0j"><title>White Jacket</title></bibl>				<date ana="#returned" when="1932-06-11">June 11</date>
+                        
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-04-15">  </date>
+                            <bibl ana="#borrowedItem" corresp="mep:009k0j"><title>White Jacket</title></bibl>
+                            <date ana="#returned" when="1932-06-11">June 11</date>
                         </ab>
-                        <ab>
+                    
+                        <note>
                         Renewed <date from="1932-05-15" to="1932-06-15">May 15 		- 	June 15 1932</date> 2 v 40
+                        </note>
+                    
+                        
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-06-11">June 11</date>
+                            <bibl ana="#borrowedItem" corresp="mep:004d5h"><title>Broome Stages</title></bibl>	
+                            <date ana="#returned" when="1932-07-04">July 4</date>
                         </ab>
-                        <ab>
-                        <date ana="#checkedOut" when="1932-06-11">June 11</date>		<bibl ana="#borrowedItem" corresp="mep:004d5h"><title>Broome Stages</title></bibl>				<date ana="#returned" when="1932-07-04">July 4</date>
-                        </ab>
-                        <ab>
+                    
+                        <note>
                         Renewed <date from="1932-06-15" to="1932-07-15">June 15 	- 	July 15 1932</date>	 40
+                        </note>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-06-28">June 28</date>
+                            <bibl ana="#borrowedItem" corresp="mep:009w5k"><title>Transformation (The Marble Fawn)</title></bibl>
+                            <date ana="#returned" when="1932-07-08">July 8</date>
                         </ab>
-                        <ab>
-                        <date ana="#checkedOut" when="1932-06-28">June 28</date>		<bibl ana="#borrowedItem" corresp="mep:009w5k"><title>Transformation (The Marble Fawn)</title></bibl> <date ana="#checkedOut" when="1932-07-08">July 8</date>
-                        			                                <bibl ana="#borrowedItem" corresp="mep:003z2r"><title>Pierre or the Ambiguities</title></bibl>	<date ana="#checkedOut" when="1932-07-11">July 11</date>
-                        			  wants <bibl ana="#borrowedItem" corresp="mep:008v80"><title>Twice Told Tales</title></bibl>
-                        <date ana="#checkedOut" when="1932-07-04">July 4</date>		<bibl ana="#borrowedItem" corresp="mep:001b6j"><title>Sound + the Fury</title></bibl>			<date ana="#returned" when="1932-07-15">July 15</date>
-                        <date ana="#checkedOut" when="1932-07-11">	 11</date>		<bibl ana="#borrowedItem" corresp="mep:002k6q"><title>Regiment of Women</title></bibl>			<date ana="#returned" when="1932-07-15">July 15</date>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-06-28">  </date>
+                            <bibl ana="#borrowedItem" corresp="mep:003z2r"><title>Pierre or the Ambiguities</title></bibl>
+                            <date ana="#returned" when="1932-07-11">July 11</date>
                         </ab>
-                        <ab>
+                    
+                        <note>wants <bibl corresp="mep:008v80"><title>Twice Told Tales</title></bibl></note>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-07-04">July 4</date>
+                            <bibl ana="#borrowedItem" corresp="mep:001b6j"><title>Sound + the Fury</title></bibl>	
+                            <date ana="#returned" when="1932-07-15">July 15</date>
+                        </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1932-07-11">	 11</date>
+                            <bibl ana="#borrowedItem" corresp="mep:002k6q"><title>Regiment of Women</title></bibl>	
+                            <date ana="#returned" when="1932-07-15">July 15</date>
+                        </ab>
+                    
+                        <note>
                         paid to <date when="1933-03-11">11 March 1933</date>
+                        </note>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-02-11">Fév 11</date>
+                            <bibl ana="#borrowedItem" corresp="mep:009w6w"><title>Best Sht. Stories Am. 1933</title></bibl>
+                            <date ana="#returned" when="1933-02-25">	25</date>
                         </ab>
-                        <ab>
-                        <date ana="#checkedOut" when="1933-02-11">Fév 11</date>		<bibl ana="#borrowedItem" corresp="mep:009w6w"><title>Best Sht. Stories Am. 1933</title></bibl>	<date ana="#returned" when="1933-02-25">	25</date>
-                        									card <date ana="#checkedOut" when="1933-02-24">24Feb</date>
-                        			                                <bibl ana="#borrowedItem" corresp="mep:005b84"><title>Lodger</title></bibl> (extra)	pd 2f		<date ana="#returned" when="1933-02-14">	14</date>
-                        <date ana="#checkedOut" when="1933-02-25">	25</date>		<bibl ana="#borrowedItem" corresp="mep:002s24"><title>Invitation to the Waltz</title></bibl>		<date ana="#returned" when="1933-03-03">3 March</date>
+                    
+                        <note>card <date when="1933-02-24">24Feb</date></note>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-02-11">  </date>
+                            <bibl ana="#borrowedItem" corresp="mep:005b84"><title>Lodger</title></bibl>
+                            <note>(extra)	pd 2f</note>		
+                            <date ana="#returned" when="1933-02-14">	14</date>
                         </ab>
-                        <ab>
-                        8 April		extra deposit 50f ref 15May	
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-02-25">	25</date>
+                            <bibl ana="#borrowedItem" corresp="mep:002s24"><title>Invitation to the Waltz</title></bibl>
+                            <date ana="#returned" when="1933-03-03">3 March</date>
                         </ab>
-                        <ab>
-                        to <date ana="#checkedOut" when="1933-04-15"> 15 </date>       <bibl ana="#borrowedItem" corresp="mep:009w76"><title>Clorinda Walks in heaven</title></bibl>	<date ana="#checkedOut" when="1933-04-19">	19</date>
-                        			                                 <bibl ana="#borrowedItem" corresp="mep:006d50"><title>Venetian glass nephew.</title></bibl>		<date ana="#returned" when="1933-04-15">April 15</date>
+                    
+                        <note>
+                        <date when="1933-04-08">8 April</date>		<del>extra deposit</del> 50f ref <date when="1933-05-15">15May</date>	
+                        </note>
+                        
+                        <ab ana="#borrowingEvent">
+                            to <date ana="#checkedOut" when="1933-04-15"> 15 </date>
+                            <bibl ana="#borrowedItem" corresp="mep:009w76"><title>Clorinda Walks in heaven</title></bibl>
+                            <date ana="#returned" when="1933-04-19">	19</date>
                         </ab>
-                        <ab>
+                        
+                        <ab ana="#borrowingEvent">
+                            <bibl ana="#borrowedItem" corresp="mep:006d50"><title>Venetian glass nephew.</title></bibl>	
+                            <date ana="#returned" when="1933-04-15">April 15</date>
+                        </ab>
+                    
+                        <note>
                         					2v. 1 week			15f
                         			 retur  1m. 2v.				40f
-                        </ab>			
+                        </note>			
                 </div>
                 <div type="verso">                    
                     <pb facs="#s5"/>
@@ -185,21 +272,25 @@
                         			Ctesse</persName>
                         			<street>24 de Franqueville</street></address>
                         </head>				
-                        <ab>				
+                        <note>				
                         				                                1	m	1	v				25
                         					dep (unpaid) <date when="1938-02-17">Feb 17</date>		50
                         								 by cheque
                         					
                         					remboursé le <date when="1938-03-22">22 mars</date>
-                        </ab>
-                        <ab>
-                        <date ana="#checkedOut" when="1938-02-15">Feb 15</date>		<bibl ana="#borrowedItem" corresp="mep:002q18"><title>American Doctor's Odyssey</title></bibl>    <date ana="#returned" when="1938-03-22">March 22</date>
+                        </note>
                         
-                        				<persName><unclear>A. Vaillount</unclear></persName>  <unclear/> <persName><unclear>Mlle Glebe </unclear></persName>
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1938-02-15">Feb 15</date>
+                            <bibl ana="#borrowedItem" corresp="mep:002q18"><title>American Doctor's Odyssey</title></bibl>
+                            <date ana="#returned" when="1938-03-22">March 22</date>
+                        </ab>
+                    
+                        <note><persName><unclear>A. Vaillount</unclear></persName>  <unclear/> <persName><unclear>Mlle Glebe </unclear></persName>
                         				
                         					50 frs dep 	<persName ref="#vogu">De Vogüé</persName>
-                        						ref. <date when="1938-03-22">March 22</date>
-                        </ab>				
+                        						ref. <date when="1938-03-22">March 22</date></note>
+                        				
                 </div>
                 <div type="verso">
                     <pb facs="#s6"/>
