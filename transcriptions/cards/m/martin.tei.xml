@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 <teiHeader type="text">
   <fileDesc>
     <titleStmt>
@@ -158,7 +160,7 @@
     </ab>
 
     <ab ana="#borrowingEvent">
-      <date ana="#checkedOut" when="1922-02-15"></date>
+      <date ana="#checkedOut" when="1922-02-15"/>
       <bibl ana="#borrowedItem" corresp="mep:007r3c">
       <title>Private Character of Queen E</title></bibl>
       <date ana="#returned" when="1922-03-01">Mars 1</date>
@@ -170,8 +172,8 @@
       <date ana="#returned" when="1922-03-15">Mar 15</date>
     </ab>
 
-    <note>wants <bibl ana="#borrowedItem" corresp="mep:007r50"><title>Nietzsche's Letters</title></bibl>
-    <date  when="1922-03-27">Mar. 27</date>
+    <note>wants <bibl corresp="mep:007r50"><title>Nietzsche's Letters</title></bibl>
+    <date when="1922-03-27">Mar. 27</date>
 
     <date when="1922-03-27">Mar. 27</date></note>
 
@@ -185,7 +187,7 @@
     </ab>
 
     <ab ana="#borrowingEvent">
-      <date ana="#checkedOut" when="1922-11-06"></date>
+      <date ana="#checkedOut" when="1922-11-06"/>
       <bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>
       <date ana="#returned" when="1922-11-19">"       "</date>
     </ab>
@@ -319,7 +321,7 @@ Dep                                     7</note>
 </ab>
 
 <ab ana="#borrowingEvent">
-  <date ana="#checkedOut" when="1925-02-16"></date>
+  <date ana="#checkedOut" when="1925-02-16"/>
   <bibl ana="#borrowedItem" corresp="mep:007s9h"><title>The Strangers Wedding</title></bibl>
   <note>BB</note>
 </ab>
@@ -348,7 +350,7 @@ depos.          "                                               20 frs</note>
   <date ana="#returned" when="1925-01-09">Jan 9</date>
 </ab>
 <ab ana="#borrowingEvent">
-  <date ana="#checkedOut" when="1925-06-25">1925<lb /> June 25</date>
+  <date ana="#checkedOut" when="1925-06-25">1925<lb/> June 25</date>
   <bibl ana="#borrowedItem" corresp="mep:00533n">
     <title>Travel Diary of a Philosopher</title>
     <biblScope unit="volume" from="1" to="1">vol I</biblScope>
