@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +10,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -66,28 +70,73 @@
                     <date when="1900-02-17">Feb 17</date>		<address><persName ref="#raou">Comtesse de Raoussel</persName>
                     				                            <street>67 Ave Henri Martin</street></address>
                     </head>				
-                    <ab>			
-                    			1 mo.	2 vols					12
-                    						Dep					 7
-                    											 7
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1900-02-17">Feb 17</date>		<bibl ana="#borrowedItem" corresp="mep:00b659"><title>Victory</title></bibl>							<date ana="#returned" when="1900-02-28">Feb 28</date>
-                    <date ana="#checkedOut" when="1900-02-17">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00ps43"><title>The King of the Dark Chamber</title></bibl>	<date ana="#returned" when="1900-02-21">Feb 21</date>
                     			
-                    <date ana="#checkedOut" when="1900-02-21">Feb 21</date>		<bibl ana="#borrowedItem" corresp="mep:00c764"><title>Margot Asquith</title></bibl>					<date ana="#returned" when="1900-02-28">Feb 28</date>
+                    			<note>1 mo.	2 vols					12
+                    						Dep					 7
+                    											 7</note>
+                    	
                     
-                    <date ana="#checkedOut" when="1900-02-28">Feb 28</date>		<bibl ana="#borrowedItem" corresp="mep:007r0f"><title>Under Western Eyes</title></bibl>
-                    <date ana="#checkedOut" when="1900-02-28">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00c558"><title>New Arabian Nights</title></bibl>
-                    </ab>			
-                    <ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-02-17">Feb 17</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00b659">
+                            <title>Victory</title>
+                        </bibl>							
+                        <date ana="#returned" when="1900-02-28">Feb 28</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-02-17">	</date>		   
+                        <bibl ana="#borrowedItem" corresp="mep:00ps43">
+                            <title>The King of the Dark Chamber</title>
+                        </bibl>	
+                        <date ana="#returned" when="1900-02-21">Feb 21</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-02-21">Feb 21</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00c764">
+                            <title>Margot Asquith</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-02-28">Feb 28</date>
+                    </ab>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-02-28">Feb 28</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:007r0f">
+                            <title>Under Western Eyes</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-03-17"/>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-02-28"/>		    
+                        <bibl ana="#borrowedItem" corresp="mep:00c558">
+                            <title>New Arabian Nights</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-03-17"/>
+                    </ab>
+                    
+                    <note>
                     <date when="1900-03-17">March 17</date>	Renewed 1 mo	1 vol				8
-                    </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1900-03-17">March 17</date>	    <bibl ana="#borrowedItem" corresp="mep:00n959"><title>Saints Progress</title></bibl>					<date ana="#returned" when="1900-03-21">March 21</date>
+                    </note>
                     
-                    <date ana="#checkedOut" when="1900-03-31">March 31</date>	    <bibl ana="#borrowedItem" corresp="mep:00sd7q"><title>Japan, an Interpretation</title></bibl>		<date ana="#returned" when="1900-04-18">April 18</date>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-03-17">March 17</date>	   
+                        <bibl ana="#borrowedItem" corresp="mep:00n959">
+                            <title>Saints Progress</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-03-21">March 21</date>
                     </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-03-31">March 31</date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:00sd7q">
+                            <title>Japan, an Interpretation</title>
+                        </bibl>		
+                        <date ana="#returned" when="1900-04-18">April 18</date>
+                    </ab>
+                    
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>

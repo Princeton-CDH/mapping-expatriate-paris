@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -71,27 +73,51 @@
                 				<street>11 rue Victor Cousin</street>
                 			</address>
                 </head>
-                <ab>
-                <date ana="#checkedOut" when="1939-01-04">Jan 4</date>	
-                        <bibl ana="#borrowedItem" corresp="mep:00sn6b"><title>N R F</title> <biblScope unit="issue" from="05-01">1er Mai</biblScope> (A L P)</bibl>
-                		<bibl ana="#borrowedItem" corresp="mep:00sn7n"><title>Revue de Paris</title> <biblScope unit="issue" from="1929-06-15">15 Juin 1929</biblScope>	(<persName>Thiébaud</persName>)</bibl>         returned
-                						
-                		<bibl ana="#borrowedItem" corresp="mep:00sn8z"><title>Revue Européenne</title> (<biblScope unit="issue" from="1929-05-01">1er mai 1929</biblScope> <persName>Chadourne</persName></bibl>
-                							
-                		<bibl ana="#borrowedItem" corresp="mep:00sn98"><title>Revue Anglo - Américaine</title> <biblScope unit="issue" from="1924-12">Dec 1924</biblScope> <persName>Cazameau</persName></bibl>
-                					
-                		<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des 2 Mondes</title> <biblScope unit="issue" from="1933-04-15">15 aout 1933</biblScope> (<persName>Gillet</persName>)</bibl>
-                					
-                		<bibl ana="#borrowedItem" corresp="mep:00sp0r"><title>Revue universale</title> <biblScope unit="issue" from="1935-06-15">15 juin 1935</biblScope> (<persName>Paul Dubois</persName>)</bibl>
-                					
-                		<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des Deux Mondes</title> <biblScope unit="issue" from="1925-08-01">1er aout 1925</biblScope> <persName>Gillet</persName></bibl>
-                					
-                		<bibl ana="#borrowedItem" corresp="mep:008g6b"><title>Mercure</title> <biblScope unit="issue" from="1922-06-01">1er juin 1922</biblScope> (<persName>Pound</persName>)</bibl>
+
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1939-01-04">Jan 4</date>	      
+                    <bibl ana="#borrowedItem" corresp="mep:00sn6b"><title>N R F</title> <biblScope unit="issue" from="05-01">1er Mai</biblScope> (A L P)</bibl>
+                    <date ana="#returned" notBefore="1939-01-04"></date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00sn7n"><title>Revue de Paris</title> <biblScope unit="issue" from="1929-06-15">15 Juin 1929</biblScope>	(<author>Thiébaud</author>)</bibl>    
+                  <note>  returned</note>
+                        <date ana="#returned" notBefore="1939-01-04"></date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:00sn8z"><title>Revue Européenne</title> (<biblScope unit="issue" from="1929-05-01">1er mai 1929</biblScope> <author>Chadourne</author></bibl>
+                        <date ana="#returned" notBefore="1939-01-04"></date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:00sn98"><title>Revue Anglo - Américaine</title> <biblScope unit="issue" from="1924-12">Dec 1924</biblScope> <author>Cazameau</author></bibl>
+                	</ab>	
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des 2 Mondes</title> <biblScope unit="issue" from="1933-04-15">15 aout 1933</biblScope> <author>(Gillet)</author></bibl>
+                        <date ana="#returned" notBefore="1939-01-04"></date>
+                    </ab>	
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:00sp0r"><title>Revue universale</title> <biblScope unit="issue" from="1935-06-15">15 juin 1935</biblScope> (<author>Paul Dubois</author>)</bibl>
+                        <date ana="#returned" notBefore="1939-01-04"></date>
+                    </ab>	
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des Deux Mondes</title> <biblScope unit="issue" from="1925-08-01">1er aout 1925</biblScope> <author>Gillet</author></bibl>
+                        <date ana="#returned" notBefore="1939-01-04"></date>
+                    </ab>	
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-04"></date>
+                		<bibl ana="#borrowedItem" corresp="mep:008g6b"><title>Mercure</title> <biblScope unit="issue" from="1922-06-01">1er juin 1922</biblScope> (<author>Pound</author>)</bibl>
+                        <date ana="#returned" notBefore="1939-01-04"></date>
+                    </ab>	
                 		
-                		
-                		wrote to <persName ref="#roub.al">Mr Roubin</persName>
-                		<date when="1961-01-20">Jan 20 (???) 1961</date>
-                </ab>
+                		<note>wrote to <persName ref="#roub.al">Mr Roubin</persName>
+                		<date when="1961-01-20">Jan 20 (???) 1961</date></note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>

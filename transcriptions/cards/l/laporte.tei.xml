@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,23 +66,74 @@
             <div type="card"><div type="recto">
                 <pb facs="#s1"/>
             <head>    <date when="1933-11-01">1933 Nov 1</date>		<persName ref="#lapo.ma">LAPORTE</persName>
-                Oct 30	
+                <del>Oct 30</del>	
                 		<persName ref="#lapo.ma">Mademoiselle Madeleine Laporte</persName>
                 			<address><street>30 rue des Boulangers</street>	<district>5e</district></address></head>
                 			
-                		<ab>		6 mos	1 v			50
-                							dep		30</ab>
-          <ab>  	
-            	<date ana="#checkedOut" when="1933-10-30">Oct 30</date>	<bibl ana="#borrowedItem" corresp="mep:004m1x"><title>Roan Stallion</title></bibl>					<date ana="#returned" when="1933-11-09">Nov 9</date>
-            	<date ana="#checkedOut" when="1933-11-07">7 Nov.</date>	<bibl ana="#borrowedItem" corresp="mep:00mg16"><title>Introduction to EA. Robinson</title></bibl>	<date ana="#returned" when="1933-11-17">Nov 17</date>
-            	<date ana="#checkedOut" when="1933-11-16">16	"</date>	<bibl ana="#borrowedItem" corresp="mep:00mg2h"><title>Works</title> <author>Chaucer</author> <biblScope unit="volume" from="6" to="6">VI</biblScope></bibl> extra.			<date ana="#returned" when="1933-11-30">Nov 30</date>
-            	Nov <date ana="#checkedOut" when="1933-11-30">Nov 30</date> <bibl ana="#borrowedItem" corresp="mep:00bg5h"><title>Poems &amp; Plays of Goldsmith</title></bibl>	<date ana="#returned" when="1933-12-08">Dec 8</date>
-            	<date ana="#checkedOut" when="1933-12-08">Dec 8</date>	<bibl ana="#borrowedItem" corresp="mep:00mg3t"><title>Essay on Comedy Meredith</title></bibl>		<date ana="#returned" when="1933-12-13">Dec 13</date>
-            		<date ana="#checkedOut" when="1933-12-15">15</date>	<bibl ana="#borrowedItem" corresp="mep:000816"><title>Past &amp; Present</title></bibl>						<date ana="#returned" when="1933-12-21">21</date>
-            		<date ana="#checkedOut" when="1933-12-21">21</date>	<bibl ana="#borrowedItem" corresp="mep:00mg44"><title>Robinson</title> (<author>Cistre</author>)</bibl>				<date ana="#returned" when="1934-01-13">Jan 13</date>
-            	<date ana="#checkedOut" when="1934-01-13">Jan 13</date>	<bibl ana="#borrowedItem" corresp="mep:001q0q"><title>good Earth</title></bibl>						<date ana="#returned" when="1934-01-25">Jan 25</date>
-            		<date ana="#checkedOut" when="1934-01-24">24</date>	<bibl ana="#borrowedItem" corresp="mep:00j484"><title>George Meredith</title>, <author>Hammerton</author></bibl>		<date ana="#returned" when="1934-01-16">Feb 16</date>
-            								2 1/2 mos.</ab>
+                		<note>		6 mos	1 v			50
+                							dep		30</note>
+            	
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1933-10-30">Oct 30</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:004m1x"><title>Roan Stallion</title></bibl>	
+            	    <date ana="#returned" when="1933-11-09">Nov 9</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1933-11-07">7 Nov.</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:00mg16"><title>Introduction to EA. Robinson</title></bibl>
+            	    <date ana="#returned" when="1933-11-17">Nov 17</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1933-11-16">16	"</date>
+            	    <bibl ana="#borrowedItem" corresp="mep:00mg2h"><title>Works</title> 
+            	        <author>Chaucer</author> <biblScope unit="volume" from="6" to="6">VI</biblScope></bibl>
+            	    <note>extra.</note>			
+            	    <date ana="#returned" when="1933-11-30">Nov 30</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <del>Nov</del> <date ana="#checkedOut" when="1933-11-30">Nov 30</date>
+            	    <bibl ana="#borrowedItem" corresp="mep:00bg5h"><title>Poems &amp; Plays of Goldsmith</title></bibl>	
+            	    <date ana="#returned" when="1933-12-08">Dec 8</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1933-12-08">Dec 8</date>
+            	    <bibl ana="#borrowedItem" corresp="mep:00mg3t"><title>Essay on Comedy</title>
+            	        <author>Meredith</author></bibl>
+            	    <date ana="#returned" when="1933-12-13">Dec 13</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1933-12-15">15</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:000816"><title>Past &amp; Present</title></bibl>	
+            	    <date ana="#returned" when="1933-12-21">21</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1933-12-21">21</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:00mg44"><title>Robinson</title> 
+            	        (<author>Cistre</author>)</bibl>				
+            	    <date ana="#returned" when="1934-01-13">Jan 13</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1934-01-13">Jan 13</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:001q0q"><title>good Earth</title></bibl>	
+            	    <date ana="#returned" when="1934-01-25">Jan 25</date>
+            	</ab>
+                
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1934-01-24">24</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:00j484"><title>George Meredith</title>, 
+            	        <author>Hammerton</author></bibl>		
+            	    <date ana="#returned" when="1934-01-16">Feb 16</date>
+            	</ab>
+                
+                    <note>2 1/2 mos.</note>
+                
             	</div><div type="verso">
             	<pb facs="#s2"/>
             	<!-- verso blank --></div>
