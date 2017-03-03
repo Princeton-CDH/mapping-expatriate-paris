@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -64,19 +66,48 @@
                <head> <date when="1941">1941</date>			<persName ref="#mant.lu">MANTOY
                 						Mlle.</persName>
                 			<address><street>14 rue Mounet-Sully.</street>	<district>XX</district></address></head>
-                			<ab>
-                				1m 1v A		25
-                					Dep		50 </ab>
-            <ab>c    
-                <date ana="#checkedOut" when="1941-10-23">Oct. 23</date>	<bibl ana="#borrowedItem"><title>Playboy of the Western World</title></bibl>	<date ana="#returned" when="1941-10-30">Oct. 30</date>
-                	<date ana="#checkedOut" when="1941-10-30">30</date>	<bibl ana="#borrowedItem"><title>Aran Islands</title></bibl>					<date ana="#returned" when="1941-11-05">Nov. 5</date>
-                <date ana="#checkedOut" when="1941-11-05">Nov. 5</date>	<bibl ana="#borrowedItem"><title>Charwoman's daughter</title></bibl>			<date ana="#returned" when="1941-11-07">Nov 7</date>
-                	<date ana="#checkedOut" when="1941-11-07">7</date>	<bibl ana="#borrowedItem"><title>Lake</title></bibl>							<date ana="#returned" when="1941-11-19">Nov 19</date>
-                	<date ana="#checkedOut" when="1941-11-19">19</date>	<bibl ana="#borrowedItem"><title>Reminiscences</title></bibl>					<date ana="#returned" when="1941-12-19">Dec. 19</date>
-                Ren. <date from="1941-11-23" to="1941-01-23">Nov. 23 - Jan. 23 1942</date>	2m 1v A			45
+                			
+                				<note>1m 1v A		25
+                					Dep		50 </note>
+           <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-10-23">Oct. 23</date>	
+               <bibl ana="#borrowedItem" corresp="mep:006r4f" >
+                   <title>Playboy of the Western World</title></bibl>	
+                <date ana="#returned" when="1941-10-30">Oct. 30</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-10-30">30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000w43">
+                        <title>Aran Islands</title></bibl>				
+                <date ana="#returned" when="1941-11-05">Nov. 5</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-11-05">Nov. 5</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002286">
+                        <title>Charwoman's daughter</title></bibl>		
+                <date ana="#returned" when="1941-11-07">Nov 7</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-11-07">7</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002033">
+                        <title>Lake</title></bibl>						
+                <date ana="#returned" when="1941-11-19">Nov 19</date>
+                </ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-11-19">19</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:006r5r">
+                        <title>Reminiscences</title></bibl>				
+                <date ana="#returned" when="1941-12-19">Dec. 19</date>
+                </ab>
+              <note>  Ren. <date from="1941-11-23" to="1941-01-23">Nov. 23 - Jan. 23 1942</date>	2m 1v A			45</note>
                 
-                <date ana="#checkedOut" when="1941-12-10">Dec. 10</date>	<bibl ana="#borrowedItem"><title>Curse of the Wise Woman</title></bibl> not sent.
-                				dep left			<date ana="#returned" when="1942-01-12">12 janvier</date></ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-12-10">Dec. 10</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:004k38"><title>Curse of the Wise Woman</title></bibl>
+                <note>not sent.</note>
+                <date ana="#returned" when="1942-01-12">12 janvier</date>
+                </ab>
+               <note> dep left</note>			
                 </div><div>
                 <pb facs="#s2"/>
                 <!-- verso blank --></div>
