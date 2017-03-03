@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,34 +57,64 @@
            <div type="card">
                <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
+              <head>
                 			To
                 				Publishers
                 				  <address><persName ref="oppe.ge">Mr &amp; Mrs Open	</persName>	<street>39 Sidney Place</street>
                 				  <street>214 Columbia Heights,</street><settlement>Brooklyn, N.Y.</settlement>
                 				  <country>France</country> <settlement>Le Beausset (Var)</settlement>
                 				  </address>
-                	Publications received: -
+                   </head>
+                	<note>Publications received: -</note>
+                <note>   
                <date when="1932"> 1932</date>
-                <date ana="#checkedOut" when="1932-04-08">April 8</date>	2 <bibl ana="#borrowedItem" corresp="mep:00p28j"><title>A Novelette &amp; Pother Prose</title></bibl>, <bibl ana="#borrowedItem"><author>W.C. Williams</author></bibl>
+                <date  when="1932-04-08">April 8</date>
+                   2 
+                   <bibl corresp="mep:00p28j"><title>A Novelette &amp; Pother Prose</title><author>W.C. Williams</author></bibl>
                 					at 10/6.70					13,40
-                <date ana="#checkedOut" when="1932-07-04">July 4</date>	2 <bibl ana="#borrowedItem" corresp="mep:00p29v"><title>Prolegomena</title></bibl> <bibl ana="#borrowedItem" corresp="mep:000r6m"><title>How to Read</title></bibl>, <bibl ana="#borrowedItem"><author>Ezra Pound</author></bibl>
+                					
+                <date  when="1932-07-04">July 4</date>
+                   2 
+                   <bibl  corresp="mep:00p29v"><title>Prolegomena</title></bibl> 
+                   <bibl  corresp="mep:000r6m"><title>How to Read</title><author>Ezra Pound</author></bibl>
                 					at 10/6.70					13,40
-                 <date ana="#returned" when="1932-07-18">"	18</date>	3	 	"		"						20,10
-                 <date ana="#checkedOut" when="1932-07-19">"	19</date>	2<bibl ana="#borrowedItem"><title> Objectivist Anthology</title></bibl> at 10/6,70		13.40
-                 							paid <date ana="#returned" when="1932-09-01">Sept 1	</date>	Frs 60,30
+                 <date  when="1932-07-18">"	18</date>
+                   3	 	"		"						20,10
+               
+                   <date  when="1932-07-19">"	19</date>
+                   2
+                   <bibl corresp="mep:00p30b" ><title> Objectivist Anthology</title></bibl> 
+                   at 10/6,70		13.40
+                 							paid <date  when="1932-09-01">Sept 1	</date>	Frs 60,30
                  							
-               <date ana="#checkedOut" when="1932-09-05"> Sept 5</date>	<bibl ana="#borrowedItem" corresp="mep:00p30b"><title>Objectivist Anthology</title></bibl> at 10/6,70
-                	<date ana="#checkedOut" when="1932-09-03"> 3	</date><bibl ana="#borrowedItem" corresp="mep:00p31n"><title>Novelette</title></bibl>  at 10/6,70
-                	<date ana="#checkedOut" when="1932-09-05"> 5</date>	<bibl ana="#borrowedItem" corresp="mep:00p29v"><title>Prolegomena</title></bibl>,<bibl ana="#borrowedItem"><title> How to Read </title></bibl>10/6,70
+               <date  when="1932-09-05"> Sept 5</date>
+                   <bibl corresp="mep:00p30b"><title>Objectivist Anthology</title></bibl> 
+                   at 10/6,70
+               
+                   <date  when="1932-09-03"> 3	</date>
+                   <bibl  corresp="mep:00p31n"><title>Novelette</title></bibl>
+                   at 10/6,70
+                	
+                   <date when="1932-09-05"> 5</date>	
+                   <bibl corresp="mep:00p29v"><title>Prolegomena</title></bibl>,
+                   <bibl corresp="mep:000r6m"><title> How to Read </title></bibl>
+                   10/6,70
                 	 
-                <date ana="#checkedOut" when="1932-10-03">Oct 3</date>/3<bibl ana="#borrowedItem"><title> Novelette and Other Prose</title></bibl> at 10/6,70
-                	 9	<bibl ana="#borrowedItem" corresp="mep:000r6m"><title>How to Read </title></bibl> 10/6,70
+                <date when="1932-10-03">Oct 3</date>/3
+                   <bibl corresp="mep:00kf8v" ><title> Novelette and Other Prose</title></bibl> 
+                   at 10/6,70
+                	
+                	9	<bibl  corresp="mep:000r6m"><title>How to Read </title></bibl> 
+                   10/6,70
                 	 
-                <date ana="#checkedOut" when="1932-11-14">Nov 14</date>	10 <bibl ana="#borrowedItem" corresp="mep:00p29v"><title>Prolegomena</title></bibl>, <bibl ana="#borrowedItem" corresp="mep:000r6m"><title>How to Read</title></bibl>  10/6,70
+                <date when="1932-11-14">Nov 14</date>	
+                   10 
+                   <bibl corresp="mep:00p29v"><title>Prolegomena</title></bibl>
+                   <bibl  corresp="mep:000r6m"><title>How to Read</title></bibl> 
+                   10/6,70
                 
                 					paid Frs 113,90
-                </ab>
+                </note>
                </div>
                 <div type="verso">
                 <pb facs="#s2"/>

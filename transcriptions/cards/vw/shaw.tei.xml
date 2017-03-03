@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -10,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -60,21 +67,35 @@
                     			         <street>4 rue de Chevreuse</street></address>
                     </head>
                     
-                    <ab>
+                    <head>
                     				1	m	1 v				12
                     							dep			20
                     									refunded
-                    </ab>
-                    <ab>
+                    </head>
                     
-                    <date ana="#checkedOut" when="1926-04-28">April 28</date>	<bibl ana="#borrowedItem" corresp="mep:00b317"><title>History of the Early 18th Cent Drama</title></bibl>	0.25
-                    								<date ana="#returned" when="1926-05-14">May 14</date> p.c	-&gt;	<date when="1926-05-17">May 17</date>
-                    <date ana="#checkedOut" when="1926-05-17">May 17</date>	<bibl ana="#borrowedItem" corresp="mep:00b32j"><title>Pencilling</title></bibl> <date ana="#returned" when="1926-07-03">July 3d:</date> P.C.	<date when="1926-07-05">July 5</date>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-04-28">April 28</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00b317">
+                            <title>History of the Early 18th Cent Drama</title>
+                        </bibl>	
+                        <note>0.25 <date when="1926-05-14">May 14</date> p.c	-&gt;</note>	
+                        <date ana="#returned" when="1926-05-17">May 17</date>
                     </ab>
-                    <ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-05-17">May 17</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00b32j">
+                            <title>Pencilling</title>
+                        </bibl> 
+                        <note><date when="1926-07-03">July 3d:</date> P.C.</note>	
+                        <date ana="#returned" when="1926-07-05">July 5</date>
+                    </ab>
+                    
+                    <note>
                     								<persName ref="#shaw.m">M.R.B. Shaw</persName>
                     		Renewed to <date when="1926-06-28">June 28</date> - 1 m. 1 vol. 12.
-                    </ab>		
+                    </note>		
                 </div>    
             </div>
         </body>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -87,27 +89,63 @@
              					<district>VIe</district>
              					</address>
              	</head>
-                <ab>
-             				2m1v a					45v
-             					dep					50v
-             	</ab>			
-             	<ab>
-             	            <date from="1939-03-01" to="1939-05-01">March 1 - May 1	1939</date>
-             	<date ana="#checkedOut" when="1939-03-01">March 1</date>		<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>			<date ana="#returned" when="1939-03-23">Mar 23</date>
-             	<date ana="#checkedOut" when="1939-03-23">	23</date>		<bibl ana="#borrowedItem"><title><unclear/> + Black</title> <biblScope unit="volume" from="1">(Vol. I)</biblScope></bibl>		<date ana="#returned" when="1939-04-24">April 24</date>
-             	<date ana="#checkedOut" when="1939-03-24">	24</date>		<bibl ana="#borrowedItem" corresp="mep:009j4h"><title>Washington Square</title></bibl>			<date ana="#returned" when="1939-05-08">May 8</date>
-             	Renewed <date from="1939-05-01" to="1939-07-01">May 1 - July 1 1939</date>  2 vol 45
-             	<date ana="#checkedOut" when="1939-05-08">May 8</date>		<bibl ana="#borrowedItem" corresp="mep:002t5b"><title>Aspern Papers</title></bibl>				<date ana="#returned" when="1939-06-09">June 9.</date>
-             	<date ana="#checkedOut" when="1939-06-09">June 9</date>		<bibl ana="#borrowedItem" corresp="mep:00ht73"><title>Daughters and <unclear/></title></bibl>
-             	<date ana="#checkedOut" when="1939-06-09">June 9</date>		<bibl ana="#borrowedItem" corresp="mep:00b23k"><title>Importance of being earnest</title></bibl>	<date ana="#returned" when="1939-06-30">june 30</date>
-             	<date ana="#checkedOut" when="1939-06-30">	30</date>		<bibl ana="#borrowedItem" corresp="mep:00ht8d"><title>The figure in the carpet</title></bibl>.	<date ana="#returned" when="1939-07-11">july 11</date>
-             	<date ana="#checkedOut" when="1939-07-11">July 11</date>		<bibl ana="#borrowedItem" corresp="mep:00h126"><title>Candide</title> (<persName>Voltaire</persName>)</bibl>			<date ana="#returned" when="1939-07-24">july 24</date>
-             			(will renew next time.)
-             	<date ana="#checkedOut" when="1939-07-24">	24</date>		<bibl ana="#borrowedItem"><title><unclear/>    clerical life.</title></bibl>
-             	[subscription 1 w. to be deducted <unclear/> dep - end of week]
-             		<date when="1939-07-24">July 24.</date>
-             			Wrote <date when="1939-11-13">Nov. 13</date>. asking <persName>M.C.</persName> to return book
+                
+             				<note>2m1v a					45v
+             					dep					50v</note>
+             				
+             
+             	           <note> <date from="1939-03-01" to="1939-05-01">March 1 - May 1	1939</date></note>
+             	<ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-03-01">March 1</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003m7j">
+                        <title>Wuthering Heights</title></bibl>		
+                    <date ana="#returned" when="1939-03-23">Mar 23</date>
              	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-03-23">	23</date>	
+                    <bibl ana="#borrowedItem"><title><unclear/> + Black</title> <biblScope unit="volume" from="1">(Vol. I)</biblScope></bibl>		
+                    <date ana="#returned" when="1939-04-24">April 24</date>
+             	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-03-24">	24</date>
+                    <bibl ana="#borrowedItem" corresp="mep:009j4h"><title>Washington Square</title></bibl>		
+                    <date ana="#returned" when="1939-05-08">May 8</date>
+             	</ab>
+             	<note>Renewed <date from="1939-05-01" to="1939-07-01">May 1 - July 1 1939</date>  2 vol 45</note>
+             	<ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-05-08">May 8</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002t5b"><title>Aspern Papers</title></bibl>		
+                    <date ana="#returned" when="1939-06-09">June 9.</date>
+             	</ab>
+                    
+                 <note>  <del> <date when="1939-06-09">June 9</date>	
+                    <bibl corresp="mep:00ht73"><title>Daughters and <unclear/></title></bibl></del></note>
+             	<ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-09">June 9</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00b23k"><title>Importance of being earnest</title></bibl>	
+                    <date ana="#returned" when="1939-06-30">june 30</date>
+             	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-30">	30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00ht8d"><title>The figure in the carpet</title></bibl>
+                    <date ana="#returned" when="1939-07-11">july 11</date>
+             	</ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-07-11">July 11</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:00h126"><title>Candide</title> <author>(Voltaire)</author></bibl>
+                    <date ana="#returned" when="1939-07-24">july 24</date>
+             		</ab>
+             		<note>(will renew next time.)</note>
+             <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-07-24">	24</date>		
+                    <bibl ana="#borrowedItem"><title><unclear/>    clerical life.</title></bibl>
+             	</ab>
+             	<note>[subscription 1 w. to be deducted <unclear/> dep - end of week]</note>
+             		<note>
+                    <date when="1939-07-24">July 24.</date>
+             			
+             			Wrote <date when="1939-11-13">Nov. 13</date>. asking <persName>M.C.</persName> to return book
+             	</note>
              	</div>
                 <div type="verso">
              	<pb facs="#s2"/>
