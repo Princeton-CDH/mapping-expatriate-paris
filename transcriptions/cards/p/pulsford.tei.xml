@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -55,23 +57,57 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
-                <date when="1900-12-28">Dec. 28th</date>		<persName ref="puls.g">Mr G. E. Pulsford</persName>
+               
+               <head> <date when="1900-12-28">Dec. 28th</date>		<persName ref="puls.g">Mr G. E. Pulsford</persName>
                 						6. R. Antoine Dubois.
-                						
+                						</head>
                 			
-                			1 month. 1 vol.			6.50
-                			
-                    <date ana="#checkedOut" when="1900-12-28"> Dec 28th</date>	<bibl ana="#borrowedItem" corresp="mep:00c56k"><title>Three Men in a boat	</title></bibl>			<date ana="#returned" when="1900-01-07">Jan 7</date>
-                <date ana="#checkedOut" when="1900-01-07">Jan 7</date>		<bibl ana="#borrowedItem" corresp="mep:00nj57"><title>The Ghost	</title></bibl>				<date ana="#returned" when="1900-01-13">Jan 13</date>
-                    <date ana="#checkedOut" when="1900-01-12">Jan 12</date>		<bibl ana="#borrowedItem" corresp="mep:006m4b"><title>Burned Alive</title></bibl>					<date ana="#returned" when="1900-01-20"> Jan 20</date>	
-                    <date ana="#checkedOut" when="1900-01-20"> Jan 20</date>		<bibl ana="#borrowedItem" corresp="mep:002r2v"><title>Kipps</title></bibl>							<date ana="#returned" when="1900-01-28">Jan 28</date>
-                    <date ana="#checkedOut" when="1900-01-28">Jan 28</date>		<bibl ana="#borrowedItem" corresp="mep:00q087"><title>The Little Lady of the Big House</title></bibl> <date ana="#returned" when="1900-02-04"> Feb 4</date>	Ren.<date when="1900-01-28">Jan 28</date>
-                    <date ana="#checkedOut" when="1900-02-04"> Feb 4</date>		<bibl ana="#borrowedItem" corresp="mep:00sd1v"><title>J. London book</title></bibl>					<date ana="#returned" when="1900-02-11"> Feb 11</date>1 mo 1 vol
-               <date ana="#checkedOut" when="1900-02-11"> Feb 11</date>		<bibl ana="#borrowedItem" corresp="mep:00sd25"><title>The Problem Club</title></bibl>				 <date ana="#returned" when="1900-02-18">"	18</date>	8f
-            	<date ana="#checkedOut" when="1900-02-18">Feb 18	</date>	<bibl ana="#borrowedItem" corresp="mep:00md7h"><title>Kipling	</title></bibl>						<date ana="#returned" when="1900-02-28">Feb 28</date>	
-            													interrupted
-                </ab>
+                			<note>1 month. 1 vol.			6.50</note>
+                	<ab ana="#borrowingEvent">		
+                    <date ana="#checkedOut" when="1900-12-28"> Dec 28th</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00c56k"><title>Three Men in a boat	</title></bibl>
+                   <date ana="#returned" when="1900-01-07">Jan 7</date>
+              </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-01-07">Jan 7</date>		
+                   <bibl ana="#borrowedItem" corresp="mep:00nj57"><title>The Ghost	</title></bibl>			
+                   <date ana="#returned" when="1900-01-13">Jan 13</date>
+                   </ab>
+                   <ab ana="#borrowingEvent"> 
+                   <date ana="#checkedOut" when="1900-01-12">Jan 12</date>		
+                   <bibl ana="#borrowedItem" corresp="mep:006m4b"><title>Burned Alive</title></bibl>		
+                   <date ana="#returned" when="1900-01-20"> Jan 20</date>	
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-01-20"> Jan 20</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:002r2v"><title>Kipps</title></bibl>						
+                   <date ana="#returned" when="1900-01-28">Jan 28</date>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-01-28">Jan 28</date>		
+                   <bibl ana="#borrowedItem" corresp="mep:00q087"><title>The Little Lady of the Big House</title></bibl>
+                   <date ana="#returned" when="1900-02-04"> Feb 4</date>	
+                  <note> Ren.<date when="1900-01-28">Jan 28</date></note>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-02-04"> Feb 4</date>		
+                   <bibl ana="#borrowedItem" corresp="mep:00sd1v"><title>J. London book</title></bibl>			
+                   <date ana="#returned" when="1900-02-11"> Feb 11</date>
+                 <note>  1 mo 1 vol</note>
+              </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-02-11"> Feb 11</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00sd25"><title>The Problem Club</title></bibl>		
+                   <date ana="#returned" when="1900-02-18">"	18</date>	
+                  <note> 8f</note>
+            	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-02-18">Feb 18	</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00md7h"><title>Kipling	</title></bibl>			
+                   <date ana="#returned" when="1900-02-28">Feb 28</date>	
+            		</ab>
+            	<note>	interrupted</note>
+                
                </div>
                 <div type="verso">
                 <pb facs="#s2"/>
