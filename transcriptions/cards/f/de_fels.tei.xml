@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,12 +70,19 @@
                 			<address><persName ref="#fels.ma">La Comtesse Marthe de</persName>
                 			<street>31 rue Octave Feuillet</street></address>
                 </head>		
-                		<ab>
-                		1	m	2	vols				40
-                			Jan 13			dep ref	   100
+                		
+                		<note>1	m	2	vols				40
+                			<date when="1941-01-13">Jan 13	</date>		dep ref	   100</note>
              
-                <date ana="#checkedOut" when="1940-12-18">Dec 18	</date>	<bibl ana="#borrowedItem"><title>As the Earth turns	</title></bibl>		<date ana="#returned" when="1940-01-13">Jan 13</date>
-                <date ana="#checkedOut" when="1940-12-18">18	</date>		<bibl ana="#borrowedItem"><title>Lonely Plough</title></bibl>			<date ana="#returned" when="1940-01-13">Jan 13</date>
+             <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1940-12-18">Dec 18	</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002c34"><title>As the Earth turns	</title></bibl>		
+                    <date ana="#returned" when="1941-01-13">Jan 13</date>
+             </ab>   
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-12-18">18	</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002c4f"><title>Lonely Plough</title></bibl>		
+                    <date ana="#returned" when="1941-01-13">Jan 13</date>
                 		</ab>
                 </div>
                 
