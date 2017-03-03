@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -62,37 +64,46 @@
     <text>
         <body>
            <div type="card"><div type="recto">
-                <pb facs="#s1"/><head>
+                <pb facs="#s1"/>
+               
+               <head>
                 		<address><name>Librairie des Deux Lyceé</name>
-                			<street>21 rue de Sévigné</street></address></head><ab>
-                <date ana="#checkedOut" when="1932-03-11">1932
-                March 11</date> 25 <bibl ana="#borrowedItem"><title>Transition</title> <biblScope unit="issue" from="21" to="21">no 21</biblScope></bibl> 25v 23,30
+                			<street>21 rue de Sévigné</street></address></head>
+               
+              <note>
+                <date when="1932-03-11">1932
+                    March 11</date> 25 <bibl corresp="mep:000399" ><title>Transition</title> <biblScope unit="issue" from="21" to="21">no 21</biblScope></bibl> 25v 23,30
                 				1/3 33%
-                			paid <date ana="#returned" when="1932-08-31">31st Aug 1932</date>	583.35
+                			paid <date  when="1932-08-31">31st Aug 1932</date>	583.35
                 
-                <date ana="#checkedOut" when="1932-05-18">18 May</date>	6 <bibl ana="#borrowedItem"><title>Language of Night</title></bibl> 12,50
+                  <date  when="1932-05-18">18 May</date>	6 <bibl corresp="mep:00n13g"><title>Language of Night</title></bibl> 12,50
                 						1/3				50,00
-                <date ana="#checkedOut" when="1932-07-07">7 July</date>	10 <bibl ana="#borrowedItem"><title>Vertigral</title></bibl> 3 1/3				40,00
-                <date ana="#checkedOut" when="1932-08-27">27 Aug</date>	6 <bibl ana="#borrowedItem"><title>Transition</title> <biblScope unit="issue" from="21" to="21">No 21</biblScope></bibl>			   140
-                <date ana="#checkedOut" when="1932-11-21">21 Nov</date>	3	<bibl ana="#borrowedItem"><title>"		 "</title>	<biblScope unit="issue" from="16" to="17">16-17</biblScope></bibl> 35/23,35
-                		3	<bibl ana="#borrowedItem"><title>"		 "</title>	<biblScope unit="issue" from="15" to="15">15</biblScope></bibl>	' 40/26,65 150
-                <date ana="#checkedOut" when="1932-12-19">19 Dec</date>	6 <bibl ana="#borrowedItem"><title>Mind Products</title></bibl> at 15/10		80
-                		3 <bibl ana="#borrowedItem"><title>Americans Abroad</title></bibl> at 60/40	   120</ab>
-                </div>
+                  <date when="1932-07-07">7 July</date>	10 <bibl corresp="mep:00n14s"><title>Vertigral</title></bibl> 3 1/3				40,00
+                  <date when="1932-08-27">27 Aug</date>	6 <bibl ><title corresp="mep:000399">Transition</title> <biblScope unit="issue" from="21" to="21">No 21</biblScope></bibl>			   140
+                  <date when="1932-11-21">21 Nov</date>	3	<bibl corresp="mep:000399" ><title>"		 "</title>	<biblScope unit="issue" from="16" to="17">16-17</biblScope></bibl> 35/23,35
+                  3	<bibl corresp="mep:000399"><title>"		 "</title>	<biblScope unit="issue" from="15" to="15">15</biblScope></bibl>	' 40/26,65 150
+                  <date  when="1932-12-19">19 Dec</date>	6 <bibl corresp="mep:00n153" ><title>Mind Products</title></bibl> at 15/10		80
+                  3 <bibl corresp="mep:00n16d" ><title>Americans Abroad</title></bibl> at 60/40	   120
+              </note>
+              
+           </div>
               <div type="verso">  <pb facs="#s2"/>
-               <ab> <date ana="#checkedOut" when="1932">1932</date> <bibl ana="#borrowedItem"><title>TRANSITION</title></bibl>					publications
+               <head>
+                   <date when="1932">1932</date> <bibl corresp="mep:000399" ><title>TRANSITION</title></bibl>					publications
                 
                 		<persName>René Riff</persName>			<address><street>21 rue de Sévigné</street></address>
-                
-                <date ana="#checkedOut" when="1932-12-22">22 Dec</date> 6c. <bibl ana="#borrowedItem"><title>Mind Products limited</title></bibl>	15f.	90
-                	   3c. <bibl ana="#borrowedItem"><title>Americans abroad</title></bibl>		  à	60f	   180
+                </head>
+                  <note>
+                      <date  when="1932-12-22">22 Dec</date> 6c. <bibl  corresp="mep:00n153"><title>Mind Products limited</title></bibl>	15f.	90
+                      3c. <bibl corresp="mep:00n16d"><title>Americans abroad</title></bibl>		  à	60f	   180
                 	   									   270
                 	   								1/3		90
                 	   									   180
-                <date ana="#checkedOut" when="1933-02-03">Feb 3</date>	on sale
-                		12 <bibl ana="#borrowedItem"><title>Language of Night</title></bibl> at 112,50
-                						1/3		150,60	   100,40</ab>
-                						
+                <date  when="1933-02-03">Feb 3</date>	on sale
+                      12 <bibl corresp="mep:00n13g"><title>Language of Night</title></bibl> at 112,50
+                						1/3		150,60	   100,40
+                			
+                	</note>		
             		</div></div>				
                 
             
