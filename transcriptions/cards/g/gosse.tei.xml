@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,34 +68,124 @@
            <div type="card">
               <div type="recto"> 
                 <pb facs="#s1"/>
-               	<ab><date when="1929">1929</date>	<persName ref="goss.em">GOSSE
+               	<head><date when="1929">1929</date>	<persName ref="goss.em">GOSSE
                			Madmoiselle <unclear/>Gosse</persName>
                					<address><street>41 rue de Donai</street>
-               								<settlement>Paris</settlement><district> 9.</district></address>
+               								<settlement>Paris</settlement><district> 9.</district></address></head>
                			
-               			1m 1 vol <unclear/>		32
-               			Deposit				50
+               		<note>1m 1 vol <unclear/>		32
+               			Deposit				50</note>
                	
-               	<date ana="#checkedOut" when="1929-12-21">Dec 21	</date><bibl ana="#borrowedItem" corresp="mep:00kd1d"><title>Miscellaneous Pieces</title></bibl>		<date ana="#returned" when="1929-12-30">Dec 30</date>
-               	<date ana="#checkedOut" when="1929-12-30">"	30</date>	<bibl ana="#borrowedItem" corresp="mep:00kd2q"><title>E.A. Poe	vol I	</title></bibl>		<date ana="#returned" when="1929-12-31">Dec 31</date>
-               	    <date ana="#checkedOut" when="1929-12-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00kd31"><title>Plays Synge</title></bibl>					<date ana="#returned" when="1930-01-11">	Jan 11</date>
-               <date ana="#checkedOut" when="1930-01-11">	Jan 11</date><bibl ana="#borrowedItem"><title>	Babes in the wood</title></bibl>			<date ana="#returned" when="1930-01-15">Jan 15</date>
-               	    <date ana="#checkedOut" when="1930-01-15">15</date>	<bibl ana="#borrowedItem" corresp="mep:00kd4b"><title>All Quiet ont he Western Front</title></bibl> <date ana="#returned" when="1930-01-17">"	17</date>
-               	    <date ana="#checkedOut" when="1930-01-17">"	17</date>	<bibl ana="#borrowedItem" corresp="mep:00220q"><title>Gallery of woman vol I</title></bibl>		<date ana="#returned" when="1930-01-22">	"	22	</date>
-               <date ana="#checkedOut" when="1930-01-22">	"	22	</date><bibl ana="#borrowedItem" corresp="mep:00kd5n"><title>Best Short Stories 1929. American</title></bibl> <date ana="#returned" when="1930-01-27">Jan 27</date>
-               		<date when="1930-01-22">22	</date>J.R. 3m 1 vol = 80 to <date when="1930-04-21">April 21st 1930</date>
-               		<date ana="#checkedOut" when="1930-01-27">27</date>	<bibl ana="#borrowedItem" corresp="mep:00561v"><title>War	</title></bibl>						<date ana="#returned" when="1930-02-06">Feb 6.</date>
-               	    <date ana="#checkedOut" when="1930-02-06">Feb 6</date>	<bibl ana="#borrowedItem" corresp="mep:008x9v"><title>Twenty Seven Humorous Tales</title></bibl>	<date ana="#returned" when="1930-02-13">"	13</date>	
-               	    <date ana="#checkedOut" when="1930-02-13">"	13</date>	<bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage.</title></bibl>			<date ana="#returned" when="1930-02-18">	"	18</date>
-               	    <date ana="#checkedOut" when="1930-02-18">	"	18</date>	<bibl ana="#borrowedItem" corresp="mep:003n9f"><title>Star Spangled Manner</title></bibl>		<date ana="#returned" when="1930-02-25">"	25	</date>
-               	    <date ana="#checkedOut" when="1930-02-25">"	25	</date><bibl ana="#borrowedItem" corresp="mep:00kd6z"><title>Beyond the <unclear/></title></bibl>					<date ana="#returned" when="1930-02-26">26</date>
-               	    <date ana="#checkedOut" when="1930-02-26">26</date>	<bibl ana="#borrowedItem" corresp="mep:005p4n"><title>Chapter the Last</title></bibl>			<date ana="#returned" when="1930-03-03">Mch 3</date>
-               	    <date ana="#checkedOut" when="1930-03-03">Mch 3</date>	<bibl ana="#borrowedItem" corresp="mep:00220q"><title>Gallery of woman vol II	</title></bibl>		<date ana="#returned" when="1930-03-11">Mch 11	</date>
-               	    <date ana="#checkedOut" when="1930-03-11">Mch 11	</date><bibl ana="#borrowedItem" corresp="mep:00kd78"><title>Pickwick Club vol I	</title></bibl>		<date ana="#returned" when="1930-03-17">	"	17</date>
-               <date ana="#checkedOut" when="1930-03-17">	"	17</date><bibl ana="#borrowedItem"><title>	Orlando	</title></bibl>					<date ana="#returned" when="1930-03-25">"	25</date>
-               		<date ana="#checkedOut" when="1930-03-25">25</date>	<bibl ana="#borrowedItem" corresp="mep:00kd8k"><title>Best Detective Stories 1928</title></bibl>	?
-               			<date ana="#returned" when="1930-04-15">Ap. 15</date> p.c. <unclear/>
-               			<date when="1930-05-14">May 14</date>.</ab>
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1929-12-21">Dec 21	</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:00kd1d"><title>Miscellaneous Pieces</title></bibl>
+               	    <date ana="#returned" when="1929-12-30">Dec 30</date>
+               	</ab>
+                  
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1929-12-30">"	30</date>
+               	    <bibl ana="#borrowedItem" corresp="mep:00kd2q"><title>E.A. Poe	</title>
+               	        <biblScope unit="volume" from="1">vol I</biblScope></bibl>
+               	    <date ana="#returned" when="1929-12-31">Dec 31</date>
+               	</ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1929-12-31">31</date>	
+               	        <bibl ana="#borrowedItem" corresp="mep:00kd31"><title>Plays Synge</title></bibl>
+               	        <date ana="#returned" when="1930-01-11">	Jan 11</date>
+               	    </ab>
+                  
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1930-01-11">	Jan 11</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00fw8g"><title>	Babes in the wood</title></bibl>
+                   <date ana="#returned" when="1930-01-15">Jan 15</date>
+               </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-01-15">15</date>	
+               	        <bibl ana="#borrowedItem" corresp="mep:00kd4b"><title>All Quiet on the Western Front</title></bibl> 
+               	        <date ana="#returned" when="1930-01-17">"	17</date>
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-01-17">"	17</date>
+               	        <bibl ana="#borrowedItem" corresp="mep:00220q"><title>Gallery of woman </title>
+               	            <biblScope unit="volume" from="1">vol I</biblScope></bibl>
+               	        <date ana="#returned" when="1930-01-22">	"	22	</date>
+               	    </ab>
+                  
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-01-22">	"	22	</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00kd5n"><title>Best Short Stories 1929. American</title></bibl>
+                        <date ana="#returned" when="1930-01-27">Jan 27</date>
+                    </ab>
+                  
+               		<note><date when="1930-01-22">22	</date>J.R. 3m 1 vol = 80 to <date when="1930-04-21">April 21st 1930</date></note>
+                  
+               		<ab ana="#borrowingEvent">
+               		    <date ana="#checkedOut" when="1930-01-27">27</date>	
+               		    <bibl ana="#borrowedItem" corresp="mep:00561v"><title>War	</title></bibl>	
+               		    <date ana="#returned" when="1930-02-06">Feb 6.</date>
+               		</ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-02-06">Feb 6</date>
+               	        <bibl ana="#borrowedItem" corresp="mep:008x9v"><title>Twenty Seven Humorous Tales</title></bibl>
+               	        <date ana="#returned" when="1930-02-13">"	13</date>	
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-02-13">"	13</date>
+               	        <bibl ana="#borrowedItem" corresp="mep:001v3r"><title>Of Human Bondage.</title></bibl>
+               	        <date ana="#returned" when="1930-02-18">	"	18</date>
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-02-18">	"	18</date>
+               	        <bibl ana="#borrowedItem" corresp="mep:003n9f"><title>Star Spangled Manner</title></bibl>	
+               	        <date ana="#returned" when="1930-02-25">"	25	</date>
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-02-25">"	25	</date>
+               	        <bibl ana="#borrowedItem" corresp="mep:004p2s"><title>Beyond the Horizon</title></bibl>
+               	        <date ana="#returned" when="1930-02-26">26</date>
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-02-26">26</date>	
+               	        <bibl ana="#borrowedItem" corresp="mep:005p4n"><title>Chapter the Last</title></bibl>	
+               	        <date ana="#returned" when="1930-03-03">Mch 3</date>
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-03-03">Mch 3</date>	
+               	        <bibl ana="#borrowedItem" corresp="mep:00220q"><title>Gallery of woman</title>
+               	            <biblScope unit="volume" from="2">vol II</biblScope></bibl>
+               	        <date ana="#returned" when="1930-03-11">Mch 11	</date>
+               	    </ab>
+                  
+               	    <ab ana="#borrowingEvent">
+               	        <date ana="#checkedOut" when="1930-03-11">Mch 11	</date>
+               	        <bibl ana="#borrowedItem" corresp="mep:00kd78"><title>Pickwick Club</title>
+               	            <biblScope unit="volume" from="1">vol I</biblScope></bibl>	
+               	        <date ana="#returned" when="1930-03-17">	"	17</date>
+               	    </ab>
+                  
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-03-17">	"	17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001c18"><title>	Orlando	</title></bibl>	
+                        <date ana="#returned" when="1930-03-25">"	25</date>
+                    </ab>
+                  
+               		<ab ana="#borrowingEvent">
+               		    <date ana="#checkedOut" when="1930-03-25">25</date>	
+               		    <bibl ana="#borrowedItem" corresp="mep:00kd8k"><title>Best Detective Stories 1928</title></bibl>
+               		    <note>?</note>
+               		</ab>
+                  
+                  <note><date when="1930-04-15">Ap. 15</date> p.c. <unclear/>
+               			<date when="1930-05-14">May 14</date>.</note>
                	</div>
                <div type="verso">
                	<pb facs="#s2"/>
