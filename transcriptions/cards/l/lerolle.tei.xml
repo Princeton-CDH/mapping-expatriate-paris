@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
@@ -65,56 +66,253 @@
         <body>
             <div type="card"><div type="recto">
                 <pb facs="#s1"/>
-           <head>     <date when="1939">1939</date>		<persName ref="#lero.gu">LEROLLE, Guillaume</persName>
-                				<address><street>83 rue de Lille</street></address></head>
-                			<ab>
+           <head> 
+               <date when="1939">1939</date>		<persName ref="#lero.gu">LEROLLE, Guillaume</persName>
+                				<address><street>83 rue de Lille</street></address>
+           </head>
+                	<note>
                 			1y 1v a					200
-                					dep				 50</ab><ab>
-                <date ana="#checkedOut" when="1939-01-19">Jan 19</date>	<bibl ana="#borrowedItem" corresp="mep:009v59"><title>Pepys Diary</title></bibl>						<date ana="#checkedOut" when="1939-02-17">Feb 17</date>
-                			(<bibl ana="#borrowedItem" corresp="mep:00mz0r"><title>Roget's thesaurus</title></bibl> put aside
-                				ordered <date ana="#returned" when="1939-01-27">Jan 27</date>)
-                <date ana="#checkedOut" when="1939-02-17">Feb 17</date>	<bibl ana="#borrowedItem" corresp="mep:00mz12"><title>Pepys Wheatley</title>: <biblScope unit="volume" from="2" to="2">vol II</biblScope></bibl>			<date ana="#returned" when="1939-03-02">Mar 2</date>
-                <date ana="#checkedOut" when="1939-06-23">June 23</date>	<bibl ana="#borrowedItem" corresp="mep:001f3f"><title>Gone with the wind</title></bibl>				<date ana="#returned" when="1939-10-23">Oct 23</date>!
-                			send to <persName>Mme t. de Poncheville</persName>
+                					dep				 50
+                	</note>
+                
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-01-19">Jan 19</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:009v59">
+                        <title>Pepys Diary</title>
+                    </bibl>						
+                    <date ana="#returned" when="1939-02-17">Feb 17</date>
+                </ab>
+                
+                <note>
+                    (<bibl corresp="mep:00mz0r">
+                    <title>Roget's thesaurus</title>
+                    </bibl> put aside
+                    ordered <date when="1939-01-27">Jan 27</date>)
+                </note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-02-17">Feb 17</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00mz12">
+                        <title>Pepys Wheatley</title>: 
+                        <biblScope unit="volume" from="2" to="2">vol II</biblScope>
+                    </bibl>			
+                    <date ana="#returned" when="1939-03-02">Mar 2</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1939-06-23">June 23</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001f3f">
+                        <title>Gone with the wind</title>
+                    </bibl>				
+                    <date ana="#returned" when="1939-10-23">Oct 23</date>!
+                </ab>
+                
+                <note>send to <persName>Mme t. de Poncheville</persName></note>
                 		
-                			<persName ref="#lero.gu">Monsieur Lerolle</persName> has a deposit of 50 frs
-                which he left when he subscribed
-                <date ana="#checkedOut" when="1940-02-23">1940
-                Feb 23</date>	<bibl ana="#borrowedItem" corresp="mep:00mz2c"><title>tamerlane</title>, <author>Lamb</author></bibl>					<date ana="#returned" when="1940-03-12">March 12</date>
-                			(left at <persName ref="#monn.ad">A.M.</persName>'s)
+                			<note>
+                			    <persName ref="#lero.gu">Monsieur Lerolle</persName> has a deposit of 50 frs
+                                which he left when he subscribed
+                			</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-23">1940
+                        Feb 23</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00mz2c">
+                        <title>tamerlane</title>, 
+                        <author>Lamb</author>
+                    </bibl>					
+                    <date ana="#returned" when="1940-03-12">March 12</date>
+                </ab>
+                
+                            <note>
+                			    (left at <persName ref="#monn.ad">A.M.</persName>'s)
                 				subsc finished, dep 50v left
-                		(account for books all paid off)
-               <date ana="#checkedOut" when="1940-10-31">1940
-                Oct 31</date>	<bibl ana="#borrowedItem" corresp="mep:003c4p"><title>Letters of TE Lawrence</title></bibl>			<date ana="#returned" when="1940-11-22">Nov 22</date>
-                <date ana="#checkedOut" when="1940-11-22">Nov 22</date>	<bibl ana="#borrowedItem" corresp="mep:000s48"><title>Piers Ploughman</title></bibl>					<date ana="#checkedOut" when="1940-01-24">Jan 24</date>
-                		<bibl ana="#borrowedItem" corresp="mep:00mz3p"><title>Gosse's English Literature</title></bibl>		<date ana="#returned" when="1940-01-24">Jan 24</date>
-            	<date ana="#checkedOut" when="1940-01-24">Jan 24</date>	<bibl ana="#borrowedItem" corresp="mep:00dr0n"><title>Pickwick Papers</title> <biblScope unit="volume" from="2" to="2">2 vols</biblScope></bibl>			<date ana="#returned" when="1940-02-18">Feb. 18</date>
-            	<date ana="#checkedOut" when="1940-02-18">Feb. 18</date>	<bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island</title></bibl>					<date ana="#returned" when="1940-03-13">Mar 13</date>
-            	<date ana="#checkedOut" when="1940-03-16">March 16</date> <bibl ana="#borrowedItem" corresp="mep:000638"><title>Story of Fanny Burney</title></bibl>			<date ana="#checkedOut" when="1940-05-08">May 8</date>
-            			<bibl ana="#borrowedItem" corresp="mep:00dv6b"><title>Madame D'Arblay's Diary</title> <biblScope unit="volume" from="1" to="1">vol I</biblScope></bibl>	<date ana="#returned" when="1940-04-17">April 17</date>
-            	<date ana="#checkedOut" when="1940-04-17">April 17</date> <bibl ana="#borrowedItem" corresp="mep:005z6g"><title>Great Victorians</title></bibl>				<date ana="#returned" when="1940-05-24">May 24</date>
-            	<date ana="#checkedOut" when="1940-04-24">April 24</date> <bibl ana="#borrowedItem" corresp="mep:00034r"><title>Brief Candles</title></bibl>					<date ana="#returned" when="1940-06-11">June 11</date>
-            	<date ana="#checkedOut" when="1940-04-24">April 24</date> <bibl ana="#borrowedItem" corresp="mep:003m95"><title>Death of the Heart</title></bibl>				<date ana="#returned" when="1940-06-11">June 11</date>
-            				will send 400 frs for 1 yr 8 1/2 subsc
-            										P.T.O</ab>
-            	</div><div type="verso">
+                		        (account for books all paid off)
+                			</note>
+                
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1940-10-31">1940
+                       Oct 31</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:003c4p">
+                       <title>Letters of TE Lawrence</title>
+                   </bibl>			
+                   <date ana="#returned" when="1940-11-22">Nov 22</date>
+               </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-11-22">Nov 22</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000s48">
+                        <title>Piers Ploughman</title>
+                    </bibl>					
+                    <date ana="#returned" when="1940-01-24">Jan 24</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-11-22"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00mz3p">
+                        <title>Gosse's English Literature</title>
+                    </bibl>		
+                    <date ana="#returned" when="1940-01-24">Jan 24</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-24">Jan 24</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00dr0n">
+                        <title>Pickwick Papers</title>
+                        <biblScope unit="volume" from="2" to="2">2 vols</biblScope>
+                    </bibl>			
+                    <date ana="#returned" when="1940-02-18">Feb. 18</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-18">Feb. 18</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00299f">
+                        <title>Magic Island</title>
+                    </bibl>					
+                    <date ana="#returned" when="1940-03-13">Mar 13</date>
+                </ab>
+                
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1940-03-16">March 16</date> 
+                   <bibl ana="#borrowedItem" corresp="mep:000638">
+                       <title>Story of Fanny Burney</title>
+                   </bibl>			
+                   <date ana="#returned" when="1940-05-08">May 8</date>
+               </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-16"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00dv6b">
+                        <title>Madame D'Arblay's Diary</title> 
+                        <biblScope unit="volume" from="1" to="1">vol I</biblScope>
+                    </bibl>	
+                    <date ana="#returned" when="1940-04-17">April 17</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-17">April 17</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:005z6g">
+                        <title>Great Victorians</title>
+                    </bibl>				
+                    <date ana="#returned" when="1940-05-24">May 24</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-24">April 24</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00034r">
+                        <title>Brief Candles</title>
+                    </bibl>					
+                    <date ana="#returned" when="1940-06-11">June 11</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-24">April 24</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:003m95">
+                        <title>Death of the Heart</title>
+                    </bibl>				
+                    <date ana="#returned" when="1940-06-11">June 11</date>
+                </ab>
+                
+            	<note>
+            	    will send 400 frs for 1 yr 8 1/2 subsc
+            										P.T.O
+            	</note>
+            	</div>
+                
+                <div type="verso">
             	<pb facs="#s2"/>
-            							<head><persName ref="#lero.gu">LEROLLE</persName>			<date when="1942-01-19">to Jan 19
-            												1942</date></head>
-            <ab>	Sub ren 1y 1v. <date from="1940-01-19" to="1941-01-19">Jan 19. 1940 - Jan 19. 1941</date> S
+            							<head>
+            							    <persName ref="#lero.gu">LEROLLE</persName>			<date when="1942-01-19">to Jan 19
+            												1942</date>
+            							</head>
+                    
+            <note>	
+                Sub ren 1y 1v. <date from="1940-01-19" to="1941-01-19">Jan 19. 1940 - Jan 19. 1941</date> S
             	Sub ren 1y 1v. <date from="1941-01-19" to="1942-01-19">Jan 19 1941 - Jan 19. 1942</date>	400v
-            			pd. 400. May 26. 1941</ab><ab>
-            	<date ana="#checkedOut" when="1900-06-11">June 11</date>	<bibl ana="#borrowedItem" corresp="mep:006t59"><title>Inheritance</title></bibl>						<date ana="#returned" when="1900-07-24">July 24</date>
-            	<date ana="#checkedOut" when="1900-06-11">June 11</date>	<bibl ana="#borrowedItem" corresp="mep:002q18"><title>American Doctor's Odyssey</title></bibl>		<date ana="#returned" when="1900-07-24">July 24</date>
-            	<date ana="#checkedOut" when="1900-07-24">July 24</date>	<bibl ana="#borrowedItem" corresp="mep:00gf7t"><title>Sleep in Peace</title></bibl>					<date ana="#returned" when="1900-12-10">Dec. 10</date>
-            	<date ana="#checkedOut" when="1900-07-24">July 24</date>	<bibl ana="#borrowedItem" corresp="mep:00399p"><title>Northwest Passage</title></bibl>				<date ana="#returned" when="1900-09-30">Sept 30</date>
-            	<date ana="#checkedOut" when="1900-07-31">July 31</date>	<bibl ana="#borrowedItem" corresp="mep:00608m"><title>American History</title> (<author>Woodward</author>)</bibl>		<date ana="#returned" when="1900-11-24">Nov 24</date>
-            		<date ana="#checkedOut" when="1900-07-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:003s9j"><title>Enbury Heath</title></bibl>					<date ana="#returned" when="1900-11-24">Nov 24</date>
-            		<date ana="#checkedOut" when="1900-07-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:006w8s"><title>February Hill</title></bibl>					<date ana="#returned" when="1900-10-14">Oct. 14</date>
-            		<date ana="#checkedOut" when="1900-07-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00314x"><title>Holy deadlock</title></bibl>					<date ana="#returned" when="1900-11-24">Nov. 24</date>
-            		<date ana="#checkedOut" when="1900-07-31">31</date>	<bibl ana="#borrowedItem" corresp="mep:00fn8j"><title>George Washington</title></bibl>				<date ana="#returned" when="1900-09-30">Sept 30</date>
-            	<date ana="#checkedOut" when="1900-12-10">Dec. 10</date>	<bibl ana="#borrowedItem" corresp="mep:003j0t"><title>Whiteoaks</title></bibl>.
-            	</ab>
+            			pd. 400. May 26. 1941</note>
+                    
+            	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-06-11">June 11</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:006t59">
+                            <title>Inheritance</title>
+                        </bibl>						
+                        <date ana="#returned" when="1900-07-24">July 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-06-11">June 11</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:002q18">
+                            <title>American Doctor's Odyssey</title>
+                        </bibl>		
+                        <date ana="#returned" when="1900-07-24">July 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-24">July 24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00gf7t">
+                            <title>Sleep in Peace</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-12-10">Dec. 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-24">July 24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00399p">
+                            <title>Northwest Passage</title>
+                        </bibl>				
+                        <date ana="#returned" when="1900-09-30">Sept 30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-31">July 31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00608m">
+                            <title>American History</title> 
+                            (<author>Woodward</author>)
+                        </bibl>		
+                        <date ana="#returned" when="1900-11-24">Nov 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-31">31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:003s9j">
+                            <title>Enbury Heath</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-11-24">Nov 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-31">31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:006w8s">
+                            <title>February Hill</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-10-14">Oct. 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-31">31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00314x">
+                            <title>Holy deadlock</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-11-24">Nov. 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-07-31">31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00fn8j">
+                            <title>George Washington</title>
+                        </bibl>				
+                        <date ana="#returned" when="1900-09-30">Sept 30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-10">Dec. 10</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:003j0t">
+                            <title>Whiteoaks</title>
+                        </bibl>.
+                    </ab>
+                    
                 </div>
                 							
                 
