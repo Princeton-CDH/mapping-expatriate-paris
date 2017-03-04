@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
@@ -63,65 +64,190 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
+                <head>
                 			<persName ref="phil.te">PHILIP</persName>
                 <date when="1922">1922</date>		<persName ref="phil.te">Mr Terence Phlip Philip</persName>
                 <date when="1922-11-23">Nov 23</date>		  <address><orgName>Hotel Foyot</orgName>		<street>5 Portman Place</street>
                 								<district>Portman (Bayswater)</district>
                 											<settlement>London</settlement></address>
+                </head>
                 											
-                			1	mo		2	vols			12
-                								Dep			14
+                			<note>1	mo		2	vols			12
+                								Dep			14</note>
                 								
-                    <date ana="#checkedOut" when="1922-11-23">Nov 23</date>		<bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl>				 <date ana="#returned" when="1922-12-11"> Dec 11</date>
-                			Strindberg 1st Series
-                    <date ana="#checkedOut" when="1922-12-11"> Dec 11</date>		<bibl ana="#borrowedItem" corresp="mep:00pq93"><title>St Augustine 2 vols	</title></bibl>		 <date ana="#returned" when="1922-12-23">Dec 23</date>
-                    <date ana="#checkedOut" when="1922-12-23">Dec 23</date>		<bibl ana="#borrowedItem" corresp="mep:00pr0k"><title>Tchehov's Letters</title></bibl>			 <date ana="#returned" when="1922-12-28">Dec 28</date>
-                    <date ana="#checkedOut" when="1922-12-28">Dec 28</date>		<bibl ana="#borrowedItem" corresp="mep:00pr1w"><title>Psychology of the Psychoanlysis &amp; the Unconscious	</title></bibl>		<date ana="#returned" when="1923-01-02"> Jan 2.</date>
-                    <date ana="#checkedOut" when="1923-01-02"> Jan 2.</date> 		<bibl ana="#borrowedItem" corresp="mep:00pr26"><title>Mendel</title></bibl>						<date ana="#returned" when="1923-02-05">Feb 5</date> <date when="1923-01-13">Jan 13</date>
-                <date ana="#checkedOut" when="1923-02-05">Feb 5</date>		<bibl ana="#borrowedItem" corresp="mep:00pr3h"><title>Shorter Lyrics	</title></bibl>			<date ana="#returned" when="1923-02-12">Feb 12</date>	s. a p.c.
-                <date ana="#checkedOut" when="1923-03-02">March 2	</date>	<bibl ana="#borrowedItem" corresp="mep:00pr4t"><title>Shallow Soil</title></bibl>				BB
-                <date ana="#checkedOut" when="1923-03">March</date>		<bibl ana="#borrowedItem" corresp="mep:00780k"><title>Varieties of Religious Experience 2 vols</title></bibl> Renewed
-                    <date ana="#checkedOut" when="1923-04-06">April 6	</date>	<bibl ana="#borrowedItem" corresp="mep:001d7d"><title>The Sacred Wood	</title></bibl>		<date ana="#returned" when="1923-04-06">April 6	</date>		<date when="1922-12-23">Dec 23rd 1922</date>
-                <date ana="#checkedOut" when="1923-04-09">April 9	</date>	<bibl ana="#borrowedItem" corresp="mep:00pr54"><title>Tendancies in American Poetry</title></bibl>				
-                    <bibl ana="#borrowedItem" corresp="mep:00pr6f"><title>North of Boston	</title></bibl>		<date ana="#returned" when="1923-04-14">April 14</date>		<date when="1923-03-23">March 23 1923</date>
-                    <date ana="#checkedOut" when="1923-04-14">April 14</date>	<bibl ana="#borrowedItem" corresp="mep:00pr7r"><title>Worlds Illusion 2 vols</title></bibl>	<date ana="#returned" when="1923-04-21">April 21</date>				
-                													     1 vol
-                <date ana="#checkedOut" when="1923-04-21">April 21</date>	<bibl ana="#borrowedItem" corresp="mep:00pr82"><title>The Possessed</title></bibl>							Ren. <date ana="#checkedOut" when="1923-03-23">March 23</date>
-                			<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title></bibl>								<date ana="#returned" when="1923-04-23">April 23</date>
-                <date ana="#checkedOut" when="1923-05-09">May 9</date>		<bibl ana="#borrowedItem" corresp="mep:00pr9c"><title>Wasteland</title></bibl> <bibl ana="#borrowedItem"><edition>(Limited Edition)	</edition></bibl>				<date ana="#returned" when="1923">1923</date>
-                													Sent p.c.
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-11-23">Nov 23</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:001p3c">
+                            <title>Women in Love</title>
+                        </bibl>				 
+                        <date ana="#returned" when="1922-12-11"> Dec 11</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-11-23"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00p366">
+                            <title>Strindberg 1st Series</title>
+                        </bibl>
+                        <date ana="#returned" when="1922-12-11"></date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-12-11">Dec 11</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00pq93">
+                            <title>St Augustine 2 vols</title>
+                        </bibl>		 
+                        <date ana="#returned" when="1922-12-23">Dec 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-12-23">Dec 23</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00pr0k">
+                            <title>Tchehov's Letters</title>
+                        </bibl>			 
+                        <date ana="#returned" when="1922-12-28">Dec 28</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1922-12-28">Dec 28</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00pr1w">
+                            <title>Psychology of the Psychoanlysis &amp; the Unconscious</title>
+                        </bibl>		
+                        <date ana="#returned" when="1923-01-02"> Jan 2.</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-01-02"> Jan 2.</date> 		
+                        <bibl ana="#borrowedItem" corresp="mep:00pr26">
+                            <title>Mendel</title>
+                        </bibl>						
+                        <date ana="#returned" when="1923-02-05">Feb 5</date> 
+                        <date when="1923-01-13">Jan 13</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-02-05">Feb 5</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00pr3h">
+                            <title>Shorter Lyrics</title>
+                        </bibl>			
+                        <date ana="#returned" when="1923-02-12">Feb 12</date>	
+                        <note>s. a p.c.</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-03-02">March 2</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00pr4t">
+                            <title>Shallow Soil</title>
+                        </bibl>				
+                        BB
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-03">March</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00780k">
+                            <title>Varieties of Religious Experience</title> 2 vols
+                        </bibl>       
+                        <date ana="#returned" when="1923-04-06">April 6	</date>
+                    </ab>
+                    
+                   <note>Renewed <date from="1922-12-23" to="1923-03-23">Dec 23rd 1922 - March 23 1923</date> 1 vol</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-04-06">April 6</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:001d7d">
+                            <title>The Sacred Wood</title>
+                        </bibl>		
+                        <date ana="#returned" when="1923-04-09"></date>
+                    </ab>		
+                    
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-04-09">April 9</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00pr54">
+                            <title>Tendancies in American Poetry</title>
+                        </bibl>	
+                        <date ana="#returned" when="1923-04-14"></date>
+                    </ab>			
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-04-09"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00pr6f">
+                            <title>North of Boston</title>
+                        </bibl>		
+                        <date ana="#returned" when="1923-04-14">April 14</date>		
+                        
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-04-14">April 14</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00pr7r">
+                            <title>Worlds Illusion 2 vols</title>
+                        </bibl>	
+                        <date ana="#returned" when="1923-04-21">April 21</date>
+                    </ab>				
+                													     
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-04-21">April 21</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00pr82">
+                            <title>The Possessed</title>
+                        </bibl>							
+                        Ren. <date ana="#returned" when="1923-03-23">March 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-04-21"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:000g25">
+                            <title>Criterion</title>
+                        </bibl>								
+                        <date ana="#returned" when="1923-04-23">April 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-05-09">May 9</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00pr9c">
+                            <title>Wasteland</title>
+                            <edition>(Limited Edition)</edition>
+                        </bibl> 
+                        <date ana="#returned" when="1923">1923</date>
+                    </ab>
+                    
+                													<note>
+                													    Sent p.c.
                 													<date when="1923-06-27">June 27</date>
                     wrote <date when="1923-06-27">June 27</date>
                 												p.c. <date when="1924-03">Mar 1924</date>
                 											(reg. letter <date when="1924-12-05">Dec 5</date>)
-                </ab>
+                													</note>
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
                 
                 <!-- Verso Blank -->
                 </div>
+                
                 <div type="recto">
-                <pb facs="#s3"/>
-                <ab>
+                
+                    <pb facs="#s3"/>
+                <note>
                 	give book to concierge
                 	he will call for it and return
                 	one he has
-                <bibl ana="#borrowedItem"><author>Tagore</author></bibl>'s books
+                    <bibl><author>Tagore</author></bibl>'s books
                 
-                <bibl ana="#borrowedItem"><author>Joyce</author></bibl>
+                <bibl><author>Joyce</author></bibl>
                 
-                <bibl ana="#borrowedItem" corresp="mep:00ps0v"><title>Synge's Plays</title></bibl>
+                <bibl corresp="mep:00ps0v"><title>Synge's Plays</title></bibl>
                 
-                <bibl ana="#borrowedItem"><author>Huxley</author></bibl>
+                <bibl><author>Huxley</author></bibl>
                 
-                <bibl ana="#borrowedItem"><author>Arnold Bennett</author></bibl>
+                <bibl><author>Arnold Bennett</author></bibl>
                 
-               <bibl ana="#borrowedItem"><author> Laurence</author></bibl> (except <bibl ana="#borrowedItem" corresp="mep:00401z"><title>Plumed
+               <bibl><author> Laurence</author></bibl> (except <bibl corresp="mep:00401z"><title>Plumed
                 
-                Serpent</title></bibl>, <bibl ana="#borrowedItem" corresp="mep:00ps15"><title>L Chatterly</title></bibl>)
-                </ab>
+                Serpent</title></bibl>, <bibl corresp="mep:00ps15"><title>L Chatterly</title></bibl>)
+                </note>
                 </div>
                 <div type="verso">
                 <pb facs="#s4"/>
