@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -74,23 +76,36 @@
                			<street>113 rue Lamarck</street>
                			</address>
                	</head>
-                <ab>
-               				
-               	<date ana="#checkedOut" when="1933-12-19">Dec 19</date>	<bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des Deux Mondes</title></bibl>		<date ana="#returned" when="1933-03-24">March 24</date>
-               			containing gillet's 'James Joyce
-               			et son nouveau roman'
-               	<date when="1934">1934</date>
-               	<date ana="#checkedOut" when="1934-03-24">March 24</date> <bibl ana="#borrowedItem" corresp="mep:008486"><title>Disinherited</title></bibl>           <date ana="#returned" when="1935-10-07">7 Oct. 1935</date>
-               	<date ana="#checkedOut" when="1934-05-11">May 11</date>	<bibl ana="#borrowedItem" corresp="mep:00fq6g"><title>Bindle</title></bibl>		          <date ana="#returned" when="1935-10-07">    </date>
-               	                card <date when="1934-06-19">19 June</date>	 
+                
+               	<ab ana="#borrowingEvent">			
+               	<date ana="#checkedOut" when="1933-12-19">Dec 19</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00fq55"><title>Revue des Deux Mondes</title></bibl>	
+                    <date ana="#returned" when="1933-03-24">March 24</date>
+               			<note>containing <bibl><author>gillet's</author> <title>'James Joyce
+               			et son nouveau roman</title>'</bibl></note>
+                    </ab>
+                    
+               <note>	<date when="1934">1934</date></note>
+                    
+                  <ab ana="#borrowingEvent">  
+               	<date ana="#checkedOut" when="1934-03-24">March 24</date>
+                    <bibl ana="#borrowedItem" corresp="mep:008486"><title>Disinherited</title></bibl>    
+                    <date ana="#returned" when="1935-10-07">7 Oct. 1935</date>
+                  </ab>  
+                    <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1934-05-11">May 11</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00fq6g"><title>Bindle</title></bibl>		  
+                    <date ana="#returned" when="1935-10-07">    </date>
+                    </ab>
+               	                <note>card <date when="1934-06-19">19 June</date>	 
                					card <date when="1934-07-20">July 20</date>
                					letter <date when="1934-09-15">sept 15</date>
                					   "  	<date when="1934-12-19">19 Dec</date>
                		<date when="1935-10-01">Oct 1 1935</date> wrote to ask 
                     <persName>Mme Emile Bascou (Charlotte Chennevier)</persName>
                		to get back the books if
-               		she could
-                </ab>
+               		she could</note>
+                
                	</div>
                 <div type="verso">
                	<pb facs="#s2"/>

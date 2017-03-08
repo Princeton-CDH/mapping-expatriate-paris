@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -63,14 +65,21 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                   <ab>
-               	<date when="1956">1956</date>		<address><persName ref="gray.wi">William Gray</persName>
+                 
+               	<head><date when="1956">1956</date>		<address><persName ref="gray.wi">William Gray</persName>
                				<orgName>Hotel Pax</orgName>
-               				<street>rue St André des Arts</street></address>
+               				<street>rue St André des Arts</street></address></head>
                	
-               	<date ana="#checkedOut" when="1956">Jan 25</date><bibl ana="#borrowedItem"><title>	Lalou's French literature Eng. Trans.</title></bibl><date ana="#checkedOut" when="1956-03-02"> March 2</date>
-               			<bibl ana="#borrowedItem" corresp="mep:00kf1p"><title>Balzac:  by Levin</title></bibl> (inscribed to SB)
-               					(not yet returned
+               	<ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1956">Jan 25</date>
+                       <bibl ana="#borrowedItem"><title>	Lalou's French literature Eng. Trans.</title></bibl>
+                       <date ana="#returned" when="1956-03-02"> March 2</date>
+               	</ab>
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1956"></date>
+                       <bibl ana="#borrowedItem" corresp="mep:00kf1p"><title>Balzac</title>:  by <author>Levin</author></bibl> 
+                       <note>(inscribed to <persName ref="beac.sy">SB</persName>)
+               					(not yet returned</note>
                </ab>
                </div>	
                 <div type="verso">

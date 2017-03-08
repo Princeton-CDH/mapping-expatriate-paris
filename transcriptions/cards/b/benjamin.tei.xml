@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,12 +70,16 @@
                 			 
                 
                 
-                <ab>
-                <date ana="#checkedOut" when="1940-02-23">Feb 23</date>		<bibl ana="#borrowedItem"><title>German - English Eng.Ger. Dicty
-                				                            (Carrells)</title></bibl>
-                <date ana="#checkedOut" when="1940-04-25">April 25</date>	    <bibl ana="#borrowedItem">Bacon's Physical &amp; Metaphysical
-                			                                 works (Bohn's Lit)</bibl>
+          <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1940-02-23">Feb 23</date>	
+              <bibl ana="#borrowedItem" corresp="mep:000k5x"><title>German - English Eng.Ger. Dicty </title><series>(Carrells)</series></bibl>
                 </ab>
+                       
+                       <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1940-04-25">April 25</date>	   
+                       <bibl ana="#borrowedItem" corresp="mep:00vx4d"><title>Bacon's Physical &amp; Metaphysical works</title> <series>(Bohn's Lit)</series></bibl>
+                </ab>
+                       
                </div>
                 
                 <div type="verso">

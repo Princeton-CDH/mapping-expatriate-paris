@@ -64,19 +64,25 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-               	<ab><date when="1937">1937</date>		<persName ref="guil.lo">GUILLOUY
+               	<head><date when="1937">1937</date>		<persName ref="guil.lo">GUILLOUY
                				Louis</persName>
                					<address><street>20 rue le Verrier.</street>
                							<settlement>Paris</settlement> <district>VI</district></address>
-               	
-               	<date ana="#checkedOut" when="1937-02-15">Feb 15</date>	<bibl ana="#borrowedItem" corresp="mep:00kh2j"><title>Croquet Player</title></bibl>
+               	</head>
+                    <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1937-02-15">Feb 15</date>	
+               	    <bibl ana="#borrowedItem" corresp="mep:00kh2j"><title>Croquet Player</title></bibl>
+               	    </ab>
+                    <ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1937-02-15"></date>	
                			<bibl ana="#borrowedItem" corresp="mep:00kh3v"><title>Tramp <unclear/></title></bibl>
-               			
-               			<date ana="#returned" when="1937-06-09">June 9</date> sent <persName ref="guil.lo">Guillouy</persName> cheque Bryher
-               		<bibl ana="#borrowedItem" corresp="mep:001h30"><title>Life 2 Letters To day</title></bibl>	Frs 650
+               		</ab>	
+                    
+               			<note><date  when="1937-06-09">June 9</date> sent <persName ref="guil.lo">Guillouy</persName> cheque Bryher
+               		<bibl  corresp="mep:001h30"><title>Life 2 Letters To day</title></bibl>	Frs 650
                		
-               						no hope
-               	</ab>
+               						no hope</note>
+             
                 </div>
                	<div type="verso">
                	<pb facs="#s2"/>
