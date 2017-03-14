@@ -69,13 +69,13 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
-                <date>1927</date>
+               <head>
+                <date when="1927">1927</date>
                 			<persName ref="prev.je">Jean Prévost</persName>
                 			<address><orgName>Chez Rieder</orgName>
                 			<street>7 Place St Sulpice</street>
                 			</address>
-                </ab>
+                </head>
                 
                 
                 
@@ -97,12 +97,12 @@
                 </div>
                 <div type="recto">
                 <pb facs="#s3"/>
-                <ab>
+                <head>
                 <date when="1931">1931</date>		<persName ref="prev.je">PREVOST</persName>
                 
                 				<persName ref="prev.je">Madame Jean Prévost</persName>
+                </head>
                 
-                </ab>
                 
                 
                 
@@ -196,13 +196,13 @@
             	    <bibl ana="#borrowedItem" corresp="mep:001f3f">
             	        <title>Gone with the Wind</title>
             	    </bibl>		
-            	    <note>returned by FB</note>
+            	    <note>returned by <persName>FB</persName></note>
             	</ab>
                     
                 </div>
                 <div type="verso">
                 <pb facs="#s6"/>
-                <ab>
+               <head>
                <date when="1939"> 1939</date>
                 				<persName ref="prev.je">PREVOST</persName>
                 				<del><persName>(Mme.  Gérard)</persName>
@@ -211,7 +211,7 @@
                 			  			<persName>(Mlle Bernham)</persName>
                 		<address><street>16 rue Franklin</street></address>
                 				1 year 1 vol. A.
-                </ab>
+               </head> 
                 
               <ab ana= "#borrowingEvent">
                   <date ana="#checkedOut" when="1939-04-29"> Apr 29</date>	
@@ -223,7 +223,7 @@
                     
                 <ab ana= "#borrowingEvent">
                     <date ana="#checkedOut" when="1939-06-07">Jun 7	</date>
-                    <bibl ana="#borrowedItem">
+                    <bibl ana="#borrowedItem" corresp="mep:00094d">
                         <time>Crock of Gold</time>
                     </bibl>				
                     <date ana="#returned" when="1939-06-15">June 15</date>
@@ -369,9 +369,11 @@
                 	    <date ana="#checkedOut" when="1940-06-26"> 26</date>
                 	    <bibl ana="#borrowedItem" corresp="mep:002150">
                 	        <title>Nobody's in town</title>
-                	    </bibl>			
+                	    </bibl>		
+                	    <note>returned</note>
+                	    <date ana="#returned" notBefore="1940-06-26"></date>
                 	</ab>
-                    <note>returned</note>
+                   
                 
                 </div>
             </div>
