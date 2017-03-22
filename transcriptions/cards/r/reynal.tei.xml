@@ -63,7 +63,7 @@
            <div type="card">
                <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
+                <head>
                 <date when="1931">1931</date>			<persName ref="reyn.je">REYNAL</persName>
                 			
                 		<persName ref="reyn.je"> 	Miss Jean Reynal</persName>
@@ -72,8 +72,8 @@
                 			
                 		Subscription 1 m. 1 vol<date when="1931-01-23"> Jan 23rd.</date> 	40frs
                 								dep			50	
+                </head>
                 
-                </ab>
                    
                     <ab ana= "#borrowingEvent">
                         <date ana="#checkedOut" when="1931-01-23"> Jan 23rd.</date> 
@@ -103,7 +103,7 @@
                  
              <ab ana= "#borrowingEvent">
                  <date ana="#checkedOut" when="1931-02-28">  Feb 28	</date>
-                 <bibl ana="#borrowedItem">
+                 <bibl ana="#borrowedItem" corresp="mep:00sw7k">
                      <title>	J. Swift Choice Works</title>
                  </bibl>	
                  <date ana="#returned" when="1931-03-21">Mch. 21</date> 
@@ -137,19 +137,20 @@
                <div type="verso">
                 <pb facs="#s2"/>
                 
-                			<ab>	<persName ref="reyn.je">REYNAL</persName></ab>
+                			<note><persName ref="reyn.je">REYNAL</persName></note>
                 </div>
                <div type="recto">
                 <pb facs="#s3"/>
-                <ab>
-                		<persName ref="reyn.je">Miss REYNAL Jeanne</persName>
+                
+                		<head><persName ref="reyn.je">Miss REYNAL Jeanne</persName>
                 		
-                				<address><street>45 rue Boissonnade</street></address>
-                									14th
+                				<address><street>45 rue Boissonnade</street></address></head>
+                   
+                									<note>14th</note>
                 									
-                			April 8 - July 8 	3 m. 1 v.	65f
-                									dep.	50
-                </ab>
+                			<note><date from="1900-04-08" to="1900-07-08">April 8 - July 8 </date>	3 m. 1 v.	65f
+                									dep.	50</note>
+                
                    
               <ab ana= "#borrowingEvent">
                   <date ana="#checkedOut" when="1900-04-08"> April 8	</date>
@@ -216,7 +217,7 @@
                 	     </bibl>	
                 	     <date ana="#returned" when="1900-06-09">June 9</date>
                 	 </ab>
-                   <note>.renewed June 2.	</note>
+                   <note>.renewed <date when="1900-06-02">June 2.</date>	</note>
                    
                 <ab ana= "#borrowingEvent">
                     <date ana="#checkedOut" when="1900-06-02">June.2.</date>
@@ -271,9 +272,10 @@
                 		    </bibl>
                 		    <date ana="#returned" when="1900-12-09">Dec. 9</date>
                 		</ab>
+                   
                    <note>owes 6 frs.	</note>
+                   
                   <ab ana= "#borrowingEvent">
-                      
                       <date ana="#checkedOut" when="1900-11-26"></date>
                       <bibl ana="#borrowedItem" corresp="mep:00623m">
                           <title>Murder at 28.10	</title>
@@ -311,10 +313,10 @@
                 </div>
                <div type="verso">
                 <pb facs="#s4"/>
-                <ab>
-                (subsc.) to <date when="1938-04-09">April 9th</date>		<persName ref="reyn.je">REYNAL</persName>
-                		<date when="1938">1938</date>
-                </ab>
+               
+               <note> (subsc.) to <date when="1938-04-09">April 9th</date>		<persName ref="reyn.je">REYNAL</persName>
+                		<date when="1938">1938</date></note>
+                
                    
                 <ab ana= "#borrowingEvent">
                     <date ana="#checkedOut" when="1938-02-08">Feb 8</date>	
@@ -343,16 +345,17 @@
                     <ab ana= "#borrowingEvent">
                         <date ana="#checkedOut" when="1938-02-24">24</date>	
                         <bibl ana="#borrowedItem" corresp="mep:00hj0q">
-                            <title>New. Yorker</title> (extra)		
+                            <title>New. Yorker</title><note> (extra)	</note>	
                         </bibl>
                         <date ana="#returned" when="1938-02-28"></date>
+                        <note>	returned</note>
                     </ab>
-                   <note>	returned</note>
+                  
                    
                     <ab ana= "#borrowingEvent">
                         <date ana="#checkedOut" when="1938-03-10">March 10</date>
                         <bibl ana="#borrowedItem" corresp="mep:00361c">
-                            <title>Present Indicative</title> (extra)			
+                            <title>Present Indicative</title> <note>(extra)</note>			
                         </bibl>
                         <date ana="#returned" when="1938-04-02"> Ap. 2</date>	
                     </ab>
@@ -367,6 +370,7 @@
                        <note>paid 23 frs.</note>
                        
                    </ab>
+                   
                    <note> extras <date when="1938-04-02">April 2</date></note>
                 	  						 
              <ab ana= "#borrowingEvent">
@@ -381,7 +385,7 @@
                 							
                 	<note> <date when="1940-05-04">May 4	1940</date>	got catalogue notice 
                 			of exposition of <persName ref="reyn.je">Jeanne Reynal</persName>
-                			<bibl ana="#borrowedItem" corresp="mep:00sw96"><title>Mosaics with Bromfield</title></bibl>
+                			<bibl corresp="mep:00sw96"><title>Mosaics with Bromfield</title></bibl>
                 			Preface
                 			Address of Gallery
                 			<address><orgName>Walker Galleries</orgName>
