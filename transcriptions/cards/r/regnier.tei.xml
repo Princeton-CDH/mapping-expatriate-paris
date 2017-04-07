@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -52,20 +55,29 @@
            <div type="card">
               <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
-                			<persName ref="regn.he">M. Regnier, Henri</persName>
+                
+                			<head><persName ref="#regn.he">M. Regnier, Henri</persName>
                 			  <address><street>9 rue de la Gare</street>
-                			  		<settlement>Arneiuel Areueil</settlement></address>
+                			  		<settlement><del>Arneiuel</del> Areueil</settlement></address></head>
                 			  		
-                <date when="1900-11-18">Nov. 18</date>, <date when="1900-11-19">19</date>	1 month	-	1 vol.			4
+                <note><date when="1919-11-18">Nov. 18, 19</date>	1 month	-	1 vol.			4
                 
                 				Deposit
-                										5 60
-                <date when="1900-11-18">Nov. 18</date>, <date ana="#checkedOut" when="1900-11-19">19</date>	<bibl ana="#borrowedItem" corresp="mep:00181f"><title>Trumpet Major</title></bibl>     <date ana="#checkedOut" when="1900-11-22">Nov. 22</date>
-                					<bibl ana="#borrowedItem"><author>Hardy</author></bibl>
-                					
-                <date ana="#checkedOut" when="1900-11-22">Nov. 22.</date>	<bibl ana="#borrowedItem" corresp="mep:00p38t"><title>Passionate Friends</title></bibl>, <bibl ana="#borrowedItem"><author>Wells</author></bibl>
+                										5 60</note>
+                  
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1919-11-18">Nov. 18, 19</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:00181f"><title>Trumpet Major</title>
+                    <author>Hardy</author></bibl>   
+                    <date ana="#returned" when="1919-11-22">Nov. 22</date>
                 </ab>
+                  			
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1919-11-22">Nov. 22.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00p38t"><title>Passionate Friends</title>, 
+                        <author>Wells</author></bibl>
+                </ab>
+                  
               </div>
                 <div type="verso">
                 <pb facs="#s2"/>
