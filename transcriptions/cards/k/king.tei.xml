@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,17 +67,39 @@
                							<name>Hotel de Nice</name>
                									<street>Bd Montparnasse</street></address></head>
                	
-               	<ab>
+               <note>
                			1 m 	1 vol			15
-               			Deposit					50</ab>
-               	<ab>
-               	<date ana="#checkedOut" when="1926-07-28">July 28th</date> <bibl ana="#borrowedItem" corresp="mep:00kw0z"><title>These Charming People.</title></bibl>		<date ana="#returned" when="1926-08-04">Aug 4</date>
-               	<date ana="#checkedOut" when="1926-08-04">Aug 4</date>	<bibl ana="#borrowedItem" corresp="mep:001f24"><title>South Wind</title></bibl>						<date ana="#returned" when="1926-08-09">"	9</date>
-               	<date ana="#checkedOut" when="1926-08-09">"	9</date>	<bibl ana="#borrowedItem" corresp="mep:00kw18"><title>Autobiography of Margot Asquith</title></bibl> <date ana="#returned" when="1926-08-12">"	12</date>
-               	<date ana="#checkedOut" when="1926-08-12">"	12</date>	<bibl ana="#borrowedItem" corresp="mep:00900v"><title>How to write short stories</title></bibl>		<date ana="#returned" when="1926-08-18">Aug 18</date>
-               	<date ana="#checkedOut" when="1926-08-18">"	18</date>	<bibl ana="#borrowedItem" corresp="mep:00c094"><title>Polyglots</title></bibl>	<date ana="#returned" when="1926-08-29">Aug 29</date> h.c.
-               						<date when="1926-09-22">Sept 22</date> h.c.</ab>
-               	</div>
+               			Deposit					50</note>
+              
+               <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1926-07-28">July 28th</date>
+                <bibl ana="#borrowedItem" corresp="mep:00kw0z"><title>These Charming People.</title></bibl>		
+                <date ana="#returned" when="1926-08-04">Aug 4</date>
+               </ab>	
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1926-08-04">Aug 4</date>	
+                <bibl ana="#borrowedItem" corresp="mep:001f24"><title>South Wind</title></bibl>			
+                <date ana="#returned" when="1926-08-09">"	9</date>
+               	</ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1926-08-09">"	9</date>	
+                <bibl ana="#borrowedItem" corresp="mep:00kw18"><title>Autobiography of Margot Asquith</title></bibl>
+                <date ana="#returned" when="1926-08-12">"	12</date>
+               	</ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1926-08-12">"	12</date>	
+                <bibl ana="#borrowedItem" corresp="mep:00900v"><title>How to write short stories</title></bibl>		
+                <date ana="#returned" when="1926-08-18">Aug 18</date>
+               	</ab>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1926-08-18">"	18</date>	
+                <bibl ana="#borrowedItem" corresp="mep:00c094"><title>Polyglots</title></bibl>
+                <date ana="#returned" when="1926-08-29">Aug 29</date> 
+               </ab>
+            <note>   h.c.
+                <date when="1926-09-22">Sept 22</date> h.c.
+            </note>   
+            </div>
              <div type="verso">  	<pb facs="#s2"/>
                	<!-- verso blank -->
               </div> 	
