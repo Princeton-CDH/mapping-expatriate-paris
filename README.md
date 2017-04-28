@@ -33,9 +33,6 @@ image files are not available for download; see the
 [finding aid](http://findingaids.princeton.edu/collections/C0108/) for
 more information about access to the primary materials.
 
-There are also organized scans of the cards at [this location aid](http://diglib.princeton.edu/tools/ib/pudl0123/825298).
-
-
 # Repository Organization
 
 ## transcriptions/
