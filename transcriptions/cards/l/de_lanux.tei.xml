@@ -49,11 +49,13 @@
           <unclear/> Jan 4 = "Fuet"?
           <unclear/> Feb 18 = "Tooshey's"?
           <unclear/> Feb 18 = "Lune"?
-
-
-
         </ab>
       </change>
+    	<change who="#i-davis">
+    		<ab>
+    			cards are in order
+    		</ab>
+    	</change>
     </revisionDesc>
   </teiHeader>
   <facsimile xml:base="pudl0123/825298/l/de_lanux/">
@@ -112,15 +114,18 @@
           <date ana="#checkedOut" when="1923-10-30">Oct 30</date>
           <bibl ana="#borrowedItem" corresp="mep:00cf2j">
           <title>Broom</title></bibl>
+        	<date ana="#returned" when="1923-10-30"></date>
         </ab>
 
         <ab><del><bibl corresp="mep:00cf2j"><title>Broom</title></bibl></del></ab>
 
 
         <ab ana="#borrowingEvent">
+        	<date ana="#checkedOut" when="1923-10-30"></date>
           <bibl ana="#borrowedItem" corresp="mep:00m657">
           <title>Secession</title></bibl>
           <note>on <persName>Mrs Ford</persName>'s card</note>
+        	<date ana="#returned" when="1923-10-30"></date>
         </ab>
 
 
@@ -128,6 +133,7 @@
         <ab><del><bibl corresp="mep:000r12"><title>Pointed Roofs</title></bibl> </del></ab>
 
         <ab ana="#borrowingEvent">
+        	<date ana="#checkedOut" when="1923-10-30"></date>
           <bibl ana="#borrowedItem" corresp="mep:00f33k">
           <title>Ford's plays</title></bibl>
           <date ana="#returned" when="1923-03">March</date>
@@ -135,11 +141,13 @@
 
 
 
-        <note>? <date when="1923-11-07">Nov. 7</date>
-        brought back <bibl corresp="mep:00167r"><title>Night and Day</title></bibl>
-        <date when="1923-11-07">Nov. 7</date></note>
-
-
+       <ab ana="#borrowingEvent">
+       	? 
+       	brought back <bibl ana="#borrowedItem" corresp="mep:00167r"><title>Night and Day</title></bibl>
+       	<date ana="#returned" when="1923-11-07">Nov. 7</date>
+       </ab>
+        	
+        	<note><date when="1923-11-07">Nov. 7</date></note>
 
         <ab>
           <date when="1924-01-26">Jan 26</date>
@@ -159,9 +167,13 @@
 
 
         </div>
-        <div type="verso"> <pb facs="#s2"/>
-        <!-- verso blank --></div>
+        <div type="verso"> 
+        	<pb facs="#s2"/>
+        <!-- verso blank -->
+        </div>
       </div>
+    	
+    	
       <div type="card">
 	<div type="recto">
 
@@ -310,11 +322,11 @@
             <title> The Quarter in 2.</title></bibl>
             <date ana="#returned" when="1926-07-18">" 18</date>
 	  </ab>
-
-
-
+		
 	</div>
-	<div type="verso"> <pb facs="#s4"/>
+      	
+	<div type="verso"> 
+		<pb facs="#s4"/>
 
 
 	<ab ana="#borrowingEvent">
@@ -356,8 +368,8 @@
 	  <date ana="#checkedOut" when="1926-03-15"/>
 	  <bibl ana="#borrowedItem" corresp="mep:00h80h">
 	  <title>Great American Novel</title></bibl>
-	  <note><date when="1926-09-29">sept.29</date>
-	  .h.c given</note>
+	  <note><date when="1926-09-29">sept.29</date>.h.c</note> 
+		<note>given</note>
 	</ab>
 
 	<ab ana="#borrowingEvent">
@@ -409,7 +421,7 @@
 	  <date ana="#checkedOut" when="1926-04-06"/>
 	  <bibl ana="#borrowedItem" corresp="mep:004w6p">
 	  <title>Hamlet</title> (<author>Clark &amp; Wright</author>)</bibl>
-	  <date ana="#returned" when="1926-11-04">Nov 4</date>
+	  <date when="1926-11-04">Nov 4</date>
 	  <note>h.c. B.B.</note>
 	</ab>
 
