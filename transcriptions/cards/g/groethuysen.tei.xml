@@ -4,13 +4,10 @@
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
-                <title>An Encoded Transcription of a Borrower's Card: <persName ref="four">Fournerey</persName></title>
-                <respStmt ana="#elspeth">
-                    <persName>Green, Elspeth</persName>
-                    <resp>transcriber</resp>
-                </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
-                    <resp>encoder</resp>
+                <title>An Encoded Transcription of a Borrower's Card: <persName ref="groe.2">Groethuysen</persName></title>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>transcriber &amp; encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -33,22 +30,20 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder" ana="#four"><persName>Fournerey</persName></person>
+                <person role="cardholder" ana="#groe.2"><persName>Groethuysen</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
-            <change who="elspeth" when="2015-06-19">
+            <change who="elspeth" when="2015-07-23">
                 <ab>
                     Transcribed cards.
-                    
-                    
                     
                     	
                 </ab>
             </change>
         </revisionDesc>
     </teiHeader>
-    <facsimile xml:base="pudl0123/825298/f/fournerey/">
+    <facsimile xml:base="pudl0123/825298/g/groethuysen/">
         <surface xml:id="s1">
             <graphic url="00000001.jp2"/>
         </surface>
@@ -58,33 +53,32 @@
         
         
         
+        
+        
     </facsimile>
     <text>
         <body>
             <div type="card">
-               <div type="recto">
-                    <pb facs="#s1"/>
-                   <head>
-                	,	<persName ref="four">FOURNEREY</persName>.
-                		<address><persName ref="four">Monsieur</persName>
-                		<orgName>Lyceé Louis le Grand</orgName></address>
-                   </head>
+                <div type="recto">
+                <pb facs="#s1"/>
+               			 <head>1936 <persName ref="groe">GROETHUYSEN</persName></head>
+               				
+               	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-12-31">Dec 31</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g11n"><title>Eggs &amp; Batter</title>2nd copy</bibl>			
+                        <date ana="#returned" when="1937-01-05">Jan 5</date>
+                    </ab>
+                    
+               			
+                </div>
+               	
+               	<div type="verso">
+               	<pb facs="#s2"/>
+               	<!-- verso blank -->
+               	</div>
                 
-                   <ab ana="#borrowingEvent">
-                       <date ana="#checkedOut" notBefore="1920-03-13" notAfter="1941-03-13">March 13</date>	
-                       <bibl ana="#borrowedItem" corresp="mep:00jz7f">
-                           <title>Vogue's Book of etiquette</title>
-                       </bibl>
-                       <date ana="#returned" notBefore="1920-04-27" notAfter="1941-04-27">Ap. 27</date>
-                   </ab>
-                   
-               </div> 
-                
-               <div type="verso"> 
-                <pb facs="#s2"/>
-                <!-- verso blank -->
-               </div> 
-            </div>    
+            </div>
         </body>
     </text>
 </TEI>
