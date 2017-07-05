@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -63,7 +65,7 @@
             <div type="card">
                 <pb facs="#s1"/>
                 <div type="recto">
-                    <ab>
+                   <head>
                 
                         <date when="1937">1937</date>		
                         <persName ref="#elfv">Elfvik</persName>
@@ -72,41 +74,139 @@
                 <date when="1937">1937</date>		<persName ref="elfv">ELFVIK		Miss Hakansson</persName>
                 						
                         <address><street>71 rue du Cardinal Lemoine</street></address>
-                				
-                		<date when="1937-06-16">June 16</date>.			1m. 1v.			25.00
+                		</head>		
+                		<note><date when="1937-06-16">June 16</date>.			1m. 1v.			25.00
                 						dep. pc (left dep.)	50.00
-                								  Oct 1
+                								  <date when="1937-10-01">Oct 1 </date> </note>
                 								  
-                        <date ana="#checkedOut" when="1937-06-18">June 18 </date>	<bibl ana="#borrowedItem" corresp="mep:00213c"><title>Big Money</title></bibl><date ana="#returned" when="1937-06-22">June 22 </date>
-                        <date ana="#checkedOut" when="1937-06-18">June 18 </date>	<bibl ana="#borrowedItem" corresp="mep:002d98"><title>Murder Must Advertise</title></bibl><date ana="#returned" when="1937-06-22">June 22 </date>
-                        (0.50 a day)	
-                        <date ana="#checkedOut" when="1937-06-22">June 22 </date>	<bibl ana="#borrowedItem" corresp="mep:00g17h"><title>I found no peace</title></bibl><date ana="#returned" when="1937-06-25">June 25 </date>
-                        <date ana="#checkedOut" when="1937-06-25">June 25 </date>	<bibl ana="#borrowedItem" corresp="mep:00g18t"><title>Revolt in the Desert</title></bibl><date ana="#returned" when="1937-06-29">June 29 </date>
-                        <date ana="#checkedOut" when="1937-06-25">June 25 </date>	<bibl ana="#borrowedItem" corresp="mep:004j1c"><title>Busmans Honeymoon</title></bibl><date ana="#returned" when="1937-06-29">June 29 </date>
-                	   (0.50 a day)		
-                        <date ana="#checkedOut" when="1937-06-29">June 29 </date>	<bibl ana="#borrowedItem" corresp="mep:00g194"><title>We Europeans</title></bibl><date ana="#returned" when="1937-07-02">July 02 </date>
-                        <date ana="#checkedOut" when="1937-07-02">July 02 </date>	<bibl ana="#borrowedItem"><title><unclear/></title></bibl><date ana="#returned" when="1937-07-07">July 07</date>
-                        <date ana="#checkedOut" when="1937-07-03">July 03 </date>	<bibl ana="#borrowedItem" corresp="mep:003z04"><title>Time + Tide</title></bibl><date ana="#returned" when="1937-07-07">July 07 </date>
-                        (0.50 a day)
-                        <date ana="#checkedOut" when="1937-07-03">July 03 </date>	<bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl><date ana="#returned" when="1937-07-07">July 07 </date>
-                        (0.50 a day) 
-                        <date ana="#checkedOut" when="1937-07-03">July 03 </date>	<bibl ana="#borrowedItem"><title>Atlantic <unclear/> of a</title></bibl><date ana="#returned" when="1937-07-07">July 07 </date>
-                			pd 8v.		
-                        <date ana="#checkedOut" when="1937-07-07">July 07 </date>	<bibl ana="#borrowedItem" corresp="mep:00g20m"><title>On the way</title></bibl><date ana="#returned" when="1937-07-20">July 20 </date>
-                        renewed. July 16
-                	Renewed July 16 - August 16					25
-                        <date ana="#checkedOut" when="1937-07-16">July 16 </date>	<bibl ana="#borrowedItem" corresp="mep:003z04"><title>Time + Tide</title></bibl><date ana="#returned" when="1937-07-20">July 20 </date>
-                        (0.50 a day) 
-                        <date ana="#checkedOut" when="1937-07-16">July 16 </date>	<bibl ana="#borrowedItem" corresp="mep:002j4t"><title>New Statesman</title></bibl><date ana="#returned" when="1937-07-20">July 20 </date>
-                (0.50 a day)
-                        <date ana="#checkedOut" when="1937-07-20">July 20 </date>	<bibl ana="#borrowedItem" corresp="mep:009m9m"><title>It had to happen</title></bibl><date ana="#returned" when="1937-07-21">July 21 </date>
-                        <date ana="#checkedOut" when="1937-07-21">July 21 </date>	<bibl ana="#borrowedItem" corresp="mep:002p57"><title>Citadel</title></bibl><date ana="#returned" when="1937-10-01">Oct 01</date>
-                	p.c. Sept 25		
+                       <ab ana="#borrowingEvent">
+                           <date ana="#checkedOut" when="1937-06-18">June 18 </date>	
+                           <bibl ana="#borrowedItem" corresp="mep:00213c">
+                               <title>Big Money</title></bibl>
+                           <date ana="#returned" when="1937-06-22">June 22 </date>
+                           
+                       </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-06-18">June 18 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:002d98">
+                                <title>Murder Must Advertise</title></bibl>
+                            <date ana="#returned" when="1937-06-22">June 22 </date>
+                            <note>(0.50 a day)	</note>
+                        </ab>
+                    
+                        
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-06-22">June 22 </date>
+                            <bibl ana="#borrowedItem" corresp="mep:00g17h">
+                                <title>I found no peace</title></bibl>
+                            <date ana="#returned" when="1937-06-25">June 25 </date>
+                        </ab>
+                    
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-06-25">June 25 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:00g18t">
+                                <title>Revolt in the Desert</title></bibl>
+                            <date ana="#returned" when="1937-06-29">June 29 </date>
+                        </ab>
+                    
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-06-25">June 25 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:004j1c">
+                                <title>Busmans Honeymoon</title></bibl>
+                            <date ana="#returned" when="1937-06-29">June 29 </date>
+                            <note>(0.50 a day)	</note>	
+                        </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-06-29">June 29 </date>
+                            <bibl ana="#borrowedItem" corresp="mep:00g194">
+                                <title>We Europeans</title></bibl>
+                            <date ana="#returned" when="1937-07-02">July 02 </date>
+                        </ab>
+                    
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-02">July 02 </date>
+                            <bibl ana="#borrowedItem">
+                                <title><unclear/></title></bibl>
+                            <date ana="#returned" when="1937-07-07">July 07</date>
+                        </ab>
+                    
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-03">July 03 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:003z04">
+                                <title>Time + Tide</title></bibl>
+                            <date ana="#returned" when="1937-07-07">July 07 </date>
+                            <note>(0.50 a day)</note>
+                        </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-03">July 03 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:002j4t">
+                                <title>New Statesman</title></bibl>
+                            <date ana="#returned" when="1937-07-07">July 07 </date>
+                            <note>(0.50 a day) </note>
+                        </ab>
+                    
+                       <ab ana="#borrowingEvent">
+                           <date ana="#checkedOut" when="1937-07-03">July 03 </date>	
+                           <bibl ana="#borrowedItem" corresp="mep:00151m">
+                               <title>Atlantic <unclear/> of a</title></bibl>
+                           <date ana="#returned" when="1937-07-07">July 07 </date>
+                           <note>pd 8v.	</note>	
+                       </ab>
+                    
+                       <ab ana="#borrowingEvent">
+                           <date ana="#checkedOut" when="1937-07-07">July 07 </date>
+                           <bibl ana="#borrowedItem" corresp="mep:00g20m">
+                               <title>On the way</title></bibl>
+                           <date ana="#returned" when="1937-07-20">July 20 </date>
+                           <note>renewed. <date when="1937-07-16">July 16</date></note>
+                       </ab>
+                    
+                        
+                	<note>Renewed <date from="1937-07-16" to="1937-08-16">July 16 - August 16</date>					25</note>
                 	
-                		tell <persName ref="elfv">Mme Elfvik</persName> about closing
-                		when she next comes in
-                					paid 5v fine
-                    </ab>
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-16">July 16 </date>
+                            <bibl ana="#borrowedItem" corresp="mep:003z04">
+                                <title>Time + Tide</title></bibl>
+                            <date ana="#returned" when="1937-07-20">July 20 </date>
+                            <note>(0.50 a day) </note>
+                        </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-16">July 16 </date>
+                            <bibl ana="#borrowedItem" corresp="mep:002j4t">
+                                <title>New Statesman</title></bibl>
+                            <date ana="#returned" when="1937-07-20">July 20 </date>
+                            <note>(0.50 a day)</note>
+                        </ab>
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-20">July 20 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:009m9m">
+                                <title>It had to happen</title></bibl>
+                            <date ana="#returned" when="1937-07-21">July 21 </date>
+                        </ab>
+                    
+                    
+                        <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1937-07-21">July 21 </date>	
+                            <bibl ana="#borrowedItem" corresp="mep:002p57">
+                                <title>Citadel</title></bibl>
+                            <date ana="#returned" when="1937-10-01">Oct 01</date>
+                            <note>p.c. <date when="1937-09-25">Sept 25</date></note>	
+                        </ab>	
+                	
+                		<note>tell <persName ref="elfv">Mme Elfvik</persName> about closing
+                		when she next comes in</note>
+                					<note>paid 5v fine</note>
+                    
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -111,7 +113,7 @@
             				<bibl ana="#borrowedItem" corresp="mep:000t2x">
             					<title>It cant Happen Here</title>
             				</bibl>
-            				<date ana="#returned" when="1940-01-08"></date>
+            				<date ana="#returned" when="1940-01-08"/>
             			</ab> 
             																		<note>deduct postage
 	                																going &amp; coming returned		9 frs</note>
@@ -141,7 +143,7 @@
             			</ab>
             			
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1940-01-19"></date>
+            				<date ana="#checkedOut" when="1940-01-19"/>
             				<bibl ana="#borrowedItem" corresp="mep:003s9j">
             					<title>Enbury Heath</title>
             				</bibl>				
@@ -297,14 +299,14 @@
             		<note>sub. paid to <date when="1940-12-30">Dec 30/40</date></note>
 	                												
 	                	<ab ana="#borrowingEvent">
-	                		<date ana="#checkedOut" when="1940-04-24"></date>
+	                		<date ana="#checkedOut" when="1940-04-24"/>
 	                		<bibl ana="#borrowedItem" corresp="mep:00213c">
 	                			<title>Big Money</title></bibl>					
 	                		<date ana="#returned" when="1940-05-22">May 22</date>
 	                	</ab>
             		
 	                	<ab ana="#borrowingEvent">
-	                		<date ana="#checkedOut" when="1940-04-24"></date>
+	                		<date ana="#checkedOut" when="1940-04-24"/>
 	                		<bibl ana="#borrowedItem" corresp="mep:003d2b">
 	                			<title>Phoebe's Guest House</title>
 	                		</bibl>		
@@ -342,10 +344,10 @@
             			</ab>
             		
 	                
-            			<note>paid <date ana="#checkedOut" when="1940-07-12">July 12</date> 50.00</note>
+            			<note>paid <date when="1940-07-12">July 12</date> 50.00</note>
             			
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1940-06-03"></date>
+            				<date ana="#checkedOut" when="1940-06-03"/>
             				<bibl ana="#borrowedItem" corresp="mep:00207b">
             					<title>To Have &amp; Have Not</title>
             				</bibl>		
@@ -396,7 +398,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1940-08-27"></date>
+            				<date ana="#checkedOut" when="1940-08-27"/>
             				<bibl ana="#borrowedItem" corresp="mep:00bd7k">
             					<title>Sartor Resartus</title>
             				</bibl>					
@@ -502,7 +504,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-01-06"></date>
+            				<date ana="#checkedOut" when="1941-01-06"/>
             				<bibl ana="#borrowedItem" corresp="mep:009q1z">
             					<title>Norman Douglas</title>, 
             					<author>Tomlinson</author>
@@ -527,8 +529,8 @@
 	                </ab>
             		
             		
-	                <note><date ana="#checkedOut" when="1941">1941</date>
-	                			(still has <bibl ana="#borrowedItem" corresp="mep:001f24"><title>South Wind</title></bibl>)</note>
+	                <note><date when="1941">1941</date>
+	                			(still has <bibl corresp="mep:001f24"><title>South Wind</title></bibl>)</note>
 	                
             		<ab ana="#borrowingEvent">
             			<date ana="#checkedOut" when="1941-01-31">Jan 31</date>	
@@ -541,7 +543,7 @@
             		
             		<note>
 	                	Renewed <date from="1941-01-30" to="1941-04-30">Jan 30	-	April 30 1941</date>	A 2 vols	100
-	                	<persName ref="#thev.el">Me Theves</persName> returned <bibl ana="#borrowedItem" corresp="mep:00092s"><title>Mr Norris</title></bibl> <date ana="#returned" when="1941-02-20">Feb. 20</date>
+	                	<persName ref="#thev.el">Me Theves</persName> returned <bibl corresp="mep:00092s"><title>Mr Norris</title></bibl> <date when="1941-02-20">Feb. 20</date>
 	                </note>
             		
             		
@@ -669,7 +671,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-08-01"></date>
+            				<date ana="#checkedOut" when="1941-08-01"/>
             				<bibl ana="#borrowedItem" corresp="mep:009h19">
             					<title>Esther Waters</title>
             				</bibl>					
@@ -677,7 +679,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-08-01"></date>
+            				<date ana="#checkedOut" when="1941-08-01"/>
             				<bibl ana="#borrowedItem" corresp="mep:000b3c">
             					<title>Exiles</title>
             				</bibl>							
@@ -685,7 +687,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-08-01"></date>
+            				<date ana="#checkedOut" when="1941-08-01"/>
             				<bibl ana="#borrowedItem" corresp="mep:000x9x">
             					<title>Burmese Days</title>
             				</bibl>					
@@ -699,7 +701,7 @@
             			</ab>						
 	            		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-08-01"></date>
+            				<date ana="#checkedOut" when="1941-08-01"/>
             				<bibl ana="#borrowedItem" corresp="mep:00012k">
             					<title>Grapes of Wrath</title>
             				</bibl>					
@@ -707,7 +709,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-08-01"></date>
+            				<date ana="#checkedOut" when="1941-08-01"/>
             				<bibl ana="#borrowedItem" corresp="mep:00gs1q">
             					<title>Who called that Lady a Shipper</title>
             				</bibl>	
@@ -723,7 +725,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1941-09-11"></date>
+            				<date ana="#checkedOut" when="1941-09-11"/>
             				<bibl ana="#borrowedItem" corresp="mep:004z1p">
             					<title>Chamber Music</title>
             				</bibl>					
@@ -816,7 +818,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1939-07-12"></date>
+            				<date ana="#checkedOut" when="1939-07-12"/>
             				<bibl ana="#borrowedItem" corresp="mep:00b659">
             					<title>Victory</title>
             					<biblScope unit="volume" from="1">vol I</biblScope>
@@ -825,7 +827,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1939-07-12"></date>
+            				<date ana="#checkedOut" when="1939-07-12"/>
             				<bibl ana="#borrowedItem" corresp="mep:00b659">
             					<title>Victory</title>
             					<biblScope unit="volume" from="2">vol II</biblScope>
@@ -846,7 +848,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1939-07-12"></date>
+            				<date ana="#checkedOut" when="1939-07-12"/>
             				<bibl ana="#borrowedItem" corresp="mep:003m67">
             					<title>Black Mischief</title>
             				</bibl> - 				
@@ -854,7 +856,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1939-07-12"></date>
+            				<date ana="#checkedOut" when="1939-07-12"/>
             				<bibl ana="#borrowedItem" corresp="mep:000n17">
             					<title>To the North</title>
             				</bibl>. 					
@@ -862,7 +864,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1939-07-12"></date>
+            				<date ana="#checkedOut" when="1939-07-12"/>
             				<bibl ana="#borrowedItem" corresp="mep:003q7c">
             					<title>Women are like that</title>
             				</bibl>.			
@@ -870,7 +872,7 @@
             			</ab>
             		
             			<ab ana="#borrowingEvent">
-            				<date ana="#checkedOut" when="1939-07-12"></date>
+            				<date ana="#checkedOut" when="1939-07-12"/>
             				<bibl ana="#borrowedItem" corresp="mep:00381x">
             					<title>Peking Picknic</title>
             				</bibl>.					
@@ -930,7 +932,7 @@
             				<bibl ana="#borrowedItem" corresp="mep:00gs5z">
             					<title>Gordon Craig and the Theatre</title>
             				</bibl>
-            				<date ana="#returned" when="1941-11-28"></date>
+            				<date ana="#returned" when="1941-11-28"/>
             			</ab>
             		
             		
@@ -949,7 +951,7 @@
             		
 	                	
 	                	<note>? returned summer
-	                	of <date ana="#returned" when="1945">1945</date>
+	                	of <date when="1945">1945</date>
 	                		K
 	                	</note>
 	                

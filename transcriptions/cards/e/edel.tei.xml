@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,64 +69,169 @@
                 <div type="recto">
                 <pb facs="#s1"/>
                 
-            <ab>
-                <date when="1936">1936</date> 
+            
+                <head><date when="1936">1936</date> 
                 <persName ref="#edel.le">León Edel</persName>
                 
            
                 			<address><persName>Mr &amp; Mrs León Edel</persName>
                 			
-                <street>5 rue de Tournon</street></address>
+                <street>5 rue de Tournon</street></address></head>
                 			
-                			1	m	2	vols			25
+                			<note>1	m	2	vols			25
                 							dep			60
-                							refunded 	30v
-                									<unclear/> <persName ref="edel.le">Edel</persName>
+                							refunded 	30v</note>
+                									<note><unclear/> <persName ref="edel.le">Edel</persName></note>
                 
-                
-                <date ana="#checkedOut" when="1936-11-19">Nov 19</date> <bibl ana="#borrowedItem" corresp="mep:00fs5q"><title>Young Lonigan</title></bibl><date ana="#returned" when="1936-11-25">Nov 25</date>		
-             <date ana="#checkedOut" when="1936-11-25">Nov 25</date><bibl ana="#borrowedItem"><title> Nest of Simple Folk</title></bibl><date ana="#returned" when="1936-11-26"/>
-                <date ana="#checkedOut" when="1936-11-26"> Nov 26</date> <bibl ana="#borrowedItem"><title> History of Russian Revolution Vol I + II</title></bibl><date ana="#returned" when="1936-12-07">Dec 07</date>
-                <date ana="#checkedOut" when="1936-11-26"> Nov 26</date><bibl ana="#borrowedItem" corresp="mep:00fs7b"><title>Hazard of New Fortunes vol 1</title></bibl><date ana="#returned" when="1936-12-07">Dec 07</date>
-                <date ana="#checkedOut" when="1936-12-07">Dec 07</date><bibl ana="#borrowedItem"><title> Hazard of New Fortunes vol 2</title></bibl>frs paid <date ana="#returned" when="1936-12-21">Dec 21</date>
-           
-                							sent pc. <date when="1936-12-29">Dec 29</date>.
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1936-11-19">Nov 19</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00fs5q">
+                        <title>Young Lonigan</title></bibl>
+                    <date ana="#returned" when="1936-11-25">Nov 25</date>		
+            </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-11-25">Nov 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00825q">
+                            <title> Nest of Simple Folk</title></bibl>
+                    <date ana="#returned" when="1936-11-26"/>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1936-11-26"> Nov 26</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fs61">
+                            <title> History of Russian Revolution </title><biblScope unit="volume" from="1" to="2">Vol I + II</biblScope></bibl>
+                    <date ana="#returned" when="1936-12-07">Dec 07</date>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1936-11-26"> Nov 26</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fs7b"><title>Hazard of New Fortunes </title><biblScope unit="volume" from="1">vol 1</biblScope></bibl>
+                    <date ana="#returned" when="1936-12-07">Dec 07</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-12-07">Dec 07</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fs7b">
+                            <title> Hazard of New Fortunes </title><biblScope unit="volume" from="2">vol 2</biblScope></bibl>
+                   <note> frs paid </note>
+                    <date ana="#returned" when="1936-12-21">Dec 21</date>
+           </ab>
+                							<note>sent pc. <date when="1936-12-29">Dec 29</date>.</note>
                 							
-                <date ana="#checkedOut" when="1936-12-31"> Dec 31 </date><bibl ana="#borrowedItem" corresp="mep:00fs61"><title>History of the Russian Revolution Vol II</title></bibl><date ana="#returned" when="1937-01-07"> Jan 07</date>
-                <date ana="#checkedOut" when="1936-12-31"> Dec 31 </date><bibl ana="#borrowedItem" corresp="mep:00f83z"><title>Honey in the Horn</title></bibl><date ana="#returned" when="1937-01-04">Jan 04</date>
-                		
-                		Renewed <date from="1936-12-19">Dec 19 </date><date to="1937-01-19">- Jan 19</date>					25v
-                		
-                <date ana="#checkedOut" when="1937-01-04"> Jan 04 </date><bibl ana="#borrowedItem" corresp="mep:002d7n"><title>Have His Carcase</title></bibl><date ana="#returned" when="1937-01-06">Jan 06</date>
-                			(<unclear/> Jan 2 paid 3v)
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-12-31"> Dec 31 </date>
+                    <bibl ana="#borrowedItem" corresp="mep:00fs61">
+                        <title>History of the Russian Revolution </title><biblScope unit="volume" from="2">Vol II</biblScope></bibl>
+                    <date ana="#returned" when="1937-01-07"> Jan 07</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-12-31"> Dec 31 </date>
+                    <bibl ana="#borrowedItem" corresp="mep:00f83z">
+                        <title>Honey in the Horn</title></bibl>
+                    <date ana="#returned" when="1937-01-04">Jan 04</date>
+                	</ab>	
+                    
+                		<note>Renewed <date from="1936-12-19" to="1937-01-19">Dec 19 - Jan 19</date>					25v</note>
+                	
+                	<ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-01-04"> Jan 04 </date>
+                    <bibl ana="#borrowedItem" corresp="mep:002d7n">
+                        <title>Have His Carcase</title></bibl>
+                    <date ana="#returned" when="1937-01-06">Jan 06</date>
+                	</ab>	
+                	<note>	(<unclear/><date when="1937-01-02"> Jan 2</date> paid 3v)</note>
                 
-                <date ana="#checkedOut" when="1937-01-06"> Jan 06</date><bibl ana="#borrowedItem"><title> Murder must advertise</title></bibl><date ana="#returned" when="1937-01-07"> Jan 07</date>
-                <date ana="#checkedOut" when="1937-01-07"> Jan 07</date><bibl ana="#borrowedItem"><title> Great God Brown</title></bibl><date ana="#returned" when="1937-01-11"> Jan 11</date>
-                <date ana="#checkedOut" when="1937-01-07"> Jan 07</date><bibl ana="#borrowedItem"><title> Nine Tailors</title></bibl><date ana="#returned" when="1937-01-08"> Jan 08</date>
-                <date ana="#checkedOut" when="1937-01-08"> Jan 08</date><bibl ana="#borrowedItem"><title> Works of Marlowe</title></bibl><date ana="#returned" when="1937-01-11"> Jan 11</date>
-                <date ana="#checkedOut" when="1937-01-11"> Jan 11</date><bibl ana="#borrowedItem"><title> Chance acquaintance </title></bibl><date ana="#returned" when="1937-01-15"> Jan 15</date>
-                <date ana="#checkedOut" when="1937-01-11"> Jan 11</date><bibl ana="#borrowedItem"><title> Celebrated Cases of Charlie Chan</title></bibl><date ana="#returned" when="1937-01-14"> Jan 14</date>
-                <date ana="#checkedOut" when="1937-01-14"> Jan 14</date><bibl ana="#borrowedItem"><title> And quiet flows the Don</title></bibl><date ana="#returned" when="1937-01-19"> Jan 19</date>
-                <date ana="#checkedOut" when="1937-01-14"> Jan 14</date><bibl ana="#borrowedItem"><title> Rise of Silas Lapham 2 vols.</title></bibl><date ana="#returned" when="1937-01-27"> Jan 27</date>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-01-06"> Jan 06</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002d98">
+                        <title> Murder must advertise</title></bibl>
+                    <date ana="#returned" when="1937-01-07"> Jan 07</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-07"> Jan 07</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004n72">
+                            <title> Great God Brown</title></bibl>
+                    <date ana="#returned" when="1937-01-11"> Jan 11</date>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-07"> Jan 07</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002d1s">
+                            <title> Nine Tailors</title></bibl>
+                    <date ana="#returned" when="1937-01-08"> Jan 08</date>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-08"> Jan 08</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fs8n">
+                            <title> Works of Marlowe</title></bibl>
+                    <date ana="#returned" when="1937-01-11"> Jan 11</date>
+                </ab>
+                    <ab  ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-11"> Jan 11</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fs9z">
+                            <title> Chance acquaintance </title></bibl>
+                    <date ana="#returned" when="1937-01-15"> Jan 15</date>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-11"> Jan 11</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002b2j">
+                            <title> Celebrated Cases of Charlie Chan</title></bibl>
+                    <date ana="#returned" when="1937-01-14"> Jan 14</date>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-14"> Jan 14</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ft0f">
+                            <title> And quiet flows the Don</title></bibl>
+                    <date ana="#returned" when="1937-01-19"> Jan 19</date>
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-14"> Jan 14</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ft1r">
+                            <title> Rise of Silas Lapham </title><biblScope unit="volume" from="1" to="2">2 vols.</biblScope></bibl>
+                    <date ana="#returned" when="1937-01-27"> Jan 27</date>
+                </ab>
+                    
+                	<note>Renewed <date from="1937-01-19" to="1937-02-19">Jan 19 - Feb 19</date> <unclear/>					15v</note>
                 
-                	Renewed <date from="1937-01-19">Jan 19</date> <date to="1937-02-19">- Feb 19</date> <unclear/>					15v
-                
-                <date ana="#checkedOut" when="1937-01-27"> Jan 27</date><bibl ana="#borrowedItem"><title> A Forgone Conclusion</title></bibl><date ana="#returned" when="1937-02-02"> Feb 02</date> 
-                <date ana="#checkedOut" when="1937-01-27"> Jan 27</date><bibl ana="#borrowedItem"><title> Atlantic. October.</title></bibl><date ana="#returned" when="1937-01-28"> Jan 28</date> 
-                <date ana="#checkedOut" when="1937-02-01"> Feb 1 </date><bibl ana="#borrowedItem"><title> Modern Instance</title></bibl><date ana="#returned" when="1937-02-08"> Feb 8 </date> 
-                <date ana="#checkedOut" when="1937-02-02"> Feb 2 </date><bibl ana="#borrowedItem"><title> Famous Plays of 1933</title></bibl><date ana="#returned" when="1937-02-23"> Feb 23 </date> 
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1937-01-27"> Jan 27</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00ft22">
+                        <title> A Forgone Conclusion</title></bibl>
+                    <date ana="#returned" when="1937-02-02"> Feb 02</date> 
+               </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-01-27"> Jan 27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ft3c">
+                            <title> Atlantic.</title><biblScope unit="issue"> October.</biblScope></bibl>
+                    <date ana="#returned" when="1937-01-28"> Jan 28</date> 
+               </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-02-01"> Feb 1 </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ft4p">
+                            <title> Modern Instance</title></bibl>
+                    <date ana="#returned" when="1937-02-08"> Feb 8 </date> 
+                </ab>
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-02-02"> Feb 2 </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bn1n">
+                            <title> Famous Plays of 1933</title></bibl>
+                    <date ana="#returned" when="1937-02-23"> Feb 23 </date> 
             </ab>
                 </div>
            
                 <div type="verso">
                     <pb facs="#s2"/>
-                    <ab>
-                    <date ana="#checkedOut" when="1937-02-16"> Feb 16</date><bibl ana="#borrowedItem"><title> Letters. D.H. Lawrence.</title></bibl><date ana="#returned" when="1937-03-04"> March 04</date> 
-  
-                		Renewed. <date from="1937-02-19">Feb 19</date> <date to="1937-03-19">- March 19.</date>					15v
+                  
+                    <ab ana="borrowingEvent">
+                    <date ana="#checkedOut" when="1937-02-16"> Feb 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ft50">
+                            <title> Letters. D.H. Lawrence.</title></bibl>
+                    <date ana="#returned" when="1937-03-04"> March 04</date> 
+  </ab>
+                		<note>Renewed. <date from="1937-02-19" to="1937-03-19">Feb 19 - March 19.</date>					15v</note>
                
-                    <date ana="#checkedOut" when="1937-03-04">March 4</date><bibl ana="#borrowedItem"><title> Conversations in Ebury Street</title></bibl><date ana="#returned" when="1937-03-16"> March 16</date>
-                    </ab>
+               <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1937-03-04">March 4</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00ft69">
+                       <title> Conversations in Ebury Street</title></bibl>
+                    <date ana="#returned" when="1937-03-16"> March 16</date>
+               </ab>     
                 </div>
             </div>
             </body>

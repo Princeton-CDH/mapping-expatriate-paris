@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 <teiHeader type="text">
   <fileDesc>
     <titleStmt>
-      <title>An Encoded Transcription of a Borrower's Card: <persName ana="#hemi.er">Ernest Hemingway</persName></title>
-      <respStmt xml:id="elspeth">
+      <title>An Encoded Transcription of a Borrower's Card: <persName ref="#hemi.er">Ernest Hemingway</persName></title>
+      <respStmt ana="elspeth">
         <persName>Green, Elspeth</persName>
         <resp>transcriber</resp>
       </respStmt>
-      <respStmt xml:id="cwulfman">
+      <respStmt ana="cwulfman">
         <persName>Wulfman, Cliff</persName>
         <resp>encoder</resp>
       </respStmt>
@@ -118,7 +120,7 @@
         <head>
           <date when="1925">1925</date>
           <note>subs to March 23-1926</note>
-          <persName>HEMINGWAY</persName>
+          <persName ref="#hemi.er">HEMINGWAY</persName>
           <address><addrLine><del rend="overstrike">113 Rue N.D. des Champs</del></addrLine></address>
           <address><addrLine><del rend="overstrike">19 rue Froidevaux</del> 14e</addrLine></address>
           <note><date>winter 1927</date>
@@ -131,7 +133,7 @@
           </note>
         </head>
 
-        <note>copy of <bibl ana="#borrowedItem" corresp="mep:001x4m"><title>Farewell to Arms</title></bibl> =
+        <note>copy of <bibl corresp="mep:001x4m"><title>Farewell to Arms</title></bibl> =
         <measure type="currency" unit="dollar" quantity="1.87">$1.87</measure></note>
 
 
@@ -237,7 +239,7 @@
           <date ana="#checkedOut" when="1925-12-10">〃 〃</date>
           <bibl ana="#borrowedItem" corresp="mep:005269">
           <title>Children of the Age</title></bibl>
-          <date ana="#returned" when="1926-04-13" cert="medium" resp="#cwulfman">Apr 13</date>
+          <date ana="#returned" when="1926-04-13">Apr 13</date>
         </ab>
 
         <ab ana="#borrowingEvent">
@@ -327,7 +329,7 @@
         <head>
           <date when="1926">1926</date>
           <date when="1926-04-26">Ap.26</date>
-          <persName>HEMINGWAY</persName>
+          <persName ref="#hemi.er">HEMINGWAY</persName>
 
           <del rend="overstrike">
             to
@@ -496,7 +498,9 @@
         <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1926-11-04">Nov 4</date>
           <bibl ana="#borrowedItem" corresp="mep:composition">
-          <title>Composition G Stein</title></bibl>
+          <title>Composition</title>
+            <author>G Stein</author>
+          </bibl>
           <date ana="#returned" when="1927-02-28">Feb 28</date>
         </ab>
 
@@ -508,7 +512,7 @@
         </ab>
 
         <ab ana="#borrowingEvent">
-          <date ana="#checkedOut" when="19226-12-16">Dec 16</date>
+          <date ana="#checkedOut" when="1926-12-16">Dec 16</date>
           <bibl ana="#borrowedItem" corresp="mep:00jq1n">
           <title>Spanish Journey</title></bibl>
           <date ana="#returned" when="1927-03-12">Mch 12</date>
@@ -550,7 +554,7 @@
         <pb facs="#s3"/>
         <head>
           <date when="1927">1927</date>
-          <persName>HEMINGWAY</persName>
+          <persName ref="#hemi.er">HEMINGWAY</persName>
           <address>
             <addrLine>6 rue Férou VIe</addrLine>
           </address>
@@ -631,10 +635,10 @@
         </ab>
 
         <ab ana="#borrowingEvent">
-          <date ana="#checkedOut">〃 14</date>
+          <date ana="#checkedOut" when="1927-11-14">〃 14</date>
           <bibl ana="#borrowedItem" corresp="mep:006k42">
           <title>Story of Ivy</title></bibl>
-          <date ana="#returned">Nov 26</date>
+          <date ana="#returned" when="1927-11-26">Nov 26</date>
         </ab>
 
 
@@ -674,7 +678,7 @@
         </ab>
 
         <ab ana="#borrowingEvent">
-          <date ana="#checkedOut" when="1927-12-07" cert="high"/>
+          <date ana="#checkedOut" when="1927-12-07"/>
           <bibl ana="#borrowedItem" corresp="mep:gallowsreach">
           <title>Gallows Reach</title></bibl>
           <date ana="#returned" when="1928-02-06">Feb. 6</date>
@@ -749,7 +753,7 @@
       <div type="verso">
         <pb facs="#s4"/>
         <head>
-          <persName>HEMINGWAY</persName>
+          <persName ref="#hemi.er">HEMINGWAY</persName>
         </head>
 
         <ab ana="#borrowingEvent">
@@ -765,7 +769,7 @@
           <title>Genius &amp; Character.</title></bibl>
         </ab>
 
-        <note> S.B. received cheque for Frs. 350 for E.H.'s account <date when="1929-02-22">Feb 22 1929</date></note>
+        <note> <persName ref="#beac.sy">S.B.</persName> received cheque for Frs. 350 for <persName ref="#hemi.er">E.H.</persName>'s account <date when="1929-02-22">Feb 22 1929</date></note>
 
         <note>
           <persName>Madame Jeanie Leitner</persName>
@@ -778,7 +782,8 @@
         <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1929-04-23">Ap 23</date>
           <bibl ana="#borrowedItem" corresp="mep:007q5q">
-          <title>Dial</title> <date>Dec. 1928</date></bibl>
+          <title>Dial</title> <date>Dec. 1928</date>
+          </bibl>
         </ab>
 
         <ab ana="#borrowingEvent">
@@ -805,7 +810,9 @@
         <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1929-04-26">〃 26</date>
           <bibl ana="#borrowedItem" corresp="mep:007q5q">
-          <title>Dial</title> <date when="1929-01">January 1929</date></bibl>
+          <title>Dial</title> 
+            <date when="1929-01">January 1929</date>
+          </bibl>
         </ab>
 
         <ab ana="#borrowingEvent">
@@ -835,18 +842,21 @@
           <date ana="#checkedOut" when="1929-06-05">〃 5</date>
           <bibl ana="#borrowedItem" corresp="mep:001t7q">
           <title>Three Lives</title></bibl>
+          <date ana="#returned" when="1929-06-21"></date>
         </ab>
 
         <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1929-06-05">〃 5</date>
           <bibl ana="#borrowedItem" corresp="mep:turpincomes">
           <title>Mlle Turpin comes</title></bibl>
+          <date ana="#returned" when="1929-06-21"></date>
         </ab>
 
         <ab ana="#borrowingEvent">
           <date ana="#checkedOut" when="1929-06-21">〃 21</date>
           <bibl ana="#borrowedItem" corresp="mep:contemprussian">
           <title>Contemporary Russian Literature</title></bibl>
+          <date ana="#returned" when="1929-06-24"></date>
         </ab>
 
         <ab ana="#borrowingEvent">
@@ -869,7 +879,7 @@
         gave <bibl corresp="mep:002m04">
         <title>Sun Also Rises</title></bibl>
         <bibl corresp="mep:002q9r">
-        <title>In Our Time</title> to <persName>A. Marcos</persName></bibl>
+        <title>In Our Time</title></bibl> to <persName>A. Marcos</persName>
         <unclear>wants <bibl corresp="mep:005592">
         <title>T. of S.</title></bibl></unclear>
         </note>
@@ -883,7 +893,7 @@
         <pb facs="#s5"/>
         <head>
           <date when="1929">1929</date>
-          <persName>HEMINGWAY</persName>
+          <persName ref="#hemi.er">HEMINGWAY</persName>
         </head>
 
         <ab ana="#borrowingEvent">
@@ -960,7 +970,8 @@
                 <date when="1929-11-23">Nov 23</date> paid ------ 168.90
         </ab>
       </div>
-      <div type="verso"> <pb facs="#s6"/>
+      <div type="verso">
+        <pb facs="#s6"/>
       <!-- verso blank -->
       </div>
     </div>
@@ -970,7 +981,7 @@
         <pb facs="#s7"/>
         <head>
           <date when="1931">1931</date>
-          <persName>HEMINGWAY</persName>
+          <persName ref="#hemi.er">HEMINGWAY</persName>
           <date when="1931-09-07">Sept 7</date>
         </head>
 
@@ -1009,7 +1020,7 @@
         <pb facs="#s9"/>
         <head>
           <date when="1937">1937</date>
-          <persName>HEMINGWAY Ernest</persName>
+          <persName ref="#hemi.er">HEMINGWAY Ernest</persName>
           <address><addrLine>Key West Florida</addrLine></address>
           <address><addrLine>Majestic Hotel Barcelona</addrLine></address>
         </head>
@@ -1026,14 +1037,14 @@
 
 
         <note>
-          <date ana="#checkedOut" when="1938-12">1938 Dec</date>
-          borrowed <bibl ana="borrowedItem" corresp="mep:005714">
+          <date when="1938-12">1938 Dec</date>
+          borrowed <bibl corresp="mep:005714">
           <title>New Masses</title></bibl> &amp; other papers returned
 	</note>
 
         <note>
           <date when="1938-03-30">March 30</date>
-          <rs>SB</rs> sent off on <rs>Queen Mary</rs> Hemingway's play
+          <persName ref="#beac.sy">SB</persName> sent off on <rs>Queen Mary</rs> <persName ref="#hemi.er">Hemingway</persName>'s play
           to <address>
           <persName>Maxwell E. Perkins</persName>
           <addrLine>Scribner's, 597 5th Ave. N.Y.</addrLine>
@@ -1044,18 +1055,18 @@
 
         <note>
           <date when="1938-03-26">March 26</date>
-          <lb/>Hemingway gave A.M. $50
+          <lb/><persName ana="#hemi.er">Hemingway</persName> gave A.M. $50
           <lb/>changed at 32 frs 1600
-          <lb/>he bought from AM 636
+          <lb/>he bought from <persName ana="#monn.ad">AM</persName> 636
           <lb/>balance 964
         </note>
 
         <note>
           <date when="1938-03-27">March 27</date>
           <lb/>bought at Shakespeare &amp; Co 113
-          <lb/> SB refunded 900 851
+          <lb/> <persName ref="#beac.sy">SB</persName> refunded 900 851
           <lb/> less 113 787
-          <lb/> 787 credit E.H. 64
+          <lb/> 787 credit <persName ref="#hemi.er">E.H.</persName> 64
           <lb/> less reviews (forgot to charge)?
         </note>
       </div>
@@ -1073,7 +1084,7 @@
         <pb facs="#s11"/>
         <head>
           <date when="1933">1933</date>
-          <persName>Hemingway</persName>
+          <persName ref="#hemi.er">Hemingway</persName>
         </head>
 
         <ab ana="#borrowingEvent">
@@ -1118,7 +1129,7 @@
         <pb facs="#s13"/>
         <head>
           <date when="1938">1938</date>
-          <persName>Hemingway, Ernest</persName>
+          <persName ref="#hemi.er">Hemingway, Ernest</persName>
         </head>
 
         <ab ana="#borrowingEvent">
@@ -1145,6 +1156,7 @@
           <date ana="#checkedOut" when="1938-09-30">Sept. 30</date>
           <bibl ana="#borrowedItem" corresp="mep:00576p">
           <title>Homage to Catalonia</title></bibl>
+          <date ana="#returned" when="1938-10-26"></date>
         </ab>
 
         <ab ana="#borrowingEvent">
@@ -1163,7 +1175,7 @@
           <date when="1938-11-28">Nov 28</date> 5 copies of <bibl corresp="mep:005789">
           <title>the Fifth column</title></bibl>
           <lb/>arrived from Paris branch Brentanos (?!)
-        <lb/>to replace 5 copies <ref>SB</ref> gave to E.H.</note>
+        <lb/>to replace 5 copies <persName ref="#beac.sy">SB</persName> gave to <persName ref="#hemi.er">E.H.</persName></note>
       </div>
       <div type="verso">
         <pb facs="#s14"/>
