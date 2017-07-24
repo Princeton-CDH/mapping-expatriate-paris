@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -24,11 +27,11 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                
+
             </sourceDesc>
         </fileDesc>
 	<profileDesc>
-	  <textClass>          
+	  <textClass>
             <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
 	  </textClass>
 	  <particDesc>
@@ -65,37 +68,61 @@
                     				            <street>76 rue de Seine</street><addrLine> (Chez <persName>Mrs Newcomb</persName>)</addrLine>
                     				            <street>131 Bubbling Well Road</street>
                     					        <settlement>Shanghai</settlement></address>
-                    </head>			
-                    <ab>
+                    </head>
+                    <note>
                     			subscription 6 mos. - 1 vol			9 60
+                    </note>
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-02">Dec. 2nd</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ds45"><title>Webster's White Devil</title></bibl>
+                        <date ana="#returned" when="1900-01-05">    </date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut">Dec. 2nd</date>	<bibl ana="#borrowedItem" corresp="mep:00ds45"><title>Webster's White Devil</title></bibl>
-                    
-                    			            <bibl ana="#borrowedItem" corresp="mep:00ds5g"><title>Wire</title></bibl>							<date ana="#returned">Jan 5</date>
-                    			
-                    <date ana="#checkedOut">Jan 5th</date>	<bibl ana="#borrowedItem" corresp="mep:00ds6s"><title>Sanscritt Literature</title></bibl>			<date ana="#checkedOut">Jan 16</date>
-                    					    <bibl ana="#borrowedItem" corresp="mep:009z54"><title>Marlowe</title></bibl>		
-                    					
-                    <date ana="#checkedOut">Jan 15</date>		<bibl ana="#borrowedItem" corresp="mep:00ds73"><title>Queen of China</title></bibl>
-                    
-                    
-                    <date ana="#checkedOut">Feb 27</date>		<bibl ana="#borrowedItem" corresp="mep:00ds8d"><title>Humour of Homer</title>, <author>Butler</author></bibl>
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-02">   </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ds5g"><title>Wire</title></bibl>
+                        <date ana="#returned" when="1900-01-05">Jan 5</date>
                     </ab>
-                    <ab>
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-05">Jan 5th</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ds6s"><title>Sanscritt Literature</title></bibl>
+                        <date ana="#returned" when="1900-01-16">Jan 16</date>
+                    </ab>
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-05">   </date>
+                        <bibl ana="#borrowedItem" corresp="mep:009z54"><title>Marlowe</title></bibl>
+                        <date ana="#returned" when="1900-01-16">    </date>
+                    </ab>
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-16">Jan 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ds73"><title>Queen of China</title></bibl>
+                    </ab>
+
+
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-02-27">Feb 27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00ds8d"><title>Humour of Homer</title>,
+                            <author>Butler</author></bibl>
+                    </ab>
+
+                    <note>
                     				<address><addrLine>Poste Restante</addrLine>
                     				<settlement>Colombo,</settlement> <country>Ceylon</country></address>
-                    				
+
                     					<address><settlement>Colombo</settlement> <country>(Ceylon)</country> <name>Branch of the
                     				 Hong-Kong + Shanghai Bank</name></address>
-                    			
+
                     			  <address><addrLine>add. Poste Restante</addrLine>
                     			  		<settlement>Colombo</settlement></address>
-                    </ab>			  		
+                    </note>
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
-                    
+
                     <!-- Verso Blank -->
                 </div>
             </div>

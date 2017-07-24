@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,18 +67,38 @@
                 				                        <street>14 rue Henri Say</street><settlement>Arrieres</settlement>
                 				                        </address>
                 </head>
-                <ab>    
-                						3 mos	1  v  S		50
-                									  dep	50
-                </ab>
-                <ab>
-                <date ana="#checkedOut" when="1941-11-06">Nov 6</date>	<bibl ana="#borrowedItem" corresp="mep:001n2s"><title>Mill on The Floss</title></bibl> - <bibl ana="#borrowedItem" corresp="mep:002z3t"><title>Silas Marner</title></bibl>	<date ana="#returned" when="1941-11-13">Nov 13</date>
-                <date ana="#checkedOut" when="1941-11-13">Nov 13</date>	<bibl ana="#borrowedItem" corresp="mep:002z44"><title>Scenes of Clerical Life</title> (N.ed.)</bibl>		<date ana="#returned" when="1941-11-27">Nov 27</date>
-                <date ana="#checkedOut" when="1941-11-27">Nov 27</date>	<bibl ana="#borrowedItem" corresp="mep:002z5f"><title>Mr Midshipman Easy</title></bibl>					<date ana="#returned" when="1941-12-11">Dec 11</date>
-                <date ana="#checkedOut" when="1941-12-11">Dec 11</date>	<bibl ana="#borrowedItem" corresp="mep:002z6r"><title>Quentin Durward</title></bibl>						<date ana="#returned" when="1941-12-24">Déc. 24</date>
                 
-                						left deposit
+                						<note>3 mos	1  v  S		50
+                									  dep	50</note>
+                
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1941-11-06">Nov 6</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001n2s"><title>Mill on The Floss</title></bibl> 
+                    <note>-</note>
+                    <date ana="#returned" when="1941-11-13"></date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-06"></date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002z3t"><title>Silas Marner</title></bibl>	
+                    <date ana="#returned" when="1941-11-13">Nov 13</date>
                 </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-13">Nov 13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002z44"><title>Scenes of Clerical Life</title> <edition>(N.ed.)</edition></bibl>	
+                    <date ana="#returned" when="1941-11-27">Nov 27</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-11-27">Nov 27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002z5f"><title>Mr Midshipman Easy</title></bibl>				
+                    <date ana="#returned" when="1941-12-11">Dec 11</date>
+                </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-12-11">Dec 11</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002z6r"><title>Quentin Durward</title></bibl>				
+                    <date ana="#returned" when="1941-12-24">Déc. 24</date>
+                </ab>
+                						<note>left deposit</note>
+                
                 </div>
                 
                 <div type="verso">

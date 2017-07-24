@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,20 +63,37 @@
                 <date when="1935">1935</date>			<persName ref="#bour.cl">Mr. Claude Bourdet</persName>
                                                         <address><street>47 avenue d'Iena</street><district>XVI</district></address>
                 </head>
-                <ab>
-                1 v. 3 m.								40
+            
+               <note> 1 v. 3 m.								40
                 		dep.							30
+                </note>
+               <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1935-02-02">2 Feb.</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title> 
+                        <biblScope unit="issue" from="1935-01">Jan</biblScope>.</bibl>			
+                    <date ana="#returned" when="1935-02-21">21</date>
+               </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-02-21">21 - </date>		
+                    <bibl ana="#borrowedItem" corresp="mep:002w94"><title>Ash Wednesday</title></bibl>			
+                    <date ana="#returned" when="1935-02-17">17</date>
+                    </ab>
+                						                          <note>card <date when="1935-04-10">10 April	</date></note>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-04-17">17 April</date>	 
+                    <bibl ana="#borrowedItem" corresp="mep:002x0m"><title>Selected Essays</title> - <author>Eliot</author></bibl>		
+                    <date ana="#returned" when="1935-05-17">17 May</date>
                 </ab>
-                <ab>
-                <date ana="#checkedOut" when="1935-02-02">2 Feb.</date>		<bibl ana="#borrowedItem" corresp="mep:000g25"><title>Criterion</title> <biblScope unit="issue" from="1935-01">Jan</biblScope>.</bibl>				<date ana="#returned" when="1935-02-21">21</date>
-                <date ana="#checkedOut" when="1935-02-21">21 - </date>		<bibl ana="#borrowedItem" corresp="mep:002w94"><title>Ash Wednesday</title></bibl>				<date ana="#returned" when="1935-02-17">17</date>
-                						                          card <date when="1935-04-10">10 April	</date>
-                <date ana="#checkedOut" when="1935-04-17">17 April</date>	    <bibl ana="#borrowedItem" corresp="mep:002x0m"><title>Selected Essays</title> - <persName>Eliot</persName></bibl>		<date ana="#returned" when="1935-05-17">17 May</date>
-                <date ana="#checkedOut" when="1935-05-17">17 May</date>		<bibl ana="#borrowedItem" corresp="mep:00164t"><title>After Strange gods</title></bibl>. <bibl ana="#borrowedItem" corresp="mep:002x1x"><title>The Rock</title></bibl>	
-                Renew
-                            owes subsc. since <date ana="#returned" when="1935-04-02">2 April</date>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-05-17">17 May</date>		
+                    <note><del><bibl  corresp="mep:00164t"><title>After Strange gods</title></bibl></del></note>
+                    <bibl ana="#borrowedItem" corresp="mep:002x1x"><title>The Rock</title></bibl>	
+                </ab>
+               <note> Renew
+                            owes subsc. since <date  when="1935-04-02">2 April</date></note>
+
                 
-                </ab>      					
+                      					
                 </div>
                 
                 <pb facs="#s2"/>

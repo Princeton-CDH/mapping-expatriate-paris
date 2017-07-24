@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -78,66 +80,315 @@
                 		<street>44 rue Jacob</street>
                 			<orgName>Hotel de l'Odéon</orgName></address>
                 			
-                			1 m 1 v		20<unclear/>	22 50
+                			1 m 1 v		20 1M	22 50
                 				ref. dep		50
+                </ab>
                 
-               <date ana="#checkedOut" when="1933-10-09"> Oct 9	</date>	<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition bound v No 1	</title></bibl>         <date ana="#returned" when="1933-10-11">Oct 11</date>
-                <date ana="#checkedOut" when="1933-10-09"> "	</date>		<bibl ana="#borrowedItem" corresp="mep:00jz92"><title>"			no 15</title></bibl>		         <date ana="#returned" when="1933-10-12">Oct 12</date>
-                			(Red Front (owes for copy)
-                <date ana="#checkedOut" when="1933-10-12">Oct 12</date>		<bibl ana="#borrowedItem" corresp="mep:00hb02"><title>Geography &amp; Plays</title></bibl>		     <date ana="#checkedOut" when="1933-10-14">Oct 14</date>
-                			ask him if he saw new
-                			copy of <bibl ana="#borrowedItem" corresp="mep:00k00s"><title>Geog. &amp; Plays</title></bibl>
-                	<date ana="#checkedOut" when="1933-10-14">14</date>		<bibl ana="#borrowedItem" corresp="mep:00g60q"><title>Devil in the Flesh</title></bibl>		       <date ana="#checkedOut" when="1933-10-17">  Oct 17</date>
-                				<bibl ana="#borrowedItem" corresp="mep:00k013"><title>against the grain</title></bibl> bought owes 12v
-                	<date ana="#checkedOut" when="1933-10-17">17</date>		<bibl ana="#borrowedItem" corresp="mep:00bt58"><title>European Caravan</title></bibl>		        <date ana="#returned" when="1933-10-20"> Oct 20</date>
-                <date ana="#checkedOut" when="1933-10-20"> 20</date>		<bibl ana="#borrowedItem" corresp="mep:000399"><title>transition no 13</title></bibl>		        <date ana="#checkedOut" when="1933-10-21"> Oct 21</date>
-                				<bibl ana="#borrowedItem" corresp="mep:00k02d"><title>"	   no 14	</title></bibl>		       "
-                				<bibl ana="#borrowedItem" corresp="mep:00k03q"><title>"	   no 12</title></bibl>			      <date ana="#returned" when="1933-10-25"> 25</date>
-                	<date ana="#checkedOut" when="1933-10-23">23</date> - <bibl ana="#borrowedItem" corresp="mep:00815f"><title>Year before Last</title></bibl> - ask him if he      <date ana="#checkedOut" when="1933-10-28">Oct 28</date>
-                			<bibl ana="#borrowedItem" corresp="mep:00k041"><title>Eimi</title>    </bibl> *			brought back        <date ana="#returned" when="1933-10-26">26</date>
-                <date ana="#checkedOut" when="1933-10-26">26</date>		<bibl ana="#borrowedItem" corresp="mep:00hb30"><title>Bridge</title></bibl> --- *			           <date ana="#returned" when="1933-10-30"> Oct 30</date>
-                <date ana="#checkedOut" when="1933-10-28">28</date>		<bibl ana="#borrowedItem" corresp="mep:008781"><title>Autobiography of Toklas </title></bibl>         <date ana="#returned" when="1933-10-30"> Oct 30</date>
-                <date ana="#checkedOut" when="1933-10-30">30</date>	  <bibl ana="#borrowedItem" corresp="mep:002c62"><title>Flush</title></bibl>					       <date ana="#returned" when="1933-10-31">  Oct 31</date>
-                <date ana="#checkedOut" when="1933-10-31">31</date>		<bibl ana="#borrowedItem" corresp="mep:00hb02"><title>Geography &amp; Plays</title></bibl>		    <date ana="#checkedOut" when="1933-11-02">2 Nov.</date>
-                                                        <bibl ana="#borrowedItem" corresp="mep:00227w"><title>Winner take Nothing	</title></bibl>	       <date ana="#returned" when="1933-11-02">2 Nov.</date>
-                <date ana="#checkedOut" when="1933-11-02">2 Nov.</date>		<bibl ana="#borrowedItem" corresp="mep:00k05b"><title>Anarchism is not enough	</title></bibl>      <date ana="#checkedOut" when="1933-11-04"> Nov 4</date>
-                			                             <bibl ana="#borrowedItem" corresp="mep:000r3p"><title>Honeycomb</title></bibl> (extra)		     <date ana="#returned" when="1933-11-06"> 6 Nov.</date>
-                <date ana="#checkedOut" when="1933-11-04"> Nov 4</date>		<bibl ana="#borrowedItem" corresp="mep:00k06n"><title>Thomas the Imposter	</title></bibl>	        <date ana="#returned" when="1933-11-06">6 Nov</date>
-                <date ana="#checkedOut" when="1933-11-06">6 Nov</date>		<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition 5-8 bound</title></bibl>	       <date ana="#checkedOut" when="1933-11-08"> Nov 8</date>
-                			                                 <bibl ana="#borrowedItem" corresp="mep:00h92d"><title>Harmonium</title></bibl> (extra)		<unclear/>
-                			</ab>
-               </div>
+              <ab ana= "#borrowingEvent">
+                  <date ana="#checkedOut" when="1933-10-09"> Oct 9	</date>
+                  <bibl ana="#borrowedItem" corresp="mep:000399">
+                      <title>Transition bound v No 1</title>
+                      <biblScope unit="volume" from="1">vol 1</biblScope>
+                  </bibl>     
+                      <date ana="#returned" when="1933-10-11">Oct 11</date>
+              </ab>
+                   
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-10-09"> "	</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00jz92">
+                       <title>"			no 15</title>
+                       <biblScope unit="volume" from="15">vol 15</biblScope>
+                   </bibl>		    
+                   <date ana="#returned" when="1933-10-12">Oct 12</date>
+               </ab>
+                   
+                   <note><bibl corresp="mep:00k11c"></bibl>/bibl><title>Red Front </title>(owes for copy)</note>
+                   
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-10-12">Oct 12</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00hb02">
+                       <title>Geography &amp; Plays</title>
+                   </bibl>		   
+                   <date ana="#returned" when="1933-10-14">Oct 14</date>
+               </ab>
+                   <note>ask him if he saw new
+                       copy of <bibl corresp="mep:00hb02"><title>Geog. &amp; Plays</title></bibl></note>
+                       
+                	<ab ana= "#borrowingEvent">
+                	    <date ana="#checkedOut" when="1933-10-14">14</date>
+                	    <bibl ana="#borrowedItem" corresp="mep:00g60q">
+                	        <title>Devil in the Flesh</title>
+                	    </bibl>		    
+                	    <date ana="#returned" when="1933-10-17">  Oct 17</date>
+                	</ab>
+                   
+                  
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1933-10-14">14</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00k013">
+                            <title>against the grain</title>
+                        </bibl> 
+                       <note> bought </note>
+                        <note>owes 12v</note>
+                    </ab>
+                 
+                	<ab ana= "#borrowingEvent">
+                	    <date ana="#checkedOut" when="1933-10-17">17</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:00bt58">
+                	        <title>European Caravan</title>
+                	    </bibl>		     
+                	    <date ana="#returned" when="1933-10-20"> Oct 20</date>
+                	</ab>
+                   
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-10-20"> 20</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000399">
+                        <title>transition </title><biblScope unit="volume" from="13">no 13</biblScope>
+                    </bibl>		   
+                    <date ana="#returned" when="1933-10-21"> Oct 21</date>
+                </ab>
+                   
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-10-20"> 20</date>
+                       <bibl ana="#borrowedItem" corresp="mep:000399">
+                   <title>"	   </title>
+                   <biblScope unit="volume" from="14">vol 14</biblScope>
+               </bibl>		       
+                 <date ana="#returned" when="1933-10-21"> Oct 21</date> 
+                   </ab>
+                   
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-10-20"> 20</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00k03q">
+                       <title>"	   no 12</title>
+                       <biblScope unit="volume" from="12">vol 12</biblScope>
+                   </bibl>			   
+                   <date ana="#returned" when="1933-10-25"> 25</date>
+                   </ab>
+                   
+                	<ab ana= "#borrowingEvent">
+                	    <date ana="#checkedOut" when="1933-10-23">23</date> 
+                	    <bibl ana="#borrowedItem" corresp="mep:00815f">
+                	        <title>Year before Last</title> 
+                	    </bibl>    
+                	    <note>- ask him if he brought back </note>
+                	    <date ana="#returned" when="1933-10-28">Oct 28</date>
+                	</ab>
+                   
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-10-23">23</date> 
+                	<bibl ana="#borrowedItem" corresp="mep:00k041">
+                	    <title>Eimi</title>   
+                	</bibl>   
+                   <date ana="#returned" when="1933-10-26">26</date>
+                   </ab>
+                   
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-10-26">26</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00hb30">
+                       <title>Bridge</title>	
+                   </bibl> 		        
+                   --- *
+                   <date ana="#returned" when="1933-10-30"> Oct 30</date>
+               </ab>
+                   
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-10-28">28</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:008781">
+                       <title>Autobiography of Toklas </title>
+                   </bibl>    
+                   <date ana="#returned" when="1933-10-30"> Oct 30</date>
+               </ab>
+                   
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-10-30">30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:002c62">
+                        <title>Flush</title>
+                    </bibl>					 
+                    <date ana="#returned" when="1933-10-31">  Oct 31</date>
+                </ab>
+                   
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-10-31">31</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00hb02">
+                        <title>Geography &amp; Plays</title>
+                    </bibl>		   
+                    <date ana="#returned" when="1933-11-02">2 Nov.</date>
+                </ab>
+                   
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-10-31">31</date>	
+                 <bibl ana="#borrowedItem" corresp="mep:00227w">
+                     <title>Winner take Nothing	</title>
+                 </bibl>	      
+                   <date ana="#returned" when="1933-11-02">2 Nov.</date>
+                   </ab>
+                   
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-11-02">2 Nov.</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:00k05b">
+                           <title>Anarchism is not enough	</title>
+                       </bibl>      
+                       <date ana="#returned" when="1933-11-04"> Nov 4</date>
+                   </ab>
+                   
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1933-11-02">2 Nov.</date>
+                   <bibl ana="#borrowedItem" corresp="mep:000r3p">
+                       <title>Honeycomb</title>	
+                   </bibl>     
+                       <note>(extra)</note>	
+                   <date ana="#returned" when="1933-11-06"> 6 Nov.</date>
+                   </ab>
+                   
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-11-04"> Nov 4</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00k06n">
+                        <title>Thomas the Imposter	</title>
+                    </bibl>	   
+                    <date ana="#returned" when="1933-11-06">6 Nov</date>
+                </ab>
+                   
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-11-06">6 Nov</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:000399">
+                       <title>Transition 5-8 bound</title>     
+                   <biblScope unit="volume" from="5" to="8" >vol 5 - 8</biblScope>
+                   </bibl>	 
+                   <date ana="#returned" when="1933-11-08"> Nov 8</date>
+               </ab>
+                   
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-11-06">6 Nov</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00h92d">
+                        <title>Harmonium</title>
+                    </bibl><note> (extra)	</note>
+                   <note> <del> <date when="1933-11-08"> Nov 8</date> </del></note>
+                    <date ana="#returned" when="1933-11-08"> </date>
+                </ab>
+                   
+               
               <div type="recto">  
                 <pb facs="#s2"/>
                   <ab>
                 			<persName ref="gasc.da">GASCOYNE</persName>
-               <date ana="#checkedOut" when="1933-11-08"> 8 Nov.</date>		<bibl ana="#borrowedItem" corresp="mep:00k07z"><title>Tunnel extra	</title></bibl>		                    <date ana="#returned" when="1933-11-13"> 13 Nov.</date>
-                  <date ana="#checkedOut" when="1933-11-08"> 8 "	</date>8 "	<bibl ana="#borrowedItem" corresp="mep:00k088"><title>4 Brooms</title></bibl> Nos Sept-Oct Nov-Dec                 <date ana="#returned" when="1933-11-10">10 Nov</date>
-                <date ana="#checkedOut" when="1933-11-13">13 "</date>		<bibl ana="#borrowedItem" corresp="mep:00k09k"><title>Visit of the Gipsies</title></bibl>		                   <date ana="#returned" when="1933-11-17"> 17 "</date>
-                renewed 9 Nov. to 9 December 22 50
-               <date ana="#checkedOut" when="1933-11-14"> 14 Nov.</date>		<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition 11 </title></bibl>(uncut) extra	                  <date ana="#returned" when="1933-11-14"> Nov 14</date>
-                <date ana="#checkedOut" when="1933-11-17">17</date>			<bibl ana="#borrowedItem" corresp="mep:00319g"><title>Use of Poetry</title></bibl>					                 <date ana="#returned" when="1933-11-17">17 "</date>
-                <date ana="#checkedOut" when="1933-11-18">18.</date>			<bibl ana="#borrowedItem" corresp="mep:00k102"><title>These 13</title></bibl>  refunded 11v Nov 20                     <date ana="#returned" when="1933-11-20">20 Nov</date>
+                  </ab>
+                      
+              <ab ana= "#borrowingEvent">
+                  <date ana="#checkedOut" when="1933-11-08"> 8 Nov.</date>	
+                  <bibl ana="#borrowedItem" corresp="mep:00k07z">
+                      <title>Tunnel extra	</title>
+                  </bibl>		               
+                  <date ana="#returned" when="1933-11-13"> 13 Nov.</date>
               </ab>
+                      
+                  <ab ana= "#borrowingEvent">
+                      <date ana="#checkedOut" when="1933-11-08"> 8 "	</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00k088">
+                          <title>4 Brooms</title>
+                          <biblScope unit="Nos" from="Sept-Oct" to="Nov-Dec" >Nos Sept-Oct Nov-Dec </biblScope>
+                      </bibl>            
+                      <date ana="#returned" when="1933-11-10">10 Nov</date>
+                  </ab>
+                      
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-11-13">13 "</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00k09k">
+                       <title>Visit of the Gipsies</title>
+                   </bibl>		                 
+                   <date ana="#returned" when="1933-11-17"> 17 "</date>
+               </ab>
+                      
+                  <note>renewed <date from="1933-11-09" to="1933-12-09">9 Nov. to 9 December  </date>22 50</note>
+                  
+              <ab ana= "#borrowingEvent">
+                  <date ana="#checkedOut" when="1933-11-14"> 14 Nov.</date>
+                  <bibl ana="#borrowedItem" corresp="mep:000399">
+                      <title>Transition 11 </title><note>(uncut) extra</note>	 
+                      <biblScope unit="volume" from="11" >vol 11</biblScope>
+                  </bibl>            
+                  <date ana="#returned" when="1933-11-14"> Nov 14</date>
+              </ab>
+                  
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-11-17">17</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00319g">
+                       <title>Use of Poetry</title>
+                   </bibl>					      
+                   <date ana="#returned" when="1933-11-17">17 "</date>
+               </ab>
+                  
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-11-18">18.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00k102">
+                        <title>These 13</title>
+                       
+                    </bibl>                  
+                    <note>refunded 11v <date when="1933-11-20"> Nov 20</date></note>
+                    <date ana="#returned" when="1933-11-20">20 Nov</date>
+                </ab>
+                  
               </div>
                 
                <div type="verso"> 
                 <pb facs="#s3"/>
                   <ab> 
                <date when="1933"> 1933</date>		<persName ref="gasc.da">GASCOYNE</persName>
-                
-                			<bibl ana="#borrowedItem" corresp="mep:00k11c"><title>the Red Front	</title></bibl>	<date ana="#returned" when="1933-11-04">4 Nov</date> 	pd 14-
-                <date ana="#checkedOut" when="1933-11-02">Nov 2</date>		<bibl ana="#borrowedItem" corresp="mep:00cm93"><title>Surrealism</title></bibl>					 	3.50
-                											3.50
-                									   paid 7 -
-                	<date ana="#checkedOut" when="1933-11-10">10</date>		<bibl ana="#borrowedItem" corresp="mep:00k12p"><title>Alanna Autumnal	</title></bibl>		   paid 20.50
-               <date ana="#checkedOut" when="1933-12-06"> 6 Dec.</date>		<bibl ana="#borrowedItem" corresp="mep:00k130"><title>cheque New Verse</title></bibl>	£1
-                <date ana="#returned" when="1933-12-06">6 "	</date>		" returned in <unclear/> to Gascoyne
-                	<date when="1933-12-21">21</date>		letter to P. Press	no answer
-                <date when="1934-01-18">18 Jan</date>		registered letter c/o Codden S.
-                <date when="1934-01-23">23 "</date>		letter from Gascoyne
-                						owes one pound
+                  </ab>
+                   
+                <ab ana= "#borrowingEvent">
+                	 <bibl ana="#borrowedItem" corresp="mep:00k11c">
+                			        <title>the Red Front	</title>
+                			    </bibl>
+                    <note>pd 14- </note>
+                		 <date ana="#returned" when="1933-11-04">4 Nov</date> 	
+               </ab>
+                      
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-11-02">Nov 2</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00cm93">
+                       <title>Surrealism</title> 
+                   </bibl>		
+                   <note>3.50</note>
+               </ab>
+                   <note>paid 7 -</note>
+                									   
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1933-11-10">10</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00k12p">
+                        <title>Alanna Autumnal	</title> 
+                    </bibl>		  
+                    <note>paid 20.50</note>
                 </ab>
+                   
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1933-12-06"> 6 Dec.</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00k130">
+                      Cheque <title> New Verse</title> 
+                   </bibl>	
+                   <note>£1</note>
+               </ab>
+                   
+                  <note><date when="1933-12-06">6 "	</date>	
+                      " returned in person to <persName ref="gasc.da">Gascoyne</persName>
+                  </note> 
+                   
+                   <note>
+                	<date when="1933-12-21">21</date>		
+                       letter to P. Press	no answer
+                   </note>
+                   
+                   <note> 
+                       <date when="1934-01-18">18 Jan</date>	
+                       registered letter c/o Codden S.
+                   </note>
+                   
+                <note>   
+                <date when="1934-01-23">23 "</date>	
+                    letter from <persName ref="gasc.da">Gascoyne</persName>
+                owes one pound
+                </note>
+                
                </div>
                 
                 <div type="recto">
@@ -147,7 +398,7 @@
                 
                 			
                 
-                
+               </div>
             </div>
         </body>
     </text>

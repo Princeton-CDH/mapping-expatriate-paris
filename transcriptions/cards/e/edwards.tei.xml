@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -84,81 +87,383 @@
                 <div type="recto">
                 <pb facs="#s1"/>
                 
-                    
-            <ab>
-                <date when="1932">1932</date>	
-                <pb facs="#s1"/>
+                               
                 
-                <date when="1932">1932</date>		<persName ref="edwa.th">EDWARDS</persName>			subs 1v March
+                
+                <head>
+                    <date when="1932">1932</date>		<persName ref="edwa.th">EDWARDS</persName>			subs 1v March
                 		Encyclopedia 1.750	<date when="1932-06-12">June	12</date>
+                </head>
                 
                 
-                <date ana="#checkedOut" when="1932-03-29">March 29 </date> <bibl ana="#borrowedItem" corresp="mep:005d2t"><title>Mill of Many Windows</title></bibl>	<date ana="#returned" when="1932-03-31">March 31</date>
-                <date ana="#checkedOut" when="1932-03-31">March 31 </date> <bibl ana="#borrowedItem" corresp="mep:00ft7m"><title><unclear/>Kerkhoven</title></bibl>	<date ana="#returned" when="1932-04-12">April 12</date>
-                <date ana="#checkedOut" when="1932-04-12">April 12 </date> <bibl ana="#borrowedItem" corresp="mep:004n5f"><title>Emperor Jones</title></bibl>	<date ana="#returned" when="1932-04-18">April 18</date>
-                <date ana="#checkedOut" when="1932-04-18">April 18 </date> <bibl ana="#borrowedItem" corresp="mep:002v1c"><title>Plagued by the Nightengale</title></bibl>	<date ana="#returned" when="1932-04-20">April 20</date>
-                <date ana="#checkedOut" when="1932-04-20">April 20</date> <bibl ana="#borrowedItem" corresp="mep:00ft8x"><title>Laughing Boy</title></bibl><date ana="#returned" when="1932-05-03">May 03</date>
-                <date ana="#checkedOut" when="1932-05-03">May 03 </date> <bibl ana="#borrowedItem" corresp="mep:00ft97"><title>Best Short Stories 1931 Eng</title></bibl><date ana="#returned" when="1932-05-13">May 13</date>
-                <date ana="#checkedOut" when="1932-05-13">May 13 </date> <bibl ana="#borrowedItem" corresp="mep:001z4w"><title>Evensong</title></bibl>	<date ana="#returned" when="1932-06-01">June 01</date>
-                <date ana="#checkedOut" when="1932-06-01">June 01</date> <bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>	<date ana="#returned" when="1932-06-04">June 04</date>
-                <date ana="#checkedOut" when="1932-06-07">June 07</date> <bibl ana="#borrowedItem" corresp="mep:00964r"><title>Christopher Strong</title></bibl><date ana="#returned" when="1932-06-14">June 14</date>
-                <date ana="#checkedOut" when="1932-06-14">June 14</date> <bibl ana="#borrowedItem" corresp="mep:00fv0q"><title>In the Sweet Dry &amp;Dry</title></bibl><date ana="#returned" when="1932-07-19">July 19</date>
                 
-                Till <date when="1932-12-12">Dec. 12 1932</date>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-03-29">March 29 </date> 
+                        <bibl ana="#borrowedItem" corresp="mep:005d2t">
+                            <title>Mill of Many Windows</title>
+                        </bibl>	
+                        <date ana="#returned" when="1932-03-31">March 31</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-03-31">March 31</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00ft7m">
+                            <title><unclear/>Kerkhoven</title>
+                        </bibl>	
+                        <date ana="#returned" when="1932-04-12">April 12</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-04-12">April 12</date> 
+                       <bibl ana="#borrowedItem" corresp="mep:004n5f">
+                           <title>Emperor Jones</title>
+                       </bibl>	
+                       <date ana="#returned" when="1932-04-18">April 18</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-04-18">April 18</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:002v1c">
+                            <title>Plagued by the Nightengale</title>
+                        </bibl>	
+                        <date ana="#returned" when="1932-04-20">April 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-04-20">April 20</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00ft8x">
+                            <title>Laughing Boy</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-05-03">May 03</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-05-03">May 03</date> 
+                       <bibl ana="#borrowedItem" corresp="mep:00ft97">
+                           <title>Best Short Stories 1931 Eng</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-05-13">May 13</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-05-13">May 13</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:001z4w">
+                            <title>Evensong</title>
+                        </bibl>	
+                        <date ana="#returned" when="1932-06-01">June 01</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-06-01">June 01</date>
+                       <bibl ana="#borrowedItem" corresp="mep:001n8n">
+                           <title>Brave New World</title>
+                       </bibl>	
+                       <date ana="#returned" when="1932-06-04">June 04</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-06-07">June 07</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00964r">
+                            <title>Christopher Strong</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-06-14">June 14</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-06-14">June 14</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00fv0q">
+                           <title>In the Sweet Dry &amp;Dry</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-07-19">July 19</date>
+                   </ab>
+                    
+                <note>
+                    Till <date when="1932-12-12">Dec. 12 1932</date>
                 	renewed 6m 1v						100
+                </note>
                 
-                <date ana="#checkedOut" when="1932-07-19">July 19 </date><bibl ana="#borrowedItem" corresp="mep:00977z"><title>Sparks fly upward</title></bibl><date ana="#returned" when="1932-07-27">July 27</date>
-                <date ana="#checkedOut" when="1932-07-27">July 27 </date><bibl ana="#borrowedItem" corresp="mep:003480"><title>Gap in the Curtain</title></bibl><date ana="#returned" when="1932-08-08">Aug 08</date>
-                <date ana="#checkedOut" when="1932-08-08">Aug 08 </date> <bibl ana="#borrowedItem" corresp="mep:00590c"><title>Case with nine Solutions</title></bibl><date ana="#returned" when="1932-08-11">Aug 11</date>
-                <date ana="#checkedOut" when="1932-08-11">Aug 11 </date> <bibl ana="#borrowedItem" corresp="mep:005h2n"><title>Death answers the bell</title></bibl><date ana="#returned" when="1932-08-30">Aug 30</date>
-       
-                					p.c. <date when="1932-08-29">Aug 29</date>
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-07-19">July 19</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00977z">
+                            <title>Sparks fly upward</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-07-27">July 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-07-27">July 27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003480">
+                            <title>Gap in the Curtain</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-08-08">Aug 08</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-08-08">Aug 08</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00590c">
+                            <title>Case with nine Solutions</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-08-11">Aug 11</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-08-11">Aug 11</date>
+                        <bibl ana="#borrowedItem" corresp="mep:005h2n">
+                            <title>Death answers the bell</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-08-30">Aug 30</date>
+                    </ab>
+                    
+                					<note>
+                					    p.c. <date when="1932-08-29">Aug 29</date>
+                					</note>
                 					
-                <date ana="#checkedOut" when="1932-08-30">Aug 30</date> <bibl ana="#borrowedItem" corresp="mep:009802"><title>Golden Horn</title></bibl><date ana="#returned" when="1932-09-02">Sept 02</date>
-                <date ana="#checkedOut" when="1932-09-02">Sept 02 </date> <bibl ana="#borrowedItem" corresp="mep:003j9m"><title>Master of the House</title></bibl><date ana="#returned" when="1932-09-05">Sept 05</date>
-                <date ana="#checkedOut" when="1932-09-05">Sept 05 </date> <bibl ana="#borrowedItem" corresp="mep:005h01"><title>Secret Sentence</title></bibl><date ana="#returned" when="1932-09-09">Sept 09</date>
-                <date ana="#checkedOut" when="1932-09-09">Sept 09 </date> <bibl ana="#borrowedItem" corresp="mep:003z79"><title>Hot Water</title></bibl><date ana="#returned" when="1932-09-14">Sept 14</date>
-                <date ana="#checkedOut" when="1932-09-14">Sept 14 </date> <bibl ana="#borrowedItem" corresp="mep:00fv11"><title>Big Business</title></bibl><date ana="#returned" when="1932-09-15">Sept 15</date>
-                <date ana="#checkedOut" when="1932-09-15">Sept 15 </date> <bibl ana="#borrowedItem" corresp="mep:00ch8z"><title>Swiss Family Manhattan</title></bibl><date ana="#returned" when="1932-09-20">Sept 20</date>
-                <date ana="#checkedOut" when="1932-09-20">Sept 20 </date> <bibl ana="#borrowedItem" corresp="mep:008h40"><title>When the Wicked Man</title></bibl><date ana="#returned" when="1932-09-22">Sept 22</date>
-                <date ana="#checkedOut" when="1932-09-22">Sept 22 </date> <bibl ana="#borrowedItem" corresp="mep:005h1b"><title>Return of the Bulldog Drummond</title></bibl><date ana="#returned" when="1932-09-23">Sept 23</date>
-                <date ana="#checkedOut" when="1932-09-23">Sept 23 </date> <bibl ana="#borrowedItem" corresp="mep:00fv2b"><title>Unfinished Business</title></bibl><date ana="#returned" when="1932-09-28">Sept 28</date>
-                <date ana="#checkedOut" when="1932-09-28">Sept 28 </date> <bibl ana="#borrowedItem" corresp="mep:005h3z"><title>Death in the Thicket</title></bibl><date ana="#returned" when="1932-10-03">Oct 03</date>
-                <date ana="#checkedOut" when="1932-10-03">Oct 03 </date> <bibl ana="#borrowedItem" corresp="mep:00fv3n"><title>Education, Social Order</title></bibl><date ana="#returned" when="1932-10-04">Oct 04</date>
                 
-            </ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-08-30">Aug 30</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:009802">
+                            <title>Golden Horn</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-02">Sept 02</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-02">Sept 02</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003j9m">
+                            <title>Master of the House</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-05">Sept 05</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-05">Sept 05</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:005h01">
+                            <title>Secret Sentence</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-09">Sept 09</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-09">Sept 09</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:003z79">
+                            <title>Hot Water</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-14">Sept 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-14">Sept 14</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00fv11">
+                            <title>Big Business</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-15">Sept 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-15">Sept 15</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00ch8z">
+                            <title>Swiss Family Manhattan</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-20">Sept 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-20">Sept 20</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:008h40">
+                            <title>When the Wicked Man</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-22">Sept 22</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-09-22">Sept 22</date> 
+                       <bibl ana="#borrowedItem" corresp="mep:005h1b">
+                           <title>Return of the Bulldog Drummond</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-09-23">Sept 23</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-23">Sept 23</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fv2b">
+                            <title>Unfinished Business</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-09-28">Sept 28</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-09-28">Sept 28</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:005h3z">
+                            <title>Death in the Thicket</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-10-03">Oct 03</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-10-03">Oct 03</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00fv3n">
+                            <title>Education, Social Order</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-10-04">Oct 04</date>
+                    </ab>
+                    
+            
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
-               <ab>
-                to <date when="1932-12-12">12 Dec 1932</date>	<persName ref="edwa.th">	Edwards</persName>
-                
-                   <date ana="#checkedOut" when="1932-10-04">Oct 04 </date><bibl ana="#borrowedItem" corresp="mep:00988j"><title>My best Short Story</title></bibl><date ana="#returned" when="1932-10-07">Oct 07</date>
-                   <date ana="#checkedOut" when="1932-10-07">Oct 07 </date><bibl ana="#borrowedItem" corresp="mep:003m67"><title>Black Mischief</title></bibl><date ana="#returned" when="1932-10-12">Oct 12</date>
-                   <date ana="#checkedOut" when="1932-10-12">Oct 12 </date><bibl ana="#borrowedItem" corresp="mep:002j9c"><title>Modern Hero</title></bibl><date ana="#returned" when="1932-10-25">Oct 25</date>
-                   <date ana="#checkedOut" when="1932-10-25">Oct 25 </date><bibl ana="#borrowedItem" corresp="mep:002v30"><title>Hounds of Spring</title></bibl><date ana="#returned" when="1932-10-27">Oct 27</date>
-                   <date ana="#checkedOut" when="1932-10-27">Oct 27 </date><bibl ana="#borrowedItem" corresp="mep:001t53"><title>Sam the Sudden</title></bibl><date ana="#returned" when="1932-11-08">Nov 08</date>
-                   <date ana="#checkedOut" when="1932-11-08">Nov 08 </date><bibl ana="#borrowedItem" corresp="mep:00fv4z"><title>Castle Island</title></bibl><date ana="#returned" when="1932-11-09">Nov 11</date>
-                   <date ana="#checkedOut" when="1932-11-09">Nov 09 </date><bibl ana="#borrowedItem" corresp="mep:00fv58"><title>Short Stories 1932</title></bibl><date ana="#returned" when="1932-11-15">Nov 15</date>
-                   <date ana="#checkedOut" when="1932-11-15">Nov 15 </date><bibl ana="#borrowedItem" corresp="mep:009d05"><title>Modern Tales of Horror</title></bibl><date ana="#returned" when="1932-11-18">Nov 18</date>
-                   <date ana="#checkedOut" when="1932-11-18">Nov 18 </date><bibl ana="#borrowedItem" corresp="mep:00fv6k"><title>A. Bennett II</title></bibl><date ana="#returned" when="1932-11-24">Nov 24</date>
-                   <date ana="#checkedOut" when="1932-11-24">Nov 24 </date><bibl ana="#borrowedItem" corresp="mep:00fr6r"><title>Our Mother</title></bibl><date ana="#returned" when="1932-11-25">Nov 25</date>
-                   <date ana="#checkedOut" when="1932-11-25">Nov 25 </date><bibl ana="#borrowedItem" corresp="mep:00fv7w"><title>Filibusters in Barbary</title></bibl><date ana="#returned" when="1932-11-29">Nov 29</date>
-                   <date ana="#checkedOut" when="1932-11-25">Nov 25 </date><bibl ana="#borrowedItem" corresp="mep:00fv86"><title>Soft Answer</title></bibl><date ana="#returned" when="1932-12-01">Dec 01</date>
-                   <date ana="#checkedOut" when="1932-12-01">Dec 01 </date><bibl ana="#borrowedItem" corresp="mep:004726"><title>AAmerica as Americans See it</title></bibl><date ana="#returned" when="1932-12-06">Dec 06</date>
-                   <date ana="#checkedOut" when="1932-12-06">Dec 06 </date><bibl ana="#borrowedItem" corresp="mep:00fv9h"><title>13 Problems</title></bibl><date ana="#returned" when="1932-12-09">Dec 09</date>
-                   <date ana="#checkedOut" when="1932-12-09">Dec 09 </date><bibl ana="#borrowedItem" corresp="mep:00455k"><title>Lady Chatterley</title></bibl><date ana="#returned" when="1932-12-13">Dec 13</date>
-                   <date ana="#checkedOut" when="1932-12-13">Dec 13 </date><bibl ana="#borrowedItem" corresp="mep:00fw00"><title>N-Y Tempest</title></bibl><date ana="#returned" when="1932-12-16">Dec 16</date>
-                   <date ana="#checkedOut" when="1932-12-16">Dec 16 </date><bibl ana="#borrowedItem" corresp="mep:00fw19"><title>Narrow Corner</title></bibl><date ana="#returned" when="1933-01-03">Jan 03</date>
                
-                			owes <unclear/>  + 24 days
-               </ab>
+                <head>
+                    to <date when="1932-12-12">12 Dec 1932</date>	<persName ref="edwa.th">Edwards</persName>
+                </head>
+                
+                   
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-10-04">Oct 04</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00988j">
+                            <title>My best Short Story</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-10-07">Oct 07</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-10-07">Oct 07</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003m67">
+                            <title>Black Mischief</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-10-12">Oct 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-10-12">Oct 12</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002j9c">
+                            <title>Modern Hero</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-10-25">Oct 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-10-25">Oct 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002v30">
+                            <title>Hounds of Spring</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-10-27">Oct 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-10-27">Oct 27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001t53">
+                            <title>Sam the Sudden</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-11-08">Nov 08</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-11-08">Nov 08</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fv4z">
+                            <title>Castle Island</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-11-09">Nov 11</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-11-09">Nov 09</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fv58">
+                            <title>Short Stories 1932</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-11-15">Nov 15</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-11-15">Nov 15</date>
+                       <bibl ana="#borrowedItem" corresp="mep:009d05">
+                           <title>Modern Tales of Horror</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-11-18">Nov 18</date>
+                   </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-11-18">Nov 18</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00fv6k">
+                           <title>A. Bennett II</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-11-24">Nov 24</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-11-24">Nov 24</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fr6r">
+                            <title>Our Mother</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-11-25">Nov 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-11-25">Nov 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fv7w">
+                            <title>Filibusters in Barbary</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-11-29">Nov 29</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-11-25">Nov 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fv86">
+                            <title>Soft Answer</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-12-01">Dec 01</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-12-01">Dec 01</date>
+                       <bibl ana="#borrowedItem" corresp="mep:004726">
+                           <title>America as Americans See it</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-12-06">Dec 06</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-12-06">Dec 06</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fv9h">
+                            <title>13 Problems</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-12-09">Dec 09</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1932-12-09">Dec 09</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00455k">
+                           <title>Lady Chatterley</title>
+                       </bibl>
+                       <date ana="#returned" when="1932-12-13">Dec 13</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-12-13">Dec 13</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fw00">
+                            <title>N-Y Tempest</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-12-16">Dec 16</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-12-16">Dec 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fw19">
+                            <title>Narrow Corner</title>
+                        </bibl>
+                        <date ana="#returned" when="1933-01-03">Jan 03</date>
+                    </ab>
+                    
+                			<note>
+                			    owes <unclear/>  + 24 days
+                			</note>
+               
                 </div>
                 
               <div type="recto">
                   <pb facs="#s3"/>
              
-                <ab>
+                <head>
                 <date when="1930">1930</date>	<persName ref="edwa.th">EDWARDS</persName>
                
                   
@@ -168,176 +473,912 @@
                       <orgName>Maison de Sully Prudhomme</orgName>
                           <street> 60 Ave Jean Jaurès</street>
                       <district>Chaternay (Seine)</district></address>
-              
+              </head>
+                  <note>
                 		1m 1vol						40
                 		Deposit						50  refunded
                 										<date when="1933-01-15">Jan 5 1933</date>
+                  </note>
                 
-                     <date ana="#checkedOut" when="1930-04-12">April 12 </date><bibl ana="#borrowedItem" corresp="mep:001j4k"><title>Death of a Hero</title></bibl><date ana="#returned" when="1930-04-15">April 15</date>
-                     <date ana="#checkedOut" when="1930-04-15">April 15 </date><bibl ana="#borrowedItem" corresp="mep:00fw2m"><title>That Other Love</title></bibl><date ana="#returned" when="1930-04-22">April 22</date>
-                      <date ana="#checkedOut" when="1930-04-22">April 22 </date><bibl ana="#borrowedItem" corresp="mep:00961t"><title>Golden Hades</title></bibl><date ana="#returned" when="1930-04-28">April 28</date>
-                      <date ana="#checkedOut" when="1930-04-28">April 28 </date><bibl ana="#borrowedItem" corresp="mep:00fw3x"><title>Courts of the Morning</title></bibl><date ana="#returned" when="1930-05-07">May 07</date>
-                      <date ana="#checkedOut" when="1930-05-07">May 07 </date><bibl ana="#borrowedItem" corresp="mep:00fw47"><title>Best Short Stories 1929 Eng</title></bibl><date ana="#returned" when="1930-05-09">May 09</date>
-                      <date ana="#checkedOut" when="1930-05-09">May 09</date><bibl ana="#borrowedItem" corresp="mep:00fw5j"><title>Face in the Night</title></bibl><date ana="#returned" when="1930-06-26">June 26</date>
-            
-                					= sub expired since <date when="1930-05-12">May 12th</date>
-                <date when="1930-06-26">June 26</date>. 1.R.  3m 1 vol = 100
-                
-                      <date ana="#checkedOut" when="1930-06-26">June 26 </date><bibl ana="#borrowedItem" corresp="mep:00fw6v"><title>Finger of Fate</title></bibl><date ana="#returned" when="1930-07-11">July 11</date>
-                      <date ana="#checkedOut" when="1930-07-04">July 04 </date><bibl ana="#borrowedItem" corresp="mep:00061n"><title>Painted Veils</title></bibl><date ana="#returned" when="1930-07-21">July 21</date>
-                      <date ana="#checkedOut" when="1930-07-21">July 21 </date><bibl ana="#borrowedItem" corresp="mep:00fw75"><title>Confession of <unclear/></title></bibl><date ana="#returned" when="1930-07-29">July 29</date>
-                      <date ana="#checkedOut" when="1930-07-29">July 29 </date><bibl ana="#borrowedItem" corresp="mep:00fw8g"><title>Babe in the Wood</title></bibl><date ana="#returned" when="1930-08-07">Aug 07</date>
-                      <date ana="#checkedOut" when="1930-08-07">Aug 07 </date><bibl ana="#borrowedItem" corresp="mep:001m2h"><title>Bridge of San Luis Rey</title></bibl><date ana="#returned" when="1930-08-13">Aug 13</date>
-                      <date ana="#checkedOut" when="1930-08-13">Aug 13 </date><bibl ana="#borrowedItem" corresp="mep:00061n"><title>Painted Veil</title></bibl><date ana="#returned" when="1930-08-26">Aug 26</date>
-                      <date ana="#checkedOut" when="1930-08-26">Aug 26 </date><bibl ana="#borrowedItem" corresp="mep:00fw9s"><title>Million Pound Deposit</title></bibl><date ana="#returned" when="1930-08-29">Aug 29</date>
-                      <date ana="#checkedOut" when="1930-08-29">Aug 29 </date><bibl ana="#borrowedItem" corresp="mep:005c6s"><title>Red Ledger</title></bibl><date ana="#returned" when="1930-09-01">Sept 01</date>
-                      <date ana="#checkedOut" when="1930-08-29">Aug 29 </date><bibl ana="#borrowedItem" corresp="mep:00fx08"><title>J.R. 1m 1vol = 40v</title></bibl><date ana="#returned" when="1930-10-26">Oct 26</date>
-                      <date ana="#checkedOut" when="1930-09-01">Sept 01 </date><bibl ana="#borrowedItem" corresp="mep:00fx1k"><title>Sinister Man</title></bibl><date ana="#returned" when="1930-09-03">Sept 03</date>
-                      <date ana="#checkedOut" when="1930-09-03">Sept 03 </date><bibl ana="#borrowedItem" corresp="mep:001h77"><title>Dance Little Gentleman</title></bibl><date ana="#returned" when="1930-09-05">Sept 05</date>
+                     
+                 <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1930-04-12">April 12</date>
+                     <bibl ana="#borrowedItem" corresp="mep:001j4k">
+                         <title>Death of a Hero</title>
+                     </bibl>
+                     <date ana="#returned" when="1930-04-15">April 15</date>
+                 </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-04-15">April 15</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw2m">
+                          <title>That Other Love</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-04-22">April 22</date>
                   </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-04-22">April 22</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00961t">
+                          <title>Golden Hades</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-04-28">April 28</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-04-28">April 28</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw3x">
+                          <title>Courts of the Morning</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-05-07">May 07</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-05-07">May 07</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw47">
+                          <title>Best Short Stories 1929 Eng</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-05-09">May 09</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-05-09">May 09</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw5j">
+                          <title>Face in the Night</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-06-26">June 26</date>
+                  </ab>
+                  
+                <note>
+                    = sub expired since <date when="1930-05-12">May 12th</date>
+                <date when="1930-06-26">June 26</date>. 1.R.  3m 1 vol = 100
+                </note>
+                     
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-06-26">June 26</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw6v">
+                          <title>Finger of Fate</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-07-11">July 11</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-07-04">July 04</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00061n">
+                          <title>Painted Veils</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-07-21">July 21</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-07-21">July 21</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw75">
+                          <title>Confession of <unclear/></title>
+                      </bibl>
+                      <date ana="#returned" when="1930-07-29">July 29</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-07-29">July 29</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw8g">
+                          <title>Babe in the Wood</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-08-07">Aug 07</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-08-07">Aug 07</date>
+                      <bibl ana="#borrowedItem" corresp="mep:001m2h">
+                          <title>Bridge of San Luis Rey</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-08-13">Aug 13</date>
+                  </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-08-13">Aug 13</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00061n">
+                          <title>Painted Veil</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-08-26">Aug 26</date>
+                  </ab>                  
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-08-26">Aug 26</date>
+                      <bibl ana="#borrowedItem" corresp="mep:00fw9s">
+                          <title>Million Pound Deposit</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-08-29">Aug 29</date>
+                  </ab>
+                  
+                 <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1930-08-29">Aug 29</date>
+                     <bibl ana="#borrowedItem" corresp="mep:005c6s">
+                         <title>Red Ledger</title>
+                     </bibl>
+                     <date ana="#returned" when="1930-09-01">Sept 01</date>
+                 </ab>
+                  
+                 <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1930-08-29">Aug 29</date>
+                     <bibl ana="#borrowedItem" corresp="mep:00fx08">
+                         <title>J.R. </title>  
+                     </bibl>
+                     <note> 1m 1vol = 40v</note>
+                     <date ana="#returned" when="1930-10-26">Oct 26</date>
+                 </ab>
+                  
+                 <ab ana="#borrowingEvent">
+                     <date ana="#checkedOut" when="1930-09-01">Sept 01</date>
+                     <bibl ana="#borrowedItem" corresp="mep:00fx1k">
+                         <title>Sinister Man</title>
+                     </bibl>
+                     <date ana="#returned" when="1930-09-03">Sept 03</date>
+                 </ab>
+                  
+                  <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1930-09-03">Sept 03</date>
+                      <bibl ana="#borrowedItem" corresp="mep:001h77">
+                          <title>Dance Little Gentleman</title>
+                      </bibl>
+                      <date ana="#returned" when="1930-09-05">Sept 05</date>
+                  </ab>
+                  
               </div>
                 
                 <div type="verso">
                 <pb facs="#s4"/>
                 
-                
-                    <ab> <persName ref="edwa.th">EDWARDS</persName>
+                <head>
+                     <persName ref="edwa.th">EDWARDS</persName>
+                </head>	
                 		
-                		
-                		    <date ana="#checkedOut" when="1930-09-05">Sept 05 </date><bibl ana="#borrowedItem"><title><unclear/> Harker</title></bibl><date ana="#returned" when="1930-09-16">Sept 16</date>
-                		    <date ana="#checkedOut" when="1930-09-16">Sept 16 </date><bibl ana="#borrowedItem" corresp="mep:00fx36"><title>There was a Ship</title></bibl><date ana="#returned" when="1930-09-24">Sept 24</date>
-                		    <date ana="#checkedOut" when="1930-09-24">Sept 24 </date><bibl ana="#borrowedItem" corresp="mep:00dm25"><title>Man Who Lost Himself</title></bibl><date ana="#returned" when="1930-09-25">Sept 25</date>
-                		    <date ana="#checkedOut" when="1930-09-25">Sept 25 </date><bibl ana="#borrowedItem" corresp="mep:00034r"><title>Brief Candle</title></bibl><date ana="#returned" when="1930-09-29">Sept 29</date>
-                		    <date ana="#checkedOut" when="1930-09-29">Sept 29 </date><bibl ana="#borrowedItem" corresp="mep:004n6r"><title>Hairy Ape</title></bibl><date ana="#returned" when="1930-09-30">Sept 30</date>
-                		    <date ana="#checkedOut" when="1930-09-30">Sept 30 </date><bibl ana="#borrowedItem" corresp="mep:001p3c"><title>Women in Love</title></bibl><date ana="#returned" when="1930-10-06">Oct 06</date>
-                		    <date ana="#checkedOut" when="1930-10-06">Oct 06 </date><bibl ana="#borrowedItem" corresp="mep:00fx4h"><title>Slaves of the Gods</title></bibl><date ana="#returned" when="1930-10-13">Oct 13</date>
-                		    <date ana="#checkedOut" when="1930-10-13">Oct 13 </date><bibl ana="#borrowedItem" corresp="mep:00fx5t"><title>Four Faultless Felons</title></bibl><date ana="#returned" when="1930-10-20">Oct 20</date>
-              
-                				Subs expired since <date when="1930-09-12">Sept 12th 1930</date>
+                		    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-09-05">Sept 05</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00b893">
+                            <title>Sard Harker</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-09-16">Sept 16</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1930-09-16">Sept 16</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00fx36">
+                           <title>There was a Ship</title>
+                       </bibl>
+                       <date ana="#returned" when="1930-09-24">Sept 24</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-09-24">Sept 24</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00dm25">
+                            <title>Man Who Lost Himself</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-09-25">Sept 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-09-25">Sept 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00034r">
+                            <title>Brief Candle</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-09-29">Sept 29</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-09-29">Sept 29</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004n6r">
+                            <title>Hairy Ape</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-09-30">Sept 30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-09-30">Sept 30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001p3c">
+                            <title>Women in Love</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-10-06">Oct 06</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-10-06">Oct 06</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fx4h">
+                            <title>Slaves of the Gods</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-10-13">Oct 13</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-10-13">Oct 13</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fx5t">
+                            <title>Four Faultless Felons</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-10-20">Oct 20</date>
+                    </ab>
+                    
+                				<note>
+                				    Subs expired since <date when="1930-09-12">Sept 12th 1930</date>
+                				</note>
                 				
-                		    <date ana="#checkedOut" when="1930-10-20">Oct 20 </date><bibl ana="#borrowedItem" corresp="mep:00515q"><title>White Face</title></bibl><date ana="#returned" when="1930-10-20">Oct 20</date>
-                		    <date ana="#checkedOut" when="1930-10-20">Oct 20 </date><bibl ana="#borrowedItem"><title><unclear/> Fall Out</title></bibl><date ana="#returned" when="1930-11-12">Nov 12</date>
-            
-                			J.R for 3 months  to <date when="1930-12-12">Dec 12th 1930</date>
+                		    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-10-20">Oct 20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00515q">
+                            <title>White Face</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-10-20">Oct 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-10-20">Oct 20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:005f6b">
+                            <title>Rogues Fall Out</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-11-12">Nov 12</date>
+                    </ab>
+                    
+                			<note>
+                			    S.R for 3 months  to <date when="1930-12-12">Dec 12th 1930</date>
+                			</note>
                 			
-                		    <date ana="#checkedOut" when="1930-11-12">Nov 12</date><bibl ana="#borrowedItem" corresp="mep:00997h"><title>Martin Makebelieve</title></bibl><date ana="#returned" when="1930-11-24">Nov 24</date>
-                		    <date ana="#checkedOut" when="1930-11-24">Nov 24</date><bibl ana="#borrowedItem" corresp="mep:002375"><title>Man in a Black Hat</title></bibl><date ana="#returned" when="1930-11-27">Nov 27</date>
-                		    <date ana="#checkedOut" when="1930-11-27">Nov 27</date><bibl ana="#borrowedItem" corresp="mep:006j81"><title>Summer</title></bibl><date ana="#returned" when="1930-12-13">Dec 13</date>
-                		    <date ana="#checkedOut" when="1930-12-13">Dec 13</date><bibl ana="#borrowedItem" corresp="mep:00fx7f"><title>Royal <unclear/></title></bibl><date ana="#returned" when="1930-12-30">Dec 30</date>
-                                             will renew		
-                							next time
-                		    <date ana="#checkedOut" when="1930-12-30">Dec 30</date><bibl ana="#borrowedItem" corresp="mep:00dp1d"><title>Castle <unclear/>  Memoirs of an Infantry Officer</title></bibl><date ana="#returned" when="1931-02-24">Feb 24</date>
-                		    <date ana="#checkedOut" when="1930-12-30">Dec 30</date><bibl ana="#borrowedItem" corresp="mep:005g87"><title>Major's Candle Sticks</title></bibl> to be kept longer <date ana="#returned" when="1931-02-24">Feb 24</date>
-                		    <date ana="#checkedOut" when="1930-12-30">Dec 30</date><bibl ana="#borrowedItem" corresp="mep:00dp1d"><title>Castle <unclear/></title></bibl>
-             
-               <date ana="#returned" when="1930-12-30"> "	30	</date>	Castle <unclear/>.  <date when="1931-01-26">Jan 26.</date> f.c. or <date when="1931-01-31">Jan 31st</date>	<date when="1931-02-24">Feb. 24</date>_
-                					<date when="1931-02-20">Feb 20</date>
-                <date when="1931-02-24">Feb. 24	</date>	J.R. 6m 1 vol = 180f to June 12f 1930 ?
+                		    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-11-12">Nov 12</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00997h">
+                            <title>Martin Makebelieve</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-11-24">Nov 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-11-24">Nov 24</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002375">
+                            <title>Man in a Black Hat</title>
+                        </bibl>
+                        <date ana="#returned" when="1930-11-27">Nov 27</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1930-11-27">Nov 27</date>
+                       <bibl ana="#borrowedItem" corresp="mep:006j81">
+                           <title>Summer</title>
+                       </bibl>
+                       <date ana="#returned" when="1930-12-13">Dec 13</date>
+                   </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1930-12-13">Dec 13</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00fx7f">
+                           <title>Royal <unclear/></title>
+                       </bibl>
+                       <date ana="#returned" when="1930-12-30">Dec 30</date>
+                   </ab>
+                    
+                    <note>
+                                                 will renew		
+                							     next time
+                    </note>
+                		    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-12-30">Dec 30</date>
+                        <del><bibl><title>Castle Gay</title></bibl></del>
+                        <bibl ana="#borrowedItem" corresp="mep:00dp1d">
+                            <title>Memoirs of an Infantry Officer</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-02-24">Feb 24</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-12-30">Dec 30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:005g87">
+                            <title>Major's Candle Sticks</title>
+                        </bibl> 
+                        <note>to be kept longer</note>
+                        <date ana="#returned" when="1931-02-24">Feb 24</date>
+                    </ab>
+                                   
+                    
+               
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1930-12-30">"	30</date>	
+                        <bibl ana="#borrowedItem">
+                            <title>Castle Gay.</title>
+                        </bibl> 
+                        <note>
+                            <date when="1931-01-26">Jan 26.</date> f.c. or <date when="1931-01-31">Jan 31st</date>
+                            <date when="1931-02-20">Feb 20</date>
+                        </note>	
+                        <date ana="#returned" when="1931-02-24">Feb. 24</date>_                       
+                    </ab>
+                    
+                    <note>
+                    <date when="1931-02-24">Feb. 24	</date>	J.R. 6m 1 vol = 180f to June 12f 1930 ?
+                    </note>
                 
-     <date ana="#checkedOut" when="1931-02-24">Feb 24</date><bibl ana="#borrowedItem" corresp="mep:00fx92"><title>Nothing to Pay</title></bibl><date ana="#returned" when="1931-02-28">Feb 28</date>
-    <date ana="#checkedOut" when="1931-02-28">Feb 28</date><bibl ana="#borrowedItem" corresp="mep:001k1x"><title>Forsyte Saga</title></bibl><date ana="#checkedOut" when="1931-03-11">March 11</date>
-                		    <bibl ana="#borrowedItem" corresp="mep:00d87z"><title>Cimarron</title></bibl>(no extra charge)
-    <date ana="#checkedOut" when="1931-03-11">March 11</date><bibl ana="#borrowedItem" corresp="mep:009563"><title>She Who Sleeps</title></bibl><date ana="#returned" when="1931-03-13">March 13</date>	    
-    <date ana="#checkedOut" when="1931-03-13">March 13</date><bibl ana="#borrowedItem" corresp="mep:002375"><title>Man in a Black Hat</title></bibl><date ana="#returned" when="1931-03-17">March 17</date>	
-     <date ana="#checkedOut" when="1931-03-17">March 17</date><bibl ana="#borrowedItem" corresp="mep:00524p"><title>Dumb Animals</title></bibl><date ana="#returned" when="1931-03-20">March 20</date>	
-    <date ana="#checkedOut" when="1931-03-20">March 20</date><bibl ana="#borrowedItem" corresp="mep:00433d"><title>Cakes and Ale</title></bibl><date ana="#returned" when="1931-03-25">March 25</date>	
-    <date ana="#checkedOut" when="1931-03-25">March 25</date><bibl ana="#borrowedItem" corresp="mep:003j6p"><title>Short Stories Warwick Deeping</title></bibl><date ana="#returned" when="1931-03-31">March 31</date>	
-    <date ana="#checkedOut" when="1931-03-31">March 31</date><bibl ana="#borrowedItem" corresp="mep:00fz0j"><title>Le Golden Roum</title></bibl><date ana="#returned" when="1931-04-01">April 01</date>	
+     
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-02-24">Feb 24</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fx92">
+                            <title>Nothing to Pay</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-02-28">Feb 28</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-02-28">Feb 28</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001k1x">
+                            <title>Forsyte Saga</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-03-11">March 11</date>
+                    </ab>
+                    
+                    <note>
+                        <del>                        
+                            <bibl corresp="mep:00d87z">
+                                <title>Cimarron</title>
+                            </bibl>
+                            (no extra charge)
+                        </del>
+                    </note>
+    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-03-11">March 11</date>
+                        <bibl ana="#borrowedItem" corresp="mep:009563">
+                            <title>She Who Sleeps</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-03-13">March 13</date>
+                    </ab>	    
+    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-03-13">March 13</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002375">
+                            <title>Man in a Black Hat</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-03-17">March 17</date>	
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-03-17">March 17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00524p">
+                            <title>Dumb Animals</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-03-20">March 20</date>
+                    </ab>	
+    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-03-20">March 20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00433d">
+                            <title>Cakes and Ale</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-03-25">March 25</date>
+                    </ab>	
+    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-03-25">March 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003j6p">
+                            <title>Short Stories Warwick Deeping</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-03-31">March 31</date>
+                    </ab>	
+    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-03-31">March 31</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz0j">
+                            <title>Le Golden Roum</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-04-01">April 01</date>
+                    </ab>	
             
-                		</ab>
+                		
                 </div>
                 
                 <div type="recto">
-                <pb facs="#s5"/>
-                			<ab> <persName ref="edwa.th">EDWARDS</persName>				subs to <date when="1931-06-12">June 12th 1931 </date>
+                    <pb facs="#s5"/>
+                			 <head>
+                			     <persName ref="edwa.th">EDWARDS</persName>				subs to <date when="1931-06-12">June 12th 1931</date>
+                			 </head>
         
               
-              <date ana="#checkedOut" when="1931-04-01">April 01</date><bibl ana="#borrowedItem" corresp="mep:00fz1v"><title>Laughing Queen</title></bibl><date ana="#returned" when="1931-04-09">April 09</date>	
-              <date ana="#checkedOut" when="1931-04-09">April 09</date><bibl ana="#borrowedItem" corresp="mep:001682"><title>Look Homeward Angel</title></bibl><date ana="#returned" when="1931-04-16">April 16</date>
-              <date ana="#checkedOut" when="1931-04-16">April 16</date><bibl ana="#borrowedItem" corresp="mep:00fz25"><title>Not Without Laughter</title></bibl><date ana="#returned" when="1931-04-20">April 20</date>
-              <date ana="#checkedOut" when="1931-04-20">April 20</date><bibl ana="#borrowedItem" corresp="mep:00fz3g"><title>Redhead</title></bibl><date ana="#returned" when="1931-05-15">May 15</date>
-              <date ana="#checkedOut" when="1931-05-15">May 15</date><bibl ana="#borrowedItem" corresp="mep:00257q"><title>Mother India</title></bibl><date ana="#returned" when="1931-05-20">May 20</date>
-              <date ana="#checkedOut" when="1931-05-20">May 20</date><bibl ana="#borrowedItem" corresp="mep:00fz4s"><title>Spanish Farm Trilogy</title></bibl><date ana="#returned" when="1931-06-01">June 01</date>
-              <date ana="#checkedOut" when="1931-06-01">June 01</date><bibl ana="#borrowedItem" corresp="mep:00fz53"><title>Studies H Ellis vol II</title></bibl><date ana="#returned" when="1931-06-04">June 04</date>
-              <date ana="#checkedOut" when="1931-06-04">June 04</date><bibl ana="#borrowedItem" corresp="mep:00fr72"><title>Jungle Ways</title></bibl><date ana="#returned" when="1931-06-10">June 10</date>
-              <date ana="#checkedOut" when="1931-06-10">June 10</date><bibl ana="#borrowedItem" corresp="mep:00fd1f"><title>Sexual Question</title></bibl><date ana="#returned" when="1931-06-23">June 23</date>
-            
-                <date when="1931-06-23">"	23</date>		1.R. 6m 1 vol = Professor 144. <date when="1931">1931</date>
-                		<date from="1931-06-12">June 12</date> <date to="1931-09-12">- Sept 12 1931</date> 	to <date to="1931-12-12">December 12th 1931</date>
+              
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-04-01">April 01</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz1v">
+                            <title>Laughing Queen</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-04-09">April 09</date>
+                    </ab>	
+              
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-04-09">April 09</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001682">
+                            <title>Look Homeward Angel</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-04-16">April 16</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-04-16">April 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz25">
+                            <title>Not Without Laughter</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-04-20">April 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-04-20">April 20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz3g">
+                            <title>Redhead</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-05-15">May 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-05-15">May 15</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00257q">
+                            <title>Mother India</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-05-20">May 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-05-20">May 20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz4s">
+                            <title>Spanish Farm Trilogy</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-06-01">June 01</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-06-01">June 01</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz53">
+                            <title>Studies H Ellis </title>
+                            <biblScope unit="volume" from="2">vol II</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1931-06-04">June 04</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1931-06-04">June 04</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00fr72">
+                           <title>Jungle Ways</title>
+                       </bibl>
+                       <date ana="#returned" when="1931-06-10">June 10</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-06-10">June 10</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fd1f">
+                            <title>Sexual Question</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-06-23">June 23</date>
+                    </ab>
+                    
+                <note>
+                    <date when="1931-06-23">"	23</date>		1.R. 6m 1 vol = Professor 144. <date when="1931">1931</date>
+                		<date from="1931-06-12" to="1931-09-12">June 12 - Sept 12 1931</date> 	to <date to="1931-12-12">December 12th 1931</date>
+                </note>
                 		
-              <date ana="#checkedOut" when="1931-06-23">June 23</date><bibl ana="#borrowedItem" corresp="mep:008g51"><title>Totem &amp; Taboo</title></bibl><date ana="#returned" when="1931-06-25">June 25</date>
-              <date ana="#checkedOut" when="1931-06-10">June 10</date><bibl ana="#borrowedItem" corresp="mep:00fd1f"><title>Sexual Question</title></bibl><date ana="#returned" when="1931-06-23">June 23</date>
-              <date ana="#checkedOut" when="1931-06-25">June 25</date><bibl ana="#borrowedItem" corresp="mep:00fz6d"><title>Scotland Yard</title></bibl><date ana="#returned" when="1931-07-09">July 09</date>
-              <date ana="#checkedOut" when="1931-07-09">July 09</date><bibl ana="#borrowedItem" corresp="mep:00fz7q"><title>Flamenco</title></bibl><date ana="#returned" when="1931-07-27">July 27</date>
-              <date ana="#checkedOut" when="1931-07-27">June 27</date><bibl ana="#borrowedItem" corresp="mep:00fz6d"><title>Scotland Yard</title></bibl><date ana="#returned" when="1931-07-09">July 09</date>
-              <date ana="#checkedOut" when="1931-07-27">June 27</date><bibl ana="#borrowedItem" corresp="mep:00fz81"><title>In Defense of Sensuality</title></bibl><date ana="#returned" when="1931-08-12">Aug 12</date>
-                                                p.c. <date when="1931-08-11">Aug 11 </date> 
-              <date ana="#checkedOut" when="1931-08-12">Aug 12</date><bibl ana="#borrowedItem" corresp="mep:00963f"><title>Murder at Wride Park</title></bibl><date ana="#returned" when="1931-08-17">Aug 17</date>
-              <date ana="#checkedOut" when="1931-08-17">Aug 17</date><bibl ana="#borrowedItem" corresp="mep:00fz9b"><title>Dawn</title></bibl><date ana="#returned" when="1931-08-22">Aug 22</date>
-              <date ana="#checkedOut" when="1931-08-22">Aug 22</date><bibl ana="#borrowedItem" corresp="mep:001134"><title>Golden Bough</title></bibl><date ana="#returned" when="1931-09-02">Sept 02</date>
-              <date ana="#checkedOut" when="1931-09-02">Sept 02</date><bibl ana="#borrowedItem" corresp="mep:008p04"><title>Trembling of a Leaf</title></bibl><date ana="#returned" when="1931-09-04">Sept 04</date>
-              <date ana="#checkedOut" when="1931-09-04">Sept 04</date><bibl ana="#borrowedItem" corresp="mep:00g002"><title>Studies vol 3</title></bibl><date ana="#returned" when="1931-09-07">Sept 07</date>
-              <date ana="#checkedOut" when="1931-09-07">Sept 07</date><bibl ana="#borrowedItem" corresp="mep:00g01c"><title>Eonism Studies vol VII</title></bibl><date ana="#returned" when="1931-09-09">Sept 09</date>
-              <date ana="#checkedOut" when="1931-09-09">Sept 09</date><bibl ana="#borrowedItem" corresp="mep:00g02p"><title>Studies vol IV</title></bibl><date ana="#returned" when="1931-09-15">Sept 15</date>
-              <date ana="#checkedOut" when="1931-09-15">Sept 15</date><bibl ana="#borrowedItem" corresp="mep:00g030"><title>Amazon</title></bibl><date ana="#returned" when="1931-09-29">Sept 29</date>
+              
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-06-23">June 23</date>
+                        <bibl ana="#borrowedItem" corresp="mep:008g51">
+                            <title>Totem &amp; Taboo</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-06-25">June 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-06-10">June 10</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fd1f">
+                            <title>Sexual Question</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-06-23">June 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-06-25">June 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz6d">
+                            <title>Scotland Yard</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-07-09">July 09</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-07-09">July 09</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz7q">
+                            <title>Flamenco</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-07-27">July 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-07-27">June 27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz6d">
+                            <title>Scotland Yard</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-07-09">July 09</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-07-27">June 27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz81">
+                            <title>In Defense of Sensuality</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-08-12">Aug 12</date>
+                    </ab>
+                    
+                    <note>p.c. <date when="1931-08-11">Aug 11</date></note>
+              
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-08-12">Aug 12</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00963f">
+                            <title>Murder at Wride Park</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-08-17">Aug 17</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-08-17">Aug 17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00fz9b">
+                            <title>Dawn</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-08-22">Aug 22</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-08-22">Aug 22</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001134">
+                            <title>Golden Bough</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-09-02">Sept 02</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-09-02">Sept 02</date>
+                        <bibl ana="#borrowedItem" corresp="mep:008p04">
+                            <title>Trembling of a Leaf</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-09-04">Sept 04</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-09-04">Sept 04</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g002">
+                            <title>Studies </title>
+                           <biblScope unit="volume" from="3"> vol 3</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1931-09-07">Sept 07</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-09-07">Sept 07</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g01c">
+                            <title>Eonism Studies </title>
+                           <biblScope unit="volume" from="7"> vol VII</biblScope>
+                        </bibl>
+                        <date ana="#returned" when="1931-09-09">Sept 09</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1931-09-09">Sept 09</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00g02p">
+                           <title>Studies </title>
+                           <biblScope unit="volume" from="4">vol IV</biblScope>
+                       </bibl>
+                       <date ana="#returned" when="1931-09-15">Sept 15</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-09-15">Sept 15</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g030">
+                            <title>Amazon</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-09-29">Sept 29</date>
+                    </ab>
+                    
+                <note>Renewed <date from="1931-09-12" to="1931-12-12">September 12 - December 12 1931</date> 65v</note>
                 
-                Renewed <date from="1931-09-12">September 12</date> <date to="1931-12-12">- December 12 1931</date> 65v
-                
-              <date ana="#checkedOut" when="1931-09-29">Sept 29</date><bibl ana="#borrowedItem" corresp="mep:004f8q"><title>Murder in Four Degrees</title></bibl><date ana="#returned" when="1931-10-01">Oct 01</date>
-              <date ana="#checkedOut" when="1931-10-01">Oct 01</date><bibl ana="#borrowedItem" corresp="mep:00g049"><title>Undergrown</title></bibl><date ana="#returned" when="1931-10-02">Oct 02</date>
-              <date ana="#checkedOut" when="1931-10-02">Oct 02</date><bibl ana="#borrowedItem" corresp="mep:00g05m"><title>Green Toad</title></bibl><date ana="#returned" when="1931-10-05">Oct 05</date>
-              <date ana="#checkedOut" when="1931-10-02">Oct 02</date><bibl ana="#borrowedItem" corresp="mep:004f35"><title>Daughter of Fu Manchu</title></bibl><date ana="#returned" when="1931-10-05">Oct 05</date>
-              <date ana="#checkedOut" when="1931-10-05">Oct 05</date><bibl ana="#borrowedItem" corresp="mep:004g1t"><title>First Person Singular</title></bibl><date ana="#returned" when="1931-10-08">Oct 08</date>
-              <date ana="#checkedOut" when="1931-10-08">Oct 08</date><bibl ana="#borrowedItem" corresp="mep:005d62"><title>Box Office Murders</title></bibl><date ana="#returned" when="1931-10-09">Oct 09</date>
-              <date ana="#checkedOut" when="1931-10-09">Oct 09</date><bibl ana="#borrowedItem" corresp="mep:004d6t"><title>Compelled Hero</title></bibl><date ana="#returned" when="1931-10-10">Oct 10</date>
-              <date ana="#checkedOut" when="1931-10-10">Oct 10</date><bibl ana="#borrowedItem" corresp="mep:00d87z"><title>Cimarron</title></bibl><date ana="#returned" when="1931-10-15">Oct 15</date>
-            
-          </ab>
+              
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-09-29">Sept 29</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004f8q">
+                            <title>Murder in Four Degrees</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-01">Oct 01</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-01">Oct 01</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g049">
+                            <title>Undergrown</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-02">Oct 02</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-02">Oct 02</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g05m">
+                            <title>Green Toad</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-05">Oct 05</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-02">Oct 02</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004f35">
+                            <title>Daughter of Fu Manchu</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-05">Oct 05</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-05">Oct 05</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004g1t">
+                            <title>First Person Singular</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-08">Oct 08</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1931-10-08">Oct 08</date>
+                       <bibl ana="#borrowedItem" corresp="mep:005d62">
+                           <title>Box Office Murders</title>
+                       </bibl>
+                       <date ana="#returned" when="1931-10-09">Oct 09</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-09">Oct 09</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004d6t">
+                            <title>Compelled Hero</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-10">Oct 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-10">Oct 10</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d87z">
+                            <title>Cimarron</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-15">Oct 15</date>
+                    </ab>
+                    
+          
                 </div>
                 
                 <div type="verso">
                     <pb facs="#s6"/>
                 
-                <ab><date when="1931">1931</date>		<persName ref="edwa.th">EDWARDS </persName>
+                <head>
+                    <date when="1931">1931</date>		<persName ref="edwa.th">EDWARDS </persName>
+                </head>
                     
                   
-                        <date ana="#checkedOut" when="1931-10-10">Oct 10</date><bibl ana="#borrowedItem" corresp="mep:006m9w"><title>Chair on the Boulevard</title></bibl><date ana="#returned" when="1931-10-15">Oct 15</date>
-                        <date ana="#checkedOut" when="1931-10-15">Oct 15</date><bibl ana="#borrowedItem" corresp="mep:005f98"><title>Scarab Murder Case</title></bibl><date ana="#returned" when="1931-10-16">Oct 16</date>
-                        <date ana="#checkedOut" when="1931-10-16">Oct 16</date><bibl ana="#borrowedItem" corresp="mep:004f2v"><title>Corn King &amp; the Spring Queen</title></bibl><date ana="#returned" when="1931-10-23">Oct 23</date>
-                        <date ana="#checkedOut" when="1931-10-23">Oct 23</date><bibl ana="#borrowedItem" corresp="mep:00g06x"><title>Headless Hound</title></bibl><date ana="#returned" when="1931-10-28">Oct 28</date>
-                        <date ana="#checkedOut" when="1931-10-28">Oct 28</date><bibl ana="#borrowedItem" corresp="mep:00g077"><title>No Other Tiger</title></bibl><date ana="#returned" when="1931-11-16">Nov 16</date>
-                        <date ana="#checkedOut" when="1931-11-16">Nov 16</date><bibl ana="#borrowedItem" corresp="mep:00g08j"><title>Gunner</title></bibl><date ana="#returned" when="1931-11-21">Nov 21</date>
-                        <date ana="#checkedOut" when="1931-11-19">Nov 19</date><bibl ana="#borrowedItem" corresp="mep:004g4r"><title>Dwarf's Blood</title></bibl><date ana="#returned" when="1931-11-25">Nov 25</date>
-                        <date ana="#checkedOut" when="1931-11-21">Nov 21</date><bibl ana="#borrowedItem" corresp="mep:00d99v"><title>History of Witchcraft &amp;Demonology</title></bibl><date ana="#returned" when="1931-11-25">Nov 25</date>
-                        <date ana="#checkedOut" when="1931-11-25">Nov 25</date><bibl ana="#borrowedItem" corresp="mep:00g09v"><title>Black Cap</title></bibl><date ana="#returned" when="1931-11-30">Nov 30</date>
-                        <date ana="#checkedOut" when="1931-11-30">Nov 30</date><bibl ana="#borrowedItem" corresp="mep:00g10b"><title>Doctor looks at Life and Death</title></bibl><date ana="#returned" when="1931-12-01">Dec 01</date>
-                        <date ana="#checkedOut" when="1931-12-01">Dec 01</date><bibl ana="#borrowedItem" corresp="mep:00584b"><title>Green Rope</title></bibl><date ana="#returned" when="1931-12-03">Dec 03</date>
-                        <date ana="#checkedOut" when="1931-12-03">Dec 03</date><bibl ana="#borrowedItem" corresp="mep:001b6j"><title>Sound + the Fury</title></bibl><date ana="#returned" when="1931-12-09">Dec 09</date>
-                        <date ana="#checkedOut" when="1931-12-09">Dec 09</date><bibl ana="#borrowedItem" corresp="mep:00g11n"><title>These Thirteen</title></bibl><date ana="#returned" when="1931-12-11">Dec 11</date>
-                        <date ana="#checkedOut" when="1931-12-11">Dec 11</date><bibl ana="#borrowedItem" corresp="mep:00cd56"><title>Diary of a Drug Fiend</title></bibl><date ana="#returned" when="1931-12-21">Dec 21</date>
-                        <date ana="#checkedOut" when="1931-12-21">Dec 21</date><bibl ana="#borrowedItem" corresp="mep:005f8z"><title>Dead Men Do Tell</title></bibl><date ana="#returned" when="1931-12-23">Dec 23</date>
-                        <date ana="#checkedOut" when="1931-12-23">Dec 23</date><bibl ana="#borrowedItem" corresp="mep:006h1k"><title>Casuarina Tree</title></bibl><date ana="#returned" when="1932-01-07">Jan 07</date>
-                        <date ana="#checkedOut" when="1932-01-04">Jan 04</date><bibl ana="#borrowedItem" corresp="mep:004g99"><title>Murder, Murder - extra </title></bibl><date ana="#returned" when="1932-01-05">Jan 05</date>
-                        <date ana="#checkedOut" when="1932-01-05">Jan 05</date><bibl ana="#borrowedItem" corresp="mep:001c2k"><title>Apes of God </title></bibl><date ana="#returned" when="1932-01-07">Jan 07</date>
-                        <date ana="#checkedOut" when="1932-01-07">Jan 07</date><bibl ana="#borrowedItem" corresp="mep:00g12z"><title>Jim Redlake </title></bibl><date ana="#returned" when="1932-01-13">Jan 13</date>
-                        <date ana="#checkedOut" when="1932-01-13">Jan 13</date><bibl ana="#borrowedItem" corresp="mep:00732t"><title>Detection, mystery + Horrors</title></bibl><date ana="#returned" when="1932-02-02">Feb 02</date>
-                        <date ana="#checkedOut" when="1932-02-02">Feb 02</date><bibl ana="#borrowedItem" corresp="mep:002s7p"><title>On the Edge </title></bibl><date ana="#returned" when="1932-02-04">Feb 04</date>
-                
-                				owes subsc since <date when="1931-12-12">Dec 12th</date>
-                				and fine 5 days 2.50
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-10">Oct 10</date>
+                        <bibl ana="#borrowedItem" corresp="mep:006m9w">
+                            <title>Chair on the Boulevard</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-15">Oct 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-15">Oct 15</date>
+                        <bibl ana="#borrowedItem" corresp="mep:005f98">
+                            <title>Scarab Murder Case</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-16">Oct 16</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-16">Oct 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004f2v">
+                            <title>Corn King &amp; the Spring Queen</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-23">Oct 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-23">Oct 23</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g06x">
+                            <title>Headless Hound</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-10-28">Oct 28</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-28">Oct 28</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g077">
+                            <title>No Other Tiger</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-11-16">Nov 16</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-11-16">Nov 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g08j">
+                            <title>Gunner</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-11-21">Nov 21</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-11-19">Nov 19</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004g4r">
+                            <title>Dwarf's Blood</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-11-25">Nov 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-11-21">Nov 21</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d99v">
+                            <title>History of Witchcraft &amp;Demonology</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-11-25">Nov 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-11-25">Nov 25</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g09v">
+                            <title>Black Cap</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-11-30">Nov 30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-11-30">Nov 30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g10b">
+                            <title>Doctor looks at Life and Death</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-12-01">Dec 01</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-12-01">Dec 01</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00584b">
+                            <title>Green Rope</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-12-03">Dec 03</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-12-03">Dec 03</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001b6j">
+                            <title>Sound + the Fury</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-12-09">Dec 09</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-12-09">Dec 09</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g11n">
+                            <title>These Thirteen</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-12-11">Dec 11</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-12-11">Dec 11</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00cd56">
+                            <title>Diary of a Drug Fiend</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-12-21">Dec 21</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-12-21">Dec 21</date>
+                        <bibl ana="#borrowedItem" corresp="mep:005f8z">
+                            <title>Dead Men Do Tell</title>
+                        </bibl>
+                        <date ana="#returned" when="1931-12-23">Dec 23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-12-23">Dec 23</date>
+                        <bibl ana="#borrowedItem" corresp="mep:006h1k">
+                            <title>Casuarina Tree</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-01-07">Jan 07</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-01-04">Jan 04</date>
+                        <bibl ana="#borrowedItem" corresp="mep:004g99">
+                            <title>Murder, Murder</title>
+                        </bibl>
+                        <note>- extra</note>
+                        <date ana="#returned" when="1932-01-05">Jan 05</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-01-05">Jan 05</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001c2k">
+                            <title>Apes of God </title>
+                        </bibl>
+                        <date ana="#returned" when="1932-01-07">Jan 07</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-01-07">Jan 07</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g12z">
+                            <title>Jim Redlake </title>
+                        </bibl>
+                        <date ana="#returned" when="1932-01-13">Jan 13</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-01-13">Jan 13</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00732t">
+                            <title>Detection, mystery + Horrors</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-02-02">Feb 02</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-02">Feb 02</date>
+                        <bibl ana="#borrowedItem" corresp="mep:002s7p">
+                            <title>On the Edge </title>
+                        </bibl>
+                        <date ana="#returned" when="1932-02-04">Feb 04</date>
+                    </ab>
+                    
+                				<note>
+                				    owes subsc since <date when="1931-12-12">Dec 12th</date>
+                				    and fine 5 days 2.50
+                				</note>
                 				
-                        <date ana="#checkedOut" when="1932-02-04">Feb 04</date><bibl ana="#borrowedItem" corresp="mep:00g138"><title>When the bough breaks </title></bibl><date ana="#returned" when="1932-03-10">March 10</date>
-                                p.c. <date when="1932-03-08">Mar 8 </date>
-                				will pay next time (?)
-                			<date from="1931-12-12">Dec 12</date> <date to="1932-03-12">- March 12</date>
-                			renewed <date from="1932-03-12">March 12</date> <date to="1932-06-12">- June 12th</date>	100
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-02-04">Feb 04</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g138">
+                            <title>When the bough breaks</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-03-10">March 10</date>
+                    </ab>
+                    
+                    <note>
+                                    p.c. <date when="1932-03-08">Mar 8 </date>
+                				    will pay next time (?)
+                			<date from="1931-12-12" to="1932-03-12">Dec 12 - March 12</date>
+                			renewed <date from="1932-03-12" to="1932-06-12">March 12 - June 12th</date>	100
+                     </note>
                 			
-                        <date ana="#checkedOut" when="1932-03-10">March 10</date><bibl ana="#borrowedItem" corresp="mep:00g14k"><title>Satan's Circus</title></bibl><date ana="#returned" when="1932-03-12">March 12</date>
-                        <date ana="#checkedOut" when="1932-03-12">March 12</date><bibl ana="#borrowedItem" corresp="mep:00515q"><title>White Face</title></bibl><date ana="#returned" when="1932-03-14">March 14</date>
-                        <date ana="#checkedOut" when="1932-03-14">March 14</date><bibl ana="#borrowedItem" corresp="mep:00419q"><title>Uneasy Money</title></bibl><date ana="#returned" when="1932-03-16">March 16</date>
-                        <date ana="#checkedOut" when="1932-03-16">March 16</date><bibl ana="#borrowedItem" corresp="mep:00g15w"><title>Great Short Stories of the World </title></bibl><date ana="#returned" when="1932-03-24">March 24</date>
- 
-           		            </ab>
+                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-03-10">March 10</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g14k">
+                            <title>Satan's Circus</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-03-12">March 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-03-12">March 12</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00515q">
+                            <title>White Face</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-03-14">March 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-03-14">March 14</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00419q">
+                            <title>Uneasy Money</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-03-16">March 16</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1932-03-16">March 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00g15w">
+                            <title>Great Short Stories of the World</title>
+                        </bibl>
+                        <date ana="#returned" when="1932-03-24">March 24</date>
+                    </ab>
+                    
+           		            
                 </div>
             </div>
         </body>

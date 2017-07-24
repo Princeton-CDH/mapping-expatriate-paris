@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -83,28 +85,97 @@
                 						<addrLine>à Nice-Cimiez A-M.</addrLine>
  </address>
   </head>
-	<ab>            						
-                sbsc. <date from="1935-11-02">2 Nov-</date>					(cheque) 100 -
-                p. 4.40   <date ana="#checkedOut" when="1935-11-02">2 Nov.</date> <bibl ana="#borrowedItem" corresp="mep:000c3n"><title>Queen Victoria</title> (<author>Benson</author>)</bibl>	  	 <date ana="#checkedOut" when="1935-12-07">7 Dec</date>
-                		 p. 4.40 <bibl ana="#borrowedItem" corresp="mep:000c4z"><title>Gay Life</title></bibl>					  	<date ana="#returned" when="1935-11-15">15 Nov.</date>
-		<date ana="#checkedOut" when="1935-12-07">7 Dec</date> p. 	    .<bibl ana="#borrowedItem" corresp="mep:000c58"><title>Joseph &amp; his brethren</title> 2 vols</bibl>. 	<date ana="#returned" when="1936-01-07">Jan 7</date>.
-                <date ana="#checkedOut" when="1935-12-10">10 "</date>	 p. 3.60 .<bibl ana="#borrowedItem" corresp="mep:000c6k"><title>Poison in Parish</title></bibl>				<date ana="#returned" when="1936-01-07">Jan 7</date>.
-		<date ana="#checkedOut" when="1936-01-07">Jan 7</date>.   p. 5.20 <bibl ana="#borrowedItem" corresp="mep:000c7w"><title>Mr Pinkerton grows a beard</title></bibl>.	<date ana="#checkedOut" when="1936-01-07">March 5</date>
-		<bibl ana="#borrowedItem"><title>Great Short Stories of <unclear>Delichar Myling ch.</unclear></title></bibl> <date ana="#checkedOut" when="1936-01-07">March 5</date>
-		<bibl ana="#borrowedItem" corresp="mep:000c9h"><title>The House of the 4 Winds</title></bibl>.		<date ana="#returned" when="1936-01-07">March 5</date>
-                				  <note><unclear>Mhimmy</unclear> to town soon
+            						
+               <note> sbsc. <date from="1935-11-02">2 Nov-</date>					(cheque) 100 -</note>
+                
+    
+    <ab ana="#borrowingEvent">
+        <note><del> p. 4.40 </del></note>
+        <date ana="#checkedOut" when="1935-11-02">2 Nov.</date> 
+        <bibl ana="#borrowedItem" corresp="mep:000c3n">
+            <title>Queen Victoria</title> 
+            (<author>Benson</author>)</bibl>	  	
+        <date ana="#returned" when="1935-12-07">7 Dec</date>
+    </ab>
+    
+   <ab ana="#borrowingEvent">
+       <note>p. 4.40 </note>
+       <date ana="#checkedOut" when="1935-11-02"/>      		 
+       <bibl ana="#borrowedItem" corresp="mep:000c4z">
+           <title>Gay Life</title></bibl>					  	
+       <date ana="#returned" when="1935-11-15">15 Nov.</date>
+   </ab>
+    
+    
+		<ab ana="#borrowingEvent">
+		    <date ana="#checkedOut" when="1935-12-07">7 Dec</date> 
+		    <note> p.</note> 	    
+		    .<bibl ana="#borrowedItem" corresp="mep:000c58">
+		        <title>Joseph &amp; his brethren</title> 2 vols</bibl>. 	
+		    <date ana="#returned" when="1936-01-07">Jan 7</date>.
+		</ab>
+    
+    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-12-10">10 "</date>	 
+                    <note> p. 3.60 .</note>
+                    <bibl ana="#borrowedItem" corresp="mep:000c6k">
+                        <title>Poison in Parish</title></bibl>				
+                    <date ana="#returned" when="1936-01-07">Jan 7</date>.
+                </ab>
+    
+    
+		<ab ana="#borrowingEvent">
+		    <date ana="#checkedOut" when="1936-01-07">Jan 7</date>.   
+		    <note> p. 5.20</note> 
+		    <bibl ana="#borrowedItem" corresp="mep:000c7w">
+		        <title>Mr Pinkerton grows a beard</title></bibl>.	
+		    <date ana="#returned" when="1936-01-07">March 5</date>
+		</ab>
+    
+    <ab ana="#borrowingEvent">
+        <date ana="#checkedOut" when="1936-01-07"/>
+        <bibl ana="#borrowedItem" corresp="mep:000c86">
+            <title>Great Short Stories of Delichar Myling ch. </title></bibl> 
+        <date ana="#returned" when="1936-01-07">March 5</date>
+    </ab>
+    
+   <ab ana="#borrowingEvent">
+       <date ana="#checkedOut" when="1936-01-07"/>
+       <bibl ana="#borrowedItem" corresp="mep:000c9h">
+           <title>The House of the 4 Winds</title></bibl>.		
+       <date ana="#returned" when="1936-01-07">March 5</date>
+   </ab>
+    
+    
+                				  <note> returning to town soon
                 				  no more books wanted</note>
                 				
                 		<note><date when="1936-04-15">April 15</date> <persName ref="#bald.he">Mrs Baldwin</persName> sent gifts to
                 		library:
-                	<bibl ana="#borrowedItem" corresp="mep:000d00"><author>Richard Haliburton</author>: <title>Seven League Books</title></bibl>
-                	<bibl ana="#borrowedItem" corresp="mep:000d19"><author>Bliss Berry</author>: <title>And Gladly Teach: Reminiscences</title></bibl>
-                		<date ana="#checkedOut" when="1936-04-21">April 21st</date>
-                	<bibl ana="#borrowedItem" corresp="mep:000d2m"><author>H.V. Morton</author>: <title>In the Steps of the Master</title></bibl>
+                		
+                	<bibl corresp="mep:000d00">
+                	    <author>Richard Haliburton</author>: 
+                	    <title>Seven League Books</title>
+                	</bibl>
+                		    
+                	<bibl corresp="mep:000d19">
+                	    <author>Bliss Berry</author>:
+                	    <title>And Gladly Teach: Reminiscences</title>
+                	</bibl>
+                		    
+                		<date when="1936-04-21">April 21st</date>
+                		    
+                	<bibl corresp="mep:000d2m">
+                	    <author>H.V. Morton</author>:
+                	    <title>In the Steps of the Master</title>
+                	</bibl>
+                		    
                 		  (<address><addrLine>Hotel Bon Acceuil</addrLine>
                 		    <addrLine>Montreaux, Suisse</addrLine></address>)
-                		   wrote to her <date when="1936-04-21">April 21st</date></note>
-	</ab>
+                		   wrote to her <date when="1936-04-21">April 21st</date>
+                		</note>
+	
                 </div>
  <div type="verso">               
  	<pb facs="#s2"/>               <!--Blank Verso -->
@@ -117,18 +188,28 @@
               				
               				
               	<date when="1936">1935</date></head>
- 	<ab> 
- 		<date ana="#checkedOut" when="1935-11-25">Nov 25</date> 
- 		3 copies at 16
-        		<bibl ana="#borrowedItem" corresp="mep:000d3x"><title>The Dawn of World Order</title>
-        				by <author>Nowell Charles Smith</author>
-        					Je <author>Maxwell garnett</author></bibl>
-        					postage		            				48.00		
-        			postage									 2.40
+     <note>3 copies at 16</note>
+ 	
+ 	  
+ 	    
+ 		
+ 		   <note> <date  when="1935-11-25">Nov 25</date> 
+ 		    <bibl  corresp="mep:000d3x">
+ 		        <title>The Dawn of World Order</title>
+ 		        by <author>Nowell Charles Smith</author>
+ 		        Je <author>Maxwell garnett</author>
+ 		    </bibl>
+ 			</note>
+ 		    <note>postage		            				48.00		
+ 		         postage									 2.40
         													50.40
-        		<date ana="#checkedOut" when="1935-12-23">23 Dec</date>.	2c. <bibl ana="#borrowedItem" corresp="mep:000d47"><title>If a man die</title></bibl> 	$1.75
-        				post. to<address><settlement> Montreux</settlement></address> &amp;amp; to <address><settlement>Nice</settlement></address>
- 	</ab>
+ 		    </note>
+        		
+     <note> <date when="1935-12-23">23 Dec</date>.	
+         2c. <bibl corresp="mep:000d47">
+             <title>If a man die</title></bibl> 	$1.75
+        	 post. to<address><settlement> Montreux</settlement></address> &amp;amp; to <address><settlement>Nice</settlement></address>
+     </note>
 </div>   
 <div type="verso">          	
                 <pb facs="#s4"/>
@@ -142,13 +223,23 @@
                 <persName ref="#bald.he">Mrs BALDWIN</persName>
                 		<address><addrLine>Hotel Belmont</addrLine>   <addrLine>Rue Bassano 8e</addrLine></address>
  </head>               		
-	<ab>                                
-		<date ana="#checkedOut" when="1937-06-11">June 11</date> 	<bibl ana="#borrowedItem" corresp="mep:000d5j"><title>Baedeker . Paris</title></bibl>				<date ana="#returned" when="1937-09-03">Sept 3</date>
+	                                
+		<ab ana="#borrowingEvent">
+		    <date ana="#checkedOut" when="1937-06-11">June 11</date> 	
+		    <bibl ana="#borrowedItem" corresp="mep:000d5j">
+		        <title>Baedeker . Paris</title></bibl>				
+		    <date ana="#returned" when="1937-09-03">Sept 3</date>
+		</ab>
+    
+    
                 			  <note>Please fetch book from hotel
                 			   &amp; send bill
                 			   		-&gt;</note>
                 			   		
-                <date ana="#checkedOut" when="1937-06-15">June 15</date> 	<bibl ana="#borrowedItem" corresp="mep:000d6v"><title>Dauville Taxi</title></bibl>			61.25
+              <note> <date when="1937-06-15">June 15</date> 	
+    <bibl corresp="mep:000d6v">
+        <title>Dauville Taxi</title></bibl>			
+    61.25
                 			 sent to
                 			  <address>
                 			  	 <persName>Mrs Dennis</persName>
@@ -156,12 +247,12 @@
                 			  <addrLine>(Seine Inf)</addrLine>
                 			  </address>		   
                 			  
-                			 <note> wrote <date when="1937-07-26">July 26</date>
-                			  said book was 61.25</note>
+                			 wrote <date when="1937-07-26">July 26</date>
+                			  said book was 61.25
                 			  
                 			  			<address><addrLine>Hotel Chateaubriand</addrLine>
                 			  			  <addrLine>St Malo  Ille &amp; Vilaine</addrLine></address>
-	</ab>
+	</note>
    
 </div>             
 <div type="verso"> 
