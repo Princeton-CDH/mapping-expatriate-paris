@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,76 +69,273 @@
                     					<name>Cayre's Hotel</name>	
                     					<street>4 Bd Raspail</street>	<settlement>Paris</settlement> <district>VII</district></address>
                     </head>		
-                    <ab>
+                    <note>
                     1v. 3 m.											40v
                     											dep.	30v
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1935-10-22">22 Oct</date>.		<bibl ana="#borrowedItem" corresp="mep:00f534"><title>Lafcadio's adventures</title></bibl>				<date ana="#returned" when="1935-10-29">	29</date>
-                    <date ana="#checkedOut" when="1935-10-29">29 -</date> 		<bibl ana="#borrowedItem" corresp="mep:00rk4x"><title>Immoralist</title></bibl>							<date ana="#returned" when="1935-11-05">5 Nov</date>.
-                    <date ana="#checkedOut" when="1935-11-05">5 Nov</date>.		<bibl ana="#borrowedItem" corresp="mep:002q9r"><title>In our time</title></bibl>							<date ana="#returned" when="1935-11-13">	13</date> -
-                    <date ana="#checkedOut" when="1935-11-13">13 - </date>		<bibl ana="#borrowedItem" corresp="mep:006t87"><title>Psychoanalysis - (The unconscious</title></bibl>	<date ana="#returned" when="1935-11-20">	20</date>
-                    <date ana="#checkedOut" when="1935-11-20">20	</date>		    <bibl ana="#borrowedItem" corresp="mep:006f0q"><title>Death in Venise</title></bibl>						<date ana="#returned" when="1935-12-11">11 Dec</date>
-                    <date ana="#checkedOut" when="1935-12-11">11 Dec</date>.		<bibl ana="#borrowedItem" corresp="mep:00688t"><title>Buden brooks</title><biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>. <date ana="#returned" when="1936-01-07">Jan 7</date>
-                    <date ana="#checkedOut" when="1936-01-07">Jan 7</date>.		<bibl ana="#borrowedItem" corresp="mep:003b61"><title>Paris</title> - <author>Zola</author></bibl>.		<date ana="#returned" when="1936-01-10">Jan 10</date>
-                    <date ana="#checkedOut" when="1936-01-07">	</date>		    <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life + Letters</title></bibl> - 3 fr.				<date ana="#returned" when="1936-01-10">	 "</date>
-                    <date ana="#checkedOut" when="1936-01-10">Jan. 10</date>		<bibl ana="#borrowedItem" corresp="mep:00rk57"><title>Lourdes</title> - <author>Zola</author></bibl>- ren<date ana="#returned" when="1936-02-11">Feb. 11</date>.
+                    </note>	
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-10-22">22 Oct</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:00f534">
+                            <title>Lafcadio's adventures</title>
+                        </bibl>				
+                        <date ana="#returned" when="1935-10-29">29</date>
                     </ab>
-                    <ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-10-29">29 -</date> 		
+                        <bibl ana="#borrowedItem" corresp="mep:00rk4x">
+                            <title>Immoralist</title>
+                        </bibl>							
+                        <date ana="#returned" when="1935-11-05">5 Nov</date>.
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-11-05">5 Nov</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:002q9r">
+                            <title>In our time</title>
+                        </bibl>							
+                        <date ana="#returned" when="1935-11-13">13</date> -
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-11-13">13 - </date>		
+                        <bibl ana="#borrowedItem" corresp="mep:006t87">
+                            <title>Psychoanalysis - (The unconscious</title>
+                        </bibl>	
+                        <date ana="#returned" when="1935-11-20">20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-11-20">20</date>		    
+                        <bibl ana="#borrowedItem" corresp="mep:006f0q">
+                            <title>Death in Venise</title>
+                        </bibl>						
+                        <date ana="#returned" when="1935-12-11">11 Dec</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1935-12-11">11 Dec</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:00688t">
+                            <title>Buden brooks</title>
+                            <biblScope unit="volume" from="1" to="2">2 vols</biblScope>
+                        </bibl>. 
+                        <date ana="#returned" when="1936-01-07">Jan 7</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-01-07">Jan 7</date>.		
+                        <bibl ana="#borrowedItem" corresp="mep:003b61">
+                            <title>Paris</title> - 
+                            <author>Zola</author>
+                        </bibl>.		
+                        <date ana="#returned" when="1936-01-10">Jan 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-01-07"></date>		    
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <title>Life + Letters</title>
+                        </bibl> 
+                        <note>- 3 fr.</note>				
+                        <date ana="#returned" when="1936-01-10">"</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-01-10">Jan. 10</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00rk57">
+                            <title>Lourdes</title> - 
+                            <author>Zola</author>
+                        </bibl>
+                        <note>- ren</note>
+                        <date ana="#returned" when="1936-02-11">Feb. 11</date>.
+                    </ab>
+                    
+                    <note>
                     	Renewed <date from="1936-01-22" to="1926-07-22">Jan 22	-	July 22	1936</date>		40,00
+                    </note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-02-11">Feb. 11</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:002300">
+                            <title>Men Without Women</title>
+                        </bibl>					
+                        <date ana="#returned" when="1936-03-05">March 5</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1936-02-11">Feb. 11</date>		<bibl ana="#borrowedItem" corresp="mep:002300"><title>Men Without Women</title></bibl>					<date ana="#returned" when="1936-03-05">March 5</date>
-                    <date ana="#checkedOut" when="1936-03-05">March 5</date>		<bibl ana="#borrowedItem" corresp="mep:00rk6j"><title>Rome</title> - <author>Zola</author></bibl>.   	<date ana="#returned" when="1936-06-11">June 11</date>
-                    <date ana="#checkedOut" when="1936-03-25">	 25</date>		<bibl ana="#borrowedItem" corresp="mep:00491f"><title>Seventh Ages</title></bibl>						<date ana="#returned" when="1936-03-30">March 30</date>
-                    <date ana="#checkedOut" when="1936-04-08">April 8</date>		<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>T S Eliot</author></bibl>	<date ana="#returned" when="1936-04-17">April 17th</date>
-                    <date ana="#checkedOut" when="1936-04-17">April 17</date>	    <bibl ana="#borrowedItem" corresp="mep:008608"><title>The Road</title></bibl>							<date ana="#returned" when="1936-06-16">Jun Apr. 16</date>.
-                    <date ana="#checkedOut" when="1936-04-17">	  17</date>	    <bibl ana="#borrowedItem" corresp="mep:00mt1z"><title>Death of a Nobody</title></bibl>					<date ana="#returned" when="1936-04-30">	 30th</date>
-                    <date ana="#checkedOut" when="1936-04-30">	  30</date>	    <bibl ana="#borrowedItem" corresp="mep:00fq3j"><title>Achievement of T.S. Eliot</title></bibl>.			<date ana="#returned" when="1936-05-04">  4th</date>
-                    <date ana="#checkedOut" when="1936-04-30">	</date>		    <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life and Letters</title></bibl> (3) 1 fr a day.	<date ana="#returned" when="1936-05-04">May. 4</date>.
-                    									                                                       pd. 6 frs.
-                    <date ana="#checkedOut" when="1936-06-16">June. 16</date>.	<bibl ana="#borrowedItem" corresp="mep:003b61"><title>Paris</title>. <author>Zola</author></bibl>		<date ana="#returned" when="1936-09-23">Sept 23</date>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-03-05">March 5</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00rk6j">
+                            <title>Rome</title> - 
+                            <author>Zola</author>
+                        </bibl>.   	
+                        <date ana="#returned" when="1936-06-11">June 11</date>
                     </ab>
-                    <ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-03-25">25</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00491f">
+                            <title>Seventh Ages</title>
+                        </bibl>						
+                        <date ana="#returned" when="1936-03-30">March 30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-08">April 8</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00209z">
+                            <title>Poems</title>
+                            <author>T S Eliot</author>
+                        </bibl>	
+                        <date ana="#returned" when="1936-04-17">April 17th</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-17">April 17</date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:008608">
+                            <title>The Road</title>
+                        </bibl>							
+                        <date ana="#returned" when="1936-06-16">Jun Apr. 16</date>.
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-17">17</date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:00mt1z">
+                            <title>Death of a Nobody</title>
+                        </bibl>					
+                        <date ana="#returned" when="1936-04-30">30th</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-30">30</date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:00fq3j">
+                            <title>Achievement of T.S. Eliot</title>
+                        </bibl>.			
+                        <date ana="#returned" when="1936-05-04"> 4th</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-04-30"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <title>Life and Letters</title>
+                        </bibl> 
+                        <note>(3) 1 fr a day.</note>	
+                        <date ana="#returned" when="1936-05-04">May. 4</date>.
+                    </ab>
+                    
+                    <note>pd. 6 frs.</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-06-16">June. 16</date>.	
+                        <bibl ana="#borrowedItem" corresp="mep:003b61">
+                            <title>Paris</title>. 
+                            <author>Zola</author>
+                        </bibl>		
+                        <date ana="#returned" when="1936-09-23">Sept 23</date>
+                    </ab>
+                    
+                    <note>
                     		new book subscription <date when="1936-10-28">Oct 28</date> paid 30v extra for right to
                     	Renewed <date from="1926-09-23" to="1937-03-23">Sept. 23	to	March 23. 1937.</date>				70.
                     								Take out new books
+                    </note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-09-23">Sept 23</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00fg6j">
+                            <title>Between Two Worlds</title>
+                        </bibl>					
+                        <date ana="#returned" when="1936-10-28">Oct 28</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1936-09-23">Sept 23</date>		<bibl ana="#borrowedItem" corresp="mep:00fg6j"><title>Between Two Worlds</title></bibl>					<date ana="#returned" when="1936-10-28">Oct 28</date>
-                    <date ana="#checkedOut" when="1936-10-28">Oct 28</date>		<bibl ana="#borrowedItem" corresp="mep:00cw24"><title>Salamina</title></bibl>							<date ana="#returned" when="1936-11-28">Nov. 18</date>
-                    <date ana="#checkedOut" when="1936-11-18">Nov. 18</date>		<bibl ana="#borrowedItem" corresp="mep:00rk7v"><title>Voyage of H.M.S. Rattlesnake</title></bibl>		<date ana="#returned" when="1936-12-14">Dec. 14</date>
-                    <date ana="#checkedOut" when="1936-11-18">Nov. 18</date>.	    <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life + Letters</title>. <biblScope unit="volume" from="5">vol 5</biblScope>.</bibl> <unclear/>	<date when="1936-11-25">Nov. 25</date>
-                    <date ana="#checkedOut" when="1937-02-11">Feb 11</date>		<bibl ana="#borrowedItem" corresp="mep:004m1x"><title>Roan Stallion</title></bibl>						<date ana="#returned" when="1937-04-18">April 18</date>
-                    <date ana="#checkedOut" when="1937-02-11">	</date>		    <bibl ana="#borrowedItem" corresp="mep:00hd27"><title>Cawdor</title></bibl>								<date ana="#returned" when="1937-04-18">April 18</date>
-                    </ab>			
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-10-28">Oct 28</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00cw24">
+                            <title>Salamina</title>
+                        </bibl>							
+                        <date ana="#returned" when="1936-11-28">Nov. 18</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-11-18">Nov. 18</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00rk7v">
+                            <title>Voyage of H.M.S. Rattlesnake</title>
+                        </bibl>		
+                        <date ana="#returned" when="1936-12-14">Dec. 14</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1936-11-18">Nov. 18</date>.	    
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <title>Life + Letters</title>. 
+                            <biblScope unit="volume" from="5">vol 5</biblScope>.
+                        </bibl> 
+                        <unclear/>	
+                        <date ana="#returned" when="1936-11-25">Nov. 25</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-11">Feb 11</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:004m1x">
+                            <title>Roan Stallion</title>
+                        </bibl>						
+                        <date ana="#returned" when="1937-04-18">April 18</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-02-11">	</date>		   
+                        <bibl ana="#borrowedItem" corresp="mep:00hd27">
+                            <title>Cawdor</title>
+                        </bibl>								
+                        <date ana="#returned" when="1937-04-18">April 18</date>
+                    </ab>
+                    
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
-                    <ab>
-                    <date ana="#checkedOut" when="1937-03-18">March. 18</date>	<bibl ana="#borrowedItem" corresp="mep:001996"><title>Flowering of New England</title></bibl>			<date ana="#returned" when="1937-04-19">April 19</date>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-18">March. 18</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:001996">
+                            <title>Flowering of New England</title>
+                        </bibl>			
+                        <date ana="#returned" when="1937-04-19">April 19</date>
                     </ab>
-                    <ab>
+                    
+                    <note>
                     	Give <persName ref="#swas.ho">Mr. Swasey</persName> the Tachyvore in bottom
                       drawer (middle) behind desk		4-75
                       
                       					sent pc . <date when="1937-04-16">April 16</date>
                       					
                       	1-vol. 6 mos -								115 fr.
-                    </ab>	
-                    <ab>
-                    <date ana="#checkedOut" when="1937-03-14">March 14</date> - <bibl ana="#borrowedItem" corresp="mep:00rk85"><title>The Dram Shop</title></bibl>
+                    </note>	
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-03-14">March 14</date> - 
+                        <bibl ana="#borrowedItem" corresp="mep:00rk85">
+                            <title>The Dram Shop</title>
+                        </bibl>
                     </ab>
-                    <ab>
+                    
+                    <note>
                     		sub to be renewed from <date when="1938-11-14">Nov 14, 1938</date>
                     							by 1 vol B		300f
                     							6 mos. 1 v A	115
                     							1 y 1 vol A		200v
                     		<date from="1938-11-14" to="1939-11-14">Nov 14, 1938 ------	Nov 14, 1939</date>
-                    </ab>	
-                    <ab>
-                    	<date ana="#checkedOut" when="1937-12-13">Dec 13</date>	<bibl ana="#borrowedItem" corresp="mep:005z55"><title>Diane de Poytiers</title></bibl>					<date ana="#returned" when="1938-02-10">Feb 10th</date>
-                    </ab>	
+                    </note>	
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1937-12-13">Dec 13</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:005z55">
+                            <title>Diane de Poytiers</title>
+                        </bibl>					
+                        <date ana="#returned" when="1938-02-10">Feb 10th</date>
+                    </ab>
+                    
                 </div>
             </div>
         </body>

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,18 +63,16 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>
-                		<persName ref="peti.ar">Petitjean</persName>
+                <note>
+                		<persName ref="#peti.ar">Petitjean</persName>
                 		
-                <bibl ana="#borrowedItem" corresp="mep:000z96"><title>Swifts Choice Works</title></bibl>
-                	
-                	from. <date ana="#checkedOut" when="1935-03-01">March. 1.	1935.</date>
-                	
-                	
-                	<bibl ana="#borrowedItem" corresp="mep:001c5h"><title>Sally Bowles</title></bibl>
-                	
-                	from.<date ana="#returned" when="1937-12-16"> Dec. 16. 1937.</date>
-                </ab>
+                <bibl corresp="mep:000z96"><title>Swifts Choice Works</title></bibl>
+                	from. <date when="1935-03-01">March. 1.	1935.</date>
+
+                	<bibl corresp="mep:001c5h"><title>Sally Bowles</title></bibl>
+                	from.<date when="1937-12-16"> Dec. 16. 1937.</date>
+               </note>
+                   
                </div>
                <div type="verso"> 
                 <pb facs="#s2"/>
@@ -81,78 +81,260 @@
                </div> 
                 <div type="recto">
                 <pb facs="#s3"/>
-                <ab>
-                							<persName ref="peti.ar">PETITJEAN</persName>
-                    <date when="1934">1934</date>			<persName ref="cail.ro">CAILLOIS</persName>
-                <address><orgName>Chasseur Petijean</orgName></address>	<persName ref="cail.ro">Roger</persName>
+                <head>
+                							<persName ref="#peti.ar">PETITJEAN</persName>
+                    <date when="1934">1934</date>			<persName ref="#cail.ro"><del>CAILLOIS</del></persName>
+                <address><orgName>Chasseur Petijean</orgName></address>	<persName ref="#cail.ro">Roger</persName>
                 Peloton dep E.O.R. <address>    <street>2 rue Parmentier</street></address>
                <address><district> 2e. section	</district>	<settlement>Vitry s/ Seine</settlement> </address>
-                23 R.T.A.							<persName ref="peti.ar">Monsieur Armand Petitjean</persName>
+                23 R.T.A.							<persName ref="#peti.ar">Monsieur Armand Petitjean</persName>
                 Morhange							<address><orgName>Les Vallières</orgName></address>
                 (Moselle)							<address><settlement>Ville d'Avray</settlement></address>
                 										SZO
-                					1 m		1 v					12
-                								dep ref Feb 2	50
+                </head>
+                				<note>1 m		1 v					12
+                				dep ref <date when="1934-02-02">Feb 2</date>	50</note>
                 								
-                    <date ana="#checkedOut" when="1934-01-06">Jan 6</date>	<bibl ana="#borrowedItem" corresp="mep:00189x"><title>Meaning of Meaning</title></bibl>						<date ana="#returned" when="1934-01-16">16</date>
-                	<date ana="#checkedOut" when="1934-01-16">16</date>	<bibl ana="#borrowedItem" corresp="mep:00hb30"><title>Bridge</title></bibl> 	<bibl ana="#borrowedItem"><author>H Crane</author></bibl>						<date ana="#returned" when="1934-02-02">Feb 2</date>
-                	<date ana="#checkedOut" when="1934-01-16">16</date>	<bibl ana="#borrowedItem" corresp="mep:00262f"><title>Mysteries of Udolpho</title></bibl>	0.50		<date ana="#returned" when="1934-01-23">Jan 23</date>
-                    <date ana="#checkedOut" when="1934-01-23">"	23</date>	<bibl ana="#borrowedItem" corresp="mep:007d85"><title>Poems of Gerard Manley Hopkins</title></bibl> 0.50		<date ana="#returned" when="1934-01-30">30</date>
-                    <date ana="#checkedOut" when="1934-01-30">30</date>	<bibl ana="#borrowedItem" corresp="mep:00g67w"><title>Rymbolism</title></bibl> <bibl ana="#borrowedItem"><author>(Whitehead)</author></bibl>	0.50		<date ana="#returned" when="1934-02-02">Feb 2</date>
-                 	
-                  Renewed <date from="1934-02-17">Feb 17 </date><date to="1934-03-17">- March 17 1934</date>		12v
-                  								dep		8v
-                  								
-                    <date ana="#checkedOut" when="1934-02-17">Feb 17</date>	<bibl ana="#borrowedItem" corresp="mep:00k74z"><title>Ways of Behaviourism</title></bibl>				<date ana="#returned" when="1934-02-23">23</date>
-                    <date ana="#checkedOut" when="1934-02-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:00pn9j"><title>Contemporaries &amp; snobs	</title></bibl>		<date ana="#returned" when="1934-03-06">March 6</date>
-                    <date ana="#checkedOut" when="1934-03-06">March 6</date>	<bibl ana="#borrowedItem" corresp="mep:00pp01"><title>Blake complete works</title></bibl><bibl ana="#borrowedItem"><edition> Nonesuch ed.</edition></bibl> ren.	<date ana="#returned" when="1934-03-27">March 27 </date>
-               <date ana="#checkedOut" when="1934-03-09"> March 9	</date><bibl ana="#borrowedItem" corresp="mep:002h1m"><title>Hound &amp; Horn</title></bibl> F. Damon's article	<date ana="#returned" when="1934-03-23">March 23</date>
-                  Renewed <date from="1934-03-17">March 17</date>	<date to="1934-04-17">-	April 17 1934</date>	12v
-                    <date ana="#checkedOut" when="1934-03-27">March 27 </date><bibl ana="#borrowedItem" corresp="mep:00164t"><title>After Strange Gods </title></bibl>	0.50	 <date ana="#returned" when="1934-04-06">6 April</date>
-                    <date ana="#checkedOut" when="1934-04-06">6 April</date>	<bibl ana="#borrowedItem" corresp="mep:00hb30"><title>Bridge. </title></bibl><bibl ana="#borrowedItem"><author>(Crane)	</author></bibl>				<date ana="#returned" when="1934-04-20">20	"</date>	
-                    <date ana="#checkedOut" when="1934-04-20">20	"</date>	<bibl ana="#borrowedItem" corresp="mep:00pp1b"><title>An Experiment with Time	</title></bibl>		 <date ana="#returned" when="1934-05-01">May 1st</date>	
-                			subr expired <date when="1934-04-17">17th</date>
-                  Renewed <date from="1934-04-17">April 17</date>	<date to="1934-05-17">-	May 17 1934</date> 12v
-                <date ana="#checkedOut" when="1934-05-01">May 1st</date>	<bibl ana="#borrowedItem" corresp="mep:009f7m"><title>Auden's Poems</title></bibl>	0.50			<date ana="#returned" when="1934-05-08">May	8</date>
-                 <date when="1934-05-08">"	8</date>
-                <date ana="#checkedOut" when="1934-05-15">May 15</date>.	<bibl ana="#borrowedItem"><author>Yeats</author></bibl> <bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title></bibl>						<date ana="#returned" when="1934-05-25">May 25</date>		
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-01-06">Jan 6</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00189x"><title>Meaning of Meaning</title></bibl>	
+                        <date ana="#returned" when="1934-01-16">16</date>
+                    </ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1934-01-16">16</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:00hb30"><title>Bridge</title> 
+                	        <author>H Crane</author></bibl>						
+                	    <date ana="#returned" when="1934-02-02">Feb 2</date>
+                	</ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1934-01-16">16</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:00262f"><title>Mysteries of Udolpho</title></bibl>
+                	    <note>0.50</note>		
+                	    <date ana="#returned" when="1934-01-23">Jan 23</date>
+                	</ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-01-23">"	23</date>
+                        <bibl ana="#borrowedItem" corresp="mep:007d85"><title>Poems of Gerard Manley Hopkins</title></bibl>
+                        <note><del>0.50</del></note>		
+                        <date ana="#returned" when="1934-01-30">30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-01-30">30</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00g67w"><title>Symbolism</title> 
+                            <author>(Whitehead)</author></bibl>	
+                        <note>0.50</note>		
+                        <date ana="#returned" when="1934-02-02">Feb 2</date>
+                    </ab>
+                    
+                  <note>  
+                  Renewed <date from="1934-02-17" to="1934-03-17">Feb 17 - March 17 1934</date>		12v
+                  								<del>dep		8v</del>
+                  </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-02-17">Feb 17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00k74z"><title>Ways of Behaviourism</title></bibl>	
+                        <date ana="#returned" when="1934-02-23">23</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-02-23">23</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00pn9j"><title>Contemporaries &amp; snobs	</title></bibl>
+                        <date ana="#returned" when="1934-03-06">March 6</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-03-06">March 6</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00pp01"><title>Blake complete works</title>
+                            <edition> Nonesuch ed.</edition></bibl>
+                        <note>ren.</note>
+                        <date ana="#returned" when="1934-03-27">March 27 </date>
+                    </ab>
+                    
+               <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1934-03-09"> March 9	</date>
+                   <bibl ana="#borrowedItem" corresp="mep:006q0x"><title>Hound &amp; Horn F. Damon's article</title></bibl>
+                   <date ana="#returned" when="1934-03-23">March 23</date>
+               </ab>
+                    
+                  <note>Renewed <date from="1934-03-17" to="1934-04-17">March 17 -	April 17 1934</date>	12v</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-03-27">March 27 </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00164t"><title>After Strange Gods </title></bibl>
+                        <note>0.50</note>	 
+                        <date ana="#returned" when="1934-04-06">6 April</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-04-06">6 April</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00hb30"><title>Bridge. </title>
+                        <author>(Crane)	</author></bibl>
+                        <date ana="#returned" when="1934-04-20">20	"</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-04-20">20	"</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00pp1b"><title>An Experiment with Time	</title></bibl>	
+                        <date ana="#returned" when="1934-05-01">May 1st</date>	
+                    </ab>
+                    
+                			<note>subr expired <date when="1934-04-17">17th</date></note>
+                    
+                    <note>Renewed <date from="1934-04-17" to="1934-05-17">April 17-	May 17 1934 12v</date></note>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-05-01">May 1st</date>
+                    <bibl ana="#borrowedItem" corresp="mep:009f7m"><title>Auden's Poems</title></bibl>
+                    <note>0.50</note>			
+                    <date ana="#returned" when="1934-05-08">May	8</date>
                 </ab>
+                    
+                <note><date when="1934-05-08"><del>"	8</del></date></note>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-05-15">May 15</date>.
+                    <bibl ana="#borrowedItem" corresp="mep:00kr6q"><title>Yeats Poems</title></bibl>
+                    <date ana="#returned" when="1934-05-25">May 25</date>	
+                </ab>	
+                    
                 </div>
                 <div type="verso">
                 <pb facs="#s4"/>
-                <ab>
-                		Renewed <date from="1934-09-21">Sept 21</date> - <date to="1934-10-21">Oct 21 1934</date>	12v
-                    <date ana="#checkedOut" when="1934-09-21">Sept 21</date>		<bibl ana="#borrowedItem" corresp="mep:004871"><title>Ignatius Loyola	</title></bibl>	<persName ref="cail.ro">CAILLOIS</persName>	<date when="1934-10-12">12 Oct.</date>	
-                <date when="1934-10-12">12 Oct.</date>		Plays (Ford) Mermaid			<date when="1934-10-20">20 "</date>
-                <date ana="#checkedOut" when="1934-10-26">26	</date>		<bibl ana="#borrowedItem" corresp="mep:00k88g"><title>History of Europe in the 19th Cent</title></bibl>. 0.50 <date ana="#returned" when="1934-11-13">13 -</date>
-                    <date ana="#checkedOut" when="1934-11-13">13 Nov.</date>		<bibl ana="#borrowedItem" corresp="mep:009v7x"><title>Hope for poetry</title></bibl> 0.50 owes extras	<date ana="#returned" when="1934-11-26"> Nov 26</date>
-                  Renewed <date from="1934-10-21">Oct 21</date> - <date to="1934-11-21">Nov 21 1934</date>	1 m 15v
-                  
-                  Renewed <date from="1934-11-21">Nov 21</date> - <date to="1934-12-21">Dec 21 1934</date>	15v
-                
-                    <date ana="#checkedOut" when="1934-11-26"> Nov 26</date>	<bibl ana="#borrowedItem" corresp="mep:008k4j"><title>Vienna	</title></bibl>							<date ana="#returned" when="1934-12-04">4 Dec</date>
-                		(Fableaux)							10
-                    <date ana="#checkedOut" when="1934-12-04">4 Dec</date> - <bibl ana="#borrowedItem" corresp="mep:008172"><title>Paleface	</title></bibl>					<date ana="#returned" when="1934-12-17">17</date>
-                	<date ana="#checkedOut" when="1934-12-17">17</date>		<bibl ana="#borrowedItem" corresp="mep:00735r"><title>Make it New </title></bibl> 0.50				<date ana="#returned" when="1935-01-18">18 Jan</date>
-                	
-                  <date when="1935">1935</date>				owes 1 month.
-               <date when="1935-03-26"> 26 March.</date>	Coleridge on imagination
-                <date ana="#checkedOut" when="1935-03-26">26 "</date>		<bibl ana="#borrowedItem" corresp="mep:00pp2n"><title>Colour + colour Theories</title></bibl>		<date ana="#returned" when="1935-04-06">6 April</date>
-                <date ana="#checkedOut" when="1935-10-01">Oct 1</date>	<bibl ana="#borrowedItem" corresp="mep:00123d"><title>Irish Names of Places vols I - II</title></bibl>	<date ana="#returned" when="1935-10-26">Oct 26</date>
-                											returned
-                <date ana="#checkedOut" when="1936-02-27">Feb. 27.</date>	<bibl ana="#borrowedItem" corresp="mep:00jc1w"><title>Swifts Verse.</title></bibl>					<date ana="#returned" when="1936-03-02">March 2</date>
-                	<date ana="#checkedOut" when="1936-02-27"> 27.</date>	<bibl ana="#borrowedItem" corresp="mep:00g433"><title>Life + Friendships of Swift	</title></bibl>		 <date ana="#returned" when="1936-03-02"> 2</date>
-                <date ana="#checkedOut" when="1936-03-01">March 1	</date>	<bibl ana="#borrowedItem" corresp="mep:000z96"><title>Swifts choice works</title></bibl>
-                	  <date ana="#checkedOut" when="1936-03-01">1	</date>	J<bibl ana="#borrowedItem" corresp="mep:00pp3z"><title>onathan Swifts bibliography.</title></bibl> 	<date ana="#returned" when="1936-03-06">March 6</date>
-                	  <date ana="#checkedOut" when="1936-03-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:00pp48"><title>History of Eighteenth Century Literature.</title></bibl>
-                <date ana="#checkedOut" when="1936-05-11">May 11</date>		<bibl ana="#borrowedItem" corresp="mep:005p8w"><title>Do what you will</title></bibl>
-                
-                	Manuscript in drawer marked
-                	'<bibl ana="#borrowedItem" corresp="mep:00pp5k"><title>Papers for. Abonnés</title></bibl>' to be returned
-                	to <persName ref="peti.ar">Monsieur Petitjean</persName>
-                <date ana="#checkedOut" when="1936-12-16">Dec 16</date> - 	<bibl ana="#borrowedItem" corresp="mep:00b003"><title>Satires of Jonathan Swift.</title></bibl>		<date ana="#returned" when="1937-01-14">Janv. 14</date>
-                	<date ana="#checkedOut" when="1936-12-16">16</date>		<bibl ana="#borrowedItem" corresp="mep:001c5h"><title>Sally Bowles</title></bibl>					back
+                <head>
+                <persName ref="#cail.ro">CAILLOIS</persName>
+                </head>
+                    
+                <note>Renewed <date from="1934-09-21" to="1934-10-21">Sept 21 - Oct 21 1934</date>	12v</note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-09-21">Sept 21</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:004871"><title>Ignatius Loyola	</title></bibl>
+                        <date  ana="#returned" when="1934-10-12">12 Oct.</date>	
+                    </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date  ana="#checkedOut" when="1934-10-12">12 Oct.</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00j517"><title>Plays (Ford) Mermaid</title></bibl>			
+                    <date  ana="#returned" when="1934-10-20">20 "</date>
                 </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1934-10-26">26	</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00k88g"><title>History of Europe in the 19th Cent</title></bibl>.
+                    <note>0.50 </note>
+                    <date ana="#returned" when="1934-11-13">13 -</date>
+                </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-11-13">13 Nov.</date>
+                        <bibl ana="#borrowedItem" corresp="mep:009v7x"><title>Hope for poetry</title></bibl>
+                        <note>0.50 owes extras</note>
+                        <date ana="#returned" when="1934-11-26"> Nov 26</date>
+                    </ab>
+                    
+                  <note>Renewed <date from="1934-10-21" to="1934-11-21">Oct 21 - Nov 21 1934</date>	1 m 15v</note>
+                  
+                  <note>Renewed <date from="1934-11-21" to="1934-12-21">Nov 21 - Dec 21 1934</date>	15v</note>
+                
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-11-26"> Nov 26</date>
+                        <bibl ana="#borrowedItem" corresp="mep:008k4j"><title>Vienna	</title></bibl>	
+                        <date ana="#returned" when="1934-12-04">4 Dec</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-11-26">  </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00pg8v"><title>(Fableaux)</title></bibl>	
+                        <date ana="#returned" when="1934-11-10">10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1934-12-04">4 Dec</date> -
+                        <bibl ana="#borrowedItem" corresp="mep:008172"><title>Paleface	</title></bibl>	
+                        <date ana="#returned" when="1934-12-17">17</date>
+                    </ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1934-12-17">17</date>	
+                	    <bibl ana="#borrowedItem" corresp="mep:00735r"><title>Make it New </title></bibl> 
+                	    <note>0.50</note>				
+                	    <date ana="#returned" when="1935-01-18">18 Jan</date>
+                	</ab>
+                    
+                  <note><date when="1935">1935</date>	</note>
+                  <note>owes 1 month.</note>
+                    
+               <note>     
+               <date when="1935-03-26"><del> 26 March.</del></date>	
+               <bibl corresp="mep:00md8t"><title><del>Coleridge on imagination</del></title></bibl>
+               </note>    
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-03-26">26 "</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00pp2n"><title>Colour + colour Theories</title></bibl>	
+                    <date ana="#returned" when="1935-04-06">6 April</date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1935-10-01">Oct 1</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00123d"><title>Irish Names of Places </title>
+                        <biblScope unit="volume" from="1" to="2">vols I - II</biblScope></bibl>	
+                    <date when="1935-10-26"><del>Oct 26</del></date>
+                    <note>returned</note><date ana="#returned" notBefore="1935-10-01">  </date>
+                </ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-02-27">Feb. 27.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00jc1w"><title>Swifts Verse.</title></bibl>	
+                    <date ana="#returned" when="1936-03-02">March 2</date>
+                </ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1936-02-27"> 27.</date>
+                	    <bibl ana="#borrowedItem" corresp="mep:00g433"><title>Life + Friendships of Swift	</title></bibl>	
+                	    <date ana="#returned" when="1936-03-02"> 2</date>
+                	</ab>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-03-01">March 1	</date>
+                    <bibl ana="#borrowedItem" corresp="mep:000z96"><title>Swifts choice works</title></bibl>
+                </ab>
+                    
+                	  <ab ana="#borrowingEvent">
+                	      <date ana="#checkedOut" when="1936-03-01">1	</date>	
+                	      <bibl ana="#borrowedItem" corresp="mep:00pp3z"><title><del>Jonathan</del> Swifts bibliography.</title></bibl> 	
+                	      <date ana="#returned" when="1936-03-06">March 6</date>
+                	  </ab>
+                    
+                	  <ab ana="#borrowingEvent">
+                	      <date ana="#checkedOut" when="1936-03-23">23</date>
+                	      <bibl ana="#borrowedItem" corresp="mep:00pp48"><title>History of Eighteenth Century Literature.</title></bibl>
+                	  </ab>
+                    
+                    <note><date when="1936-05-11"><del>May 11</del></date>		
+                    <bibl corresp="mep:005p8w"><title><del>Do what you will</del></title></bibl></note>
+                
+                	<note>Manuscript in drawer marked
+                	'<bibl  corresp="mep:00pp5k"><title>Papers for. Abonnés</title></bibl>' to be returned
+                	to <persName ref="#peti.ar">Monsieur Petitjean</persName></note>
+                    
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1936-12-16">Dec 16</date> -
+                    <bibl ana="#borrowedItem" corresp="mep:00b003"><title>Satires of Jonathan Swift.</title></bibl>	
+                    <date ana="#returned" when="1937-01-14">Janv. 14</date>
+                </ab>
+                    
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1936-12-16">16</date>
+                	    <bibl ana="#borrowedItem" corresp="mep:001c5h"><title>Sally Bowles</title></bibl>	
+                	    <note>back</note>
+                	</ab>
+                    
                 </div>
             </div>
         </body>

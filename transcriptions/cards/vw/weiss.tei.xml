@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -70,32 +72,104 @@
                     			        <street>130 Fq St Honoré</street></address>
                     </head>			
                     			
-                    <ab>				
-                    				1	m	2	v		40
-                    				2	we
-                    </ab>				
-                    <ab>
-                    <date ana="#checkedOut" when="1931-10-07">Oct 7</date>	<bibl ana="#borrowedItem" corresp="mep:00d03h"><title>Opening of a Door</title></bibl>		<date ana="#checkedOut" when="1931-10-21">Oct 21</date>
-                    		                                <bibl ana="#borrowedItem" corresp="mep:004f07"><title>All Passion Spent</title></bibl>p.c.   <date ana="#returned" when="1931-10-14">Oct 14</date>	<date when="1931-10-21">Oct 21</date>
-                    <date ana="#checkedOut" when="1931-10-21">	21</date>	<bibl ana="#borrowedItem" corresp="mep:00034r"><title>Brief Candles</title></bibl> <bibl ana="#borrowedItem" corresp="mep:004g99"><title>Murder Murder</title></bibl>	<date ana="#checkedOut" when="1931-10-26">Oct 26</date>
-                    		                                <bibl ana="#borrowedItem" corresp="mep:00d04t"><title>Grasshoppers Come</title></bibl>		<date ana="#returned" when="1931-10-30">Oct 30</date>
-                    <date ana="#checkedOut" when="1931-10-26">	26</date>	<bibl ana="#borrowedItem" corresp="mep:00d054"><title>Exit Eliza</title></bibl>		damaged <date ana="#checkedOut" when="1935-12">Dec. 1935</date>
-                    		                                <bibl ana="#borrowedItem" corresp="mep:000p5r"><title>White Paternoster</title></bibl>		<date ana="#checkedOut" when="1931-12-18">Dec 18</date>
-                    		                                <bibl ana="#borrowedItem" corresp="mep:007m66"><title>Black Bryony</title></bibl>			<date ana="#returned" when="1931-12-18">Dec 18</date>
-                    </ab>	
-                    <ab>
-                    Renewed <date from="1931-11-07" to="1931-12-07">October November	7	-	December 7 1931</date>	40f
+                   				
+                    				<note>1	m	2	v		40
+                                     <del>2	we</del></note>
+                    				
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-07">Oct 7</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d03h">
+                            <title>Opening of a Door</title>
+                        </bibl>		
+                        <date ana="#returned" when="1931-10-21">Oct 21</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1931-10-30">Oct 30</date>	<bibl ana="#borrowedItem" corresp="mep:00b29f"><title>Case of Mrs Crump</title></bibl> p.c.  <date ana="#returned" when="1931-11-14">Nov 14</date>	Bought
-                    							p.c. <date when="1931-11-20">Nov 20</date>
-                    					cheque 75f   <date ana="#checkedOut" when="1931-11-24">Nov 24</date>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-07"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:004f07">
+                            <title>All Passion Spent</title>
+                        </bibl>
+                        <note>p.c.   
+                        <date when="1931-10-14">Oct 14</date></note>
+                        <date ana="#returned" when="1931-10-21">Oct 21</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-21">	21</date>
+                        <bibl corresp="mep:00034r">
+                            <title><del>Brief Candles</del></title>
+                        </bibl> 
+                        <bibl ana="#borrowedItem" corresp="mep:004g99">
+                            <title>Murder Murder</title>
+                        </bibl>	
+                        <date ana="#returned" when="1931-10-26">Oct 26</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checked out" when="1931-10-21">Oct 21</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d04t">
+                            <title>Grasshoppers Come</title>
+                        </bibl>	
+                        <date ana="#returned" when="1931-10-30">Oct 30</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-26">	26</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d054">
+                            <title>Exit Eliza</title>
+                        </bibl>		
+                       <note> damaged 
+                        <date when="1935-12">Dec. 1935</date></note>
+                    </ab>
+                    
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1931-10-26"> </date>
+                       <bibl ana="#borrowedItem" corresp="mep:000p5r">
+                           <title>White Paternoster</title>
+                       </bibl>		
+                       <date ana="#returned" when="1931-12-18">Dec 18</date>
+                   </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1931-10-26"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:007m66">
+                            <title>Black Bryony</title>
+                        </bibl>			
+                        <date ana="#returned" when="1931-12-18">Dec 18</date>
+                    </ab>
+                    
+                    	
+                    
+                       <note> Renewed <del>October</del> <date from="1931-11-07" to="1931-12-07"> November	7	-	December 7 1931</date>	40f</note>
+                    
+                    
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1931-10-30">Oct 30</date>
+                       <bibl ana="#borrowedItem" corresp="mep:00b29f">
+                           <title>Case of Mrs Crump</title>
+                       </bibl> 
+                      <note> p.c. 
+                       <date when="1931-11-14">Nov 14</date>	</note>
+                       <note>Bought</note>
+                   </ab>
+                    
+                    <note>p.c. <date when="1931-11-20">Nov 20</date></note>
+                    
+                    <note>cheque 75f   <date when="1931-11-24">Nov 24</date>
                     			is returning to Paris on Monday
-                    			will call
+                    			will call </note>
                     			
-                    			Returned <bibl ana="#borrowedItem" corresp="mep:002h1m"><title>Hound + Horn</title></bibl>		<date ana="#checkedOut" when="1935-12">Dec 1935</date>
-                    						(<bibl ana="#borrowedItem" corresp="mep:000r40"><title>Flowering Judas</title></bibl>) p.c.
-                    </ab>						
+                    		<ab ana= "#borrowingEvent">
+                            <bibl ana="#borrowedItem" corresp="mep:000r40">
+                                <note>Returned</note>
+                                <title>Flowering Judas</title>
+                                <publisher>Hound + Horn</publisher>
+                            </bibl>
+                            <date ana="#returned" when="1935-12">Dec 1935</date>
+                        </ab>
+                        
+               						
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
@@ -105,17 +179,46 @@
                 <div type="recto">
                     <pb facs="#s3"/>
                     <head>
+                        
                     <date when="1933">1933</date>
+                        
                     			<address><persName ref="#weis.co">Mme Weiss</persName>
                     			<street>130 Faubourg St Honoré</street></address>
                     </head>
                     
-                    <ab>
-                    <date ana="#checkedOut" when="1933-01-18">Jan 18</date>	<bibl ana="#borrowedItem" corresp="mep:00d06f"><title>Best Short Stories</title> <edition>1930</edition></bibl>	<date ana="#checkedOut" when="1933-06-28">28 June</date>
-                    		                                <bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition</title> <biblScope unit="issue" from="15">No 15</biblScope></bibl>	<date ana="#returned" when="1933-12-29">Dec 29</date>	B B
-                    <date ana="#checkedOut" when="1933-01-26">Jan 26</date>	<bibl ana="#borrowedItem" corresp="mep:00d07r"><title>Second American Caravan</title></bibl>		<date ana="#returned" when="1933-06-28">28 June</date>
-                    						 card <date when="1933-05-13">13 May</date>
-                    </ab>						 
+                    
+                        
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1933-01-18">Jan 18</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d06f">
+                            <title>Best Short Stories</title>
+                            <edition>1930</edition>
+                        </bibl>
+                        <date ana="#returned" when="1933-06-28">28 June</date>
+                    </ab>
+                        
+                        
+                        <ab ana= "#borrowingEvent">
+                            <date ana="#checkedOut" when="1933-01-18">Jan 18</date>
+                            <bibl ana="#borrowedItem" corresp="mep:000399">
+                                <title>Transition</title> 
+                                <biblScope unit="issue" from="15">No 15</biblScope>
+                            </bibl>
+                           <note> <date when="1933-12-29">Dec 29</date>	</note>
+                           <note> B B</note>
+                        </ab>
+                        
+                        
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1933-01-26">Jan 26</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00d07r">
+                            <title>Second American Caravan</title>
+                        </bibl>	
+                        <date ana="#returned" when="1933-06-28">28 June</date>
+                    </ab>
+                    
+                    <note> card <date when="1933-05-13">13 May</date></note>
+                  						 
                 </div>
                 <div type="verso">
                     <pb facs="#s4"/>

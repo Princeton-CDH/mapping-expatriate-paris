@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader type="text">
     <fileDesc>
       <titleStmt>
-        <title>An Encoded Transcription of a Borrower's Card: <persName ref="#arag.lo">Louis Aragon</persName></title>
+        <title>An Encoded Transcription of a Borrower's Card: <persName ref="#arag.lo">Louis
+            Aragon</persName></title>
         <respStmt xml:id="carlca">
           <persName>Adair, Carl</persName>
           <resp>transcriber</resp>
@@ -15,43 +16,64 @@
         <msDesc>
           <msIdentifier>
             <settlement>Princeton</settlement>
-            <repository>Princeton University. Library. Dept. of Rare Books and Special Collections</repository>
+            <repository>Princeton University. Library. Dept. of Rare Books and Special
+              Collections</repository>
             <collection>Sylvia Beach Papers</collection>
             <idno>C0108</idno>
           </msIdentifier>
         </msDesc>
-	
+
 
       </sourceDesc>
     </fileDesc>
     <profileDesc>
-      <textClass>          
-        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+      <textClass>
+        <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode>
+        <!-- library cards -->
       </textClass>
       <particDesc>
-    	<person role="cardholder" ana="#arag.lo"><persName>Louis Aragon</persName></person>
+        <person role="cardholder" ana="#arag.lo">
+          <persName>Louis Aragon</persName>
+        </person>
       </particDesc>
     </profileDesc>
-
-    <revisionDesc>
-      <change who="#carlca">
-        <ab>
-          Card 1: Villa or Ville? "gob" or "gol?"
-          Illegible/Incomplete mark to left margin by "Art of Whistler"
-        </ab>
-      </change>
-    </revisionDesc>
   </teiHeader>
+  <facsimile xml:base="pudl0123/825298/a/aragon">
+    <surface xml:id="s1">
+      <graphic url="00000001.jp2"/>
+    </surface>
+    <surface xml:id="s2">
+      <graphic url="00000002.jp2"/>
+    </surface>
+  </facsimile>
   <text>
     <body>
-      <ab>
-Oct 11       Monsieur Louis Aragon
-    	     12 rue St Pierre
-	     Neuilly s/ Seine
+      <div type="card">
+        <div type="recto">
+          <pb facs="#s1"/>
 
-Oct 11 	     Portrait of the Artist
-    	     Exiles
-      </ab>
+            <head><date when="1900-10-11">Oct 11</date>
+              <persName>Monsieur Louis Aragon</persName>
+              <address>
+                <addrLine>12 rue St Pierre</addrLine>
+                <addrLine>Neuilly s/ Seine</addrLine>
+              </address>
+            </head> 
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1900-10-11">Oct 11</date>
+            <bibl ana="#borrowedItem" corresp="mep:000b4p"><title>Portrait of the Artist</title></bibl>
+          </ab>
+          <ab ana="#borrowingEvent">
+            <date ana="#checkedOut" when="1900-10-11"/>
+            <bibl ana="#borrowedItem" corresp="mep:000b3c"><title>Exiles</title></bibl>
+          </ab>
+          
+        </div>
+        <div type="verso">
+          <pb facs="#s2"/>
+          <!-- verso blank -->
+        </div>
+      </div>
     </body>
   </text>
 </TEI>

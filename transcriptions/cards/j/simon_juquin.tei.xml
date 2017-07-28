@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -60,19 +60,38 @@
            <div type="card">
                <div type="recto">
                 <pb facs="#s1"/>
-               	<ab><date when="1941">1941</date>		<persName ref="simo">SIMON-JUQUIN
+               	<head><date when="1941">1941</date>		<persName ref="simo">SIMON-JUQUIN
                				Madame</persName>
                				<address><street>16 rue Séguien </street><district>- VI</district></address>
-               				
-               					2 m 1 v A		45
+               	</head>			
+               					<note>2 m 1 v A		45
                					pd Oct 24 dep	50
-               						ref. dep.
+               						ref. dep.</note>
                	
-               	    <date ana="#checkedOut" when="1941-10-13">	Oct 13</date>	<bibl ana="#borrowedItem" corresp="mep:00kt21"><title>Man of Property</title></bibl>				<date ana="#returned" when="1941-10-24">Oct 24</date>
-               	    <date ana="#checkedOut" when="1941-10-24">Oct 24</date>	<bibl ana="#borrowedItem" corresp="mep:00g522"><title>Rueful Mating</title></bibl>			<date ana="#returned" when="1941-11-05">Nov. 5</date>
-               	    <date ana="#checkedOut" when="1941-11-05">Nov. 5</date>	<bibl ana="#borrowedItem" corresp="mep:001n5q"><title>Water Gipsies</title></bibl>			<date ana="#returned" when="1941-11-15">Nov 15	</date>
-               	<date ana="#checkedOut" when="1941-11-15">Nov 15	</date><bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title> 2 vols	</bibl>	<date ana="#returned" when="1941-11-22">Nov 22</date>
-               	<date ana="#checkedOut" when="1941-12-06">Dec. 6</date>	<bibl ana="#borrowedItem" corresp="mep:009v6m"><title>Tenant of Wildfell Hall</title></bibl>	<date ana="#returned" when="1942-01-21">Jan. 21</date>
+               	<ab ana="#borrowingEvent">
+               	    <date ana="#checkedOut" when="1941-10-13">Oct 13</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00kt21"><title>Man of Property</title></bibl>			
+                   <date ana="#returned" when="1941-10-24">Oct 24</date>
+               	</ab>    
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1941-10-24">Oct 24</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00g522"><title>Rueful Mating</title></bibl>		
+                   <date ana="#returned" when="1941-11-05">Nov. 5</date>
+               	   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1941-11-05">Nov. 5</date>
+                   <bibl ana="#borrowedItem" corresp="mep:001n5q"><title>Water Gipsies</title></bibl>		
+                   <date ana="#returned" when="1941-11-15">Nov 15</date>
+               </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1941-11-15">Nov 15	</date>
+                   <bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title> <edition>2 vols</edition></bibl>
+                   <date ana="#returned" when="1941-11-22">Nov 22</date>
+               	</ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1941-12-06">Dec. 6</date>
+                   <bibl ana="#borrowedItem" corresp="mep:009v6m"><title>Tenant of Wildfell Hall</title></bibl>	
+                   <date ana="#returned" when="1942-01-21">Jan. 21</date>
                	</ab>
                	</div>
                <div type="verso">

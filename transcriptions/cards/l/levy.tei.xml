@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -67,14 +67,40 @@
                 			
                 			<address><street>40 Ave Charles Floquet</street> <district>- VIIe</district></address></head>
                 			
-                	<ab>		3 mos 1 v S					50
-                						dep				50</ab>
-                <ab>
-                <date ana="#checkedOut" when="1940-02-22">Feb 22</date>	<bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counterpoint</title></bibl>				<date ana="#returned" when="1940-03-13">March 13</date>
-                	<date ana="#checkedOut" when="1940-02-13">13</date>	<bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>					<date ana="#returned" when="1940-03-16">March 16</date>
-                <date ana="#checkedOut" when="1940-03-16">March 16</date> <bibl ana="#borrowedItem" corresp="mep:001m5f"><title>Antic Hay</title></bibl>						<date ana="#returned" when="1940-04-02">April 2</date>
-                <date when="1940-04-02">April 2</date>	<unclear/>	<bibl ana="#borrowedItem" corresp="mep:00274b"><title>Crome Yellow</title></bibl>				<date ana="#returned" when="1940-04-08">April 8</date>
-                <date ana="#checkedOut" when="1940-04-08">April 8</date>	<bibl ana="#borrowedItem" corresp="mep:003s12"><title>Forty second parallel</title></bibl>			<date ana="#returned" when="1940-05-24">May 24</date></ab>
+                	<note>		3 mos 1 v S					50
+                						dep				50</note>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-22">Feb 22</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counterpoint</title></bibl>	
+                    <date ana="#returned" when="1940-03-13">March 13</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-02-13">13</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:001n8n"><title>Brave New World</title></bibl>	
+                    <date ana="#returned" when="1940-03-16">March 16</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-03-16">March 16</date> 
+                    <bibl ana="#borrowedItem" corresp="mep:001m5f"><title>Antic Hay</title></bibl>	
+                    <date ana="#returned" when="1940-04-02">April 2</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-02">April 2</date>	
+                    <unclear/>	
+                    <bibl ana="#borrowedItem" corresp="mep:00274b"><title>Crome Yellow</title></bibl>
+                    <date ana="#returned" when="1940-04-08">April 8</date>
+                </ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-04-08">April 8</date>
+                    <bibl ana="#borrowedItem" corresp="mep:003s12"><title>Forty second parallel</title></bibl>	
+                    <date ana="#returned" when="1940-05-24">May 24</date>
+                </ab>
+                
                 </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank -->

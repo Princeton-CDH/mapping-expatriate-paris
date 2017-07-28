@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,30 +71,68 @@
                     								        <street>55 High Street</street>
                     									    <district>Hampstead</district></address>
                     </head>	
-                    <ab>
-                    			S.R.	1 m	2 vols  =	35 - to <date when="1927-01-07">Jan 7. 27.</date>
+                  
+                    			<note>S.R.	1 m	2 vols  =	35 - to <date when="1927-01-07">Jan 7. 27.</date></note>
+                    
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-12-04">Dec. 4</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>.E.S! V. Millay</author></bibl>
+                    <date ana="#returned" when="1927-01-11">Jan 11</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1926-12-04">Dec. 4</date>	<bibl ana="#borrowedItem" corresp="mep:00209z"><title>Poems</title> <author>.E.S! V. Millay</author></bibl> <date ana="#checkedOut" when="1927-01-11">Jan 11</date>
-                    			                            <bibl ana="#borrowedItem" corresp="mep:00db2z"><title>Harpweaver</title> <author>Edna St. Vincent Millay</author></bibl>	<date ana="#returned" when="1927-01-11">Jan 11</date>
-                    <date ana="#checkedOut" when="1926-12-08">Dec 8</date>	<bibl ana="#borrowedItem" corresp="mep:00bz70"><title>Tales of the Uneasy</title></bibl>
-                    <date ana="#checkedOut" when="1926-12-08">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00db38"><title>Wandering Stars</title></bibl>.					B.B.
-                     			                            <bibl ana="#borrowedItem" corresp="mep:00c75t"><title>Dial</title> <biblScope unit="issue">Nov</biblScope></bibl>.
-                    <date ana="#checkedOut" when="1926-12-20"> "	20</date>.	<bibl ana="#borrowedItem" corresp="mep:00db4k"><title>Some Contemporary poets 1920</title></bibl>.		   <date ana="#returned" when="1927-01-11">Jan 11</date>
-                    <date ana="#checkedOut" when="1927-02-07">Feb 7</date>	<bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>								   <date ana="#returned" when="1927-02-08">Feb 8</date>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-12-04"></date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00db2z"><title>Harpweaver</title> <author>Edna St. Vincent Millay</author></bibl>	
+                    <date ana="#returned" when="1927-01-11">Jan 11</date>
                     </ab>
-                    <ab>
-                            							         <address><name>Hotel Crebillon</name></address>.
-                    <date when="1928-05-02">1928 May 2</date>.	S. R.	1 week	1 vol.	6.25
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-12-08">Dec 8</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00bz70"><title>Tales of the Uneasy</title></bibl>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1928-05-02">May 2</date>.	<bibl ana="#borrowedItem" corresp="mep:001j38"><title>American Tragedy</title> <biblScope unit="volume" from="1">in 1 vol</biblScope></bibl>.<date ana="#returned" when="1928-05-23">May 23</date>	B.B.
-                    								<date when="1928-05-09">May 9</date>. p.c.
-                    <date when="1928-05-15"> "	15</date>	S.R. a fortnight = to <date when="1928-05-24">May 24th 1928</date> = 12.50
-                    <date ana="#checkedOut" when="1928-05-23"> "	23</date>	<bibl ana="#borrowedItem" corresp="mep:00db5w"><title>Life + Letters of E. Dickinson</title></bibl> = <persName>Miss Barney</persName> see <date when="1928-10-30">Oct 30</date> b.b.
-                     										p.c. Oct 1
-                     										to <persName ref="#beac.sy">Miss B</persName>.
-                    </ab>										
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-12-08">"	"</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00db38"><title>Wandering Stars</title></bibl>		
+                    <note>B.B.</note>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-12-08"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00c75t"><title>Dial</title> <biblScope unit="issue" from="November">Nov</biblScope></bibl>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-12-20"> "	20</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00db4k"><title>Some Contemporary poets 1920</title></bibl>
+                    <date ana="#returned" when="1927-01-11">Jan 11</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1927-02-07">Feb 7</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl>		
+                    <date ana="#returned" when="1927-02-08">Feb 8</date>
+                    </ab>
+                   
+                            							        <note> <address><name>Hotel Crebillon</name></address>.
+                    <date when="1928-05-02">1928 May 2</date>.	S. R.	1 week	1 vol.	6.25</note>
+                    
+                  <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1928-05-02">May 2</date>
+                    <bibl ana="#borrowedItem" corresp="mep:001j38"><title>American Tragedy</title> <biblScope unit="volume" from="1">in 1 vol</biblScope></bibl>
+                    <date ana="#returned" when="1928-05-23">May 23</date>	
+                   <note> B.B.</note>
+                  </ab>
+                    
+                    <note><date when="1928-05-09">May 9</date>. p.c.</note>
+                    
+                   <note> <note><date when="1928-05-15"> "	15</date>	S.R. a fortnight = to <date when="1928-05-24">May 24th 1928</date> = 12.50</note></note>
+                    
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1928-05-23"> "	23</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00db5w"><title>Life + Letters of E. Dickinson</title></bibl> 
+                   <note> = <persName>Miss Barney</persName> see <date when="1928-10-30">Oct 30</date></note>
+                    <note>b.b.</note>
+                    </ab>
+                    
+                   <note> p.c. Oct 1
+                    
+                    to <persName ref="#beac.sy">Miss B</persName></note>
+                    										
                 </div>	
                 <div type="verso">                
                     <pb facs="#s2"/>
