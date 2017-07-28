@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -70,14 +70,18 @@
             				 </address>
             	               6 mos. 1 vol.			50 f
             	</head>	
-                <ab>
-            				
-            	<date ana="#checkedOut" when="1934-07-07">7 July</date>	<bibl ana="#borrowedItem" corresp="mep:009t23"><title>An Elizabethan Journal</title></bibl> 		<date ana="#returned" when="1934-02-27">Feb 27</date>
-            			returned to concierge  and <date when="1937-10-08">8 Oct</date> <unclear/> 4.60
+              
+            		<ab ana="#borrowingEvent">		
+            	<date ana="#checkedOut" when="1934-07-07">7 July</date>
+                    <bibl ana="#borrowedItem" corresp="mep:009t23"><title>An Elizabethan Journal</title></bibl> 
+                    <date ana="#returned" when="1934-02-27">Feb 27</date>
+            		</ab>
+                    
+            		<note>returned to concierge  and <date when="1937-10-08">8 Oct</date> <unclear/> 4.60
             			<date when="1934-02-27">Feb 27</date> at noon			" <date when="1934-01-03">Jan 3</date>
             								<unclear/> 21 Feb.
-            				subsc expired <date when="1935-01-07">Jan 7 - 35</date>
-            	</ab>
+            				subsc expired <date when="1935-01-07">Jan 7 - 35</date></note>
+            	
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>

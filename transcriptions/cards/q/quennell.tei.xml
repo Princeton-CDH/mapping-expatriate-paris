@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -57,36 +56,40 @@
            <div type="card">
                <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
+                <head>
                 <date when="1940">1940</date>				<persName ref="quen">QUENNELL
                 							Mrs.</persName>
                 					<address><street>51 Av. Marceau</street>
                 								<settlement>Paris</settlement> <district>XVI</district></address>
-                								
-                				1m.	1 vol.			45
-                				Dep					50
-                				
-                <date ana="#checkedOut" when="1940-02-02">Feb. 2</date>	<bibl ana="#borrowedItem" corresp="mep:00jb09"><title>Secret Lives</title></bibl> 	p.c. <date ana="#returned" when="1940-02-15">Feb 15</date>
-                
+                </head>								
+                				<note>1m.	1 vol.			45
+                				Dep					50</note>
+                <note>				
+                <date when="1940-02-02">Feb. 2</date>	
+                   <bibl corresp="mep:00jb09"><title>Secret Lives</title></bibl> 
+                   p.c.
+                   <date when="1940-02-15">Feb 15</date>
+                </note>
+                   <note>
                 			<date when="1940-03-29">March 29</date> sent word by
                     <persName ref="culm.m">Mr Culme. Seymour</persName>
-                			  wanted subsc <bibl ana="#borrowedItem" corresp="mep:002f7x"><title>Horizon</title></bibl>
+                			  wanted subsc <bibl corresp="mep:002f7x"><title>Horizon</title></bibl>
                 			    10 months (to end of year)
-                			    from <bibl ana="#borrowedItem"><biblScope>No 3</biblScope></bibl>
-                			    <persName ref="beac.sy">SB</persName> sent in subsc <date ana="#checkedOut" when="1940-03-30">March 30</date>
-                			<bibl ana="#borrowedItem" corresp="mep:002f7x"><title>Horizon</title></bibl> Ten months <bibl ana="#borrowedItem"><biblScope>Nos 3 - 12</biblScope></bibl> inclusive 100f
-                				wrote again <date ana="#returned" when="1940-04-24">April 24</date>
-                				wrote <date ana="#checkedOut" when="1940-05-03">May 3</date>
-                				also wrote to <bibl ana="#borrowedItem" corresp="mep:002f7x"><title>Horizon</title></bibl> to cancel subsc
-                				charge S B with<bibl ana="#borrowedItem"><title> Nos</title></bibl> already supplied
-                				(holding letter cancelling (<date ana="#returned" when="1940-03">March</date>-<date when="1940-04">April</date>-<date when="1940-05">May</date>)
+                			    from <bibl><biblScope unit="issue" from="3">No 3</biblScope></bibl>
+                			    <persName ref="beac.sy">SB</persName> sent in subsc <date  when="1940-03-30">March 30</date>
+                			<bibl corresp="mep:002f7x"><title>Horizon</title></bibl> Ten months <bibl><biblScope unit="issue" from="3" to="12">Nos 3 - 12</biblScope></bibl> inclusive 100f
+                				wrote again <date  when="1940-04-24">April 24</date>
+                				wrote <date when="1940-05-03">May 3</date>
+                				also wrote to <bibl corresp="mep:002f7x"><title>Horizon</title></bibl> to cancel subsc
+                				charge <persName ref="beac.sy">S B</persName> with<bibl><title> Nos</title></bibl> already supplied
+                				(holding letter cancelling (<date  when="1940-03">March</date>-<date when="1940-04">April</date>-<date when="1940-05">May</date>)
                 				 subsc for a few more days
                 				 to see if reply comes to card of <date when="1940-05-02">May 2</date>
                 			
                 			
                 			debit <persName ref="quen">Mrs Quennell</persName>
-                					<bibl ana="#borrowedItem"><biblScope>4 Nos</biblScope></bibl> <bibl ana="#borrowedItem" corresp="mep:002f7x"><title>Horizon</title></bibl> at 14			56
-                </ab>
+                					<bibl><biblScope>4 Nos</biblScope></bibl> <bibl corresp="mep:002f7x"><title>Horizon</title></bibl> at 14			56
+                </note>
                 </div>
                <div type="verso">
                 <pb facs="#s2"/>

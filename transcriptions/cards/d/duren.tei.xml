@@ -72,8 +72,8 @@
         <body>
             
               <div type="card"> <div type="recto"> <pb facs="#s1"/>
-                <ab>TITLE:  <bibl ana="#borrowedItem" corresp="mep:004x9w"><title>The enormous Room</title></bibl>
-                Date of Order:  <date ana="#returned" when="1938-11-07">Nov 7 1938</date>
+               <note> TITLE:  <bibl corresp="mep:004x9w"><title>The enormous Room</title></bibl>
+                Date of Order:  <date  when="1938-11-07">Nov 7 1938</date>
                 Date of Arrival:  <date when="1938-12-16">Dec 16 1938</date>
                 Name of Customer:  <persName ref="#dure">Madame Duren</persName>
                 Address of Customer:  <address><street>72 Bd. Montparnasse</street></address>
@@ -81,8 +81,8 @@
                 Deposit:  50 frs refund 20v <date when="1938-12-14">Dec 14</date> balance 30,
                 Balance:  due:					Frs 15 fr
                 
-                			gave to Mme Duren <date when="1938-12-19">Dec 19</date>
-                						owes 15v</ab>
+                			gave to <persName ref="#dure">Mme Duren</persName> <date when="1938-12-19">Dec 19</date>
+                						owes 15v</note>
                 </div>
                <div type="verso"> <pb facs="#s2"/>
                 <!-- verso blank --></div>
@@ -92,29 +92,41 @@
                 			DUREN
                 		Madame Jean</persName>
                 			<address><street>72 Blvd. Montparnasse</street></address></head>
-                			<ab>s 1 m 1 v B			50
+                			<note>s 1 m 1 v B			50
                 			Deposit:		100 50
                 							 50
                 			(+50 deposited 2 wks. ago)
                 			(ref. July 27 50v)
                 				left 50v dep (refunded 20v) <date when="1938-12-14">Dec 14</date>
-                					 30v dep.
-                <date ana="#checkedOut" when="1938-07-23">July 23</date>:  <bibl ana="#borrowedItem" corresp="mep:002p57"><title>CITADEL</title></bibl>						<date ana="#returned" when="1938-07-26">July 26</date>
-                <date ana="#checkedOut" when="1938-07-26">July 26</date>:  <bibl ana="#borrowedItem" corresp="mep:004x9w"><title>The Enormous Room</title></bibl>
-                <date ana="#checkedOut" when="1938-07-26">July 26</date>:  <bibl ana="#borrowedItem" corresp="mep:004x9w"><title>The Enormous Room</title></bibl>				<date ana="#returned" when="1938-10-25">Oct 25</date>
-                			gave it to <persName ref="#dure">Mme Duren</persName> to keep
-                			during the month of <date ana="#checkedOut" when="1938-08">August</date>
+                					 30v dep.</note>
+                   
+                   <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1938-07-23">July 23</date>
+                   <bibl ana="#borrowedItem" corresp="mep:002p57"><title>CITADEL</title></bibl>
+                   <date ana="#returned" when="1938-07-26">July 26</date>
+                   </ab>
+                <note><del><date  when="1938-07-26">July 26</date>: 
+                   <bibl corresp="mep:004x9w"><title>The Enormous Room</title></bibl></del></note>
+                   <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1938-07-26">July 26</date> 
+                   <bibl ana="#borrowedItem" corresp="mep:004x9w"><title>The Enormous Room</title></bibl>	
+                   <date ana="#returned" when="1938-10-25">Oct 25</date>
+                	</ab>		
+                			<note>gave it to <persName ref="#dure">Mme Duren</persName> to keep
+                			during the month of <date when="1938-08">August</date>
                 			she has ordered a copy from in
-                			the <bibl ana="#borrowedItem"><publisher>Modern Lib</publisher> ed.</bibl>
-                			<date ana="#checkedOut" when="1938-12-14">Dec 14</date>		<bibl ana="#borrowedItem" corresp="mep:00514d"><title>Enormous Room</title> - 1st Edition</bibl> returned 
-                
+                			the <bibl><publisher>Modern Lib</publisher> ed.</bibl>
+                			<date when="1938-12-14">Dec 14</date>		<bibl  corresp="mep:00514d"><title>Enormous Room</title> - <edition>1st Edition</edition></bibl> returned 
+                </note><note>
                 			ordered copy from <address><settlement>London</settlement></address>
                 			arrived <date when="1938-12-16">Dec 16</date>
                 			wrote <date when="1938-12-16">Dec 16</date> to <persName ref="#dure">Mme Duren</persName>
                 			gave copy to <persName ref="#dure">Mme Duren</persName> <date when="1938-12-19">Dec 19</date>
                 		45v dep 30v owes 15v
-                <date when="1938-05-04">May 4</date>	wrote to <persName ref="#dure">Mme Duren</persName> to show MS to <persName>J.P.</persName></ab>
-                </div><div type="verso">
+                		</note>
+               <note> <date when="1938-05-04">May 4</date>	wrote to <persName ref="#dure">Mme Duren</persName> to show MS to <persName>J.P.</persName></note>
+                
+               </div><div type="verso">
                 <pb facs="#s4"/>
                 <!-- verso blank -->
                 </div>

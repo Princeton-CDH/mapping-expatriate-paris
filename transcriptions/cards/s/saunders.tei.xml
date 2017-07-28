@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
@@ -12,6 +13,10 @@
                 <respStmt ana="#elspeth">
                     <persName>Green, Elspeth</persName>
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName>
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -63,15 +68,23 @@
                      <pb facs="#s1"/>
                      <head>
                      <date when="1923-06-16">1923
-                     June 16</date>		<address><persName ref="#saun.ol">Miss Sylv Olivia Saunders</persName>
+                     June 16</date>		<address><persName ref="#saun.ol">Miss <del>Sylv</del> Olivia Saunders</persName>
                      			        <street>Hotel des Sts Pères</street></address>
                      </head>			
-                     <ab>			
+                     <note>			
                      			1 mo	1 vol
-                     </ab>
-                     <ab>
-                     <date ana="#checkedOut" when="1923-06-16">June 16</date>		<bibl ana="#borrowedItem" corresp="mep:00q64n"><title>The Golden Bough</title></bibl>   <date ana="#returned" when="1923-07-20">July 20</date>	12 frs
-                     </ab>
+                     </note>
+                     
+                     
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1923-06-16">June 16</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00q64n">
+                            <title>The Golden Bough</title>
+                        </bibl>   
+                        <date ana="#returned" when="1923-07-20">July 20</date>	
+                        <note>12 frs</note>
+                    </ab>
+                    
                 </div> 
                 <div type="verso">
                      <pb facs="#s2"/>
