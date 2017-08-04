@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -65,14 +67,41 @@
                 					Mlle Marie Antoinette</persName>
                 			<address><street>160 Bd Magenta</street></address>
                 			</head>
-                			<ab>3m 1v	50
-                				Dep	50
+                			
+                			<note>3m 1v	50
+                				Dep	50 </note>
                 
-                <date ana="#checkedOut" when="1941-09-19">Sept. 19</date>	<bibl ana="#borrowedItem" corresp="mep:00503t"><title>Shepheard's calendar</title></bibl>		<date ana="#returned" when="1941-09-29">Sept 29</date>
-                	<date ana="#checkedOut" when="1941-09-29">29</date>		<bibl ana="#borrowedItem" corresp="mep:005044"><title>Scarlet letter</title> (<author>Houghton</author>)</bibl>	<date ana="#returned" when="1941-10-15">Oct 15</date>
-                <date ana="#checkedOut" when="1941-10-15">Oct 15</date>		<bibl ana="#borrowedItem" corresp="mep:004n44"><title>Something Childish</title></bibl>			<date ana="#returned" when="1941-10-30">Oct 30</date>
-                	<date ana="#checkedOut" when="1941-10-30">30</date>		<bibl ana="#borrowedItem" corresp="mep:001m16"><title>Bliss</title></bibl>						<date ana="#returned" when="1941-11-13">Nov 13</date>
-                						interrupted for a few days</ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-09-19">Sept. 19</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00503t">
+                        <title>Shepheard's calendar</title></bibl>		
+                    <date ana="#returned" when="1941-09-29">Sept 29</date>
+                </ab>
+                   
+                   
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1941-09-29">29</date>		
+                	    <bibl ana="#borrowedItem" corresp="mep:005044">
+                	        <title>Scarlet letter</title> (<author>Houghton</author>)</bibl>	
+                	    <date ana="#returned" when="1941-10-15">Oct 15</date>
+                	</ab>
+                   
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1941-10-15">Oct 15</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:004n44">
+                        <title>Something Childish</title></bibl>			
+                    <date ana="#returned" when="1941-10-30">Oct 30</date>
+                </ab>
+                   
+                	<ab ana="#borrowingEvent">
+                	    <date ana="#checkedOut" when="1941-10-30">30</date>		
+                	    <bibl ana="#borrowedItem" corresp="mep:001m16">
+                	        <title>Bliss</title></bibl>						
+                	    <date ana="#returned" when="1941-11-13">Nov 13</date>
+                	</ab>
+                   
+                						<note>interrupted for a few days</note>
+                   
                 </div><div type="verso">
                 <pb facs="#s2"/>
                 <!-- verso blank --></div>

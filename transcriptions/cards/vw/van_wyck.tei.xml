@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -75,14 +78,22 @@
                     </head>
                     
                     
-                    <ab>
+                    <note>
                     		3m	1vol			60
                     		Deposit				50
-                    </ab>		
-                    <ab>
-                    <date ana="#checkedOut" when="1927-01-21">Jan 21</date>	<bibl ana="#borrowedItem"><title>Divine Lady</title></bibl> (can be kept longer)	<date ana="#returned" when="1927-03-02">March 2</date>
-                    <date when="1927-03-02">March 2</date>
+                    </note>		
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1927-01-21">Jan 21</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00675m">
+                            <title>Divine Lady</title>
+                        </bibl> 
+                        <note>(can be kept longer)</note>	
+                        <date ana="#returned" when="1927-03-02">March 2</date>
+                        <date when="1927-03-02">March 2</date>
                     </ab>
+                    
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>
@@ -96,44 +107,256 @@
                     		                  <name>Hotel Select</name>
                     		                  <street>1, Place de la Sorbonne</street></address>
                     </head>		
-                    <ab>	
+                    <note>	
                     	3 mos.	2 vols				30
                     					Dep.		14
+                    </note>
+                    
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-03">Oct 3</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bn94">
+                            <title>The Titan</title>
+                        </bibl>	           
+                        <date ana="#returned" when="1900-10-10">Oct 10</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1900-10-03">Oct 3</date>	<bibl ana="#borrowedItem"><title>The Titan</title></bibl>	           <date ana="#returned" when="1900-10-10">Oct 10</date>
-                    <date ana="#checkedOut" when="1900-10-08">Oct 8</date>	<bibl ana="#borrowedItem"><title>Mainstreet</title></bibl>	           <date ana="#returned" when="1900-10-10">Oct 10</date>
-                    <date ana="#checkedOut" when="1900-10-10">Oct 10</date>	<bibl ana="#borrowedItem"><title>New Voices</title></bibl>	           <date ana="#returned" when="1900-10-11">Oct 11</date>
-                    <date ana="#checkedOut" when="1900-10-11">Oct 11</date>	<bibl ana="#borrowedItem"><title>Main Street</title></bibl>	           <date ana="#returned" when="1900-10-29">Oct 29</date>
-                    <date ana="#checkedOut" when="1900-10-29">Oct 29</date>	<bibl ana="#borrowedItem"><title>The Return of the Soldier</title></bibl>
-                    		            <bibl ana="#borrowedItem"><title>Invincible Minnie</title></bibl>
-                    <date ana="#checkedOut" when="1900-11-03">Nov 3</date>	<bibl ana="#borrowedItem"><title>Prostitution in Europe</title></bibl> <date ana="#returned" when="1900-11-04">Nov 4</date>
-                    <date ana="#checkedOut" when="1900-11-09">Nov 9</date>	<bibl ana="#borrowedItem"><title>Brass</title></bibl>				   <date ana="#returned" when="1900-11-15">Nov 15</date>
-                    <date ana="#checkedOut" when="1900-11-15">Nov 15</date>	<bibl ana="#borrowedItem"><title>John Bull's Other Island</title></bibl> <date ana="#returned" when="1900-11-17">Nov 17</date>
-                    <date ana="#checkedOut" when="1900-11-17">Nov 17</date>	<bibl ana="#borrowedItem"><title>A Chair on the Boulevard</title></bibl>
-                    <date ana="#checkedOut" when="1900-11-21">Nov 21</date>	<bibl ana="#borrowedItem"><title>Conrad in Quest of His Youth</title></bibl> <date ana="#checkedOut" when="1900-11-30">Nov 30</date>
-                    		            <bibl ana="#borrowedItem"><title>While Paris Laughed</title></bibl>
-                    <date ana="#checkedOut" when="1900-11-26">Nov 26</date>	<bibl ana="#borrowedItem"><title>Hedda Gabler</title></bibl>				BB
-                    <date ana="#checkedOut" when="1900-11-29">Nov 29</date>	<bibl ana="#borrowedItem"><title>Russian Theatre</title></bibl>			<date ana="#returned" when="1900-01-03">Jan 3</date>
-                    <date ana="#checkedOut" when="1900-12-05">Dec 5th</date><bibl ana="#borrowedItem"><title>Studies in the Psychology of Sex </title></bibl>BB
-                    <date ana="#checkedOut" when="1900-12-12">Dec 12</date>	<bibl ana="#borrowedItem"><title>The Newcomer</title></bibl>				BB
-                    		            <bibl ana="#borrowedItem"><title>The Theatre Advancing</title></bibl>		BB
-                    <date ana="#checkedOut" when="1900-12-24">Dec 24</date>	<bibl ana="#borrowedItem"><title>The Strength of the Strong</title></bibl>	<date ana="#returned" when="1900-12-26">Dec 26</date>
-                    <date ana="#checkedOut" when="1900-12-27">Dec 27</date>	<bibl ana="#borrowedItem"><title>The Road</title></bibl>
-                    <date ana="#checkedOut" when="1900-12-31">Dec 31</date>	<bibl ana="#borrowedItem"><title>That Which Hath Wings</title></bibl>	<date ana="#returned" when="1900-01-03">Jan 3</date>
-                    <date ana="#checkedOut" when="1900-01-03">Jan 3</date>	<bibl ana="#borrowedItem"><title>Shanghaied</title></bibl>				<date ana="#returned" when="1900-01-04">Jan 4</date>
-                    <date ana="#checkedOut" when="1900-01-04">Jan 4</date>	<bibl ana="#borrowedItem"><title>Gallegher &amp; Van Bibber</title></bibl>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-08">Oct 8</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:002f59">
+                            <title>Mainstreet</title>
+                        </bibl>	           
+                        <date ana="#returned" when="1900-10-10">Oct 10</date>
                     </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-10">Oct 10</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bk9k">
+                            <title>New Voices</title>
+                        </bibl>	           
+                        <date ana="#returned" when="1900-10-11">Oct 11</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-10-11">Oct 11</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:002f59">
+                            <title>Main Street</title>
+                        </bibl>	          
+                        <date ana="#returned" when="1900-10-29">Oct 29</date>
+                    </ab>
+                    
+                    
+                        <note>
+                            <del>
+                                <date when="1900-10-29">Oct 29</date>	
+                                <bibl corresp="mep:00bp0m">
+                                    <title>The Return of the Soldier</title>
+                                </bibl>
+                            </del>
+                        </note>
+                    
+                    
+                    <note>
+                        <del>
+                            <bibl corresp="mep:00bp1x">
+                                <title>Invincible Minnie</title>
+                            </bibl>
+                        </del>
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-03">Nov 3</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bp27">
+                            <title>Prostitution in Europe</title>
+                        </bibl> 
+                        <date ana="#returned" when="1900-11-04">Nov 4</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-09">Nov 9</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bp3j">
+                            <title>Brass</title>
+                        </bibl>				   
+                        <date ana="#returned" when="1900-11-15">Nov 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-15">Nov 15</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bp4v">
+                            <title>John Bull's Other Island</title>
+                        </bibl> 
+                        <date ana="#returned" when="1900-11-17">Nov 17</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-17">Nov 17</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:006m9w">
+                            <title>A Chair on the Boulevard</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-11-21"></date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-21">Nov 21</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bp55">
+                            <title>Conrad in Quest of His Youth</title>
+                        </bibl> 
+                        <date ana="#returned" when="1900-11-30">Nov 30</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-21"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:008116">
+                            <title>While Paris Laughed</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-11-30"></date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-26">Nov 26</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bp6g">
+                            <title>Hedda Gabler</title>
+                        </bibl>				
+                        <note>BB</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-11-29">Nov 29</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:007k30">
+                            <title>Russian Theatre</title>
+                        </bibl>			
+                        <date ana="#returned" when="1900-01-03">Jan 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-05">Dec 5th</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bp7s">
+                            <title>Studies in the Psychology of Sex</title>
+                        </bibl>
+                       <note> BB</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-12">Dec 12</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bp83">
+                            <title>The Newcomer</title>
+                        </bibl>				
+                        <note>BB</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-12"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bp9d">
+                            <title>The Theatre Advancing</title>
+                        </bibl>		
+                       <note> BB</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-24">Dec 24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bq0w">
+                            <title>The Strength of the Strong</title>
+                        </bibl>	
+                        <date ana="#returned" when="1900-12-26">Dec 26</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-24">Dec 24</date>	
+                        <bibl ana="#borrowedItem">
+                            <title>Now to Tell the Birds</title>
+                        </bibl>	
+                        <date ana="#returned" when="1900-12-26">Dec 27</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-24">Dec 26</date>	
+                        <bibl ana="#borrowedItem">
+                            <title>The Night born</title>
+                        </bibl>	
+                        <date ana="#returned" when="1900-12-31">Dec 31</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-27">Dec 27</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:008608">
+                            <title>The Road</title>
+                        </bibl>
+                        <date ana="#returned" when="1900-12-31"></date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-12-31">Dec 31</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bq16">
+                            <title>That Which Hath Wings</title>
+                        </bibl>	
+                        <date ana="#returned" when="1900-01-03">Jan 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-03">Jan 3</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:009j36">
+                            <title>Shanghaied</title>
+                        </bibl>				
+                        <date ana="#returned" when="1900-01-04">Jan 4</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-04">Jan 4</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bq2h">
+                            <title>Gallegher &amp; Van Bibber</title>
+                        </bibl>
+                    </ab>
+                    
+                    
                 </div> 
                 <div type="verso">
                     <pb facs="#s4"/>
-                    <ab>
-                    <date ana="#checkedOut" when="1900-01-08">Jan 8</date>	<bibl ana="#borrowedItem"><title>Shanghaed</title></bibl>				<date ana="#returned" when="1900-01-03">Jan Jan 3</date>
-                    <date ana="#checkedOut" when="1900-01-10">Jan 10</date>	<bibl ana="#borrowedItem"><title>Rabelais</title></bibl>				<date ana="#returned" when="1900-02-22">Feb 22</date> 	Ren 3 mos
-                    <date ana="#checkedOut" when="1900-01-24">Jan 24</date>	<bibl ana="#borrowedItem"><title>Cheerful by Request</title></bibl>		<date ana="#checkedOut" when="1900-03-02">Feb 2</date>	1 vol 16f
-                    		            <bibl ana="#borrowedItem"><title>The Iron Heel</title></bibl>			<date ana="#checkedOut" when="1900-02-22">Feb 22</date>
-                    		            <bibl ana="#borrowedItem"><title>The Jacket</title></bibl>				<date ana="#returned" when="1900-02-22">	  "</date>
-                    </ab>		
+                                        
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-08">Jan 8</date>	
+                        <bibl ana="#borrowedItem"  corresp="mep:009j36">
+                            <title>Shanghaed</title>
+                        </bibl>				
+                        <date ana="#returned" when="1900-01-03">Jan Jan 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-10">Jan 10</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bq3t">
+                            <title>Rabelais</title>
+                        </bibl>				
+                        <date ana="#returned" when="1900-02-22">Feb 22</date>
+                    </ab> 	
+                    
+                    <note>
+                        Ren 3 mos
+                        1 vol 16f
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-24">Jan 24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00bq44">
+                            <title>Cheerful by Request</title>
+                        </bibl>		
+                        <date ana="#returned" when="1900-03-02">Feb 2</date>	
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-24"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bq5f">
+                            <title>The Iron Heel</title>
+                        </bibl>			
+                        <date ana="#returned" when="1900-02-22">Feb 22</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-24"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bq6r">
+                            <title>The Jacket</title>
+                        </bibl>				
+                        <date ana="#returned" when="1900-02-22">	  "</date>
+                    </ab>
+                    
                  </div>   
             </div>
         </body>

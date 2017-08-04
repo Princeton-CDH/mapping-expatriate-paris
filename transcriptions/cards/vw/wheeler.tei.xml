@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,24 +63,70 @@
                                 <persName ref="#whee.mo">WHEELER</persName>
                     <date when="1925-02-16">1925 		
                     Feb 16</date>			<address><persName ref="#whee.mo">Mr Monroe Wheeler</persName>
-                    				        <name>Savoy Hotel</name>			<addrLine>or <persName>Mr Glenway Wescott</persName></addrLine>
-                    				        <street>rue Vaugirard 30</street> </address>
+                    				        <name><del>Savoy Hotel</del></name>			<addrLine>or <persName>Mr Glenway Wescott</persName></addrLine>
+                    				        <street><del>rue Vaugirard</del> 30</street> </address>
                         
                     				        <address><street>218 Bd Raspail</street> <district>(14e)</district></address>
                     </head>	
-                    <ab>
+                    
+                    <note>
                     				3 mos	2 vols			40
+                    </note>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-02-16">Feb 16</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d21f"><title>Plutarch's Lives</title> 
+                            <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl> 
+                        <date ana="#returned" when="1925-02-26">Feb 26</date>
                     </ab>
-                    <ab>
-                    <date ana="#checkedOut" when="1925-02-16">Feb 16</date>	<bibl ana="#borrowedItem" corresp="mep:00d21f"><title>Plutarch's Lives</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl> <date ana="#returned" when="1925-02-26">Feb 26</date>
-                    <date ana="#checkedOut" when="1925-02-26">Feb 26</date>	<bibl ana="#borrowedItem" corresp="mep:00d22r"><title>Macaulay's History of England</title> <biblScope unit="volume" from="3">vol III</biblScope></bibl>	<date ana="#returned" when="1925-02-25">Feb 25</date>
-                    <date ana="#checkedOut" when="1925-02-26">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00d232"><title>Odette</title></bibl>					<date ana="#returned" when="1925-02-28">Feb 28</date>
-                    <date ana="#checkedOut" when="1925-02-28">Feb 28</date>	<bibl ana="#borrowedItem" corresp="mep:001t6d"><title>Marsden Case</title></bibl>			<date ana="#returned" when="1925-03-10">March 10</date>
-                    <date ana="#checkedOut" when="1925-02-28">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:00d24c"><title>Tour Georges</title> (<series>English Humorists</series>)</bibl> "	 "
-                    <date ana="#checkedOut" when="1925-03-10">March 10</date> <bibl ana="#borrowedItem" corresp="mep:00d25p"><title>Silent Land</title></bibl> __			<date ana="#returned" when="1925-04-17">Ap. 17</date> (p.c. <date when="1925-04-15">Ap. 15</date>)
-                    <date ana="#checkedOut" when="1925-04-17">April_ 17</date><bibl ana="#borrowedItem" corresp="mep:00c75t"><title>Dial</title></bibl> (0.25)			    <date ana="#returned" when="1925-04-17">"	"</date>	
-                    <date ana="#checkedOut" when="1925-04-17">April 17</date>	<bibl ana="#borrowedItem" corresp="mep:006p3k"><title>Psychology of the Unconscious</title></bibl> (0,25) <date ana="#returned" when="1925-04-27">Ap. 27</date>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-02-26">Feb 26</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d22r"><author>Macaulay's</author><title> History of England</title> 
+                            <biblScope unit="volume" from="3">vol III</biblScope></bibl>	
+                        <date ana="#returned" when="1925-02-28">Feb 28</date>
                     </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-02-26">"	"</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00d232"><title>Odette</title></bibl>	
+                        <date ana="#returned" when="1925-02-28">Feb 28</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-02-28">Feb 28</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001t6d"><title>Marsden Case</title></bibl>
+                        <date ana="#returned" when="1925-03-10">March 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-02-28">"	"</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00d24c"><title>Tour Georges</title>
+                            (<series>English Humorists</series>)</bibl> 
+                        <date ana="#returned" when="1925-03-10">"	 "</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-03-10">March 10</date> 
+                        <bibl ana="#borrowedItem" corresp="mep:00d25p"><title>Silent Land</title></bibl> __	
+                        <date ana="#returned" when="1925-04-17">Ap. 17</date>
+                        <note>(p.c. <date when="1925-04-15">Ap. 15</date>)</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-04-17">April_ 17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00c75t"><title>Dial</title></bibl>
+                        <note>(0.25)</note>
+                        <date ana="#returned" when="1925-04-17">"	"</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1925-04-17">April 17</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:006p3k"><title>Psychology of the Unconscious</title></bibl>
+                        <note>(0,25)</note> 
+                        <date ana="#returned" when="1925-04-27">Ap. 27</date>
+                    </ab>
+                    
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>

@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -81,54 +84,241 @@
                				<region>Seine</region>
                				</address>
                	</head>
-                <ab>
+                <note>
                	            1m 1vol B	50v
                				deposit 50v
-               	</ab>
-               	<ab>
-               	<date ana="#checkedOut" when="1938-10-26">Oct 26</date>	<bibl ana="#borrowedItem" corresp="mep:00158s"><title>Writings of E.M. Forester</title></bibl>	<date ana="#returned" when="1938-11-02">Nov 2</date>
-               	<date ana="#checkedOut" when="1938-11-02">Nov 2</date>	<bibl ana="#borrowedItem" corresp="mep:000010"><title>Being Geniuses Together</title></bibl>		<date ana="#returned" when="1938-11-04">Nov 4</date>
-               	<date ana="#checkedOut" when="1938-11-04">Nov 4</date>	<bibl ana="#borrowedItem" corresp="mep:00049k"><title>Man Against Himself</title></bibl>			<date ana="#returned" when="1938-11-12">Nov 12</date>
-               	<date ana="#checkedOut" when="1938-11-12">Nov 12</date>	<bibl ana="#borrowedItem" corresp="mep:00gk12"><title>Best Short Stories '38</title></bibl>		<date ana="#returned" when="1938-11-15">Nov 15</date>
-               	<date ana="#checkedOut" when="1938-11-12">	"</date>	<bibl ana="#borrowedItem" corresp="mep:005w1c"><title>My Wife's the Least of It</title></bibl> 2v <date ana="#returned" when="1938-11-15">Nov 15</date>
-               	<date ana="#checkedOut" when="1938-11-15">Nov 15</date>	<bibl ana="#borrowedItem" corresp="mep:00s59d"><title>Rainer Marie Rilke</title></bibl>  trio 14v <date ana="#returned" when="1938-11-29">Nov 29</date>
-               	<date when="1938-11-29">Nov 29</date>	sub ren 1 vol 1 m B 50v
+               	</note>
                	
-               	<date ana="#checkedOut" when="1938-11-29">Nov 29</date>	<bibl ana="#borrowedItem" corresp="mep:000399"><title>Transition</title></bibl>					<date ana="#returned" when="1938-12-02">Dec 2</date>
-               	<date ana="#checkedOut" when="1938-12-02">Dec 2</date>	<bibl ana="#borrowedItem" corresp="mep:00m521"><title>Georgian Literary Scene</title></bibl>		<date ana="#returned" when="1938-12-08">Dec 8</date>
-               	<date ana="#checkedOut" when="1938-12-08">Dec 8</date>	<bibl ana="#borrowedItem" corresp="mep:00343f"><title>Life and Letters of Galsworthy</title></bibl> <date ana="#returned" when="1938-12-15">Dec 15</date>
-               	<date ana="#checkedOut" when="1938-12-15">Dec 15</date>	<bibl ana="#borrowedItem" corresp="mep:00s60w"><title>Bee &amp; other Essays of Goldsmith</title></bibl> <date ana="#returned" when="1938-12-15">Dec 15</date>
-               								extra 4v pd.
-               	<date ana="#checkedOut" when="1938-12-30">	30</date>	<bibl ana="#borrowedItem" corresp="mep:007s6k"><title>Criticism and Appreciation of Charles Dickens</title></bibl> <date ana="#returned" when="1939-01-05">Jan 5</date>
-               	<date from="1938-12-29" to="1939-01-29">Dec 29 - Jan 29</date> Sub ren 1m 1v B 50v
-               	Dec <date ana="#checkedOut" when="1939-01-06">Jan 6</date> <bibl ana="#borrowedItem" corresp="mep:008b67"><title>Everlasting Man</title></bibl>			<date ana="#returned" when="1939-01-14">Jan 14</date>
-               	<date ana="#checkedOut" when="1939-01-06">	6</date>	<bibl ana="#borrowedItem" corresp="mep:00506r"><title>Orthodoxy</title></bibl> 1v				<date ana="#returned" when="1939-01-14">Jan 14</date>
-               	<date ana="#checkedOut" when="1939-01-14">Jan 14</date>	<bibl ana="#borrowedItem" corresp="mep:008b4m"><title>New Jerusalem</title></bibl>				<date ana="#returned" when="1939-01-24">Jan 24</date>
-               	<date ana="#checkedOut" when="1939-01-24">	24</date>	<bibl ana="#borrowedItem" corresp="mep:00s616"><title>Walter Whitman's Poetry</title></bibl>		<date ana="#returned" when="1939-01-29">Jan 29</date>
-               			<date when="1939-03-01">March 1st</date>
-               	<date when="1939-01-29" to="1939-03-01">Jan 29 - Feb 29</date>	sub ren 1m 1v B		50v
-               	Renewed <date from="1941-10-08" to="1942-01-08">October 8th 1941 - Jan 8th 1942</date>	65
+               	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-26">Oct 26</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00158s">
+                            <title>Writings of E.M. Forester</title>
+                        </bibl>	
+                        <date ana="#returned" when="1938-11-02">Nov 2</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-02">Nov 2</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:000010">
+                            <title>Being Geniuses Together</title>
+                        </bibl>		
+                        <date ana="#returned" when="1938-11-04">Nov 4</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-04">Nov 4</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00049k">
+                            <title>Man Against Himself</title>
+                        </bibl>			
+                        <date ana="#returned" when="1938-11-12">Nov 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-12">Nov 12</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00gk12">
+                            <title>Best Short Stories '38</title>
+                        </bibl>		
+                        <date ana="#returned" when="1938-11-15">Nov 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-12">"</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:005w1c">
+                            <title>My Wife's the Least of It</title>
+                        </bibl> 
+                        <note>2v</note> 
+                        <date ana="#returned" when="1938-11-15">Nov 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-15">Nov 15</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00s59d">
+                            <title>Rainer Marie Rilke</title>
+                        </bibl>  
+                        <note>trio 14v</note> 
+                        <date ana="#returned" when="1938-11-29">Nov 29</date>
+                    </ab>
+                    
+                    <note>
+                        <date when="1938-11-29">Nov 29</date>	sub ren 1 vol 1 m B 50v
+                    </note>
+               	
+               	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-11-29">Nov 29</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:000399">
+                            <title>Transition</title>
+                        </bibl>					
+                        <date ana="#returned" when="1938-12-02">Dec 2</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1938-12-02">Dec 2</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:00m521">
+                           <title>Georgian Literary Scene</title>
+                       </bibl>		
+                       <date ana="#returned" when="1938-12-08">Dec 8</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-12-08">Dec 8</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00343f">
+                            <title>Life and Letters of Galsworthy</title>
+                        </bibl> 
+                        <date ana="#returned" when="1938-12-15">Dec 15</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-12-15">Dec 15</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00s60w">
+                            <title>Bee &amp; other Essays of Goldsmith</title>
+                        </bibl> 
+                        <date ana="#returned" when="1938-12-15">Dec 15</date>
+                      <note>  extra 4v pd.</note>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-12-30">	30</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:007s6k">
+                            <title>Criticism and Appreciation of Charles Dickens</title>
+                        </bibl> 
+                        <date ana="#returned" when="1939-01-05">Jan 5</date>
+                    </ab>
+                    
+                    <note><date from="1938-12-29" to="1939-01-29">Dec 29 - Jan 29</date> Sub ren 1m 1v B 50v</note>
+               	
+               	    <ab ana="#borrowingEvent">
+               	        <del>Dec</del> 
+               	        <date ana="#checkedOut" when="1939-01-06">Jan 6</date> 
+               	        <bibl ana="#borrowedItem" corresp="mep:008b67">
+               	            <title>Everlasting Man</title>
+               	        </bibl>			
+               	        <date ana="#returned" when="1939-01-14">Jan 14</date>
+               	    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1939-01-06">	6</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00506r">
+                            <title>Orthodoxy</title>
+                        </bibl> 
+                        <note>1v</note>				
+                        <date ana="#returned" when="1939-01-14">Jan 14</date>
+                    </ab>
+                    
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-01-14">Jan 14</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:008b4m">
+                           <title>New Jerusalem</title>
+                       </bibl>				
+                       <date ana="#returned" when="1939-01-24">Jan 24</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1939-01-24">24</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00s616">
+                            <title>Walter Whitman's Poetry</title>
+                        </bibl>		
+                        <date ana="#returned" when="1939-01-29">Jan 29</date>
+                        <date when="1939-03-01">March 1st</date>
+                    </ab>
+                    
+                    <note>
+               	        <date when="1939-01-29" to="1939-03-01">Jan 29 - Feb 29</date>	sub ren 1m 1v B		50v
+               	        Renewed <date from="1941-10-08" to="1942-01-08">October 8th 1941 - Jan 8th 1942</date>	65
                								dep (left last time)
-               	<date ana="#checkedOut" when="1941-10-08">Oct 8</date>	<bibl ana="#borrowedItem" corresp="mep:007184"><title>James Joyce</title>,<persName>Herbert Gorman</persName></bibl>	<date ana="#returned" when="1941-10-22">Oct 22</date>
-               	<date when="1941-10-22">Oct 22</date>
-               	</ab>
+               	    </note>
+               	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-10-08">Oct 8</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:007184">
+                            <title>James Joyce</title>,
+                            <author>Herbert Gorman</author>
+                        </bibl>	
+                        <date ana="#returned" when="1941-10-22">Oct 22</date>
+                        <date when="1941-10-22">Oct 22</date>
+                    </ab>
+                    
                	</div>
                 <div type="verso">
                 <pb facs="#s2"/>
-               	<ab>
-               	    (can take 2 books)
-               	<date ana="#checkedOut" when="1941-10-22">Oct 22</date>	<bibl ana="#borrowedItem" corresp="mep:000r40"><title>Flowering Judas</title></bibl>				<date ana="#returned" when="1941-11-05">Nov. 5</date>
-               	<date ana="#checkedOut" when="1941-10-22">	22</date>	<bibl ana="#borrowedItem" corresp="mep:00s62h"><title>Best Short Stories of 1930 Am </title></bibl><date ana="#returned" when="1941-11-05">Nov. 5</date>
-               	<date ana="#checkedOut" when="1941-11-05">Nov. 5</date>	<bibl ana="#borrowedItem" corresp="mep:006491"><title>Mount Venus</title></bibl> <bibl ana="#borrowedItem" corresp="mep:00s63t"><title>Verses After many a summer</title></bibl> <date ana="#returned" when="1941-11-11">Nov 11</date>
-               	<date ana="#checkedOut" when="1941-11-05">	5</date>	<bibl ana="#borrowedItem" corresp="mep:00s644"><title>Experiments</title></bibl>					<date ana="#returned" when="1941-11-12">Nov 12</date>
-               	<date ana="#checkedOut" when="1941-11-12">	12</date>	<bibl ana="#borrowedItem" corresp="mep:008v0h"><title>Fat of the cat</title></bibl>				<date ana="#returned" when="1941-11-26">Nov 26</date>
-               	<date ana="#checkedOut" when="1941-11-12">	</date>	    <bibl ana="#borrowedItem" corresp="mep:003x2g"><title>Ulysses</title></bibl> renewed <date ana="#returned" when="1941-11-26">Nov 26</date>, ren <date when="1941-12-10">dec. 10</date> ren du
-               	<date ana="#checkedOut" when="1941-11-26">	26</date>	<bibl ana="#borrowedItem" corresp="mep:00142n"><title>Axel's Castle</title></bibl>				<date ana="#returned" when="1941-12-10">Dec. 10</date>
-               	<date ana="#checkedOut" when="1941-12-10">Dec. 10</date>	<bibl ana="#borrowedItem" corresp="mep:003x2g"><persName>James Joyce</persName>'s <title>Ulysses</title> (<persName ref="#beac.sy">S.B.</persName>'s copy)</bibl> ren du
-               					
-               					<date ana="#returned" when="1941-12-18">Dec 18</date> <persName ref="#beac.sy">SB</persName> wrote per friend
-               				enclosed 50v
-               	</ab>
+               	
+               	    <note>(can take 2 books)</note>
+               	
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-10-22">Oct 22</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:000r40">
+                            <title>Flowering Judas</title>
+                        </bibl>				
+                        <date ana="#returned" when="1941-11-05">Nov. 5</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-10-22">22</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00s62h">
+                            <title>Best Short Stories of 1930 Am</title>
+                        </bibl>
+                        <date ana="#returned" when="1941-11-05">Nov. 5</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-11-05">Nov. 5</date>	
+                        <del>
+                            <bibl corresp="mep:006491">
+                                <title>Mount Venus</title>
+                            </bibl>
+                        </del> 
+                        <bibl ana="#borrowedItem" corresp="mep:00s63t">
+                            <title>After many a summer</title>
+                        </bibl> 
+                        <date ana="#returned" when="1941-11-11">Nov 11</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-11-05">	5</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00s644">
+                            <title>Experiments</title>
+                        </bibl>					
+                        <date ana="#returned" when="1941-11-12">Nov 12</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-11-12">	12</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:008v0h">
+                            <title>Fat of the cat</title>
+                        </bibl>				
+                        <date ana="#returned" when="1941-11-26">Nov 26</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-11-12"></date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:003x2g">
+                            <title>Ulysses</title>
+                        </bibl> 
+                       <note> renewed </note>
+                        <date ana="#returned" when="1941-11-26">Nov 26</date>, 
+                       <note> ren </note><date when="1941-12-10">dec. 10</date> ren du
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-11-26">	26</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00142n">
+                            <title>Axel's Castle</title>
+                        </bibl>				
+                        <date ana="#returned" when="1941-12-10">Dec. 10</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1941-12-10">Dec. 10</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:003x2g">
+                            <author>James Joyce</author>'s 
+                            <title>Ulysses</title> 
+                            (<author ref="#beac.sy">S.B.</author>'s copy)</bibl> <note>ren du</note>
+                    </ab>
+                    
+               					<note><date when="1941-12-18">Dec 18</date> <persName ref="#beac.sy">SB</persName> wrote per friend
+               				enclosed 50v</note>
+               	
                	</div>
                 </div>
             

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -66,14 +68,30 @@
                <head> <date when="1961">1961</date>	<persName ref="foci.ma">Madame Focillon</persName>
                 		<address><street>60 rue de la Montagne Ste Geneviève</street>
                 		<settlement type="city">Paris</settlement></address></head>
-                <ab>
-                <date ana="#checkedOut" when="1961-01-24">Jan 24</date>		<bibl ana="#borrowedItem" corresp="mep:00jx3x"><title>Mr Hobbs' Vacation</title></bibl>		<date ana="#checkedOut" when="1961-03">March 1961</date>
-                                                            <bibl ana="#borrowedItem" corresp="mep:004x6z"><title>Cousin to Human</title></bibl>		<date ana="#checkedOut" when="1961-03">"" ""</date>
-                                                            <bibl ana="#borrowedItem" corresp="mep:00jx47"><title>Lolita	</title></bibl>			<date ana="#checkedOut" when="1961-03">"" ""</date>
-                                             			<bibl ana="#borrowedItem" corresp="mep:00jx5j"><title>The Coctail Party</title></bibl>
-                                             			<bibl ana="#borrowedItem" corresp="mep:00jx6v"><title>The Man who was loved</title></bibl>
-                		(Mme Focillon returned <bibl ana="#borrowedItem" corresp="mep:00jx75"><title>Period Piece</title></bibl>)
-                </ab>
+              <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1961-01-24">Jan 24</date>		
+                   <bibl ana="#borrowedItem" corresp="mep:00jx3x"><title>Mr Hobbs' Vacation</title></bibl>	
+                   <date ana="#returned" when="1961-03">March 1961</date>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1961-01-24"></date>		
+                   <bibl ana="#borrowedItem" corresp="mep:004x6z"><title>Cousin to Human</title></bibl>
+                   <date ana="#returned" when="1961-03">"" ""</date>
+                   </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1961-01-24"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:00jx47"><title>Lolita	</title></bibl>		
+                   <date ana="#returned" when="1961-03">"" ""</date>
+                   </ab>
+                  
+                   <note><del><bibl corresp="mep:00jx5j"><title>The Coctail Party</title></bibl></del></note>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1961-01-24"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:00jx6v"><title>The Man who was loved</title></bibl>
+                   <date ana="#returned" when="1961-03"></date>
+                	</ab>
+                	<note>(<persName ref="foci.ma">Mme Focillon</persName> returned <bibl corresp="mep:00jx75"><title>Period Piece</title></bibl>)</note>
+                
                </div> 
                 
                 <div type="verso">

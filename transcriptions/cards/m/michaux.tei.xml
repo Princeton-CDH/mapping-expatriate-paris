@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -27,14 +29,14 @@
                 
             </sourceDesc>
         </fileDesc>
-	<profileDesc>
-	  <textClass>          
-            <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
-	  </textClass>
-	    <particDesc>
-	        <person role="cardholder" ana="#mich.he"><persName>Henri Michaux</persName></person>
-	    </particDesc>
-	</profileDesc>
+        <profileDesc>
+            <textClass>          
+                <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
+            </textClass>
+            <particDesc>
+                <person role="cardholder" ana="#mich.he"><persName>Henri Michaux</persName></person>
+            </particDesc>
+        </profileDesc>
         <revisionDesc>
             <change who="#carlca">
                 <ab>
@@ -60,55 +62,120 @@
     <text>
         <body>
             <div type="card">
-              <div type="recto">  <pb facs="#s1"/>
+                <div type="recto">  <pb facs="#s1"/>
+                    
+                    <head>		<persName ref="#mich.he">M. Henri Michaux</persName>
+                        
+                        <address><street>16 rue Seguier .</street>	<settlement>Paris .</settlement> <district>VI</district></address></head>
+                    
+                    
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1944-11-11">Nov 11 1944</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00gd7j">
+                            <title>Selections from De Quincey</title>
+                            <author>Ridley</author>
+                        </bibl> 
+                    </ab>
+                    <note>returned</note>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1950-11-19">Nov 19 1950</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00gd8v">
+                            <title>Utopia</title> 
+                            <edition>(Everyman ed.)</edition>
+                        </bibl>	
+                        <date ana="#returned" when="1951-01-17">Jan 17</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1951-01-18">Jan 18</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00b078">
+                            <title>Pageant of English Prose</title>
+                            <edition>Oxford ed.</edition> 
+                            <author> R M Leonard</author>
+                            <note>(500 passages by 325 authors)</note>
+                        </bibl>
+                    </ab>
+                    <note>returned  to <name>Amis des Livres</name></note>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1951-01-18"></date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00gd95">
+                            <title>The English Vision</title>,
+                            <author>Herbert Read</author>
+                        </bibl>	
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1951-01-18"></date>	
+                        <bibl ana="#borrowedItem" corresp="mep:005w9v">
+                            <title>All Men are Brothers</title>
+                        </bibl>	
+                        <date ana="#returned" when="1951-06-07">June 7</date>
+                    </ab>
+                    <note>returned by <persName ref="#mich.he">Michaux</persName></note> 
+                    
+                    
+                    
+                    <ab> <date when="1955"> 1955 </date></ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1955-04-04"> April 4 </date>
+                        <bibl ana="#borrowedItem" corresp="mep:00gf0n">
+                            <title>The Milk of Paradise</title>
+                        </bibl>
+                    </ab>
+                    
+                    
+                </div> 
+                <div type="verso">    <pb facs="#s2"/>
+                    
+                    <!-- Verso Blank -->
+                </div>  </div>
+            <div type="card">   <div type="recto">     <pb facs="#s3"/>
                 
-                <head>		<persName ref="#mich.he">M. Henri Michaux</persName>
-                			
-                			<address><street>16 rue Seguier .</street>	<settlement>Paris .</settlement> <district>VI</district></address></head>
-                			
-                			
-                			
-           <ab>     <date ana="#checkedOut" when="1944-11-11">Nov 11 1944</date>		<bibl ana="#borrowedItem" corresp="mep:00gd7j"><title>Selections from De Quincey</title>(<author>Ridley</author></bibl> returned
-                					
-                					
-                					
-                <date ana="#checkedOut" when="1950-11-19">Nov 19 1950</date>		<bibl ana="#borrowedItem" corresp="mep:00gd8v"><title>Utopia</title> (<edition>Everyman ed.</edition>)</bibl>		<date ana="#returned" when="1951-01-17">Jan 17</date>
+                <head>	<persName ref="#mich.he">Michaux</persName></head>
                 
-                <date ana="#checkedOut" when="1951-01-18">Jan 18</date>		<bibl ana="#borrowedItem" corresp="mep:00b078"><title>Pageant of English Prose</title>
-                				<edition>Oxford ed.</edition> by<author> R M Leonard</author>	returned
-                			(500 passages by 325 authors)</bibl>	to <name>Amis des Livres</name>
-                			<bibl ana="#borrowedItem" corresp="mep:00gd95"><title>The English Vision</title>, <author>Herbert Read</author></bibl>	
-                			
-                			<bibl ana="#borrowedItem" corresp="mep:005w9v"><title>All Men are Brothers</title></bibl>	returned <date ana="#returned" when="1951-06-07">June 7</date>
-                									by <persName ref="#mich.he">Michaux</persName>
+                <ab>       lent through <persName ref="#sail.ma">Saillet</persName> <date when="1961-06-30">June 30 1961</date></ab>
+                
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1961-06-30"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00gf1z">
+                        <title>De Quincey's Works</title>
+                        <biblScope unit="volume" from="1" to="3">vols 1-3</biblScope>
+                        <author> Masson</author>
+                        <author> Black</author>
+                    </bibl>
+                    <date ana="#returned" when="1961-10-04"></date>
+                </ab>
+                <note> + early ed.</note>
+                <note> XVI-XI</note>
                 
                 
-               <date ana="#checkedOut" when="1955-04-04"> 1955
-                April 4</date>		<bibl ana="#borrowedItem" corresp="mep:00gf0n"><title>The Milk of Paradise</title></bibl></ab>
-               </div> 
-            <div type="verso">    <pb facs="#s2"/>
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1961-06-30"></date>
+                    <bibl ana="#borrowedItem" corresp="mep:00gf3k">
+                        <title>Confessions</title>
+                    </bibl>
+                    <date ana="#returned" when="1961-10-04"></date>
+                </ab>
                 
-                <!-- Verso Blank -->
-              </div>  </div>
-        <div type="card">   <div type="recto">     <pb facs="#s3"/>
                 
-                	<head>	<persName ref="#mich.he">Michaux</persName></head>
                 
-         <ab>       lent through <persName ref="#sail.ma">Saillet</persName> <date ana="#checkedOut" when="1961-06-30">June 30 1961</date>
+                <ab ana= "#borrowingEvent">
+                    <bibl ana="#borrowedItem" corresp="mep:000w71">
+                        <biblScope unit="volume" from="14" to="14">vol XIV</biblScope>	
+                        <title>Autobiographies</title></bibl>
+                    <date ana="#returned" when="1961-10-04">Oct 4 1961</date>
+                </ab>
+                <note>returned all vols</note>
                 
-                <bibl ana="#borrowedItem" corresp="mep:00gf1z"><title>De Quincey's Works</title> <biblScope unit="volume" from="1" to="3">vols 1-3</biblScope></bibl>. XVI-XI
-               <bibl ana="#borrowedItem" corresp="mep:00gf28"> <title>Masson Black</title> + early ed.</bibl>
-                
-                <bibl ana="#borrowedItem" corresp="mep:00gf3k"><title>Confessions</title></bibl>
-                
-                and <bibl ana="#borrowedItem" corresp="mep:000w71"><biblScope unit="volume" from="14" to="14">vol XIV</biblScope>	<title>Autobiographies</title></bibl>
-                					returned all vols
-                					<date ana="#returned" when="1961-10-04">Oct 4 1961</date></ab>
-       </div>   <div type="verso">  
+            </div>   <div type="verso">  
                 <pb facs="#s4"/>
                 
                 <!-- Verso Blank -->
-             </div>   </div>
+            </div>   </div>
             
         </body>
     </text>

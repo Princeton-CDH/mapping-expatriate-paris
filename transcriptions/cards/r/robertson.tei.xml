@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -83,62 +85,232 @@
                 		<settlement>Paris</settlement> <district>17e</district>
                 		</address>
                 </head>
-                <ab>
-                <date when="1929">1929</date>
-                <date ana="#checkedOut" when="1929-12-30">Dec 30</date>	<bibl ana="#borrowedItem"><title>Aristotle Poetics</title></bibl>					30.00
-                <date ana="#checkedOut" when="1929-12-30">	</date>		<bibl ana="#borrowedItem"><title>Nichomachean Ethics</title></bibl>					30,00
-                <date ana="#returned" when="1930">1930</date>
-                <date ana="#checkedOut" when="1930-01-07">Jan 7</date>	<bibl ana="#borrowedItem"><title>Town Traveller</title></bibl>						24.50
                 
-                <date ana="#checkedOut" when="1930-03-31">Mch 31</date>	<bibl ana="#borrowedItem"><title>Job &amp; Ruth</title></bibl>							11
-                <date ana="#checkedOut" when="1930-03-31">	</date>		<bibl ana="#borrowedItem"><title>Ezra</title></bibl>								11
-                <date ana="#checkedOut" when="1930-03-31">	</date>		<bibl ana="#borrowedItem"><title>Proverbs</title></bibl>							11
-                <date ana="#checkedOut" when="1930-03-31">	</date>		<bibl ana="#borrowedItem"><title>Livy</title></bibl>								72
+                    
+                    <note> <date when="1929">1929</date></note>
+                    
+                <note>
+                    <date when="1929-12-30">Dec 30</date>
+                    <bibl  corresp="mep:00t04q">
+                        <title>Aristotle Poetics</title>
+                    </bibl>	
+                				
+                    30.00
+                    </note>
+             <note>
+                  <date  when="1929-12-30">	</date>	
+                  <bibl  corresp="mep:00t051">
+                      <title>Nichomachean Ethics</title>
+                  </bibl>					
+              
+                  30,00</note>
+                    
+                 <note>  <date when="1930">1930</date></note>
+                    
+               <note>
+                    <date  when="1930-01-07">Jan 7</date>	
+                    <bibl  corresp="mep:007p0w">
+                        <title>Town Traveller</title>
+                    </bibl>			
                 			
-                <date ana="#checkedOut" when="1930-04-05">April 5</date>	<bibl ana="#borrowedItem"><title>Divine Comedy Everyman</title></bibl>				15
-                <date ana="#checkedOut" when="1930-04-05">	</date>		<bibl ana="#borrowedItem"><title>Hearts of Controversy</title></bibl>				38
-                <date ana="#checkedOut" when="1930-04-05">	</date>		<bibl ana="#borrowedItem"><title>Sophocles</title></bibl>							 3.50
+                   24.50</note>
+                
+              <note>
+                    <date  when="1930-03-31">Mch 31</date>	
+                    <bibl  corresp="mep:00t06b">
+                        <title>Job &amp; Ruth</title>
+                    </bibl>		
+                					
+                   11
+                    </note>
+               <note>
+                    <date  when="1930-03-31">	</date>	
+                    <bibl  corresp="mep:00t07n">
+                        <title>Ezra</title>
+                    </bibl>		
+                	
+                    11 
+                    </note>
+               <note>
+                    <date  when="1930-03-31">	</date>		
+                    <bibl  corresp="mep:00t08z">
+                        <title>Proverbs</title>
+                    </bibl>		
+                	
+                   11</note>
+                    
+                <note>
+                    <date  when="1930-03-31">	</date>	
+                    <bibl  corresp="mep:00t098">
+                        <title>Livy</title>
+                    </bibl>					
+                	
+                   72
+                	</note>		
+              <note>
+                    <date when="1930-04-05">April 5</date>
+                    <bibl  corresp="mep:00t10r">
+                        <title>Divine Comedy </title>
+                        <publisher>Everyman</publisher></bibl>		
+                	
+                    15 </note>
+                    
+               <note>
+                    <date when="1930-04-05">	</date>	
+                    <bibl  corresp="mep:00t112">
+                        <title>Hearts of Controversy</title>
+                    </bibl>			
+                
+                   38</note>
+                    
+               <note>
+                    <date  when="1930-04-05">	</date>	
+                    <bibl  corresp="mep:00t12c">
+                        <title>Sophocles</title>
+                    </bibl>		
+                				
+                   3.50</note>
                 			
-                <date ana="#checkedOut" when="1930-04-11">April 11th</date>.	<bibl ana="#borrowedItem"><title>Epictetus</title> <biblScope unit="volume" from="1">vol 1</biblScope></bibl>						73
-                <date ana="#checkedOut" when="1930-04-20">	 20</date>	<bibl ana="#borrowedItem"><title>Prometheus</title></bibl>							11.50
-                <date ana="#checkedOut" when="1930-04-20">	</date> 	<bibl ana="#borrowedItem"><title>Something Childish</title></bibl>					24.50
+                <note>
+                    <date  when="1930-04-11">April 11th</date>.
+                    <bibl  corresp="mep:00t13p">
+                        <title>Epictetus</title>
+                        <biblScope unit="volume" from="1">vol 1</biblScope></bibl>	
+                
+                   73</note>
+                    
+               <note>
+                    <date  when="1930-04-20">	 20</date>
+                    <bibl  corresp="mep:00t140">
+                        <title>Prometheus</title>
+                    </bibl>			
+                			
+                  11.50</note>
+                    
+                <note>
+                    <date when="1930-04-20">	</date> 
+                    <bibl corresp="mep:004n44">
+                        <title>Something Childish</title>
+                    </bibl>				
+                
+                   24.50</note>
                 	 		
-                <date ana="#checkedOut" when="1930-12-13">Dec 13</date>	<bibl ana="#borrowedItem"><title>Last Poems</title></bibl>							17.50
-                <date ana="#returned" when="1931">1931</date>
-                <date ana="#checkedOut" when="1931-02-02">Feb 2</date>	<bibl ana="#borrowedItem"><title>Exodus</title> (Temple, leather)</bibl>			18.50
-                							paid <date ana="#returned" when="1931-08-04">Aug 4 1931</date>	   145,00
+               <note>
+                   <date  when="1930-12-13">Dec 13</date>
+                   <bibl  corresp="mep:004k8t">
+                       <title>Last Poems</title>
+                   </bibl>			
+               			
+                   17.50</note>
+                    
+                    <note><date when="1931">1931</date></note>
+                    
+               <note>
+                    <date  when="1931-02-02">Feb 2</date>	
+                    <bibl  corresp="mep:00t159">
+                        <title>Exodus</title> 
+                        (Temple, leather)</bibl>
+                	
+                    18.50</note>
+              
+                    <note>paid <date when="1931-08-04">Aug 4 1931</date>	   145,00</note>
                 							
-                <date ana="#checkedOut" when="1931-08-04">Aug 4</date>	<bibl ana="#borrowedItem"><title>Christina Rossetti</title></bibl>					 25
+                <note>
+                    <date when="1931-08-04">Aug 4</date>	
+                    <bibl  corresp="mep:00t16m">
+                        <title>Christina Rossetti</title>
+                    </bibl>	
+                				
+                    25</note>
                 
-                <date ana="#checkedOut" when="1931-09-28">Sept 28</date>	<bibl ana="#borrowedItem"><title>The Witch</title></bibl>			
-                <date ana="#checkedOut" when="1931-09-28">     </date>    <bibl ana="#borrowedItem"><title>The Misadventure of Joan Nickleson</title></bibl>
-                								
-                				ask meaning of lachan 
-                								dozenedness
-                <date ana="#checkedOut" when="1931-09-28">	</date>		<bibl ana="#borrowedItem"><title>Jameson's Scottish Dictionary</title></bibl> 15
-                <date ana="#checkedOut" when="1931-11-13">Nov 13</date>	<bibl ana="#borrowedItem"><title>Veranilda</title></bibl>
-                												  60
-                </ab>        
+                
+                   <note> <date  when="1931-09-28">Sept 28</date>
+                    <bibl  corresp="mep:00f089">
+                        <title>The Witch</title>
+                    </bibl></note>			
+                
+                    
+             
+                    <note><date  when="1931-09-28">     </date>   
+                    <bibl  corresp="mep:00t17x">
+                        <title>The Misadventure of Joan Nickleson</title>
+                    </bibl></note>
+                
+                    
+                <note>ask meaning of lachan 
+                    dozenedness</note>
+                    
+                <note>
+                    <date  when="1931-09-28">	</date>	
+                    <bibl  corresp="mep:00t187">
+                        <title>Jameson's Scottish Dictionary</title>
+                    </bibl> 
+                
+                  15
+                    </note>
+          <note>
+                   <date  when="1931-11-13">Nov 13</date>	
+                   <bibl  corresp="mep:00t19j">
+                       <title>Veranilda</title>
+                   </bibl>
+               
+                   60 
+                </note>
                 </div>
                 
                 <div type="verso">
                 <pb facs="#s2"/>
                 <ab>
-                <date when="1931-11-13">Nov 13</date>     						(forward)		60
-                <date ana="#checkedOut" when="1931-11-13">    </date>     <bibl ana="#borrowedItem"><title>For Launcelot Andrewes</title></bibl>							36,00
-                <date ana="#checkedOut" when="1931-11-13">    </date>     <bibl ana="#borrowedItem"><title>Selected Poems of George Crabbe</title></bibl>					15.00
-                											   111.00
+                <date when="1931-11-13">Nov 13</date>     						(forward)		60 </ab>
+                    
+               <note>
+                    <date when="1931-11-13">    </date> 
+                    <bibl  corresp="mep:005q6j">
+                        <title>For Launcelot Andrewes</title>
+                    </bibl>	
+                						
+                    36,00</note>
+                    
+               <note>
+                    <date when="1931-11-13">    </date> 
+                    <bibl  corresp="mep:00t201">
+                        <title>Selected Poems of George Crabbe</title>
+                    </bibl>				
+                	
+                   15.00
+                	111.00</note>
                 											   
-                <date ana="#checkedOut" when="1931-07-26">July 26</date>	<bibl ana="#borrowedItem"><title>Hawthorne's Tales</title></bibl>	-	bang.		 	12.50
-                <date ana="#checkedOut" when="1931-07-26">	</date>		<bibl ana="#borrowedItem"><title>Riverside</title> - Aldine edition</bibl>.
-                	<date ana="#returned" when="1933">1933</date>		ask price ---
-                <date ana="#checkedOut" when="1933-02-10">Feb 10</date>	<bibl ana="#borrowedItem"><title>Euripides and his age</title></bibl>					10.00
-                				sent bill <date ana="#returned" when="1933-04-17">April 17</date>			   133,50
+             <note>
+                    <date  when="1931-07-26">July 26</date>	
+                    <bibl  corresp="mep:00t21b">
+                        <title>Hawthorne's Tales</title>
+                    </bibl>
+                
+                   -	bang.		 	12.50</note>
+                    
+               <note>
+                   <date  when="1931-07-26">	</date>
+                   <bibl  corresp="mep:00t22n">
+                       <title>Riverside</title> 
+                       - <edition>Aldine</edition> edition</bibl></note>
+               
+                    
+                    <note><date when="1933">1933</date>		ask price ---</note>	
+                    
+                <note>
+                    <date  when="1933-02-10">Feb 10</date>
+                    <bibl  corresp="mep:00t23z">
+                        <title>Euripides and his age</title>
+                    </bibl>				
+                
+                    10.00</note>
+                    
+                	<note>sent bill <date when="1933-04-17">April 17</date>			   133,50
                 				 "	  "	 <date when="1934-09-05">Sept 5 1934</date>
                 				 2 letter (requ.) asking
                 				   for cheque
-                			  sent bill again <date when="19345-01-05">Jan 5 1935</date>	
-                </ab>                	
+                				   sent bill again <date when="19345-01-05">Jan 5 1935</date>	</note>
+                              	
                 </div>
                 </div>
                 
@@ -172,16 +344,64 @@
             					  
             	Téléph. Danton 09-57	PARIS-6e	 R.C. Seine No 224-402
             	</ab>
-                <ab>
-            	<date ana="#checkedOut" when="1931-08-04">1931  August 4</date>	<bibl ana="#borrowedItem"><title>Christina Rossetti</title></bibl>				25
-            	<date ana="#checkedOut" when="1931-09-28"> -	 Sept 28</date>	<bibl ana="#borrowedItem"><title>The Witch</title></bibl>						20
-            	<date ana="#checkedOut" when="1931-11-13"> -	 Nov  13</date>	<bibl ana="#borrowedItem"><title>Veranilda</title></bibl>						15
-            	<date ana="#checkedOut" when="1931-11-13">	</date>			<bibl ana="#borrowedItem"><title>For Launcelot Andrewes</title></bibl>			36
-            	<date ana="#checkedOut" when="1931-11-13"> 	</date>			<bibl ana="#borrowedItem"><title>Selected Poems of Crabbe</title></bibl>		15
-            	<date ana="#checkedOut" when="1932-07-26">1932 July 26</date>	<bibl ana="#borrowedItem"><title>Hawthorne's Tales</title></bibl>				12 50
-            	<date ana="#checkedOut" when="1933-02-10">1933 Feb 10</date>	<bibl ana="#borrowedItem"><title>Euripides &amp; his age</title></bibl>			10
-            											Frs.   133.50
-                </ab>
+                
+            	<note>
+            	    <date  when="1931-08-04">1931  August 4</date>
+            	    <bibl  corresp="mep:00t16m">
+            	        <title>Christina Rossetti</title>
+            	    </bibl>	
+            		
+                    25</note>
+                    
+            	<note>
+            	    <date  when="1931-09-28"> -	 Sept 28</date>	
+            	    <bibl  corresp="mep:00f089">
+            	        <title>The Witch</title>
+            	    </bibl>		
+            			
+                    20</note>
+                    
+            	<note>
+            	    <date  when="1931-11-13"> -	 Nov  13</date>
+            	    <bibl corresp="mep:00t19j">
+            	        <title>Veranilda</title>
+            	    </bibl>				
+            		
+                    15
+                    </note>
+            	<note>
+            	    <date  when="1931-11-13">	</date>		
+            	    <bibl  corresp="mep:005q6j">
+            	        <title>For Launcelot Andrewes</title>
+            	    </bibl>		
+            	
+                    36</note>
+                    
+            	<note>
+            	    <date  when="1931-11-13"> 	</date>	
+            	    <bibl  corresp="mep:00t201">
+            	        <title>Selected Poems of Crabbe</title>
+            	    </bibl>		
+            	
+                    15</note>
+                    
+            	<note>
+            	    <date  when="1932-07-26">1932 July 26</date>
+            	    <bibl corresp="mep:00t21b">
+            	        <title>Hawthorne's Tales</title>
+            	    </bibl>			
+            		
+                  12.50</note>
+                    
+            	<note>
+            	    <date  when="1933-02-10">1933 Feb 10</date>
+            	    <bibl  corresp="mep:00t23z">
+            	        <title>Euripides &amp; his age</title>
+            	    </bibl>		
+            	    10 
+            	
+                   Frs 133.50
+               </note>
                 </div>
                 
                 <div type="verso">

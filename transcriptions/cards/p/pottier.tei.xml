@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -61,22 +63,65 @@
             <div type="card">
                 <div type="recto">
                 <pb facs="#s1"/>
-                <ab>
-                <date when="1900-01-04">Jan. 4th.</date>
+               
+               <head> <date when="1900-01-04">Jan. 4th.</date>
                 			<persName ref="pott.p">Mlle Pottier</persName>
                 				<address><street>6 rue Ferou</street></address>
+               </head>
                 				
                 			
-                			1 month. 1 vol.					8f
-                				Deposit						7f
+                			<note>1 month. 1 vol.					8f
+                				Deposit						7f</note>
+                
                 				
-                <date ana="#checkedOut" when="1900-01-04">Jan. 4th</date>	<bibl ana="#borrowedItem" corresp="mep:00cf45"><title>The Hundreth Change</title></bibl>			<date ana="#returned" when="1900-01-06">Jan 6.</date>
-                    <date ana="#checkedOut" when="1900-01-06">Jan 6</date>		<bibl ana="#borrowedItem" corresp="mep:00px5h"><title>The Man in a book</title></bibl>			<date ana="#returned" when="1900-01-06">Jan 6.</date>
-                    <date ana="#checkedOut" when="1900-01-06">Jan 6</date>		<bibl ana="#borrowedItem" corresp="mep:007m94"><title>The Untilled Field</title></bibl>			 <date ana="#returned" when="1900-01-07"> Jan 7th</date>	
-                    <date ana="#checkedOut" when="1900-01-07"> Jan 7th</date>		<bibl ana="#borrowedItem" corresp="mep:00bn4k"><title>The Lunatic at Large</title></bibl>		<date ana="#returned" when="1900-01-13"> Jan 13</date>
-                    <date ana="#checkedOut" when="1900-01-13"> Jan 13</date>		<bibl ana="#borrowedItem" corresp="mep:00nj57"><title>The Ghost</title></bibl>					<date ana="#returned" when="1900-01-19"> Jan 19</date>
-               <date ana="#checkedOut" when="1900-01-19"> Jan 19</date>		<bibl ana="#borrowedItem" corresp="mep:00b523"><title>Sonia</title></bibl>						<date ana="#returned" when="1900-02-03">Feb 3</date>
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1900-01-04">Jan. 4th</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00cf45">
+                        <title>The Hundreth Change</title>
+                    </bibl>			
+                    <date ana="#returned" when="1900-01-06">Jan 6.</date>
                 </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-06">Jan 6</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00px5h">
+                            <title>Three Men in a Boat</title>
+                        </bibl>		
+                        <date ana="#returned" when="1900-01-06">Jan 6.</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-06">Jan 6</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00c56k">
+                            <title>The Untilled Field</title>
+                        </bibl>			
+                        <date ana="#returned" when="1900-01-07"> Jan 7th</date>	
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-07"> Jan 7th</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00bn4k">
+                            <title>The Lunatic at Large</title></bibl>	
+                        <date ana="#returned" when="1900-01-13"> Jan 13</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1900-01-13"> Jan 13</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00nj57">
+                            <title>The Ghost</title>
+                        </bibl>					
+                        <date ana="#returned" when="1900-01-19"> Jan 19</date>
+                    </ab>
+                    
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1900-01-19"> Jan 19</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:00b523">
+                       <title>Sonia</title>
+                   </bibl>						
+                   <date ana="#returned" when="1900-02-03">Feb 3</date>
+               </ab>
+                    
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s2"/>
@@ -85,58 +130,239 @@
                 </div>
                 <div type="recto">
                 <pb facs="#s3"/>
-                <ab>
+               <head>
                 <date when="1926">1926</date>		<persName ref="pott.p">POTTIER</persName>
                <date when="1926-02-08"> Feb. 8</date>					<persName ref="pott.p">Mrs. Ph. Pottier</persName>
                 							<address><street>16 rue Ferou</street>
                 								<orgName>Gulf Hotel</orgName>
                 									<settlement>Hyères</settlement></address>
+                </head>									
                 									
+                			<note>1 m 	2 vols				20
+                			Deposit			<del>40	20</del>
+                									refunded</note>
+                
                 									
-                			1 m 	2 vols				20
-                			Deposit						40	20
-                									refunded
-                									
-                    <date ana="#checkedOut" when="1926-02-08"> Feb. 8</date>	<bibl ana="#borrowedItem" corresp="mep:002z44"><title>Scenes of the Clerical Life	</title></bibl>		<date ana="#returned" when="1926-03-02">Mars 2</date>
-                 <date ana="#checkedOut" when="1926-02-08">"	"</date>	<bibl ana="#borrowedItem" corresp="mep:007t19"><title>Evelina</title></bibl> (want to keep even longer)	<date ana="#returned" when="1926-02-18">Feb 18</date>
-                    <date ana="#checkedOut" when="1926-02-18">"	18</date>	<bibl ana="#borrowedItem" corresp="mep:001n2s"><title>Mill on The Floss</title></bibl>					<date ana="#checkedOut" when="1926-03-17">March 17</date> 
-                Lost 1.70	<bibl ana="#borrowedItem" corresp="mep:00176q"><title>Cranford	</title></bibl>					 <date ana="#returned" when="1926-03-17">"	 17</date>
-                <date when="1926-03-03">March 3</date>
-                p. 1,55
-                <date when="1926-03-17">March 17</date> 	Renewed from <date from="1926-03-08">March 8th</date> to <date to="1926-04-08">April 8th </date>= 75
-                 <date ana="#checkedOut" when="1926-03-17">"	17</date>		<bibl ana="#borrowedItem" corresp="mep:002z3t"><title>Silas Marner	</title></bibl>				<date ana="#returned" when="1926-03-22">Mch 22</date>
-                    <date ana="#checkedOut" when="1926-03-22">  "	22</date>		<bibl ana="#borrowedItem" corresp="mep:00k444"><title>Nigger of the Narcissus</title></bibl>			<date ana="#returned" when="1926-03-27"> "	27</date>
-                    <date ana="#checkedOut" when="1926-03-27"> "	27</date>		<bibl ana="#borrowedItem" corresp="mep:00434q"><title>Woodlanders	</title></bibl>					 <date ana="#returned" when="1926-04-03">April 3</date>	
-                <date ana="#checkedOut" when="1926-04-03">April 3</date>		<bibl ana="#borrowedItem" corresp="mep:00px6t"><title>Patmore's Poetical Works vol I</title></bibl> 	<date ana="#returned" when="1926-04-12">April 12</date>
-                 <date ana="#checkedOut" when="1926-04-12">"	12</date>		<bibl ana="#borrowedItem" corresp="mep:00px74"><title>Tale of Chloe</title></bibl>					<date ana="#returned" when="1926-04-14">April 14</date>
-                Renewed <date from="1926-04-08">April 8</date> to <date to="1926-07-08">July 8 1926</date>		40f
-            	<date ana="#checkedOut" when="1926-04-14">April 14</date>	<bibl ana="#borrowedItem" corresp="mep:004j8j"><title>Pride &amp; Prejudice</title></bibl> (to<date ana="#returned" when="1926-05-17"> May 17th</date> 2 vols) <date when="1926-04-17">Ap. 17</date>
-                    <date ana="#checkedOut" when="1926-04-17">April 17</date>	<bibl ana="#borrowedItem" corresp="mep:00px8f"><title>Pilgrim of Eternity	</title></bibl>			 <date ana="#returned" when="1926-04-26">"	26</date>
-                    <date ana="#checkedOut" when="1926-04-19">"	19</date>		<bibl ana="#borrowedItem" corresp="mep:00px9r"><title>Early Romance to William Morris	</title></bibl> <date ana="#returned" when="1926-04-22">"	22</date>
-                    <date ana="#checkedOut" when="1926-04-22">"	22</date>		<bibl ana="#borrowedItem" corresp="mep:002n0d"><title>Jane Eyre</title></bibl>						<date ana="#returned" when="1926-04-26">"	26</date>
-            	 <date ana="#checkedOut" when="1926-04-26">"	26</date>		<bibl ana="#borrowedItem" corresp="mep:00pz07"><title>Put yourself in his place</title></bibl>		<date ana="#returned" when="1926-04-28">April 28</date>
-            	 <date ana="#checkedOut" when="1926-04-26">"	"</date>		<bibl ana="#borrowedItem" corresp="mep:00gm8h"><title>Westward Ho	</title></bibl>					<date ana="#returned" when="1926-04-27">Ap. 27</date>
-            	<date ana="#checkedOut" when="1926-04-27"> "	27</date>		<bibl ana="#borrowedItem" corresp="mep:00pz1j"><title>Essays of Elia	</title></bibl>				<date ana="#returned" when="1926-04-30"> "	30</date>
-            	 	<date ana="#checkedOut" when="1926-04-28">28</date>		<bibl ana="#borrowedItem" corresp="mep:00pz2v"><title>Letters of Shelley	vol I</title></bibl>		<date ana="#returned" when="1926-05-22">May 22</date>
-            	 	<date ana="#checkedOut" when="1926-04-30">30</date>		<bibl ana="#borrowedItem" corresp="mep:00bj52"><title>Vicar of Wakefield</title></bibl>				<date ana="#returned" when="1926-05-07">May 7</date>
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-02-08"> Feb. 8</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002z44">
+                        <title>Scenes of the Clerical Life	</title>
+                    </bibl>	
+                    <date ana="#returned" when="1926-03-02">Mars 2</date>
                 </ab>
+                    
+                 <ab ana= "#borrowingEvent">
+                     <date ana="#checkedOut" when="1926-02-08">"	"</date>
+                     <bibl ana="#borrowedItem" corresp="mep:007t19">
+                         <title>Evelina</title>
+                     </bibl> 
+                     <date ana="#returned" when="1926-02-18">Feb 18</date>
+                     <note>(want to keep even longer)</note>
+                 </ab>
+                    
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-02-18">"	18</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001n2s">
+                            <title>Mill on The Floss</title>
+                        </bibl>					
+                        <date ana="#returned" when="1926-03-17">March 17</date> 
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date when="1926-03-03">March 3</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00176q">
+                            <title>Cranford	</title>
+                        </bibl>				
+                        <date ana="#returned" when="1926-03-17">"	 17</date>
+                    </ab>
+                    <note> Lost <del>1.70 </del></note>
+                        <note><del>p. 1,55</del></note>
+                    
+                        <note><date when="1926-03-17">March 17</date> 	Renewed from <date from="1926-03-08" to="1926-04-08"> March 8th to April 8th </date>= 75</note>
+                        
+                 <ab ana= "#borrowingEvent">
+                     <date ana="#checkedOut" when="1926-03-17">"	17</date>	
+                     <bibl ana="#borrowedItem" corresp="mep:002z3t">
+                         <title>Silas Marner	</title>
+                     </bibl>				
+                     <date ana="#returned" when="1926-03-22">Mch 22</date>
+                 </ab>
+                        
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-03-22">  "	22</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00k444">
+                            <title>Nigger of the Narcissus</title>
+                        </bibl>		
+                        <date ana="#returned" when="1926-03-27"> "	27</date>
+                    </ab>
+                        
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-03-27"> "	27</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00434q">
+                            <title>Woodlanders	</title>
+                        </bibl>				
+                        <date ana="#returned" when="1926-04-03">April 3</date>
+                    </ab>
+                        
+                        <ab ana= "#borrowingEvent">
+                            <date ana="#checkedOut" when="1926-04-03">April 3</date>
+                            <bibl ana="#borrowedItem" corresp="mep:00px6t">
+                                <title>Patmore's Poetical Works</title>
+                                <biblScope unit="volume" from="1">vol 1</biblScope> 
+                            </bibl> 	
+                            <date ana="#returned" when="1926-04-12">April 12</date>
+                        </ab>
+                        
+                 <ab ana= "#borrowingEvent">
+                     <date ana="#checkedOut" when="1926-04-12">"	12</date>	
+                     <bibl ana="#borrowedItem" corresp="mep:00px74">
+                         <title>Tale of Chloe</title>
+                     </bibl>				
+                     <date ana="#returned" when="1926-04-14">April 14</date>
+                 </ab>
+                    <note><del>kuly</del></note>
+                        
+                        <note>Renewed <date from="1926-04-08" to="1926-05-17">April 8 to May 17 1926</date>		40f</note>
+                        
+                        
+            	<ab ana= "#borrowingEvent">
+            	    <date ana="#checkedOut" when="1926-04-14">April 14</date>
+            	    <bibl ana="#borrowedItem" corresp="mep:004j8j">
+            	        <title>Pride &amp; Prejudice</title>
+            	        <biblScope unit="volume" from="1" to="2"> 2 vols </biblScope> 
+            	    </bibl>
+            	    <date ana="#returned" when="1926-04-17">Ap. 17</date>
+            	</ab>
+                        
+                    <ab ana= "#borrowingEvent">
+                        <del><date ana="#checkedOut" when="1926-04-17">April 17</date></del>
+                        <bibl ana="#borrowedItem" corresp="mep:00px8f">
+                            <title>Pilgrim of Eternity	</title>
+                        </bibl>			
+                        <date ana="#returned" when="1926-04-26">"	26</date>
+                    </ab>
+                        
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1926-04-19">"	19</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00px9r">
+                            <title>Early Romance to William Morris	</title>
+                        </bibl> 
+                        <date ana="#returned" when="1926-04-22">"	22</date>
+                    </ab>
+                        
+                   <ab ana= "#borrowingEvent">
+                       <date ana="#checkedOut" when="1926-04-22">"	22</date>	
+                       <bibl ana="#borrowedItem" corresp="mep:002n0d">
+                           <title>Jane Eyre</title>
+                       </bibl>					
+                       <date ana="#returned" when="1926-04-26">"	26</date>
+                   </ab>
+                        
+            	 <ab ana= "#borrowingEvent">
+            	     <date ana="#checkedOut" when="1926-04-26">"	26</date>
+            	     <bibl ana="#borrowedItem" corresp="mep:00pz07">
+            	         <title>Put yourself in his place</title>
+            	     </bibl>		
+            	     <date ana="#returned" when="1926-04-28">April 28</date>
+            	 </ab>
+                        
+            	 <ab ana= "#borrowingEvent">
+            	     <date ana="#checkedOut" when="1926-04-26">"	"</date>
+            	     <bibl ana="#borrowedItem" corresp="mep:00gm8h">
+            	         <title>Westward Ho	</title>
+            	     </bibl>					
+            	     <date ana="#returned" when="1926-04-27">Ap. 27</date>
+            	 </ab>
+                        
+            	<ab ana= "#borrowingEvent">
+            	    <date ana="#checkedOut" when="1926-04-27"> "	27</date>	
+            	    <bibl ana="#borrowedItem" corresp="mep:00pz1j">
+            	        <title>Essays of Elia	</title>
+            	    </bibl>			
+            	    <date ana="#returned" when="1926-04-30"> "	30</date>
+            	</ab>
+                        
+            	 	<ab ana= "#borrowingEvent">
+            	 	    <date ana="#checkedOut" when="1926-04-28">28</date>	
+            	 	    <bibl ana="#borrowedItem" corresp="mep:00pz2v">
+            	 	        <title>Letters of Shelley</title>
+            	 	        <biblScope unit="volume" from="1"> vol 1 </biblScope> 
+            	 	    </bibl>	
+            	 	    <date ana="#returned" when="1926-05-22">May 22</date>
+            	 	</ab>
+                        
+            	 	<ab ana= "#borrowingEvent">
+            	 	    <date ana="#checkedOut" when="1926-04-30">30</date>	
+            	 	    <bibl ana="#borrowedItem" corresp="mep:00bj52">
+            	 	        <title>Vicar of Wakefield</title>
+            	 	    </bibl>			
+            	 	    <date ana="#returned" when="1926-05-07">May 7</date>
+            	 	</ab>
+                        
+                
                 </div>
                 <div type="verso">
                 <pb facs="#s4"/>
                 <ab>
-                <date when="1926">1926</date>			<persName ref="pott.p">POTTIER</persName>
+                <date when="1926">1926</date>			<persName ref="pott.p">POTTIER</persName></ab>
                 
-                <date ana="#checkedOut" when="1926-05-07">May 7</date>		<bibl ana="#borrowedItem" corresp="mep:005p96"><title>Letters of John Keats</title></bibl>			<date ana="#returned" when="1926-05-10">May 10</date>
-                 <date ana="#checkedOut" when="1926-05-10">"	10</date>		<bibl ana="#borrowedItem" corresp="mep:003m7j"><title>Wuthering Heights</title></bibl>				<date ana="#returned" when="1926-05-14">May 14</date>
-                 <date ana="#checkedOut" when="1926-05-14">"	14	</date>	<bibl ana="#borrowedItem" corresp="mep:00pz35"><title>Love Letters of Th. Carlisle vol I</title></bibl>	<date ana="#returned" when="1926-05-17">May 17</date>
-                 
-               <date from="1926-06-24"> 1926. Jun 24</date> Renewed to <date to="1926-07-24">July 24</date> - 1 m. 1 vol	15.
-                					<persName ref="pott.p">Pottier</persName>		Deposit			50
-                			2h								  refunded.
-                <date ana="#checkedOut" when="1926-06-24">June 24.</date>	<bibl ana="#borrowedItem" corresp="mep:00m93f"><title>Thunder on the left</title></bibl>  0.25		<date ana="#returned" when="1926-07-01">July. 1st</date>
-               <date ana="#checkedOut" when="1926-07-01"> July 1st.</date>	<bibl ana="#borrowedItem" corresp="mep:004k5w"><title>Garden Party</title></bibl>					 <date ana="#returned" when="1926-07-20">"	 20.</date>
-                 <date ana="#checkedOut" when="1926-07-20"> "	 20	</date>	<bibl ana="#borrowedItem" corresp="mep:00dk08"><title>Middlemarch	</title></bibl>					<date ana="#returned" when="1926-07-27"> "	 27.</date>
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-05-07">May 7</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:005p96">
+                        <title>Letters of John Keats</title>
+                    </bibl>			
+                    <date ana="#returned" when="1926-05-10">May 10</date>
                 </ab>
+                    
+                 <ab ana= "#borrowingEvent">
+                     <date ana="#checkedOut" when="1926-05-10">"	10</date>	
+                     <bibl ana="#borrowedItem" corresp="mep:003m7j">
+                         <title>Wuthering Heights</title>
+                     </bibl>				
+                     <date ana="#returned" when="1926-05-14">May 14</date>
+                 </ab>
+                    
+                 <ab ana= "#borrowingEvent">
+                     <date ana="#checkedOut" when="1926-05-14">"	14	</date>
+                     <bibl ana="#borrowedItem" corresp="mep:00pz35">
+                         <title>Love Letters of Th. Carlisle </title>
+                         <biblScope unit="volume" from="1">vol I</biblScope>
+                     </bibl>
+                     <date ana="#returned" when="1926-05-17">May 17</date>
+                 </ab>
+                    
+                    <note> Renewed to <date from="1926-06-24" to="1926-07-24"> Jun 24 to July 24</date> - 1 m. 1 vol	15 </note>
+                				
+                 <note> <persName ref="pott.p">Pottier</persName>		Deposit			50
+                			2h								  refunded.</note>
+                    
+                <ab ana= "#borrowingEvent">
+                    <date ana="#checkedOut" when="1926-06-24">June 24.</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00m93f">
+                        <title>Thunder on the left</title>
+                    </bibl>  
+                    <date ana="#returned" when="1926-07-01">July. 1st</date>
+                </ab>
+                    <note>0.25</note>
+                    
+               <ab ana= "#borrowingEvent">
+                   <date ana="#checkedOut" when="1926-07-01"> July 1st.</date>	
+                   <bibl ana="#borrowedItem" corresp="mep:004k5w">
+                       <title>Garden Party</title>
+                   </bibl>			
+                   <date ana="#returned" when="1926-07-20">"	 20.</date>
+               </ab>
+                    
+                 <ab ana= "#borrowingEvent">
+                     <date ana="#checkedOut" when="1926-07-20"> "	 20	</date>
+                     <bibl ana="#borrowedItem" corresp="mep:00dk08">
+                         <title>Middlemarch	</title>
+                     </bibl>				
+                     <date ana="#returned" when="1926-07-27"> "	 27.</date>
+                 </ab>
+                    
+                
                 </div>
             </div>
         </body>
