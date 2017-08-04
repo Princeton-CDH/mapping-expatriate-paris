@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -66,30 +67,40 @@
                     			                   <street>12 Rue Weber</street>	<district>16e</district></address>
                     			<persName>Miss Strain</persName>
                     </head>		
-                    <ab>
+                    <note>
                     				3	mos		1 v		30
                     								dep	30
-                    </ab>								
-                    <ab>
-                    <date ana="#checkedOut" when="1933-12-05">Dec 5</date>	<bibl ana="#borrowedItem" corresp="mep:00470k"><title>Selected Poems</title> <author>E. Dickinson</author></bibl>	<date ana="#returned" when="1933-12-12">Dec 12</date>
-                    <date ana="#checkedOut" when="1933-12-12">	12</date>	<bibl ana="#borrowedItem" corresp="mep:00db0b"><title>Collected Poems of Elinor Wylie</title></bibl>
-                    								card <date ana="#returned" when="1934-01-11">11.1.34</date>
-                    								 "	 <date when="1934-01-27">27.1.34</date>
-                    								letter <date when="1934-03-02">2-3-34</date>
+                    </note>								
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1933-12-05">Dec 5</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001d5s"><title>Selected Poems</title> 
+                            <author>E. Dickinson</author></bibl>	
+                        <date ana="#returned" when="1933-12-12">Dec 12</date>
                     </ab>
-                    <ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1933-12-12">	12</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00db0b"><title>Collected Poems of Elinor Wylie</title></bibl>
+                    </ab>
+                    
+                    							<note>card <date when="1934-01-11">11.1.34</date>
+                    								 "	 <date when="1934-01-27">27.1.34</date>
+                    								letter <date when="1934-03-02">2-3-34</date></note>
+                    
+                    <note>
                     		Renewed to <date when="1934-03-17">17th March</date> 6v
                     									                           85
-                    </ab>
-                    <ab>
+                    </note>
+                    <note>
                     		ordered (paid 12.50)
-                    	<bibl ana="#borrowedItem" corresp="mep:00bx1v"><title>Inland Voyage - Travels with a 
+                    	<bibl corresp="mep:00bx1v"><title>Inland Voyage - Travels with a 
                     	
                     		Donkey</title>	<publisher>Tauchnitz</publisher></bibl>
                     		
                     		Volume 	 "		contains
                     		
-                    		only <bibl ana="#borrowedItem" corresp="mep:00db1n"><title>Inland Voyage</title></bibl>
+                    		only <bibl corresp="mep:00db1n"><title>Inland Voyage</title></bibl>
                     		
                     		Eng. edition contains both-
                     		
@@ -100,7 +111,7 @@
                     		Mon. wrote letter <date when="1934-03-28">March 28</date>
                     	
                     	asking Eng. ed. separate vols about 18v to be ordered (Chatto 1/6 each)
-                    </ab>	
+                    </note>	
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
