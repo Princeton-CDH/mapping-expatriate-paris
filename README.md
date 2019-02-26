@@ -132,6 +132,15 @@ will require customization before it may be used (see below).
 Installation and Dependency Information
 =======================================
 
+Installing eXist
+----------------
+
+[eXist 3.0RC1](https://bintray.com/existdb/releases/exist/3.0.RC1/view/files#files/)
+is available for download. On [Mac OS X](http://www.apple.com/osx/), be sure to download the .jar file, not
+the .dmg file. Double click on the .jar file to launch the nine-step installer.
+Among other things, it asks for an installation directory.
+/Applications/eXist-db/ is a good default, and that will come in handy below,
+when editing the build.xml.
 
 Importing data into eXist using ant tasks
 -----------------------------------------
@@ -140,22 +149,31 @@ You may use a variety of methods to import MEP data into eXist.  The
 easiest method is to use Apache Ant and the build.xml file included in
 the db/ directory.
 
-
 You must have [Apache Ant](http://ant.apache.org/) 1.9.7 or greater installed to use this
-facility. (It is known to work on [Mac OS X 10.11](http://www.apple.com/osx/) with [eXist 3.0RC](https://bintray.com/existdb/releases/exist/3.0.RC1/view/files#files/))
+facility. Ant can also be installed via [homebrew](http://brew.sh) with the command `brew install ant`.
 
-Customize build.xml as outlined below.  Then, from the command line, run
+After cloning this repository, you must edit the build.xml file to match your
+system before running ant on it. See below for what needs changing.
+
+Next, launch the eXist server. On a Mac, you do this by double-clicking on the eXist-db.app
+where you installed it. A splash screen will appear. 
+
+Finally, in the terminal, change to the db/ directory in this repository (where the edited build.xml file is), and run
 
 `ant install`
 
+The database is now installed, which means that you can point your browser to
+`localhost:8080` (assuming defaults), where you can login with the admin
+username and password. Under the “Collections” button, a collection called
+“mep-data” should appear. That holds this data.
 
 Known Issues/Customization Points
 =================================
 
 You *must* customize build.xml before using ant to import MEP data into eXist.
 
--   change the property eXist_home to the location of your
-    exist installation.
--   change the xmldb.\* properties to match your installation
--   change the approot property to match your installation
+-   change the property `eXist_home` to the location of your
+    exist installation, which was set when running the setup.jar above. On a Mac, this could be /Applications/eXist-db.
+-   change the xmldb.\* properties to match your installation. `xmldb.passwd` will certainly have to be changed to whatever you set the admin password to while running the setup.jar.
+-   change the `approot` property to match your installation. This is the root directory of this repository, so /some/path/to/mapping-expatriate-paris, most likely. If you do not know the full path, run `pwd` at the command line.
 
