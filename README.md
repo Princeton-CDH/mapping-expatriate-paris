@@ -168,5 +168,3 @@ To run, use the invoke `validate_xml` task.  To see validation details,
 run with the verbose flag `-v`:
 
   `invoke validate_xml`
-
-

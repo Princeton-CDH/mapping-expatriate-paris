@@ -62,15 +62,21 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                			<ab><persName ref="gold.em">GOLDMAN</persName>
+                			<head><persName ref="gold.em">GOLDMAN</persName>
                 			<address><persName ref="gold.em">Miss Emma Goldman</persName>
-                			<street>6 rue Chevert</street></address>
-                
-                <date ana="#checkedOut" when="1900-01-29">Jan 29	</date><bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning Becomes Electra</title></bibl>	<date ana="#returned" when="1900-02-01">Feb 1</date>
-                <date ana="#checkedOut" when="1900-02-01">Feb. 1</date>	<bibl ana="#borrowedItem" corresp="mep:00210f"><title>Strange Interlude</title></bibl>			<date ana="#checkedOut" when="1900-02-08">Feb 8</date>
-                
-                		Left 14 frs. by mistake - to be
-                	used to pay for <bibl ana="#borrowedItem" corresp="mep:00210f"><title>Strange Interlude</title></bibl></ab>
+                			<street>6 rue Chevert</street></address></head>
+                <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1900-01-29" notBefore="1931-01-29" notAfter="1940-01-29">Jan 29	</date>
+                			    <bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning Becomes Electra</title></bibl>	
+                			    <date ana="#returned" when="1900-02-01" notBefore="1931-02-01" notAfter="1940-02-01">Feb 1</date>
+                	</ab>	
+                   <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1900-02-01" notBefore="1931-02-01" notAfter="1940-02-01">Feb. 1</date>	
+                			    <bibl ana="#borrowedItem" corresp="mep:00210f"><title>Strange Interlude</title></bibl>			
+                			    <date ana="#returned" when="1900-02-08" notBefore="1931-02-08" notAfter="1940-02-08">Feb 8</date>
+                </ab>
+                		<note>Left 14 frs. by mistake - to be
+                	used to pay for <bibl corresp="mep:00210f"><title>Strange Interlude</title></bibl></note>
                </div> 
                 <div type="verso">
                 <pb facs="#s2"/>

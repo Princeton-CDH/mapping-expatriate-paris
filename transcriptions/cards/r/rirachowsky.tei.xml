@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader type="text">
     <fileDesc>
       <titleStmt>
@@ -43,6 +45,23 @@
 	  s6: july 3rd <unclear/> nights
 	</ab>
       </change>
+    	<change who="#i-davis">
+    		<ab>
+    			Order:
+    			s1
+    			s2
+    			s9,
+    			s10,
+    			s3, 
+    			s4,
+    			s11,
+    			s12,
+    			s5,
+    			s6,
+    			s7,
+    			s8
+    		</ab>
+    	</change>
     </revisionDesc>
   </teiHeader>
   <facsimile xml:base="pudl0123/825298/r/rirachowsky/">
@@ -178,7 +197,9 @@
 	</div>
       </div>
 
+
       <!-- cards out of sequence as shot; side 9 belongs here chronologically  -->
+   <div type="card">
 	<div type="recto">
 	  <pb facs="#s9"/>
 
@@ -200,7 +221,8 @@
 
 	  <note>Renewed <date from="1935-12-07" to="1935-01-07">Dec 7 to Jan 7</date> 15v</note>
 	</div>
-      
+   </div>
+    	
       <div type="card">
 	<div type="recto">
 	  <pb facs="#s3"/>
@@ -412,12 +434,35 @@
 	</div>
       </div>
       <div type="card">
+      	<div type="recto">
+      		<pb facs="#s9"/>
+      		
+      		<head> <persName ref="#rira.fa">RIRACHOVSKY</persName>
+      			<address><street>56 rue M. le Prince</street></address>
+      		</head>
+      		<note> Renewed <date from="1935-09-07" to="1935-11-07">Sept 7 - November 7</date> (pd <date when="1935-10-05">Oct 5</date>) 30v</note>
+      		<note> dep 30v ref Jan 2</note>
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-10-19">19 Oct.</date> <bibl ana="#borrowedItem" corresp="mep:008s18"><title>Sons</title></bibl> <date ana="#returned" when="1935-10-30">30</date> 30v</ab>
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-10-30">30 "</date> <bibl ana="#borrowedItem" corresp="mep:002s24"><title>Invitation to the Waltz</title> <author>F.R.</author></bibl> <date ana="#returned" when="1935-11-07">Nov 7</date></ab>
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-11-07">Nov 7</date> 15 <bibl ana="#borrowedItem" corresp="mep:00175d"><title>Where angels fear to tread.</title></bibl> <date ana="#returned" when="1935-11-18">18</date></ab>
+      		
+      		<note> Renewed <date from="1935-11-07" to="1935-12-07">7 Nov - 7 Dec.</date> 15v</note>
+      		
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-11-18">18</date> <bibl ana="#borrowedItem" corresp="mep:00473h"><title>All Men are Enemies</title></bibl> <date ana="#returned" when="1935-11-23">23</date></ab>
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-11-23">23</date> <bibl ana="#borrowedItem" corresp="mep:00b56b"><title>Rahab</title></bibl> <date ana="#returned" when="1935-12-06">6</date></ab>
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-12-06">6 Dec.</date> <bibl ana="#borrowedItem" corresp="mep:00vt5w"><title>Poem</title> <author>T.S. Eliot</author></bibl> <date ana="#returned" when="1935-12-10">10</date></ab>
+      		<ab ana="#borrowingEvent"><date ana="#checkedOut" when="1935-12-10">10 -</date> <bibl ana="#borrowedItem" corresp="mep:00fs5q"><title>Young Lonigan</title></bibl> <date ana="#returned" when="1936-01-02">2 Jan</date></ab>
+      		
+      		<note>Renewed <date from="1935-12-07" to="1935-01-07">Dec 7 to Jan 7</date> 15v</note>
+      	</div>
 
-	<div type="verso"> <pb facs="#s10"/>
+	<div type="verso"> 
+		<pb facs="#s10"/>
 
 	<!-- Verso Blank -->
 	</div>
       </div>
+    	
       <div type="card">
 	<div type="recto">
 	  <pb facs="#s11"/>

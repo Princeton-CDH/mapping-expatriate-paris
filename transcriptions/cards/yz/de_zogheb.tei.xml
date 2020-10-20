@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-model href='../../../schemas/libcards.sch'?>
+<?xml-model href="../../../schemas/libcards.sch"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
@@ -63,22 +63,29 @@
                         				                    Mlle M. de Zogheb</persName>
                         				               <address><street>29 Bd Jules Sandeau - </street><district>XVI</district></address>
                         </head>
-                        <ab>
-                        				 	1	m	1  v  B			                            45
-                        				    dep. ref. <date when="1940-03-15">March 15</date>	50
-                        </ab>
+                      
+                        				 <note>	1	m	1  v  B			                            45
+                        				    dep. ref. <date when="1940-03-15">March 15</date>	50</note>
                         
-                        
-                        <ab>
-                            <date ana="#checkedOut" when="1940-01-31">Jan 31</date>	<bibl ana="#borrowedItem" corresp="mep:000905"><title>Goodbye to Berlin</title></bibl> <date ana="#returned" when="1940-02-06">Feb. 6</date>
-                        	<date ana="#checkedOut" when="1940-01-05">5</date>		<bibl ana="#borrowedItem" corresp="mep:003d11"><title>After many a Summer</title></bibl> due <date ana="#returned" when="1940-01-13">13th Jan</date>) <date when="1940-03-15">March 15</date>
-                        	 						p.c. <date when="1940-02-24">Feb 24</date>
+                     <ab ana="#borrowingEvent">
+                            <date ana="#checkedOut" when="1940-01-31">Jan 31</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000905"><title>Goodbye to Berlin</title></bibl> 
+                    <date ana="#returned" when="1940-02-06">Feb. 6</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1940-01-05">5</date>		
+                    <bibl ana="#borrowedItem" corresp="mep:003d11"><title>After many a Summer</title></bibl>
+                    <note>due <date  when="1940-01-13">13th Jan</date>)</note>
+                    <date ana="#returned" when="1940-03-15">March 15</date>
+                    </ab>
+                        	 						<note>p.c. <date when="1940-02-24">Feb 24</date>
                         	 						registered letter <date when="1940-03-12">March 12</date>
                         	 						charge 	.70
                         	 							   2.
                         	 				all paid	   2.70
-                        	 				cancel
-                        </ab>
+                        	 				cancel</note>
+                        
                 </div>
                 <div type="verso">
                     <pb facs="#s2"/>
