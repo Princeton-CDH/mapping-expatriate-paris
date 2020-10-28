@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../../../schemas/libcards.sch"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -32,7 +34,7 @@
                 <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
             </textClass>
             <particDesc>
-                <person role="cardholder"><persName ana="#bos.ch">Charles Du Bos</persName></person>
+                <person role="cardholder" ana="#bos.ch"><persName>Charles Du Bos</persName></person>
             </particDesc>
         </profileDesc>
         <revisionDesc>
@@ -60,27 +62,66 @@
                         <head> <persName>M. Charles Du Bos</persName>
                                     <address><street>1 rue Budé (4e)</street></address>
                                                Gob. 29-31</head>
-            <ab>  <date when="1926">1926</date>                                              <date when="1929">1929</date>
-              <date ana="#checkedOut" when="1926-02-22">Feb 22</date>    <bibl ana="#borrowedItem"><title>Recollections of D. g. Rossetti</title></bibl>         <date ana="#returned" when="1929-02-18">Mch 18th</date>
-              <date ana="#checkedOut" when="1926-02-22">"    "</date>    <bibl ana="#borrowedItem"><title>Pre-Raphalite Diaries &amp; Letters</title></bibl>     <date ana="#returned" when="1927-10-08">Oct 8 1927</date>
-                                                    brought back by <persName>Mme Lerrch</persName>
-              <date ana="#checkedOut" when="1922-02-22">"    "</date>    <bibl ana="#borrowedItem"><title>D. g. Rossetti , Dupré</title></bibl>  <date ana="#returned" when="1922-06-12">June 12th</date> p.c.  <date when="1922-03-18">Mch 18</date>
-              ---------------------------------------------------------
-                                        never brought back      <date when="1919">1919</date>
-              <date when="1927">1927</date>
-              <date ana="#checkedOut" when="1927-01-14">Jan 14</date>    <bibl ana="#borrowedItem"><title>Life of Jesus</title>  <author>J. M. Murry</author></bibl>  (owes new copy) <persName>BB</persName>
-                                                    (-------------)
-                                                    ( never paid  )
-              <date ana="#checkedOut" when="1927-06-07">June 7</date>    <bibl ana="#borrowedItem"><title>New Criterion</title></bibl> <date ana="#checkedOut" when="1926-06">June 1926</date>  due .53  
-              
-                        purchased
-                            <bibl ana="#borrowedItem"><author>T.S. Eliot</author>  <title>Poems</title></bibl>           53
-                            <bibl ana="#borrowedItem"><title>Adelphi</title> <date when="1927-06">June 1927</date></bibl>           18
-                            <bibl ana="#borrowedItem"><title>New Criterion</title> <date when="1927-06">June 1927</date></bibl>     53
-                                           not paid for
-                                                        124
-                                                     
-              </ab></div>
+                    
+            <note> <date when="1926">1926</date>                                              <date when="1929">1929</date> </note>
+                
+                
+              <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1926-02-22">Feb 22</date>   
+                  <bibl ana="#borrowedItem" corresp="mep:004v81">
+                      <title>Recollections of D. g. Rossetti</title></bibl>      
+                  <date ana="#returned" when="1929-02-18">Mch 18th</date>
+              </ab>
+                    
+              <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1926-02-22">"    "</date>    
+                  <bibl ana="#borrowedItem" corresp="mep:004v9b">
+                      <title>Pre-Raphalite Diaries &amp; Letters</title></bibl>     
+                  <date ana="#returned" when="1927-10-08">Oct 8 1927</date>
+                  <note>brought back by <persName>Mme Lerrch</persName></note>
+              </ab>
+                    
+              <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1922-02-22">"    "</date>    
+                  <bibl ana="#borrowedItem" corresp="mep:004w0t">
+                      <title>D. g. Rossetti</title>, <author>Dupré</author></bibl>  
+                  <note><date when="1922-06-12">June 12th</date> p.c.</note>
+                  <date ana="#returned" when="1929-03-18">Mch 18 1929</date>
+                  
+                  
+                  <note> never brought back</note>  
+              </ab>
+                    
+              <ab><date when="1927">1927</date></ab>
+                    
+              <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-01-14">Jan 14</date>    
+                  <bibl ana="#borrowedItem" corresp="mep:004w14">
+                      <title>Life of Jesus</title>  
+                      <author>J. M. Murry</author></bibl>  
+                  <note>(owes new copy) </note>
+                  <note>BB</note>
+              </ab>
+                    
+                                                  <note>  ( never paid  )</note>
+                    
+              <ab ana="#borrowingEvent">
+                  <date ana="#checkedOut" when="1927-06-07">June 7</date>    
+                  <bibl ana="#borrowedItem" corresp="mep:004w2f">
+                      <title>New Criterion</title><biblScope unit="issue" from="1929-06"> June 1926 </biblScope> </bibl> 
+                  
+                  <note>due .53  </note>
+              </ab>
+                    
+                       <note> purchased
+                    <bibl corresp="mep:00w074"><author>T.S. Eliot</author>  <title>Poems</title></bibl>           53
+                    <bibl corresp="mep:002h4j"><title>Adelphi</title> <biblScope unit="issue" from="1927-06">June 1927</biblScope></bibl>          18
+                    <bibl corresp="mep:004w2f"><title>New Criterion</title> <biblScope unit="issue" from="1927-06">June 1927</biblScope></bibl>     53
+                       </note>            
+                                         <note> not paid for
+                                                        124</note>
+                                                        
+              </div>
               <div type="verso">
             	<pb facs="#s2"/>
             	    

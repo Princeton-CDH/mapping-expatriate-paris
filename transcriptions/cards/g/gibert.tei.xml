@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -76,12 +78,12 @@
             <div type="card">
                <div type="recto"> 
                 <pb facs="#s1"/>
-                <ab>returned everything <date when="1944-04-01">April 1944</date>
+                <note>returned everything <date when="1944-04-01">April 1944</date>
                 
                 <persName ref="gibe.ma">Madame Jean Gibert</persName>
                 
                 Archives 53.6g		<address><street>37. rue de Rivoli</street> <district>IV.e</district></address>
-                </ab>
+                </note>
                </div> 
                <div type="verso"> 
                 <pb facs="#s2"/>
@@ -89,13 +91,31 @@
                </div> 
                <div type="recto"> 
                 <pb facs="#s3"/>
-                <ab><date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Madeleine Gibert</persName>
-                			<street>37 rue de Rivoli</street></address>
+                
+                <head>   <date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Madeleine Gibert</persName>
+                			<street>37 rue de Rivoli</street></address></head>
                     
-               <date ana="#checkedOut" when="1944-03-27"> March 27</date>	<bibl ana="#borrowedItem" corresp="mep:00121s"><title>Full Moon in March</title></bibl>		returned
-                			<bibl ana="#borrowedItem" corresp="mep:000w71"><title>Autobiographies	</title></bibl>		all
-                			<bibl ana="#borrowedItem" corresp="mep:000w0v"><title>Dramatis Personae</title></bibl>
-                				(wants <bibl ana="#borrowedItem" corresp="mep:00k472"><title>Lady Gregory</title></bibl>)</ab>
+              <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1944-03-27"> March 27</date>
+                   <bibl ana="#borrowedItem" corresp="mep:00121s"><title>Full Moon in March</title></bibl>	
+                  <date ana="#returned" notBefore="1944-03-27"></date>
+                  </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1944-03-27"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:000w71"><title>Autobiographies	</title></bibl>	
+                       <date ana="#returned" notBefore="1944-03-27"></date>
+                 </ab>
+                   <ab ana="#borrowingEvent">
+                   <date ana="#checkedOut" when="1944-03-27"></date>
+                   <bibl ana="#borrowedItem" corresp="mep:000w0v"><title>Dramatis Personae</title></bibl>
+                       <date ana="#returned" notBefore="1944-03-27"></date>
+                	</ab>
+                	
+                	<note>returned all</note>
+                	
+                	<note>(wants <bibl corresp="mep:00k472"><title>Lady Gregory</title></bibl>)</note>
+                   
+                  
                </div> 
                 <div type="verso">
                 <pb facs="#s4"/>
@@ -103,14 +123,25 @@
                 </div>
                 <div type="recto">
                 <pb facs="#s5"/>
-                    <ab>
+                  <head>  
                 <date when="1944">1944</date>		<address><persName ref="gibe.ma">Madame Gibert</persName>
                 			<street>37 rue de Rivoli</street>
                 			<settlement>Paris</settlement></address>
-                
-               <date ana="#checkedOut" when="1944-03-27"> March 27</date>	<bibl ana="#borrowedItem" corresp="mep:00121s"><title>Full Moon in March</title></bibl>	<date ana="#checkedOut" when="1944-04-01">April</date>
-                        <bibl ana="#borrowedItem" corresp="mep:000w71"><title>Autobiographies</title></bibl>		<date ana="#checkedOut" when="1944-04-01">"</date>
-                        <bibl ana="#borrowedItem" corresp="mep:000w0v"><title>Dramatis Personae</title></bibl>	<date ana="#returned" when="1944-04-01">"</date>
+                </head>
+                  <ab ana="#borrowingEvent">  
+               <date ana="#checkedOut" when="1944-03-27"> March 27</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00121s"><title>Full Moon in March</title></bibl>
+                    <date ana="#returned" when="1944-04-01">April</date>
+                   </ab> 
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1944-03-27"></date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000w71"><title>Autobiographies</title></bibl>
+                    <date ana="#returned" when="1944-04-01">"</date>
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1944-03-27"> </date>	
+                    <bibl ana="#borrowedItem" corresp="mep:000w0v"><title>Dramatis Personae</title></bibl>	
+                    <date ana="#returned" when="1944-04-01">"</date>
                 	</ab>		
                 </div>
                 <div type="verso">

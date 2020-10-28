@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -39,9 +41,13 @@
             <change who="#elspeth" when="2016-02-29">
                 <p> First level encoding </p>
             </change>
-            <change who="#carlca">
+            <change who="#i-davis">
                 <ab>
-                    <!-- Enter transcription notes and queries here -->
+                    Order (1919-1930):
+                    s3,
+                    s4,
+                    s1,
+                    s2
                 </ab>
             </change>
         </revisionDesc>
@@ -80,12 +86,26 @@
     						
     								subs to <date when="1930-05-15">May 15th 1930</date>
     				</ab>
-                    <ab>
-    				<date ana="#checkedOut" when="1929-11-15">Nov 15</date>		<bibl ana="#borrowedItem" corresp="mep:00299f"><title>Magic Island</title></bibl>						<date ana="#returned" when="1929-12-13">Dec 13</date>
-    									                                                                   <date when="1929-12-11">Dec 11</date> p.c.
-    				<date ana="#checkedOut" when="1929-12-13">Dec 13</date>		<bibl ana="#borrowedItem" corresp="mep:003f5j"><title>England my England</title></bibl>.					<date ana="#returned" when="1930-04-03">April 3</date>
-    									                                                                   <date when="1930-03-11">Mch 11</date> p.c.    
-    				</ab>					
+                    
+    				<ab ana= "#borrowingEvent">
+    				    <date ana="#checkedOut" when="1929-11-15">Nov 15</date>		
+    				    <bibl ana="#borrowedItem" corresp="mep:00299f">
+    				        <title>Magic Island</title>
+    				    </bibl>						
+    				    <date ana="#returned" when="1929-12-13">Dec 13</date>
+    				</ab>
+                    <note><date when="1929-12-11">Dec 11</date> p.c.</note>
+                        
+    				<ab ana= "#borrowingEvent">
+    				    <date ana="#checkedOut" when="1929-12-13">Dec 13</date>	
+    				    <bibl ana="#borrowedItem" corresp="mep:003f5j">
+    				        <title>England my England</title>
+    				    </bibl>.				
+    				    <date ana="#returned" when="1930-04-03">April 3</date>
+    				</ab>
+                    <note><date when="1930-03-11">Mch 11</date> p.c.</note>
+                    
+    				
                 </div> 
                 <div type="verso">
                     <pb facs="#s2"/>
@@ -97,35 +117,99 @@
                     <pb facs="#s3"/>
                     <head>
                     Student
-                    <date when="1900-12-23">Dec 23</date>		<persName ref="sute.g">M. G. V. Suter</persName>
+                    <date when="1919-12-23">Dec 23</date>		<persName ref="sute.g">M. G. V. Suter</persName>
                     				123 db. St Germain
                     </head>				
                     <ab>		
                     		Subs. 1 mo.	-	1 vol.				4
                     							Dep.			7
                     </ab>							
-                    <ab>
-                    <date ana="#checkedOut" when="1929-12-23">Dec 23</date>	     <bibl ana="#borrowedItem" corresp="mep:00b406"><title>Lord Jim</title></bibl>						      <date ana="#returned" when="1929-12-30">Dec 30</date>
                     
-                    <date ana="#checkedOut" when="1929-12-30">Dec 30</date>	     <bibl ana="#borrowedItem" corresp="mep:008w13"><title>Heartbreak House</title></bibl>				      <date ana="#returned" when="1930-01-22">Jan 22</date>
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1919-12-23">Dec 23</date>	  
+                        <bibl ana="#borrowedItem" corresp="mep:00b406">
+                            <title>Lord Jim</title>
+                        </bibl>					
+                        <date ana="#returned" when="1919-12-30">Dec 30</date>
+                    </ab>
                     
-                    		Renewed <date when="1930-01-23">Jan 23rd</date> 3 mos.
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1919-12-30">Dec 30</date>	  
+                        <bibl ana="#borrowedItem" corresp="mep:008w13">
+                            <title>Heartbreak House</title>
+                        </bibl>				   
+                        <date ana="#returned" when="1920-01-22">Jan 22</date>
+                    </ab>
+                    
+                    <note>Renewed <date when="1920-01-23">Jan 23rd</date> 3 mos.</note>
                     		
-                    <date ana="#checkedOut" when="1930-01-22">Jan 22</date>	     <bibl ana="#borrowedItem" corresp="mep:003x71"><title>Life &amp; Letters</title> <author>Hearn</author>, <editor>Bisland</editor></bibl>	<date ana="#returned" when="1930-03-03">March 3</date>
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1920-01-22">Jan 22</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003x71">
+                            <title>Life &amp; Letters</title>
+                            <author>Hearn</author>,
+                            <editor>Bisland</editor>
+                        </bibl>	
+                        <date ana="#returned" when="1920-03-03">March 3</date>
+                    </ab>
                     
-                    <date ana="#checkedOut" when="1930-03-03">March 3</date>	     <bibl ana="#borrowedItem" corresp="mep:00br33"><title>Victorian Age in Literature</title></bibl>		  <date ana="#returned" when="1930-03-16">March 16</date>
                     
-                    <date ana="#checkedOut" when="1930-03-03">	</date>	         <bibl ana="#borrowedItem" corresp="mep:00k444"><title>The Niggar of the Narcissus</title></bibl>		  <date ana="#returned" when="1930-03-23">March 23</date>
-                    <date ana="#checkedOut" when="1930-04-16">16 April</date>      <bibl ana="#borrowedItem" corresp="mep:00rk10"><title>Harrington</title> <author>Meredith</author></bibl> <date ana="#returned" when="1930-05-07">May 7</date>
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1920-03-03">March 3</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00br33">
+                            <title>Victorian Age in Literature</title>
+                        </bibl>		 
+                        <date ana="#returned" when="1920-03-16">March 16</date>
+                    </ab>
                     
-                    <date ana="#checkedOut" when="1930-04-16">	</date>	         <bibl ana="#borrowedItem" corresp="mep:00b67x"><title>Nostromo</title></bibl>						      <date ana="#returned" when="1930-04-22">April 22</date>
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1920-03-03">	</date>	    
+                        <bibl ana="#borrowedItem" corresp="mep:00k444">
+                            <title>The Niggar of the Narcissus</title>
+                        </bibl>		
+                        <date ana="#returned" when="1920-03-23">March 23</date>
+                    </ab>
+                    
+                    <ab ana= "#borrowingEvent">
+                        <date ana="#checkedOut" when="1920-04-16">16 April</date>     
+                        <bibl ana="#borrowedItem" corresp="mep:00rk10">
+                            <title>Harrington</title> 
+                            <author>Meredith</author>
+                        </bibl>
+                        <date ana="#returned" when="1920-05-07">May 7</date>
+                    </ab>
+                    
+                    
+                    <note><date when="1920-04-16">	</date>	 
+                    <del>
+                        <bibl  corresp="mep:00b67x">
+                        <title>Nostromo</title>
+                    </bibl>		
+                    </del>
+                    <date when="1920-04-22">April 22</date>
+                    </note>
                     		
-                	<date ana="#checkedOut" when="1930-04-22">April 22</date>      <bibl ana="#borrowedItem" corresp="mep:00rk29"><title>The Happy Prince</title></bibl>
+                    		
+                	<note><del>
+                	    <date when="1920-04-22">April 22</date>  
+                        <bibl corresp="mep:00rk29">
+                            <title>The Happy Prince</title>
+                        </bibl>
+                	</del>
+                	</note>
                 	
-                			Renewed <date ana="#returned" when="1930-04-23">April 23rd</date> 1 mo. 1 vol		4
+                        <note>Renewed <date when="1920-04-23">April 23rd</date> 1 mo. 1 vol		4</note>
                 			
-                	<date ana="#checkedOut" when="1930-05-07">May 7</date>	     <bibl ana="#borrowedItem" corresp="mep:000k95"><title>Lord Ormond</title></bibl>						  <date ana="#returned" when="1930-06-01">June 1st</date>
+                	<ab ana= "#borrowingEvent">
+                	    <date ana="#checkedOut" when="1920-05-07">May 7</date>
+                	    <bibl ana="#borrowedItem" corresp="mep:000k95">
+                	        <title>Lord Ormond</title>
+                	    </bibl>						
+                	    <date ana="#returned" when="1920-06-01">June 1st</date>
                 	</ab>
+                        
+                	
                 </div> 
                 <div type="verso">
                     <pb facs="#s4"/>
@@ -133,6 +217,7 @@
                     <!-- Verso Blank -->
                 </div>
             </div>
+            
         </body>
     </text>
 </TEI>

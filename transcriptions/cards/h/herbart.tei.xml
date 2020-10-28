@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -24,11 +26,11 @@
                         <idno>C0108</idno>
                     </msIdentifier>
                 </msDesc>
-                
+
             </sourceDesc>
         </fileDesc>
 	    <profileDesc>
-      <textClass>          
+      <textClass>
         <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
       </textClass>
     	<particDesc>
@@ -47,7 +49,7 @@
                 <ab>
                     Transcribed cards.
                     <unclear/> = year written in pencil, illegible
-                    
+
                 </ab>
             </change>
         </revisionDesc>
@@ -63,33 +65,48 @@
     <text>
         <body>
                 <div type="card">
-                <div type="recto"> 
+                <div type="recto">
                 <pb facs="#s1"/>
                	<head>
-                <unclear/>		
+                <unclear/>
                	        <persName ref="#herb.el">Madame Elizabeth Herbart</persName>
                			<address>
                			<street>1 bis rue Vaneau</street>
-               			<settlement>Paris</settlement> 
+               			<settlement>Paris</settlement>
                			<district>VII</district>
                			</address>
                	</head>
-                <ab>
-               	<date ana="#checkedOut" when="1900-06">June</date>	    <bibl ana="#borrowedItem" corresp="mep:00012k"><title>Grapes of Wrath</title></bibl>					<date ana="#returned" when="1900-07-27">July 27</date>
-               	
-               	<date ana="#checkedOut" when="1900-07-04">July 4</date>	<bibl ana="#borrowedItem" corresp="mep:00gb5c"><title>The American Language</title> <persName>Mencken</persName></bibl>	<date ana="#returned" when="1900-08-03">Aug 3</date>
-               	<date ana="#checkedOut" when="1900-08-03">Aug 3</date>	<bibl ana="#borrowedItem" corresp="mep:002258"><title>Tortilla Flat</title></bibl>
-               	<date ana="#checkedOut" when="1900-08-03">Aug 3</date>	<bibl ana="#borrowedItem" corresp="mep:00160k"><title>Heavens my Destination</title></bibl>
-               	<date ana="#checkedOut" when="1900-08-03">Aug 3</date>	<bibl ana="#borrowedItem" corresp="mep:00s672"><title>Breaking Priscian's Head</title></bibl>
-                </ab>
+                <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" notBefore="1939-06" notAfter="1949-06">June</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00012k"><title>Grapes of Wrath</title></bibl>
+                    <date ana="#returned" notBefore="1939-07-27" notAfter="1949-07-27">July 27</date>
+               	</ab>
+               	<ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" notBefore="1939-07-04" notAfter="1949-07-04">July 4</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00gb5c"><title>The American Language</title>
+                        <author>Mencken</author></bibl>
+                    <date ana="#returned" notBefore="1939-08-03" notAfter="1949-08-03">Aug 3</date>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" notBefore="1939-08-03" notAfter="1949-08-03">Aug 3</date>
+                    <bibl ana="#borrowedItem" corresp="mep:002258"><title>Tortilla Flat</title></bibl>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" notBefore="1939-08-03" notAfter="1949-08-03">Aug 3</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00160k"><title>Heavens my Destination</title></bibl>
+               	</ab>
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" notBefore="1939-08-03" notAfter="1949-08-03">Aug 3</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00s672"><title>Breaking Priscian's Head</title></bibl>
+                    </ab>
                	</div>
-                
+
                 <div type="verso">
                	<pb facs="#s2"/>
                	<!-- verso blank -->
                	</div>
                 </div>
-            
+
         </body>
     </text>
 </TEI>

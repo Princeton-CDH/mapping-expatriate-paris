@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -83,23 +85,23 @@
             <div type="card">
                 <div type="recto">
                     <pb facs="#s1"/>
-                    <ab>
-                    Spender paid
+                   <note>
+                       <persName ref="spen.st">Spender</persName> paid
                     
-                    <date when="1900-05-21">May 21</date>		£ 1			108
+                    <date when="1937-05-21">May 21</date>		£ 1			108
                     
-                    <date when="1900-07-24">July 24</date>					 50
+                    <date when="1937-07-24">July 24</date>					 50
                     
-                    <date when="1900-09-01">Sept 1st</date>	£ 2 at 150	    300
+                    <date when="1937-09-01">Sept 1st</date>	£ 2 at 150	    300
                     						
                     	                               Total				458
                     	
                     	
                     <persName ref="#spen.st">S B</persName> spent
                     
-                    <date when="1900-05-21">May 21</date>	wires			 91.05
+                    <date when="1937-05-21">May 21</date>	wires			 91.05
                     
-                    <date when="1900-07-26">July 26</date>	Picasso			200
+                    <date when="1937-07-26">July 26</date>	Picasso			200
                     
                     		                                  shipping		 20 75
                     		          
@@ -107,7 +109,7 @@
                     				458
                     				311 80
                     				146,20
-                    </ab>				
+                    		</note>		
                 </div>  
                 <div type="verso">
                     <pb facs="#s2"/>
@@ -116,7 +118,7 @@
                 </div>  
                 <div type="recto">
                     <pb facs="#s3"/>
-                    <ab>
+                   <note>
                     		<date when="1938-05-21">May 21 1938</date>
                     		
                     		
@@ -131,7 +133,7 @@
                     	
                     	
                     	<persName ref="#spen.st">Spender</persName>
-                    </ab>
+                    </note>
                 </div> 
                 <div type="verso">
                     <pb facs="#s4"/>
@@ -147,15 +149,15 @@
                     		              <street>11 Queens Mansions</street>	<district>Brook Green		W6</district>
                     						           <addrLine><num type="telephone">Riverside 3990</num></addrLine></address>
                     </head>		
-                    <ab>
+                   <note>
                     <date when="1937-07-22">July 22</date> wrote from		<address><settlement>Warehorn
                                                                             near Ashford</settlement>
                       			           	                                <region>Kent</region></address>
                       				
                     <date when="1937-05-21">1937
                     May 21</date>	<persName ref="#spen.st">S.S.</persName> sent cheque £1 rate of exch. 108 frs
-                    </ab>
-                    <ab>
+                   </note> 
+              <note>
                     <date when="1937-07-23">July 23</date> <persName ref="#spen.st">"</persName>  "		note -	 -	  -	credit		frs. 108,00
                     														                                                              50
                     <date when="1937-09-01">Sept 1st</date>			                                  cheque £2 at 150					 300
@@ -165,29 +167,29 @@
                     													                                                               	 
                     <date when="1937-05-22">May 22</date>	2 wires to Spain				                                                 37,40			 
                     <date when="1937-07-07">July 7</date>	1 wire	   "					                                                 53 65			 
-                    <date ana="#checkedOut" when="1937-07-26">July 26</date>	<bibl ana="#borrowedItem" corresp="mep:00r225"><author>Picasso </author><title>Dreams &amp; Lies Franco</title></bibl>   200
+                    <date when="1937-07-26">July 26</date>	<bibl  corresp="mep:00r225"><author>Picasso </author><title>Dreams &amp; Lies Franco</title></bibl>   200
                     		                                                                                  Tar paper						  3
                     		                                                                                  sending by Cole's postal		 14 75
                     					                                                                      "feuille"			             50
                     					                                                                      tip					          1 00
-                    		                                                                                  stamp on M. Cowley letter		  1 50
+                    		                                                                                  stamp on<persName> M. Cowley</persName> letter		  1 50
                     									                                                                                    311,80
                     									   
-                    			<date ana="#returned" when="1937-10-22">Oct 22</date> wrote to <persName ref="#spen.st">S S</persName> told him 	146,20
+                    			<date  when="1937-10-22">Oct 22</date> wrote to <persName ref="#spen.st">S S</persName> told him 	146,20
                     				remained to his credit
                     	<date when="1937-11-03">Nov 3 1937</date>	paid 146,20 to <persName>Mrs Spender</persName>
                     	
                 	
-                	<date ana="#checkedOut" when="1938-05-21">May 21 1938</date>			paid by cheque £4 at 177
+                	<date  when="1938-05-21">May 21 1938</date>			paid by cheque £4 at 177
                 										                                  	 708
                 										                                  	 290
                 			                                         	                     418
-                                <bibl ana="#borrowedItem">Spanish book</bibl> 		                                    250
-                				<bibl ana="#borrowedItem" corresp="mep:00r23g"><title>Nourritures Terr</title></bibl>.	                     15		 
-                				<bibl ana="#borrowedItem" corresp="mep:00d457"><title>Picasso</title><author> G. Stein</author></bibl>	     25 
+                        <bibl corresp="mep:00w341">Spanish book</bibl> 		                                    250
+                				<bibl  corresp="mep:00r23g"><title>Nourritures Terr</title></bibl>.	                     15		 
+                				<bibl  corresp="mep:00d457"><title>Picasso</title><author> G. Stein</author></bibl>	     25 
                 									                                                290	
                 										gave <persName ref="#spen.st">Spender</persName> cash
-                	</ab>									
+              </note>  										
                 </div> 
                 <div type="verso">
                     <pb facs="#s6"/>
@@ -199,12 +201,12 @@
                     <head>
                     			<persName ref="#spen.st">STEPHEN SPENDER</persName>
                     </head>
-                    <ab>
+                   <note>
                     <date when="1939-07">July 1939</date>
-                    		<persName ref="#beac.sy">SB</persName>	lent <persName>Thomassin</persName> <bibl ana="#borrowedItem" corresp="mep:00jj0z"><title>Listener</title></bibl> containing
+                    		<persName ref="#beac.sy">SB</persName>	lent <persName>Thomassin</persName> <bibl  corresp="mep:00jj0z"><title>Listener</title></bibl> containing
                     		  story by <persName ref="#spen.st">S S</persName>
-                    </ab>		  
                     		  
+                   </note> 		  
                 </div> 
                 <div type="verso">
                     <pb facs="#s8"/>
@@ -218,18 +220,18 @@
                     			                          Frantz</persName>
                     			                         <street>2ter rue Herran -</street></address>
                     </head>	
-                    <ab>
+                 <note>
                     			(from <persName ref="#sach.ma">Maurice Sachs</persName>)
                     			
                     			
-                	<date ana="#checkedOut" when="1939-06-24">June 24</date>		<bibl ana="#borrowedItem" corresp="mep:00q16w"><title>The Listener</title>22 dec 1939</bibl>		<date ana="#checkedOut" when="1939-08">Aug</date>
-                					containing <bibl ana="#borrowedItem" corresp="mep:00r24s"><persName ref="#spen.st">Stephen Spender</persName>'s
+                	<date when="1939-06-24">June 24</date>		<bibl  corresp="mep:00q16w"><title>The Listener</title>22 dec 1939</bibl>		<date  when="1939-08">Aug</date>
+                					containing <bibl corresp="mep:00r24s"><author ref="#spen.st">Stephen Spender</author>'s
                 						<title>Deus Ex Machina</title></bibl>
                 						
                 							returned when shop
                 							was closed
                 							by post from		(A.M.)
-                	</ab>						
+                			</note>				
                 </div> 
                 <div type="verso">
                     <pb facs="#s10"/>

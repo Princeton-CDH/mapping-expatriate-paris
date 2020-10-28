@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -165,11 +167,11 @@
                 		E.M. Air Régional	to Gillie
                 		Secteur Postale 142
                 		
-                			Mlle Madeleine David
-                			126 Bd Haussmann
-                				'el Laborde	72.93
+                			Mlle <persName>Madeleine David</persName>
+                			<address><street>126 Bd Haussmann</street></address>
+                	    'el <persName ref="labo">Laborde</persName>	<address><addrLine><num type="telephone">72.93</num></addrLine></address>
                 			preferably lunch time
-                		Nov 9 <persName ref="gill.da">Mr Gillie</persName> came - said had
+                		<date when="1938-11-09">Nov 9</date> <persName ref="gill.da">Mr Gillie</persName> came - said had
                 		lent to lady who was having a baby
                 		the day the war broke out - she went 
                 		to Fontainebleau.  He hopes to get back
@@ -187,22 +189,77 @@
                 <date ana="#checkedOut" when="1938-05-30">May 30</date>	<bibl ana="#borrowedItem" corresp="mep:005w9v"><title>All Men are Brothers</title></bibl>			<date ana="#returned" when="1938-07-26">July 26</date>
                 			(50 fr. on 6m. 1 vol. account
                 			subscription renewed)
-                				 December 7
-                Renewed <date from="1938-05-15">May 15</date> <date to="1938-11-15">- November 15 1938</date> 		115
+                				 <date when="1938-12-07">December 7</date>
+                Renewed <date from="1938-05-15" to="1938-11-15">May 15 - November 15 1938</date> 		115
                 						paid			 50
                 			paid <date when="1938-06-30">July 30</date> bal. due		 65
-                <date ana="#checkedOut" when="1938-07-20">July 20</date>	<bibl ana="#borrowedItem" corresp="mep:003916"><title>CRYSTAL CABINET	</title></bibl>				<date ana="#returned" when="1938-09-03">Sept 3</date>
-              <date ana="#checkedOut" when="1938-07-30">  July 30</date>	<bibl ana="#borrowedItem" corresp="mep:00j00j"><title>Essays Ancient and Modern, Eliot</title></bibl> <date ana="#checkedOut" when="1938-09-03">Sept 3</date>
-                    <bibl ana="#borrowedItem" corresp="mep:00jg7k"><title>Some Versions of Pastoral	</title></bibl>	<date ana="#checkedOut" when="1938-09-03">Sept 3</date>
-                    <bibl ana="#borrowedItem" corresp="mep:003c0f"><title>Richard Jeffries</title></bibl>				<date ana="#checkedOut" when="1938-09-03">Sept 3</date>
-                    <bibl ana="#borrowedItem" corresp="mep:00kb6d"><title>Life of Charles Lord Metcalfe	</title></bibl><date ana="#returned" when="1938-09-03">Sept 3</date>
-                    <date ana="#checkedOut" when="1938-10-20">Oct 20</date>	<bibl ana="#borrowedItem" corresp="mep:00889m"><title>God Without Thunder	</title></bibl>			<date ana="#returned" when="1938-09-03">Sept 3</date>
-                	sub ren Nov 15th - May 15th			115v
-                <date ana="#checkedOut" when="1939-01-09">Jan 9</date>	<bibl ana="#borrowedItem" corresp="mep:005s07"><title>Helen's Tower</title></bibl>					<date ana="#returned" when="1939-01-07">Jan 7</date>
-                	<date ana="#checkedOut" when="1939-01-17">17</date>	<bibl ana="#borrowedItem" corresp="mep:007s7w"><title>Age of Innocence</title></bibl>				<date ana="#returned" when="1939-01-20">Jan 20</date>
-                	<date ana="#checkedOut" when="1939-01-20">20</date>	<bibl ana="#borrowedItem" corresp="mep:007x89"><title>House of Mirth</title></bibl>					<date ana="#returned" when="1939-03-04">Mar. 4</date>
-               <date when="1939-03-01"> Mar</date> <unclear/> <bibl ana="#borrowedItem" corresp="mep:00kb7q"><title>Folklore of the Old Testament</title></bibl>  <date ana="#returned" when="1939-04-19"> April 19</date>
-                		<persName ref="gill.da">Mr. Gillie</persName> paid for Miss Ben Torim's 
+                			</note>
+               
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-07-20">July 20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:003916"><title>CRYSTAL CABINET</title></bibl>		
+                        <date ana="#returned" when="1938-09-03">Sept 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-07-30">July 30</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00j00j"><title>Essays Ancient and Modern </title>, <author>Eliot</author></bibl> 
+                        <date ana="#returned" when="1938-09-03">Sept 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-07-30"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00jg7k"><title>Some Versions of Pastoral</title></bibl>	
+                        <date ana="#returned" when="1938-09-03">Sept 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-07-30"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:003c0f"><title>Richard Jeffries</title></bibl>		
+                        <date ana="#returned" when="1938-09-03">Sept 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-07-30"></date>
+                        <bibl ana="#borrowedItem" corresp="mep:00kb6d"><title>Life of Charles Lord Metcalfe</title></bibl>
+                        <date ana="#returned" when="1938-09-03">Sept 3</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1938-10-20">Oct 20</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00889m"><title>God Without Thunder</title></bibl>	
+                        <date ana="#returned" when="1938-09-03">Sept 3</date>
+                    </ab>
+                    
+                	<note>sub ren <date from="1938-11-15" to="1938-05-15">Nov 15th - May 15th</date>			115v</note>
+                
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" when="1939-01-09">Jan 9</date>
+                       <bibl ana="#borrowedItem" corresp="mep:005s07"><title>Helen's Tower</title></bibl>		
+                       <date ana="#returned" when="1939-01-07">Jan 7</date>
+                   </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1939-01-17">17</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:007s7w"><title>Age of Innocence</title></bibl>	
+                        <date ana="#returned" when="1939-01-20">Jan 20</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1939-01-20">20</date>
+                        <bibl ana="#borrowedItem" corresp="mep:007x89"><title>House of Mirth</title></bibl>		
+                        <date ana="#returned" when="1939-03-04">Mar. 4</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                        <date ana="#checkedOut" when="1939-03-04"> Mar 4</date>  
+                        <bibl ana="#borrowedItem" corresp="mep:00kb7q"><title>Folklore of the Old Testament</title></bibl> 
+                        <date ana="#returned" when="1939-04-19"> April 19</date>
+                    </ab>
+                    
+                    <note>
+                        <persName ref="gill.da">Mr. Gillie</persName> paid for Miss <persName>Ben Torim</persName>'s 
+
                 		book not returned	105v	less dep 50
                 							 50
                 		also paid 7v fine	 55

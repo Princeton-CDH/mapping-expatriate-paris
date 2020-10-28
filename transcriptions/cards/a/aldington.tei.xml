@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader type="text">
     <fileDesc>
       <titleStmt>
@@ -40,6 +42,13 @@
     </profileDesc>
     <revisionDesc>
       <change who="#cwulfman" when="2015-10-05">First transcription.</change>
+      <change who="#elspeth" when="2017-05-14">
+      	Updated to comport with current encoding schema
+      	Removed "borrowedItem" tags since all books bought (or sold??)
+      	Left documentation regarding payment types, as potential model for further payment encoding
+      	
+      	Specified dates as "notBefore" 1928, the publication date of "Spider Boy"
+      </change>
     </revisionDesc>
   </teiHeader>
   <facsimile xml:base="pudl0123/825298/a/aldington/">
@@ -57,61 +66,45 @@
       <div type="card">
 	<div type="recto">
 	  <pb facs="#s1"/>
-	  <head>ALDINGTON <persName ref="#aldi.ri">Mr Richard Aldington</persName></head>
+	  <head>
+	  	<persName ref="#aldi.ri">ALDINGTON</persName>
+	  	<persName ref="#aldi.ri">Mr Richard Aldington</persName>
+	  </head>
 
 	  <note>(owes 25f to Lending Library</note>
+	  <note>Books left to be sold							Credit</note>
+	
 
-	  <table>
-	    <head>Books left to be sold</head>
-	    <row role="label" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"/>
-	      <cell role="data" rows="1" cols="1"/>
-	      <cell role="data" rows="1" cols="1">Credit</cell>
-	    </row>
+	  <bibl corresp="mep:00018f"><title>Spider Boy</title> <author>C. Van Vechten</author></bibl>
+	      
+	  <bibl corresp="mep:00019r"><title>Tree of Life</title> <author>J.G. Fletcher</author></bibl>
+	  	<note><measure type="credit" unit="francs" quantity="10">10</measure></note>
+	  <note><date notBefore="1928-11-10" notAfter="1941-11-10">Nov10</date></note>
+	      <bibl corresp="mep:000207"><title>Breakers of Granite</title><author> 〃</author></bibl>
+	      <note><measure type="credit" unit="francs" quantity="16.50">16.50</measure></note>
+	 
+	  <bibl corresp="mep:00021j"><title>Irradiations Sand and Spray</title> <author>〃</author></bibl>
+	      <note><measure type="credit" unit="francs" quantity="9">9</measure></note>
+	  
+	  <bibl corresp="mep:00022v"><title>Goblins and Pagodas</title><author> 〃</author></bibl>
+	      <note><measure type="credit" unit="francs" quantity="9">9</measure></note>
+	   
+	  <note><date notBefore="1928-11-16" notAfter="1928-11-16">Nov16</date></note>
+	      <bibl corresp="mep:000235"><title>Parables</title> <author>〃</author></bibl>
+	      <note><measure type="credit" unit="francs" quantity="10.5">10.50</measure></note>
+	
+	  <note>N</note>
+	      <bibl ana="#borrowedItem" corresp="mep:00024g"><title>Familiar Letters on Important Occasions</title> (<author>Richardson</author>)</bibl>
+	      
 
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"/>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00018f"><title>Spider Boy</title> <author>C. Van Vechten</author></bibl></cell>
-	      <cell role="data" rows="1" cols="1"/>
-	    </row>
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"/>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00019r"><title>Tree of Life</title> <author>J.G. Fletcher</author></bibl></cell>
-	      <cell role="data" rows="1" cols="1"><measure type="credit" unit="francs" quantity="10">10</measure></cell>
-	    </row>
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"><date when="1900-11-10">Nov10</date></cell>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000207"><title>Breakers of Granite</title><author> 〃</author></bibl></cell>
-	      <cell role="data" rows="1" cols="1"><measure type="credit" unit="francs" quantity="16.50">16.50</measure></cell>
-	    </row>
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"/>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00021j"><title>Irradiations Sand and Spray</title> <author>〃</author></bibl></cell>
-	      <cell role="data" rows="1" cols="1"><measure type="credit" unit="francs" quantity="9">9</measure></cell>
-	    </row>
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"/>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00022v"><title>Goblins and Pagodas</title><author> 〃</author></bibl></cell>
-	      <cell role="data" rows="1" cols="1"><measure type="credit" unit="francs" quantity="9">9</measure></cell>
-	    </row>
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1"><date when="1900-11-16">Nov16</date></cell>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:000235"><title>Parables</title> <author>〃</author></bibl></cell>
-	      <cell role="data" rows="1" cols="1">10.50</cell>
-	    </row>
-	    <row role="data" rows="1" cols="1">
-	      <cell role="data" rows="1" cols="1">N</cell>
-	      <cell role="data" rows="1" cols="1"><bibl ana="#borrowedItem" corresp="mep:00024g"><title>Familiar Letters on Important Occasions</title> (<author>Richardson</author>)</bibl></cell>
-	      <cell role="data" rows="1" cols="1"/>
-	    </row>
-
-	  </table>
-	</div>			<!--recto-->
+	
+	</div>			
 
 	<div type="verso">
 	  <pb facs="#s2"/>
-	</div>			<!--verso-->
-      </div> 			<!--card-->
+		<!-- verso blank-->
+	</div>			
+      </div> 		
     </body>
   </text>
 </TEI>

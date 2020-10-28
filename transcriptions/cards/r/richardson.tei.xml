@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -32,7 +34,8 @@
             <classCode scheme="http://vocab.getty.edu/aat/">300026802</classCode> <!-- library cards -->
 	  </textClass>
 	    <particDesc>
-	        <person role="cardholder" ana="#rich"><persName>Richards-Orpen</persName></person>
+	        <person role="cardholder" ana="#rich.ma"><persName>Marian Richardson</persName></person>
+	        <person role="cardholder" ana="#rich.mrs"><persName>Mrs Arthur Richardson</persName></person>
 	    </particDesc>
 	</profileDesc>
         <revisionDesc>
@@ -73,15 +76,20 @@
                 		<address><street>11 rue Froidevaux</street></address>
                 
                 </head>
-                <ab>
+                
                 			
-                			1	m	1	v				12
+                		<note>1	m	1	v				12
                 								Dep		20
-                								</ab><ab>
+                								</note>
                 								
                 
-                <date ana="#checkedOut" when="1924-08-30">Aug 30</date>	<bibl ana="#borrowedItem" corresp="mep:00b54q"><title>Chicago Poems</title></bibl>						p.c <date ana="#returned" when="1924-12-04">Dec 4</date>
-                											pc <date when="1924-01-23">Jan 23</date>	</ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1924-08-30">Aug 30</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00b54q"><title>Chicago Poems</title></bibl>
+                    <note>p.c <date when="1924-12-04">Dec 4</date></note>
+                    <note>pc <date when="1924-01-23">Jan 23</date></note>	
+                </ab>
+                  
      </div>  <div type="verso">         
                 <pb facs="#s2"/>
                 
@@ -90,20 +98,25 @@
              <div type="card">   <div type="recto"><pb facs="#s3"/>
         <head>        
                 <date when="1929-04-26">1929 Ap 26</date>		<persName>RICHARDSON</persName>
-                				<persName>Mrs A.W. Richardson</persName>
+                				<persName ref="#rich.mrs">Mrs A.W. Richardson</persName>
                 						<address><street>4 rue Leopold Robert</street></address>
                 	</head>					
                 						
                 				
-                		<ab>		
+                		<note>		
                 				1m	1vol			20
-                				Deposit				50</ab>
+                				Deposit				50</note>
                 
                 
-                <ab>
                 
-                <date ana="#checkedOut" when="1929-04-26">Ap 26</date>		<bibl ana="#borrowedItem" corresp="mep:00q22x"><title>Since Cezanne.</title></bibl>				<date ana="#returned" when="1929-06-01">June 1st</date>
-                				1 week .5f.</ab>
+                
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1929-04-26">Ap 26</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00q22x"><title>Since Cezanne.</title></bibl>
+                    <date ana="#returned" when="1929-06-01">June 1st</date>
+                </ab>
+                 
+                				<note>1 week .5f.</note>
                 </div>
             <div type="verso">    <pb facs="#s4"/>
                 
@@ -111,25 +124,36 @@
              </div>   </div>
             <div type="card">  <div type="recto">  <pb facs="#s5"/>
                 <head>
-                			<persName>RICHARDSON</persName>
+                    <persName ref="#rich.mrs">RICHARDSON</persName>
                 <date when="1929-02-22">1929
                 Feb 22</date>			<persName>Mrs Arthur Richardson</persName>
                 				<address><street>4 rue Léopold Robert</street></address>
                 				
                 				</head>
-                			<ab>	
                 				
-                				3 mos	1v				60
+                				
+                		<note>	3 mos	1v				60
                 						dep				50
-                	= to be kept toward price of book (87.50)
-                	</ab><ab>
-            	<date ana="#checkedOut" when="1929-02-22">Feb 22</date>		<bibl ana="#borrowedItem" corresp="mep:005n4c"><title>Letters of Katherine Mansfield</title> <biblScope unit="volume" from="1" to="1">v 1</biblScope></bibl>	<date ana="#returned" when="1929-02-28">Febr. 28.</date>
-            		<date ana="#checkedOut" when="1929-02-28">28</date>		<bibl ana="#borrowedItem" corresp="mep:00s40b"><title>Spinoza</title></bibl>		<date ana="#returned" when="1929-03-28">Mch 28th</date> .c
-            					<date when="1929-04-11">Ap. 11</date> p.c. <date when="1929-05-02">May 2</date> p.c.
-            								<date when="1929-06-15">June 15</date> p.c.
-            					= lost
-            							owes 37.¢50.</ab>
-                </div>
+                	= to be kept toward price of book (87.50)</note>
+                	
+            	<ab ana="#borrowingEvent">
+            	    <date ana="#checkedOut" when="1929-02-22">Feb 22</date>
+            	    <bibl ana="#borrowedItem" corresp="mep:005n4c"><title>Letters of Katherine Mansfield</title> 
+            	        <biblScope unit="volume" from="1" to="1">v 1</biblScope></bibl>
+            	    <date ana="#returned" when="1929-02-28">Febr. 28.</date>
+            	</ab>
+                
+            		<ab ana="#borrowingEvent">
+            		    <date ana="#checkedOut" when="1929-02-28">28</date>
+            		    <bibl ana="#borrowedItem" corresp="mep:00s40b"><title>Spinoza</title></bibl>	
+            		    <note><date when="1929-03-28">Mch 28th</date> .c
+            		        <date when="1929-04-11">Ap. 11</date> p.c. 
+            		        <date when="1929-05-02">May 2</date> p.c.
+            		        <date when="1929-06-15">June 15</date> p.c.
+            		        = lost
+            		        owes 37.¢50.</note>
+            		</ab>
+            </div>
            <div type="verso">     <pb facs="#s6"/>
                 
                 <!-- Verso Blank -->

@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 <teiHeader type="text">
   <fileDesc>
     <titleStmt>
@@ -162,7 +164,7 @@
 
 	<ab ana="#borrowingEvent">
 	  <date ana="#checkedOut" when="1937-03-31">31.</date>
-	  <bibl ana="#borrowedItem" corresp= "mep:00kc70">
+	  <bibl ana="#borrowedItem" corresp="mep:00kc70">
           <title>State Versus Elinor Norton</title></bibl>
 	  <date ana="#returned" when="1937-04-08">April 8</date>
 	</ab>
@@ -219,7 +221,7 @@
 	  <date ana="#returned" when="1937-05-10"> May 10.</date>
 	</ab>
         <ab ana="#borrowingEvent">
-          <date ana="#checkedOut" when="1937-05-04"></date>
+          <date ana="#checkedOut" when="1937-05-04"/>
           <bibl ana="#borrowedItem" corresp="mep:004t7f">
           <title>Spring Sowing </title></bibl>
           <date ana="#returned" when="1937-05-12"> May. 12.</date>
@@ -231,7 +233,8 @@
           <title> British Agent.</title></bibl>
 	  <date ana="#returned" when="1937-05-14"> May 14.</date>
 	</ab>
-	<bibl><title>Light in August</title></bibl>
+
+        <note>  <bibl corresp="mep:00217m"><title>Light in August</title></bibl></note>
       </div>
       <div type="verso">
         <pb facs="#s4"/>

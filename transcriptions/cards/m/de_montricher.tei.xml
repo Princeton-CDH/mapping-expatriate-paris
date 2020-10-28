@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
 <teiHeader type="text">
   <fileDesc>
     <titleStmt>
@@ -49,6 +51,17 @@
 
       </ab>
     </change>
+    <change who="#i-davis">
+      <ab>
+        Order (1928-1938):
+        s3,
+        s4,
+        s5,
+        s6,
+        s1,
+        s2
+      </ab>
+    </change>
   </revisionDesc>
 </teiHeader>
 <facsimile xml:base="pudl0123/825298/m/de_montricher/">
@@ -80,7 +93,7 @@
   <body>
     <div type="card">
       <div type="recto">
-	<pb facs="#s3"/>
+	<pb facs="#s1"/>
 	<head>
 	  <date when="1938">1938</date>
 	  <persName ref="#mont.ce">DE MONTRICHER</persName>
@@ -119,14 +132,15 @@
       </div>
       <div type="verso">
         <pb facs="#s2"/>
-      <!-- verso blank --></div>
+      <!-- verso blank -->
+      </div>
     </div>
 
     <div type="card">
       <div type="recto">
-	<pb facs="#s3"/>
+	     <pb facs="#s3"/>
 	<head>
-	  <date when="1928-07-08">1928 Jul 8</date>
+	  <date when="1928-10-08">1928 Oct 8</date>
           <persName ref="#mont.ce">DE MONTRICHER</persName>
 	  <persName ref="#mont.ce">De Montricher - Mlle. C.</persName>            p.1
 	  <persName ref="#mont.ce">Mlle Cecile de Montricher</persName>
@@ -206,7 +220,7 @@
     </ab>
     <ab ana="#borrowingEvent">
       <date ana="#checkedOut" when="1929-01-23">23</date>
-      <bibl ana="#borrowedItem"  corresp="mep:005k7r"><title>Napoleon of Notting Hill</title></bibl>
+      <bibl ana="#borrowedItem" corresp="mep:005k7r"><title>Napoleon of Notting Hill</title></bibl>
       <date ana="#returned" when="1929-02-15">Feb 15</date>
     </ab>
     <ab ana="#borrowingEvent">
@@ -221,7 +235,7 @@
     </ab>
     <ab ana="#borrowingEvent">
       <date ana="#checkedOut" when="1929-03-12">Mar 12.</date>
-      <bibl ana="#borrowedItem"  corresp="mep:001n05"><title> Swan Song </title></bibl>
+      <bibl ana="#borrowedItem" corresp="mep:001n05"><title> Swan Song </title></bibl>
       <date ana="#returned" when="1929-03-15">- 15</date>
     </ab>
     <ab ana="#borrowingEvent">
@@ -250,7 +264,8 @@
 
   </div>
 
-  <div type="verso"> <pb facs="#s4"/>
+  <div type="verso"> 
+    <pb facs="#s4"/>
   <head><date when="1929">1929</date> <persName>DEMONTRICHER</persName>                                           <note>p. 2</note>
   <address><street>31 Bd Arago</street></address></head>
 
@@ -323,7 +338,7 @@
   </ab>
   <ab ana="#borrowingEvent">
     <date ana="#checkedOut" when="1929-10-10">"  10</date>
-    <bibl ana="#borrowedItem"  corresp="mep:005m9n"><title>Books &amp; Characters</title></bibl>
+    <bibl ana="#borrowedItem" corresp="mep:005m9n"><title>Books &amp; Characters</title></bibl>
     <date ana="#returned" when="1929-10-23">"    23.</date>
   </ab>
   <note>
@@ -382,7 +397,9 @@
   <date ana="#returned" when="1930-01-15">Jan 15</date></ab>
 
 </div>
-<div type="card"> <div type="recto"><pb facs="#s5"/>
+<div type="card">
+  <div type="recto">
+    <pb facs="#s5"/>
 <head><persName ref="#mont.ce">DEMONTRICHER</persName>                                          p.3</head>
 <note><date>Feb 5</date></note>
 <ab ana="#borrowingEvent">
@@ -421,7 +438,7 @@
   <date ana="#returned" when="1930-03-17">Mch 17</date>
 </ab>
 <ab ana="#borrowingEvent">
-  <date ana="#checkedOut" when="1930-02-05"></date>
+  <date ana="#checkedOut" when="1930-02-05"/>
   <bibl ana="#borrowedItem" corresp="mep:005p1q"><title>Hey Rub a dub Dub</title></bibl>
   <date ana="#returned" when="1930-02-17">Feb. 17</date>
 </ab>
@@ -468,13 +485,14 @@
 </ab>
 
 <note> <date when="1930-08-22">Aug 22</date>      S.R. to <date when="1930-10-23">Oct 23d.</date> = 80f. 6m 1 vol.</note>
+    
 <ab ana="#borrowingEvent">
   <date ana="#checkedOut" when="1930-08-22">Aug 22</date>
   <bibl ana="#borrowedItem" corresp="mep:005p68"><title>Moll Flanders</title></bibl>       <note>to be kept longer</note>
   <date ana="#returned" when="1930-11-03">Nov. 3</date>
 </ab>
 <ab ana="#borrowingEvent">
-  <date ana="#checkedOut" when="1930-11-03"> Nov 3</date>
+  <date ana="#checkedOut" when="1930-11-03">Nov 3</date>
   <bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point Counterpoint</title> in <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>
   <date ana="#returned" when="1930-12-02">Dec 2</date>
 </ab>
@@ -506,12 +524,14 @@
 <ab ana="#borrowingEvent">
   <date ana="#checkedOut" when="1931-01-30">30</date>
   <bibl ana="#borrowedItem" corresp="mep:002m04"><title>Sun also Rises</title></bibl>
-  <date ana="#returned" when="1930-02-02">Feb. 2nd</date>
+  <date ana="#returned" when="1931-02-02">Feb. 2nd</date>
 </ab>
 
 <note>return <unclear/> back</note>
 </div>
-<div type="verso"> <pb facs="#s6"/>
+  
+<div type="verso">
+  <pb facs="#s6"/>
 <head><persName ref="#mont.ce">DE MONTRICHER</persName>                         p. 4</head>
 
 <note>Subscription?     = to <date when="1931-01-23">January 23d 1931</date></note>
@@ -571,7 +591,7 @@
   <date ana="#returned" when="1931-05-04">May 4</date>
 </ab>
 <ab ana="#borrowingEvent">
-  <date ana="#checkedOut" when="1931-05-01"></date>
+  <date ana="#checkedOut" when="1931-05-01"/>
   <bibl ana="#borrowedItem" corresp="mep:000q6b"><title>"</title>
   <author>Rebecca West</author></bibl>
   <date ana="#returned" when="1931-05-06">May 6</date>
@@ -642,7 +662,6 @@
 </div>
 </div>
 
-</div>
 </body>
 </text>
 </TEI>

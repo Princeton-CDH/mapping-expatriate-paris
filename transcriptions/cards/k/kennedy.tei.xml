@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -68,54 +70,286 @@
                				<persName ref="#kenn.ro">Mr Robert Kennedy</persName> c/o <persName ref="#chil.be">Mrs Child</persName>
                					<address><street>7 rue Servandoni</street></address>
                			<address><street>6 Place de l'Odéon</street> <settlement>- Paris</settlement><district> 6.</district></address></head>
-               			<ab>
-               			Last card = subs expired + D. Refunded
-               				1 year 1 vol			240</ab>
-               	<ab>
-               	<date ana="#checkedOut" when="1930-12-22">Dec 22d</date>	<bibl ana="#borrowedItem" corresp="mep:000q23"><title>Note in Music</title></bibl>					<date ana="#returned" when="1930-12-29">Dec 29</date>
-               	<date ana="#checkedOut" when="1930-12-29">"	29</date>	<bibl ana="#borrowedItem" corresp="mep:00kt7k"><title>Wooden Pegasus</title></bibl>					<date ana="#returned" when="1931-01-03">Jan 3</date>
-               	<date ana="#checkedOut" when="1931-01-03">Jan 3</date>	<bibl ana="#borrowedItem" corresp="mep:00kt8w"><title>Conquest of Happiness</title></bibl>			<date ana="#returned" when="1931-01-14">Jan 14</date>
-               	<date ana="#checkedOut" when="1931-01-14">"	14</date>	<bibl ana="#borrowedItem" corresp="mep:00kt96"><title>Oedipus, etc</title></bibl> ren- ren			<date ana="#returned" when="1931-03-05">Mch 5</date>
-               	<date ana="#checkedOut" when="1931-01-14">"	14</date>	<bibl ana="#borrowedItem"><title><unclear/></title></bibl>			 ren - ren			<date ana="#returned" when="1931-03-05">Mch 5.</date>
-               	<date ana="#checkedOut" when="1931-03-05">Mch 5</date>	<bibl ana="#borrowedItem" corresp="mep:00kv0p"><title>Pleasure of Poetry.</title></bibl>				<date ana="#returned" when="1931-03-18">"	18</date>
-               	<date ana="#checkedOut" when="1931-03-18">"	18</date>	<bibl ana="#borrowedItem" corresp="mep:00418d"><title>On Forsyte Change</title></bibl>				<date ana="#returned" when="1931-03-26">"	26</date>
-               	<date ana="#checkedOut" when="1931-03-26">"	26</date>	<bibl ana="#borrowedItem" corresp="mep:00kv10"><title>Jew in Love.</title></bibl>					<date ana="#returned" when="1931-04-08">April 8.</date>
-               	<date ana="#checkedOut" when="1931-04-08">April 8</date>	<bibl ana="#borrowedItem" corresp="mep:00kv29"><title>Architecture of Ancient Greece</title></bibl>	<date ana="#returned" when="1931-05-09">May 9.</date>
-               					(to be kept longer if neces.)____
-               	<date ana="#checkedOut" when="1931-05-09">May 9.</date>	<bibl ana="#borrowedItem" corresp="mep:003r0g"><title>Deepening Stream</title></bibl>				<date ana="#returned" when="1931-05-28">May 28</date>
-               	<date ana="#checkedOut" when="1931-05-28">May 28</date>	<bibl ana="#borrowedItem" corresp="mep:00kv3m"><title>Maurityius Case.</title></bibl> p.c. <date ana="#returned" when="1931-09-02">Sept 2</date>	<date when="1931-10-09">Oct 9</date>
-               			hotel says gone to USA will return
-               	<date when="1931-10-09">Oct 9</date>	in <date when="1931-10">October</date> address illegible
+               			
+               			<note>Last card = subs expired + D. Refunded
+               				1 year 1 vol			240</note>
+               	
+               <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1930-12-22">Dec 22d</date>	
+               	<bibl ana="#borrowedItem" corresp="mep:000q23">
+               		<title>Note in Music</title></bibl>					
+               	<date ana="#returned" when="1930-12-29">Dec 29</date>
+               </ab>
+            	
+            	
+               <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1930-12-29">"	29</date>	
+               	<bibl ana="#borrowedItem" corresp="mep:00kt7k">
+               		<title>Wooden Pegasus</title></bibl>					
+               	<date ana="#returned" when="1931-01-03">Jan 3</date>
+               </ab>
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-01-03">Jan 3</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00kt8w">
+               			<title>Conquest of Happiness</title></bibl>			
+               		<date ana="#returned" when="1931-01-14">Jan 14</date>
+               	</ab>
+            	
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-01-14">"	14</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00kt96">
+               			<title>Oedipus, etc</title></bibl> 
+               		<note>ren- ren</note>			
+               		<date ana="#returned" when="1931-03-05">Mch 5</date>
+               	</ab>
+            	
+             <ab ana="#borrowingEvent">
+             	<date ana="#checkedOut" when="1931-01-14">"	14</date>	
+             	<bibl ana="#borrowedItem">
+             		<title><unclear/></title></bibl>			
+             	<note>ren - ren	</note>		
+             	<date ana="#returned" when="1931-03-05">Mch 5.</date>
+             </ab>
+            	
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-03-05">Mch 5</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00kv0p">
+               			<title>Pleasure of Poetry.</title></bibl>				
+               		<date ana="#returned" when="1931-03-18">"	18</date>
+               	</ab>
+            	
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-03-18">"	18</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00418d">
+               			<title>On Forsyte Change</title></bibl>				
+               		<date ana="#returned" when="1931-03-26">"	26</date>
+               	</ab>
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-03-26">"	26</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00kv10">
+               			<title>Jew in Love.</title></bibl>					
+               		<date ana="#returned" when="1931-04-08">April 8.</date>
+               	</ab>
+            	
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-04-08">April 8</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00kv29">
+               			<title>Architecture of Ancient Greece</title></bibl>	
+               		<date ana="#returned" when="1931-05-09">May 9.</date>
+               		<note>(to be kept longer if neces.)____</note>
+               	</ab>
+            	
+               					
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-05-09">May 9.</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:003r0g">
+               			<title>Deepening Stream</title></bibl>				
+               		<date ana="#returned" when="1931-05-28">May 28</date>
+               	</ab>
+            	
+            	
+              <ab ana="#borrowingEvent">
+              	<date ana="#checkedOut" when="1931-05-28">May 28</date>	
+              	<bibl ana="#borrowedItem" corresp="mep:00kv3m">
+              		<title>Maurityius Case.</title></bibl> 
+              	<note><del>p.c.</del></note> 
+              	<note><del><date when="1931-09-02">Sept 2</date>	</del></note>
+              	<date ana="#returned" when="1931-10-09">Oct 9</date>
+              </ab>
+            	
+            	
+               			<note>hotel says gone to USA will return</note>
+               			
+               			
+               <note>	<date when="1931-10-09">Oct 9</date>	in <date when="1931-10">October</date> address illegible
                			annisquane, (?) Mass.
-               			annisquane
-               	<date ana="#checkedOut" when="1931-10-09">Oct 9</date>	<bibl ana="#borrowedItem" corresp="mep:004g52"><title>The Waves</title></bibl>						<date ana="#returned" when="1931-10-15">Oct 15</date>
-               	<date ana="#checkedOut" when="1931-10-19">Oct 19</date>	<bibl ana="#borrowedItem" corresp="mep:00572f"><title>Sober Truth</title></bibl>						<date ana="#returned" when="1931-11-16">Nov 16</date>
-               	<date ana="#checkedOut" when="1931-11-16">Nov 16</date>	<bibl ana="#borrowedItem" corresp="mep:00218x"><title>Sanctuary</title></bibl>						<date ana="#returned" when="1931-11-26">Nov 26</date>
-               		<date ana="#checkedOut" when="1931-11-26">26</date>	<bibl ana="#borrowedItem" corresp="mep:000k7j"><title>Point counterpoint</title> <biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>		<date ana="#returned" when="1931-12-04">Dec. 4</date>
-               	<date ana="#checkedOut" when="1931-12-01">Dec 1</date>	<bibl ana="#borrowedItem" corresp="mep:00210f"><title>Strange Interlude</title></bibl>				<date ana="#returned" when="1931-12-10">Dec. 10</date>
-               		extra book Pd 16 frs.</ab>
+               			annisquane</note>
+               			
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-10-09">Oct 9</date>
+               		<bibl ana="#borrowedItem" corresp="mep:004g52">
+               			<title>The Waves</title></bibl>						
+               		<date ana="#returned" when="1931-10-15">Oct 15</date>
+               	</ab>
+            	
+            	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-10-19">Oct 19</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00572f">
+               			<title>Sober Truth</title></bibl>						
+               		<date ana="#returned" when="1931-11-16">Nov 16</date>
+               	</ab>
+            	
+            	
+              <ab ana="#borrowingEvent">
+              	<date ana="#checkedOut" when="1931-11-16">Nov 16</date>
+              	<bibl ana="#borrowedItem" corresp="mep:00218x">
+              		<title>Sanctuary</title></bibl>						
+              	<date ana="#returned" when="1931-11-26">Nov 26</date>
+              </ab>
+            	
+            	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1931-11-26">26</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:000k7j">
+               				<title>Point counterpoint</title> 
+               				<biblScope unit="volume" from="1" to="2">2 vols</biblScope></bibl>		
+               			<date ana="#returned" when="1931-12-04">Dec. 4</date>
+               		</ab>
+            	
+            	
+               <ab ana="#borrowingEvent">
+               	<date ana="#checkedOut" when="1931-12-01">Dec 1</date>	
+               	<bibl ana="#borrowedItem" corresp="mep:00210f">
+               		<title>Strange Interlude</title></bibl>				
+               	<date ana="#returned" when="1931-12-10">Dec. 10</date>
+               </ab>
+            	
+               		<note>extra book Pd 16 frs.</note>
               </div> 	
-              <div type="verso"> 	<pb facs="#s2"/><ab>
-               	<date ana="#checkedOut" when="1931-12-11">Dec 11</date>	<bibl ana="#borrowedItem" corresp="mep:00g11n"><title>These Thirteen</title></bibl>					<date ana="#returned" when="1931-12-21">Dec. 21</date>
-               		<date ana="#checkedOut" when="1931-12-21">21</date>	<bibl ana="#borrowedItem" corresp="mep:00kv4x"><title>Golden Age of the Medici</title></bibl>		<date ana="#returned" when="1932-01-04">Jan. 4</date>
-               	<date ana="#checkedOut" when="1932-01-04">Jan. 4</date>	<bibl ana="#borrowedItem" corresp="mep:00hw0g"><title>Wild Duck</title></bibl>						<date ana="#returned" when="1932-01-06">Jan 6</date>
-               		<date ana="#checkedOut" when="1932-01-06">6</date>	<bibl ana="#borrowedItem" corresp="mep:00kv57"><title>Anatol</title></bibl>							<date ana="#checkedOut" when="1932-01-14">Jan 14</date>
-               			<bibl ana="#borrowedItem" corresp="mep:000s1b"><title>Plays</title> <author>Strindberg</author>.</bibl> subsc to <date ana="#returned" when="1932-03-22">March 22 1932</date>
-               					3rd series	3 vols		
-               		p.c. <date when="1932-02-11">Feb 11</date> return <date when="1932-02-18">Feb 18</date>
-               	<date ana="#checkedOut" when="1932-01-14">Jan 14</date>	<bibl ana="#borrowedItem" corresp="mep:004j6x"><title>Mourning Becomes Electra</title></bibl>		<date ana="#checkedOut" when="1932-01-16">Jan. 16</date>
-               			<bibl ana="#borrowedItem" corresp="mep:00kv6j"><title>Prose Drammas</title></bibl>	p.c. <date ana="#returned" when="1932-02-11">Feb 11</date>		<date when="1932-02-18">Feb. 18</date>
-               		<date ana="#checkedOut" when="1932-01-23">23</date>	<bibl ana="#borrowedItem" corresp="mep:00kv7v"><title>Amok</title></bibl>							<date ana="#checkedOut" when="1932-02-24">Feb 24</date>
-               			<bibl ana="#borrowedItem" corresp="mep:008w88"><title>Penelope</title></bibl>						<date ana="#checkedOut" when="1932-02-29">Feb 29</date>
-               			<bibl ana="#borrowedItem" corresp="mep:00kv85"><title>Aphrodite in Aulis</title></bibl>				<date ana="#returned" when="1932-02-29">Feb 29</date>
-               	<date ana="#checkedOut" when="1932-02-29">Feb 29</date>	<bibl ana="#borrowedItem" corresp="mep:007x9m"><title>Greek Studies</title></bibl>					<date ana="#returned" when="1932-03-17">March 17</date>
-               	<date ana="#checkedOut" when="1932-03-01">March 1</date>	<bibl ana="#borrowedItem" corresp="mep:00kv9g"><title>Classical Dictionary</title> <author>Lempriere</author></bibl>	<date ana="#returned" when="1932-03-17">March 17</date>
-               		<date ana="#checkedOut" when="1932-03-17">17</date>	<bibl ana="#borrowedItem" corresp="mep:00hp6p"><title>How to be Happy though Human</title></bibl>	<date ana="#returned" when="1932-03-23">March 23</date>
-               		<date ana="#checkedOut" when="1932-03-17">17</date>	<bibl ana="#borrowedItem" corresp="mep:004f8q"><title>Murder in Four Degrees</title></bibl>			<date ana="#returned" when="1932-03-21">March 21</date>
-               		<date ana="#checkedOut" when="1932-03-17">17</date>	<bibl ana="#borrowedItem" corresp="mep:006s6b"><title>Alice in Wonderland</title></bibl>				<date ana="#returned" when="1932-03-21">March 21</date>
-               		<date ana="#checkedOut" when="1932-03-21">21</date>	<bibl ana="#borrowedItem" corresp="mep:00h62k"><title>Odyssey</title></bibl>.						<date ana="#returned" when="1932-03-23">March 23</date>
-               		<date ana="#checkedOut" when="1932-03-21">21</date>	<bibl ana="#borrowedItem" corresp="mep:00j91b"><title>Professor's House</title></bibl>				<date ana="#returned" when="1932-03-23">March 23</date></ab>
-               		
+              <div type="verso"> 	<pb facs="#s2"/>
+              	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1931-12-11">Dec 11</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00g11n">
+               			<title>These Thirteen</title></bibl>					
+               		<date ana="#returned" when="1931-12-21">Dec. 21</date>
+               	</ab>
+              	
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1931-12-21">21</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:00kv4x">
+               				<title>Golden Age of the Medici</title></bibl>	
+               			<date ana="#returned" when="1932-01-04">Jan. 4</date>
+               		</ab>
+              	
+              	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1932-01-04">Jan. 4</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00hw0g">
+               			<title>Wild Duck</title></bibl>						
+               		<date ana="#returned" when="1932-01-06">Jan 6</date>
+               	</ab>
+              	
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-01-06">6</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:00kv57">
+               				<title>Anatol</title></bibl>							
+               			<date ana="#returned" when="1932-01-14">Jan 14</date>
+               		</ab>
+              	
+              	<ab ana="#borrowingEvent">
+              		<date ana="#checkedOut" when="1932-01-06"></date>	
+              		<bibl ana="#borrowedItem" corresp="mep:000s1b">
+              			<title>Plays</title> <author>Strindberg</author>.<series>3rd series</series> </bibl> 
+              		<note> return <date when="1932-02-18">Feb 18</date>	</note>	
+              	</ab>
+              	
+              	<note>subsc to <date  when="1932-03-22">March 22 1932</date>3 vols</note>
+              	
+              	
+               					
+               		<note>p.c. <date when="1932-02-11">Feb 11</date></note>
+              	
+              <ab ana="#borrowingEvent">
+              	<date ana="#checkedOut" when="1932-01-14">Jan 14</date>	
+              	<bibl ana="#borrowedItem" corresp="mep:004j6x">
+              		<title>Mourning Becomes Electra</title></bibl>		
+              	<date ana="#returned" when="1932-01-16">Jan. 16</date>
+              </ab>
+              	
+              	<ab ana="#borrowingEvent">
+              		<date ana="#checkedOut" when="1932-01-14"></date>
+              		<bibl ana="#borrowedItem" corresp="mep:00kv6j">
+              			<title>Prose Drammas</title></bibl>	
+              		<note>p.c. <date when="1932-02-11">Feb 11</date>	</note>	
+              		<date ana="#returned" when="1932-02-18">Feb. 18</date>
+              	</ab>
+              	
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-01-23">23</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:00kv7v">
+               				<title>Amok</title></bibl>							
+               			<date ana="#returned" when="1932-02-24">Feb 24</date>
+               		</ab>
+              	
+              	<ab ana="#borrowingEvent">
+              		<date ana="#checkedOut" when="1932-01-23"></date>	
+              		<bibl ana="#borrowedItem" corresp="mep:008w88">
+              			<title>Penelope</title></bibl>						
+              		<date ana="#returned" when="1932-02-29">Feb 29</date>
+              	</ab>
+              	
+              	<ab ana="#borrowingEvent">
+              		<date ana="#checkedOut" when="1932-01-23"></date>	
+              		<bibl ana="#borrowedItem" corresp="mep:00kv85">
+              			<title>Aphrodite in Aulis</title></bibl>			
+              		<date ana="#returned" when="1932-02-29">Feb 29</date>
+              	</ab>
+              	
+              	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1932-02-29">Feb 29</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:007x9m">
+               			<title>Greek Studies</title></bibl>					
+               		<date ana="#returned" when="1932-03-17">March 17</date>
+               	</ab>
+              	
+              	
+               	<ab ana="#borrowingEvent">
+               		<date ana="#checkedOut" when="1932-03-01">March 1</date>	
+               		<bibl ana="#borrowedItem" corresp="mep:00kv9g">
+               			<title>Classical Dictionary</title> 
+               			<author>Lempriere</author></bibl>	
+               		<date ana="#returned" when="1932-03-17">March 17</date>
+               	</ab>
+              	
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-03-17">17</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:00hp6p">
+               				<title>How to be Happy though Human</title></bibl>	
+               			<date ana="#returned" when="1932-03-23">March 23</date>
+               		</ab>
+              	
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-03-17">17</date>
+               			<bibl ana="#borrowedItem" corresp="mep:004f8q">
+               				<title>Murder in Four Degrees</title></bibl>			
+               			<date ana="#returned" when="1932-03-21">March 21</date>
+               		</ab>
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-03-17">17</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:006s6b">
+               				<title>Alice in Wonderland</title></bibl>				
+               			<date ana="#returned" when="1932-03-21">March 21</date>
+               		</ab>
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-03-21">21</date>
+               			<bibl ana="#borrowedItem" corresp="mep:00h62k">
+               				<title>Odyssey</title></bibl>.					
+               			<date ana="#returned" when="1932-03-23">March 23</date>
+               		</ab>
+              	
+               		<ab ana="#borrowingEvent">
+               			<date ana="#checkedOut" when="1932-03-21">21</date>	
+               			<bibl ana="#borrowedItem" corresp="mep:00j91b">
+               				<title>Professor's House</title></bibl>				
+               			<date ana="#returned" when="1932-03-23">March 23</date>
+               		</ab>
+              	
                	
               </div> 	</div>
             

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader type="text">
     <fileDesc>
@@ -50,11 +49,13 @@
           <unclear/> Jan 4 = "Fuet"?
           <unclear/> Feb 18 = "Tooshey's"?
           <unclear/> Feb 18 = "Lune"?
-
-
-
         </ab>
       </change>
+    	<change who="#i-davis">
+    		<ab>
+    			cards are in order
+    		</ab>
+    	</change>
     </revisionDesc>
   </teiHeader>
   <facsimile xml:base="pudl0123/825298/l/de_lanux/">
@@ -102,7 +103,7 @@
 
 
         <ab ana="#borrowingEvent">
-          <date ana="#checkedOut" when="1923-10-20"></date>
+          <date ana="#checkedOut" when="1923-10-20"/>
           <bibl ana="#borrowedItem" corresp="mep:00161w">
           <title>Jacob's Room</title></bibl>
           <date ana="#returned" when="1923-10-30">" "</date>
@@ -113,15 +114,18 @@
           <date ana="#checkedOut" when="1923-10-30">Oct 30</date>
           <bibl ana="#borrowedItem" corresp="mep:00cf2j">
           <title>Broom</title></bibl>
+        	<date ana="#returned" when="1923-10-30"></date>
         </ab>
 
         <ab><del><bibl corresp="mep:00cf2j"><title>Broom</title></bibl></del></ab>
 
 
         <ab ana="#borrowingEvent">
+        	<date ana="#checkedOut" when="1923-10-30"></date>
           <bibl ana="#borrowedItem" corresp="mep:00m657">
           <title>Secession</title></bibl>
           <note>on <persName>Mrs Ford</persName>'s card</note>
+        	<date ana="#returned" when="1923-10-30"></date>
         </ab>
 
 
@@ -129,6 +133,7 @@
         <ab><del><bibl corresp="mep:000r12"><title>Pointed Roofs</title></bibl> </del></ab>
 
         <ab ana="#borrowingEvent">
+        	<date ana="#checkedOut" when="1923-10-30"></date>
           <bibl ana="#borrowedItem" corresp="mep:00f33k">
           <title>Ford's plays</title></bibl>
           <date ana="#returned" when="1923-03">March</date>
@@ -136,11 +141,13 @@
 
 
 
-        <note>? <date when="1923-11-07">Nov. 7</date>
-        brought back <bibl corresp="mep:00167r"><title>Night and Day</title></bibl>
-        <date when="1923-11-07">Nov. 7</date></note>
-
-
+       <ab ana="#borrowingEvent">
+       	? 
+       	brought back <bibl ana="#borrowedItem" corresp="mep:00167r"><title>Night and Day</title></bibl>
+       	<date ana="#returned" when="1923-11-07">Nov. 7</date>
+       </ab>
+        	
+        	<note><date when="1923-11-07">Nov. 7</date></note>
 
         <ab>
           <date when="1924-01-26">Jan 26</date>
@@ -160,9 +167,13 @@
 
 
         </div>
-        <div type="verso"> <pb facs="#s2"/>
-        <!-- verso blank --></div>
+        <div type="verso"> 
+        	<pb facs="#s2"/>
+        <!-- verso blank -->
+        </div>
       </div>
+    	
+    	
       <div type="card">
 	<div type="recto">
 
@@ -268,7 +279,7 @@
 	  </ab>
 
 
-	  <note> <date ana="#checkedOut" when="1925-12-11">Dec 11</date>
+	  <note> <date when="1925-12-11">Dec 11</date>
 	  <del><bibl ana="#borrowedItem" corresp="mep:00939g">(<author>J Beasley</author>)
 	  <title>my first 20 years</title>.</bibl></del>
 	  ----- </note>
@@ -290,7 +301,7 @@
 
 
 	  <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-03-03"></date>
+            <date ana="#checkedOut" when="1926-03-03"/>
             <bibl ana="#borrowedItem" corresp="mep:00824d">
             <title>In the American grain</title></bibl>
             <date ana="#returned" when="1926-05-27">May 27</date>
@@ -306,16 +317,16 @@
 	  </ab>
 
 	  <ab ana="#borrowingEvent">
-            <date ana="#checkedOut" when="1926-03-06"></date>
+            <date ana="#checkedOut" when="1926-03-06"/>
             <bibl ana="#borrowedItem" corresp="mep:00w280">
             <title> The Quarter in 2.</title></bibl>
             <date ana="#returned" when="1926-07-18">" 18</date>
 	  </ab>
-
-
-
+		
 	</div>
-	<div type="verso"> <pb facs="#s4"/>
+      	
+	<div type="verso"> 
+		<pb facs="#s4"/>
 
 
 	<ab ana="#borrowingEvent">
@@ -345,7 +356,7 @@
 
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-03-15"></date>
+	  <date ana="#checkedOut" when="1926-03-15"/>
 	  <bibl ana="#borrowedItem" corresp="mep:00m75h">
             <title>The Navire d'argent</title>\
 	  <biblScope unit="issue">January</biblScope></bibl>
@@ -354,15 +365,15 @@
 
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-03-15"></date>
+	  <date ana="#checkedOut" when="1926-03-15"/>
 	  <bibl ana="#borrowedItem" corresp="mep:00h80h">
 	  <title>Great American Novel</title></bibl>
-	  <note><date when="1926-09-29">sept.29</date>
-	  .h.c given</note>
+	  <note><date when="1926-09-29">sept.29</date>.h.c</note> 
+		<note>given</note>
 	</ab>
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-03-15"></date>
+	  <date ana="#checkedOut" when="1926-03-15"/>
 	  , <bibl ana="#borrowedItem" corresp="mep:00h880">
 	  <title>Explorations</title></bibl>.
 	  <date ana="#returned" when="1926-03-23">Mch 23</date>
@@ -370,14 +381,14 @@
 
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-03-15"></date>
+	  <date ana="#checkedOut" when="1926-03-15"/>
 	  , <bibl ana="#borrowedItem" corresp="mep:00m685">
 	  <title>Companion Volume</title></bibl>
 	  <date ana="#returned" when="1926-03-23">Mch 23</date>
 	</ab>
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-03-15"></date>
+	  <date ana="#checkedOut" when="1926-03-15"/>
 	  <bibl ana="#borrowedItem" corresp="mep:009474">
 	  <title>Distinguished Air</title></bibl>
 	  <date ana="#returned" when="1926-03-23">M 23</date>
@@ -398,7 +409,7 @@
 	<note>Mr D.</note>
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-04-06"></date>
+	  <date ana="#checkedOut" when="1926-04-06"/>
 	  <bibl ana="#borrowedItem" corresp="mep:00m76t">
 	  <title>Shakespeare Dowden Primer</title></bibl>
 	  <note>B.B.</note>
@@ -407,15 +418,15 @@
 
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-04-06"></date>
+	  <date ana="#checkedOut" when="1926-04-06"/>
 	  <bibl ana="#borrowedItem" corresp="mep:004w6p">
 	  <title>Hamlet</title> (<author>Clark &amp; Wright</author>)</bibl>
-	  <date ana="#returned" when="1926-11-04">Nov 4</date>
+	  <date when="1926-11-04">Nov 4</date>
 	  <note>h.c. B.B.</note>
 	</ab>
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-04-06"></date>
+	  <date ana="#checkedOut" when="1926-04-06"/>
 	  <bibl ana="#borrowedItem" corresp="mep:00k63c">
             <title>Shakespeeare's Hamlet</title>
 	  <author>Brok</author></bibl>
@@ -443,7 +454,7 @@
 
 
 	<ab ana="#borrowingEvent">
-	  <date ana="#checkedOut" when="1926-04-06"></date>
+	  <date ana="#checkedOut" when="1926-04-06"/>
 	  <bibl ana="#borrowedItem" corresp="mep:00m78f">
 	  <title>Future of Futurism </title></bibl>
 	  <date ana="#returned" when="1927-01-04">Jan 4</date>
@@ -569,7 +580,7 @@
 	  <bibl ana="#borrowedItem" corresp="mep:001v9m">
 	  <title>Lime of Man</title></bibl>
 	  <note>0.25</note>
-	  <date ana="#returned" when="1927-03-02"></date>
+	  <date ana="#returned" when="1927-03-02"/>
 	</ab>
 
       </div>

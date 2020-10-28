@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -7,8 +10,13 @@
                     <persName>Green, Elspeth</persName>
                     <resp>transcriber</resp>
                 </respStmt>
-                <respStmt ana="#cmahoney"><persName>Mahoney, Cate</persName> 
+                <respStmt ana="#cmahoney">
+                    <persName>Mahoney, Cate</persName> 
                     <resp>encoder</resp>
+                </respStmt>
+                <respStmt ana="#i-davis">
+                    <persName>Davis, Ian</persName> 
+                    <resp>borrowing events encoder</resp>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -62,19 +70,33 @@
             <div type="card">
                <div type="recto">
                 <pb facs="#s1"/>
-                   <ab>
-                <date when="1900-01-23">Jan 23</date>		<persName ref="gorc.ag">de la GORCE</persName>
-                						<persName ref="gorc.ag">Agnes</persName>
-                			<address><persName ref="gorc.ag">Mademoiselle de la Gorce</persName>
+                   
+                <head>
+                    <date notBefore="1920-01-23" notAfter="1941-01-23">Jan 23</date>		<persName ref="gorc.ag">de la GORCE</persName>
+                			<address><persName ref="gorc.ag">Mademoiselle Agnes de la Gorce</persName>
                 			<street>4 rue Joseph Bara</street></address>
+                </head>
                 			
-                			1 m 1 v					12
+                			<note>
+                			    1 m 1 v					12
                 								dep	30
-                								ref. 26 Feb.
+                								ref. <date notBefore="1920-02-26" notAfter="1941-02-26">26 Feb.</date>
+                			</note>
                 
-               <date ana="#checkedOut" when="1900-01-23"> Jan 23</date>		<bibl ana="#borrowedItem" corresp="mep:00gx3f"><title>John Wesley	</title></bibl>			<date ana="#returned" when="1900-02-26">26 Feb</date>
-                27 Feb. sent excerpt Allen-Unwin catalogue
-                					J. Wesley</ab>
+               
+                   <ab ana="#borrowingEvent">
+                       <date ana="#checkedOut" notBefore="1920-01-23" notAfter="1941-01-23"> Jan 23</date>		
+                       <bibl ana="#borrowedItem" corresp="mep:00gx3f">
+                           <title>John Wesley</title>
+                       </bibl>			
+                       <date ana="#returned" notBefore="1920-02-26" notAfter="1941-02-26">26 Feb</date>
+                   </ab>
+                   
+                <note>
+                    <date notBefore="1920-02-27" notAfter="1941-02-27">27 Feb.</date> sent excerpt Allen-Unwin catalogue
+                					<bibl><title>J. Wesley</title></bibl>
+                </note>
+                   
                </div> 
                 
                <div type="verso">

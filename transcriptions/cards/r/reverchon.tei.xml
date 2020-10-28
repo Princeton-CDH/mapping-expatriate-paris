@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -56,36 +58,71 @@
                 <div type="recto">
                 <pb facs="#s1"/>
                 
-                  <ab>
+                  <head>
                       A d L.
-               <date when="1900-12-01"> Dec. 1st</date><persName ref="reve.bl">	Mademoiselle Reverchon, Dr.</persName>
+               <date when="1919-12-01"> Dec. 1st</date><persName ref="reve.bl">	Mademoiselle Reverchon, Dr.</persName>
                 				<address><street>6 rue Boissonade</street></address>
                 				
+                	</head>	
                 		
+                		<note>Subscription for 1 mo. - 1 vol.			4</note>
                 		
-                		Subscription for 1 mo. - 1 vol.			4
-                		
-                      <date ana="#checkedOut" when="1900-12-01"> Dec. 1st</date>	<bibl ana="#borrowedItem"><title>Heartbreak House</title></bibl>			<date ana="#checkedOut" when="1900-12-13">  Dec 13</date>		
-                			<bibl ana="#borrowedItem"><title> Playboy </title></bibl>(extra) not yet returned
-                			 
-                      <date ana="#checkedOut" when="1900-12-13">  Dec. 13</date>		<bibl ana="#borrowedItem"><title>Shadow Line,</title></bibl> <bibl ana="#borrowedItem"><author>Conrad	</author></bibl>			  <date ana="#returned" when="1900-12-30"> Dec 30</date>	
+                		<ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1919-12-01"> Dec. 1st</date>	
+                		    <bibl ana="#borrowedItem" corresp="mep:008w13"><title>Heartbreak House</title></bibl>		
+                    <date ana="#returned" when="1919-12-13">  Dec 13</date>		
+                    </ab>
+                    <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1919-12-01"> Dec. 1st</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00c40f"><title> Playboy </title></bibl>
+                    <note>(extra) not yet returned</note>
+                	</ab>	
+                    <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1919-12-13">  Dec. 13</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00c69s"><title>Shadow Line,</title><author>Conrad	</author></bibl>		
+                    <date ana="#returned" when="1919-12-30"> Dec 30</date>	
+                </ab>
+                    <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1919-12-30"> Dec 30</date>		
+                        <bibl ana="#borrowedItem" corresp="mep:00wc47"><author>Yone Noguchi</author></bibl>
+                </ab>
                 
-               <date ana="#checkedOut" when="1900-12-30"> Dec 30</date>		<bibl ana="#borrowedItem"><author>Yone Noguchi</author></bibl>
+                <note><date  when="1919-12-30">Dec 30</date>		3 mos	-	1 vol					9 60</note>
                 
-                <date ana="#returned" when="1900-12-30">Dec 30</date>		3 mos	-	1 vol					9 60
-                
-                      <date ana="#checkedOut" when="1900-12-30">Dec 30</date>		<bibl ana="#borrowedItem"><author>Yone Noguchi,</author></bibl><bibl ana="#borrowedItem"><title> Diary</title></bibl>				 <date ana="#returned" when="1900-01-12">  Jan 12</date>	
-                
-                      <date ana="#checkedOut" when="1900-01-12">  Jan 12</date>		<bibl ana="#borrowedItem"><title>Addresses in America</title></bibl>,<bibl ana="#borrowedItem"><author> Galsworthy</author></bibl> <date ana="#returned" when="1900-01-22"> Jan 22</date>
-                <date ana="#checkedOut" when="1900-01-17">Jan 17</date>	<bibl ana="#borrowedItem"><title>	Liberator</title></bibl>
-                
-               <date ana="#checkedOut" when="1900-01-22"> Jan 22</date>		<bibl ana="#borrowedItem"><author>Yeats</author></bibl>
-                
-                      <bibl ana="#borrowedItem"><title>Sister Carrie	</title></bibl>				 <date ana="#returned" when="1900-03-13"> March 13</date>
-                			
-                      <date ana="#checkedOut" when="1900-03-13"> March 13</date><bibl ana="#borrowedItem"><title>	The Return of the Native</title></bibl>		<date ana="#returned" when="1900-04-17">April 17</date>	
-                
-                <date ana="#checkedOut" when="1900-04-17">April 17</date>	<bibl ana="#borrowedItem"><title>The Mob	</title></bibl> (brought back)			B. B.
+                <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1919-12-30">Dec 30</date>	
+                    <bibl ana="#borrowedItem" corresp="mep:00wc47"><author>Yone Noguchi,</author>><title> Diary</title></bibl>				
+                    <date ana="#returned" when="1920-01-12">  Jan 12</date>	
+                </ab>
+                    <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1920-01-12">  Jan 12</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00w39k"><title>Addresses in America</title><author> Galsworthy</author></bibl>
+                    <date ana="#returned" when="1920-01-22"> Jan 22</date>
+                    </ab>
+                    
+                    <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1920-01-17">Jan 17</date>
+                        <bibl ana="#borrowedItem" corresp="mep:00sw3b"><title>	Liberator</title></bibl>
+                </ab>
+                <ab ana="#borrowingEvent">
+               <date ana="#checkedOut" when="1920-01-22"> Jan 22</date>
+                    <bibl ana="#borrowedItem" corresp="mep:00m371"><author>Yeats</author></bibl>
+                </ab>
+                <ab ana="#borrowingEvent">
+                    <date ana="#checkedOut" when="1920-01-22"> </date>
+                    <bibl ana="#borrowedItem" corresp="mep:001h6x"><title>Sister Carrie	</title></bibl>		
+                    <date ana="#returned" when="1900-03-13"> March 13</date>
+                	</ab>
+                    <ab ana="#borrowingEvent">
+                      <date ana="#checkedOut" when="1920-03-13"> March 13</date>
+                        <bibl ana="#borrowedItem" corresp="mep:001z7t"><title>	The Return of the Native</title></bibl>	
+                    <date ana="#returned" when="1920-04-17">April 17</date>	
+                </ab>
+                    <ab ana="#borrowingEvent">
+                <date ana="#checkedOut" when="1920-04-17">April 17</date>	
+                        <bibl ana="#borrowedItem" corresp="mep:00c50q"><title>The Mob	</title></bibl> 
+                    <note>(brought back)</note>			
+                    <note>B. B.</note>
                   </ab>
                 </div>
                 <div type="verso">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
-
+<?xml-model href='../../../schemas/libcards.sch'?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader type="text">
     <fileDesc>
@@ -103,7 +103,7 @@
 	    <date ana="#returned" when="1939-01-26">Jan 26</date>
 	  </ab>
 	  <ab ana="#borrowingEvent">
-	    <date ana="#checkedOut" when="1939-01-24"></date>
+	    <date ana="#checkedOut" when="1939-01-24"/>
 	    <bibl ana="#borrowedItem" corresp="mep:00d28m"><title>Lucy Church Amiably</title></bibl>
 	    <date ana="#returned" when="1939-01-26">Jan 26</date>
 	  </ab>
@@ -134,7 +134,7 @@
 	<div type="verso">
 	  <pb facs="#s4"/>
 	  <head>
-	    <date>Oct 13</date> <address><persName>Mrs Lucas</persName>
+	    <date>Oct 13</date> <address><persName ref="#luca">Mrs Lucas</persName>
 	    <street>8 bis rue Campagne Première</street></address>
 	  </head>
 
@@ -143,14 +143,14 @@
 	    Dep 7
 	  </note>
 	  <ab ana="#borrowingEvent">
-	    <date ana="#checkedOut" when="1900-10-13">Oct 13</date>
+	    <date ana="#checkedOut" when="1921-10-13">Oct 13</date>
 	    <bibl ana="#borrowedItem" corresp="mep:00d30d"><title>Greenapple Harvest</title></bibl>
-	    <date ana="#returned" when="1900-10-31">Oct 31</date>
+	    <date ana="#returned" when="1921-10-31">Oct 31</date>
 	  </ab>
 	  <ab ana="#borrowingEvent">
-	    <date ana="#checkedOut" when="1900-10-31">Oct 31</date>
+	    <date ana="#checkedOut" when="1921-10-31">Oct 31</date>
 	    <bibl ana="#borrowedItem" corresp="mep:00d31q"><title>Coquette</title></bibl>
-	    <date ana="#returned" when="1900-11-17">Nov 17</date>
+	    <date ana="#returned" when="1921-11-17">Nov 17</date>
 	  </ab>
 	</div>
 	<div type="recto">

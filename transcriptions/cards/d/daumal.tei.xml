@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../../../schemas/libcards.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href='../../../schemas/libcards.sch'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader type="text">
         <fileDesc>
             <titleStmt>
@@ -58,8 +60,9 @@
         <body>
             <div type="card"> 
                 <div type="recto">
-          <head>
-                <pb facs="#s1"/>
+                    <pb facs="#s1"/>
+                 <head>
+                
                 <date when="1940">1940</date>		<persName ref="#daum.re">René Daumal</persName>
                 ( <address><orgName>NRF.</orgName>
                     <settlement>à Mirande</settlement>
