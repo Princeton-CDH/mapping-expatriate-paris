@@ -9,4 +9,3 @@ Published data from the *Project* is available at: [https://shakespeareandco.pri
 -----
 
 The *Shakespeare and Company Project* was originally titled “Mapping Expatriate Paris,” and was founded in 2014 by [Joshua Kotin](https://english.princeton.edu/people/joshua-kotin), [Jesse D. McCarthy](https://aaas.fas.harvard.edu/people/jesse-mccarthy), and [Clifford E. Wulfman](https://library.princeton.edu/staff/cwulfman). An overview of the project based on the preliminary data in this repository was available at [mep.princeton.edu](https://wayback.archive-it.org/5151/20191009132356/https:/mep.princeton.edu/) from 2016 to 2019 with a map created by [Moacir P. de Sá Pereira](https://moacir.com/).
-
